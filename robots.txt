@@ -1,4 +1,4 @@
 User-agent: *
-Allow: /
+Disallow: /wp-content/uploads/
 
 Sitemap: https://techpiezo.com/sitemap.xml

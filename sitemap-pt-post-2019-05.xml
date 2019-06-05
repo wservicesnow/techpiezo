@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="June 3, 2019 3:24 am" -->
+<!-- generated-on="June 5, 2019 7:44 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>https://techpiezo.com/seo/understanding-search-engines/</loc>
-		<lastmod>2019-05-30T19:31:05+00:00</lastmod>
+		<lastmod>2019-06-05T19:40:02+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/seo/challenges-search-engine-optimization/</loc>
-		<lastmod>2019-05-29T19:48:34+00:00</lastmod>
+		<lastmod>2019-06-05T19:41:05+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/seo/benefits-of-implementing-search-engine-optimization/</loc>
-		<lastmod>2019-05-28T17:18:32+00:00</lastmod>
+		<lastmod>2019-06-05T19:41:49+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/seo/understanding-seo/</loc>
-		<lastmod>2019-05-23T20:34:19+00:00</lastmod>
+		<lastmod>2019-06-05T19:42:46+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: fa5c58006156ba6150627f77b8e6dfb2; Queries for sitemap: 2; Total queries: 12; Seconds: 0.01; Memory for sitemap: 0MB; Total memory: 4MB -->
+</urlset><!-- Request ID: ae49a0a29ffb62e5ba5a2c84c2ef8837; Queries for sitemap: 2; Total queries: 12; Seconds: 0.01; Memory for sitemap: 0MB; Total memory: 2MB -->
