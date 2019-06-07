@@ -480,8 +480,9 @@ dd {
 }
 
 img {
-    height: auto;
+    height: 100%;
     max-width: 100%;
+    
 }
 
 figure {
@@ -3538,7 +3539,6 @@ article .em-posts-promotions .widget
     background: #ffffff;
     padding: 15px;
 }
-
 
 .aft-image-caption p {
     font-size: 14px;

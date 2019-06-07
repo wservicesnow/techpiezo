@@ -164,7 +164,7 @@
                 vertical: true,
                 slidesToShow: 4,
                 slidesToScroll: 1,
-                verticalSwiping: true,
+                verticalSwiping: false,
                 autoplaySpeed: 10000,
                 infinite: true,
                 nextArrow: '<i class="slide-icon slide-icon-1  slide-next fas fa-angle-down"></i>',

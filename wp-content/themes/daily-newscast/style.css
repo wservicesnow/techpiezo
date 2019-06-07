@@ -149,24 +149,47 @@ body #loader:after {
 }
 
 
+
+.hentry .entry-header-details .author-links {
+font-size: 14px;
+}
+
+
+
+
 @media only screen and (max-width: 320px){
 .main-navigation.aft-sticky-navigation span.af-mobile-site-title-wrap .site-title {
     font-size: 26px;
     line-height: 55px;
     }
 }
-
-
 .post-thumbnails-new,.entry-header-details
 {display:inline-block;vertical-align:middle;width:22.2%}
-.post-thumbnails-new img{width:95%;height:auto}
-.entry-header-details{width:77.3%;padding-left:12px}
+.post-thumbnails-new img{position: absolute;
+top: 3px;
+left: 15px;
+width: 21%;
+height: 95%;}
+.entry-header-details{display:inline-block;width:77.3%;padding-left:12px}
 
 @media screen and (max-width: 767px){
 .entry-header-details {
 padding-left: 12px;
 width: 76.3%;
 }
+
+.hentry .entry-header-details .author-links {
+font-size: 10px;
+}
+
+//.tab-article-image img{position: absolute;
+//top: 3px;
+//left: 15px;
+//width: 21%;
+//height: 95%;}
+
+
+
 }
 
 @media screen and (max-width: 767px){
@@ -180,14 +203,41 @@ width: 22.2%;
 .entry-header-details p{
 display: none;
 }
+
+.entry-title a{
+font-size: 16px;
+}
+
+.meta-category a {
+font-size: 10px;
+}
+
+.post-thumbnails-new img {
+position: absolute;
+top: 10px;
+left: 15px;
+width: 21%;
+height: 80%;
+}
+
+.figure-categories .cat-links a{
+font-size: 12px;
+//display: none;
+}
+
+.hentry{
+margin: 0 0 5px 0;
+}
+
+//.hentry .header-details-wrapper {
+//height:100px;
+//}
+
 }
 
 .hentry .entry-header-details .post-excerpt {
 font-size: 16px;
 font-style: normal;
-}
-.hentry .entry-header-details .author-links {
-font-size: 14px;
 }
 
 .figure-categories .cat-links {
@@ -211,10 +261,12 @@ line-height: 1.5;
 }
 span.af-mobile-site-title-wrap .site-title a {
 color: #ffffff;
+}
+
 
 }
 
-}
+
 
 .ttl-line-heading {
 padding: 5px 0px 10px;
@@ -225,6 +277,25 @@ font-weight: 600;
 }
 
 
-.tab-article-image{
-width: 100px;
+//.tab-article-image{
+//width: 100px;
+//}
+
+@media only screen and (max-width: 768px) and (min-width: 426px){
+.article-tabbed-list .align-items-center {
+flex-wrap: wrap;
+}
+}
+
+.data-bg-featured1 {
+width: 90%;
+height: 80px;
+}
+
+.data-bg.data-bg-hover.data-bg-featured1 a{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
 }
