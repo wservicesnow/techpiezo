@@ -2294,6 +2294,7 @@ body.custom-background .site-content .em-breadcrumbs .container {
 .comments-area, .woocommerce div.product .woocommerce-tabs .panel
 {
     padding: 15px;
+    line-height: 1.75;
 }
 
 #primary,

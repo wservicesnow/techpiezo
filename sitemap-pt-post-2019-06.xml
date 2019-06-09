@@ -1,15 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="June 7, 2019 9:18 pm" -->
+<!-- generated-on="June 9, 2019 9:50 am" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
+		<loc>https://techpiezo.com/seo/on-site-search-engine-optimization-factors-that-matter/</loc>
+		<lastmod>2019-06-09T09:26:18+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>https://techpiezo.com/seo/on-page-search-engine-optimization/</loc>
+		<lastmod>2019-06-09T08:26:32+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
 		<loc>https://techpiezo.com/seo/types-of-search-related-queries/</loc>
-		<lastmod>2019-06-06T16:44:18+00:00</lastmod>
+		<lastmod>2019-06-09T09:25:07+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/seo/how-search-engines-work/</loc>
-		<lastmod>2019-06-06T16:44:43+00:00</lastmod>
+		<lastmod>2019-06-09T09:28:23+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: 4e5b04a89f003380d968698e073c403b; Queries for sitemap: 2; Total queries: 12; Seconds: 0; Memory for sitemap: 0MB; Total memory: 2MB -->
+</urlset><!-- Request ID: c4d246f65032db7d4c97e0a28d67e684; Queries for sitemap: 2; Total queries: 12; Seconds: 0; Memory for sitemap: 0MB; Total memory: 2MB -->
