@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="June 9, 2019 9:50 am" -->
+<!-- generated-on="June 9, 2019 6:51 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>https://techpiezo.com/category/seo/</loc>
 		<lastmod>2019-06-09T03:51:55+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
-</urlset><!-- Request ID: 08149d5dd92be2db75402cf0ef14b90b; Queries for sitemap: 4; Total queries: 14; Seconds: 0.09; Memory for sitemap: 0MB; Total memory: 2MB -->
+	<url>
+		<loc>https://techpiezo.com/category/wordpress/</loc>
+		<lastmod>2019-06-09T12:22:05+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+</urlset><!-- Request ID: a068db97e3bed9e8c3ccbeeb817fb9be; Queries for sitemap: 4; Total queries: 14; Seconds: 0.01; Memory for sitemap: 0MB; Total memory: 2MB -->
