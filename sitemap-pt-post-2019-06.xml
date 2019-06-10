@@ -1,45 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="June 9, 2019 6:51 pm" -->
+<!-- generated-on="June 10, 2019 3:47 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>https://techpiezo.com/wordpress/how-to-install-wordpress-on-ubuntu-19-04/</loc>
-		<lastmod>2019-06-09T18:50:19+00:00</lastmod>
+		<lastmod>2019-06-10T14:28:19+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/wordpress/difference-between-wordpress-com-and-wordpress-org/</loc>
-		<lastmod>2019-06-09T17:41:08+00:00</lastmod>
+		<lastmod>2019-06-10T14:29:11+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/wordpress/introduction-to-wordpress-cms/</loc>
-		<lastmod>2019-06-09T14:44:00+00:00</lastmod>
+		<lastmod>2019-06-10T14:29:41+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/seo/on-site-search-engine-optimization-factors-that-matter/</loc>
-		<lastmod>2019-06-09T09:26:18+00:00</lastmod>
+		<lastmod>2019-06-10T14:30:13+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/seo/on-page-search-engine-optimization/</loc>
-		<lastmod>2019-06-09T08:26:32+00:00</lastmod>
+		<lastmod>2019-06-10T14:30:37+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/seo/types-of-search-related-queries/</loc>
-		<lastmod>2019-06-09T09:25:07+00:00</lastmod>
+		<lastmod>2019-06-10T14:31:05+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/seo/how-search-engines-work/</loc>
-		<lastmod>2019-06-09T09:28:23+00:00</lastmod>
+		<lastmod>2019-06-10T14:31:34+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: 275e22312097435447765b866411b4b5; Queries for sitemap: 2; Total queries: 12; Seconds: 0.01; Memory for sitemap: 0MB; Total memory: 2MB -->
+</urlset><!-- Request ID: 61e63bcf6633c406d313c1d8b5aa59e0; Queries for sitemap: 2; Total queries: 12; Seconds: 0.01; Memory for sitemap: 0MB; Total memory: 2MB -->

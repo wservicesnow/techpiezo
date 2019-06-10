@@ -480,9 +480,8 @@ dd {
 }
 
 img {
-    height: 100%;
+    height: auto;
     max-width: 100%;
-    
 }
 
 figure {
@@ -2144,7 +2143,7 @@ body.full-width-content .covernews_tabbed_posts_widget .tab-content .article-lis
 
 
 .masthead-banner {
-    padding: 10px 0;
+    padding: 30px 0;
 
 }
 .masthead-banner [class*="col-"] {
@@ -2294,7 +2293,6 @@ body.custom-background .site-content .em-breadcrumbs .container {
 .comments-area, .woocommerce div.product .woocommerce-tabs .panel
 {
     padding: 15px;
-    line-height: 1.75;
 }
 
 #primary,
@@ -3529,22 +3527,18 @@ article .em-posts-promotions .widget
 }
 
 .post-thumbnail img {
-    width: 890px;
-    height: 420px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;  
+    width: 100%;
 }
-
 .latest-posts-full .header-details-wrapper {
     background: #ffffff;
     padding: 15px;
 }
 
 .aft-image-caption p {
+    margin: 5px 15px;
     font-size: 14px;
     font-style: italic;
-    text-align:center;
+    float: left;
 }
 
 /*--------------------------------------------------------------
@@ -6228,3 +6222,17 @@ a.awpa-linkedin.awpa-icon-linkedin {
         line-height: 55px;
     }
 }
+
+
+
+@media only screen and (max-width: 992px){
+span.af-mobile-site-title-wrap .site-title a {
+display: none;
+}
+}
+
+
+.header-layout-1 .masthead-banner .site-branding {
+    text-align: center;
+}
+
