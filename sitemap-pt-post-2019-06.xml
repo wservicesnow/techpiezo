@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="June 10, 2019 3:47 pm" -->
+<!-- generated-on="June 10, 2019 7:20 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
+		<loc>https://techpiezo.com/wordpress/how-to-install-wordpress-on-windows-10-using-xampp/</loc>
+		<lastmod>2019-06-10T19:18:50+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
 		<loc>https://techpiezo.com/wordpress/how-to-install-wordpress-on-ubuntu-19-04/</loc>
 		<lastmod>2019-06-10T14:28:19+00:00</lastmod>
 		<changefreq>monthly</changefreq>
@@ -42,4 +48,4 @@
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: 61e63bcf6633c406d313c1d8b5aa59e0; Queries for sitemap: 2; Total queries: 12; Seconds: 0.01; Memory for sitemap: 0MB; Total memory: 2MB -->
+</urlset><!-- Request ID: c982b081f66f25c2705a6eb948653dbb; Queries for sitemap: 2; Total queries: 12; Seconds: 0.01; Memory for sitemap: 0MB; Total memory: 4MB -->
