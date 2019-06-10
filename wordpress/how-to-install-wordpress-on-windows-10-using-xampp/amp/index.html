@@ -429,7 +429,7 @@ amp-carousel > amp-img > img {
 		<h1 class="amp-wp-title">How to Install WordPress on Windows 10 using XAMPP?</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
 	<time datetime="2019-06-10T19:17:02+00:00">
-		9 mins ago	</time>
+		12 mins ago	</time>
 </div>
 	</header>
 
@@ -444,26 +444,18 @@ amp-carousel > amp-img > img {
 <h3 class="amp-wp-7d27179">How to Install WordPress on Windows 10 using XAMPP?</h3>
 <p class="amp-wp-7d27179"><strong>STEP – I:</strong> Download XAMPP for Windows from the website:</p>
 <pre>https://www.apachefriends.org/download.html</pre>
-<p> </p>
 <p class="amp-wp-7d27179"><amp-img class="alignnone wp-image-310 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/06/apachefriends-xampp.png" alt="download xampp" width="600" height="302" layout="intrinsic"></amp-img></p>
-<p> </p>
 <p class="amp-wp-7d27179">The file size is around 144 MBs and download time would depend on your Internet connection speed. There are multiple versions available, download anyone of your choice. After the file gets downloaded, you have to run the setup. You may opt out of installing Bitnami. Rest of the steps are self-explanatory. Default installation folder is <code>C:\xampp\</code></p>
-<p> </p>
 <p class="amp-wp-7d27179"><amp-img class="alignnone wp-image-318 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/06/XAMPP-installation-screen.png" alt="xampp setup" width="605" height="362" layout="intrinsic"></amp-img></p>
-<p> </p>
 <p class="amp-wp-7d27179"><strong>STEP – II</strong>: Download WordPress; Visit the link –</p>
 <pre>https://wordpress.org/download/</pre>
 <p class="amp-wp-7d27179">This would download a file with <code>.zip</code> extension. Once, the file gets downloaded. Extract it to a desired folder either with the help of software application or through in-built Windows support by right-clicking it.</p>
 <p class="amp-wp-7d27179">When the file gets extracted, you have to copy the entire extracted directory to the location <code>C:\xampp\htdocs\</code></p>
 <p class="amp-wp-7d27179"><strong>STEP – III</strong>: Now, we have to enable Apache, MySQL services from the XAMPP control panel to configure WordPress. Open the XAMPP control panel. You have to start Services modules for Apache and MySQL.</p>
-<p> </p>
 <p class="amp-wp-7d27179"><amp-img class="wp-image-319 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/06/xampp-start-services-apache-mysql.png" alt="XAMPP start services" width="636" height="285" layout="intrinsic"></amp-img></p>
-<p> </p>
 <p class="amp-wp-7d27179">Subsequently, you have to cross-check if your XAMPP installation is working as required. You have to open your web browser and type <code>http://localhost</code> in address bar. If XAMPP is installed and running successfully, your web browser will return with Welcome message from XAMPP.</p>
 <p class="amp-wp-7d27179">Next, click <code>Admin</code> button available next to MySQL service stop module. This is being done to create a database for our WordPress installation. After clicking the <code>Admin</code> button you would be redirected to web page for phpMyAdmin. Click on database tab and create a database with the name that would be provided when we configure WordPress.</p>
-<p> </p>
 <p class="amp-wp-7d27179"><amp-img class="wp-image-311 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/06/create-database.png" alt="create database" width="584" height="115" layout="intrinsic"></amp-img></p>
-<p> </p>
 <p class="amp-wp-7d27179">Now, open <code>C:\xampp\htdocs\wordpress\</code> folder and copy <code>wp-config-sample.php</code> to <code>wp-config.php</code> in the same folder. Now, you have to locate entries provided below and make suitable changes in the <code>wp-config.php</code> file.</p>
 <pre>/** The name of the database for WordPress */
 define( 'DB_NAME', 'wordpress' );
