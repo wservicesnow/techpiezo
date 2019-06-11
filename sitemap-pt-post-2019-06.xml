@@ -1,14 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="June 10, 2019 7:28 pm" -->
+<!-- generated-on="June 11, 2019 2:30 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
+		<loc>https://techpiezo.com/linux/i386-or-amd64-ubuntu-distribution/</loc>
+		<lastmod>2019-06-11T14:30:10+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>https://techpiezo.com/tech-insights/tmp-on-ram/</loc>
+		<lastmod>2019-06-11T13:36:32+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>https://techpiezo.com/android/live-speedometer-introduced-in-google-maps/</loc>
+		<lastmod>2019-06-11T12:49:56+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>https://techpiezo.com/linux/linux-recent/libreoffice-6-3-beta-1-released-for-testing-with-new-features/</loc>
+		<lastmod>2019-06-11T12:50:06+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>https://techpiezo.com/linux/gparted-1-0-released/</loc>
+		<lastmod>2019-06-11T13:36:18+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>https://techpiezo.com/linux/introduction-to-ubuntu/</loc>
+		<lastmod>2019-06-11T12:29:19+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
 		<loc>https://techpiezo.com/wordpress/how-to-install-wordpress-on-windows-10-using-xampp/</loc>
-		<lastmod>2019-06-10T19:28:38+00:00</lastmod>
+		<lastmod>2019-06-11T12:30:28+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/wordpress/how-to-install-wordpress-on-ubuntu-19-04/</loc>
-		<lastmod>2019-06-10T14:28:19+00:00</lastmod>
+		<lastmod>2019-06-11T12:30:38+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
@@ -44,8 +80,8 @@
 	</url>
 	<url>
 		<loc>https://techpiezo.com/seo/how-search-engines-work/</loc>
-		<lastmod>2019-06-10T14:31:34+00:00</lastmod>
+		<lastmod>2019-06-11T12:31:05+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: af29cd2a716f8a64f720c4da2c5f32bd; Queries for sitemap: 2; Total queries: 12; Seconds: 0.01; Memory for sitemap: 0MB; Total memory: 2MB -->
+</urlset><!-- Request ID: 101c3f7de2a2a2abad081be9693d672a; Queries for sitemap: 2; Total queries: 12; Seconds: 0.01; Memory for sitemap: 0MB; Total memory: 2MB -->
