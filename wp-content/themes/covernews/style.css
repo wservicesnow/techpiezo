@@ -3399,6 +3399,7 @@ article .em-posts-promotions .widget
 .entry-content,
 .entry-summary {
     margin: 1.5em 0 0;
+    line-height: 1.75;
 }
 
 .entry-content-wrap {
