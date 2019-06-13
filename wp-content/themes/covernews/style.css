@@ -2143,7 +2143,7 @@ body.full-width-content .covernews_tabbed_posts_widget .tab-content .article-lis
 
 
 .masthead-banner {
-    padding: 30px 0;
+    padding: 10px 0;
 
 }
 .masthead-banner [class*="col-"] {
@@ -2176,6 +2176,7 @@ body.full-width-content .covernews_tabbed_posts_widget .tab-content .article-lis
 .site-branding .site-description {
     margin: 0 auto;
     text-transform: uppercase;
+    font-size: 12px;
 }
 
 .site-content {
@@ -4279,7 +4280,7 @@ object {
 }
 .main-navigation
 {
-    background: #bb1919;
+    background: #000000;
 }
 
 .social-widget-menu ul li a,

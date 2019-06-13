@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="June 12, 2019 7:32 pm" -->
+<!-- generated-on="June 13, 2019 8:51 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
+		<loc>https://techpiezo.com/linux/whats-new-in-debian-10-buster-release/</loc>
+		<lastmod>2019-06-13T20:48:58+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>https://techpiezo.com/android/android-phone-as-security-key-for-google-sign-in/</loc>
+		<lastmod>2019-06-13T16:29:52+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>https://techpiezo.com/linux/debian-buster-set-to-release-on-6th-of-july/</loc>
+		<lastmod>2019-06-13T15:48:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
 		<loc>https://techpiezo.com/linux/add-user-to-sudoers-in-ubuntu-distribution/</loc>
 		<lastmod>2019-06-12T19:31:38+00:00</lastmod>
 		<changefreq>monthly</changefreq>
@@ -96,4 +114,4 @@
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: f9d05bc11794e8a7c3fd422e32aabbd7; Queries for sitemap: 6; Total queries: 16; Seconds: 0.02; Memory for sitemap: 0MB; Total memory: 2MB -->
+</urlset><!-- Request ID: a09b88f53db9df55b1c3d01832d1bda0; Queries for sitemap: 15; Total queries: 25; Seconds: 0.02; Memory for sitemap: 0MB; Total memory: 2MB -->
