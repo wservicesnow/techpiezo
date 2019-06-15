@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="June 15, 2019 7:14 pm" -->
+<!-- generated-on="June 15, 2019 8:46 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>https://techpiezo.com/linux/install-clamav-antivirus-on-ubuntu/</loc>
 		<lastmod>2019-06-15T19:12:36+00:00</lastmod>
@@ -144,4 +144,4 @@
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: f70f5436178ad66799996c8bb2f832b0; Queries for sitemap: 32; Total queries: 42; Seconds: 0.02; Memory for sitemap: 0MB; Total memory: 2MB -->
+</urlset><!-- Request ID: 12d7f87aac787be220d0175fee4eb6e5; Queries for sitemap: 32; Total queries: 42; Seconds: 0.03; Memory for sitemap: 0MB; Total memory: 2MB -->
