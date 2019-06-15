@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="June 15, 2019 2:25 pm" -->
+<!-- generated-on="June 15, 2019 7:14 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
+		<loc>https://techpiezo.com/linux/install-clamav-antivirus-on-ubuntu/</loc>
+		<lastmod>2019-06-15T19:12:36+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
 		<loc>https://techpiezo.com/linux/best-antivirus-tools-for-ubuntu-linux-distributions/</loc>
 		<lastmod>2019-06-15T14:24:45+00:00</lastmod>
 		<changefreq>monthly</changefreq>
@@ -14,7 +20,7 @@
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/antivirus-in-ubuntu-linux-distributions/</loc>
-		<lastmod>2019-06-15T12:55:19+00:00</lastmod>
+		<lastmod>2019-06-15T16:25:47+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
@@ -26,7 +32,7 @@
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/whats-new-in-debian-10-buster-release/</loc>
-		<lastmod>2019-06-13T20:48:58+00:00</lastmod>
+		<lastmod>2019-06-15T16:28:46+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
@@ -138,4 +144,4 @@
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: 97f1e7bc32dc4e6d6c3428c6083e8ac5; Queries for sitemap: 28; Total queries: 38; Seconds: 0.02; Memory for sitemap: 0MB; Total memory: 2MB -->
+</urlset><!-- Request ID: f70f5436178ad66799996c8bb2f832b0; Queries for sitemap: 32; Total queries: 42; Seconds: 0.02; Memory for sitemap: 0MB; Total memory: 2MB -->
