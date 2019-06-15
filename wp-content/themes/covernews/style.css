@@ -304,6 +304,7 @@ h6,
 .figure-categories .cat-links,
 .nav-links a {
     font-family: 'Montserrat:400,700', sans-serif;
+    line-height: 2;
 }
 
 p {

@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="June 13, 2019 8:51 pm" -->
+<!-- generated-on="June 15, 2019 2:25 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
+		<loc>https://techpiezo.com/linux/best-antivirus-tools-for-ubuntu-linux-distributions/</loc>
+		<lastmod>2019-06-15T14:24:45+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>https://techpiezo.com/linux/is-ubuntu-relatively-secure-than-its-counterparts/</loc>
+		<lastmod>2019-06-15T13:46:04+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>https://techpiezo.com/linux/antivirus-in-ubuntu-linux-distributions/</loc>
+		<lastmod>2019-06-15T12:55:19+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>https://techpiezo.com/linux/add-user-to-a-group-in-ubuntu-linux-mint/</loc>
+		<lastmod>2019-06-15T07:25:33+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
 		<loc>https://techpiezo.com/linux/whats-new-in-debian-10-buster-release/</loc>
 		<lastmod>2019-06-13T20:48:58+00:00</lastmod>
 		<changefreq>monthly</changefreq>
@@ -20,7 +44,7 @@
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/add-user-to-sudoers-in-ubuntu-distribution/</loc>
-		<lastmod>2019-06-12T19:31:38+00:00</lastmod>
+		<lastmod>2019-06-15T07:31:35+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
@@ -32,13 +56,13 @@
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/i386-or-amd64-ubuntu-distribution/</loc>
-		<lastmod>2019-06-11T14:30:10+00:00</lastmod>
+		<lastmod>2019-06-15T07:31:59+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/tech-insights/tmp-on-ram/</loc>
-		<lastmod>2019-06-11T13:36:32+00:00</lastmod>
+		<lastmod>2019-06-15T07:32:20+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
@@ -62,25 +86,25 @@
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/introduction-to-ubuntu/</loc>
-		<lastmod>2019-06-11T12:29:19+00:00</lastmod>
+		<lastmod>2019-06-15T07:34:05+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/wordpress/how-to-install-wordpress-on-windows-10-using-xampp/</loc>
-		<lastmod>2019-06-11T12:30:28+00:00</lastmod>
+		<lastmod>2019-06-15T07:34:39+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/wordpress/how-to-install-wordpress-on-ubuntu-19-04/</loc>
-		<lastmod>2019-06-11T12:30:38+00:00</lastmod>
+		<lastmod>2019-06-15T07:35:02+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/wordpress/difference-between-wordpress-com-and-wordpress-org/</loc>
-		<lastmod>2019-06-10T14:29:11+00:00</lastmod>
+		<lastmod>2019-06-15T07:35:18+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
@@ -114,4 +138,4 @@
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: a09b88f53db9df55b1c3d01832d1bda0; Queries for sitemap: 15; Total queries: 25; Seconds: 0.02; Memory for sitemap: 0MB; Total memory: 2MB -->
+</urlset><!-- Request ID: 97f1e7bc32dc4e6d6c3428c6083e8ac5; Queries for sitemap: 28; Total queries: 38; Seconds: 0.02; Memory for sitemap: 0MB; Total memory: 2MB -->

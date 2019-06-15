@@ -409,7 +409,7 @@ amp-carousel > amp-img > img {
 	right: 16px;
 }
 		/* Inline stylesheets */
-:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-ca1de63{font-size:14pt}	</style>
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cdd8ca0{text-align:center}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-ca1de63{font-size:14pt}	</style>
 </head>
 
 <body class="">
@@ -429,7 +429,7 @@ amp-carousel > amp-img > img {
 		<h1 class="amp-wp-title">Add User to Sudoers in Ubuntu Distribution</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
 	<time datetime="2019-06-12T19:24:07+00:00">
-		1 day ago	</time>
+		3 days ago	</time>
 </div>
 	</header>
 
@@ -443,7 +443,7 @@ amp-carousel > amp-img > img {
 <p class="amp-wp-7d27179">A word of caution – you must use <code>sudo</code> command only when you know what you are doing to your operating system. Apart from that, if you wish to run any command/task with super user privileges then add prefix <code>sudo</code> to it. For Instance –</p>
 <pre>sudo nano /etc/hosts</pre>
 <p class="amp-wp-7d27179">Next, it will ask for users’ password. After providing the password you can edit the hosts file. If you are unable to get super user access even after providing your password. Then, you may have to ask system administrator to either provide you super user access or ask the system admin to do it for you. To provide you the super user access, the system admin will add you to sudoers list. We will discuss it next:</p>
-<h3 class="amp-wp-7d27179">Add user to Sudoers</h3>
+<h3 class="amp-wp-cdd8ca0">Add user to Sudoers</h3>
 <p class="amp-wp-7d27179"><span class="amp-wp-ca1de63"><strong>STEP – I:</strong></span> Login to your system with root access. Or, try one who has super user access.</p>
 <p class="amp-wp-7d27179"><span class="amp-wp-ca1de63"><strong>STEP – II:</strong></span> Add a user, say username, with the help of <code>useradd</code> command.</p>
 <pre>useradd username</pre>
@@ -466,9 +466,8 @@ amp-carousel > amp-img > img {
 
 groups
 
-sudo whoami </pre>
-<p> <br><amp-img class="aligncenter wp-image-371 size-full amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/06/useradd-sudoers.png" alt="whoami" width="358" height="140" layout="intrinsic"></amp-img><br>
- </p>
+sudo whoami</pre>
+<p><amp-img class="aligncenter wp-image-371 size-full amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/06/useradd-sudoers.png" alt="whoami" width="358" height="140" layout="intrinsic"></amp-img></p>
 <p class="amp-wp-7d27179">Once we type groups, it will return with our group as mentioned in Step – IV. Then, with <code>whoami</code> command it would recognize us as root.</p>
 <p class="amp-wp-7d27179">Thus, we have successfully added user to the sudoers file.</p>
 	</div>
