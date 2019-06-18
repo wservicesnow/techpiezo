@@ -1,0 +1,745 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+
+    <title>Command line Calendar utilities on Debian/Linux - TechPiezo</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v11.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Calendar in Linux might seem like novelty, however mastering the tool may be helpful. We will discuss command line calendar utilities like cal, ncal &amp; gcal."/>
+<link rel="canonical" href="https://techpiezo.com/tech-insights/command-line-calendar-on-debian-linux/" />
+<!-- / Yoast SEO plugin. -->
+
+<link rel='stylesheet' id='wp-block-library-css'  href='https://techpiezo.com/wp-includes/css/dist/block-library/style.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-v5-css'  href='https://techpiezo.com/wp-content/themes/covernews/assets/font-awesome-v5/css/fontawesome-all.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap-css'  href='https://techpiezo.com/wp-content/themes/covernews/assets/bootstrap/css/bootstrap.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='slick-css'  href='https://techpiezo.com/wp-content/themes/covernews/assets/slick/css/slick.min.css' type='text/css' media='all' />
+<link crossorigin="anonymous" rel='stylesheet' id='covernews-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Source%20Sans%20Pro:400,400i,700,700i|Lato:400,300,400italic,900,700&#038;subset=latin,latin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='covernews-style-css'  href='https://techpiezo.com/wp-content/themes/covernews/style.css' type='text/css' media='all' />
+<script type='text/javascript' src='https://techpiezo.com/wp-includes/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='https://techpiezo.com/wp-includes/js/jquery/jquery-migrate.min.js'></script>
+
+        <style type="text/css">
+                        .site-title,
+            .site-description {
+                position: absolute;
+                clip: rect(1px, 1px, 1px, 1px);
+                display: none;
+            }
+
+            
+
+        </style>
+        <style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #ededed; }
+</style>
+	<link rel="amphtml" href="https://techpiezo.com/tech-insights/command-line-calendar-on-debian-linux/amp/"><link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/05/favicon.ico" sizes="32x32" />
+<link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/05/favicon.ico" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://techpiezo.com/wp-content/uploads/2019/05/favicon.ico" />
+<meta name="msapplication-TileImage" content="https://techpiezo.com/wp-content/uploads/2019/05/favicon.ico" />
+		<style type="text/css" id="wp-custom-css">
+			.archive-description, .archive.category .page-title,
+.archive.category .page-description, .archive.category .taxonomy-description, .cart-search{
+    display: none !important;
+}		</style>
+		
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135581354-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-135581354-3');
+</script>
+
+</head>
+
+<body class="post-template-default single single-post postid-428 single-format-standard custom-background default-content-layout align-content-left">
+
+
+<div id="page" class="site">
+    <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+    <div class="header-layout-1">
+                <header id="masthead" class="site-header">
+                        <div class="masthead-banner "
+                 data-background="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="site-branding">
+                                                                    <p class="site-title font-family-1">
+                                        <a href="https://techpiezo.com/"
+                                           rel="home">TechPiezo</a>
+                                    </p>
+                                
+                                                                    <p class="site-description">Future is Here</p>
+                                                            </div>
+                        </div>
+                        <div class="col-md-8">
+                                                    </div>
+                    </div>
+                </div>
+            </div>
+            <nav id="site-navigation" class="main-navigation">
+                <div class="container">
+                    <div class="row">
+                        <div class="kol-12">
+                            <div class="navigation-container">
+                                <span class="toggle-menu" aria-controls="primary-menu" aria-expanded="false">
+                                <span class="screen-reader-text">Primary Menu</span>
+                                 <i class="ham"></i>
+                        </span>
+                                <span class="af-mobile-site-title-wrap">
+                                                                <p class="site-title font-family-1">
+                                <a href="https://techpiezo.com/"
+                                   rel="home">TechPiezo</a>
+                            </p>
+                        </span>
+                                <div class="menu main-menu"><ul id="primary-menu" class="menu"><li id="menu-item-70" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-70"><a href="https://techpiezo.com">Home</a></li>
+<li id="menu-item-39" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-39"><a href="https://techpiezo.com/category/tech-insights/">Insights</a></li>
+<li id="menu-item-40" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-40"><a href="https://techpiezo.com/category/seo/">SEO</a></li>
+<li id="menu-item-41" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-41"><a href="https://techpiezo.com/category/linux/">Linux</a>
+<ul class="sub-menu">
+	<li id="menu-item-349" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-349"><a href="https://techpiezo.com/category/linux/linux-recent/">Recent</a></li>
+	<li id="menu-item-350" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-350"><a href="https://techpiezo.com/category/linux/linux-tutorials/">Tutorials</a></li>
+</ul>
+</li>
+<li id="menu-item-42" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-42"><a href="https://techpiezo.com/category/wordpress/">WordPress</a></li>
+<li id="menu-item-43" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-43"><a href="https://techpiezo.com/category/android/">Android</a>
+<ul class="sub-menu">
+	<li id="menu-item-347" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-347"><a href="https://techpiezo.com/category/android/android-recent/">Recent</a></li>
+	<li id="menu-item-348" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-348"><a href="https://techpiezo.com/category/android/android-tutorials/">Tutorials</a></li>
+</ul>
+</li>
+</ul></div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+    </div>
+
+    <div id="content" class="container">
+        <div class="row">
+                <div id="primary" class="content-area">
+                    <main id="main" class="site-main">
+
+                                                    <article id="post-428" class="post-428 post type-post status-publish format-standard has-post-thumbnail hentry category-tech-insights">
+                                <div class="entry-content-wrap">
+                                    <header class="entry-header">
+
+    <div class="header-details-wrapper">
+        <div class="entry-header-details">
+                            <div class="figure-categories figure-categories-bg">
+                                        <ul class="cat-links"><li class="meta-category">
+                             <a class="covernews-categories category-color-1" href="https://techpiezo.com/category/tech-insights/" alt="View all posts in Insights"> 
+                                 Insights
+                             </a>
+                        </li></ul>                </div>
+                        <h1 class="entry-title">Command line Calendar utilities on Debian/Linux</h1>
+            
+                
+        <span class="author-links">
+                                </span>
+                        
+
+                    </div>
+    </div>
+
+    </header><!-- .entry-header -->                                    
+
+    <div class="entry-content">
+        <p style="text-align: justify;">Linux distributions provides simple and useful utilities through command line. Calendar in GNU/Linux might seem like novelty, however mastering the tool may be helpful.</p>
+<p style="text-align: justify;">There are many command line interface (CLI) utilities for calendar.</p>
+<p style="text-align: justify;">First CLI utility is cal command, cal command is available in most distributions. cal command displays current month by default with highlight on present day. It is included with bsdmainutils package which can be installed by using the command &#8211;</p>
+<pre>apt-get install bsdmainutils</pre>
+<p style="text-align: justify;">The simple cal command gives output of present month calendar with highlighted day.</p>
+<p style="text-align: justify;"><code>$ cal</code></p>
+<p><img class="size-full wp-image-430 aligncenter" src="https://techpiezo.com/wp-content/uploads/2019/06/cal-command.png" alt="cal-command" width="233" height="186" /></p>
+<p style="text-align: justify;">There is also a command ncal, which is is included as well but offers an alternative layout.</p>
+<p><code>$ ncal</code></p>
+<p><img class="size-full wp-image-431 aligncenter" src="https://techpiezo.com/wp-content/uploads/2019/06/ncal-command.png" alt="ncal-command" width="227" height="185" /></p>
+<p style="text-align: justify;">What is the difference between cal and ncal ?</p>
+<p style="text-align: justify;">While cal presents a week horizontally and ncal display a week in calendar as vertical, there is much more to it as well. cal command was present in AT&amp;T UNIX and ncal was used in FreeBSD. To keep compatibility with older Unix&#8217;s cal command, it would output 8 lines, as cal command was used in many CGI scripts.</p>
+<p style="text-align: justify;">Lets see some examples :</p>
+<p style="text-align: justify;">To Print for particular month and year<br />
+cal (month) (year)</p>
+<p style="text-align: justify;"><code>$ cal 6 2019</code></p>
+<p style="text-align: justify;">To Print the previous, current and next month surrounding today</p>
+<p style="text-align: justify;"><code>$ cal -3</code></p>
+<p style="text-align: justify;">To Print for a specific month<br />
+cal -m (month)</p>
+<p style="text-align: justify;"><code>$ cal -m 2</code></p>
+<p style="text-align: justify;">Remember :</p>
+<p>An unnoticed behaviour by user may lead to altering result in cal command, how you may ask?</p>
+<p style="text-align: justify;">If you were to display a calendar of month June of 2018, you may enter</p>
+<p style="text-align: justify;"><code>cal 6 2019</code></p>
+<p><img class="size-full wp-image-430 aligncenter" src="https://techpiezo.com/wp-content/uploads/2019/06/cal-command.png" alt="cal-command" width="233" height="186" /></p>
+<p>which is correct, however if you type,</p>
+<p><code>cal 6 19</code></p>
+<p><img class="size-full wp-image-432 aligncenter" src="https://techpiezo.com/wp-content/uploads/2019/06/cal-command-1.png" alt="cal-command-1" width="228" height="165" /></p>
+<p>it will display June from year 19 AD, so remember to READ THE MANUAL.</p>
+<p>Try <code>cal 9 1752</code>, Skipped 11 Days in calendar?</p>
+<p><img class="size-full wp-image-433 aligncenter" src="https://techpiezo.com/wp-content/uploads/2019/06/cal-9-1972.png" alt="cal-9-1972" width="231" height="114" /></p>
+<p>yes, that is due to Gregorian Reformation.</p>
+<p>Now lets try different utility, <code>gcal</code></p>
+<p>It can be install with &#8211;</p>
+<pre>apt-get install gcal</pre>
+<p>gcal is GNU utility, it can calculate astronomical data, displays eternal holiday lists for countries around the world, fixed date lists for reminders and many more.</p>
+<p>To print current month of year</p>
+<pre>gcal</pre>
+<p>To print previous, current and next month surrounding today</p>
+<pre>gcal .</pre>
+<p>To print month of year</p>
+<p>gcal (month) (year)</p>
+<pre>gcal 6 2019</pre>
+                    <div class="post-item-metadata entry-meta">
+                            </div>
+                
+	<nav class="navigation post-navigation" role="navigation">
+		<h2 class="screen-reader-text">Continue Reading</h2>
+		<div class="nav-links"><div class="nav-previous"><a href="https://techpiezo.com/tech-insights/tmp-on-ram/" rel="prev"><span class="em-post-navigation">Previous</span> /tmp on RAM</a></div></div>
+	</nav>            </div><!-- .entry-content -->
+
+
+                                </div>
+                                
+                                                            </article>
+                        
+                    </main><!-- #main -->
+                </div><!-- #primary -->
+                                <aside id="secondary" class="widget-area aft-sticky-sidebar">
+	<div id="covernews_posts_grid-4" class="widget covernews-widget covernews_Posts_Grid">
+
+            <div class="widget-block">
+                <div class="row">
+
+
+                    <div class="col-sm-6 full-plus-list">
+                                                    <h4 class="widget-title header-after1">
+                        <span class="header-after">
+                            Linux                            </span>
+                            </h4>
+                                                                        
+                                <div class="spotlight-post">
+                                    <figure class="categorised-article">
+                                        <div class="categorised-article-wrapper">
+                                            <div class="data-bg data-bg-hover data-bg-categorised"
+                                                 data-background="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Christopher-Gower-on-Unsplash.jpg"><a
+                                                        href="https://techpiezo.com/linux/update-upgrade-your-debian-distribution/"></a>
+
+                                            </div>
+                                        </div>
+                                    </figure>
+
+                                                                        <figcaption>
+                                        <div class="figure-categories figure-categories-bg">
+                                            <ul class="cat-links"><li class="meta-category">
+                             <a class="covernews-categories category-color-1" href="https://techpiezo.com/category/linux/" alt="View all posts in Linux"> 
+                                 Linux
+                             </a>
+                        </li><li class="meta-category">
+                             <a class="covernews-categories category-color-1" href="https://techpiezo.com/category/linux/linux-tutorials/" alt="View all posts in Tutorials"> 
+                                 Tutorials
+                             </a>
+                        </li></ul>                                        </div>
+                                        <h3 class="article-title article-title-1">
+                                            <a href="https://techpiezo.com/linux/update-upgrade-your-debian-distribution/">
+                                                Update/Upgrade your Debian distribution                                            </a>
+                                        </h3>
+                                        <div class="grid-item-metadata">
+                                            
+        <span class="author-links">
+                                </span>
+                                                </div>
+                                    </figcaption>
+                                </div>
+
+                            
+                                <div class="spotlight-post">
+                                    <figure class="categorised-article">
+                                        <div class="categorised-article-wrapper">
+                                            <div class="data-bg data-bg-hover data-bg-categorised"
+                                                 data-background="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Sara-Kurfeß-on-Unsplash.jpg"><a
+                                                        href="https://techpiezo.com/linux/create-a-bootable-usb-in-ubuntu/"></a>
+
+                                            </div>
+                                        </div>
+                                    </figure>
+
+                                                                        <figcaption>
+                                        <div class="figure-categories figure-categories-bg">
+                                            <ul class="cat-links"><li class="meta-category">
+                             <a class="covernews-categories category-color-1" href="https://techpiezo.com/category/linux/" alt="View all posts in Linux"> 
+                                 Linux
+                             </a>
+                        </li><li class="meta-category">
+                             <a class="covernews-categories category-color-1" href="https://techpiezo.com/category/linux/linux-tutorials/" alt="View all posts in Tutorials"> 
+                                 Tutorials
+                             </a>
+                        </li></ul>                                        </div>
+                                        <h3 class="article-title article-title-1">
+                                            <a href="https://techpiezo.com/linux/create-a-bootable-usb-in-ubuntu/">
+                                                Create a Bootable USB in Ubuntu                                            </a>
+                                        </h3>
+                                        <div class="grid-item-metadata">
+                                            
+        <span class="author-links">
+                                </span>
+                                                </div>
+                                    </figcaption>
+                                </div>
+
+                            
+                                <div class="spotlight-post">
+                                    <figure class="categorised-article">
+                                        <div class="categorised-article-wrapper">
+                                            <div class="data-bg data-bg-hover data-bg-categorised"
+                                                 data-background="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Christopher-Gower-on-Unsplash.jpg"><a
+                                                        href="https://techpiezo.com/linux/install-clamav-antivirus-on-ubuntu/"></a>
+
+                                            </div>
+                                        </div>
+                                    </figure>
+
+                                                                        <figcaption>
+                                        <div class="figure-categories figure-categories-bg">
+                                            <ul class="cat-links"><li class="meta-category">
+                             <a class="covernews-categories category-color-1" href="https://techpiezo.com/category/linux/" alt="View all posts in Linux"> 
+                                 Linux
+                             </a>
+                        </li><li class="meta-category">
+                             <a class="covernews-categories category-color-1" href="https://techpiezo.com/category/linux/linux-tutorials/" alt="View all posts in Tutorials"> 
+                                 Tutorials
+                             </a>
+                        </li></ul>                                        </div>
+                                        <h3 class="article-title article-title-1">
+                                            <a href="https://techpiezo.com/linux/install-clamav-antivirus-on-ubuntu/">
+                                                Install ClamAV Antivirus on Ubuntu                                            </a>
+                                        </h3>
+                                        <div class="grid-item-metadata">
+                                            
+        <span class="author-links">
+                                </span>
+                                                </div>
+                                    </figcaption>
+                                </div>
+
+                            
+                                <div class="spotlight-post">
+                                    <figure class="categorised-article">
+                                        <div class="categorised-article-wrapper">
+                                            <div class="data-bg data-bg-hover data-bg-categorised"
+                                                 data-background="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Debby-Hudson-on-Unsplash.jpg"><a
+                                                        href="https://techpiezo.com/linux/best-antivirus-tools-for-ubuntu-linux-distributions/"></a>
+
+                                            </div>
+                                        </div>
+                                    </figure>
+
+                                                                        <figcaption>
+                                        <div class="figure-categories figure-categories-bg">
+                                            <ul class="cat-links"><li class="meta-category">
+                             <a class="covernews-categories category-color-1" href="https://techpiezo.com/category/linux/" alt="View all posts in Linux"> 
+                                 Linux
+                             </a>
+                        </li><li class="meta-category">
+                             <a class="covernews-categories category-color-1" href="https://techpiezo.com/category/linux/linux-tutorials/" alt="View all posts in Tutorials"> 
+                                 Tutorials
+                             </a>
+                        </li></ul>                                        </div>
+                                        <h3 class="article-title article-title-1">
+                                            <a href="https://techpiezo.com/linux/best-antivirus-tools-for-ubuntu-linux-distributions/">
+                                                Best Antivirus tools for Ubuntu/Linux Distributions                                            </a>
+                                        </h3>
+                                        <div class="grid-item-metadata">
+                                            
+        <span class="author-links">
+                                </span>
+                                                </div>
+                                    </figcaption>
+                                </div>
+
+                                                                        </div>
+
+                    <div class="col-sm-6 list">
+                                                    <h4 class="widget-title header-after1">
+                        <span class="header-after">
+                            WordPress                            </span>
+                            </h4>
+                                                                        
+                                <div class="spotlight-post">
+                                    <figure class="categorised-article">
+                                        <div class="categorised-article-wrapper">
+                                            <div class="data-bg data-bg-hover data-bg-categorised"
+                                                 data-background="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Daniel-Fazio-on-Unsplash.jpg"><a
+                                                        href="https://techpiezo.com/wordpress/how-to-install-wordpress-on-windows-10-using-xampp/"></a>
+
+                                            </div>
+                                        </div>
+                                    </figure>
+                                                                        <figcaption>
+                                        <div class="figure-categories figure-categories-bg">
+
+                                            <ul class="cat-links"><li class="meta-category">
+                             <a class="covernews-categories category-color-1" href="https://techpiezo.com/category/wordpress/" alt="View all posts in Wordpress"> 
+                                 Wordpress
+                             </a>
+                        </li></ul>                                        </div>
+                                        <h3 class="article-title article-title-1">
+                                            <a href="https://techpiezo.com/wordpress/how-to-install-wordpress-on-windows-10-using-xampp/">
+                                                Install WordPress on Windows 10 using XAMPP                                            </a>
+                                        </h3>
+                                        <div class="grid-item-metadata">
+                                            
+        <span class="author-links">
+                                </span>
+                                                </div>
+                                    </figcaption>
+                                </div>
+
+                                
+                                <div class="spotlight-post">
+                                    <figure class="categorised-article">
+                                        <div class="categorised-article-wrapper">
+                                            <div class="data-bg data-bg-hover data-bg-categorised"
+                                                 data-background="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Joanna-Kosinska-on-Unsplash-1.jpg"><a
+                                                        href="https://techpiezo.com/wordpress/how-to-install-wordpress-on-ubuntu-19-04/"></a>
+
+                                            </div>
+                                        </div>
+                                    </figure>
+                                                                        <figcaption>
+                                        <div class="figure-categories figure-categories-bg">
+
+                                            <ul class="cat-links"><li class="meta-category">
+                             <a class="covernews-categories category-color-1" href="https://techpiezo.com/category/wordpress/" alt="View all posts in Wordpress"> 
+                                 Wordpress
+                             </a>
+                        </li></ul>                                        </div>
+                                        <h3 class="article-title article-title-1">
+                                            <a href="https://techpiezo.com/wordpress/how-to-install-wordpress-on-ubuntu-19-04/">
+                                                Install WordPress on Ubuntu 19.04                                            </a>
+                                        </h3>
+                                        <div class="grid-item-metadata">
+                                            
+        <span class="author-links">
+                                </span>
+                                                </div>
+                                    </figcaption>
+                                </div>
+
+                                
+                                <div class="spotlight-post">
+                                    <figure class="categorised-article">
+                                        <div class="categorised-article-wrapper">
+                                            <div class="data-bg data-bg-hover data-bg-categorised"
+                                                 data-background="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Sergi-Kabrera-on-Unsplash.jpg"><a
+                                                        href="https://techpiezo.com/wordpress/difference-between-wordpress-com-and-wordpress-org/"></a>
+
+                                            </div>
+                                        </div>
+                                    </figure>
+                                                                        <figcaption>
+                                        <div class="figure-categories figure-categories-bg">
+
+                                            <ul class="cat-links"><li class="meta-category">
+                             <a class="covernews-categories category-color-1" href="https://techpiezo.com/category/wordpress/" alt="View all posts in Wordpress"> 
+                                 Wordpress
+                             </a>
+                        </li></ul>                                        </div>
+                                        <h3 class="article-title article-title-1">
+                                            <a href="https://techpiezo.com/wordpress/difference-between-wordpress-com-and-wordpress-org/">
+                                                Difference between WordPress.com and WordPress.org                                            </a>
+                                        </h3>
+                                        <div class="grid-item-metadata">
+                                            
+        <span class="author-links">
+                                </span>
+                                                </div>
+                                    </figcaption>
+                                </div>
+
+                                
+                                <div class="spotlight-post">
+                                    <figure class="categorised-article">
+                                        <div class="categorised-article-wrapper">
+                                            <div class="data-bg data-bg-hover data-bg-categorised"
+                                                 data-background="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Markus-Spiske-on-Unsplash.jpg"><a
+                                                        href="https://techpiezo.com/wordpress/introduction-to-wordpress-cms/"></a>
+
+                                            </div>
+                                        </div>
+                                    </figure>
+                                                                        <figcaption>
+                                        <div class="figure-categories figure-categories-bg">
+
+                                            <ul class="cat-links"><li class="meta-category">
+                             <a class="covernews-categories category-color-1" href="https://techpiezo.com/category/wordpress/" alt="View all posts in Wordpress"> 
+                                 Wordpress
+                             </a>
+                        </li></ul>                                        </div>
+                                        <h3 class="article-title article-title-1">
+                                            <a href="https://techpiezo.com/wordpress/introduction-to-wordpress-cms/">
+                                                Introduction to WordPress &#8211; CMS                                            </a>
+                                        </h3>
+                                        <div class="grid-item-metadata">
+                                            
+        <span class="author-links">
+                                </span>
+                                                </div>
+                                    </figcaption>
+                                </div>
+
+                                                                            </div>
+                </div>
+            </div>
+
+            </div></aside><!-- #secondary -->
+            </div>
+
+
+</div>
+
+<div class="af-main-banner-latest-posts grid-layout">
+    <div class="container">
+        <div class="row">
+
+    <div class="widget-title-section">
+                    <h4 class="widget-title header-after1">
+                        <span class="header-after">
+                            You may have missed                            </span>
+            </h4>
+        
+    </div>
+    <div class="row">
+                <div class="col-sm-15 latest-posts-grid" data-mh="latest-posts-grid">
+                <div class="spotlight-post">
+                    <figure class="categorised-article inside-img">
+                        <div class="categorised-article-wrapper">
+                            <div class="data-bg data-bg-hover data-bg-categorised"
+                                 data-background="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Christopher-Gower-on-Unsplash.jpg">
+                                <a href="https://techpiezo.com/linux/update-upgrade-your-debian-distribution/"></a>
+                            </div>
+                        </div>
+                                                <div class="figure-categories figure-categories-bg">
+                            
+                            <ul class="cat-links"><li class="meta-category">
+                             <a class="covernews-categories category-color-1" href="https://techpiezo.com/category/linux/" alt="View all posts in Linux"> 
+                                 Linux
+                             </a>
+                        </li><li class="meta-category">
+                             <a class="covernews-categories category-color-1" href="https://techpiezo.com/category/linux/linux-tutorials/" alt="View all posts in Tutorials"> 
+                                 Tutorials
+                             </a>
+                        </li></ul>                        </div>
+                    </figure>
+
+                    <figcaption>
+                        
+                        <h3 class="article-title article-title-1">
+                            <a href="https://techpiezo.com/linux/update-upgrade-your-debian-distribution/">
+                                Update/Upgrade your Debian distribution                            </a>
+                        </h3>
+                        <div class="grid-item-metadata">
+                            
+        <span class="author-links">
+                                </span>
+                                </div>
+                    </figcaption>
+                </div>
+            </div>
+                    <div class="col-sm-15 latest-posts-grid" data-mh="latest-posts-grid">
+                <div class="spotlight-post">
+                    <figure class="categorised-article inside-img">
+                        <div class="categorised-article-wrapper">
+                            <div class="data-bg data-bg-hover data-bg-categorised"
+                                 data-background="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-William-Iven-on-Unsplash.jpg">
+                                <a href="https://techpiezo.com/tech-insights/command-line-calendar-on-debian-linux/"></a>
+                            </div>
+                        </div>
+                                                <div class="figure-categories figure-categories-bg">
+                            
+                            <ul class="cat-links"><li class="meta-category">
+                             <a class="covernews-categories category-color-1" href="https://techpiezo.com/category/tech-insights/" alt="View all posts in Insights"> 
+                                 Insights
+                             </a>
+                        </li></ul>                        </div>
+                    </figure>
+
+                    <figcaption>
+                        
+                        <h3 class="article-title article-title-1">
+                            <a href="https://techpiezo.com/tech-insights/command-line-calendar-on-debian-linux/">
+                                Command line Calendar utilities on Debian/Linux                            </a>
+                        </h3>
+                        <div class="grid-item-metadata">
+                            
+        <span class="author-links">
+                                </span>
+                                </div>
+                    </figcaption>
+                </div>
+            </div>
+                    <div class="col-sm-15 latest-posts-grid" data-mh="latest-posts-grid">
+                <div class="spotlight-post">
+                    <figure class="categorised-article inside-img">
+                        <div class="categorised-article-wrapper">
+                            <div class="data-bg data-bg-hover data-bg-categorised"
+                                 data-background="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Sara-Kurfeß-on-Unsplash.jpg">
+                                <a href="https://techpiezo.com/linux/create-a-bootable-usb-in-ubuntu/"></a>
+                            </div>
+                        </div>
+                                                <div class="figure-categories figure-categories-bg">
+                            
+                            <ul class="cat-links"><li class="meta-category">
+                             <a class="covernews-categories category-color-1" href="https://techpiezo.com/category/linux/" alt="View all posts in Linux"> 
+                                 Linux
+                             </a>
+                        </li><li class="meta-category">
+                             <a class="covernews-categories category-color-1" href="https://techpiezo.com/category/linux/linux-tutorials/" alt="View all posts in Tutorials"> 
+                                 Tutorials
+                             </a>
+                        </li></ul>                        </div>
+                    </figure>
+
+                    <figcaption>
+                        
+                        <h3 class="article-title article-title-1">
+                            <a href="https://techpiezo.com/linux/create-a-bootable-usb-in-ubuntu/">
+                                Create a Bootable USB in Ubuntu                            </a>
+                        </h3>
+                        <div class="grid-item-metadata">
+                            
+        <span class="author-links">
+                                </span>
+                                </div>
+                    </figcaption>
+                </div>
+            </div>
+                    <div class="col-sm-15 latest-posts-grid" data-mh="latest-posts-grid">
+                <div class="spotlight-post">
+                    <figure class="categorised-article inside-img">
+                        <div class="categorised-article-wrapper">
+                            <div class="data-bg data-bg-hover data-bg-categorised"
+                                 data-background="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Christopher-Gower-on-Unsplash.jpg">
+                                <a href="https://techpiezo.com/linux/install-clamav-antivirus-on-ubuntu/"></a>
+                            </div>
+                        </div>
+                                                <div class="figure-categories figure-categories-bg">
+                            
+                            <ul class="cat-links"><li class="meta-category">
+                             <a class="covernews-categories category-color-1" href="https://techpiezo.com/category/linux/" alt="View all posts in Linux"> 
+                                 Linux
+                             </a>
+                        </li><li class="meta-category">
+                             <a class="covernews-categories category-color-1" href="https://techpiezo.com/category/linux/linux-tutorials/" alt="View all posts in Tutorials"> 
+                                 Tutorials
+                             </a>
+                        </li></ul>                        </div>
+                    </figure>
+
+                    <figcaption>
+                        
+                        <h3 class="article-title article-title-1">
+                            <a href="https://techpiezo.com/linux/install-clamav-antivirus-on-ubuntu/">
+                                Install ClamAV Antivirus on Ubuntu                            </a>
+                        </h3>
+                        <div class="grid-item-metadata">
+                            
+        <span class="author-links">
+                                </span>
+                                </div>
+                    </figcaption>
+                </div>
+            </div>
+                    <div class="col-sm-15 latest-posts-grid" data-mh="latest-posts-grid">
+                <div class="spotlight-post">
+                    <figure class="categorised-article inside-img">
+                        <div class="categorised-article-wrapper">
+                            <div class="data-bg data-bg-hover data-bg-categorised"
+                                 data-background="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Debby-Hudson-on-Unsplash.jpg">
+                                <a href="https://techpiezo.com/linux/best-antivirus-tools-for-ubuntu-linux-distributions/"></a>
+                            </div>
+                        </div>
+                                                <div class="figure-categories figure-categories-bg">
+                            
+                            <ul class="cat-links"><li class="meta-category">
+                             <a class="covernews-categories category-color-1" href="https://techpiezo.com/category/linux/" alt="View all posts in Linux"> 
+                                 Linux
+                             </a>
+                        </li><li class="meta-category">
+                             <a class="covernews-categories category-color-1" href="https://techpiezo.com/category/linux/linux-tutorials/" alt="View all posts in Tutorials"> 
+                                 Tutorials
+                             </a>
+                        </li></ul>                        </div>
+                    </figure>
+
+                    <figcaption>
+                        
+                        <h3 class="article-title article-title-1">
+                            <a href="https://techpiezo.com/linux/best-antivirus-tools-for-ubuntu-linux-distributions/">
+                                Best Antivirus tools for Ubuntu/Linux Distributions                            </a>
+                        </h3>
+                        <div class="grid-item-metadata">
+                            
+        <span class="author-links">
+                                </span>
+                                </div>
+                    </figcaption>
+                </div>
+            </div>
+                </div>
+    </div>
+    </div>
+</div>
+
+<footer class="site-footer">
+        
+            <div class="secondary-footer">
+        <div class="container">
+            <div class="row">
+                                    <div class="col-sm-12">
+                        <div class="footer-nav-wrapper">
+                        <div class="footer-navigation"><ul id="footer-menu" class="menu"><li id="menu-item-55" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-55"><a href="https://techpiezo.com/about-us/">About Us</a></li>
+<li id="menu-item-56" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-56"><a href="https://techpiezo.com/terms/">Terms</a></li>
+<li id="menu-item-57" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-57"><a href="https://techpiezo.com/privacy-policy/">Privacy Policy</a></li>
+<li id="menu-item-58" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58"><a href="https://techpiezo.com/contact/">Contact</a></li>
+</ul></div>                        </div>
+                    </div>
+                                                </div>
+        </div>
+    </div>
+            <div class="site-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                                                                Copyright &copy; All rights reserved.                                                                                    <span class="sep"> | </span>
+                        <a href="https://afthemes.com/covernews">CoverNews</a> by AF themes.                                    </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+<a id="scroll-up" class="secondary-color">
+    <i class="fa fa-angle-up"></i>
+</a>
+<script type='text/javascript' src='https://techpiezo.com/wp-content/themes/covernews/js/navigation.js'></script>
+<script type='text/javascript' src='https://techpiezo.com/wp-content/themes/covernews/js/skip-link-focus-fix.js'></script>
+<script type='text/javascript' src='https://techpiezo.com/wp-content/themes/covernews/assets/slick/js/slick.min.js'></script>
+<script type='text/javascript' src='https://techpiezo.com/wp-content/themes/covernews/assets/bootstrap/js/bootstrap.min.js'></script>
+<script type='text/javascript' src='https://techpiezo.com/wp-content/themes/covernews/assets/jquery-match-height/jquery.matchHeight.min.js'></script>
+<script type='text/javascript' src='https://techpiezo.com/wp-content/themes/covernews/assets/marquee/jquery.marquee.js'></script>
+<script type='text/javascript' src='https://techpiezo.com/wp-content/themes/covernews/assets/theiaStickySidebar/theia-sticky-sidebar.min.js'></script>
+<script type='text/javascript' src='https://techpiezo.com/wp-content/themes/covernews/assets/script.js'></script>
+<script type='text/javascript' src='https://techpiezo.com/wp-content/themes/covernews/assets/fixed-header-script.js'></script>
+<script type='text/javascript' src='https://techpiezo.com/wp-includes/js/wp-embed.min.js'></script>
+
+</body>
+</html>
