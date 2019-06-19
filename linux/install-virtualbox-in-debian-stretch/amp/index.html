@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Command line Calendar utilities on Debian/Linux - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/tech-insights/command-line-calendar-on-debian-linux/" />
+		<title>Install VirtualBox in Debian Stretch - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/linux/install-virtualbox-in-debian-stretch/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -409,7 +409,7 @@ amp-carousel > amp-img > img {
 	right: 16px;
 }
 		/* Inline stylesheets */
-:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}	</style>
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cdd8ca0{text-align:center}	</style>
 </head>
 
 <body class="">
@@ -426,68 +426,48 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Command line Calendar utilities on Debian/Linux</h1>
+		<h1 class="amp-wp-title">Install VirtualBox in Debian Stretch</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-06-18T16:28:03+00:00">
-		1 day ago	</time>
+	<time datetime="2019-06-19T17:25:11+00:00">
+		37 mins ago	</time>
 </div>
 	</header>
 
 	<figure class="amp-wp-article-featured-image wp-caption">
-	<amp-img width="640" height="425" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-William-Iven-on-Unsplash.jpg" class="attachment-large size-large wp-post-image amp-wp-enforced-sizes" alt="" layout="intrinsic"></amp-img>			<p class="wp-caption-text">
-			Photo by William Iven on Unsplash		</p>
+	<amp-img width="640" height="427" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Ilya-Pavlov-on-Unsplash.jpg" class="attachment-large size-large wp-post-image amp-wp-enforced-sizes" alt="" layout="intrinsic"></amp-img>			<p class="wp-caption-text">
+			Photo by Ilya Pavlov on Unsplash		</p>
 	</figure>
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">Linux distributions provides simple and useful utilities through command line. Calendar in GNU/Linux might seem like novelty, however mastering the tool may be helpful.</p>
-<p class="amp-wp-7d27179">There are many command line interface (CLI) utilities for calendar.</p>
-<p class="amp-wp-7d27179">First CLI utility is cal command, cal command is available in most distributions. cal command displays current month by default with highlight on present day. It is included with bsdmainutils package which can be installed by using the command –</p>
-<pre>apt-get install bsdmainutils</pre>
-<p class="amp-wp-7d27179">The simple cal command gives output of present month calendar with highlighted day.</p>
-<p class="amp-wp-7d27179"><code>$ cal</code></p>
-<p><amp-img class="size-full wp-image-430 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/06/cal-command.png" alt="cal-command" width="233" height="186" layout="intrinsic"></amp-img></p>
-<p class="amp-wp-7d27179">There is also a command ncal, which is is included as well but offers an alternative layout.</p>
-<p><code>$ ncal</code></p>
-<p><amp-img class="size-full wp-image-431 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/06/ncal-command.png" alt="ncal-command" width="227" height="185" layout="intrinsic"></amp-img></p>
-<p class="amp-wp-7d27179">What is the difference between cal and ncal ?</p>
-<p class="amp-wp-7d27179">While cal presents a week horizontally and ncal display a week in calendar as vertical, there is much more to it as well. cal command was present in AT&amp;T UNIX and ncal was used in FreeBSD. To keep compatibility with older Unix’s cal command, it would output 8 lines, as cal command was used in many CGI scripts.</p>
-<p class="amp-wp-7d27179">Lets see some examples :</p>
-<p class="amp-wp-7d27179">To Print for particular month and year<br>
-cal (month) (year)</p>
-<p class="amp-wp-7d27179"><code>$ cal 6 2019</code></p>
-<p class="amp-wp-7d27179">To Print the previous, current and next month surrounding today</p>
-<p class="amp-wp-7d27179"><code>$ cal -3</code></p>
-<p class="amp-wp-7d27179">To Print for a specific month<br>
-cal -m (month)</p>
-<p class="amp-wp-7d27179"><code>$ cal -m 2</code></p>
-<p class="amp-wp-7d27179">Remember :</p>
-<p>An unnoticed behaviour by user may lead to altering result in cal command, how you may ask?</p>
-<p class="amp-wp-7d27179">If you were to display a calendar of month June of 2018, you may enter</p>
-<p class="amp-wp-7d27179"><code>cal 6 2019</code></p>
-<p><amp-img class="size-full wp-image-430 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/06/cal-command.png" alt="cal-command" width="233" height="186" layout="intrinsic"></amp-img></p>
-<p>which is correct, however if you type,</p>
-<p><code>cal 6 19</code></p>
-<p><amp-img class="size-full wp-image-432 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/06/cal-command-1.png" alt="cal-command-1" width="228" height="165" layout="intrinsic"></amp-img></p>
-<p>it will display June from year 19 AD, so remember to READ THE MANUAL.</p>
-<p>Try <code>cal 9 1752</code>, Skipped 11 Days in calendar?</p>
-<p><amp-img class="size-full wp-image-433 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/06/cal-9-1972.png" alt="cal-9-1972" width="231" height="114" layout="intrinsic"></amp-img></p>
-<p>yes, that is due to Gregorian Reformation.</p>
-<p>Now lets try different utility, <code>gcal</code></p>
-<p>It can be install with –</p>
-<pre>apt-get install gcal</pre>
-<p>gcal is GNU utility, it can calculate astronomical data, displays eternal holiday lists for countries around the world, fixed date lists for reminders and many more.</p>
-<p>To print current month of year</p>
-<pre>gcal</pre>
-<p>To print previous, current and next month surrounding today</p>
-<pre>gcal .</pre>
-<p>To print month of year</p>
-<p>gcal (month) (year)</p>
-<pre>gcal 6 2019</pre>
+		<p class="amp-wp-7d27179">VirtualBox is a free and open-source virtualization product developed by Oracle Corporation. It was first released on January 17, 2017. Through VirtualBox we can create Virtual Machines, which could be run in our host operating systems. Apart from that, we can use VirtualBox extension packs for extra functionality like for USB devices, Remote desktop protocol support, Webcam support, PXE boot ROM etc. To improve user experience and other related features VirtualBox Guest Additions are provided as well.</p>
+<h3 class="amp-wp-cdd8ca0">Benefits of using a Virtual Machine</h3>
+<ol><li class="amp-wp-7d27179"><strong>For testing purposes</strong>: If we are testing a product on our main Operating system. And, if something goes wrong then we could get a broken Operating system. There are two options available to us then, either we fix or reinstall it. To save the effort, we can use Virtual Machines. In that scenario, only our Virtual Machines are affected and that too could be fixed in few seconds if we have already taken its screenshots.</li>
+<li class="amp-wp-7d27179"><strong>Run Multiple Operating Systems</strong>: We could run multiple operating systems at a time using Virtual Machines. Also, it could be possible that there may be certain operating systems that may not be supported by our hardware. We can also run those operating systems through Virtual Machines.</li>
+<li class="amp-wp-7d27179"><strong>Reduces costs on Infrastructure</strong>: We do not have to purchase separate hardware for running multiple operating systems. We could do tasks using operating systems installed on Virtual Machines and that in turn would help us reduce costs in infrastructure expenses.</li>
+</ol><h3 class="amp-wp-cdd8ca0">Install VirtualBox in Debian Stretch</h3>
+<p class="amp-wp-7d27179"><strong>1.</strong> First of all, open terminal and login as root/superuser by:</p>
+<pre>su -l</pre>
+<p class="amp-wp-7d27179">if you don’t have the privileges then contact your system administrator.</p>
+<p class="amp-wp-7d27179"><strong>2.</strong> Next, add VirtualBox repository to the file <code>/etc/apt/sources.list</code> by using a text editor:</p>
+<pre>nano /etc/apt/sources.list</pre>
+<p class="amp-wp-7d27179">Add the following entry in the file –</p>
+<pre>deb http://download.virtualbox.org/virtualbox/debian stretch contrib</pre>
+<p class="amp-wp-7d27179"><strong>3.</strong> Then, we will have to add the VirtualBox public key:</p>
+<pre>cd /dev/shm
+
+wget https://www.virtualbox.org/download/oracle_vbox_2016.asc
+
+apt-key add oracle_vbox_2016.asc</pre>
+<p class="amp-wp-7d27179"><strong>4.</strong> Once, done update the repositories by issuing the following command:</p>
+<pre>apt update</pre>
+<p class="amp-wp-7d27179"><strong>5.</strong> Lastly, install VirtualBox:</p>
+<pre>apt install virtualbox-6.0</pre>
+<p class="amp-wp-7d27179">Hence, we have discussed how to install VirtualBox in Debian stretch, which is the latest stable release at the time of writing the article.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
 			<div class="amp-wp-meta amp-wp-tax-category">
-		Categories: <a href="https://techpiezo.com/category/tech-insights/" rel="category tag">Insights</a>	</div>
+		Categories: <a href="https://techpiezo.com/category/linux/" rel="category tag">Linux</a>, <a href="https://techpiezo.com/category/linux/linux-tutorials/" rel="category tag">Tutorials</a>	</div>
 
 	</footer>
 </article>

@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Command line Calendar utilities on Debian/Linux - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/tech-insights/command-line-calendar-on-debian-linux/" />
+		<title>Raw vs Qcow2 Disk Images in QEMU/KVM - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/tech-insights/raw-vs-qcow2-disk-images-in-qemu-kvm/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -409,7 +409,7 @@ amp-carousel > amp-img > img {
 	right: 16px;
 }
 		/* Inline stylesheets */
-:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}	</style>
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cdd8ca0{text-align:center}	</style>
 </head>
 
 <body class="">
@@ -426,63 +426,63 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Command line Calendar utilities on Debian/Linux</h1>
+		<h1 class="amp-wp-title">Raw vs Qcow2 Disk Images in QEMU/KVM</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-06-18T16:28:03+00:00">
-		1 day ago	</time>
+	<time datetime="2019-06-19T18:00:50+00:00">
+		1 min ago	</time>
 </div>
 	</header>
 
 	<figure class="amp-wp-article-featured-image wp-caption">
-	<amp-img width="640" height="425" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-William-Iven-on-Unsplash.jpg" class="attachment-large size-large wp-post-image amp-wp-enforced-sizes" alt="" layout="intrinsic"></amp-img>			<p class="wp-caption-text">
-			Photo by William Iven on Unsplash		</p>
+	<amp-img width="640" height="427" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Patrick-Lindenberg-on-Unsplash.jpg" class="attachment-large size-large wp-post-image amp-wp-enforced-sizes" alt="" layout="intrinsic"></amp-img>			<p class="wp-caption-text">
+			Photo by Patrick Lindenberg on Unsplash		</p>
 	</figure>
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">Linux distributions provides simple and useful utilities through command line. Calendar in GNU/Linux might seem like novelty, however mastering the tool may be helpful.</p>
-<p class="amp-wp-7d27179">There are many command line interface (CLI) utilities for calendar.</p>
-<p class="amp-wp-7d27179">First CLI utility is cal command, cal command is available in most distributions. cal command displays current month by default with highlight on present day. It is included with bsdmainutils package which can be installed by using the command –</p>
-<pre>apt-get install bsdmainutils</pre>
-<p class="amp-wp-7d27179">The simple cal command gives output of present month calendar with highlighted day.</p>
-<p class="amp-wp-7d27179"><code>$ cal</code></p>
-<p><amp-img class="size-full wp-image-430 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/06/cal-command.png" alt="cal-command" width="233" height="186" layout="intrinsic"></amp-img></p>
-<p class="amp-wp-7d27179">There is also a command ncal, which is is included as well but offers an alternative layout.</p>
-<p><code>$ ncal</code></p>
-<p><amp-img class="size-full wp-image-431 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/06/ncal-command.png" alt="ncal-command" width="227" height="185" layout="intrinsic"></amp-img></p>
-<p class="amp-wp-7d27179">What is the difference between cal and ncal ?</p>
-<p class="amp-wp-7d27179">While cal presents a week horizontally and ncal display a week in calendar as vertical, there is much more to it as well. cal command was present in AT&amp;T UNIX and ncal was used in FreeBSD. To keep compatibility with older Unix’s cal command, it would output 8 lines, as cal command was used in many CGI scripts.</p>
-<p class="amp-wp-7d27179">Lets see some examples :</p>
-<p class="amp-wp-7d27179">To Print for particular month and year<br>
-cal (month) (year)</p>
-<p class="amp-wp-7d27179"><code>$ cal 6 2019</code></p>
-<p class="amp-wp-7d27179">To Print the previous, current and next month surrounding today</p>
-<p class="amp-wp-7d27179"><code>$ cal -3</code></p>
-<p class="amp-wp-7d27179">To Print for a specific month<br>
-cal -m (month)</p>
-<p class="amp-wp-7d27179"><code>$ cal -m 2</code></p>
-<p class="amp-wp-7d27179">Remember :</p>
-<p>An unnoticed behaviour by user may lead to altering result in cal command, how you may ask?</p>
-<p class="amp-wp-7d27179">If you were to display a calendar of month June of 2018, you may enter</p>
-<p class="amp-wp-7d27179"><code>cal 6 2019</code></p>
-<p><amp-img class="size-full wp-image-430 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/06/cal-command.png" alt="cal-command" width="233" height="186" layout="intrinsic"></amp-img></p>
-<p>which is correct, however if you type,</p>
-<p><code>cal 6 19</code></p>
-<p><amp-img class="size-full wp-image-432 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/06/cal-command-1.png" alt="cal-command-1" width="228" height="165" layout="intrinsic"></amp-img></p>
-<p>it will display June from year 19 AD, so remember to READ THE MANUAL.</p>
-<p>Try <code>cal 9 1752</code>, Skipped 11 Days in calendar?</p>
-<p><amp-img class="size-full wp-image-433 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/06/cal-9-1972.png" alt="cal-9-1972" width="231" height="114" layout="intrinsic"></amp-img></p>
-<p>yes, that is due to Gregorian Reformation.</p>
-<p>Now lets try different utility, <code>gcal</code></p>
-<p>It can be install with –</p>
-<pre>apt-get install gcal</pre>
-<p>gcal is GNU utility, it can calculate astronomical data, displays eternal holiday lists for countries around the world, fixed date lists for reminders and many more.</p>
-<p>To print current month of year</p>
-<pre>gcal</pre>
-<p>To print previous, current and next month surrounding today</p>
-<pre>gcal .</pre>
-<p>To print month of year</p>
-<p>gcal (month) (year)</p>
-<pre>gcal 6 2019</pre>
+		<p class="amp-wp-7d27179">One of the important part of virtualization is storage. Storage allows virtualized environment to read and write data over variety of different methods. Disk Image is widely popular method of storage in virtualization.</p>
+<p class="amp-wp-7d27179">A disk image in virtualization represents a block of data on hard disk, however for a virtualized environment, it will be a virtual disk. This method of storage is known as File-based storage.</p>
+<p class="amp-wp-7d27179">Qemu/KVM provides support for different image formats. The two major disk image formats that are widely recommended and used are raw and qcow2. Lets understand what they are and their differences.</p>
+<h3 class="amp-wp-cdd8ca0">RAW Disk Images</h3>
+<p class="amp-wp-7d27179">Raw disk image format is default format in Qemu.</p>
+<p><strong>Pros of using RAW Disk Images:</strong></p>
+<ol><li>Simple and can be easily portable to any other machine.</li>
+<li>It represents default binary format of a hard disk.</li>
+<li>Nearly raw performance then other formats, as it has very little overhead and no metadata.</li>
+<li>Only data written will occupy space, rest of space will be filled with zeros, as it is a sparse file.</li>
+</ol><p><strong>Cons of using RAW Disk Images:</strong></p>
+<ol><li class="amp-wp-7d27179">Does not have other features like compression, AES encryption and snapshot.</li>
+<li class="amp-wp-7d27179">Backup requires full disk-up, as no incremental back-up.</li>
+<li class="amp-wp-7d27179">Deleted files still occupy space and have to be removed.</li>
+</ol><p class="amp-wp-7d27179">
+<strong>Implementation</strong></p>
+<pre class="amp-wp-7d27179">qemu-img create -f raw /var/lib/libvirt/images/sample1.img 5G</pre>
+<p class="amp-wp-7d27179"><strong>For Preallocating size</strong></p>
+<pre class="amp-wp-7d27179">qemu-img create -f raw -o preallocation=full /var/lib/libvirt/images/sample1.img 5G</pre>
+<p class="amp-wp-7d27179"><strong>To verify</strong></p>
+<pre class="amp-wp-7d27179">qemu-img info /var/lib/libvirt/images/sample1.img</pre>
+<h3 class="amp-wp-cdd8ca0">qcow2 Disk Images</h3>
+<p class="amp-wp-7d27179">qcow2 is copy on write image disk, where file is composed of constant size units called clusters. A cluster holds both data as well as image metadata.</p>
+<p class="amp-wp-7d27179"><strong>Pros of using qcow2 Disk Images:</strong></p>
+<ol><li class="amp-wp-7d27179">Smaller images are produced, as no sparse file.</li>
+<li class="amp-wp-7d27179">It provides zlib based compression.</li>
+<li class="amp-wp-7d27179">For data security, AES encryption can be used to protect disk image.</li>
+<li class="amp-wp-7d27179">Multiple Virtual Machine snapshots are offered, as incremental back-up.</li>
+<li class="amp-wp-7d27179">Small Cluster Size improve image file size, and larger can be used for better performance.</li>
+<li class="amp-wp-7d27179">Larger Preallocation increases performance as image size increases to grow.</li>
+</ol><p class="amp-wp-7d27179"><strong>Cons of using qcow2 Disk Images:</strong>:</p>
+<ol><li class="amp-wp-7d27179">Very slight performance loss in comparison to raw disk image, due to metadata, compression and encryption.</li>
+<li class="amp-wp-7d27179">One needs to use fstrim to trim image file, as deleted files does increases image size.</li>
+</ol><p class="amp-wp-7d27179"><strong>Implementation</strong></p>
+<pre class="amp-wp-7d27179">qemu-img create -f qcow2 /var/lib/libvirt/images/sample1.qcow2 5G</pre>
+<p class="amp-wp-7d27179"><strong>For Cluster size image of 2M</strong></p>
+<pre class="amp-wp-7d27179">qemu-img create -f qcow2 -o cluster_size=2M /var/lib/libvirt/images/sample1.qcow2 5G
+
+<strong>For Preallocated size</strong></pre>
+<pre class="amp-wp-7d27179">qemu-img create -f qcow2 -o preallocation=full /var/lib/libvirt/images/sample1.qcow2 5G</pre>
+<p class="amp-wp-7d27179"><strong>To verify</strong></p>
+<pre class="amp-wp-7d27179">qemu-img info /var/lib/libvirt/images/sample1.qcow2</pre>
+<p class="amp-wp-7d27179">
+In Conclusion, Raw and Qcow2 have both advantages and disadvantages, while raw offers pure performance but qcow2 offers practical and useful features, in the end use of image format comes down to use case scenario.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
