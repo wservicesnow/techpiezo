@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
 <!-- generated-on="July 3, 2019 1:19 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
-		<loc>https://techpiezo.com/</loc>
+		<loc>https://techpiezo.com/linux/managing-users-and-groups-in-ubuntu/</loc>
 		<lastmod>2019-07-03T13:18:20+00:00</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1.0</priority>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: ec4d1c44c4456bc32c5c2a803b913c05; Queries for sitemap: 3; Total queries: 13; Seconds: 0; Memory for sitemap: 0MB; Total memory: 2MB -->
+</urlset><!-- Request ID: 252d5346a4988fab879d85d64092559c; Queries for sitemap: 2; Total queries: 12; Seconds: 0; Memory for sitemap: 0MB; Total memory: 2MB -->
