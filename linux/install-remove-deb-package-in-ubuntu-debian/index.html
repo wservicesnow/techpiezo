@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="http://gmpg.org/xfn/11">
 
-    <title>Add User to Sudoers in Ubuntu Distribution - TechPiezo</title>
+    <title>Install/Remove .deb package in Ubuntu/Debian - TechPiezo</title>
 
 <!-- This site is optimized with the Yoast SEO plugin v11.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
-<meta name="description" content="Sudo command is mainly used to instruct the Ubuntu/Linux to run a specific command with super user privileges. You can add a user to sudoers file."/>
-<link rel="canonical" href="https://techpiezo.com/linux/add-user-to-sudoers-in-ubuntu-distribution/" />
+<meta name="description" content="Ubuntu/Debian Linux distributions contains huge list of packages in their software repositories. Still, we may require to install or remove .deb packages."/>
+<link rel="canonical" href="https://techpiezo.com/linux/install-remove-deb-package-in-ubuntu-debian/" />
 <!-- / Yoast SEO plugin. -->
 
 <link rel='stylesheet' id='wp-block-library-css'  href='https://techpiezo.com/wp-includes/css/dist/block-library/style.min.css' type='text/css' media='all' />
@@ -35,7 +35,7 @@
         <style type="text/css" id="custom-background-css">
 body.custom-background { background-color: #ededed; }
 </style>
-	<link rel="amphtml" href="https://techpiezo.com/linux/add-user-to-sudoers-in-ubuntu-distribution/amp/"><link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" sizes="32x32" />
+	<link rel="amphtml" href="https://techpiezo.com/linux/install-remove-deb-package-in-ubuntu-debian/amp/"><link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" sizes="32x32" />
 <link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" sizes="192x192" />
 <link rel="apple-touch-icon-precomposed" href="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" />
 <meta name="msapplication-TileImage" content="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" />
@@ -56,7 +56,7 @@ body.custom-background { background-color: #ededed; }
 
 </head>
 
-<body class="post-template-default single single-post postid-370 single-format-standard custom-background default-content-layout align-content-left">
+<body class="post-template-default single single-post postid-454 single-format-standard custom-background default-content-layout align-content-left">
 
 
 <div id="page" class="site">
@@ -130,7 +130,7 @@ body.custom-background { background-color: #ededed; }
                 <div id="primary" class="content-area">
                     <main id="main" class="site-main">
 
-                                                    <article id="post-370" class="post-370 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-tutorials">
+                                                    <article id="post-454" class="post-454 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-tutorials">
                                 <div class="entry-content-wrap">
                                     <header class="entry-header">
 
@@ -146,7 +146,7 @@ body.custom-background { background-color: #ededed; }
                                  Tutorials
                              </a>
                         </li></ul>                </div>
-                        <h1 class="entry-title">Add User to Sudoers in Ubuntu Distribution</h1>
+                        <h1 class="entry-title">Install/Remove .deb package in Ubuntu/Debian</h1>
             
                 
         <span class="author-links">
@@ -159,43 +159,38 @@ body.custom-background { background-color: #ededed; }
     </header><!-- .entry-header -->                                    
 
     <div class="entry-content">
-        <p style="text-align: justify;">Before adding a user to the list of Sudoers, we would discuss a bit about <code>sudo</code> command and its significance. Sudo command is mainly used to instruct the Ubuntu/Linux to run a specific command with super user privileges. As a result, you could tweak anything in your Ubuntu/Linux distribution. Furthermore, if you are not careful while running commands as super user then, you may cause irreversible damage to your operating system.</p>
-<p style="text-align: justify;">A word of caution &#8211; you must use <code>sudo</code> command only when you know what you are doing to your operating system. Apart from that, if you wish to run any command/task with super user privileges then add prefix <code>sudo</code> to it. For Instance &#8211;</p>
-<pre>sudo nano /etc/hosts</pre>
-<p style="text-align: justify;">Next, it will ask for users&#8217; password. After providing the password you can edit the hosts file. If you are unable to get super user access even after providing your password. Then, you may have to ask system administrator to either provide you super user access or ask the system admin to do it for you. To provide you the super user access, the system admin will add you to sudoers list. We will discuss it next:</p>
-<h3 style="text-align: center;">Add user to Sudoers</h3>
-<p style="text-align: justify;"><span style="font-size: 14pt;"><strong>STEP &#8211; I:</strong></span> Login to your system with root access. Or, try one who has super user access.</p>
-<p style="text-align: justify;"><span style="font-size: 14pt;"><strong>STEP &#8211; II:</strong></span> Add a user, say username, with the help of <code>useradd</code> command.</p>
-<pre>useradd username</pre>
-<p style="text-align: justify;"><span style="font-size: 14pt;"><strong>STEP &#8211; III:</strong></span> Set password for the new user &#8211; username, through <code>passwd</code> command.</p>
-<pre>passwd username</pre>
-<p style="text-align: justify;">Next, we will log in with our newly created user &#8211; username. Then, type <code>sudo whoami</code> and enter password. It will return that we are not present in sudoers file.</p>
-<p>&nbsp;</p>
-<p><img class="aligncenter wp-image-372 size-full" src="https://techpiezo.com/wp-content/uploads/2019/06/username-not-sudoers.png" alt="check whoami" width="831" height="98" /></p>
-<p>&nbsp;</p>
-<p style="text-align: justify;"><span style="font-size: 14pt;"><strong>STEP &#8211; IV:</strong></span> Edit <code>/etc/sudoers/</code> file with the help of a text editor. We have used nano, you can choose any text editor like gedit, mousepad, leafpad, vi, vim etc.</p>
-<pre>nano /etc/sudoers
-</pre>
-<p><img class="aligncenter wp-image-373" src="https://techpiezo.com/wp-content/uploads/2019/06/sudoers-allow-all-commands.png" alt="sudoers file" width="468" height="39" /></p>
-<p>&nbsp;</p>
-<p style="text-align: justify;">If you see a group sudo in the sudoers file, all you have to do is add your user to this group. However, if the group is not present in your sudoers file then make an entry similar to one shown above.</p>
-<p style="text-align: justify;"><span style="font-size: 14pt;"><strong>STEP &#8211; V</strong><strong>:</strong></span> Add user to the group sudo.</p>
-<pre>usermod -aG sudo username</pre>
-<p style="text-align: justify;"><span style="font-size: 14pt;"><strong>STEP &#8211; VI:</strong></span> To verify, if we have successfully completed all the steps:</p>
-<pre>su username
-
-groups
-
-sudo whoami</pre>
-<p><img class="aligncenter wp-image-371 size-full" src="https://techpiezo.com/wp-content/uploads/2019/06/useradd-sudoers.png" alt="whoami" width="358" height="140" /></p>
-<p style="text-align: justify;">Once we type groups, it will return with our group as mentioned in Step &#8211; IV. Then, with <code>whoami</code> command it would recognize us as root.</p>
-<p style="text-align: justify;">Thus, we have successfully added user to the sudoers file.</p>
+        <p style="text-align: justify;">Ubuntu/Debian Linux distributions contains huge list of packages in their software repositories. Still, we may need to install other packages due to various reasons like dependency issues, third party packages etc. There are two options available to us for installing these other packages. These are &#8211; either we add them to repository or we download the <code>.deb</code> package file. In this article, we would discuss the ways to install and remove <code>.deb</code> package file manually.</p>
+<p style="text-align: justify;">Before downloading the <code>.deb</code> package file, we need to first check the processor architecture for our system. It would help us save a great deal of time, if we already know which package would be supported by our processor&#8217;s architecture. To do that, run the following command in terminal &#8211;</p>
+<pre>lscpu</pre>
+<p style="text-align: justify;">It would return with two results, which are self-explanatory.</p>
+<p style="text-align: justify;">CPU op-mode(s): 32-bit, 64-bit – then its 64-bit Processor architecture. If its just – CPU op-mode(s): 32-bit – then its a 32-bit Processor architecture.</p>
+<p style="text-align: justify;">To know more, about i386 and amd64 architectures follow the <span style="color: #0000ff;"><a style="color: #0000ff;" href="https://techpiezo.com/linux/i386-or-amd64-ubuntu-distribution/" target="_blank" rel="noopener noreferrer">link</a>.</span></p>
+<h3 style="text-align: center;">Install using <code>dpkg</code> command</h3>
+<p style="text-align: justify;">Then, download and save the supported package to a directory. Open terminal again, you need to have a super user access. If you don&#8217;t have one, you should contact your system administrator.</p>
+<p style="text-align: justify;">Move to the directory where you downloaded the package by using the change directory <code>cd</code> command.</p>
+<pre>cd /path/to/package</pre>
+<p style="text-align: justify;">Then, we will make use of <code>dpkg</code> command to install the package. DPKG is an acronym for Debian Package Manager.</p>
+<pre>dpkg -i /path/to/package.deb</pre>
+<p style="text-align: justify;">Next, there will be packages that may require additional packages to be installed. These additional packages are the dependencies without which our source package may/may not work. So, if it is required then we may need to pass the following command to the terminal.</p>
+<pre>apt install -f</pre>
+<p style="text-align: justify;">If there was any error during package installation, that could be due to dependencies, then we need use the above command to fix the broken system.</p>
+<h3 style="text-align: center;">Remove using <code>dpkg</code> command</h3>
+<p style="text-align: justify;">For some reason, we may want to remove the package installed. We can do that with the help of <code>dpkg</code> command. But, first we need to know if the package which we are about to remove is installed on our system or not. To check, run the following command.</p>
+<pre>dpkg -l | grep &lt;package-name&gt;</pre>
+<p style="text-align: justify;">There are two options available to us for removing a package &#8211; either we keep or remove configuration files of the packages already installed.</p>
+<p style="text-align: justify;">To keep configuration files, run the following. <code>-r</code> option is for removing the package.</p>
+<pre>dpkg -r &lt;package-name&gt;</pre>
+<p style="text-align: justify;">Or, to remove the configuration files too, run the following in terminal. <code>-P</code> option is for purging the package.</p>
+<pre>dpkg -P &lt;package-name&gt;</pre>
+<p style="text-align: justify;">Just to confirm if your package has been successfully removed, again run.</p>
+<pre>dpkg -l | grep &lt;package-name&gt;</pre>
+<p style="text-align: justify;">In conclusion, we have discussed the ways to install and remove the <code>.deb</code> package files.</p>
                     <div class="post-item-metadata entry-meta">
                             </div>
                 
 	<nav class="navigation post-navigation" role="navigation">
 		<h2 class="screen-reader-text">Continue Reading</h2>
-		<div class="nav-links"><div class="nav-previous"><a href="https://techpiezo.com/linux/5-things-to-know-before-downloading-ubuntu/" rel="prev"><span class="em-post-navigation">Previous</span> 5 Things to know before Downloading Ubuntu</a></div><div class="nav-next"><a href="https://techpiezo.com/linux/debian-buster-set-to-release-on-6th-of-july/" rel="next"><span class="em-post-navigation">Next</span> Debian Buster set to release on 6th of July</a></div></div>
+		<div class="nav-links"><div class="nav-previous"><a href="https://techpiezo.com/linux/use-and-implementation-of-backing-file-as-snapshot-in-qemu-kvm/" rel="prev"><span class="em-post-navigation">Previous</span> Use and Implementation of Backing File as Snapshot in QEMU/KVM</a></div></div>
 	</nav>            </div><!-- .entry-content -->
 
 
