@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Install WordPress on Ubuntu 19.04 - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/wordpress/how-to-install-wordpress-on-ubuntu-19-04/" />
+		<title>Use and Implementation of Backing File as Snapshot in QEMU/KVM - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/linux/use-and-implementation-of-backing-file-as-snapshot-in-qemu-kvm/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -409,7 +409,7 @@ amp-carousel > amp-img > img {
 	right: 16px;
 }
 		/* Inline stylesheets */
-:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cdd8ca0{text-align:center}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-ca1de63{font-size:14pt}	</style>
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}	</style>
 </head>
 
 <body class="">
@@ -426,103 +426,43 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Install WordPress on Ubuntu 19.04</h1>
+		<h1 class="amp-wp-title">Use and Implementation of Backing File as Snapshot in QEMU/KVM</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-06-09T17:52:05+00:00">
-		4 weeks ago	</time>
+	<time datetime="2019-07-04T15:20:54+00:00">
+		1 min ago	</time>
 </div>
 	</header>
 
 	<figure class="amp-wp-article-featured-image wp-caption">
-	<amp-img width="640" height="427" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Joanna-Kosinska-on-Unsplash-1.jpg" class="attachment-large size-large wp-post-image amp-wp-enforced-sizes" alt="" layout="intrinsic"></amp-img>			<p class="wp-caption-text">
-			Photo by Joanna Kosinska on Unsplash		</p>
+	<amp-img width="640" height="427" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Patrick-Lindenberg-on-Unsplash.jpg" class="attachment-large size-large wp-post-image amp-wp-enforced-sizes" alt="" layout="intrinsic"></amp-img>			<p class="wp-caption-text">
+			Photo by Patrick Lindenberg on Unsplash		</p>
 	</figure>
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">WordPress is one of the most popular Content Management Systems available. It is being used for building websites. To install it in a Ubuntu 19.04 distribution, we have two options available.</p>
-<p class="amp-wp-7d27179">A. Prepare a list of packages to be installed and act accordingly.</p>
-<p class="amp-wp-7d27179">B. Install packages as a group with the help of package tool <strong><em>tasksel</em></strong>.</p>
-<p class="amp-wp-7d27179">Installing packages with the help of package tasksel is usually preferred. Therefore, we are going discuss steps involved in installing Lamp-Server through tasksel.</p>
-<p class="amp-wp-7d27179">The whole installation process is easy to execute and mainly involves five steps that are mentioned below:</p>
-<p class="amp-wp-7d27179">STEP – 1: Login as superuser by issuing <code>sudo -i</code> command.</p>
-<p class="amp-wp-7d27179">STEP – 2: Install Lamp-Server.</p>
-<p class="amp-wp-7d27179">STEP – 3: Create database user and grant privileges.</p>
-<p class="amp-wp-7d27179">STEP – 4: Install relevant PHP packages and edit few config files.</p>
-<p class="amp-wp-7d27179">STEP – 5: Install WordPress.</p>
-<h3 class="amp-wp-cdd8ca0">How to Install WordPress on Ubuntu 19.04?</h3>
-<p class="amp-wp-7d27179"><span class="amp-wp-ca1de63"><strong>STEP – 1:</strong></span> Login as superuser, by typing following command in the terminal.</p>
-<pre>sudo -i</pre>
-<p class="amp-wp-7d27179">Thereafter, you have to provide password for superuser privileges. Move to STEP – 2 after you have successfully logged in.</p>
-<p class="amp-wp-7d27179"><span class="amp-wp-ca1de63"><strong>STEP – 2:</strong></span> If you don’t have the <strong>package tasksel</strong> installed, then install it by issuing following command.</p>
-<pre>apt -y install tasksel</pre>
-<p class="amp-wp-7d27179">Then,<strong> install lamp-server</strong> with by typing the following command in terminal –</p>
-<pre>tasksel install lamp-server</pre>
-<p class="amp-wp-7d27179"><span class="amp-wp-ca1de63"><strong>STEP – 3:</strong></span> Now, we need to securely install MySQL. So, type –</p>
-<pre>mysql_secure_installation</pre>
-<p class="amp-wp-7d27179">It will ask for a password. Remember the password as it will be used while creating a database for WordPress soon. For plugin validation, we need to press NO and for the rests of prompts press YES. Now, we will be create a database for WordPress. So, type –</p>
-<pre>mysql -u root -p</pre>
-<p class="amp-wp-7d27179">Enter the password that was provided while doing secure installation of MySQL and type the following commands. This is being done to create a database <code>"wp_database"</code> for user <code>"wp_user"</code> and password as <code>"password"</code>. We will next grant privileges to the user.</p>
-<pre>CREATE DATABASE wp_database;
-
-CREATE USER `wp_user`@`localhost` IDENTIFIED BY `password`;
-
-GRANT ALL PRIVILEGES ON wp_database.* TO `wp_user`&gt;@`localhost`;
-
-FLUSH PRIVILEGES;
-
-quit</pre>
-<p class="amp-wp-7d27179"><span class="amp-wp-ca1de63"><strong>STEP – 4:</strong></span> You can install following useful PHP extensions by issuing following commands:</p>
-<pre>apt -y install php-curl php-mbstring phpxml</pre>
-<p class="amp-wp-7d27179">Now restart Apache services,</p>
-<pre>systemctl restart apache2</pre>
-<p class="amp-wp-7d27179">We are doing configuration of hosting one website on our server, so we will edit the default file:</p>
-<pre>nano /etc/apache2/sites-available/000-default.conf</pre>
-<p class="amp-wp-7d27179">and, add the following code in the above file – <code>000-default.conf</code>. Then, save and exit.</p>
-<pre>&lt;Directory /var/www/html/&gt;
-
-    AllowOverride All
-
-&lt;/Directory&gt;</pre>
-<p class="amp-wp-7d27179">We now have enable rewrite module so that we can use Permalink feature of WordPress;</p>
-<pre>a2enmod rewrite</pre>
-<p class="amp-wp-7d27179">Run the following command to spot any error in syntax.</p>
-<pre>apache2ctl configtest</pre>
-<p class="amp-wp-7d27179">It should return with the output Syntax OK.</p>
-<p class="amp-wp-7d27179">Lastly, run</p>
-<pre>systemctl restart apache2</pre>
-<p class="amp-wp-7d27179"><span class="amp-wp-ca1de63"><strong>STEP – 5:</strong></span> Download WordPress in <code>/tmp</code> directory with the help of <code>wget</code> command –</p>
-<pre>cd /tmp
-
-wget "https://wordpress.org/latest.tar.gz"
-
-tar xzvf latest.tar.gz</pre>
-<p class="amp-wp-7d27179">tar command extracts the downloaded file. Now, we have to copy the <code>wp-config-sample.php</code> file as <code>wp-config.php</code> in the same folder by typing the following command.</p>
-<pre>cp /tmp/wordpress/wp-config-sample.php /tmp/wordpress/wp-config.php</pre>
-<p class="amp-wp-7d27179">Once done, copy the entire WordPress directory to <code>/var/www/html/</code> directory.</p>
-<pre>cp -a /tmp/wordpress/. /var/www/html/</pre>
-<p class="amp-wp-7d27179">Next, we provide ownership of the all files copied to the Apache Web Server by using <code>chown</code> command,</p>
-<pre>chown -R www-data:www-data /var/www/html/</pre>
-<p class="amp-wp-7d27179">Lastly, update details in <code>wp-config.php</code> file –</p>
-<pre>nano /var/www/html/wp-config.php</pre>
-<p class="amp-wp-7d27179">and, edit the following entries with relevant ones created in the STEP – 3.</p>
-<pre>define( 'DB_NAME', 'wp_database' );
-
-define( 'DB_USER', 'wp_user' );
-
-define( 'DB_PASSWORD', 'password' );
-
-define( 'FS_Method', 'direct' );</pre>
-<p class="amp-wp-7d27179">Now, save and exit. Remove <code>index.html</code> file from <code>/var/www/html/</code> directory by issuing following command,</p>
-<pre>rm /var/www/html/index.html</pre>
-<p class="amp-wp-7d27179">Open your Web Browser and type:</p>
-<pre>http://localhost</pre>
-<p class="amp-wp-7d27179">and, provide relevant details including your username and password for WordPress login. Once, successfully done you will taken to WordPress login prompt.</p>
-<p class="amp-wp-7d27179">In conclusion, we have discussed how to install WordPress on Ubuntu 19.04. In the following articles, we would discuss how to install WordPress on Windows 10 using XAMPP.</p>
+		<p class="amp-wp-7d27179">Ability to create snapshot is one of the important feature that is required in any Virtual Machine system. Snapshot saves the current machine state and any further changes to the disk of virtual machines will be saved so that it can be reverted to original state at any time. QEMU/KVM implements it by using backing file, backing file is paired with snapshot disk image of virtual machine, further QEMU/KVM uses original disk image as read only image and any writes to the disk image is redirected to snapshot file as Redirect-on-Write. This allows reads from backing file and writes to snapshot file, snapshot file is QCOW2 disk image hence only writes are registered on disk.</p>
+<p class="amp-wp-7d27179">However backing file is also effective for allowing multiple virtual machines to run backed by only single disk image as base image, where base image is immutable in nature.</p>
+<p class="amp-wp-7d27179">Lets go through the process of implementation, first to get information about the clean base image, we can use</p>
+<pre class="amp-wp-7d27179">qemu-img info clean-disk.qcow2</pre>
+<p class="amp-wp-7d27179">It displays information such as file format type, name, virtual size, disk size, cluster size.</p>
+<p class="amp-wp-7d27179">To creates clean-disk.qcow2 as backing image for snapshot.qcow2</p>
+<pre class="amp-wp-7d27179">qemu-img create -f qcow2 -b clean-disk.qcow2 snapshot.qcow2</pre>
+<p class="amp-wp-7d27179">In order to check the image file, run</p>
+<pre class="amp-wp-7d27179">qemu-img info snapshot.qcow2</pre>
+<p class="amp-wp-7d27179">This should display the clean-disk.qcow2 image as backing file for snapshot.qcow2, now use snapshot.qcow2 image as host disk image. The changes made will be backed-up in snapshot image.</p>
+<p class="amp-wp-7d27179">To revert to original state of the machine, simply delete the backing file, which in this case is snapshot.qcow2 and also point the disk image to original image.</p>
+<p class="amp-wp-7d27179">Now in case you want to save changes of snapshot to the original disk image and continue using the image further, then you follow following steps :</p>
+<p class="amp-wp-7d27179">Make back-up of original clean disk image</p>
+<pre class="amp-wp-7d27179">cp clean-disk.qcow2 new-clean-disk.qcow2</pre>
+<p class="amp-wp-7d27179">then rebase snapshot to use new disk image</p>
+<pre class="amp-wp-7d27179">qemu-img rebase -b new-clean-disk.qcow2 snapshot.qcow2</pre>
+<p class="amp-wp-7d27179">then commit changes of snapshot by</p>
+<pre class="amp-wp-7d27179">qemu-img commit snapshot.qcow2</pre>
+<p class="amp-wp-7d27179">This will store snapshot to original image with changes. Now new-clean-disk.qcow2 can be used as standalone image file with changes, snapshot.qcow2 can discarded if required.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
 			<div class="amp-wp-meta amp-wp-tax-category">
-		Categories: <a href="https://techpiezo.com/category/wordpress/" rel="category tag">Wordpress</a>	</div>
+		Categories: <a href="https://techpiezo.com/category/linux/" rel="category tag">Linux</a>, <a href="https://techpiezo.com/category/linux/linux-tutorials/" rel="category tag">Tutorials</a>	</div>
 
 	</footer>
 </article>

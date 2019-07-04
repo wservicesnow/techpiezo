@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="http://gmpg.org/xfn/11">
 
-    <title>Raw vs Qcow2 Disk Images in QEMU/KVM - TechPiezo</title>
+    <title>Use and Implementation of Backing File as Snapshot in QEMU/KVM - TechPiezo</title>
 
 <!-- This site is optimized with the Yoast SEO plugin v11.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
-<meta name="description" content="Qemu/KVM provides support for different image formats. The two major disk image formats that are widely recommended and used are raw and qcow2."/>
-<link rel="canonical" href="https://techpiezo.com/tech-insights/raw-vs-qcow2-disk-images-in-qemu-kvm/" />
+<meta name="description" content="Snapshot saves the machine state &amp; any further changes to the disk of virtual machines will be saved in a way it can reverted to original state at any time."/>
+<link rel="canonical" href="https://techpiezo.com/linux/use-and-implementation-of-backing-file-as-snapshot-in-qemu-kvm/" />
 <!-- / Yoast SEO plugin. -->
 
 <link rel='stylesheet' id='wp-block-library-css'  href='https://techpiezo.com/wp-includes/css/dist/block-library/style.min.css' type='text/css' media='all' />
@@ -35,7 +35,7 @@
         <style type="text/css" id="custom-background-css">
 body.custom-background { background-color: #ededed; }
 </style>
-	<link rel="amphtml" href="https://techpiezo.com/tech-insights/raw-vs-qcow2-disk-images-in-qemu-kvm/amp/"><link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" sizes="32x32" />
+	<link rel="amphtml" href="https://techpiezo.com/linux/use-and-implementation-of-backing-file-as-snapshot-in-qemu-kvm/amp/"><link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" sizes="32x32" />
 <link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" sizes="192x192" />
 <link rel="apple-touch-icon-precomposed" href="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" />
 <meta name="msapplication-TileImage" content="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" />
@@ -56,7 +56,7 @@ body.custom-background { background-color: #ededed; }
 
 </head>
 
-<body class="post-template-default single single-post postid-442 single-format-standard custom-background default-content-layout align-content-left">
+<body class="post-template-default single single-post postid-452 single-format-standard custom-background default-content-layout align-content-left">
 
 
 <div id="page" class="site">
@@ -99,12 +99,12 @@ body.custom-background { background-color: #ededed; }
                             </p>
                         </span>
                                 <div class="menu main-menu"><ul id="primary-menu" class="menu"><li id="menu-item-70" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-70"><a href="https://techpiezo.com">Home</a></li>
-<li id="menu-item-39" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-39"><a href="https://techpiezo.com/category/tech-insights/">Insights</a></li>
+<li id="menu-item-39" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-39"><a href="https://techpiezo.com/category/tech-insights/">Insights</a></li>
 <li id="menu-item-40" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-40"><a href="https://techpiezo.com/category/seo/">SEO</a></li>
-<li id="menu-item-41" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-41"><a href="https://techpiezo.com/category/linux/">Linux</a>
+<li id="menu-item-41" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-41"><a href="https://techpiezo.com/category/linux/">Linux</a>
 <ul class="sub-menu">
 	<li id="menu-item-349" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-349"><a href="https://techpiezo.com/category/linux/linux-recent/">Recent</a></li>
-	<li id="menu-item-350" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-350"><a href="https://techpiezo.com/category/linux/linux-tutorials/">Tutorials</a></li>
+	<li id="menu-item-350" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-350"><a href="https://techpiezo.com/category/linux/linux-tutorials/">Tutorials</a></li>
 </ul>
 </li>
 <li id="menu-item-42" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-42"><a href="https://techpiezo.com/category/wordpress/">WordPress</a></li>
@@ -130,7 +130,7 @@ body.custom-background { background-color: #ededed; }
                 <div id="primary" class="content-area">
                     <main id="main" class="site-main">
 
-                                                    <article id="post-442" class="post-442 post type-post status-publish format-standard has-post-thumbnail hentry category-tech-insights">
+                                                    <article id="post-452" class="post-452 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-tutorials">
                                 <div class="entry-content-wrap">
                                     <header class="entry-header">
 
@@ -138,11 +138,15 @@ body.custom-background { background-color: #ededed; }
         <div class="entry-header-details">
                             <div class="figure-categories figure-categories-bg">
                                         <ul class="cat-links"><li class="meta-category">
-                             <a class="covernews-categories category-color-1" href="https://techpiezo.com/category/tech-insights/" alt="View all posts in Insights"> 
-                                 Insights
+                             <a class="covernews-categories category-color-1" href="https://techpiezo.com/category/linux/" alt="View all posts in Linux"> 
+                                 Linux
+                             </a>
+                        </li><li class="meta-category">
+                             <a class="covernews-categories category-color-1" href="https://techpiezo.com/category/linux/linux-tutorials/" alt="View all posts in Tutorials"> 
+                                 Tutorials
                              </a>
                         </li></ul>                </div>
-                        <h1 class="entry-title">Raw vs Qcow2 Disk Images in QEMU/KVM</h1>
+                        <h1 class="entry-title">Use and Implementation of Backing File as Snapshot in QEMU/KVM</h1>
             
                 
         <span class="author-links">
@@ -155,64 +159,31 @@ body.custom-background { background-color: #ededed; }
     </header><!-- .entry-header -->                                    
 
     <div class="entry-content">
-        <p style="text-align: justify;">One of the important part of virtualization is storage. Storage allows virtualized environment to read and write data over variety of different methods. Disk Image is widely popular method of storage in virtualization.</p>
-<p style="text-align: justify;">A disk image in virtualization represents a block of data on hard disk, however for a virtualized environment, it will be a virtual disk. This method of storage is known as File-based storage.</p>
-<p style="text-align: justify;">Qemu/KVM provides support for different image formats. The two major disk image formats that are widely recommended and used are raw and qcow2. Lets understand what they are and their differences.</p>
-<h3 style="text-align: center;">RAW Disk Images</h3>
-<p style="text-align: justify;">Raw disk image format is default format in Qemu.</p>
-<p><strong>Pros of using RAW Disk Images:</strong></p>
-<ol>
-<li>Simple and can be easily portable to any other machine.</li>
-<li>It represents default binary format of a hard disk.</li>
-<li>Nearly raw performance then other formats, as it has very little overhead and no metadata.</li>
-<li>Only data written will occupy space, rest of space will be filled with zeros, as it is a sparse file.</li>
-</ol>
-<p><strong>Cons of using RAW Disk Images:</strong></p>
-<ol>
-<li style="text-align: justify;">Does not have other features like compression, AES encryption and snapshot.</li>
-<li style="text-align: justify;">Backup requires full disk-up, as no incremental back-up.</li>
-<li style="text-align: justify;">Deleted files still occupy space and have to be removed.</li>
-</ol>
-<p style="text-align: justify;">
-<strong>Implementation</strong></p>
-<pre style="text-align: justify;">qemu-img create -f raw /var/lib/libvirt/images/sample1.img 5G</pre>
-<p style="text-align: justify;"><strong>For Preallocating size</strong></p>
-<pre style="text-align: justify;">qemu-img create -f raw -o preallocation=full /var/lib/libvirt/images/sample1.img 5G</pre>
-<p style="text-align: justify;"><strong>To verify</strong></p>
-<pre style="text-align: justify;">qemu-img info /var/lib/libvirt/images/sample1.img</pre>
-<h3 style="text-align: center;">qcow2 Disk Images</h3>
-<p style="text-align: justify;">qcow2 is copy on write image disk, where file is composed of constant size units called clusters. A cluster holds both data as well as image metadata.</p>
-<p style="text-align: justify;"><strong>Pros of using qcow2 Disk Images:</strong></p>
-<ol>
-<li style="text-align: justify;">Smaller images are produced, as no sparse file.</li>
-<li style="text-align: justify;">It provides zlib based compression.</li>
-<li style="text-align: justify;">For data security, AES encryption can be used to protect disk image.</li>
-<li style="text-align: justify;">Multiple Virtual Machine snapshots are offered, as incremental back-up.</li>
-<li style="text-align: justify;">Small Cluster Size improve image file size, and larger can be used for better performance.</li>
-<li style="text-align: justify;">Larger Preallocation increases performance as image size increases to grow.</li>
-</ol>
-<p style="text-align: justify;"><strong>Cons of using qcow2 Disk Images:</strong>:</p>
-<ol>
-<li style="text-align: justify;">Very slight performance loss in comparison to raw disk image, due to metadata, compression and encryption.</li>
-<li style="text-align: justify;">One needs to use fstrim to trim image file, as deleted files does increases image size.</li>
-</ol>
-<p style="text-align: justify;"><strong>Implementation</strong></p>
-<pre style="text-align: justify;">qemu-img create -f qcow2 /var/lib/libvirt/images/sample1.qcow2 5G</pre>
-<p style="text-align: justify;"><strong>For Cluster size image of 2M</strong></p>
-<pre style="text-align: justify;">qemu-img create -f qcow2 -o cluster_size=2M /var/lib/libvirt/images/sample1.qcow2 5G
-
-<strong>For Preallocated size</strong></pre>
-<pre style="text-align: justify;">qemu-img create -f qcow2 -o preallocation=full /var/lib/libvirt/images/sample1.qcow2 5G</pre>
-<p style="text-align: justify;"><strong>To verify</strong></p>
-<pre style="text-align: justify;">qemu-img info /var/lib/libvirt/images/sample1.qcow2</pre>
-<p style="text-align: justify;">
-In Conclusion, Raw and Qcow2 have both advantages and disadvantages, while raw offers pure performance but qcow2 offers practical and useful features, in the end use of image format comes down to use case scenario.</p>
+        <p style="text-align: justify;">Ability to create snapshot is one of the important feature that is required in any Virtual Machine system. Snapshot saves the current machine state and any further changes to the disk of virtual machines will be saved so that it can be reverted to original state at any time. QEMU/KVM implements it by using backing file, backing file is paired with snapshot disk image of virtual machine, further QEMU/KVM uses original disk image as read only image and any writes to the disk image is redirected to snapshot file as Redirect-on-Write. This allows reads from backing file and writes to snapshot file, snapshot file is QCOW2 disk image hence only writes are registered on disk.</p>
+<p style="text-align: justify;">However backing file is also effective for allowing multiple virtual machines to run backed by only single disk image as base image, where base image is immutable in nature.</p>
+<p style="text-align: justify;">Lets go through the process of implementation, first to get information about the clean base image, we can use</p>
+<pre style="text-align: justify;">qemu-img info clean-disk.qcow2</pre>
+<p style="text-align: justify;">It displays information such as file format type, name, virtual size, disk size, cluster size.</p>
+<p style="text-align: justify;">To creates clean-disk.qcow2 as backing image for snapshot.qcow2</p>
+<pre style="text-align: justify;">qemu-img create -f qcow2 -b clean-disk.qcow2 snapshot.qcow2</pre>
+<p style="text-align: justify;">In order to check the image file, run</p>
+<pre style="text-align: justify;">qemu-img info snapshot.qcow2</pre>
+<p style="text-align: justify;">This should display the clean-disk.qcow2 image as backing file for snapshot.qcow2, now use snapshot.qcow2 image as host disk image. The changes made will be backed-up in snapshot image.</p>
+<p style="text-align: justify;">To revert to original state of the machine, simply delete the backing file, which in this case is snapshot.qcow2 and also point the disk image to original image.</p>
+<p style="text-align: justify;">Now in case you want to save changes of snapshot to the original disk image and continue using the image further, then you follow following steps :</p>
+<p style="text-align: justify;">Make back-up of original clean disk image</p>
+<pre style="text-align: justify;">cp clean-disk.qcow2 new-clean-disk.qcow2</pre>
+<p style="text-align: justify;">then rebase snapshot to use new disk image</p>
+<pre style="text-align: justify;">qemu-img rebase -b new-clean-disk.qcow2 snapshot.qcow2</pre>
+<p style="text-align: justify;">then commit changes of snapshot by</p>
+<pre style="text-align: justify;">qemu-img commit snapshot.qcow2</pre>
+<p style="text-align: justify;">This will store snapshot to original image with changes. Now new-clean-disk.qcow2 can be used as standalone image file with changes, snapshot.qcow2 can discarded if required.</p>
                     <div class="post-item-metadata entry-meta">
                             </div>
                 
 	<nav class="navigation post-navigation" role="navigation">
 		<h2 class="screen-reader-text">Continue Reading</h2>
-		<div class="nav-links"><div class="nav-previous"><a href="https://techpiezo.com/tech-insights/command-line-calendar-on-debian-linux/" rel="prev"><span class="em-post-navigation">Previous</span> Command line Calendar utilities on Debian/Linux</a></div></div>
+		<div class="nav-links"><div class="nav-previous"><a href="https://techpiezo.com/linux/managing-users-and-groups-in-ubuntu/" rel="prev"><span class="em-post-navigation">Previous</span> Managing Users and Groups in Ubuntu</a></div></div>
 	</nav>            </div><!-- .entry-content -->
 
 
