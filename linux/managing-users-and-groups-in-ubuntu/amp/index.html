@@ -138,7 +138,7 @@ blockquote p:last-child {
 }
 
 .amp-wp-header div {
-	color: #fff;
+	color: #ffffff;
 	font-size: 1em;
 	font-weight: 400;
 	margin: 0 auto;
@@ -148,15 +148,15 @@ blockquote p:last-child {
 }
 
 .amp-wp-header a {
-	color: #fff;
+	color: #ffffff;
 	text-decoration: none;
 }
 
 
 .amp-wp-header .amp-wp-site-icon {
 	/** site icon is 32px **/
-	background-color: #fff;
-	border: 1px solid #fff;
+	background-color: #ffffff;
+	border: 1px solid #ffffff;
 	border-radius: 50%;
 	position: absolute;
 	right: 18px;
@@ -429,7 +429,7 @@ amp-carousel > amp-img > img {
 		<h1 class="amp-wp-title">Managing Users and Groups in Ubuntu</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
 	<time datetime="2019-07-03T13:17:59+00:00">
-		1 day ago	</time>
+		2 days ago	</time>
 </div>
 	</header>
 
@@ -440,7 +440,7 @@ amp-carousel > amp-img > img {
 
 	<div class="amp-wp-article-content">
 		<p class="amp-wp-7d27179">While working as a System-Administrator of Ubuntu-based Servers, you will have to manage users and associated groups frequently. Few of the reasons could be – new employees joining or leaving the organization. Therefore, you need to know how to add new users, manage passwords and permissions to access valuable resources etc. Before making any changes you need to have superuser access.</p>
-<h3 class="amp-wp-cdd8ca0"><strong>Create a User</strong></h3>
+<h4 class="amp-wp-cdd8ca0"><strong>Create a User</strong></h4>
 <p class="amp-wp-7d27179"><code>useradd</code> and <code>adduser</code> are the two commands that help us create users. Although, both the commands getting us the similar results still they are somewhat different. First we will discuss the <code>useradd</code> command.</p>
 <p>So, in terminal type:</p>
 <pre>useradd -d /home/&lt;username&gt; -m &lt;username&gt;</pre>
@@ -451,18 +451,18 @@ amp-carousel > amp-img > img {
 <p class="amp-wp-7d27179">We can get the similar result by using the <code>adduser</code> command. Pass the following command in the terminal:</p>
 <pre>adduser &lt;username&gt;</pre>
 <p class="amp-wp-7d27179">It will prompt us to enter password and other relevant details like Full Name, Phone Number etc by itself. We don’t have to pass additional commands like <code>passwd</code> in this case. The <code>adduser</code> command executes following operations the background – it creates a home directory, assigns user and group IDs, copies files from <code>/etc/skel</code>directory among others.</p>
-<h3 class="amp-wp-cdd8ca0">Remove a User</h3>
+<h4 class="amp-wp-cdd8ca0">Remove a User</h4>
 <p class="amp-wp-7d27179">To remove a particular user, we will use <code>userdel</code> command.</p>
 <pre>userdel &lt;username&gt;</pre>
 <p class="amp-wp-7d27179">The above command will not delete the home directory for the user. To remove the home directory too, we need to use the option <code>-r</code> with the command.</p>
 <pre>userdel -r &lt;username&gt;</pre>
 <p class="amp-wp-7d27179">So, if you only want to delete the user and keep users` home directory then don’t use <code>-r</code> option with the <code>userdel</code> command. Also, if in case you wanted to delete users` home directory too and forgot to use the <code>-r</code> option. Then, do that with the help of <code>rm</code>command.</p>
-<h3 class="amp-wp-cdd8ca0">Switching Users</h3>
+<h4 class="amp-wp-cdd8ca0">Switching Users</h4>
 <p class="amp-wp-7d27179">To log in to another user’s account, we first log ourselves out and then log in for the specified user. Instead of doing that, we could simply use the <code>su</code>command.</p>
 <pre>su - &lt;username&gt;</pre>
 <p class="amp-wp-7d27179">If we are already logged in as super user then, we don’t have to provide user’s password. Else, we have to provide that particular users’ password to log in.</p>
 <p class="amp-wp-7d27179">Till now, we have discussed how to create, remove and switch between different user accounts. Next, we will discuss group management.</p>
-<h3 class="amp-wp-7d27179">Managing Groups</h3>
+<h4 class="amp-wp-cdd8ca0">Managing Groups</h4>
 <p class="amp-wp-7d27179">One advantage of using Groups is, we can grant or revoke access to a resource on our server efficiently. That could be easily done through addition and removal of user from a particular group. Also, a user can be a member of multiple groups.</p>
 <p class="amp-wp-7d27179">First we need to know which all groups a user is member of, we will be using the <code>groups</code> command.</p>
 <pre>groups &lt;username&gt;</pre>

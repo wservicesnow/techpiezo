@@ -138,7 +138,7 @@ blockquote p:last-child {
 }
 
 .amp-wp-header div {
-	color: #fff;
+	color: #ffffff;
 	font-size: 1em;
 	font-weight: 400;
 	margin: 0 auto;
@@ -148,15 +148,15 @@ blockquote p:last-child {
 }
 
 .amp-wp-header a {
-	color: #fff;
+	color: #ffffff;
 	text-decoration: none;
 }
 
 
 .amp-wp-header .amp-wp-site-icon {
 	/** site icon is 32px **/
-	background-color: #fff;
-	border: 1px solid #fff;
+	background-color: #ffffff;
+	border: 1px solid #ffffff;
 	border-radius: 50%;
 	position: absolute;
 	right: 18px;
@@ -429,7 +429,7 @@ amp-carousel > amp-img > img {
 		<h1 class="amp-wp-title">Install/Remove .deb package in Ubuntu/Debian</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
 	<time datetime="2019-07-04T20:23:47+00:00">
-		8 mins ago	</time>
+		21 hours ago	</time>
 </div>
 	</header>
 
@@ -445,7 +445,7 @@ amp-carousel > amp-img > img {
 <p class="amp-wp-7d27179">It would return with two results, which are self-explanatory.</p>
 <p class="amp-wp-7d27179">CPU op-mode(s): 32-bit, 64-bit – then its 64-bit Processor architecture. If its just – CPU op-mode(s): 32-bit – then its a 32-bit Processor architecture.</p>
 <p class="amp-wp-7d27179">To know more, about i386 and amd64 architectures follow the <span class="amp-wp-a1b1bb7"><a href="https://techpiezo.com/linux/i386-or-amd64-ubuntu-distribution/" target="_blank" rel="noopener noreferrer" class="amp-wp-a1b1bb7">link</a>.</span></p>
-<h3 class="amp-wp-cdd8ca0">Install using <code>dpkg</code> command</h3>
+<h4 class="amp-wp-cdd8ca0">Install using dpkg command</h4>
 <p class="amp-wp-7d27179">Then, download and save the supported package to a directory. Open terminal again, you need to have a super user access. If you don’t have one, you should contact your system administrator.</p>
 <p class="amp-wp-7d27179">Move to the directory where you downloaded the package by using the change directory <code>cd</code> command.</p>
 <pre>cd /path/to/package</pre>
@@ -454,7 +454,7 @@ amp-carousel > amp-img > img {
 <p class="amp-wp-7d27179">Next, there will be packages that may require additional packages to be installed. These additional packages are the dependencies without which our source package may/may not work. So, if it is required then we may need to pass the following command to the terminal.</p>
 <pre>apt install -f</pre>
 <p class="amp-wp-7d27179">If there was any error during package installation, that could be due to dependencies, then we need use the above command to fix the broken system.</p>
-<h3 class="amp-wp-cdd8ca0">Remove using <code>dpkg</code> command</h3>
+<h4 class="amp-wp-cdd8ca0">Remove using dpkg command</h4>
 <p class="amp-wp-7d27179">For some reason, we may want to remove the package installed. We can do that with the help of <code>dpkg</code> command. But, first we need to know if the package which we are about to remove is installed on our system or not. To check, run the following command.</p>
 <pre>dpkg -l | grep &lt;package-name&gt;</pre>
 <p class="amp-wp-7d27179">There are two options available to us for removing a package – either we keep or remove configuration files of the packages already installed.</p>

@@ -1,165 +1,936 @@
+
 <!doctype html>
 <html lang="en-US">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="profile" href="http://gmpg.org/xfn/11">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
 
-    <title>Debian Buster set to release on 6th of July - TechPiezo</title>
+	<title>Debian Buster set to release on 6th of July - TechPiezo</title>
 
 <!-- This site is optimized with the Yoast SEO plugin v11.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
 <meta name="description" content="Debian Buster is set to release on July 6. As per Debian&#039;s policy, only emergency bug fixes are allowed before releases enter the freeze phase."/>
 <link rel="canonical" href="https://techpiezo.com/linux/debian-buster-set-to-release-on-6th-of-july/" />
 <!-- / Yoast SEO plugin. -->
 
+<style id="ct-main-styles-inline-css" type="text/css">:root {
+    --passepartoutSize: 10px;
+    --selectDropdownItemActiveColor: var(--paletteColor1);
+    --selectDropdownTextActiveColor: #ffffff;
+    --selectDropdownTextInitialColor: var(--paletteColor3);
+    --radioCheckboxInitialColor: #e8ebf0;
+    --formInputHeight: 45px;
+    --formFontSize: 15px;
+    --formTextInitialColor: var(--paletteColor3);
+    --formBorderInitialColor: rgba(232, 235, 240, 1);
+    --copyrightSpacing: 25px;
+    --copyrightText: var(--paletteColor3);
+    --footerPrimaryBackground: #eef0f4;
+    --widgetsAreaDivider: 1px dashed #dddddd;
+    --singleAuthorBoxBorder: #e8ebf0;
+    --singleAuthorBoxSpacing: 40px;
+    --singleContentBoxedSpacing: 40px;
+    --shareItemsBorder: #e0e5eb;
+    --topShareBoxSpacing: 70px;
+    --relatedPostsMetaColor: #667380;
+    --relatedPostsContainerSpacing: 70px;
+    --paginationAccentHoverColor: var(--paletteColor2);
+    --paginationFontColor: var(--paletteColor3);
+    --sidebarInnerSpacing: 35px;
+    --sidebarDividerSize: 1px;
+    --sidebarBorderSize: 0px;
+    --sidebarBackgroundColor: var(--paletteColor5);
+    --sidebarGap: 4%;
+    --sidebarWidth: 27%;
+    --narrowContainerWidth: 60%;
+    --maxSiteWidth: 1290px;
+    --buttonInitialColor: var(--paletteColor1);
+    --linkInitialColor: var(--paletteColor3);
+    --paletteColor5: #ffffff;
+    --paletteColor3: rgba(44, 62, 80, 0.9);
+    --paletteColor1: #3eaf7c;
+    --headerTopBorder: 1px dashed rgba(44,62,80,0.2);
+    --offCanvasWidth: 280px;
+    --topBarHeight: 0px;
+    --dropDownBackground: #29333C;
+    --dropdownMenuWidth: 200px;
+    --navSectionHeight: 60px;
+    --transparentHeaderHoverFontColor: var(--paletteColor1);
+    --headerHeight: 120px;
+    --headerLogoContainerHeight: 110px;
+    --logoMaxHeight: 50px;
+    --cardSpacing: 35px;
+    --cardBackground: #ffffff;
+    --pageTitleFontHoverColor: var(--paletteColor1);
+    --letterSpacing: 0em;
+    --fontSize: 17px;
+    --textTransform: none;
+    --fontWeight: 400;
+    --fontFamily: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    --fontStyle: normal;
+    --textDecoration: none;
+    --lineHeight: 1.65;
+    --pageTitleFontInitialColor: var(--paletteColor4);
+    --cardExcerptSize: 16px;
+    --cardsGap: 30px;
+    --transparentHeaderBackground: rgba(255, 255, 255, 0.1);
+    --transparentLogoMaxHeight: 50px;
+    --headerShadow: rgba(210, 213, 218, 0.15);
+    --transparentHeaderInitialFontColor: #ffffff;
+    --dropdownTopOffset: 15px;
+    --dropDownDivider: 1px dashed rgba(255, 255, 255, 0.1);
+    --topBarBackground: #29333d;
+    --mobileHeaderHeight: 70px;
+    --headerButtonRadius: 5px;
+    --headerBottomBorder: none;
+    --paletteColor2: #33a370;
+    --paletteColor4: rgba(44, 62, 80, 1);
+    --fontColor: var(--paletteColor3);
+    --linkHoverColor: var(--paletteColor1);
+    --buttonHoverColor: var(--paletteColor2);
+    --contentAreaSpacing: 80px;
+    --wideOffset: 130px;
+    --sidebarWidthNoUnit: 27;
+    --sidebarOffset: 50px;
+    --sidebarBorderColor: rgba(224, 229, 235, 0.8);
+    --sidebarDividerColor: rgba(224, 229, 235, 0.8);
+    --sidebarWidgetsSpacing: 60px;
+    --paginationSpacing: 80px;
+    --paginationAccentInitialColor: var(--paletteColor1);
+    --paginationDivider: 5px solid rgba(224, 229, 235, 0.5);
+    --relatedPostsLabelColor: var(--paletteColor4);
+    --postNavSpacing: 80px;
+    --bottomShareBoxSpacing: 70px;
+    --shareItemsIcon: #ffffff;
+    --pageContentBoxedSpacing: 40px;
+    --singleAuthorBoxBackground: #ffffff;
+    --singleAuthorBoxShadow: rgba(210, 213, 218, 0.4);
+    --widgetAreaSpacing: 70px;
+    --footerPrimarySpacing: 30px;
+    --copyrightBackground: #eef0f4;
+    --formLabelColor: var(--paletteColor3);
+    --formBorderFocusColor: var(--paletteColor1);
+    --formTextFocusColor: var(--paletteColor3);
+    --formBorderSize: 1px;
+    --formTextAreaHeight: 170px;
+    --radioCheckboxAccentColor: var(--paletteColor1);
+    --selectDropdownTextHoverColor: var(--paletteColor3);
+    --selectDropdownItemHoverColor: rgba(232, 235, 240, 0.4);
+    --selectDropdownBackground: #ffffff;
+    --passepartoutColor: var(--paletteColor1);
+}
+
+h1 {
+    --letterSpacing: 0em;
+    --fontSize: 40px;
+    --textTransform: none;
+    --fontWeight: 700;
+    --fontStyle: normal;
+    --textDecoration: none;
+    --lineHeight: 1.5;
+    --fontColor: var(--paletteColor4);
+}
+
+h2 {
+    --letterSpacing: 0em;
+    --fontSize: 35px;
+    --textTransform: none;
+    --fontWeight: 700;
+    --fontStyle: normal;
+    --textDecoration: none;
+    --lineHeight: 1.5;
+    --fontColor: var(--paletteColor4);
+}
+
+h3 {
+    --letterSpacing: 0em;
+    --fontSize: 30px;
+    --textTransform: none;
+    --fontWeight: 700;
+    --fontStyle: normal;
+    --textDecoration: none;
+    --lineHeight: 1.5;
+    --fontColor: var(--paletteColor4);
+}
+
+h4 {
+    --letterSpacing: 0em;
+    --fontSize: 25px;
+    --textTransform: none;
+    --fontWeight: 700;
+    --fontStyle: normal;
+    --textDecoration: none;
+    --lineHeight: 1.5;
+    --fontColor: var(--paletteColor4);
+}
+
+h5 {
+    --letterSpacing: 0em;
+    --fontSize: 20px;
+    --textTransform: none;
+    --fontWeight: 700;
+    --fontStyle: normal;
+    --textDecoration: none;
+    --lineHeight: 1.5;
+    --fontColor: var(--paletteColor4);
+}
+
+h6 {
+    --letterSpacing: 0em;
+    --fontSize: 16px;
+    --textTransform: none;
+    --fontWeight: 700;
+    --fontStyle: normal;
+    --textDecoration: none;
+    --lineHeight: 1.5;
+    --fontColor: var(--paletteColor4);
+}
+
+.entry-content blockquote p, .ct-quote-widget blockquote p {
+    --lineHeight: 1.65;
+    --textDecoration: none;
+    --fontStyle: normal;
+    --fontFamily: Georgia;
+    --fontWeight: 600;
+    --textTransform: none;
+    --fontSize: 25px;
+    --letterSpacing: 0em;
+}
+
+code, kbd, samp, pre {
+    --lineHeight: 1.65;
+    --textDecoration: none;
+    --fontFamily: monospace;
+    --textTransform: none;
+    --fontSize: 16px;
+    --letterSpacing: 0em;
+}
+
+.site-title {
+    --linkInitialColor: var(--paletteColor4);
+    --lineHeight: 1.65;
+    --textDecoration: none;
+    --fontStyle: normal;
+    --fontWeight: 700;
+    --textTransform: none;
+    --fontSize: 25px;
+    --letterSpacing: 0em;
+    --linkHoverColor: var(--paletteColor1);
+}
+
+.primary-menu > li {
+    --lineHeight: 1.3;
+    --textDecoration: none;
+    --fontStyle: normal;
+    --fontWeight: 700;
+    --textTransform: uppercase;
+    --fontSize: 12px;
+    --letterSpacing: 0em;
+}
+
+.primary-menu .sub-menu li {
+    --lineHeight: 1.6;
+    --textDecoration: none;
+    --fontStyle: normal;
+    --fontWeight: 500;
+    --textTransform: none;
+    --fontSize: 12px;
+    --letterSpacing: 0em;
+}
+
+#mobile-menu .mobile-menu {
+    --lineHeight: 1.65;
+    --textDecoration: none;
+    --fontStyle: normal;
+    --fontWeight: 700;
+    --textTransform: none;
+    --fontSize: 30px;
+    --letterSpacing: 0em;
+}
+
+.ct-sidebar .widget-title {
+    --lineHeight: 1.65;
+    --textDecoration: none;
+    --textTransform: none;
+    --fontSize: 18px;
+    --letterSpacing: 0em;
+}
+
+.ct-sidebar .ct-post-title {
+    --lineHeight: 1.4;
+    --textDecoration: none;
+    --fontStyle: normal;
+    --fontWeight: 500;
+    --textTransform: none;
+    --fontSize: 15px;
+    --letterSpacing: 0em;
+}
+
+.product_title {
+    --lineHeight: 1.65;
+    --textDecoration: none;
+    --textTransform: none;
+    --fontSize: 30px;
+    --letterSpacing: 0em;
+}
+
+.woocommerce-loop-product__title {
+    --lineHeight: 1.65;
+    --textDecoration: none;
+    --fontStyle: normal;
+    --fontWeight: 500;
+    --textTransform: none;
+    --fontSize: 17px;
+    --letterSpacing: 0em;
+}
+
+.site-description {
+    --letterSpacing: 0em;
+    --fontSize: 13px;
+    --textTransform: none;
+    --fontWeight: 500;
+    --fontStyle: normal;
+    --textDecoration: none;
+    --lineHeight: 1.65;
+    --fontColor: var(--paletteColor3);
+}
+
+.header-desktop {
+    --backgroundColor: #ffffff;
+    --backgroundImage: none;
+    --menuItemsSpacing: 25px;
+}
+
+.ct-related-posts {
+    --linkInitialColor: var(--paletteColor3);
+    --backgroundImage: none;
+    --backgroundColor: #eff1f5;
+    --linkHoverColor: var(--paletteColor1);
+}
+
+.footer-widgets-area {
+    --backgroundImage: none;
+    --backgroundColor: #f4f5f8;
+}
+
+.entry-header .page-title {
+    --lineHeight: 1.3;
+    --textDecoration: none;
+    --fontStyle: normal;
+    --fontWeight: 700;
+    --textTransform: none;
+    --fontSize: 32px;
+    --letterSpacing: 0em;
+}
+
+.entry-card .entry-title {
+    --lineHeight: 1.3;
+    --textDecoration: none;
+    --fontStyle: normal;
+    --fontWeight: 700;
+    --textTransform: none;
+    --fontSize: 20px;
+    --letterSpacing: 0em;
+}
+
+.entry-title {
+    --linkInitialColor: var(--paletteColor4);
+    --linkHoverColor: var(--paletteColor1);
+}
+
+.entry-excerpt {
+    --cardExcerptColor: var(--fontColor);
+}
+
+.entry-card {
+    --metaFontSize: 12px;
+}
+
+.entry-meta {
+    --linkInitialColor: var(--fontColor);
+    --linkHoverColor: var(--paletteColor1);
+}
+
+.entry-button {
+    --linkInitialColor: #ffffff;
+    --linkHoverColor: #ffffff;
+}
+
+.site-header {
+    --menuActiveColor: #ffffff;
+    --menuInitialColor: var(--paletteColor3);
+    --menuHoverColor: var(--paletteColor1);
+}
+
+.primary-menu .sub-menu {
+    --menuInitialColor: #ffffff;
+    --menuHoverColor: var(--paletteColor1);
+}
+
+.header-top-bar {
+    --linkInitialColor: rgba(255, 255, 255, 0.8);
+    --linkHoverColor: var(--paletteColor1);
+}
+
+#mobile-menu {
+    --menuHoverColor: var(--paletteColor1);
+    --menuInitialColor: #ffffff;
+    --modalBackground: rgba(18, 21, 25, 0.98);
+}
+
+#mobile-menu .custom-logo {
+    --logoMaxHeight: 50px;
+}
+
+#search-modal {
+    --linkInitialColor: var(--paletteColor5);
+    --modalBackground: rgba(18, 21, 25, 0.98);
+    --linkHoverColor: var(--paletteColor1);
+}
+
+.ct-header-cart {
+    --cartBadgeBackground: var(--paletteColor1);
+    --cartBadgeText: #ffffff;
+}
+
+.ct-cart-content {
+    --linkHoverColor: var(--paletteColor1);
+    --linkInitialColor: #ffffff;
+    --cartDropDownBackground: #29333C;
+}
+
+.ct-header-button {
+    --buttonInitialColor: var(--paletteColor1);
+    --linkInitialColor: #ffffff;
+    --linkHoverColor: #ffffff;
+    --buttonHoverColor: var(--paletteColor2);
+}
+
+.share-box[data-type="type-1"] {
+    --shareItemsIconInitial: var(--paletteColor3);
+    --shareItemsIconHover: var(--paletteColor1);
+}
+
+.share-box[data-type="type-2"] {
+    --shareBoxBackgroundInitial: var(--paletteColor1);
+    --shareBoxBackgroundHover: var(--paletteColor2);
+}
+
+.ct-back-to-top {
+    --buttonInitialColor: var(--paletteColor3);
+    --linkInitialColor: #ffffff;
+    --linkHoverColor: #ffffff;
+    --buttonHoverColor: var(--paletteColor4);
+}
+
+.site-main,
+.single .ct-comments-container,
+.page .ct-comments-container {
+    --backgroundImage: none;
+    --backgroundColor: #f8f9fb;
+}
+
+.header-mobile,
+.post[data-content="boxed"],
+.page[data-content="boxed"] {
+    --backgroundImage: none;
+    --backgroundColor: #ffffff;
+}
+
+.header-top-bar-menu,
+.footer-menu {
+    --menuItemsSpacing: 20px;
+}
+
+.mobile-menu-toggle,
+.search-button,
+.ct-cart-icon,
+.footer-primary-area {
+    --linkInitialColor: var(--paletteColor3);
+    --linkHoverColor: var(--paletteColor1);
+}
+
+.ct-sidebar,
+.footer-widgets {
+    --linkInitialColor: var(--paletteColor3);
+    --widgetsTitleColor: var(--paletteColor4);
+    --widgetsFontColor: var(--paletteColor3);
+    --linkHoverColor: var(--paletteColor1);
+}</style>
+<style id="ct-main-styles-tablet-inline-css" type="text/css" media="(max-width: 1000px) and (min-width: 690px)">:root {
+    --copyrightSpacing: 25px;
+    --widgetAreaSpacing: 50px;
+    --pageContentBoxedSpacing: 40px;
+    --bottomShareBoxSpacing: 50px;
+    --postNavSpacing: 60px;
+    --paginationSpacing: 60px;
+    --sidebarWidgetsSpacing: 40px;
+    --offCanvasWidth: 280px;
+    --topBarHeight: 0px;
+    --headerHeight: 35px;
+    --transparentLogoMaxHeight: 50px;
+    --cardSpacing: 35px;
+    --cardExcerptSize: 16px;
+    --lineHeight: 1.65;
+    --fontSize: 17px;
+    --letterSpacing: 0em;
+    --cardsGap: 30px;
+    --logoMaxHeight: 50px;
+    --headerLogoContainerHeight: 35px;
+    --navSectionHeight: 15px;
+    --mobileHeaderHeight: 70px;
+    --contentAreaSpacing: 60px;
+    --sidebarInnerSpacing: 35px;
+    --relatedPostsContainerSpacing: 50px;
+    --topShareBoxSpacing: 50px;
+    --singleContentBoxedSpacing: 40px;
+    --singleAuthorBoxSpacing: 40px;
+    --footerPrimarySpacing: 30px;
+    --passepartoutSize: 10px;
+}
+
+h1 {
+    --lineHeight: 1.5;
+    --fontSize: 40px;
+    --letterSpacing: 0em;
+}
+
+h2 {
+    --lineHeight: 1.5;
+    --fontSize: 35px;
+    --letterSpacing: 0em;
+}
+
+h3 {
+    --lineHeight: 1.5;
+    --fontSize: 30px;
+    --letterSpacing: 0em;
+}
+
+h4 {
+    --lineHeight: 1.5;
+    --fontSize: 25px;
+    --letterSpacing: 0em;
+}
+
+h5 {
+    --lineHeight: 1.5;
+    --fontSize: 20px;
+    --letterSpacing: 0em;
+}
+
+h6 {
+    --lineHeight: 1.5;
+    --fontSize: 16px;
+    --letterSpacing: 0em;
+}
+
+code, kbd, samp, pre {
+    --lineHeight: 1.65;
+    --fontSize: 16px;
+    --letterSpacing: 0em;
+}
+
+.primary-menu > li {
+    --lineHeight: 1.3;
+    --fontSize: 12px;
+    --letterSpacing: 0em;
+}
+
+.primary-menu .sub-menu li {
+    --lineHeight: 1.6;
+    --fontSize: 12px;
+    --letterSpacing: 0em;
+}
+
+.ct-sidebar .widget-title {
+    --lineHeight: 1.65;
+    --fontSize: 18px;
+    --letterSpacing: 0em;
+}
+
+.ct-sidebar .ct-post-title {
+    --lineHeight: 1.4;
+    --fontSize: 15px;
+    --letterSpacing: 0em;
+}
+
+.woocommerce-loop-product__title {
+    --lineHeight: 1.65;
+    --fontSize: 17px;
+    --letterSpacing: 0em;
+}
+
+.site-description {
+    --lineHeight: 1.65;
+    --fontSize: 13px;
+    --letterSpacing: 0em;
+}
+
+.entry-header .page-title {
+    --lineHeight: 1.3;
+    --fontSize: 30px;
+    --letterSpacing: 0em;
+}
+
+.entry-card .entry-title {
+    --lineHeight: 1.3;
+    --fontSize: 20px;
+    --letterSpacing: 0em;
+}
+
+.entry-card {
+    --metaFontSize: 12px;
+}
+
+.entry-content blockquote p, .ct-quote-widget blockquote p,
+.site-title {
+    --lineHeight: 1.65;
+    --fontSize: 25px;
+    --letterSpacing: 0em;
+}
+
+#mobile-menu .mobile-menu,
+.product_title {
+    --lineHeight: 1.65;
+    --fontSize: 30px;
+    --letterSpacing: 0em;
+}
+
+.header-top-bar-menu,
+.footer-menu {
+    --menuItemsSpacing: 20px;
+}</style>
+<style id="ct-main-styles-mobile-inline-css" type="text/css" media="(max-width: 690px)">:root {
+    --copyrightSpacing: 15px;
+    --widgetAreaSpacing: 40px;
+    --pageContentBoxedSpacing: 40px;
+    --bottomShareBoxSpacing: 30px;
+    --postNavSpacing: 40px;
+    --paginationSpacing: 50px;
+    --sidebarWidgetsSpacing: 30px;
+    --offCanvasWidth: 250px;
+    --topBarHeight: 0px;
+    --headerHeight: 35px;
+    --transparentLogoMaxHeight: 50px;
+    --cardSpacing: 25px;
+    --cardExcerptSize: 16px;
+    --lineHeight: 1.65;
+    --fontSize: 17px;
+    --letterSpacing: 0em;
+    --cardsGap: 30px;
+    --logoMaxHeight: 50px;
+    --headerLogoContainerHeight: 35px;
+    --navSectionHeight: 15px;
+    --mobileHeaderHeight: 70px;
+    --contentAreaSpacing: 50px;
+    --sidebarInnerSpacing: 35px;
+    --relatedPostsContainerSpacing: 30px;
+    --topShareBoxSpacing: 30px;
+    --singleContentBoxedSpacing: 40px;
+    --singleAuthorBoxSpacing: 40px;
+    --footerPrimarySpacing: 30px;
+    --passepartoutSize: 0px;
+}
+
+h1 {
+    --lineHeight: 1.5;
+    --fontSize: 40px;
+    --letterSpacing: 0em;
+}
+
+h2 {
+    --lineHeight: 1.5;
+    --fontSize: 35px;
+    --letterSpacing: 0em;
+}
+
+h3 {
+    --lineHeight: 1.5;
+    --fontSize: 30px;
+    --letterSpacing: 0em;
+}
+
+h4 {
+    --lineHeight: 1.5;
+    --fontSize: 25px;
+    --letterSpacing: 0em;
+}
+
+h5 {
+    --lineHeight: 1.5;
+    --fontSize: 20px;
+    --letterSpacing: 0em;
+}
+
+h6 {
+    --lineHeight: 1.5;
+    --fontSize: 16px;
+    --letterSpacing: 0em;
+}
+
+code, kbd, samp, pre {
+    --lineHeight: 1.65;
+    --fontSize: 16px;
+    --letterSpacing: 0em;
+}
+
+.primary-menu > li {
+    --lineHeight: 1.3;
+    --fontSize: 12px;
+    --letterSpacing: 0em;
+}
+
+.primary-menu .sub-menu li {
+    --lineHeight: 1.6;
+    --fontSize: 12px;
+    --letterSpacing: 0em;
+}
+
+#mobile-menu .mobile-menu {
+    --lineHeight: 1.65;
+    --fontSize: 23px;
+    --letterSpacing: 0em;
+}
+
+.ct-sidebar .widget-title {
+    --lineHeight: 1.65;
+    --fontSize: 18px;
+    --letterSpacing: 0em;
+}
+
+.ct-sidebar .ct-post-title {
+    --lineHeight: 1.4;
+    --fontSize: 15px;
+    --letterSpacing: 0em;
+}
+
+.product_title {
+    --lineHeight: 1.65;
+    --fontSize: 30px;
+    --letterSpacing: 0em;
+}
+
+.woocommerce-loop-product__title {
+    --lineHeight: 1.65;
+    --fontSize: 17px;
+    --letterSpacing: 0em;
+}
+
+.site-description {
+    --lineHeight: 1.65;
+    --fontSize: 13px;
+    --letterSpacing: 0em;
+}
+
+.entry-header .page-title {
+    --lineHeight: 1.3;
+    --fontSize: 25px;
+    --letterSpacing: 0em;
+}
+
+.entry-card .entry-title {
+    --lineHeight: 1.3;
+    --fontSize: 18px;
+    --letterSpacing: 0em;
+}
+
+.entry-card {
+    --metaFontSize: 12px;
+}
+
+.entry-content blockquote p, .ct-quote-widget blockquote p,
+.site-title {
+    --lineHeight: 1.65;
+    --fontSize: 25px;
+    --letterSpacing: 0em;
+}
+
+.header-top-bar-menu,
+.footer-menu {
+    --menuItemsSpacing: 20px;
+}</style>
 <link rel='stylesheet' id='wp-block-library-css'  href='https://techpiezo.com/wp-includes/css/dist/block-library/style.min.css' type='text/css' media='all' />
-<link rel='stylesheet' id='font-awesome-v5-css'  href='https://techpiezo.com/wp-content/themes/covernews/assets/font-awesome-v5/css/fontawesome-all.min.css' type='text/css' media='all' />
-<link rel='stylesheet' id='bootstrap-css'  href='https://techpiezo.com/wp-content/themes/covernews/assets/bootstrap/css/bootstrap.min.css' type='text/css' media='all' />
-<link rel='stylesheet' id='slick-css'  href='https://techpiezo.com/wp-content/themes/covernews/assets/slick/css/slick.min.css' type='text/css' media='all' />
-<link crossorigin="anonymous" rel='stylesheet' id='covernews-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Source%20Sans%20Pro:400,400i,700,700i|Lato:400,300,400italic,900,700&#038;subset=latin,latin-ext' type='text/css' media='all' />
-<link rel='stylesheet' id='covernews-style-css'  href='https://techpiezo.com/wp-content/themes/covernews/style.css' type='text/css' media='all' />
-<script type='text/javascript' src='https://techpiezo.com/wp-includes/js/jquery/jquery.js'></script>
-<script type='text/javascript' src='https://techpiezo.com/wp-includes/js/jquery/jquery-migrate.min.js'></script>
+<link rel='stylesheet' id='ct-style-css'  href='https://techpiezo.com/wp-content/themes/blocksy/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='ct-main-styles-css'  href='https://techpiezo.com/wp-content/themes/blocksy/static/bundle/main.css' type='text/css' media='all' />
 
-        <style type="text/css">
-                        .site-title,
-            .site-description {
-                position: absolute;
-                clip: rect(1px, 1px, 1px, 1px);
-                display: none;
-            }
-
-            
-
-        </style>
-        <style type="text/css" id="custom-background-css">
-body.custom-background { background-color: #ededed; }
-</style>
-	<link rel="amphtml" href="https://techpiezo.com/linux/debian-buster-set-to-release-on-6th-of-july/amp/"><link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" sizes="32x32" />
+<link rel="amphtml" href="https://techpiezo.com/linux/debian-buster-set-to-release-on-6th-of-july/amp/"><link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" sizes="32x32" />
 <link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" sizes="192x192" />
 <link rel="apple-touch-icon-precomposed" href="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" />
 <meta name="msapplication-TileImage" content="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" />
 		<style type="text/css" id="wp-custom-css">
 			.archive-description, .archive.category .page-title,
-.archive.category .page-description, .archive.category .taxonomy-description, .cart-search{
+.archive.category .page-description, .archive.category .taxonomy-description, .cart-search, .has-avatar{
     display: none !important;
 }		</style>
+		</head>
+
+<body class="post-template-default single single-post postid-380 single-format-standard ct-loading ct-no-js ct-modern-forms header-type-1" >
+<div id="main-container">
+
+	<header
+		class="site-header"
+						>
 		
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135581354-3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-135581354-3');
-</script>
+		
+<div class="header-desktop" data-type="type-1">
+	<div class="ct-container-fluid" data-menu-alignment="right">
 
-</head>
+		
+	<div
+		class="site-branding"
+				>
 
-<body class="post-template-default single single-post postid-380 single-format-standard custom-background default-content-layout align-content-left">
+		<h1 class="site-title">
+							<a href="https://techpiezo.com/" rel="home">
+					TechPiezo				</a>
+					</h1>
 
+		<h2 class="site-description ct-hidden-sm ct-hidden-md ct-hidden-lg">
+			Future is Here		</h2>
+	</div>
 
-<div id="page" class="site">
-    <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+	
+		
+	<nav
+		id="site-navigation"
+		class="main-navigation"
+		data-menu-type="type-1"
+		data-dropdown-animation="type-1"
+				>
 
-    <div class="header-layout-1">
-                <header id="masthead" class="site-header">
-                        <div class="masthead-banner "
-                 data-background="">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="site-branding">
-                                                                    <p class="site-title font-family-1">
-                                        <a href="https://techpiezo.com/"
-                                           rel="home">TechPiezo</a>
-                                    </p>
-                                
-                                                                    <p class="site-description">Future is Here</p>
-                                                            </div>
-                        </div>
-                        <div class="col-md-8">
-                                                    </div>
-                    </div>
-                </div>
-            </div>
-            <nav id="site-navigation" class="main-navigation">
-                <div class="container">
-                    <div class="row">
-                        <div class="kol-12">
-                            <div class="navigation-container">
-                                <span class="toggle-menu" aria-controls="primary-menu" aria-expanded="false">
-                                <span class="screen-reader-text">Primary Menu</span>
-                                 <i class="ham"></i>
-                        </span>
-                                <span class="af-mobile-site-title-wrap">
-                                                                <p class="site-title font-family-1">
-                                <a href="https://techpiezo.com/"
-                                   rel="home">TechPiezo</a>
-                            </p>
-                        </span>
-                                <div class="menu main-menu"><ul id="primary-menu" class="menu"><li id="menu-item-70" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-70"><a href="https://techpiezo.com">Home</a></li>
+		<ul id="primary-menu" class="primary-menu menu"><li id="menu-item-70" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-70"><a href="https://techpiezo.com">Home</a></li>
 <li id="menu-item-39" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-39"><a href="https://techpiezo.com/category/tech-insights/">Insights</a></li>
 <li id="menu-item-40" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-40"><a href="https://techpiezo.com/category/seo/">SEO</a></li>
-<li id="menu-item-41" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-41"><a href="https://techpiezo.com/category/linux/">Linux</a>
+<li id="menu-item-41" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-41"><a href="https://techpiezo.com/category/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
 <ul class="sub-menu">
 	<li id="menu-item-349" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-349"><a href="https://techpiezo.com/category/linux/linux-recent/">Recent</a></li>
 	<li id="menu-item-350" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-350"><a href="https://techpiezo.com/category/linux/linux-tutorials/">Tutorials</a></li>
 </ul>
 </li>
 <li id="menu-item-42" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-42"><a href="https://techpiezo.com/category/wordpress/">WordPress</a></li>
-<li id="menu-item-43" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-43"><a href="https://techpiezo.com/category/android/">Android</a>
+<li id="menu-item-43" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-43"><a href="https://techpiezo.com/category/android/">Android<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
 <ul class="sub-menu">
 	<li id="menu-item-347" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-347"><a href="https://techpiezo.com/category/android/android-recent/">Recent</a></li>
 	<li id="menu-item-348" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-348"><a href="https://techpiezo.com/category/android/android-tutorials/">Tutorials</a></li>
 </ul>
 </li>
-</ul></div>
+</ul>
+	</nav>
 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </header>
+	
+		<div class="header-group">
+			<a href="#search-modal" class="search-button ct-hidden-sm ct-hidden-md ct-hidden-lg">
+				<svg width="12" height="12" viewBox="0 0 50 50">
+					<path d="M48.6,48.6c-1.8,1.8-4.8,1.8-6.6,0l-8.3-8.3c-3.4,2.2-7.4,3.5-11.8,3.5C9.8,43.8,0,34,0,21.9S9.8,0,21.9,0
+					C34,0,43.8,9.8,43.8,21.9c0,4.3-1.3,8.4-3.5,11.8l8.3,8.3C50.5,43.8,50.5,46.8,48.6,48.6z M21.9,6.3c-8.6,0-15.7,7-15.7,15.7
+					s7,15.7,15.7,15.7c8.6,0,15.7-7,15.7-15.7C37.6,13.3,30.6,6.3,21.9,6.3z"/>
+				</svg>
+			</a>
 
-    </div>
+			<a class="ct-header-button ct-hidden-sm ct-hidden-md ct-hidden-lg" data-type="type-1" data-size="medium" >Download</a>		</div>
+	</div>
+</div>
+		
+<div class="header-mobile" data-type="type-1">
+	<div class="ct-container">
+		
+	<div
+		class="site-branding"
+				>
 
-    <div id="content" class="container">
-        <div class="row">
-                <div id="primary" class="content-area">
-                    <main id="main" class="site-main">
+		<h1 class="site-title">
+							<a href="https://techpiezo.com/" rel="home">
+					TechPiezo				</a>
+					</h1>
 
-                                                    <article id="post-380" class="post-380 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-recent">
-                                <div class="entry-content-wrap">
-                                    <header class="entry-header">
+		<h2 class="site-description ct-hidden-sm ct-hidden-md ct-hidden-lg">
+			Future is Here		</h2>
+	</div>
 
-    <div class="header-details-wrapper">
-        <div class="entry-header-details">
-                            <div class="figure-categories figure-categories-bg">
-                                        <ul class="cat-links"><li class="meta-category">
-                             <a class="covernews-categories category-color-1" href="https://techpiezo.com/category/linux/" alt="View all posts in Linux"> 
-                                 Linux
-                             </a>
-                        </li><li class="meta-category">
-                             <a class="covernews-categories category-color-1" href="https://techpiezo.com/category/linux/linux-recent/" alt="View all posts in Recent"> 
-                                 Recent
-                             </a>
-                        </li></ul>                </div>
-                        <h1 class="entry-title">Debian Buster set to release on 6th of July</h1>
-            
-                
-        <span class="author-links">
-                                </span>
-                        
+	
+		<div class="header-group">
+			<a href="#search-modal" class="search-button ct-hidden-sm ct-hidden-md ct-hidden-lg">
+				<svg width="12" height="12" viewBox="0 0 50 50">
+					<path d="M48.6,48.6c-1.8,1.8-4.8,1.8-6.6,0l-8.3-8.3c-3.4,2.2-7.4,3.5-11.8,3.5C9.8,43.8,0,34,0,21.9S9.8,0,21.9,0
+					C34,0,43.8,9.8,43.8,21.9c0,4.3-1.3,8.4-3.5,11.8l8.3,8.3C50.5,43.8,50.5,46.8,48.6,48.6z M21.9,6.3c-8.6,0-15.7,7-15.7,15.7
+					s7,15.7,15.7,15.7c8.6,0,15.7-7,15.7-15.7C37.6,13.3,30.6,6.3,21.9,6.3z"/>
+				</svg>
+			</a>
 
-                    </div>
-    </div>
+			<a class="ct-header-button ct-hidden-sm ct-hidden-md ct-hidden-lg" data-type="type-1" data-size="medium" >Download</a>		</div>
 
-    </header><!-- .entry-header -->                                    
+			<nav id="site-navigation" class="main-navigation">
+		<a href="#mobile-menu" class="mobile-menu-toggle">
+			<span
+				data-type="type-1"
+				class="lines-button"></span>
+		</a>
+	</nav>
 
-    <div class="entry-content">
-        <p style="text-align: justify;">Debian 10, code-named Buster, is set to release on July 6, 2019. As per Debian&#8217;s policy, only emergency bug fixes are allowed for releases which are about to enter the freeze phase. Once the release is frozen, that means no further changes are allowed. But, prior to that, changes and unblock requests will be limited to :</p>
+		</div>
+</div>
+	</header>
+
+	<main id="main" class="site-main">
+
+		
+
+	
+	<div id="primary" class="content-area">
+
+		<div class="ct-container" >
+
+			<section>
+				
+	<article
+		id="post-380"
+		class="post-380 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-recent"		data-content="boxed"		data-page-structure="narrow"		>
+
+		
+		<section class="hero-section" data-type="type-1" data-alignment="left">
+			<header class="entry-header">
+				<h1 class="page-title">Debian Buster set to release on 6th of July</h1>
+				<div class="entry-meta has-avatar" data-label data-type="simple">
+		
+							<a class="ct-image-container avatar-container" href="https://techpiezo.com/author/editorialteam/"><img src="http://1.gravatar.com/avatar/d26d453f942e6a3e26365275302d815e?s=100&d=mm&r=g" data-object-fit="~" width="50" height="50" ><div class="ct-ratio" style="padding-bottom: 100%"></div></a>			
+			<ul >
+				
+							<li class="ct-meta-author" >
+
+					
+											<span class="ct-meta-label">
+							By						</span>
+					
+					<span class="ct-meta-element" >
+						<a href="https://techpiezo.com/author/editorialteam/" title="Posts by Editorial Team" rel="author">Editorial Team</a>					</span>
+				</li>
+			
+							<li
+					class="ct-meta-date"
+					>
+
+					
+											<span class="ct-meta-label">
+							On						</span>
+					
+					<span
+						class="ct-meta-element"
+						>
+						Jun 13, 2019					</span>
+				</li>
+			
+			
+			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-label">In </span><span class="ct-meta-element"><a href="https://techpiezo.com/category/linux/" rel="tag">Linux</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/category/linux/linux-recent/" rel="tag">Recent</a></span></li>					</ul>
+				</div>
+		
+					</header>
+		</section>
+
+		
+		
+		<div class="entry-content">
+			<p style="text-align: justify;">Debian 10, code-named Buster, is set to release on July 6, 2019. As per Debian&#8217;s policy, only emergency bug fixes are allowed for releases which are about to enter the freeze phase. Once the release is frozen, that means no further changes are allowed. But, prior to that, changes and unblock requests will be limited to :</p>
 <ol style="list-style-type: upper-alpha; text-align: justify;">
 <li>RC Bugs,</li>
 <li>Security bugs,</li>
@@ -167,551 +938,197 @@ body.custom-background { background-color: #ededed; }
 <li>Upgrade issues from Stretch to Buster (Debian 9 to Debian 10)</li>
 </ol>
 <p style="text-align: justify;">Debian 10 has now entered a phase wherein only emergency bug fixes will be allowed and those final bug fixes will be accepted till June 25, 2019.</p>
-<h3 style="text-align: justify;">Debian Release Cycle</h3>
+<h4 style="text-align: justify;">Debian Release Cycle</h4>
 <p style="text-align: justify;">The current Debian Stable release is code-named Debian Stretch, it will be supported till 2022, which also marks the End Of Life for Long-term support(LTS) provided for the release. Upcoming stable release is code-named Buster, and the support for which will be provided till 2022 (i.e. its End of Life).</p>
 <p style="text-align: justify;">A Stable version for Debian distribution is released every two years and LTS (Long-term support) version is supported for a period of 5 years. Furthermore, Releases are classified as old-stable, stable, testing, unstable and experimental. There is one interesting fact: Code-names of all the releases of Debian are based on characters of Pixar/Disney&#8217;s movie Toy Story.</p>
 <p>Debian Project was founded by Ian Murdock on August 16, 1993 and the first stable version was released on June 17, 1996. Being based on an open-source model, Debian contains packages that are available for free. Although, you can install non-free packages from its repositories. There are three components of Debian&#8217;s packages: main, contrib &amp; non-free.</p>
-                    <div class="post-item-metadata entry-meta">
-                            </div>
-                
-	<nav class="navigation post-navigation" role="navigation">
-		<h2 class="screen-reader-text">Continue Reading</h2>
-		<div class="nav-links"><div class="nav-previous"><a href="https://techpiezo.com/linux/add-user-to-sudoers-in-ubuntu-distribution/" rel="prev"><span class="em-post-navigation">Previous</span> Add User to Sudoers in Ubuntu Distribution</a></div><div class="nav-next"><a href="https://techpiezo.com/linux/whats-new-in-debian-10-buster-release/" rel="next"><span class="em-post-navigation">Next</span> Whats new in Debian 10 Buster Release</a></div></div>
-	</nav>            </div><!-- .entry-content -->
+		</div>
+
+		
+		
+		
+	</article>
+
+				</section>
+
+			
+		</div>
+
+	</div>
+
+	
+		<div class="ct-related-posts ct-hidden-sm ct-hidden-md">
+			<div class="ct-container">
+				<h4 class="ct-related-posts-label">
+					Related Posts				</h4>
+
+				<ul data-columns="3">
+											
+						<li>
+							<a class="ct-image-container" href="https://techpiezo.com/linux/install-remove-deb-package-in-ubuntu-debian/"><img width="640" height="414" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Kaleidico-on-Unsplash.jpg" class="attachment-large size-large" alt="" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<h3 class="related-entry-title">
+								<a href="https://techpiezo.com/linux/install-remove-deb-package-in-ubuntu-debian/">Install/Remove .deb package in Ubuntu/Debian</a>
+							</h3>
+
+							<div class="related-entry-meta">
+								<span>
+									Jul 4, 2019								</span>
+
+															</div>
+						</li>
+											
+						<li>
+							<a class="ct-image-container" href="https://techpiezo.com/linux/use-and-implementation-of-backing-file-and-snapshot-in-qemu-kvm/"><img width="640" height="427" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Patrick-Lindenberg-on-Unsplash.jpg" class="attachment-large size-large" alt="" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<h3 class="related-entry-title">
+								<a href="https://techpiezo.com/linux/use-and-implementation-of-backing-file-and-snapshot-in-qemu-kvm/">Backing File and Snapshot in QEMU/KVM</a>
+							</h3>
+
+							<div class="related-entry-meta">
+								<span>
+									Jul 4, 2019								</span>
+
+															</div>
+						</li>
+											
+						<li>
+							<a class="ct-image-container" href="https://techpiezo.com/linux/managing-users-and-groups-in-ubuntu/"><img width="640" height="427" src="https://techpiezo.com/wp-content/uploads/2019/07/Photo-by-Nhu-Nguyen-on-Unsplash.jpg" class="attachment-large size-large" alt="" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<h3 class="related-entry-title">
+								<a href="https://techpiezo.com/linux/managing-users-and-groups-in-ubuntu/">Managing Users and Groups in Ubuntu</a>
+							</h3>
+
+							<div class="related-entry-meta">
+								<span>
+									Jul 3, 2019								</span>
+
+															</div>
+						</li>
+									</ul>
+			</div>
+		</div>
+
+		
 
 
-                                </div>
-                                
-                                                            </article>
-                        
-                    </main><!-- #main -->
-                </div><!-- #primary -->
-                                <aside id="secondary" class="widget-area aft-sticky-sidebar">
-	<div id="covernews_posts_grid-4" class="widget covernews-widget covernews_Posts_Grid">
+	</main>
 
-            <div class="widget-block">
-                <div class="row">
+	<footer
+		class="site-footer"
+				>
 
+		<div
+			class="footer-inner"
+			data-type="type-2">
 
-                    <div class="col-sm-6 full-plus-list">
-                                                    <h4 class="widget-title header-after1">
-                        <span class="header-after">
-                            Linux                            </span>
-                            </h4>
-                                                                        
-                                <div class="spotlight-post">
-                                    <figure class="categorised-article">
-                                        <div class="categorised-article-wrapper">
-                                            <div class="data-bg data-bg-hover data-bg-categorised"
-                                                 data-background="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Kaleidico-on-Unsplash.jpg"><a
-                                                        href="https://techpiezo.com/linux/install-remove-deb-package-in-ubuntu-debian/"></a>
+			
+			
+			<section class="footer-primary-area ct-hidden-sm">
+				<div class="ct-container">
+					<div
+						class="grid-columns"
+						data-columns="1"						data-stack="mobile:tablet">
+						<section><nav data-menu-type="type-1"><ul id="footer-menu" class="footer-menu menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-55"><a href="https://techpiezo.com/about-us/">About Us</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-56"><a href="https://techpiezo.com/terms/">Terms</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-57"><a href="https://techpiezo.com/privacy-policy/">Privacy Policy</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58"><a href="https://techpiezo.com/contact/">Contact</a></li>
+</ul></nav></section>					</div>
+				</div>
+			</section>
 
-                                            </div>
-                                        </div>
-                                    </figure>
-
-                                                                        <figcaption>
-                                        <div class="figure-categories figure-categories-bg">
-                                            <ul class="cat-links"><li class="meta-category">
-                             <a class="covernews-categories category-color-1" href="https://techpiezo.com/category/linux/" alt="View all posts in Linux"> 
-                                 Linux
-                             </a>
-                        </li><li class="meta-category">
-                             <a class="covernews-categories category-color-1" href="https://techpiezo.com/category/linux/linux-tutorials/" alt="View all posts in Tutorials"> 
-                                 Tutorials
-                             </a>
-                        </li></ul>                                        </div>
-                                        <h3 class="article-title article-title-1">
-                                            <a href="https://techpiezo.com/linux/install-remove-deb-package-in-ubuntu-debian/">
-                                                Install/Remove .deb package in Ubuntu/Debian                                            </a>
-                                        </h3>
-                                        <div class="grid-item-metadata">
-                                            
-        <span class="author-links">
-                                </span>
-                                                </div>
-                                    </figcaption>
-                                </div>
-
-                            
-                                <div class="spotlight-post">
-                                    <figure class="categorised-article">
-                                        <div class="categorised-article-wrapper">
-                                            <div class="data-bg data-bg-hover data-bg-categorised"
-                                                 data-background="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Patrick-Lindenberg-on-Unsplash.jpg"><a
-                                                        href="https://techpiezo.com/linux/use-and-implementation-of-backing-file-as-snapshot-in-qemu-kvm/"></a>
-
-                                            </div>
-                                        </div>
-                                    </figure>
-
-                                                                        <figcaption>
-                                        <div class="figure-categories figure-categories-bg">
-                                            <ul class="cat-links"><li class="meta-category">
-                             <a class="covernews-categories category-color-1" href="https://techpiezo.com/category/linux/" alt="View all posts in Linux"> 
-                                 Linux
-                             </a>
-                        </li><li class="meta-category">
-                             <a class="covernews-categories category-color-1" href="https://techpiezo.com/category/linux/linux-tutorials/" alt="View all posts in Tutorials"> 
-                                 Tutorials
-                             </a>
-                        </li></ul>                                        </div>
-                                        <h3 class="article-title article-title-1">
-                                            <a href="https://techpiezo.com/linux/use-and-implementation-of-backing-file-as-snapshot-in-qemu-kvm/">
-                                                Use and Implementation of Backing File as Snapshot in QEMU/KVM                                            </a>
-                                        </h3>
-                                        <div class="grid-item-metadata">
-                                            
-        <span class="author-links">
-                                </span>
-                                                </div>
-                                    </figcaption>
-                                </div>
-
-                            
-                                <div class="spotlight-post">
-                                    <figure class="categorised-article">
-                                        <div class="categorised-article-wrapper">
-                                            <div class="data-bg data-bg-hover data-bg-categorised"
-                                                 data-background="https://techpiezo.com/wp-content/uploads/2019/07/Photo-by-Nhu-Nguyen-on-Unsplash.jpg"><a
-                                                        href="https://techpiezo.com/linux/managing-users-and-groups-in-ubuntu/"></a>
-
-                                            </div>
-                                        </div>
-                                    </figure>
-
-                                                                        <figcaption>
-                                        <div class="figure-categories figure-categories-bg">
-                                            <ul class="cat-links"><li class="meta-category">
-                             <a class="covernews-categories category-color-1" href="https://techpiezo.com/category/linux/" alt="View all posts in Linux"> 
-                                 Linux
-                             </a>
-                        </li><li class="meta-category">
-                             <a class="covernews-categories category-color-1" href="https://techpiezo.com/category/linux/linux-tutorials/" alt="View all posts in Tutorials"> 
-                                 Tutorials
-                             </a>
-                        </li></ul>                                        </div>
-                                        <h3 class="article-title article-title-1">
-                                            <a href="https://techpiezo.com/linux/managing-users-and-groups-in-ubuntu/">
-                                                Managing Users and Groups in Ubuntu                                            </a>
-                                        </h3>
-                                        <div class="grid-item-metadata">
-                                            
-        <span class="author-links">
-                                </span>
-                                                </div>
-                                    </figcaption>
-                                </div>
-
-                            
-                                <div class="spotlight-post">
-                                    <figure class="categorised-article">
-                                        <div class="categorised-article-wrapper">
-                                            <div class="data-bg data-bg-hover data-bg-categorised"
-                                                 data-background="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Ilya-Pavlov-on-Unsplash.jpg"><a
-                                                        href="https://techpiezo.com/linux/install-virtualbox-in-debian-stretch/"></a>
-
-                                            </div>
-                                        </div>
-                                    </figure>
-
-                                                                        <figcaption>
-                                        <div class="figure-categories figure-categories-bg">
-                                            <ul class="cat-links"><li class="meta-category">
-                             <a class="covernews-categories category-color-1" href="https://techpiezo.com/category/linux/" alt="View all posts in Linux"> 
-                                 Linux
-                             </a>
-                        </li><li class="meta-category">
-                             <a class="covernews-categories category-color-1" href="https://techpiezo.com/category/linux/linux-tutorials/" alt="View all posts in Tutorials"> 
-                                 Tutorials
-                             </a>
-                        </li></ul>                                        </div>
-                                        <h3 class="article-title article-title-1">
-                                            <a href="https://techpiezo.com/linux/install-virtualbox-in-debian-stretch/">
-                                                Install VirtualBox in Debian Stretch                                            </a>
-                                        </h3>
-                                        <div class="grid-item-metadata">
-                                            
-        <span class="author-links">
-                                </span>
-                                                </div>
-                                    </figcaption>
-                                </div>
-
-                                                                        </div>
-
-                    <div class="col-sm-6 list">
-                                                    <h4 class="widget-title header-after1">
-                        <span class="header-after">
-                            WordPress                            </span>
-                            </h4>
-                                                                        
-                                <div class="spotlight-post">
-                                    <figure class="categorised-article">
-                                        <div class="categorised-article-wrapper">
-                                            <div class="data-bg data-bg-hover data-bg-categorised"
-                                                 data-background="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Daniel-Fazio-on-Unsplash.jpg"><a
-                                                        href="https://techpiezo.com/wordpress/how-to-install-wordpress-on-windows-10-using-xampp/"></a>
-
-                                            </div>
-                                        </div>
-                                    </figure>
-                                                                        <figcaption>
-                                        <div class="figure-categories figure-categories-bg">
-
-                                            <ul class="cat-links"><li class="meta-category">
-                             <a class="covernews-categories category-color-1" href="https://techpiezo.com/category/wordpress/" alt="View all posts in Wordpress"> 
-                                 Wordpress
-                             </a>
-                        </li></ul>                                        </div>
-                                        <h3 class="article-title article-title-1">
-                                            <a href="https://techpiezo.com/wordpress/how-to-install-wordpress-on-windows-10-using-xampp/">
-                                                Install WordPress on Windows 10 using XAMPP                                            </a>
-                                        </h3>
-                                        <div class="grid-item-metadata">
-                                            
-        <span class="author-links">
-                                </span>
-                                                </div>
-                                    </figcaption>
-                                </div>
-
-                                
-                                <div class="spotlight-post">
-                                    <figure class="categorised-article">
-                                        <div class="categorised-article-wrapper">
-                                            <div class="data-bg data-bg-hover data-bg-categorised"
-                                                 data-background="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Joanna-Kosinska-on-Unsplash-1.jpg"><a
-                                                        href="https://techpiezo.com/wordpress/how-to-install-wordpress-on-ubuntu-19-04/"></a>
-
-                                            </div>
-                                        </div>
-                                    </figure>
-                                                                        <figcaption>
-                                        <div class="figure-categories figure-categories-bg">
-
-                                            <ul class="cat-links"><li class="meta-category">
-                             <a class="covernews-categories category-color-1" href="https://techpiezo.com/category/wordpress/" alt="View all posts in Wordpress"> 
-                                 Wordpress
-                             </a>
-                        </li></ul>                                        </div>
-                                        <h3 class="article-title article-title-1">
-                                            <a href="https://techpiezo.com/wordpress/how-to-install-wordpress-on-ubuntu-19-04/">
-                                                Install WordPress on Ubuntu 19.04                                            </a>
-                                        </h3>
-                                        <div class="grid-item-metadata">
-                                            
-        <span class="author-links">
-                                </span>
-                                                </div>
-                                    </figcaption>
-                                </div>
-
-                                
-                                <div class="spotlight-post">
-                                    <figure class="categorised-article">
-                                        <div class="categorised-article-wrapper">
-                                            <div class="data-bg data-bg-hover data-bg-categorised"
-                                                 data-background="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Sergi-Kabrera-on-Unsplash.jpg"><a
-                                                        href="https://techpiezo.com/wordpress/difference-between-wordpress-com-and-wordpress-org/"></a>
-
-                                            </div>
-                                        </div>
-                                    </figure>
-                                                                        <figcaption>
-                                        <div class="figure-categories figure-categories-bg">
-
-                                            <ul class="cat-links"><li class="meta-category">
-                             <a class="covernews-categories category-color-1" href="https://techpiezo.com/category/wordpress/" alt="View all posts in Wordpress"> 
-                                 Wordpress
-                             </a>
-                        </li></ul>                                        </div>
-                                        <h3 class="article-title article-title-1">
-                                            <a href="https://techpiezo.com/wordpress/difference-between-wordpress-com-and-wordpress-org/">
-                                                Difference between WordPress.com and WordPress.org                                            </a>
-                                        </h3>
-                                        <div class="grid-item-metadata">
-                                            
-        <span class="author-links">
-                                </span>
-                                                </div>
-                                    </figcaption>
-                                </div>
-
-                                
-                                <div class="spotlight-post">
-                                    <figure class="categorised-article">
-                                        <div class="categorised-article-wrapper">
-                                            <div class="data-bg data-bg-hover data-bg-categorised"
-                                                 data-background="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Markus-Spiske-on-Unsplash.jpg"><a
-                                                        href="https://techpiezo.com/wordpress/introduction-to-wordpress-cms/"></a>
-
-                                            </div>
-                                        </div>
-                                    </figure>
-                                                                        <figcaption>
-                                        <div class="figure-categories figure-categories-bg">
-
-                                            <ul class="cat-links"><li class="meta-category">
-                             <a class="covernews-categories category-color-1" href="https://techpiezo.com/category/wordpress/" alt="View all posts in Wordpress"> 
-                                 Wordpress
-                             </a>
-                        </li></ul>                                        </div>
-                                        <h3 class="article-title article-title-1">
-                                            <a href="https://techpiezo.com/wordpress/introduction-to-wordpress-cms/">
-                                                Introduction to WordPress &#8211; CMS                                            </a>
-                                        </h3>
-                                        <div class="grid-item-metadata">
-                                            
-        <span class="author-links">
-                                </span>
-                                                </div>
-                                    </figcaption>
-                                </div>
-
-                                                                            </div>
-                </div>
-            </div>
-
-            </div></aside><!-- #secondary -->
-            </div>
-
+			
+			
+					</div>
+	</footer>
 
 </div>
 
-<div class="af-main-banner-latest-posts grid-layout">
-    <div class="container">
-        <div class="row">
 
-    <div class="widget-title-section">
-                    <h4 class="widget-title header-after1">
-                        <span class="header-after">
-                            You may have missed                            </span>
-            </h4>
-        
-    </div>
-    <div class="row">
-                <div class="col-sm-15 latest-posts-grid" data-mh="latest-posts-grid">
-                <div class="spotlight-post">
-                    <figure class="categorised-article inside-img">
-                        <div class="categorised-article-wrapper">
-                            <div class="data-bg data-bg-hover data-bg-categorised"
-                                 data-background="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Kaleidico-on-Unsplash.jpg">
-                                <a href="https://techpiezo.com/linux/install-remove-deb-package-in-ubuntu-debian/"></a>
-                            </div>
-                        </div>
-                                                <div class="figure-categories figure-categories-bg">
-                            
-                            <ul class="cat-links"><li class="meta-category">
-                             <a class="covernews-categories category-color-1" href="https://techpiezo.com/category/linux/" alt="View all posts in Linux"> 
-                                 Linux
-                             </a>
-                        </li><li class="meta-category">
-                             <a class="covernews-categories category-color-1" href="https://techpiezo.com/category/linux/linux-tutorials/" alt="View all posts in Tutorials"> 
-                                 Tutorials
-                             </a>
-                        </li></ul>                        </div>
-                    </figure>
+	<a href="#" class="ct-back-to-top ct-hidden-sm"
+		data-shape="square"
+		data-alignment="right"
+		title="Go to top">
 
-                    <figcaption>
-                        
-                        <h3 class="article-title article-title-1">
-                            <a href="https://techpiezo.com/linux/install-remove-deb-package-in-ubuntu-debian/">
-                                Install/Remove .deb package in Ubuntu/Debian                            </a>
-                        </h3>
-                        <div class="grid-item-metadata">
-                            
-        <span class="author-links">
-                                </span>
-                                </div>
-                    </figcaption>
-                </div>
-            </div>
-                    <div class="col-sm-15 latest-posts-grid" data-mh="latest-posts-grid">
-                <div class="spotlight-post">
-                    <figure class="categorised-article inside-img">
-                        <div class="categorised-article-wrapper">
-                            <div class="data-bg data-bg-hover data-bg-categorised"
-                                 data-background="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Patrick-Lindenberg-on-Unsplash.jpg">
-                                <a href="https://techpiezo.com/linux/use-and-implementation-of-backing-file-as-snapshot-in-qemu-kvm/"></a>
-                            </div>
-                        </div>
-                                                <div class="figure-categories figure-categories-bg">
-                            
-                            <ul class="cat-links"><li class="meta-category">
-                             <a class="covernews-categories category-color-1" href="https://techpiezo.com/category/linux/" alt="View all posts in Linux"> 
-                                 Linux
-                             </a>
-                        </li><li class="meta-category">
-                             <a class="covernews-categories category-color-1" href="https://techpiezo.com/category/linux/linux-tutorials/" alt="View all posts in Tutorials"> 
-                                 Tutorials
-                             </a>
-                        </li></ul>                        </div>
-                    </figure>
+		<svg width="12" height="12" viewBox="0 0 20 20"><path d="M10,0L9.4,0.6L0.8,9.1l1.2,1.2l7.1-7.1V20h1.7V3.3l7.1,7.1l1.2-1.2l-8.5-8.5L10,0z"/></svg>
+		
+	</a>
 
-                    <figcaption>
-                        
-                        <h3 class="article-title article-title-1">
-                            <a href="https://techpiezo.com/linux/use-and-implementation-of-backing-file-as-snapshot-in-qemu-kvm/">
-                                Use and Implementation of Backing File as Snapshot in QEMU/KVM                            </a>
-                        </h3>
-                        <div class="grid-item-metadata">
-                            
-        <span class="author-links">
-                                </span>
-                                </div>
-                    </figcaption>
-                </div>
-            </div>
-                    <div class="col-sm-15 latest-posts-grid" data-mh="latest-posts-grid">
-                <div class="spotlight-post">
-                    <figure class="categorised-article inside-img">
-                        <div class="categorised-article-wrapper">
-                            <div class="data-bg data-bg-hover data-bg-categorised"
-                                 data-background="https://techpiezo.com/wp-content/uploads/2019/07/Photo-by-Nhu-Nguyen-on-Unsplash.jpg">
-                                <a href="https://techpiezo.com/linux/managing-users-and-groups-in-ubuntu/"></a>
-                            </div>
-                        </div>
-                                                <div class="figure-categories figure-categories-bg">
-                            
-                            <ul class="cat-links"><li class="meta-category">
-                             <a class="covernews-categories category-color-1" href="https://techpiezo.com/category/linux/" alt="View all posts in Linux"> 
-                                 Linux
-                             </a>
-                        </li><li class="meta-category">
-                             <a class="covernews-categories category-color-1" href="https://techpiezo.com/category/linux/linux-tutorials/" alt="View all posts in Tutorials"> 
-                                 Tutorials
-                             </a>
-                        </li></ul>                        </div>
-                    </figure>
+	
+<div id="search-modal" class="ct-modal" >
+	<div class="ct-bag-container">
+		<div class="ct-bag-actions">
+			<div class="ct-bag-close">
+				<span class="lines-button close"></span>
+			</div>
+		</div>
 
-                    <figcaption>
-                        
-                        <h3 class="article-title article-title-1">
-                            <a href="https://techpiezo.com/linux/managing-users-and-groups-in-ubuntu/">
-                                Managing Users and Groups in Ubuntu                            </a>
-                        </h3>
-                        <div class="grid-item-metadata">
-                            
-        <span class="author-links">
-                                </span>
-                                </div>
-                    </figcaption>
-                </div>
-            </div>
-                    <div class="col-sm-15 latest-posts-grid" data-mh="latest-posts-grid">
-                <div class="spotlight-post">
-                    <figure class="categorised-article inside-img">
-                        <div class="categorised-article-wrapper">
-                            <div class="data-bg data-bg-hover data-bg-categorised"
-                                 data-background="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Patrick-Lindenberg-on-Unsplash.jpg">
-                                <a href="https://techpiezo.com/tech-insights/raw-vs-qcow2-disk-images-in-qemu-kvm/"></a>
-                            </div>
-                        </div>
-                                                <div class="figure-categories figure-categories-bg">
-                            
-                            <ul class="cat-links"><li class="meta-category">
-                             <a class="covernews-categories category-color-1" href="https://techpiezo.com/category/tech-insights/" alt="View all posts in Insights"> 
-                                 Insights
-                             </a>
-                        </li></ul>                        </div>
-                    </figure>
+		<div class="ct-bag-content" data-align="middle">
+			
+<form role="search" method="get" class="search-form" action="https://techpiezo.com/">
+	<div class="ct-search-input">
+		<input type="search" class="search-field" placeholder="Search" value="" name="s" autocomplete="off" />
 
-                    <figcaption>
-                        
-                        <h3 class="article-title article-title-1">
-                            <a href="https://techpiezo.com/tech-insights/raw-vs-qcow2-disk-images-in-qemu-kvm/">
-                                Raw vs Qcow2 Disk Images in QEMU/KVM                            </a>
-                        </h3>
-                        <div class="grid-item-metadata">
-                            
-        <span class="author-links">
-                                </span>
-                                </div>
-                    </figcaption>
-                </div>
-            </div>
-                    <div class="col-sm-15 latest-posts-grid" data-mh="latest-posts-grid">
-                <div class="spotlight-post">
-                    <figure class="categorised-article inside-img">
-                        <div class="categorised-article-wrapper">
-                            <div class="data-bg data-bg-hover data-bg-categorised"
-                                 data-background="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Ilya-Pavlov-on-Unsplash.jpg">
-                                <a href="https://techpiezo.com/linux/install-virtualbox-in-debian-stretch/"></a>
-                            </div>
-                        </div>
-                                                <div class="figure-categories figure-categories-bg">
-                            
-                            <ul class="cat-links"><li class="meta-category">
-                             <a class="covernews-categories category-color-1" href="https://techpiezo.com/category/linux/" alt="View all posts in Linux"> 
-                                 Linux
-                             </a>
-                        </li><li class="meta-category">
-                             <a class="covernews-categories category-color-1" href="https://techpiezo.com/category/linux/linux-tutorials/" alt="View all posts in Tutorials"> 
-                                 Tutorials
-                             </a>
-                        </li></ul>                        </div>
-                    </figure>
+		<button class="search-submit">
+			<i>
+				<svg
+					width="12px"
+					height="12px"
+					viewBox="0 0 24 24">
 
-                    <figcaption>
-                        
-                        <h3 class="article-title article-title-1">
-                            <a href="https://techpiezo.com/linux/install-virtualbox-in-debian-stretch/">
-                                Install VirtualBox in Debian Stretch                            </a>
-                        </h3>
-                        <div class="grid-item-metadata">
-                            
-        <span class="author-links">
-                                </span>
-                                </div>
-                    </figcaption>
-                </div>
-            </div>
-                </div>
-    </div>
-    </div>
+					<path d="M23.3,23.3c-0.9,0.9-2.3,0.9-3.2,0l-4-4c-1.6,1-3.6,1.7-5.7,1.7C4.7,21,0,16.3,0,10.5S4.7,0,10.5,0C16.3,0,21,4.7,21,10.5
+					c0,2.1-0.6,4-1.7,5.7l4,4C24.2,21,24.2,22.5,23.3,23.3z M10.5,3C6.4,3,3,6.4,3,10.5S6.4,18,10.5,18c4.1,0,7.5-3.4,7.5-7.5
+					C18,6.4,14.7,3,10.5,3z"/>
+				</svg>
+			</i>
+
+			<span data-loader="circles"><span></span><span></span><span></span></span>
+		</button>
+	</div>
+</form>
+
+
+		</div>
+	</div>
 </div>
 
-<footer class="site-footer">
-        
-            <div class="secondary-footer">
-        <div class="container">
-            <div class="row">
-                                    <div class="col-sm-12">
-                        <div class="footer-nav-wrapper">
-                        <div class="footer-navigation"><ul id="footer-menu" class="menu"><li id="menu-item-55" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-55"><a href="https://techpiezo.com/about-us/">About Us</a></li>
-<li id="menu-item-56" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-56"><a href="https://techpiezo.com/terms/">Terms</a></li>
-<li id="menu-item-57" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-57"><a href="https://techpiezo.com/privacy-policy/">Privacy Policy</a></li>
-<li id="menu-item-58" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58"><a href="https://techpiezo.com/contact/">Contact</a></li>
-</ul></div>                        </div>
-                    </div>
-                                                </div>
-        </div>
-    </div>
-            <div class="site-info">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                                                                Copyright &copy; All rights reserved.                                                                                    <span class="sep"> | </span>
-                        <a href="https://afthemes.com/covernews">CoverNews</a> by AF themes.                                    </div>
-            </div>
-        </div>
-    </div>
-</footer>
-</div>
-<a id="scroll-up" class="secondary-color">
-    <i class="fa fa-angle-up"></i>
-</a>
-<script type='text/javascript' src='https://techpiezo.com/wp-content/themes/covernews/js/navigation.js'></script>
-<script type='text/javascript' src='https://techpiezo.com/wp-content/themes/covernews/js/skip-link-focus-fix.js'></script>
-<script type='text/javascript' src='https://techpiezo.com/wp-content/themes/covernews/assets/slick/js/slick.min.js'></script>
-<script type='text/javascript' src='https://techpiezo.com/wp-content/themes/covernews/assets/bootstrap/js/bootstrap.min.js'></script>
-<script type='text/javascript' src='https://techpiezo.com/wp-content/themes/covernews/assets/jquery-match-height/jquery.matchHeight.min.js'></script>
-<script type='text/javascript' src='https://techpiezo.com/wp-content/themes/covernews/assets/marquee/jquery.marquee.js'></script>
-<script type='text/javascript' src='https://techpiezo.com/wp-content/themes/covernews/assets/theiaStickySidebar/theia-sticky-sidebar.min.js'></script>
-<script type='text/javascript' src='https://techpiezo.com/wp-content/themes/covernews/assets/script.js'></script>
-<script type='text/javascript' src='https://techpiezo.com/wp-content/themes/covernews/assets/fixed-header-script.js'></script>
+
+
+	<div id="mobile-menu" class="ct-modal">
+		
+		<div class="ct-bag-container contains-sub-menus">
+			<div class="ct-bag-actions">
+				<div class="ct-bag-close">
+					<span class="lines-button close"></span>
+				</div>
+			</div>
+
+			<div class="ct-bag-content" data-align="middle">
+				
+				<ul id="primary-menu" class="mobile-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-70"><a href="https://techpiezo.com">Home</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-39"><a href="https://techpiezo.com/category/tech-insights/">Insights</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-40"><a href="https://techpiezo.com/category/seo/">SEO</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-41"><a href="https://techpiezo.com/category/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-349"><a href="https://techpiezo.com/category/linux/linux-recent/">Recent</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-350"><a href="https://techpiezo.com/category/linux/linux-tutorials/">Tutorials</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-42"><a href="https://techpiezo.com/category/wordpress/">WordPress</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-43"><a href="https://techpiezo.com/category/android/">Android<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-347"><a href="https://techpiezo.com/category/android/android-recent/">Recent</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-348"><a href="https://techpiezo.com/category/android/android-tutorials/">Tutorials</a></li>
+</ul>
+</li>
+</ul>			</div>
+		</div>
+	</div>
+
+	
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ct_localizations = {"public_url":"https:\/\/techpiezo.com\/wp-content\/themes\/blocksy\/static\/bundle\/","show_more_text":"Show more"};
+/* ]]> */
+</script>
+<script async type='text/javascript' src='https://techpiezo.com/wp-content/themes/blocksy/static/bundle/main.js'></script>
 <script type='text/javascript' src='https://techpiezo.com/wp-includes/js/wp-embed.min.js'></script>
-
 </body>
 </html>

@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="July 4, 2019 8:31 pm" -->
+<!-- generated-on="July 5, 2019 5:47 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>https://techpiezo.com/tech-insights/raw-vs-qcow2-disk-images-in-qemu-kvm/</loc>
-		<lastmod>2019-06-19T18:01:02+00:00</lastmod>
+		<lastmod>2019-07-05T17:21:56+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/install-virtualbox-in-debian-stretch/</loc>
-		<lastmod>2019-06-19T17:25:30+00:00</lastmod>
+		<lastmod>2019-07-05T17:22:26+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/update-upgrade-your-debian-distribution/</loc>
-		<lastmod>2019-06-18T20:07:54+00:00</lastmod>
+		<lastmod>2019-07-05T17:23:33+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
@@ -32,31 +32,31 @@
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/install-clamav-antivirus-on-ubuntu/</loc>
-		<lastmod>2019-06-15T19:12:36+00:00</lastmod>
+		<lastmod>2019-07-05T17:24:39+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/best-antivirus-tools-for-ubuntu-linux-distributions/</loc>
-		<lastmod>2019-06-15T14:24:45+00:00</lastmod>
+		<lastmod>2019-07-05T17:24:58+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/is-ubuntu-relatively-secure-than-its-counterparts/</loc>
-		<lastmod>2019-06-15T13:46:04+00:00</lastmod>
+		<lastmod>2019-07-05T17:25:15+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/antivirus-in-ubuntu-linux-distributions/</loc>
-		<lastmod>2019-06-15T16:25:47+00:00</lastmod>
+		<lastmod>2019-07-05T17:25:35+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/add-user-to-a-group-in-ubuntu-linux-mint/</loc>
-		<lastmod>2019-06-15T07:25:33+00:00</lastmod>
+		<lastmod>2019-07-05T17:26:09+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
@@ -68,37 +68,37 @@
 	</url>
 	<url>
 		<loc>https://techpiezo.com/android/android-phone-as-security-key-for-google-sign-in/</loc>
-		<lastmod>2019-06-13T16:29:52+00:00</lastmod>
+		<lastmod>2019-07-05T17:27:14+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/debian-buster-set-to-release-on-6th-of-july/</loc>
-		<lastmod>2019-06-13T15:48:12+00:00</lastmod>
+		<lastmod>2019-07-05T17:27:30+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/add-user-to-sudoers-in-ubuntu-distribution/</loc>
-		<lastmod>2019-06-15T07:31:35+00:00</lastmod>
+		<lastmod>2019-07-05T17:27:46+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/5-things-to-know-before-downloading-ubuntu/</loc>
-		<lastmod>2019-06-11T18:58:53+00:00</lastmod>
+		<lastmod>2019-07-05T17:28:20+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/i386-or-amd64-ubuntu-distribution/</loc>
-		<lastmod>2019-06-15T07:31:59+00:00</lastmod>
+		<lastmod>2019-07-05T17:28:41+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/tech-insights/tmp-on-ram/</loc>
-		<lastmod>2019-06-15T07:32:20+00:00</lastmod>
+		<lastmod>2019-07-05T17:29:30+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
@@ -122,56 +122,56 @@
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/introduction-to-ubuntu/</loc>
-		<lastmod>2019-06-15T07:34:05+00:00</lastmod>
+		<lastmod>2019-07-05T17:31:14+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/wordpress/how-to-install-wordpress-on-windows-10-using-xampp/</loc>
-		<lastmod>2019-06-15T07:34:39+00:00</lastmod>
+		<lastmod>2019-07-05T16:30:42+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/wordpress/how-to-install-wordpress-on-ubuntu-19-04/</loc>
-		<lastmod>2019-06-15T07:35:02+00:00</lastmod>
+		<lastmod>2019-07-05T17:31:38+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/wordpress/difference-between-wordpress-com-and-wordpress-org/</loc>
-		<lastmod>2019-06-15T07:35:18+00:00</lastmod>
+		<lastmod>2019-07-05T17:31:54+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/wordpress/introduction-to-wordpress-cms/</loc>
-		<lastmod>2019-06-10T14:29:41+00:00</lastmod>
+		<lastmod>2019-07-05T17:33:08+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/seo/on-site-search-engine-optimization-factors-that-matter/</loc>
-		<lastmod>2019-06-10T14:30:13+00:00</lastmod>
+		<lastmod>2019-07-05T17:33:45+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/seo/on-page-search-engine-optimization/</loc>
-		<lastmod>2019-06-10T14:30:37+00:00</lastmod>
+		<lastmod>2019-07-05T17:34:20+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/seo/types-of-search-related-queries/</loc>
-		<lastmod>2019-06-10T14:31:05+00:00</lastmod>
+		<lastmod>2019-07-05T17:34:44+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/seo/how-search-engines-work/</loc>
-		<lastmod>2019-06-11T12:31:05+00:00</lastmod>
+		<lastmod>2019-07-05T17:35:13+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: 51279a2d538f3c0d15ccd7c36d0921a2; Queries for sitemap: 59; Total queries: 69; Seconds: 0.04; Memory for sitemap: 2MB; Total memory: 4MB -->
+</urlset><!-- Request ID: 732047eafe13609806322106e2bb7c13; Queries for sitemap: 68; Total queries: 78; Seconds: 0.05; Memory for sitemap: 0MB; Total memory: 2MB -->
