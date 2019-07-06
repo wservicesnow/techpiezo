@@ -206,7 +206,7 @@ code, kbd, samp, pre {
 }
 
 .site-title {
-    --linkInitialColor: var(--paletteColor4);
+    --linkInitialColor: var(--paletteColor2);
     --lineHeight: 1.65;
     --textDecoration: none;
     --fontStyle: normal;
@@ -214,7 +214,7 @@ code, kbd, samp, pre {
     --textTransform: none;
     --fontSize: 25px;
     --letterSpacing: 0em;
-    --linkHoverColor: var(--paletteColor1);
+    --linkHoverColor: var(--paletteColor3);
 }
 
 .primary-menu > li {
@@ -292,6 +292,11 @@ code, kbd, samp, pre {
     --textDecoration: none;
     --lineHeight: 1.65;
     --fontColor: var(--paletteColor3);
+}
+
+.site-main {
+    --backgroundImage: none;
+    --backgroundColor: #c7c9c8;
 }
 
 .header-desktop {
@@ -422,18 +427,17 @@ code, kbd, samp, pre {
     --buttonHoverColor: var(--paletteColor4);
 }
 
-.site-main,
-.single .ct-comments-container,
-.page .ct-comments-container {
-    --backgroundImage: none;
-    --backgroundColor: #f8f9fb;
-}
-
 .header-mobile,
 .post[data-content="boxed"],
 .page[data-content="boxed"] {
     --backgroundImage: none;
     --backgroundColor: #ffffff;
+}
+
+.single .ct-comments-container,
+.page .ct-comments-container {
+    --backgroundImage: none;
+    --backgroundColor: #f8f9fb;
 }
 
 .header-top-bar-menu,
@@ -766,9 +770,7 @@ code, kbd, samp, pre {
 	  padding-left: 12px;
 	padding-right: 12px;
 }
-.main-content-area-boundless{
-	padding-top: 20px;
-}		</style>
+		</style>
 		
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135581354-3"></script>

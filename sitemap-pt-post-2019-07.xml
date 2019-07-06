@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="July 6, 2019 8:00 am" -->
+<!-- generated-on="July 6, 2019 9:14 am" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>https://techpiezo.com/linux/install-remove-deb-package-in-ubuntu-debian/</loc>
 		<lastmod>2019-07-05T17:19:01+00:00</lastmod>
@@ -18,4 +18,4 @@
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: 7fa9b50f811e3487f51601f064257ec4; Queries for sitemap: 2; Total queries: 12; Seconds: 0.01; Memory for sitemap: 0MB; Total memory: 2MB -->
+</urlset><!-- Request ID: a3fd047c3e6d2b4e0ceb29cb2393464f; Queries for sitemap: 2; Total queries: 12; Seconds: 0; Memory for sitemap: 0MB; Total memory: 2MB -->
