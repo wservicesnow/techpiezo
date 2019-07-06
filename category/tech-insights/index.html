@@ -56,7 +56,7 @@
     --dropdownMenuWidth: 200px;
     --navSectionHeight: 60px;
     --transparentHeaderHoverFontColor: var(--paletteColor1);
-    --headerHeight: 120px;
+    --headerHeight: 50px;
     --headerLogoContainerHeight: 110px;
     --logoMaxHeight: 50px;
     --cardSpacing: 35px;
@@ -75,7 +75,7 @@
     --cardsGap: 30px;
     --transparentHeaderBackground: rgba(255, 255, 255, 0.1);
     --transparentLogoMaxHeight: 50px;
-    --headerShadow: rgba(210, 213, 218, 0.15);
+    --headerShadow: rgba(210,213,218,0.15);
     --transparentHeaderInitialFontColor: #ffffff;
     --dropdownTopOffset: 15px;
     --dropDownDivider: 1px dashed rgba(255, 255, 255, 0.1);
@@ -88,7 +88,7 @@
     --fontColor: var(--paletteColor3);
     --linkHoverColor: var(--paletteColor1);
     --buttonHoverColor: var(--paletteColor2);
-    --contentAreaSpacing: 80px;
+    --contentAreaSpacing: 35px;
     --wideOffset: 130px;
     --sidebarWidthNoUnit: 27;
     --sidebarOffset: 50px;
@@ -97,7 +97,7 @@
     --sidebarWidgetsSpacing: 60px;
     --paginationSpacing: 80px;
     --paginationAccentInitialColor: var(--paletteColor1);
-    --paginationDivider: 5px solid rgba(224, 229, 235, 0.5);
+    --paginationDivider: none;
     --relatedPostsLabelColor: var(--paletteColor4);
     --postNavSpacing: 80px;
     --bottomShareBoxSpacing: 70px;
@@ -155,7 +155,7 @@ h3 {
 
 h4 {
     --letterSpacing: 0em;
-    --fontSize: 25px;
+    --fontSize: 22px;
     --textTransform: none;
     --fontWeight: 700;
     --fontStyle: normal;
@@ -478,8 +478,8 @@ code, kbd, samp, pre {
     --logoMaxHeight: 50px;
     --headerLogoContainerHeight: 35px;
     --navSectionHeight: 15px;
-    --mobileHeaderHeight: 70px;
-    --contentAreaSpacing: 60px;
+    --mobileHeaderHeight: 40px;
+    --contentAreaSpacing: 25px;
     --sidebarInnerSpacing: 35px;
     --relatedPostsContainerSpacing: 50px;
     --topShareBoxSpacing: 50px;
@@ -509,7 +509,7 @@ h3 {
 
 h4 {
     --lineHeight: 1.5;
-    --fontSize: 25px;
+    --fontSize: 22px;
     --letterSpacing: 0em;
 }
 
@@ -622,8 +622,8 @@ code, kbd, samp, pre {
     --logoMaxHeight: 50px;
     --headerLogoContainerHeight: 35px;
     --navSectionHeight: 15px;
-    --mobileHeaderHeight: 70px;
-    --contentAreaSpacing: 50px;
+    --mobileHeaderHeight: 50px;
+    --contentAreaSpacing: 20px;
     --sidebarInnerSpacing: 35px;
     --relatedPostsContainerSpacing: 30px;
     --topShareBoxSpacing: 30px;
@@ -653,7 +653,7 @@ h3 {
 
 h4 {
     --lineHeight: 1.5;
-    --fontSize: 25px;
+    --fontSize: 22px;
     --letterSpacing: 0em;
 }
 
@@ -766,6 +766,9 @@ code, kbd, samp, pre {
 .post{    
 	  padding-left: 12px;
 	padding-right: 12px;
+}
+.main-content-area-boundless{
+	padding-top: 20px;
 }		</style>
 		
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -904,8 +907,8 @@ code, kbd, samp, pre {
 
 		
 									<div class="entries"
-						data-layout="enhanced-grid"
-						data-cards="boxed"																		>
+						data-layout="grid"
+						data-cards="boxed"												data-columns="4"						>
 				
 <article
 	id="post-442" class="entry-card post-442 post type-post status-publish format-standard has-post-thumbnail hentry category-tech-insights"	>
@@ -922,15 +925,15 @@ code, kbd, samp, pre {
 			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-element"><a href="https://techpiezo.com/category/tech-insights/" rel="tag">Insights</a></span></li>					</ul>
 				</div>
 		
-		
+		<a class="ct-image-container boundless-image" href="https://techpiezo.com/tech-insights/raw-vs-qcow2-disk-images-in-qemu-kvm/" ><img width="640" height="427" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Patrick-Lindenberg-on-Unsplash.jpg" class="attachment-medium_large size-medium_large" alt="" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 50%"></div></a>
 	<h2 class="entry-title">
 		<a href="https://techpiezo.com/tech-insights/raw-vs-qcow2-disk-images-in-qemu-kvm/">
 			Raw vs Qcow2 Disk Images in QEMU/KVM		</a>
 	</h2>
 
-	<a class="ct-image-container boundless-image" href="https://techpiezo.com/tech-insights/raw-vs-qcow2-disk-images-in-qemu-kvm/" ><img width="640" height="427" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Patrick-Lindenberg-on-Unsplash.jpg" class="attachment-medium_large size-medium_large" alt="" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 50%"></div></a>
+	
 	<div class="entry-excerpt">
-		One of the important part of virtualization is storage. Storage allows virtualized environment to read and write data over variety…	</div>
+		One of the important part of virtualization is storage. Storage…	</div>
 
 	<div class="ct-ghost"></div>
 				<div class="entry-meta"  data-type="simple">
@@ -973,15 +976,15 @@ code, kbd, samp, pre {
 			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-element"><a href="https://techpiezo.com/category/tech-insights/" rel="tag">Insights</a></span></li>					</ul>
 				</div>
 		
-		
+		<a class="ct-image-container boundless-image" href="https://techpiezo.com/tech-insights/command-line-calendar-on-debian-linux/" ><img width="640" height="425" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-William-Iven-on-Unsplash.jpg" class="attachment-medium_large size-medium_large" alt="" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 50%"></div></a>
 	<h2 class="entry-title">
 		<a href="https://techpiezo.com/tech-insights/command-line-calendar-on-debian-linux/">
 			Command line Calendar utilities on Debian/Linux		</a>
 	</h2>
 
-	<a class="ct-image-container boundless-image" href="https://techpiezo.com/tech-insights/command-line-calendar-on-debian-linux/" ><img width="640" height="425" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-William-Iven-on-Unsplash.jpg" class="attachment-medium_large size-medium_large" alt="" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 50%"></div></a>
+	
 	<div class="entry-excerpt">
-		Linux distributions provides simple and useful utilities through command line. Calendar in GNU/Linux might seem like novelty, however mastering the…	</div>
+		Linux distributions provides simple and useful utilities through command line.…	</div>
 
 	<div class="ct-ghost"></div>
 				<div class="entry-meta"  data-type="simple">
@@ -1024,15 +1027,15 @@ code, kbd, samp, pre {
 			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-element"><a href="https://techpiezo.com/category/tech-insights/" rel="tag">Insights</a></span></li>					</ul>
 				</div>
 		
-		
+		<a class="ct-image-container boundless-image" href="https://techpiezo.com/tech-insights/tmp-on-ram/" ><img width="640" height="427" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Alexandre-Debiève-on-Unsplash.jpg" class="attachment-medium_large size-medium_large" alt="" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 50%"></div></a>
 	<h2 class="entry-title">
 		<a href="https://techpiezo.com/tech-insights/tmp-on-ram/">
 			/tmp on RAM		</a>
 	</h2>
 
-	<a class="ct-image-container boundless-image" href="https://techpiezo.com/tech-insights/tmp-on-ram/" ><img width="640" height="427" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Alexandre-Debiève-on-Unsplash.jpg" class="attachment-medium_large size-medium_large" alt="" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 50%"></div></a>
+	
 	<div class="entry-excerpt">
-		The purpose of /tmp directory on GNU/Linux has been to provide programs a directory for temporary files. Files in /tmp…	</div>
+		The purpose of /tmp directory on GNU/Linux has been to…	</div>
 
 	<div class="ct-ghost"></div>
 				<div class="entry-meta"  data-type="simple">
@@ -1079,7 +1082,7 @@ code, kbd, samp, pre {
 
 			
 			
-			<section class="footer-primary-area ct-hidden-sm">
+			<section class="footer-primary-area ">
 				<div class="ct-container">
 					<div
 						class="grid-columns"

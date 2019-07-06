@@ -55,7 +55,7 @@
     --dropdownMenuWidth: 200px;
     --navSectionHeight: 60px;
     --transparentHeaderHoverFontColor: var(--paletteColor1);
-    --headerHeight: 120px;
+    --headerHeight: 50px;
     --headerLogoContainerHeight: 110px;
     --logoMaxHeight: 50px;
     --cardSpacing: 35px;
@@ -74,7 +74,7 @@
     --cardsGap: 30px;
     --transparentHeaderBackground: rgba(255, 255, 255, 0.1);
     --transparentLogoMaxHeight: 50px;
-    --headerShadow: rgba(210, 213, 218, 0.15);
+    --headerShadow: rgba(210,213,218,0.15);
     --transparentHeaderInitialFontColor: #ffffff;
     --dropdownTopOffset: 15px;
     --dropDownDivider: 1px dashed rgba(255, 255, 255, 0.1);
@@ -87,7 +87,7 @@
     --fontColor: var(--paletteColor3);
     --linkHoverColor: var(--paletteColor1);
     --buttonHoverColor: var(--paletteColor2);
-    --contentAreaSpacing: 80px;
+    --contentAreaSpacing: 35px;
     --wideOffset: 130px;
     --sidebarWidthNoUnit: 27;
     --sidebarOffset: 50px;
@@ -96,7 +96,7 @@
     --sidebarWidgetsSpacing: 60px;
     --paginationSpacing: 80px;
     --paginationAccentInitialColor: var(--paletteColor1);
-    --paginationDivider: 5px solid rgba(224, 229, 235, 0.5);
+    --paginationDivider: none;
     --relatedPostsLabelColor: var(--paletteColor4);
     --postNavSpacing: 80px;
     --bottomShareBoxSpacing: 70px;
@@ -154,7 +154,7 @@ h3 {
 
 h4 {
     --letterSpacing: 0em;
-    --fontSize: 25px;
+    --fontSize: 22px;
     --textTransform: none;
     --fontWeight: 700;
     --fontStyle: normal;
@@ -477,8 +477,8 @@ code, kbd, samp, pre {
     --logoMaxHeight: 50px;
     --headerLogoContainerHeight: 35px;
     --navSectionHeight: 15px;
-    --mobileHeaderHeight: 70px;
-    --contentAreaSpacing: 60px;
+    --mobileHeaderHeight: 40px;
+    --contentAreaSpacing: 25px;
     --sidebarInnerSpacing: 35px;
     --relatedPostsContainerSpacing: 50px;
     --topShareBoxSpacing: 50px;
@@ -508,7 +508,7 @@ h3 {
 
 h4 {
     --lineHeight: 1.5;
-    --fontSize: 25px;
+    --fontSize: 22px;
     --letterSpacing: 0em;
 }
 
@@ -621,8 +621,8 @@ code, kbd, samp, pre {
     --logoMaxHeight: 50px;
     --headerLogoContainerHeight: 35px;
     --navSectionHeight: 15px;
-    --mobileHeaderHeight: 70px;
-    --contentAreaSpacing: 50px;
+    --mobileHeaderHeight: 50px;
+    --contentAreaSpacing: 20px;
     --sidebarInnerSpacing: 35px;
     --relatedPostsContainerSpacing: 30px;
     --topShareBoxSpacing: 30px;
@@ -652,7 +652,7 @@ h3 {
 
 h4 {
     --lineHeight: 1.5;
-    --fontSize: 25px;
+    --fontSize: 22px;
     --letterSpacing: 0em;
 }
 
@@ -765,6 +765,9 @@ code, kbd, samp, pre {
 .post{    
 	  padding-left: 12px;
 	padding-right: 12px;
+}
+.main-content-area-boundless{
+	padding-top: 20px;
 }		</style>
 		
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -902,8 +905,8 @@ code, kbd, samp, pre {
 
 		
 									<div class="entries"
-						data-layout="enhanced-grid"
-						data-cards="boxed"																		>
+						data-layout="grid"
+						data-cards="boxed"												data-columns="4"						>
 				
 <article
 	id="post-391" class="entry-card post-391 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-recent"	>
@@ -920,15 +923,15 @@ code, kbd, samp, pre {
 			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-element"><a href="https://techpiezo.com/category/linux/" rel="tag">Linux</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/category/linux/linux-recent/" rel="tag">Recent</a></span></li>					</ul>
 				</div>
 		
-		
+		<a class="ct-image-container boundless-image" href="https://techpiezo.com/linux/whats-new-in-debian-10-buster-release/" ><img width="640" height="426" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Christopher-Gower-on-Unsplash.jpg" class="attachment-medium_large size-medium_large" alt="" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 50%"></div></a>
 	<h2 class="entry-title">
 		<a href="https://techpiezo.com/linux/whats-new-in-debian-10-buster-release/">
 			Whats new in Debian 10 Buster Release		</a>
 	</h2>
 
-	<a class="ct-image-container boundless-image" href="https://techpiezo.com/linux/whats-new-in-debian-10-buster-release/" ><img width="640" height="426" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Christopher-Gower-on-Unsplash.jpg" class="attachment-medium_large size-medium_large" alt="" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 50%"></div></a>
+	
 	<div class="entry-excerpt">
-		Debian 10 Buster is all set to release on July 06, 2019. As Debian supports only one stable release at…	</div>
+		Debian 10 Buster is all set to release on July…	</div>
 
 	<div class="ct-ghost"></div>
 				<div class="entry-meta"  data-type="simple">
@@ -971,15 +974,15 @@ code, kbd, samp, pre {
 			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-element"><a href="https://techpiezo.com/category/linux/" rel="tag">Linux</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/category/linux/linux-recent/" rel="tag">Recent</a></span></li>					</ul>
 				</div>
 		
-		
+		<a class="ct-image-container boundless-image" href="https://techpiezo.com/linux/debian-buster-set-to-release-on-6th-of-july/" ><img width="640" height="427" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Sandro-Schuh-on-Unsplash.jpg" class="attachment-medium_large size-medium_large" alt="" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 50%"></div></a>
 	<h2 class="entry-title">
 		<a href="https://techpiezo.com/linux/debian-buster-set-to-release-on-6th-of-july/">
 			Debian Buster set to release on 6th of July		</a>
 	</h2>
 
-	<a class="ct-image-container boundless-image" href="https://techpiezo.com/linux/debian-buster-set-to-release-on-6th-of-july/" ><img width="640" height="427" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Sandro-Schuh-on-Unsplash.jpg" class="attachment-medium_large size-medium_large" alt="" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 50%"></div></a>
+	
 	<div class="entry-excerpt">
-		Debian 10, code-named Buster, is set to release on July 6, 2019. As per Debian&#8217;s policy, only emergency bug fixes…	</div>
+		Debian 10, code-named Buster, is set to release on July…	</div>
 
 	<div class="ct-ghost"></div>
 				<div class="entry-meta"  data-type="simple">
@@ -1022,15 +1025,15 @@ code, kbd, samp, pre {
 			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-element"><a href="https://techpiezo.com/category/linux/" rel="tag">Linux</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/category/linux/linux-recent/" rel="tag">Recent</a></span></li>					</ul>
 				</div>
 		
-		
+		<a class="ct-image-container boundless-image" href="https://techpiezo.com/linux/linux-recent/libreoffice-6-3-beta-1-released-for-testing-with-new-features/" ><img width="640" height="427" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Joanna-Kosinska-on-Unsplash.jpg" class="attachment-medium_large size-medium_large" alt="" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 50%"></div></a>
 	<h2 class="entry-title">
 		<a href="https://techpiezo.com/linux/linux-recent/libreoffice-6-3-beta-1-released-for-testing-with-new-features/">
 			LibreOffice 6.3 Beta 1 Released for Testing with new Features		</a>
 	</h2>
 
-	<a class="ct-image-container boundless-image" href="https://techpiezo.com/linux/linux-recent/libreoffice-6-3-beta-1-released-for-testing-with-new-features/" ><img width="640" height="427" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Joanna-Kosinska-on-Unsplash.jpg" class="attachment-medium_large size-medium_large" alt="" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 50%"></div></a>
+	
 	<div class="entry-excerpt">
-		LibreOffice is a free and open-source office suite, from The Document Foundation. It includes word processing, spreadsheets, slideshows, diagrams and…	</div>
+		LibreOffice is a free and open-source office suite, from The…	</div>
 
 	<div class="ct-ghost"></div>
 				<div class="entry-meta"  data-type="simple">
@@ -1073,15 +1076,15 @@ code, kbd, samp, pre {
 			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-element"><a href="https://techpiezo.com/category/linux/" rel="tag">Linux</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/category/linux/linux-recent/" rel="tag">Recent</a></span></li>					</ul>
 				</div>
 		
-		
+		<a class="ct-image-container boundless-image" href="https://techpiezo.com/linux/gparted-1-0-released/" ><img width="640" height="427" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Patrick-Lindenberg-on-Unsplash.jpg" class="attachment-medium_large size-medium_large" alt="" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 50%"></div></a>
 	<h2 class="entry-title">
 		<a href="https://techpiezo.com/linux/gparted-1-0-released/">
 			GParted 1.0 Released		</a>
 	</h2>
 
-	<a class="ct-image-container boundless-image" href="https://techpiezo.com/linux/gparted-1-0-released/" ><img width="640" height="427" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Patrick-Lindenberg-on-Unsplash.jpg" class="attachment-medium_large size-medium_large" alt="" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 50%"></div></a>
+	
 	<div class="entry-excerpt">
-		GParted is GUI interface for GNU Parted, used for Disk partitioning and has been included in many GNU/Linux systems. It…	</div>
+		GParted is GUI interface for GNU Parted, used for Disk…	</div>
 
 	<div class="ct-ghost"></div>
 				<div class="entry-meta"  data-type="simple">
@@ -1128,7 +1131,7 @@ code, kbd, samp, pre {
 
 			
 			
-			<section class="footer-primary-area ct-hidden-sm">
+			<section class="footer-primary-area ">
 				<div class="ct-container">
 					<div
 						class="grid-columns"
