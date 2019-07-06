@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="July 6, 2019 5:06 pm" -->
+<!-- generated-on="July 6, 2019 9:37 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
+		<loc>https://techpiezo.com/linux/kill-a-process-in-linux-distribution/</loc>
+		<lastmod>2019-07-06T21:37:02+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
 		<loc>https://techpiezo.com/linux/install-remove-deb-package-in-ubuntu-debian/</loc>
 		<lastmod>2019-07-05T17:19:01+00:00</lastmod>
 		<changefreq>monthly</changefreq>
@@ -18,4 +24,4 @@
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: ab250bd17eea3228d5bea19a0e6db55f; Queries for sitemap: 2; Total queries: 12; Seconds: 0; Memory for sitemap: 0MB; Total memory: 2MB -->
+</urlset><!-- Request ID: 7a5e63105b4f5c8be6854d0acd984df7; Queries for sitemap: 2; Total queries: 12; Seconds: 0.01; Memory for sitemap: 0MB; Total memory: 2MB -->
