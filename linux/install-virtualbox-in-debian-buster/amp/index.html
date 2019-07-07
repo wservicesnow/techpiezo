@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Kill a Process in Linux Distribution - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/linux/kill-a-process-in-linux-distribution/" />
+		<title>Install VirtualBox in Debian Buster - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/linux/install-virtualbox-in-debian-buster/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -426,41 +426,41 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Kill a Process in Linux Distribution</h1>
+		<h1 class="amp-wp-title">Install VirtualBox in Debian Buster</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-07-06T21:31:31+00:00">
-		19 hours ago	</time>
+	<time datetime="2019-07-07T16:44:16+00:00">
+		1 min ago	</time>
 </div>
 	</header>
 
 	<figure class="amp-wp-article-featured-image wp-caption">
-	<amp-img width="640" height="800" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Rick-Kimotho-on-Unsplash.jpg" class="attachment-large size-large wp-post-image amp-wp-enforced-sizes" alt="" layout="intrinsic"></amp-img>			<p class="wp-caption-text">
-			Photo by Rick Kimotho on Unsplash		</p>
+	<amp-img width="640" height="414" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Kaleidico-on-Unsplash.jpg" class="attachment-large size-large wp-post-image amp-wp-enforced-sizes" alt="" layout="intrinsic"></amp-img>			<p class="wp-caption-text">
+			Photo by Kaleidico on Unsplash		</p>
 	</figure>
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">Stuck operating systems is a very common issue that almost every user has dealt at least once in their lifetime. We have all tried various methods as a solution. Few of them have proven successful and others not. One of the most effective one, if everything else fails, is to identify the process that has caused the system failure and then kill it. Killing a process is fairly easy if you already have some idea of how to manage system processes. First we have to identify the process that is sending harsh signals and if we can’t troubleshoot then it is better to terminate it. Word of caution – all the work that has not yet been saved will be lost once the process gets terminated. So, if things hang in balance analyze carefully before stepping forward.</p>
-<h4 class="amp-wp-cdd8ca0">Show currently running processes with ps command</h4>
-<p class="amp-wp-7d27179">Before killing a process, we need to understand what is currently running on our system. After running ps command in the terminal –</p>
-<p><amp-img class="aligncenter wp-image-700 size-full amp-wp-enforced-sizes" title="ps-command" src="https://techpiezo.com/wp-content/uploads/2019/07/ps-command.png" alt="ps-command" width="332" height="71" layout="intrinsic"></amp-img></p>
-<p class="amp-wp-7d27179">It will show us the list of currently running processes that executed the command. Did you notice PID in the output? Each process is assigned a process ID by the kernel. So, here PID – 26464 is assigned to bash process and similarly PID – 26470 is assigned to the ps process.</p>
-<p class="amp-wp-7d27179">There are other ways to identify the Process IDs of the running programs or processes. pidof is one such command. For example,</p>
-<pre>pidof &lt;process-name&gt;</pre>
-<p class="amp-wp-7d27179">This will provide us the process ID for the running program.</p>
-<p class="amp-wp-7d27179">We are limiting ourselves here with basic introduction to the ps command. If you type <code>ps aux</code> command in the terminal, then you will get a more detailed output. This lists all the process that are running on our system including system-level processes.</p>
-<h4 class="amp-wp-cdd8ca0">Use kill command to control processes</h4>
-<p class="amp-wp-7d27179">We should first try to troubleshoot the process if it sends harsh signals. If it fails to respond then it is better to kill it. We will be using two commands to kill a process – kill and killall.</p>
-<p class="amp-wp-7d27179">The use of kill command is fairly simple and all you have to do is run the following –</p>
-<pre>kill &lt;PID&gt;</pre>
-<p class="amp-wp-7d27179">with the kill command, we send the SIGTERM (15) signal wherein our process would terminate and free up the space. Our system wouldn’t be impacted negatively.</p>
-<p class="amp-wp-7d27179">But, sometimes the process won’t respond to the kill SIGTERM (15) option. In such a scenario we need to use SIGKILL (9). Word of caution – it may create memory issues, corrupt our files etc. So, it should only be used when all other options have been ruled out. Run the following if you really want to –</p>
-<pre>kill -9 &lt;PID&gt;</pre>
-<h4 class="amp-wp-cdd8ca0">Use killall command to control processes</h4>
-<p class="amp-wp-7d27179">Instead of providing the Process ID, we can directly use the name of the process to be killed. Also, it will kill all the processes which are associated with the Process name we provide. So, for SIGTERM (15), run the following –</p>
-<pre>killall &lt;process-name&gt;</pre>
-<p class="amp-wp-7d27179">If all options to terminate the process are exhausted, then use the command with the SIGKILL (9) option. But, the risks that are associated with the kill -9 option do exist with the killall -9 command too. So, opt for it after due consideration –</p>
-<pre>killall -9 &lt;process-name&gt;</pre>
-<p class="amp-wp-7d27179">In conclusion, we have touched upon ps, kill and killall commands. It is always better to assess what is causing your system to stuck. Once you identify the issue then, it is better to resolve the conflict. Killing a process should be opted only when all other options have been exhausted.</p>
+		<p class="amp-wp-7d27179">Developed by Oracle Corporation, VirtualBox is a free and open-source virtualization product. It facilitates us in running multiple operating systems on our existing computer. These multiple operating systems run inside Virtual Machines. By using Virtual Machines, we reduce costs incurred on infrastructure. Also, we can do a lot of testing without breaking our host operating system. We can make use of VirtualBox extension packs or VirtualBox Guest Additions for extended functionality like support for USB devices, better user experience, remote desktop protocol support etc. The product was first released on January 17, 2007.</p>
+<p class="amp-wp-7d27179">Debian Buster has finally released on July 06, 2019. But, those who have been using VirtualBox all along could be in for a surprise as the application gets removed after the update. Previous repository entry for the Debian Stretch wouldn’t come to the rescue.</p>
+<p class="amp-wp-7d27179">So, if you would like continue using the application even in Debian Buster then you will have to make couple of changes.</p>
+<h4 class="amp-wp-cdd8ca0">Install VirtualBox in Debian Buster</h4>
+<p class="amp-wp-7d27179">Login as superuser/root to start with the installation process. If you don’t the privileges then, it is best to contact your system administrator. To login as superuser, run the following in terminal –</p>
+<pre>su -l</pre>
+<p class="amp-wp-7d27179">Next, we will have to edit/update entries in <code>/etc/apt/sources.list</code> file. We will be using the text-editor – nano. You can choose any other text-editor which you are comfortable with.</p>
+<pre>nano /etc/apt/sources.list</pre>
+<p class="amp-wp-7d27179">Add the following entry in the <code>/etc/apt/sources.list</code> file.</p>
+<pre>deb http://download.virtualbox.org/virtualbox/debian bionic contrib</pre>
+<p class="amp-wp-7d27179">Save and exit.</p>
+<p class="amp-wp-7d27179">Then, we will have to add the VirtualBox public key –</p>
+<pre>cd /dev/shm
+
+wget https://www.virtualbox.org/download/oracle_vbox_2016.asc
+
+apt-key add oracle_vbox_2016.asc</pre>
+<p class="amp-wp-7d27179">Once you are doing with adding the public keys. Update the repositories –</p>
+<pre>apt update</pre>
+<p class="amp-wp-7d27179">Lastly, install VirtualBox –</p>
+<pre>apt install virtualbox-6.0</pre>
+<p class="amp-wp-7d27179">Hence, we have learnt how to install VirtualBox in Debian Buster. If you are looking to install VirtualBox on Debian Stretch then follow the <a href="https://techpiezo.com/linux/install-virtualbox-in-debian-stretch/">link</a>.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
