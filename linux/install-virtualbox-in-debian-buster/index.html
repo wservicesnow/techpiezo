@@ -903,7 +903,7 @@ h6 {
 							By						</span>
 					
 					<span class="ct-meta-element" >
-						<a href="https://techpiezo.com/author/user_tech/" title="Posts by user_tech" rel="author">user_tech</a>					</span>
+						<a href="https://techpiezo.com/author/editorialteam/" title="Posts by Editorial Team" rel="author">Editorial Team</a>					</span>
 				</li>
 			
 							<li
@@ -934,7 +934,7 @@ h6 {
 <p style="text-align: justify;">Debian Buster has finally released on July 06, 2019. But, those who have been using VirtualBox all along could be in for a surprise as the application gets removed after the update. Previous repository entry for the Debian Stretch wouldn&#8217;t come to the rescue.</p>
 <p style="text-align: justify;">So, if you would like continue using the application even in Debian Buster then you will have to make couple of changes.</p>
 <h4 style="text-align: center;">Install VirtualBox in Debian Buster</h4>
-<p style="text-align: justify;">Login as superuser/root to start with the installation process. If you don&#8217;t the privileges then, it is best to contact your system administrator. To login as superuser, run the following in terminal &#8211;</p>
+<p style="text-align: justify;">Login as superuser/root to start with the installation process. If you don&#8217;t have the privileges then, it is best to contact your system administrator. To login as superuser, run the following in terminal and provide password &#8211;</p>
 <pre>su -l</pre>
 <p style="text-align: justify;">Next, we will have to edit/update entries in <code>/etc/apt/sources.list</code> file. We will be using the text-editor &#8211; nano. You can choose any other text-editor which you are comfortable with.</p>
 <pre>nano /etc/apt/sources.list</pre>
@@ -947,7 +947,7 @@ h6 {
 wget https://www.virtualbox.org/download/oracle_vbox_2016.asc
 
 apt-key add oracle_vbox_2016.asc</pre>
-<p style="text-align: justify;">Once you are doing with adding the public keys. Update the repositories &#8211;</p>
+<p style="text-align: justify;">After adding the public keys we need to update the repositories. So, run the following command &#8211;</p>
 <pre>apt update</pre>
 <p style="text-align: justify;">Lastly, install VirtualBox &#8211;</p>
 <pre>apt install virtualbox-6.0</pre>
