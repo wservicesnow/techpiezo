@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Kill a Process in Linux Distribution - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/linux/kill-a-process-in-linux-distribution/" />
+		<title>Command line Calendar utilities on Debian - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/tech-insights/command-line-calendar-on-debian/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -409,7 +409,7 @@ amp-carousel > amp-img > img {
 	right: 16px;
 }
 		/* Inline stylesheets */
-:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cdd8ca0{text-align:center}	</style>
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}	</style>
 </head>
 
 <body class="">
@@ -426,46 +426,68 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Kill a Process in Linux Distribution</h1>
+		<h1 class="amp-wp-title">Command line Calendar utilities on Debian</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-07-06T21:31:31+00:00">
-		15 hours ago	</time>
+	<time datetime="2019-06-18T16:28:03+00:00">
+		3 weeks ago	</time>
 </div>
 	</header>
 
 	<figure class="amp-wp-article-featured-image wp-caption">
-	<amp-img width="640" height="800" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Rick-Kimotho-on-Unsplash.jpg" class="attachment-large size-large wp-post-image amp-wp-enforced-sizes" alt="" layout="intrinsic"></amp-img>			<p class="wp-caption-text">
-			Photo by Rick Kimotho on Unsplash		</p>
+	<amp-img width="640" height="425" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-William-Iven-on-Unsplash.jpg" class="attachment-large size-large wp-post-image amp-wp-enforced-sizes" alt="" layout="intrinsic"></amp-img>			<p class="wp-caption-text">
+			Photo by William Iven on Unsplash		</p>
 	</figure>
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">Stuck operating systems is a very common issue that almost every user has dealt at least once in their lifetime. We have all tried various methods as a solution. Few of them have proven successful and others not. One of the most effective one, if everything else fails, is to identify the process that has caused the system failure and then kill it. Killing a process is fairly easy if you already have some idea of how to manage system processes. First we have to identify the process that is sending harsh signals and if we can’t troubleshoot then it is better to terminate it. Word of caution – all the work that has not yet been saved will be lost once the process gets terminated. So, if things hang in balance analyze carefully before stepping forward.</p>
-<h4 class="amp-wp-cdd8ca0">Show currently running processes with ps command</h4>
-<p class="amp-wp-7d27179">Before killing a process, we need to understand what is currently running on our system. After running ps command in the terminal –</p>
-<p><amp-img class="aligncenter wp-image-700 size-full amp-wp-enforced-sizes" title="ps-command" src="https://techpiezo.com/wp-content/uploads/2019/07/ps-command.png" alt="ps-command" width="332" height="71" layout="intrinsic"></amp-img></p>
-<p class="amp-wp-7d27179">It will show us the list of currently running processes that executed the command. Did you notice PID in the output? Each process is assigned a process ID by the kernel. So, here PID – 26464 is assigned to bash process and similarly PID – 26470 is assigned to the ps process.</p>
-<p class="amp-wp-7d27179">There are other ways to identify the Process IDs of the running programs or processes. pidof is one such command. For example,</p>
-<pre>pidof &lt;process-name&gt;</pre>
-<p class="amp-wp-7d27179">This will provide us the process ID for the running program.</p>
-<p class="amp-wp-7d27179">We are limiting ourselves here with basic introduction to the ps command. If you type <code>ps aux</code> command in the terminal, then you will get a more detailed output. This lists all the process that are running on our system including system-level processes.</p>
-<h4 class="amp-wp-cdd8ca0">Use kill command to control processes</h4>
-<p class="amp-wp-7d27179">We should first try to troubleshoot the process if it sends harsh signals. If it fails to respond then it is better to kill it. We will be using two commands to kill a process – kill and killall.</p>
-<p class="amp-wp-7d27179">The use of kill command is fairly simple and all you have to do is run the following –</p>
-<pre>kill &lt;PID&gt;</pre>
-<p class="amp-wp-7d27179">with the kill command, we send the SIGTERM (15) signal wherein our process would terminate and free up the space. Our system wouldn’t be impacted negatively.</p>
-<p class="amp-wp-7d27179">But, sometimes the process won’t respond to the kill SIGTERM (15) option. In such a scenario we need to use SIGKILL (9). Word of caution – it may create memory issues, corrupt our files etc. So, it should only be used when all other options have been ruled out. Run the following if you really want to –</p>
-<pre>kill -9 &lt;PID&gt;</pre>
-<h4 class="amp-wp-cdd8ca0">Use killall command to control processes</h4>
-<p class="amp-wp-7d27179">Instead of providing the Process ID, we can directly use the name of the process to be killed. Also, it will kill all the processes which are associated with the Process name we provide. So, for SIGTERM (15), run the following –</p>
-<pre>killall &lt;process-name&gt;</pre>
-<p class="amp-wp-7d27179">If all options to terminate the process are exhausted, then use the command with the SIGKILL (9) option. But, the risks that are associated with the kill -9 option do exist with the killall -9 command too. So, opt for it after due consideration –</p>
-<pre>killall -9 &lt;process-name&gt;</pre>
-<p class="amp-wp-7d27179">In conclusion, we have touched upon ps, kill and killall commands. It is always better to assess what is causing your system to stuck. Once you identify the issue then, it is better to resolve the conflict. Killing a process should be opted only when all other options have been exhausted.</p>
+		<p class="amp-wp-7d27179">Linux distributions provides simple and useful utilities through command line. Calendar in GNU/Linux might seem like novelty, however mastering the tool may be helpful.</p>
+<p class="amp-wp-7d27179">There are many command line interface (CLI) utilities for calendar.</p>
+<p class="amp-wp-7d27179">First CLI utility is cal command, cal command is available in most distributions. cal command displays current month by default with highlight on present day. It is included with bsdmainutils package which can be installed by using the command –</p>
+<pre>apt-get install bsdmainutils</pre>
+<p class="amp-wp-7d27179">The simple cal command gives output of present month calendar with highlighted day.</p>
+<p class="amp-wp-7d27179"><code>$ cal</code></p>
+<p><amp-img class="size-full wp-image-430 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/06/cal-command.png" alt="cal-command" width="233" height="186" layout="intrinsic"></amp-img></p>
+<p class="amp-wp-7d27179">There is also a command ncal, which is is included as well but offers an alternative layout.</p>
+<p><code>$ ncal</code></p>
+<p><amp-img class="size-full wp-image-431 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/06/ncal-command.png" alt="ncal-command" width="227" height="185" layout="intrinsic"></amp-img></p>
+<p class="amp-wp-7d27179">What is the difference between cal and ncal ?</p>
+<p class="amp-wp-7d27179">While cal presents a week horizontally and ncal display a week in calendar as vertical, there is much more to it as well. cal command was present in AT&amp;T UNIX and ncal was used in FreeBSD. To keep compatibility with older Unix’s cal command, it would output 8 lines, as cal command was used in many CGI scripts.</p>
+<p class="amp-wp-7d27179">Lets see some examples :</p>
+<p class="amp-wp-7d27179">To Print for particular month and year<br>
+cal (month) (year)</p>
+<p class="amp-wp-7d27179"><code>$ cal 6 2019</code></p>
+<p class="amp-wp-7d27179">To Print the previous, current and next month surrounding today</p>
+<p class="amp-wp-7d27179"><code>$ cal -3</code></p>
+<p class="amp-wp-7d27179">To Print for a specific month<br>
+cal -m (month)</p>
+<p class="amp-wp-7d27179"><code>$ cal -m 2</code></p>
+<p class="amp-wp-7d27179">Remember :</p>
+<p>An unnoticed behaviour by user may lead to altering result in cal command, how you may ask?</p>
+<p class="amp-wp-7d27179">If you were to display a calendar of month June of 2018, you may enter</p>
+<p class="amp-wp-7d27179"><code>cal 6 2019</code></p>
+<p><amp-img class="size-full wp-image-430 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/06/cal-command.png" alt="cal-command" width="233" height="186" layout="intrinsic"></amp-img></p>
+<p>which is correct, however if you type,</p>
+<p><code>cal 6 19</code></p>
+<p><amp-img class="size-full wp-image-432 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/06/cal-command-1.png" alt="cal-command-1" width="228" height="165" layout="intrinsic"></amp-img></p>
+<p>it will display June from year 19 AD, so remember to READ THE MANUAL.</p>
+<p>Try <code>cal 9 1752</code>, Skipped 11 Days in calendar?</p>
+<p><amp-img class="size-full wp-image-433 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/06/cal-9-1972.png" alt="cal-9-1972" width="231" height="114" layout="intrinsic"></amp-img></p>
+<p>yes, that is due to Gregorian Reformation.</p>
+<p>Now lets try different utility, <code>gcal</code></p>
+<p>It can be install with –</p>
+<pre>apt-get install gcal</pre>
+<p>gcal is GNU utility, it can calculate astronomical data, displays eternal holiday lists for countries around the world, fixed date lists for reminders and many more.</p>
+<p>To print current month of year</p>
+<pre>gcal</pre>
+<p>To print previous, current and next month surrounding today</p>
+<pre>gcal .</pre>
+<p>To print month of year</p>
+<p>gcal (month) (year)</p>
+<pre>gcal 6 2019</pre>
 	</div>
 
 	<footer class="amp-wp-article-footer">
 			<div class="amp-wp-meta amp-wp-tax-category">
-		Categories: <a href="https://techpiezo.com/category/linux/" rel="category tag">Linux</a>, <a href="https://techpiezo.com/category/linux/linux-tutorials/" rel="category tag">Tutorials</a>	</div>
+		Categories: <a href="https://techpiezo.com/category/tech-insights/" rel="category tag">Insights</a>	</div>
 
 	</footer>
 </article>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="July 6, 2019 9:37 pm" -->
+<!-- generated-on="July 7, 2019 12:01 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>https://techpiezo.com/tech-insights/raw-vs-qcow2-disk-images-in-qemu-kvm/</loc>
 		<lastmod>2019-07-05T17:21:56+00:00</lastmod>
@@ -19,8 +19,8 @@
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>https://techpiezo.com/tech-insights/command-line-calendar-on-debian-linux/</loc>
-		<lastmod>2019-06-18T16:30:54+00:00</lastmod>
+		<loc>https://techpiezo.com/tech-insights/command-line-calendar-on-debian/</loc>
+		<lastmod>2019-07-07T11:59:42+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
@@ -56,7 +56,7 @@
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/add-user-to-a-group-in-ubuntu-linux-mint/</loc>
-		<lastmod>2019-07-05T17:26:09+00:00</lastmod>
+		<lastmod>2019-07-07T12:00:41+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
@@ -174,4 +174,4 @@
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: 7e8722f913d646e9e3e1e07f252726f7; Queries for sitemap: 71; Total queries: 81; Seconds: 0.04; Memory for sitemap: 0MB; Total memory: 2MB -->
+</urlset><!-- Request ID: 9a71d4ee77ca9277a5fa7a9c0ccc956a; Queries for sitemap: 71; Total queries: 81; Seconds: 0.04; Memory for sitemap: 0MB; Total memory: 2MB -->
