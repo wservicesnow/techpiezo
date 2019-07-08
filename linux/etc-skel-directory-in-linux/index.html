@@ -6,12 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
-	<title>TechPiezo - Page 4 of 4 - Future is Here</title>
+	<title>/etc/skel/ directory in Linux - TechPiezo</title>
 
 <!-- This site is optimized with the Yoast SEO plugin v11.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
-<meta name="description" content="Insightful analysis, recent technological happenings across the world alongwith solutions to various common issues that you face while implementing various technological platforms."/>
-<link rel="canonical" href="https://techpiezo.com/page/4/" />
-<link rel="prev" href="https://techpiezo.com/page/3/" />
+<meta name="description" content="The /etc/skel/ contains all the files and directories that are automatically copied to the newly created user&#039;s home directory."/>
+<link rel="canonical" href="https://techpiezo.com/linux/etc-skel-directory-in-linux/" />
 <!-- / Yoast SEO plugin. -->
 
 <style id="ct-main-styles-inline-css" type="text/css">:root {
@@ -62,6 +61,7 @@
     --logoMaxHeight: 50px;
     --cardSpacing: 35px;
     --cardBackground: #ffffff;
+    --pageTitleFontHoverColor: var(--paletteColor1);
     --letterSpacing: 0em;
     --fontSize: 16px;
     --textTransform: none;
@@ -70,6 +70,7 @@
     --fontStyle: normal;
     --textDecoration: none;
     --lineHeight: 1.5;
+    --pageTitleFontInitialColor: var(--paletteColor4);
     --cardExcerptSize: 16px;
     --cardsGap: 30px;
     --transparentHeaderBackground: rgba(255, 255, 255, 0.1);
@@ -293,6 +294,16 @@ code, kbd, samp, pre {
 .footer-widgets-area {
     --backgroundImage: none;
     --backgroundColor: #f4f5f8;
+}
+
+.entry-header .page-title {
+    --lineHeight: 1.3;
+    --textDecoration: none;
+    --fontStyle: normal;
+    --fontWeight: 700;
+    --textTransform: none;
+    --fontSize: 27px;
+    --letterSpacing: 0em;
 }
 
 .entry-card .entry-title {
@@ -538,6 +549,12 @@ code, kbd, samp, pre {
     --letterSpacing: 0em;
 }
 
+.entry-header .page-title {
+    --lineHeight: 1.3;
+    --fontSize: 25px;
+    --letterSpacing: 0em;
+}
+
 .entry-card .entry-title {
     --lineHeight: 1.3;
     --fontSize: 20px;
@@ -683,6 +700,12 @@ code, kbd, samp, pre {
     --letterSpacing: 0em;
 }
 
+.entry-header .page-title {
+    --lineHeight: 1.3;
+    --fontSize: 25px;
+    --letterSpacing: 0em;
+}
+
 .entry-card .entry-title {
     --lineHeight: 1.3;
     --fontSize: 18px;
@@ -715,7 +738,7 @@ h6 {
 <link rel='stylesheet' id='ct-style-css'  href='https://techpiezo.com/wp-content/themes/blocksy/style.css' type='text/css' media='all' />
 <link rel='stylesheet' id='ct-main-styles-css'  href='https://techpiezo.com/wp-content/themes/blocksy/static/bundle/main.css' type='text/css' media='all' />
 
-<link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" sizes="32x32" />
+<link rel="amphtml" href="https://techpiezo.com/linux/etc-skel-directory-in-linux/amp/"><link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" sizes="32x32" />
 <link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" sizes="192x192" />
 <link rel="apple-touch-icon-precomposed" href="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" />
 <meta name="msapplication-TileImage" content="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" />
@@ -742,7 +765,7 @@ h6 {
 
 </head>
 
-<body class="home blog paged paged-4 ct-loading ct-no-js ct-modern-forms header-type-1" >
+<body class="post-template-default single single-post postid-715 single-format-standard ct-loading ct-no-js ct-modern-forms header-type-1" >
 <div id="main-container">
 
 	<header
@@ -776,13 +799,13 @@ h6 {
 		data-dropdown-animation="type-1"
 				>
 
-		<ul id="primary-menu" class="primary-menu menu"><li id="menu-item-70" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-home menu-item-70"><a href="https://techpiezo.com">Home</a></li>
+		<ul id="primary-menu" class="primary-menu menu"><li id="menu-item-70" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-70"><a href="https://techpiezo.com">Home</a></li>
 <li id="menu-item-39" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-39"><a href="https://techpiezo.com/category/tech-insights/">Insights</a></li>
 <li id="menu-item-40" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-40"><a href="https://techpiezo.com/category/seo/">SEO</a></li>
-<li id="menu-item-41" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-41"><a href="https://techpiezo.com/category/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
+<li id="menu-item-41" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-41"><a href="https://techpiezo.com/category/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
 <ul class="sub-menu">
 	<li id="menu-item-349" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-349"><a href="https://techpiezo.com/category/linux/linux-recent/">Recent</a></li>
-	<li id="menu-item-350" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-350"><a href="https://techpiezo.com/category/linux/linux-tutorials/">Tutorials</a></li>
+	<li id="menu-item-350" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-350"><a href="https://techpiezo.com/category/linux/linux-tutorials/">Tutorials</a></li>
 </ul>
 </li>
 <li id="menu-item-42" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-42"><a href="https://techpiezo.com/category/wordpress/">WordPress</a></li>
@@ -853,104 +876,105 @@ h6 {
 
 		
 
-<section id="primary" class="content-area">
-	<div class="ct-container" >
-
-		<section>
-							
-									<div class="entries"
-						data-layout="enhanced-grid"
-						data-cards="boxed"																		>
-				
-<article
-	id="post-88" class="entry-card post-88 post type-post status-publish format-standard has-post-thumbnail hentry category-seo"	>
-
 	
-				<div class="entry-meta"  data-type="simple">
+	<div id="primary" class="content-area">
+
+		<div class="ct-container" >
+
+			<section>
+				
+	<article
+		id="post-715"
+		class="post-715 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-tutorials"		data-content="boxed"		data-page-structure="narrow"		>
+
+		
+		<section class="hero-section" data-type="type-1" data-alignment="left">
+			<header class="entry-header">
+				<h1 class="page-title">/etc/skel/ directory in Linux</h1>
+				<div class="entry-meta has-avatar" data-label data-type="simple">
 		
 
 			<ul >
 				
+							<li class="ct-meta-author" >
+
+					
+											<span class="ct-meta-label">
+							By						</span>
+					
+					<span class="ct-meta-element" >
+						<a href="https://techpiezo.com/author/editorialteam/" title="Posts by Editorial Team" rel="author">Editorial Team</a>					</span>
+				</li>
+			
+							<li
+					class="ct-meta-date"
+					>
+
+					
+											<span class="ct-meta-label">
+							On						</span>
+					
+					<span
+						class="ct-meta-element"
+						>
+						Jul 8, 2019					</span>
+				</li>
 			
 			
-			
-			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-element"><a href="https://techpiezo.com/category/seo/" rel="tag">SEO</a></span></li>					</ul>
+			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-label">In </span><span class="ct-meta-element"><a href="https://techpiezo.com/category/linux/" rel="tag">Linux</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/category/linux/linux-tutorials/" rel="tag">Tutorials</a></span></li>					</ul>
 				</div>
 		
+					</header>
+		</section>
+
 		
-	<h2 class="entry-title">
-		<a href="https://techpiezo.com/seo/challenges-search-engine-optimization/">
-			Challenges &#8211; Search Engine Optimization		</a>
-	</h2>
-
-	
-	<div class="entry-excerpt">
-		What are challenges we face while implementing Search Engine Optimization methodology? As there are numerous…	</div>
-
-	
-</article>
-
-<article
-	id="post-81" class="entry-card post-81 post type-post status-publish format-standard has-post-thumbnail hentry category-seo"	>
-
-	
-				<div class="entry-meta"  data-type="simple">
 		
+		<div class="entry-content">
+			<p style="text-align: justify;">The <code>/etc/skel/</code> contains all the files and directories that are automatically copied to the newly created user&#8217;s home directory. In an organization, a System Administrator has to manage large pool of users. It wouldn&#8217;t be feasible for the System Administrator to make similar changes for each user who joins the organization. For example, If the System Administrator wants to provide a specific file to all the newly created users. Then, he/she has to copy that file for each user. Or, the System Administrator may copy the file in the <code>/etc/skel/</code> directory and whenever a new user is created, the file gets copied too. Thus, the System Administrator can save himself/herself valuable chunks of time every time a new user is created.</p>
+<p style="text-align: justify;">To know the contents of your system&#8217;s <code>/etc/skel/</code> directory run the following command in terminal &#8211;</p>
+<pre>ls -al /etc/skel/</pre>
+<p style="text-align: justify;">here,</p>
+<p style="text-align: justify;">-a option is used to list hidden files in the directory, and</p>
+<p style="text-align: justify;">-l is for long list format.</p>
+<p style="text-align: justify;">The output would correspond with &#8211;</p>
+<p><img class="size-full wp-image-716 aligncenter" src="https://techpiezo.com/wp-content/uploads/2019/07/etc-skel.png" alt="etc skel" width="622" height="118" /></p>
+<p style="text-align: justify;">As visible from the output, the root has the ownership of all files and directories in <code>/etc/skel/</code> directory. But, you don&#8217;t have to worry about ownership of contents as appropriate permissions will be set upon running the useradd command, wherein these files and directories would be automatically copied to the new users&#8217; home directory.</p>
+<p style="text-align: justify;"> Although not advisable, if you wish to change the default <code>/etc/skel/</code> directory then you can do so by editing the <code>/etc/default/useradd</code> file. Open the file as superuser and move to the entry that mentions <code>SKEL=/etc/skel</code>. Thereafter, you have to enter the directory&#8217;s address of your choice in place of <code>/etc/skel/</code>. There are few other changes you can make by editing <code>/etc/default/useradd/</code> file. But, you should avoid it unless absolutely required.</p>
+<p style="text-align: justify;">In conclusion, <code>/etc/skel/</code> &#8211; is a skeleton directory which contains the default files that would automatically get copied to newly created users&#8217; HOME directory.</p>
+		</div>
 
-			<ul >
-				
+		
+		
+		
+		<nav class="post-navigation ">
+							<a href="https://techpiezo.com/linux/install-virtualbox-in-debian-buster/" class="nav-item-prev">
+					
+					<div class="item-content">
+						<span>
+							Previous <span>&nbsp;Post</span>						</span>
+
+													<h4 class="item-title">
+								Install VirtualBox in Debian Buster							</h4>
+											</div>
+
+				</a>
 			
+							<div class="nav-item-next"></div>
 			
-			
-			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-element"><a href="https://techpiezo.com/category/seo/" rel="tag">SEO</a></span></li>					</ul>
-				</div>
-		
-		
-	<h2 class="entry-title">
-		<a href="https://techpiezo.com/seo/benefits-of-implementing-search-engine-optimization/">
-			Benefits of Implementing Search Engine Optimization		</a>
-	</h2>
+		</nav>
 
 	
-	<div class="entry-excerpt">
-		First we need to understand that by implementing Search Engine Optimization techniques, we are in…	</div>
+	</article>
 
-	
-</article>
+				</section>
 
-<article
-	id="post-65" class="entry-card post-65 post type-post status-publish format-standard has-post-thumbnail hentry category-seo"	>
-
-	
-				<div class="entry-meta"  data-type="simple">
-		
-
-			<ul >
-				
 			
-			
-			
-			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-element"><a href="https://techpiezo.com/category/seo/" rel="tag">SEO</a></span></li>					</ul>
-				</div>
-		
-		
-	<h2 class="entry-title">
-		<a href="https://techpiezo.com/seo/understanding-seo/">
-			Understanding SEO!		</a>
-	</h2>
+		</div>
+
+	</div>
 
 	
-	<div class="entry-excerpt">
-		The primary objective behind Search Engines was to provide internet users the most appropriate search…	</div>
 
-	
-</article>
-
-									</div>
-						</section>
-
-			</div>
-</section>
 
 
 	</main>
@@ -1045,13 +1069,13 @@ h6 {
 
 			<div class="ct-bag-content" data-align="middle">
 				
-				<ul id="primary-menu" class="mobile-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-home menu-item-70"><a href="https://techpiezo.com">Home</a></li>
+				<ul id="primary-menu" class="mobile-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-70"><a href="https://techpiezo.com">Home</a></li>
 <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-39"><a href="https://techpiezo.com/category/tech-insights/">Insights</a></li>
 <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-40"><a href="https://techpiezo.com/category/seo/">SEO</a></li>
-<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-41"><a href="https://techpiezo.com/category/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-41"><a href="https://techpiezo.com/category/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
 <ul class="sub-menu">
 	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-349"><a href="https://techpiezo.com/category/linux/linux-recent/">Recent</a></li>
-	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-350"><a href="https://techpiezo.com/category/linux/linux-tutorials/">Tutorials</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-350"><a href="https://techpiezo.com/category/linux/linux-tutorials/">Tutorials</a></li>
 </ul>
 </li>
 <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-42"><a href="https://techpiezo.com/category/wordpress/">WordPress</a></li>

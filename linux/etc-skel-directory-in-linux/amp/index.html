@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Android phone as security key for Google Sign-In - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/android/android-phone-as-security-key-for-google-sign-in/" />
+		<title>/etc/skel/ directory in Linux - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/linux/etc-skel-directory-in-linux/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -409,7 +409,7 @@ amp-carousel > amp-img > img {
 	right: 16px;
 }
 		/* Inline stylesheets */
-:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-ca1de63{font-size:14pt}	</style>
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}	</style>
 </head>
 
 <body class="">
@@ -426,32 +426,32 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Android phone as security key for Google Sign-In</h1>
+		<h1 class="amp-wp-title">/etc/skel/ directory in Linux</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-06-13T16:27:42+00:00">
-		4 weeks ago	</time>
+	<time datetime="2019-07-08T20:42:24+00:00">
+		12 mins ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">Android Phones can be now used as physical security key over any platform available, and now that includes iOS devices too. The current 2-Step Verification process usually requires the SMS service, however newer method provides a way to sign-in with Android phone as security key.</p>
-<p class="amp-wp-7d27179">To use the feature, your Android Phone must be running version 7 or higher, and PC/Laptops with Operating Systems – Windows 10, macOS, or Chrome OS with Google Chrome 72 or later. The latest upgrade by Google also lets you sign-in on iOS as well.</p>
-<p class="amp-wp-7d27179">This feature uses Bluetooth as underlying technology using FIDO’s CTAP2 protocol. In platforms except iOS, Google Chrome can communicate with android phone over Bluetooth and verify, but with iOS, Google’s Smart Lock app is used to confirm sign-in, which in turn also communicates over Bluetooth.</p>
-<h4 class="amp-wp-7d27179"><span class="amp-wp-ca1de63"><strong>Why Smart Lock app in iOS ?</strong></span></h4>
-<p class="amp-wp-7d27179">Google Chrome in iOS is based on Apple’s WebKit rendering engine, as Apple in it’s app store guidelines states to only use Webkit framework and Webkit Javascript, Google Chrome can not use its own Blink framework in iOS.</p>
-<p class="amp-wp-7d27179">FIDO and Bluetooth connectivity are both implemented in Google Chrome. One can easily view Bluetooth connected devices by opening :</p>
-<pre class="amp-wp-7d27179">chrome://bluetooth-internals/</pre>
-<p class="amp-wp-7d27179">in chrome browser, where current state of adapter as well as devices can be seen.</p>
-<p class="amp-wp-7d27179">FIDO source code can be found in Google Chrome’s open-source project Chromium, the present implementation use USB and Bluetooth Low Energy (BLE) both.</p>
-<p>Source code is available at:</p>
-<pre>https://chromium.googlesource.com/chromium/src/+/master/device/fido/</pre>
+		<p class="amp-wp-7d27179">The <code>/etc/skel/</code> contains all the files and directories that are automatically copied to the newly created user’s home directory. In an organization, a System Administrator has to manage large pool of users. It wouldn’t be feasible for the System Administrator to make similar changes for each user who joins the organization. For example, If the System Administrator wants to provide a specific file to all the newly created users. Then, he/she has to copy that file for each user. Or, the System Administrator may copy the file in the <code>/etc/skel/</code> directory and whenever a new user is created, the file gets copied too. Thus, the System Administrator can save himself/herself valuable chunks of time every time a new user is created.</p>
+<p class="amp-wp-7d27179">To know the contents of your system’s <code>/etc/skel/</code> directory run the following command in terminal –</p>
+<pre>ls -al /etc/skel/</pre>
+<p class="amp-wp-7d27179">here,</p>
+<p class="amp-wp-7d27179">-a option is used to list hidden files in the directory, and</p>
+<p class="amp-wp-7d27179">-l is for long list format.</p>
+<p class="amp-wp-7d27179">The output would correspond with –</p>
+<p><amp-img class="size-full wp-image-716 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/07/etc-skel.png" alt="etc skel" width="622" height="118" layout="intrinsic"></amp-img></p>
+<p class="amp-wp-7d27179">As visible from the output, the root has the ownership of all files and directories in <code>/etc/skel/</code> directory. But, you don’t have to worry about ownership of contents as appropriate permissions will be set upon running the useradd command, wherein these files and directories would be automatically copied to the new users’ home directory.</p>
+<p class="amp-wp-7d27179"> Although not advisable, if you wish to change the default <code>/etc/skel/</code> directory then you can do so by editing the <code>/etc/default/useradd</code> file. Open the file as superuser and move to the entry that mentions <code>SKEL=/etc/skel</code>. Thereafter, you have to enter the directory’s address of your choice in place of <code>/etc/skel/</code>. There are few other changes you can make by editing <code>/etc/default/useradd/</code> file. But, you should avoid it unless absolutely required.</p>
+<p class="amp-wp-7d27179">In conclusion, <code>/etc/skel/</code> – is a skeleton directory which contains the default files that would automatically get copied to newly created users’ HOME directory.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
 			<div class="amp-wp-meta amp-wp-tax-category">
-		Categories: <a href="https://techpiezo.com/category/android/" rel="category tag">Android</a>, <a href="https://techpiezo.com/category/android/android-recent/" rel="category tag">Recent</a>	</div>
+		Categories: <a href="https://techpiezo.com/category/linux/" rel="category tag">Linux</a>, <a href="https://techpiezo.com/category/linux/linux-tutorials/" rel="category tag">Tutorials</a>	</div>
 
 	</footer>
 </article>
