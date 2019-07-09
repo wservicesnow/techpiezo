@@ -471,9 +471,9 @@ amp-carousel > amp-img > img {
 </ol><p class="amp-wp-7d27179"><strong>Implementation</strong></p>
 <pre class="amp-wp-7d27179">qemu-img create -f qcow2 /var/lib/libvirt/images/sample1.qcow2 5G</pre>
 <p class="amp-wp-7d27179"><strong>For Cluster size image of 2M</strong></p>
-<pre class="amp-wp-7d27179">qemu-img create -f qcow2 -o cluster_size=2M /var/lib/libvirt/images/sample1.qcow2 5G
-
-<strong>For Preallocated size</strong></pre>
+<pre>qemu-img create -f qcow2 -o cluster_size=2M /var/lib/libvirt/images/sample1.qcow2 5G
+</pre>
+<p><strong>For Preallocated size</strong></p>
 <pre class="amp-wp-7d27179">qemu-img create -f qcow2 -o preallocation=full /var/lib/libvirt/images/sample1.qcow2 5G</pre>
 <p class="amp-wp-7d27179"><strong>To verify</strong></p>
 <pre class="amp-wp-7d27179">qemu-img info /var/lib/libvirt/images/sample1.qcow2</pre>

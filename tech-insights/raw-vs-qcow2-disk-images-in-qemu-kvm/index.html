@@ -973,9 +973,9 @@ h6 {
 <p style="text-align: justify;"><strong>Implementation</strong></p>
 <pre style="text-align: justify;">qemu-img create -f qcow2 /var/lib/libvirt/images/sample1.qcow2 5G</pre>
 <p style="text-align: justify;"><strong>For Cluster size image of 2M</strong></p>
-<pre style="text-align: justify;">qemu-img create -f qcow2 -o cluster_size=2M /var/lib/libvirt/images/sample1.qcow2 5G
-
-<strong>For Preallocated size</strong></pre>
+<pre>qemu-img create -f qcow2 -o cluster_size=2M /var/lib/libvirt/images/sample1.qcow2 5G
+</pre>
+<p><strong>For Preallocated size</strong></p>
 <pre style="text-align: justify;">qemu-img create -f qcow2 -o preallocation=full /var/lib/libvirt/images/sample1.qcow2 5G</pre>
 <p style="text-align: justify;"><strong>To verify</strong></p>
 <pre style="text-align: justify;">qemu-img info /var/lib/libvirt/images/sample1.qcow2</pre>
