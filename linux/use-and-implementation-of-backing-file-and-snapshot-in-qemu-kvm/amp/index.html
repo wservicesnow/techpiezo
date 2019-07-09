@@ -439,21 +439,21 @@ amp-carousel > amp-img > img {
 		<p class="amp-wp-7d27179">Ability to create snapshot is one of the important feature that is required in any Virtual Machine system. Snapshot saves the current machine state and any further changes to the disk of virtual machines will be saved so that it can be reverted to original state at any time. QEMU/KVM implements it by using backing file, backing file is paired with snapshot disk image of virtual machine, further QEMU/KVM uses original disk image as read only image and any writes to the disk image is redirected to snapshot file as Redirect-on-Write. This allows reads from backing file and writes to snapshot file, snapshot file is QCOW2 disk image hence only writes are registered on disk.</p>
 <p class="amp-wp-7d27179">However backing file is also effective for allowing multiple virtual machines to run backed by only single disk image as base image, where base image is immutable in nature.</p>
 <p class="amp-wp-7d27179">Lets go through the process of implementation, first to get information about the clean base image, we can use</p>
-<pre class="amp-wp-7d27179">qemu-img info clean-disk.qcow2</pre>
+<pre>qemu-img info clean-disk.qcow2</pre>
 <p class="amp-wp-7d27179">It displays information such as file format type, name, virtual size, disk size, cluster size.</p>
 <p class="amp-wp-7d27179">To creates clean-disk.qcow2 as backing image for snapshot.qcow2</p>
-<pre class="amp-wp-7d27179">qemu-img create -f qcow2 -b clean-disk.qcow2 snapshot.qcow2</pre>
+<pre>qemu-img create -f qcow2 -b clean-disk.qcow2 snapshot.qcow2</pre>
 <p class="amp-wp-7d27179">In order to check the image file, run</p>
-<pre class="amp-wp-7d27179">qemu-img info snapshot.qcow2</pre>
+<pre>qemu-img info snapshot.qcow2</pre>
 <p class="amp-wp-7d27179">This should display the clean-disk.qcow2 image as backing file for snapshot.qcow2, now use snapshot.qcow2 image as host disk image. The changes made will be backed-up in snapshot image.</p>
 <p class="amp-wp-7d27179">To revert to original state of the machine, simply delete the backing file, which in this case is snapshot.qcow2 and also point the disk image to original image.</p>
 <p class="amp-wp-7d27179">Now in case you want to save changes of snapshot to the original disk image and continue using the image further, then you follow following steps :</p>
 <p class="amp-wp-7d27179">Make back-up of original clean disk image</p>
-<pre class="amp-wp-7d27179">cp clean-disk.qcow2 new-clean-disk.qcow2</pre>
+<pre>cp clean-disk.qcow2 new-clean-disk.qcow2</pre>
 <p class="amp-wp-7d27179">then rebase snapshot to use new disk image</p>
-<pre class="amp-wp-7d27179">qemu-img rebase -b new-clean-disk.qcow2 snapshot.qcow2</pre>
+<pre>qemu-img rebase -b new-clean-disk.qcow2 snapshot.qcow2</pre>
 <p class="amp-wp-7d27179">then commit changes of snapshot by</p>
-<pre class="amp-wp-7d27179">qemu-img commit snapshot.qcow2</pre>
+<pre>qemu-img commit snapshot.qcow2</pre>
 <p class="amp-wp-7d27179">This will store snapshot to original image with changes. Now new-clean-disk.qcow2 can be used as standalone image file with changes, snapshot.qcow2 can discarded if required.</p>
 	</div>
 

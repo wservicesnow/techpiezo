@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="July 9, 2019 12:26 pm" -->
+<!-- generated-on="July 9, 2019 4:43 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>https://techpiezo.com/tech-insights/raw-vs-qcow2-disk-images-in-qemu-kvm/</loc>
 		<lastmod>2019-07-09T11:14:48+00:00</lastmod>
@@ -56,7 +56,7 @@
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/add-user-to-a-group-in-ubuntu-linux-mint/</loc>
-		<lastmod>2019-07-07T12:00:41+00:00</lastmod>
+		<lastmod>2019-07-09T14:25:56+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
@@ -68,7 +68,7 @@
 	</url>
 	<url>
 		<loc>https://techpiezo.com/android/android-phone-as-security-key-for-google-sign-in/</loc>
-		<lastmod>2019-07-05T17:27:14+00:00</lastmod>
+		<lastmod>2019-07-09T14:26:51+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
@@ -174,4 +174,4 @@
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: 640bb800ad2fa43ebf2afb204d10bd8f; Queries for sitemap: 77; Total queries: 87; Seconds: 0.04; Memory for sitemap: 0MB; Total memory: 2MB -->
+</urlset><!-- Request ID: 5194415188154f199b567fecbba4a5b7; Queries for sitemap: 77; Total queries: 87; Seconds: 0.05; Memory for sitemap: 2MB; Total memory: 4MB -->
