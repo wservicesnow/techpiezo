@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Install VirtualBox in Debian Buster - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/linux/install-virtualbox-in-debian-buster/" />
+		<title>Install Wine to run Windows applications in Ubuntu - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/linux/install-wine-to-run-windows-applications-in-ubuntu/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -426,38 +426,39 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Install VirtualBox in Debian Buster</h1>
+		<h1 class="amp-wp-title">Install Wine to run Windows applications in Ubuntu</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-07-07T16:44:16+00:00">
-		3 days ago	</time>
+	<time datetime="2019-07-10T18:30:16+00:00">
+		9 mins ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">Developed by Oracle Corporation, VirtualBox is a free and open-source virtualization product. It facilitates us in running multiple operating systems on our existing computer. These multiple operating systems run inside Virtual Machines. By using Virtual Machines, we reduce costs incurred on infrastructure. Also, we can do a lot of testing without breaking our host operating system. We can make use of VirtualBox extension packs or VirtualBox Guest Additions for extended functionality like support for USB devices, better user experience, remote desktop protocol support etc. The product was first released on January 17, 2007.</p>
-<p class="amp-wp-7d27179">Debian Buster has finally released on July 06, 2019. But, those who have been using VirtualBox all along could be in for a surprise as the application gets removed after the update. Previous repository entry for the Debian Stretch wouldn’t come to the rescue.</p>
-<p class="amp-wp-7d27179">So, if you would like continue using the application even in Debian Buster then you will have to make couple of changes.</p>
-<h4 class="amp-wp-cdd8ca0">Install VirtualBox in Debian Buster</h4>
-<p class="amp-wp-7d27179">Login as superuser/root to start with the installation process. If you don’t have the privileges then, it is best to contact your system administrator. To login as superuser, run the following in terminal and provide password –</p>
-<pre>su -l</pre>
-<p class="amp-wp-7d27179">Next, we will have to edit/update entries in <code>/etc/apt/sources.list</code> file. We will be using the text-editor – nano. You can choose any other text-editor which you are comfortable with.</p>
-<pre>nano /etc/apt/sources.list</pre>
-<p class="amp-wp-7d27179">Add the following entry in the <code>/etc/apt/sources.list</code> file.</p>
-<pre>deb http://download.virtualbox.org/virtualbox/debian bionic contrib</pre>
-<p class="amp-wp-7d27179">Save and exit.</p>
-<p class="amp-wp-7d27179">Then, we will have to add the VirtualBox public key –</p>
-<pre>cd /dev/shm
-
-wget https://www.virtualbox.org/download/oracle_vbox_2016.asc
-
-apt-key add oracle_vbox_2016.asc</pre>
-<p class="amp-wp-7d27179">After adding the public keys we need to update the repositories. So, run the following command –</p>
+		<p class="amp-wp-7d27179">Wine was originally an acronym for “Wine is not an emulator”. Now, we simply call it Wine. It is an open-source windows compatibility layer through which we can run windows applications on Ubuntu or any other supported Linux distribution. It should never be considered as an alternative to Windows operating system. The development of Wine started in 1993. Windows applications, at the time had very few alternatives. With Linux based distributions still evolving, Wine took the center-stage. Therefore, those who couldn’t afford Windows operating system for variety of reasons, were able to run applications that were specifically developed for it. There are multiple methods to install Wine but, we will be doing it through Ubuntu’s standard repository.</p>
+<p class="amp-wp-7d27179">At the time of writing the article, there are 26,000-odd applications that are supported by Wine. And, considerable effort is being made every day to get support for far more number of applications.</p>
+<h4 class="amp-wp-cdd8ca0">Install Wine on Ubuntu</h4>
+<p class="amp-wp-7d27179"><strong>1.</strong> If you don’t have superuser access or privileges then, contact your system administrator. Login to super user by running the following command in terminal –</p>
+<pre>sudo -i</pre>
+<p class="amp-wp-7d27179">and provide the password.</p>
+<p class="amp-wp-7d27179"><strong>2.</strong> We will be installing Wine from Ubuntu’s standard repository. To update the Ubuntu standard repository –</p>
 <pre>apt update</pre>
-<p class="amp-wp-7d27179">Lastly, install VirtualBox –</p>
-<pre>apt install virtualbox-6.0</pre>
-<p class="amp-wp-7d27179">Hence, we have learnt how to install VirtualBox in Debian Buster. If you are looking to install VirtualBox on Debian Stretch then follow the <a href="https://techpiezo.com/linux/install-virtualbox-in-debian-stretch/">link</a>.</p>
+<p class="amp-wp-7d27179"><strong>3.</strong> To install Wine –</p>
+<pre>apt install wine64</pre>
+<p class="amp-wp-7d27179">Lastly, to check the wine version installed, run the following in terminal –</p>
+<pre>wine --version</pre>
+<p><amp-img class="aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/07/wine-version.png" alt="wine version" width="410" height="48" layout="intrinsic"></amp-img></p>
+<p class="amp-wp-7d27179">Furthermore, if the installation gets completed without errors, then it should return with the installed version. However, the version installed may differ for different Ubuntu versions.</p>
+<p class="amp-wp-7d27179"><strong>5.</strong> Next, we will be installing a windows application through Wine –</p>
+<p class="amp-wp-7d27179">First download the <code>.exe</code> file of the Windows application that you want to run inside Ubuntu. In addition to, for the purpose of explanation we have chosen – Setup_PCEditor_1.2.59.1.exe</p>
+<p class="amp-wp-7d27179">In the Ubuntu terminal –</p>
+<pre>wine Setup_PCEditor_1.2.59.1.exe</pre>
+<p><amp-img class="alignnone size-full wp-image-795 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/07/wine-setup.png" alt="wine setup" width="627" height="30" layout="intrinsic"></amp-img></p>
+<p class="amp-wp-7d27179">This will take you to default installation procedure that you do just before installing any Windows application. Subsequently, finish the installation process. You would find the installed application in the application menu of your desktop environment. For example, for LXDE desktop environment it would be accessible through main menu.</p>
+<p><amp-img class="alignnone size-full wp-image-794 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/07/wine-application-menu.png" alt="wine application menu" width="741" height="222" layout="intrinsic"></amp-img></p>
+<p><strong>Conclusion</strong></p>
+<p class="amp-wp-7d27179">Thus, with emulator Wine we can install Windows applications that don’t have alternatives available for Linux distributions yet. Being open-source it brings all the associated benefits. With Wine, we can even remotely access Windows applications too.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
