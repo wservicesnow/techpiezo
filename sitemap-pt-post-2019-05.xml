@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="July 12, 2019 7:43 pm" -->
+<!-- generated-on="July 12, 2019 7:45 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>https://techpiezo.com/seo/understanding-search-engines/</loc>
 		<lastmod>2019-06-10T14:32:10+00:00</lastmod>
@@ -24,4 +24,4 @@
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: 74add790fd94ce6bb0657fd66546d053; Queries for sitemap: 15; Total queries: 25; Seconds: 0.03; Memory for sitemap: 0MB; Total memory: 2MB -->
+</urlset><!-- Request ID: 0e3b77e0983f9990804f129d1bc13657; Queries for sitemap: 15; Total queries: 25; Seconds: 0.02; Memory for sitemap: 0MB; Total memory: 2MB -->
