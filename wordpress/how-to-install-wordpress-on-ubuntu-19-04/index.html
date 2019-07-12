@@ -941,15 +941,15 @@ h6 {
 		
 		<div class="entry-content">
 			<p style="text-align: justify;">WordPress is one of the most popular Content Management Systems available. It is being used for building websites. To install it in a Ubuntu 19.04 distribution, we have two options available.</p>
-<p style="text-align: justify;">A. Prepare a list of packages to be installed and act accordingly.</p>
-<p style="text-align: justify;">B. Install packages as a group with the help of package tool <strong><em>tasksel</em></strong>.</p>
+<p style="text-align: justify;">A. Prepare a list of packages to be installed and act accordingly.<br />
+B. Install packages as a group with the help of package tool <strong><em>tasksel</em></strong>.</p>
 <p style="text-align: justify;">Installing packages with the help of package tasksel is usually preferred. Therefore, we are going discuss steps involved in installing Lamp-Server through tasksel.</p>
 <p style="text-align: justify;">The whole installation process is easy to execute and mainly involves five steps that are mentioned below:</p>
-<p style="text-align: justify;">STEP &#8211; 1: Login as superuser by issuing <code>sudo -i</code> command.</p>
-<p style="text-align: justify;">STEP &#8211; 2: Install Lamp-Server.</p>
-<p style="text-align: justify;">STEP &#8211; 3: Create database user and grant privileges.</p>
-<p style="text-align: justify;">STEP &#8211; 4: Install relevant PHP packages and edit few config files.</p>
-<p style="text-align: justify;">STEP &#8211; 5: Install WordPress.</p>
+<p style="text-align: justify;">STEP &#8211; 1: Login as superuser by issuing <code>sudo -i</code> command.<br />
+STEP &#8211; 2: Install Lamp-Server.<br />
+STEP &#8211; 3: Create database user and grant privileges.<br />
+STEP &#8211; 4: Install relevant PHP packages and edit few config files.<br />
+STEP &#8211; 5: Install WordPress.</p>
 <h4 style="text-align: center;">How to Install WordPress on Ubuntu 19.04?</h4>
 <p style="text-align: justify;"><span style="font-size: 14pt;"><strong>STEP &#8211; 1:</strong></span> Login as superuser, by typing following command in the terminal.</p>
 <pre>sudo -i</pre>
@@ -964,13 +964,9 @@ h6 {
 <pre>mysql -u root -p</pre>
 <p style="text-align: justify;">Enter the password that was provided while doing secure installation of MySQL and type the following commands. This is being done to create a database <code>"wp_database"</code> for user <code>"wp_user"</code> and password as <code>"password"</code>. We will next grant privileges to the user.</p>
 <pre>CREATE DATABASE wp_database;
-
 CREATE USER `wp_user`@`localhost` IDENTIFIED BY `password`;
-
-GRANT ALL PRIVILEGES ON wp_database.* TO `wp_user`&gt;@`localhost`;
-
+GRANT ALL PRIVILEGES ON wp_database.* TO `wp_user`@`localhost`;
 FLUSH PRIVILEGES;
-
 quit</pre>
 <p style="text-align: justify;"><span style="font-size: 14pt;"><strong>STEP &#8211; 4:</strong></span> You can install following useful PHP extensions by issuing following commands:</p>
 <pre>apt -y install php-curl php-mbstring phpxml</pre>
@@ -980,9 +976,7 @@ quit</pre>
 <pre>nano /etc/apache2/sites-available/000-default.conf</pre>
 <p style="text-align: justify;">and, add the following code in the above file &#8211; <code>000-default.conf</code>. Then, save and exit.</p>
 <pre>&lt;Directory /var/www/html/&gt;
-
     AllowOverride All
-
 &lt;/Directory&gt;</pre>
 <p style="text-align: justify;">We now have enable rewrite module so that we can use Permalink feature of WordPress;</p>
 <pre>a2enmod rewrite</pre>
@@ -993,32 +987,28 @@ quit</pre>
 <pre>systemctl restart apache2</pre>
 <p style="text-align: justify;"><span style="font-size: 14pt;"><strong>STEP &#8211; 5:</strong></span> Download WordPress in <code>/tmp</code> directory with the help of <code>wget</code> command &#8211;</p>
 <pre>cd /tmp
-
 wget "https://wordpress.org/latest.tar.gz"
-
 tar xzvf latest.tar.gz</pre>
 <p style="text-align: justify;">tar command extracts the downloaded file. Now, we have to copy the <code>wp-config-sample.php</code> file as <code>wp-config.php</code> in the same folder by typing the following command.</p>
 <pre>cp /tmp/wordpress/wp-config-sample.php /tmp/wordpress/wp-config.php</pre>
 <p style="text-align: justify;">Once done, copy the entire WordPress directory to <code>/var/www/html/</code> directory.</p>
 <pre>cp -a /tmp/wordpress/. /var/www/html/</pre>
-<p style="text-align: justify;">Next, we provide ownership of the all files copied to the Apache Web Server by using <code>chown</code> command,</p>
+<p style="text-align: justify;">Next, we provide ownership of the all files copied (also making plugins and themes editable) to the Apache Web Server by using <code>chown</code> command,</p>
 <pre>chown -R www-data:www-data /var/www/html/</pre>
 <p style="text-align: justify;">Lastly, update details in <code>wp-config.php</code> file &#8211;</p>
 <pre>nano /var/www/html/wp-config.php</pre>
 <p style="text-align: justify;">and, edit the following entries with relevant ones created in the STEP &#8211; 3.</p>
 <pre>define( 'DB_NAME', 'wp_database' );
-
 define( 'DB_USER', 'wp_user' );
-
-define( 'DB_PASSWORD', 'password' );
-
-define( 'FS_Method', 'direct' );</pre>
+define( 'DB_PASSWORD', 'password' );</pre>
 <p style="text-align: justify;">Now, save and exit. Remove <code>index.html</code> file from <code>/var/www/html/</code> directory by issuing following command,</p>
 <pre>rm /var/www/html/index.html</pre>
 <p style="text-align: justify;">Open your Web Browser and type:</p>
 <pre>http://localhost</pre>
 <p style="text-align: justify;">and, provide relevant details including your username and password for WordPress login. Once, successfully done you will taken to WordPress login prompt.</p>
-<p style="text-align: justify;">In conclusion, we have discussed how to install WordPress on Ubuntu 19.04. In the following articles, we would discuss how to install WordPress on Windows 10 using XAMPP.</p>
+<p style="text-align: justify;">For some reason, if you are still unable to edit themes and plugins then you need to append <code>/var/www/html/wp-config.php</code> file with the following &#8211;</p>
+<pre>define( 'FS_Method', 'direct' );</pre>
+<p>In conclusion, we have discussed how to install WordPress on Ubuntu 19.04. In the following articles, we would discuss how to install WordPress on Windows 10 using XAMPP.</p>
 		</div>
 
 		
@@ -1064,6 +1054,9 @@ define( 'FS_Method', 'direct' );</pre>
 		class="ct-sidebar" 		data-widgets="separated">
 				<div class="ct-widget widget_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
 											<li>
+					<a href="https://techpiezo.com/linux/install-wordpress-on-debian-buster/">Install WordPress on Debian Buster</a>
+									</li>
+											<li>
 					<a href="https://techpiezo.com/linux/install-wine-to-run-windows-applications-in-ubuntu/">Install Wine to run Windows applications in Ubuntu</a>
 									</li>
 											<li>
@@ -1074,9 +1067,6 @@ define( 'FS_Method', 'direct' );</pre>
 									</li>
 											<li>
 					<a href="https://techpiezo.com/linux/kill-a-process-in-linux-distribution/">Kill a Process in Linux Distribution</a>
-									</li>
-											<li>
-					<a href="https://techpiezo.com/linux/install-remove-deb-package-in-ubuntu-debian/">Install/Remove .deb package in Ubuntu/Debian</a>
 									</li>
 					</ul>
 		</div>	</div>

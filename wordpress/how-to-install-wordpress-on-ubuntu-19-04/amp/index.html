@@ -437,15 +437,15 @@ amp-carousel > amp-img > img {
 
 	<div class="amp-wp-article-content">
 		<p class="amp-wp-7d27179">WordPress is one of the most popular Content Management Systems available. It is being used for building websites. To install it in a Ubuntu 19.04 distribution, we have two options available.</p>
-<p class="amp-wp-7d27179">A. Prepare a list of packages to be installed and act accordingly.</p>
-<p class="amp-wp-7d27179">B. Install packages as a group with the help of package tool <strong><em>tasksel</em></strong>.</p>
+<p class="amp-wp-7d27179">A. Prepare a list of packages to be installed and act accordingly.<br>
+B. Install packages as a group with the help of package tool <strong><em>tasksel</em></strong>.</p>
 <p class="amp-wp-7d27179">Installing packages with the help of package tasksel is usually preferred. Therefore, we are going discuss steps involved in installing Lamp-Server through tasksel.</p>
 <p class="amp-wp-7d27179">The whole installation process is easy to execute and mainly involves five steps that are mentioned below:</p>
-<p class="amp-wp-7d27179">STEP – 1: Login as superuser by issuing <code>sudo -i</code> command.</p>
-<p class="amp-wp-7d27179">STEP – 2: Install Lamp-Server.</p>
-<p class="amp-wp-7d27179">STEP – 3: Create database user and grant privileges.</p>
-<p class="amp-wp-7d27179">STEP – 4: Install relevant PHP packages and edit few config files.</p>
-<p class="amp-wp-7d27179">STEP – 5: Install WordPress.</p>
+<p class="amp-wp-7d27179">STEP – 1: Login as superuser by issuing <code>sudo -i</code> command.<br>
+STEP – 2: Install Lamp-Server.<br>
+STEP – 3: Create database user and grant privileges.<br>
+STEP – 4: Install relevant PHP packages and edit few config files.<br>
+STEP – 5: Install WordPress.</p>
 <h4 class="amp-wp-cdd8ca0">How to Install WordPress on Ubuntu 19.04?</h4>
 <p class="amp-wp-7d27179"><span class="amp-wp-ca1de63"><strong>STEP – 1:</strong></span> Login as superuser, by typing following command in the terminal.</p>
 <pre>sudo -i</pre>
@@ -460,13 +460,9 @@ amp-carousel > amp-img > img {
 <pre>mysql -u root -p</pre>
 <p class="amp-wp-7d27179">Enter the password that was provided while doing secure installation of MySQL and type the following commands. This is being done to create a database <code>"wp_database"</code> for user <code>"wp_user"</code> and password as <code>"password"</code>. We will next grant privileges to the user.</p>
 <pre>CREATE DATABASE wp_database;
-
 CREATE USER `wp_user`@`localhost` IDENTIFIED BY `password`;
-
-GRANT ALL PRIVILEGES ON wp_database.* TO `wp_user`&gt;@`localhost`;
-
+GRANT ALL PRIVILEGES ON wp_database.* TO `wp_user`@`localhost`;
 FLUSH PRIVILEGES;
-
 quit</pre>
 <p class="amp-wp-7d27179"><span class="amp-wp-ca1de63"><strong>STEP – 4:</strong></span> You can install following useful PHP extensions by issuing following commands:</p>
 <pre>apt -y install php-curl php-mbstring phpxml</pre>
@@ -476,9 +472,7 @@ quit</pre>
 <pre>nano /etc/apache2/sites-available/000-default.conf</pre>
 <p class="amp-wp-7d27179">and, add the following code in the above file – <code>000-default.conf</code>. Then, save and exit.</p>
 <pre>&lt;Directory /var/www/html/&gt;
-
     AllowOverride All
-
 &lt;/Directory&gt;</pre>
 <p class="amp-wp-7d27179">We now have enable rewrite module so that we can use Permalink feature of WordPress;</p>
 <pre>a2enmod rewrite</pre>
@@ -489,32 +483,28 @@ quit</pre>
 <pre>systemctl restart apache2</pre>
 <p class="amp-wp-7d27179"><span class="amp-wp-ca1de63"><strong>STEP – 5:</strong></span> Download WordPress in <code>/tmp</code> directory with the help of <code>wget</code> command –</p>
 <pre>cd /tmp
-
 wget "https://wordpress.org/latest.tar.gz"
-
 tar xzvf latest.tar.gz</pre>
 <p class="amp-wp-7d27179">tar command extracts the downloaded file. Now, we have to copy the <code>wp-config-sample.php</code> file as <code>wp-config.php</code> in the same folder by typing the following command.</p>
 <pre>cp /tmp/wordpress/wp-config-sample.php /tmp/wordpress/wp-config.php</pre>
 <p class="amp-wp-7d27179">Once done, copy the entire WordPress directory to <code>/var/www/html/</code> directory.</p>
 <pre>cp -a /tmp/wordpress/. /var/www/html/</pre>
-<p class="amp-wp-7d27179">Next, we provide ownership of the all files copied to the Apache Web Server by using <code>chown</code> command,</p>
+<p class="amp-wp-7d27179">Next, we provide ownership of the all files copied (also making plugins and themes editable) to the Apache Web Server by using <code>chown</code> command,</p>
 <pre>chown -R www-data:www-data /var/www/html/</pre>
 <p class="amp-wp-7d27179">Lastly, update details in <code>wp-config.php</code> file –</p>
 <pre>nano /var/www/html/wp-config.php</pre>
 <p class="amp-wp-7d27179">and, edit the following entries with relevant ones created in the STEP – 3.</p>
 <pre>define( 'DB_NAME', 'wp_database' );
-
 define( 'DB_USER', 'wp_user' );
-
-define( 'DB_PASSWORD', 'password' );
-
-define( 'FS_Method', 'direct' );</pre>
+define( 'DB_PASSWORD', 'password' );</pre>
 <p class="amp-wp-7d27179">Now, save and exit. Remove <code>index.html</code> file from <code>/var/www/html/</code> directory by issuing following command,</p>
 <pre>rm /var/www/html/index.html</pre>
 <p class="amp-wp-7d27179">Open your Web Browser and type:</p>
 <pre>http://localhost</pre>
 <p class="amp-wp-7d27179">and, provide relevant details including your username and password for WordPress login. Once, successfully done you will taken to WordPress login prompt.</p>
-<p class="amp-wp-7d27179">In conclusion, we have discussed how to install WordPress on Ubuntu 19.04. In the following articles, we would discuss how to install WordPress on Windows 10 using XAMPP.</p>
+<p class="amp-wp-7d27179">For some reason, if you are still unable to edit themes and plugins then you need to append <code>/var/www/html/wp-config.php</code> file with the following –</p>
+<pre>define( 'FS_Method', 'direct' );</pre>
+<p>In conclusion, we have discussed how to install WordPress on Ubuntu 19.04. In the following articles, we would discuss how to install WordPress on Windows 10 using XAMPP.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
