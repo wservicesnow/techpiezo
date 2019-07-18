@@ -1,51 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="July 18, 2019 3:27 am" -->
+<!-- generated-on="July 18, 2019 7:25 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
-		<loc>https://techpiezo.com/category/android/</loc>
+		<loc>https://techpiezo.com/android/</loc>
 		<lastmod>2019-06-13T10:57:42+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://techpiezo.com/category/tech-insights/</loc>
+		<loc>https://techpiezo.com/tech-insights/</loc>
 		<lastmod>2019-06-19T12:30:50+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://techpiezo.com/category/linux/</loc>
+		<loc>https://techpiezo.com/linux/</loc>
 		<lastmod>2019-07-10T13:00:16+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://techpiezo.com/category/linux/linux-recent/</loc>
+		<loc>https://techpiezo.com/linux/linux-recent/</loc>
 		<lastmod>2019-06-13T15:18:43+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://techpiezo.com/category/android/android-recent/</loc>
+		<loc>https://techpiezo.com/android/android-recent/</loc>
 		<lastmod>2019-06-13T10:57:42+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://techpiezo.com/category/seo/</loc>
+		<loc>https://techpiezo.com/seo/</loc>
 		<lastmod>2019-06-09T03:51:55+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://techpiezo.com/category/linux/linux-tutorials/</loc>
+		<loc>https://techpiezo.com/linux/linux-tutorials/</loc>
 		<lastmod>2019-07-10T13:00:16+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://techpiezo.com/category/wordpress/</loc>
+		<loc>https://techpiezo.com/wordpress/</loc>
 		<lastmod>2019-07-12T08:00:41+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
-</urlset><!-- Request ID: 2d75c73fda5af62e20254236ffe80797; Queries for sitemap: 4; Total queries: 14; Seconds: 0.01; Memory for sitemap: 0MB; Total memory: 2MB -->
+</urlset><!-- Request ID: 0c58965f5760f2adb484339d9e5e6b48; Queries for sitemap: 4; Total queries: 15; Seconds: 0.01; Memory for sitemap: 0MB; Total memory: 2MB -->
