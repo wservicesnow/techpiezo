@@ -52,7 +52,7 @@
     --offCanvasWidth: 280px;
     --topBarHeight: 0px;
     --dropDownBackground: var(--paletteColor5);
-    --dropdownMenuWidth: 125px;
+    --dropdownMenuWidth: 150px;
     --navSectionHeight: 60px;
     --transparentHeaderHoverFontColor: var(--paletteColor1);
     --headerHeight: 50px;
@@ -76,7 +76,7 @@
     --transparentLogoMaxHeight: 50px;
     --headerShadow: rgba(210,213,218,0.15);
     --transparentHeaderInitialFontColor: #ffffff;
-    --dropdownTopOffset: 15px;
+    --dropdownTopOffset: 20px;
     --dropDownDivider: none;
     --topBarBackground: #29333d;
     --mobileHeaderHeight: 70px;
@@ -206,12 +206,12 @@ code, kbd, samp, pre {
 }
 
 .primary-menu .sub-menu li {
-    --lineHeight: 1.6;
+    --lineHeight: 1.3;
     --textDecoration: none;
     --fontStyle: normal;
-    --fontWeight: 500;
-    --textTransform: none;
-    --fontSize: 14px;
+    --fontWeight: 700;
+    --textTransform: uppercase;
+    --fontSize: 12px;
     --letterSpacing: 0em;
 }
 
@@ -531,8 +531,8 @@ code, kbd, samp, pre {
 }
 
 .primary-menu .sub-menu li {
-    --lineHeight: 1.6;
-    --fontSize: 14px;
+    --lineHeight: 1.3;
+    --fontSize: 12px;
     --letterSpacing: 0em;
 }
 
@@ -675,8 +675,8 @@ code, kbd, samp, pre {
 }
 
 .primary-menu .sub-menu li {
-    --lineHeight: 1.6;
-    --fontSize: 14px;
+    --lineHeight: 1.3;
+    --fontSize: 12px;
     --letterSpacing: 0em;
 }
 
@@ -807,25 +807,25 @@ h6 {
 		id="site-navigation"
 		class="main-navigation"
 		data-menu-type="type-1"
-		data-dropdown-animation="type-1"
+		data-dropdown-animation="type-3"
 				>
 
 		<ul id="primary-menu" class="primary-menu menu"><li id="menu-item-70" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-70"><a href="https://techpiezo.com">Home</a></li>
-<li id="menu-item-39" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-39"><a href="https://techpiezo.com/tech-insights/">Insights</a></li>
-<li id="menu-item-40" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-40"><a href="https://techpiezo.com/seo/">SEO</a></li>
-<li id="menu-item-43" class="menu-item menu-item-type-taxonomy menu-item-object-category current-category-ancestor current-menu-ancestor current-menu-parent current-category-parent menu-item-has-children menu-item-43"><a href="https://techpiezo.com/android/">Android<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
-<ul class="sub-menu">
-	<li id="menu-item-347" class="menu-item menu-item-type-taxonomy menu-item-object-category current-menu-item menu-item-347"><a href="https://techpiezo.com/android/android-recent/" aria-current="page">Recent</a></li>
-	<li id="menu-item-348" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-348"><a href="https://techpiezo.com/android/android-tutorials/">Tutorials</a></li>
-</ul>
-</li>
 <li id="menu-item-41" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-41"><a href="https://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
 <ul class="sub-menu">
-	<li id="menu-item-349" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-349"><a href="https://techpiezo.com/linux/linux-recent/">Recent</a></li>
-	<li id="menu-item-350" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-350"><a href="https://techpiezo.com/linux/linux-tutorials/">Tutorials</a></li>
+	<li id="menu-item-350" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-350"><a href="https://techpiezo.com/linux/linux-quick-fix/">Quick Fix</a></li>
+	<li id="menu-item-349" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-349"><a href="https://techpiezo.com/linux/linux-recent/">What&#8217;s New</a></li>
+</ul>
+</li>
+<li id="menu-item-43" class="menu-item menu-item-type-taxonomy menu-item-object-category current-category-ancestor current-menu-ancestor current-menu-parent current-category-parent menu-item-has-children menu-item-43"><a href="https://techpiezo.com/android/">Android<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-348" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-348"><a href="https://techpiezo.com/android/android-kotlin/">Kotlin</a></li>
+	<li id="menu-item-347" class="menu-item menu-item-type-taxonomy menu-item-object-category current-menu-item menu-item-347"><a href="https://techpiezo.com/android/android-recent/" aria-current="page">What&#8217;s New</a></li>
 </ul>
 </li>
 <li id="menu-item-42" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-42"><a href="https://techpiezo.com/wordpress/">WordPress</a></li>
+<li id="menu-item-40" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-40"><a href="https://techpiezo.com/seo/">SEO</a></li>
+<li id="menu-item-39" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-39"><a href="https://techpiezo.com/tech-insights/">Insights</a></li>
 </ul>
 	</nav>
 
@@ -1058,21 +1058,21 @@ h6 {
 			<div class="ct-bag-content" >
 				
 				<ul id="primary-menu" class="mobile-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-70"><a href="https://techpiezo.com">Home</a></li>
-<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-39"><a href="https://techpiezo.com/tech-insights/">Insights</a></li>
-<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-40"><a href="https://techpiezo.com/seo/">SEO</a></li>
-<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-category-ancestor current-menu-ancestor current-menu-parent current-category-parent menu-item-has-children menu-item-43"><a href="https://techpiezo.com/android/">Android<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
-<ul class="sub-menu">
-	<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-menu-item menu-item-347"><a href="https://techpiezo.com/android/android-recent/" aria-current="page">Recent</a></li>
-	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-348"><a href="https://techpiezo.com/android/android-tutorials/">Tutorials</a></li>
-</ul>
-</li>
 <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-41"><a href="https://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
 <ul class="sub-menu">
-	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-349"><a href="https://techpiezo.com/linux/linux-recent/">Recent</a></li>
-	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-350"><a href="https://techpiezo.com/linux/linux-tutorials/">Tutorials</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-350"><a href="https://techpiezo.com/linux/linux-quick-fix/">Quick Fix</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-349"><a href="https://techpiezo.com/linux/linux-recent/">What&#8217;s New</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-category-ancestor current-menu-ancestor current-menu-parent current-category-parent menu-item-has-children menu-item-43"><a href="https://techpiezo.com/android/">Android<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-348"><a href="https://techpiezo.com/android/android-kotlin/">Kotlin</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-menu-item menu-item-347"><a href="https://techpiezo.com/android/android-recent/" aria-current="page">What&#8217;s New</a></li>
 </ul>
 </li>
 <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-42"><a href="https://techpiezo.com/wordpress/">WordPress</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-40"><a href="https://techpiezo.com/seo/">SEO</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-39"><a href="https://techpiezo.com/tech-insights/">Insights</a></li>
 </ul>			</div>
 		</div>
 	</div>

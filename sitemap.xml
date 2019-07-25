@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="July 24, 2019 8:40 pm" -->
+<!-- generated-on="July 25, 2019 3:47 pm" -->
 <sitemapindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/siteindex.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<sitemap>
 		<loc>https://techpiezo.com/sitemap-misc.xml</loc>
-		<lastmod>2019-07-24T16:21:23+00:00</lastmod>
+		<lastmod>2019-07-25T14:08:11+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://techpiezo.com/sitemap-tax-category.xml</loc>
-		<lastmod>2019-07-24T16:21:23+00:00</lastmod>
+		<lastmod>2019-07-25T14:08:11+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://techpiezo.com/sitemap-pt-post-2019-07.xml</loc>
-		<lastmod>2019-07-12T19:44:43+00:00</lastmod>
+		<lastmod>2019-07-25T14:08:11+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://techpiezo.com/sitemap-pt-post-2019-06.xml</loc>
@@ -24,4 +24,4 @@
 		<loc>https://techpiezo.com/sitemap-pt-page-2019-05.xml</loc>
 		<lastmod>2019-07-19T13:23:39+00:00</lastmod>
 	</sitemap>
-</sitemapindex><!-- Request ID: 85f9d1e616c7361e87a325092ab04b8b; Queries for sitemap: 6; Total queries: 17; Seconds: 0.15; Memory for sitemap: 0MB; Total memory: 6MB -->
+</sitemapindex><!-- Request ID: 51043d42b7d2dde476e7c0fc97466a52; Queries for sitemap: 6; Total queries: 17; Seconds: 0; Memory for sitemap: 0MB; Total memory: 2MB -->

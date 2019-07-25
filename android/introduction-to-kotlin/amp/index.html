@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>/etc/skel/ directory in Linux - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/linux/etc-skel-directory-in-linux/" />
+		<title>Introduction to Kotlin - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/android/introduction-to-kotlin/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -426,32 +426,36 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">/etc/skel/ directory in Linux</h1>
+		<h1 class="amp-wp-title">Introduction to Kotlin</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-07-08T20:42:24+00:00">
-		2 weeks ago	</time>
+	<time datetime="2019-07-25T14:05:46+00:00">
+		2 hours ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">The <code>/etc/skel/</code> contains all the files and directories that are automatically copied to the newly created user’s home directory. In an organization, a System Administrator has to manage large pool of users. It wouldn’t be feasible for the System Administrator to make similar changes for each user who joins the organization. For example, If the System Administrator wants to provide a specific file to all the newly created users. Then, he/she has to copy that file for each user. Or, the System Administrator may copy the file in the <code>/etc/skel/</code> directory and whenever a new user is created, the file gets copied too. Thus, the System Administrator can save himself/herself valuable chunks of time every time a new user is created.</p>
-<p class="amp-wp-7d27179">To know the contents of your system’s <code>/etc/skel/</code> directory run the following command in terminal –</p>
-<pre>ls -al /etc/skel/</pre>
-<p class="amp-wp-7d27179">here,</p>
-<p class="amp-wp-7d27179">-a option is used to list hidden files in the directory, and</p>
-<p class="amp-wp-7d27179">-l is for long list format.</p>
-<p class="amp-wp-7d27179">The output would correspond with –</p>
-<p><amp-img class="size-full wp-image-716 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/07/etc-skel.png" alt="etc skel" width="622" height="118" layout="intrinsic"></amp-img></p>
-<p class="amp-wp-7d27179">As visible from the output, the root has the ownership of all files and directories in <code>/etc/skel/</code> directory. But, you don’t have to worry about ownership of contents as appropriate permissions will be set upon running the useradd command, wherein these files and directories would be automatically copied to the new users’ home directory.</p>
-<p class="amp-wp-7d27179"> Although not advisable, if you wish to change the default <code>/etc/skel/</code> directory then you can do so by editing the <code>/etc/default/useradd</code> file. Open the file as superuser and move to the entry that mentions <code>SKEL=/etc/skel</code>. Thereafter, you have to enter the directory’s address of your choice in place of <code>/etc/skel/</code>. There are few other changes you can make by editing <code>/etc/default/useradd/</code> file. But, you should avoid it unless absolutely required.</p>
-<p class="amp-wp-7d27179">In conclusion, <code>/etc/skel/</code> – is a skeleton directory which contains the default files that would automatically get copied to newly created users’ HOME directory.</p>
+		<p class="amp-wp-7d27179">Kotlin is an open-source programming language, which supports functional as well as object-oriented programming. Advancement in language is being taken care of by Kotlin Foundation group, created by Google and JetBrains. In 2017, Google announced first-class support for the language. Recently, Google also announced that Kotlin will be its preferred language for Android Application development.</p>
+<p class="amp-wp-7d27179">Furthermore, the language can be compiled through a Java Virtual Machine, we can also develop Android applications, server-side applications, transpile JavaScript code etc. In addition to, if we are working on a Java-based application there also we can use Kotlin alongside as it is interoperable with Java.</p>
+<h4>Kotlin – A Statically Typed Programming Language</h4>
+<p class="amp-wp-7d27179">Programming languages have been classified as Dynamically typed and Statically typed. In Dynamically typed programming languages, the type is checked during run time thus saving us lot of space and time. But, our code will compile despite having runtime errors. In case of Statically typed programming languages, type is checked during compile time and it will not compile until we have fixed the errors. Also, data types need to be declared beforehand in case of statically typed programming languages. Kotlin is a statically typed programming language. In contrast to Java, which is also a statically typed programming language we need to declare variable types before assigning any values. But in Kotlin, we don’t have to explicitly define variable types in our source code. Kotlin in most cases will determine the variable type. The attribute which assists programming language to identify the type of a variable is defined as type inference.</p>
+<h4>Supports Object-Oriented and Functional Programming</h4>
+<p class="amp-wp-7d27179">It also supports both object-oriented programming as well as functional programming. As the name suggests, the object-oriented programming is based on objects. These objects are the instances of classes defined. On the other hand, we get to work with functions in functional programming. We can store functions as values in variables, pass them as parameters etc.</p>
+<h4>Special Attribute</h4>
+<p class="amp-wp-7d27179">The attribute that makes it stand out is – Kotlin code can be called from Java and Java code can be called from Kotlin. It is interoperable with Java and also let developers to write concise codes. Concise codes can help increase developers’ productivity as the time needed to read, analyze the code is cut short and developers’ could devote their time to some other relevant work. Further, Java developers wouldn’t have to put in a lot of effort to understand Kotlin.</p>
+<h4>Forbids NullPointerException</h4>
+<p class="amp-wp-7d27179">Last but not least, we can use operator (<code>?</code>) in our code to get rid of NullPointerException. In case our variable contains null value then it would exclude any operations on it thereby eliminating the event that leads to NullPointerException. For example,</p>
+<pre>var a: String = null</pre>
+<p class="amp-wp-7d27179">This code will fail to compile as variable <code>a</code> can’t be null. On the other hand, we can use operator (<code>?</code>) to make sure our code compiles.</p>
+<pre>var a: String? = null</pre>
+<p class="amp-wp-7d27179">Kotlin programming language is provided under Apache License 2.0 and we can build our applications through any of the following IntelliJ IDEA, Eclipse, &amp; Command line compiler.</p>
+<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have just introduced you to the beautiful world of Kotlin.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
 			<div class="amp-wp-meta amp-wp-tax-category">
-		Categories: <a href="https://techpiezo.com/linux/" rel="category tag">Linux</a>, <a href="https://techpiezo.com/linux/linux-quick-fix/" rel="category tag">Quick Fix</a>	</div>
+		Categories: <a href="https://techpiezo.com/android/" rel="category tag">Android</a>, <a href="https://techpiezo.com/android/android-kotlin/" rel="category tag">Kotlin</a>	</div>
 
 	</footer>
 </article>
