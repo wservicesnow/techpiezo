@@ -6,11 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
-	<title>Install VirtualBox in Debian Buster - TechPiezo</title>
+	<title>Switch back to ifupdown - /etc/network/interfaces in Ubuntu - TechPiezo</title>
 
 <!-- This site is optimized with the Yoast SEO plugin v11.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
-<meta name="description" content="VirtualBox is a free and open-source virtualization product. It facilitates us in running multiple operating systems on our existing computer."/>
-<link rel="canonical" href="https://techpiezo.com/linux/install-virtualbox-in-debian-buster/" />
+<meta name="description" content="There are still many users who prefer ifupdown package over netplan. Ifupdown is a tool which is used to configure network interfaces."/>
+<link rel="canonical" href="https://techpiezo.com/linux/switch-back-to-ifupdown-etc-network-interfaces-in-ubuntu/" />
 <!-- / Yoast SEO plugin. -->
 
 <style id="ct-main-styles-inline-css" type="text/css">:root {
@@ -748,7 +748,7 @@ h6 {
 <link rel='stylesheet' id='ct-style-css'  href='https://techpiezo.com/wp-content/themes/blocksy/style.css' type='text/css' media='all' />
 <link rel='stylesheet' id='ct-main-styles-css'  href='https://techpiezo.com/wp-content/themes/blocksy/static/bundle/main.css' type='text/css' media='all' />
 
-<link rel="amphtml" href="https://techpiezo.com/linux/install-virtualbox-in-debian-buster/amp/"><link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" sizes="32x32" />
+<link rel="amphtml" href="https://techpiezo.com/linux/switch-back-to-ifupdown-etc-network-interfaces-in-ubuntu/amp/"><link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" sizes="32x32" />
 <link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" sizes="192x192" />
 <link rel="apple-touch-icon-precomposed" href="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" />
 <meta name="msapplication-TileImage" content="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" />
@@ -777,7 +777,7 @@ h6 {
 
 </head>
 
-<body class="post-template-default single single-post postid-708 single-format-standard ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
+<body class="post-template-default single single-post postid-938 single-format-standard ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
 <div id="main-container">
 
 	<header
@@ -896,13 +896,13 @@ h6 {
 			<section>
 				
 	<article
-		id="post-708"
-		class="post-708 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"		data-content="boxed"				>
+		id="post-938"
+		class="post-938 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"		data-content="boxed"				>
 
 		
 		<section class="hero-section" data-type="type-1" data-alignment="left">
 			<header class="entry-header">
-				<h1 class="page-title">Install VirtualBox in Debian Buster</h1>
+				<h1 class="page-title">Switch back to ifupdown &#8211; /etc/network/interfaces in Ubuntu</h1>
 				<div class="entry-meta has-avatar" data-label data-type="simple">
 		
 
@@ -929,7 +929,7 @@ h6 {
 					<span
 						class="ct-meta-element"
 						>
-						Jul 7, 2019					</span>
+						Jul 25, 2019					</span>
 				</li>
 			
 			
@@ -942,54 +942,70 @@ h6 {
 		
 		
 		<div class="entry-content">
-			<p style="text-align: justify;">Developed by Oracle Corporation, VirtualBox is a free and open-source virtualization product. It facilitates us in running multiple operating systems on our existing computer. These multiple operating systems run inside Virtual Machines. By using Virtual Machines, we reduce costs incurred on infrastructure. Also, we can do a lot of testing without breaking our host operating system. We can make use of VirtualBox extension packs or VirtualBox Guest Additions for extended functionality like support for USB devices, better user experience, remote desktop protocol support etc. The product was first released on January 17, 2007.</p>
-<p style="text-align: justify;">Debian Buster has finally released on July 06, 2019. But, those who have been using VirtualBox all along could be in for a surprise as the application gets removed after the update. Previous repository entry for the Debian Stretch wouldn&#8217;t come to the rescue.</p>
-<p style="text-align: justify;">So, if you would like continue using the application even in Debian Buster then you will have to make couple of changes.</p>
-<h4 style="text-align: center;">Install VirtualBox in Debian Buster</h4>
-<p style="text-align: justify;">Login as superuser/root to start with the installation process. If you don&#8217;t have the privileges then, it is best to contact your system administrator. To login as superuser, run the following in terminal and provide password &#8211;</p>
-<pre>su -l</pre>
-<p style="text-align: justify;">Next, we will have to edit/update entries in <code>/etc/apt/sources.list</code> file. We will be using the text-editor &#8211; nano. You can choose any other text-editor which you are comfortable with.</p>
-<pre>nano /etc/apt/sources.list</pre>
-<p style="text-align: justify;">Add the following entry in the <code>/etc/apt/sources.list</code> file.</p>
-<pre>deb http://download.virtualbox.org/virtualbox/debian bionic contrib</pre>
-<p style="text-align: justify;">Save and exit.</p>
-<p style="text-align: justify;">Then, we will have to add the VirtualBox public key &#8211;</p>
-<pre>cd /dev/shm
-wget https://www.virtualbox.org/download/oracle_vbox_2016.asc
-apt-key add oracle_vbox_2016.asc</pre>
-<p style="text-align: justify;">After adding the public keys we need to update the repositories. So, run the following command &#8211;</p>
-<pre>apt update</pre>
-<p style="text-align: justify;">Lastly, install VirtualBox &#8211;</p>
-<pre>apt install virtualbox-6.0</pre>
-<p style="text-align: justify;">Hence, we have learnt how to install VirtualBox in Debian Buster. If you are looking to install VirtualBox on Debian Stretch then follow the <a href="https://techpiezo.com/linux/install-virtualbox-in-debian-stretch/">link</a>.</p>
+			<p style="text-align: justify;">Netplan is a network configuration tool which was introduced in the Ubuntu 17.10. Prior to that, Ubuntu had ifupdown package to configure and manage networks. There are still many users who would prefer ifupdown package for managing their networks for various reasons. In this article, we would discuss how desktop users can switch back to ifupdown package and manage their networks through <code>/etc/network/interfaces</code> configuration file. Furthermore, they can also use command-line utilities like <code>nmcli</code>, <code>nmtui</code> or GUI based <code>network-manager-gnome</code> to manage their networks.</p>
+<h4 style="text-align: justify;">Install ifupdown package</h4>
+<p style="text-align: justify;">Superuser access is a prerequisite before making any changes, if you don&#8217;t have one then contact your System Administrator. Run the following in terminal and provide the password.</p>
+<pre>sudo -i</pre>
+<p style="text-align: justify;">Thereafter, you need to install <code>ifupdown</code> package. To do so, run the following &#8211;</p>
+<pre>apt update
+apt install ifupdown</pre>
+<p style="text-align: justify;">Also, if you plan on to Install GUI version of Network Manager &#8211; various other tools like nmcli, nmtui are also included in it.</p>
+<pre>apt install network-manager-gnome</pre>
+<h4 style="text-align: justify;">Remove Netplan package</h4>
+<p style="text-align: justify;">If you don&#8217;t want to keep configuration and other related files of Netplan package installed,</p>
+<pre>apt purge netplan.io</pre>
+<p style="text-align: justify;">To remove associated folders &#8211;</p>
+<pre>rm -rf /usr/share/netplan 
+rm -rf /etc/netplan</pre>
+<p style="text-align: justify;">So far, we have installed ifupdown package and subsequently removed Netplan package. Now, we will be editing /etc/network/interfaces file.</p>
+<h4 style="text-align: justify;">Make necessary changes to /etc/network/interfaces</h4>
+<pre>nano /etc/network/interfaces</pre>
+<p style="text-align: justify;">We have used <code>nano</code> text editor, you may choose one of your choice. In <code>/etc/network/interfaces</code> configuration file, make the following entries &#8211;</p>
+<pre>auto lo
+iface lo inet loopback</pre>
+<p style="text-align: justify;">Now, we are have got two options available with us. Either we configure <code>/etc/network/interfaces</code> file manually or, let any of the <code>network-manager</code> tools do that for us. We will discuss both the available options in brief next.</p>
+<p style="text-align: justify;"><span style="font-size: 14pt;"><strong>Option 1. Configure <code>/etc/network/interfaces</code> file.</strong></span></p>
+<p style="text-align: justify;">Use the following command to identify the network interfaces &#8211;</p>
+<pre>ip a</pre>
+<p style="text-align: justify;">For instance, one interface could be &#8211; <code>enp2s0</code> and the most basic IPv4 DHCP configuration may look like &#8211;</p>
+<pre>auto lo
+iface lo inet loopback
+
+auto enp2s0
+iface enp2s0 inet dhcp</pre>
+<p style="text-align: justify;"><strong>Note:</strong> You need to identify the interface which you are trying to connect with. Also, the above code just resemble the most common configuration. For advanced configurations, you are advised to refer to man pages for network interface configuration for ifup and ifdown. These can be accessed by running the following command &#8211;</p>
+<pre>man 5 interfaces</pre>
+<p style="text-align: justify;">After making relevant changes mentioned in the man pages do,</p>
+<pre>systemctl restart networking</pre>
+<p style="text-align: justify;"><span style="font-size: 14pt;"><strong>Option 2. Use <code>network-manager</code> tools.</strong></span></p>
+<p style="text-align: justify;">Edit the following configuration file &#8211;</p>
+<pre style="text-align: justify;">nano /etc/NetworkManager/NetworkManager.conf</pre>
+<p style="text-align: justify;">In the configuration file, you need to edit &#8211; <code>managed=false</code> and update it with <code>managed=true</code></p>
+<p style="text-align: justify;">Also, we need to make an empty file by using the <code>touch</code> command.</p>
+<pre>touch /etc/NetworkManager/conf.d/10-globally-managed-devices.conf</pre>
+<p style="text-align: justify;">The above steps are being advised to get rid of the error &#8211; &#8220;devices not managed&#8221; that comes up during network configuration.</p>
+<p style="text-align: justify;">Now, we have got three commonly used tools available to us &#8211; <code>nmcli</code>, <code>nmtui</code>, or graphical version: network-manager-gnome.</p>
+<p style="text-align: justify;">If you are an advanced user, go for <code>nmcli</code> else either run <code>nmtui</code> in terminal or use network-manager-gnome. The changes you make would be according to your requirements.</p>
+<p style="text-align: justify;">Conclusion, in this article we have discussed the ways to manage your network configuration if you are planning to switch back to <code>ifupdown</code> package.</p>
 		</div>
 
 		
 		
 		
 		<nav class="post-navigation ">
-							<a href="https://techpiezo.com/linux/kill-a-process-in-linux-distribution/" class="nav-item-prev">
+							<a href="https://techpiezo.com/android/introduction-to-kotlin/" class="nav-item-prev">
 					
 					<div class="item-content">
 						<span>
 							Previous <span>&nbsp;Post</span>						</span>
 
 													<h4 class="item-title">
-								Kill a Process in Linux Distribution							</h4>
+								Introduction to Kotlin							</h4>
 											</div>
 
 				</a>
 			
-							<a href="https://techpiezo.com/linux/etc-skel-directory-in-linux/" class="nav-item-next">
-					
-					<div class="item-content">
-						<span>
-							Next <span>&nbsp;Post</span>						</span>
-
-													<h4 class="item-title">
-								/etc/skel/ directory in Linux							</h4>
-											</div>
-				</a>
+							<div class="nav-item-next"></div>
 			
 		</nav>
 

@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Introduction to Kotlin - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/android/introduction-to-kotlin/" />
+		<title>Switch back to ifupdown - /etc/network/interfaces in Ubuntu - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/linux/switch-back-to-ifupdown-etc-network-interfaces-in-ubuntu/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -409,7 +409,7 @@ amp-carousel > amp-img > img {
 	right: 16px;
 }
 		/* Inline stylesheets */
-:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}	</style>
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-ca1de63{font-size:14pt}	</style>
 </head>
 
 <body class="">
@@ -426,36 +426,66 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Introduction to Kotlin</h1>
+		<h1 class="amp-wp-title">Switch back to ifupdown &#8211; /etc/network/interfaces in Ubuntu</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-07-25T14:05:46+00:00">
-		6 hours ago	</time>
+	<time datetime="2019-07-25T20:06:03+00:00">
+		13 mins ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">Kotlin is an open-source programming language, which supports functional as well as object-oriented programming. Advancement in language is being taken care of by Kotlin Foundation group, created by Google and JetBrains. In 2017, Google announced first-class support for the language. Recently, Google also announced that Kotlin will be its preferred language for Android Application development.</p>
-<p class="amp-wp-7d27179">Furthermore, the language can be compiled through a Java Virtual Machine, we can also develop Android applications, server-side applications, transpile JavaScript code etc. In addition to, if we are working on a Java-based application there also we can use Kotlin alongside as it is inter-operable with Java.</p>
-<h4>Kotlin – A Statically Typed Programming Language</h4>
-<p class="amp-wp-7d27179">Programming languages have been classified as Dynamically typed and Statically typed. In Dynamically typed programming languages, the type is checked during run time thus saving us lot of space and time. But, our code will compile despite having run-time errors. In case of Statically typed programming languages, type is checked during compile time and it will not compile until we have fixed the errors. Also, data types need to be declared beforehand in case of statically typed programming languages. Kotlin is a statically typed programming language. In contrast to Java, which is also a statically typed programming language we need to declare variable types before assigning any values. But in Kotlin, we don’t have to explicitly define variable types in our source code. Kotlin in most cases will determine the variable type. The attribute which assists programming language to identify the type of a variable is defined as type inference.</p>
-<h4>Supports Object-Oriented and Functional Programming</h4>
-<p class="amp-wp-7d27179">It also supports both object-oriented programming as well as functional programming. As the name suggests, the object-oriented programming is based on objects. These objects are the instances of classes defined. On the other hand, we get to work with functions in functional programming. We can store functions as values in variables, pass them as parameters etc.</p>
-<h4>Special Attribute</h4>
-<p class="amp-wp-7d27179">The attribute that makes it stand out is – Kotlin code can be called from Java and Java code can be called from Kotlin. It is inter-operable with Java and also let developers to write concise codes. Concise codes can help increase developers’ productivity as the time needed to read, analyze the code is cut short and developers’ could devote their time to some other relevant work. Further, Java developers wouldn’t have to put in a lot of effort to understand Kotlin.</p>
-<h4>Forbids NullPointerException</h4>
-<p class="amp-wp-7d27179">Last but not least, we can use operator (<code>?</code>) in our code to get rid of NullPointerException. In case our variable contains null value then it would exclude any operations on it thereby eliminating the event that leads to NullPointerException. For example,</p>
-<pre>var a: String = null</pre>
-<p class="amp-wp-7d27179">This code will fail to compile as variable <code>a</code> can’t be null. On the other hand, we can use operator (<code>?</code>) to make sure our code compiles.</p>
-<pre>var a: String? = null</pre>
-<p class="amp-wp-7d27179">Kotlin programming language is provided under Apache License 2.0 and we can build our applications through any of the following IntelliJ IDEA, Eclipse, &amp; Command line compiler.</p>
-<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have just introduced you to the beautiful world of Kotlin.</p>
+		<p class="amp-wp-7d27179">Netplan is a network configuration tool which was introduced in the Ubuntu 17.10. Prior to that, Ubuntu had ifupdown package to configure and manage networks. There are still many users who would prefer ifupdown package for managing their networks for various reasons. In this article, we would discuss how desktop users can switch back to ifupdown package and manage their networks through <code>/etc/network/interfaces</code> configuration file. Furthermore, they can also use command-line utilities like <code>nmcli</code>, <code>nmtui</code> or GUI based <code>network-manager-gnome</code> to manage their networks.</p>
+<h4 class="amp-wp-7d27179">Install ifupdown package</h4>
+<p class="amp-wp-7d27179">Superuser access is a prerequisite before making any changes, if you don’t have one then contact your System Administrator. Run the following in terminal and provide the password.</p>
+<pre>sudo -i</pre>
+<p class="amp-wp-7d27179">Thereafter, you need to install <code>ifupdown</code> package. To do so, run the following –</p>
+<pre>apt update
+apt install ifupdown</pre>
+<p class="amp-wp-7d27179">Also, if you plan on to Install GUI version of Network Manager – various other tools like nmcli, nmtui are also included in it.</p>
+<pre>apt install network-manager-gnome</pre>
+<h4 class="amp-wp-7d27179">Remove Netplan package</h4>
+<p class="amp-wp-7d27179">If you don’t want to keep configuration and other related files of Netplan package installed,</p>
+<pre>apt purge netplan.io</pre>
+<p class="amp-wp-7d27179">To remove associated folders –</p>
+<pre>rm -rf /usr/share/netplan 
+rm -rf /etc/netplan</pre>
+<p class="amp-wp-7d27179">So far, we have installed ifupdown package and subsequently removed Netplan package. Now, we will be editing /etc/network/interfaces file.</p>
+<h4 class="amp-wp-7d27179">Make necessary changes to /etc/network/interfaces</h4>
+<pre>nano /etc/network/interfaces</pre>
+<p class="amp-wp-7d27179">We have used <code>nano</code> text editor, you may choose one of your choice. In <code>/etc/network/interfaces</code> configuration file, make the following entries –</p>
+<pre>auto lo
+iface lo inet loopback</pre>
+<p class="amp-wp-7d27179">Now, we are have got two options available with us. Either we configure <code>/etc/network/interfaces</code> file manually or, let any of the <code>network-manager</code> tools do that for us. We will discuss both the available options in brief next.</p>
+<p class="amp-wp-7d27179"><span class="amp-wp-ca1de63"><strong>Option 1. Configure <code>/etc/network/interfaces</code> file.</strong></span></p>
+<p class="amp-wp-7d27179">Use the following command to identify the network interfaces –</p>
+<pre>ip a</pre>
+<p class="amp-wp-7d27179">For instance, one interface could be – <code>enp2s0</code> and the most basic IPv4 DHCP configuration may look like –</p>
+<pre>auto lo
+iface lo inet loopback
+
+auto enp2s0
+iface enp2s0 inet dhcp</pre>
+<p class="amp-wp-7d27179"><strong>Note:</strong> You need to identify the interface which you are trying to connect with. Also, the above code just resemble the most common configuration. For advanced configurations, you are advised to refer to man pages for network interface configuration for ifup and ifdown. These can be accessed by running the following command –</p>
+<pre>man 5 interfaces</pre>
+<p class="amp-wp-7d27179">After making relevant changes mentioned in the man pages do,</p>
+<pre>systemctl restart networking</pre>
+<p class="amp-wp-7d27179"><span class="amp-wp-ca1de63"><strong>Option 2. Use <code>network-manager</code> tools.</strong></span></p>
+<p class="amp-wp-7d27179">Edit the following configuration file –</p>
+<pre class="amp-wp-7d27179">nano /etc/NetworkManager/NetworkManager.conf</pre>
+<p class="amp-wp-7d27179">In the configuration file, you need to edit – <code>managed=false</code> and update it with <code>managed=true</code></p>
+<p class="amp-wp-7d27179">Also, we need to make an empty file by using the <code>touch</code> command.</p>
+<pre>touch /etc/NetworkManager/conf.d/10-globally-managed-devices.conf</pre>
+<p class="amp-wp-7d27179">The above steps are being advised to get rid of the error – “devices not managed” that comes up during network configuration.</p>
+<p class="amp-wp-7d27179">Now, we have got three commonly used tools available to us – <code>nmcli</code>, <code>nmtui</code>, or graphical version: network-manager-gnome.</p>
+<p class="amp-wp-7d27179">If you are an advanced user, go for <code>nmcli</code> else either run <code>nmtui</code> in terminal or use network-manager-gnome. The changes you make would be according to your requirements.</p>
+<p class="amp-wp-7d27179">Conclusion, in this article we have discussed the ways to manage your network configuration if you are planning to switch back to <code>ifupdown</code> package.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
 			<div class="amp-wp-meta amp-wp-tax-category">
-		Categories: <a href="https://techpiezo.com/android/" rel="category tag">Android</a>, <a href="https://techpiezo.com/android/android-kotlin/" rel="category tag">Kotlin</a>	</div>
+		Categories: <a href="https://techpiezo.com/linux/" rel="category tag">Linux</a>, <a href="https://techpiezo.com/linux/linux-quick-fix/" rel="category tag">Quick Fix</a>	</div>
 
 	</footer>
 </article>
