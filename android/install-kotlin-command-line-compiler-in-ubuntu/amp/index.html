@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Split files in Linux distributions - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/linux/split-files-in-linux-distributions/" />
+		<title>Install Kotlin - Command line compiler in Ubuntu - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/android/install-kotlin-command-line-compiler-in-ubuntu/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -426,52 +426,46 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Split files in Linux distributions</h1>
+		<h1 class="amp-wp-title">Install Kotlin &#8211; Command line compiler in Ubuntu</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-07-26T14:25:06+00:00">
-		3 hours ago	</time>
+	<time datetime="2019-07-26T17:27:47+00:00">
+		10 mins ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">Split is a command-line utility which is used to split files in linux. The utility is provided with coreutils (GNU Core Utilities) package. The package also contains cat command which will be used later in the article. Through split command, we can split larger files into smaller pieces. The utility also allows us choose the size of smaller pieces.</p>
-<h4>How to Split larger files</h4>
-<p class="amp-wp-7d27179">Let’s say you have a file debian-10.0.0-amd64-DVD-1.iso of size 3.6 GB and you want to split the iso file in smaller pieces of size 500M. To do so, you need to run the following command in terminal,</p>
-<pre>split --bytes=500M debian-10.0.0-amd64-DVD-1.iso split-file-</pre>
-<p class="amp-wp-7d27179">where,<br>
-split – command line utility,<br>
-–bytes=size – we define the size of smaller pieces here,<br>
-debian-10.0.0-amd64-DVD-1.iso – is the file that will be split and,<br>
-split-file- – prefix for smaller pieces, in case you don’t mention any prefix – default prefix ‘x’ will be used.</p>
-<p class="amp-wp-7d27179">The default syntax for the command is,</p>
-<pre>split --bytes=size &lt;file-to-be-split&gt; &lt;prefix-smaller-pieces&gt;</pre>
-<p class="amp-wp-7d27179">When we run the above command, our 3.6 GB file would be split to 8 pieces. Seven of those pieces would of 500M in size and last one would be of just 100M size. The name of files so generated would be split-file-aa, split-file-ab, split-file-ac … split-file-ag.</p>
-<p class="amp-wp-7d27179">So far, we have split our larger file to smaller pieces. Next, we will discuss how to join all the smaller pieces to get our file back.</p>
-<h4>Join smaller pieces</h4>
-<p class="amp-wp-7d27179">Once we have split our larger file, the smaller pieces are of no use till we join them together. To do so, we would have to use cat command –</p>
-<pre>cat split-file-* &gt; debian-10.0.0-amd64-DVD-1-combined.iso</pre>
-<p class="amp-wp-7d27179">This will combine all the smaller pieces i.e. split-file-ab, split-file-ac … split-file-ag to form our original file debian-10.0.0-amd64-DVD-1-combined.iso.</p>
-<h4>Verify data integrity using the md5sum</h4>
-<p class="amp-wp-7d27179">The command line utility md5sum is provided with the coreutils (GNU Core Utilities) package. The utility helps us to verify data integrity using Message-Digest Algorithm 5. MD5 generates 128-bit cryptographic hash, which can later be used to verify file integrity.</p>
-<p class="amp-wp-7d27179">We need to check md5sum for both original as well as combined file. To do so, run the following in the terminal –</p>
-<h4>md5sum debian-10.0.0-amd64-DVD-1.iso</h4>
-<p class="amp-wp-7d27179">this would return with the output –</p>
-<pre class="amp-wp-7d27179">5206549aab4b54026aa6dcd026f8ffcb debian-10.0.0-amd64-DVD-1.iso</pre>
-<p class="amp-wp-7d27179">also,</p>
-<pre>md5sum debian-10.0.0-amd64-DVD-1-combined.iso</pre>
-<p class="amp-wp-7d27179">This should also return with the same hash value.</p>
-<pre class="amp-wp-7d27179">5206549aab4b54026aa6dcd026f8ffcb debian-10.0.0-amd64-DVD-1-combined.iso</pre>
-<p class="amp-wp-7d27179">If md5sum hashes for both the files match then our files are intact. Otherwise, the file has been altered and has lost its integrity.<br>
-To look for more options related to split command, it is advisable to go through man pages available on Linux distributions.</p>
-<pre>man split</pre>
-<p class="amp-wp-7d27179">Conclusion, in this article we have discussed how to split a file in smaller pieces and then combine them again. To check integrity of our files we have used md5sum command line utility.</p>
+		<p class="amp-wp-7d27179">Kotlin is an open-source, statically typed programming language. It supports both functional as well as object-oriented programming. Moreover, there are multiple ways to install Kotlin in Ubuntu. In addition to command line compiler, Kotlin code can also be compiled from IntelliJ IDEA and Eclipse. Also, Kotlin is inter-operable with Java. In this article, we would focus on installation of command line compiler of Kotlin.</p>
+<p class="amp-wp-7d27179">Even though, we can install Kotlin Compiler with ease. To launch the interactive shell (REPL) or running the compiler would require the presence of Java run-time on our Operating system. Since, Ubuntu already has one in its repository. We would install OpenJDK Java runtime if its not already installed. The package that we would install is <code>openjdk-11-jre</code>.</p>
+<h4>Install OpenJDK Java runtime</h4>
+<p class="amp-wp-7d27179">To install OpenJDK Java run-time, you need to have superuser privileges. Otherwise, contact your system administrator.</p>
+<pre>sudo -i
+apt install openjdk-11-jre</pre>
+<h4>Install Kotlin – Command line compiler</h4>
+<p class="amp-wp-7d27179">To download the command line compiler, visit</p>
+<pre>https://github.com/JetBrains/kotlin/releases/latest</pre>
+<p class="amp-wp-7d27179">At the time of writing the article, the latest stable version was 1.3.41.</p>
+<p class="amp-wp-7d27179">When you will scroll down the page, there is list of files available to download. To install Kotlin compiler, we need to have <code>kotlin-compiler-X.X.XX.zip</code> file.</p>
+<p class="amp-wp-7d27179">The direct link available for the version 1.3.41 is –</p>
+<pre>https://github.com/JetBrains/kotlin/releases/download/v1.3.41/kotlin-compiler-1.3.41.zip</pre>
+<p class="amp-wp-7d27179">Go to the location, where you have downloaded the file. Unzip it with the help of <code>unzip</code> command.</p>
+<pre>unzip kotlin-compiler-1.3.41.zip</pre>
+<p class="amp-wp-7d27179">Furthermore, we will add the path variable to the <code>.bashrc</code> file to access the compiler directly without providing its complete path.</p>
+<pre>nano ~/.bashrc</pre>
+<p class="amp-wp-7d27179">We have used nano text editor, you can use one of your own choice. In case you have unzipped the file in Desktop folder, or you can modify the path accordingly. Afterwards, append the file with the following –</p>
+<pre>export PATH=~/Desktop/kotlinc/bin:$PATH</pre>
+<h4>Running the REPL</h4>
+<p class="amp-wp-7d27179">REPL is an acronym for Read-Eval-Print-Loop; it is basically an interactive shell for the programming language. To run the REPL, we need to open the terminal and type the following –</p>
+<pre>kotlinc-jvm</pre>
+<p class="amp-wp-7d27179">Lastly, to quit from REPL,</p>
+<pre>:quit</pre>
+<p class="amp-wp-7d27179">In Conclusion, we have discussed Command-line Compiler installation for Kotlin programming language.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
 			<div class="amp-wp-meta amp-wp-tax-category">
-		Categories: <a href="https://techpiezo.com/linux/" rel="category tag">Linux</a>, <a href="https://techpiezo.com/linux/linux-quick-fix/" rel="category tag">Quick Fix</a>	</div>
+		Categories: <a href="https://techpiezo.com/android/" rel="category tag">Android</a>, <a href="https://techpiezo.com/android/android-kotlin/" rel="category tag">Kotlin</a>	</div>
 
 	</footer>
 </article>
