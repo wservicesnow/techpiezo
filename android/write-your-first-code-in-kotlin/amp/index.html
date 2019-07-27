@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Install Kotlin - Command line compiler in Ubuntu - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/android/install-kotlin-command-line-compiler-in-ubuntu/" />
+		<title>Write your first code in Kotlin - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/android/write-your-first-code-in-kotlin/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -426,41 +426,59 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Install Kotlin &#8211; Command line compiler in Ubuntu</h1>
+		<h1 class="amp-wp-title">Write your first code in Kotlin</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-07-26T17:27:47+00:00">
-		1 day ago	</time>
+	<time datetime="2019-07-27T17:35:21+00:00">
+		7 mins ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">Kotlin is an open-source, statically typed programming language. It supports both functional as well as object-oriented programming. Moreover, there are multiple ways to install Kotlin in Ubuntu. In addition to command line compiler, Kotlin code can also be compiled from IntelliJ IDEA and Eclipse. Also, Kotlin is inter-operable with Java. In this article, we would focus on installation of command line compiler of Kotlin.</p>
-<p class="amp-wp-7d27179">Even though, we can install Kotlin Compiler with ease. To launch the interactive shell (REPL) or running the compiler would require the presence of Java run-time on our Operating system. Since, Ubuntu already has one in its repository. We would install OpenJDK Java runtime if its not already installed. The package that we would install is <code>openjdk-11-jre</code>.</p>
-<h4>Install OpenJDK Java runtime</h4>
-<p class="amp-wp-7d27179">To install OpenJDK Java run-time, you need to have superuser privileges. Otherwise, contact your system administrator.</p>
-<pre>sudo -i
-apt install openjdk-11-jre</pre>
-<h4>Install Kotlin – Command line compiler</h4>
-<p class="amp-wp-7d27179">To download the command line compiler, visit</p>
-<pre>https://github.com/JetBrains/kotlin/releases/latest</pre>
-<p class="amp-wp-7d27179">At the time of writing the article, the latest stable version was 1.3.41.</p>
-<p class="amp-wp-7d27179">When you will scroll down the page, there is list of files available to download. To install Kotlin compiler, we need to have <code>kotlin-compiler-X.X.XX.zip</code> file.</p>
-<p class="amp-wp-7d27179">The direct link available for the version 1.3.41 is –</p>
-<pre>https://github.com/JetBrains/kotlin/releases/download/v1.3.41/kotlin-compiler-1.3.41.zip</pre>
-<p class="amp-wp-7d27179">Go to the location, where you have downloaded the file. Unzip it with the help of <code>unzip</code> command.</p>
-<pre>unzip kotlin-compiler-1.3.41.zip</pre>
-<p class="amp-wp-7d27179">Furthermore, we will add the path variable to the <code>.bashrc</code> file to access the compiler directly without providing its complete path.</p>
-<pre>nano ~/.bashrc</pre>
-<p class="amp-wp-7d27179">We have used nano text editor, you can use one of your own choice. In case you have unzipped the file in Desktop folder, or you can modify the path accordingly. Afterwards, append the file with the following –</p>
-<pre>export PATH=~/Desktop/kotlinc/bin:$PATH</pre>
-<h4>Running the REPL</h4>
-<p class="amp-wp-7d27179">REPL is an acronym for Read-Eval-Print-Loop; it is basically an interactive shell for the programming language. To run the REPL, we need to open the terminal and type the following –</p>
-<pre>kotlinc-jvm</pre>
-<p class="amp-wp-7d27179">Lastly, to quit from REPL,</p>
-<pre>:quit</pre>
-<p class="amp-wp-7d27179">In Conclusion, we have discussed Command-line Compiler installation for Kotlin programming language.</p>
+		<p class="amp-wp-7d27179">Once you have installed the Kotlin Command-line Compiler, you may be wondering how to write your first code in Kotlin. In this article, we would also discuss how to create a .jar executable from it, which includes a class file as well as Kotlin run-time library.</p>
+<p class="amp-wp-7d27179">The source code written in Kotlin is saved in a file with .kt extension.</p>
+<h4 class="amp-wp-7d27179">Write your first “Hello World!” code in Kotlin</h4>
+<p class="amp-wp-7d27179">Open a text-editor and save the file as HelloWorld.kt. We have used nano text-editor, choose one which you are comfortable with.</p>
+<pre>nano HelloWorld.kt</pre>
+<p class="amp-wp-7d27179">Next, insert the following code –</p>
+<pre>fun main(args: Array&lt;String&gt;) {
+       println("Hello, World!")
+}</pre>
+<p>where,</p>
+<p class="amp-wp-7d27179"><strong>fun</strong> – it means function, just to let compiler know that we are going to call a function.<br><strong>main</strong> – its the function main() which is to be called.<br><strong>args</strong> – is the name of our variable.<br><strong>Array&lt;String&gt;</strong> – tells the compiler that variable args is an Array of type String.<br><strong>println()</strong> – print line function.<br><strong>“Hello, World!”</strong> – the message we would like to print.</p>
+<p class="amp-wp-7d27179">Save the HelloWorld.kt and exit.</p>
+<p class="amp-wp-7d27179">So far, we have created a file with .kt extension and then inserted our code understood by the Kotlin Compiler. Now, we will compile the code with the help of following command –</p>
+<pre>kotlinc HelloWorld.kt</pre>
+<p class="amp-wp-7d27179">Notice that, it has created a file – HelloWorldKt.class and a folder META-INF with main.kotlin_module. Compiling the code puts the main function inside the HelloWorldKt.class file, which later could run inside a Java Virtual Machine (JVM).</p>
+<p class="amp-wp-7d27179">If you would like to see byte-code inside the HelloWorldKt.class then you may have to use <code>javap</code> command. <code>javap</code> command is basically a command line utility which lets us see the code so generated inside the .class file.</p>
+<pre>javap -c HelloworldKt.class</pre>
+<p class="amp-wp-7d27179">Output should resemble –</p>
+<pre>Compiled from "HelloWorld.kt"
+public final class HelloWorldKt {
+public static final void main(java.lang.String[]);
+Code:
+0: aload_0
+1: ldc #9 // String args
+3: invokestatic #15 // Method kotlin/jvm/internal/Intrinsics.checkParameterIsNotNull:(Ljava/lang/Object;Ljava/lang/String;)V
+6: ldc #17 // String Hello, World!
+8: astore_1
+9: iconst_0
+10: istore_2
+11: getstatic #23 // Field java/lang/System.out:Ljava/io/PrintStream;
+14: aload_1
+15: invokevirtual #29 // Method java/io/PrintStream.println:(Ljava/lang/Object;)V
+18: return
+}</pre>
+<h4 class="amp-wp-7d27179">Make Kotlin Compiler produce a .jar executable</h4>
+<p class="amp-wp-7d27179">The executable so produced will include Kotlin run-time library as well as HelloworldKt.class. Thus, eliminating the need to distribute Kotlin run-time along-with .jar executable. To make one, run the following in terminal –</p>
+<pre>kotlinc HelloWorld.kt -include-runtime -d HelloWorld.jar</pre>
+<p class="amp-wp-7d27179">where,</p>
+<p class="amp-wp-7d27179"><strong>-include-runtime</strong> – asks the compiler to include Kotlin run-time library to make .jar executable.<br><strong>-d</strong> – for output compiled as .jar executable</p>
+<p class="amp-wp-7d27179">Lastly, run the following to execute .jar file –</p>
+<pre>java -jar HelloWorld.jar</pre>
+<p class="amp-wp-7d27179">This should get us expected output i.e. <code>Hello, World!</code></p>
+<p class="amp-wp-7d27179">In conclusion, we have discussed how to write our first Kotlin code and then compile it to a .jar executable.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
