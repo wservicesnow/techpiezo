@@ -429,7 +429,7 @@ amp-carousel > amp-img > img {
 		<h1 class="amp-wp-title">Install Anbox and run Android Apps in Ubuntu</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
 	<time datetime="2019-07-29T13:19:28+00:00">
-		12 mins ago	</time>
+		30 mins ago	</time>
 </div>
 	</header>
 
@@ -448,8 +448,8 @@ amp-carousel > amp-img > img {
 apt install anbox</pre>
 <p class="amp-wp-7d27179">This would install anbox and related dependencies. Next, we would have to download a pre-build Android image for Anbox. You can download one from the link –</p>
 <pre>https://build.anbox.io/android-images/</pre>
-<p class="amp-wp-7d27179">Now, move the <code>.img</code> file to the folder – <code>/var/lib/anbox/android.img</code>. Note: It is important to rename the <code>android_amd64.img</code> to <code>android.img</code>.</p>
-<p class="amp-wp-7d27179">Next, download and install two kernel modules – Binder and Ashmem. These are dkms-based kernel modules which are not yet part of standard Linux kernel. Although, these dkms-based kernel modules are available in AOSPs’ kernel trees. The kernel modules could be install through PPAs –</p>
+<p class="amp-wp-7d27179">Now, move the <code>.img</code> file to the folder – <code>/var/lib/anbox/android.img</code>. Note: It is important to rename the file  <code>android_amd64.img</code> to <code>android.img</code>.</p>
+<p class="amp-wp-7d27179">Next, download and install two kernel modules – Binder and Ashmem. These two kernel-based modules are already available since Debian kernel 4.17. So, skip installation of these modules for Debian. For Ubuntu, the kernel modules can be installed through PPAs (Personal Package Archives) –</p>
 <pre>add-apt-repository ppa:morphis/anbox-support
 apt update
 apt install linux-headers-generic anbox-modules-dkms</pre>
@@ -462,12 +462,12 @@ modprobe binder_linux</pre>
 <pre>systemctl start anbox-container-manager.service
 systemctl start anbox-session-manager.service
 systemctl start anbox-session-manager.service</pre>
-<p class="amp-wp-7d27179">Finally, you need to start Anbox from the desktop menu.</p>
+<p class="amp-wp-7d27179">Lastly, Anbox could be started from your desktop’s menu.</p>
 <h4 class="amp-wp-7d27179">Install Android apps in Anbox</h4>
-<p class="amp-wp-7d27179">So far, we have discussed how to install Anbox in Ubuntu. But, merely installing Anbox would not solve the purpose of running Android apps. Therefore, we have to install Android apps in Anbox. This could be achieved with the help of <code>adb</code> command line utility.</p>
+<p class="amp-wp-7d27179">So far, we have discussed how to install Anbox in Ubuntu. But, merely installing Anbox would not solve the purpose of running Android apps. Therefore, we have to install Android apps in Anbox. This could be achieved with the help of <code>adb</code> command line utility. Hence, we have to install <code>adb</code>(Android Debug Bridge) utility by running the following command in terminal.</p>
 <pre>apt update
 apt install adb</pre>
-<p class="amp-wp-7d27179">this will install <code>adb</code> (Android Debug Bridge) in Ubuntu. If have <code>.apk</code> extension file available with you then, run the following command in terminal.</p>
+<p class="amp-wp-7d27179">If have <code>.apk</code> extension file available with you then, run the following command in terminal to install android app in Anbox.</p>
 <pre>adb install path-to/my/app.apk</pre>
 <p class="amp-wp-7d27179">Once done, you will see the application shortcut available in Anbox.</p>
 <p class="amp-wp-7d27179">In conclusion, we have discussed how to install Anbox in Ubuntu. Installation of apps through adb command-line utility was also covered in this article.</p>
