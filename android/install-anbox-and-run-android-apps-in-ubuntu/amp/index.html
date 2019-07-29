@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Android phone as security key for Google Sign-In - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/android/android-phone-as-security-key-for-google-sign-in/" />
+		<title>Install Anbox and run Android Apps in Ubuntu - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/android/install-anbox-and-run-android-apps-in-ubuntu/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -409,7 +409,7 @@ amp-carousel > amp-img > img {
 	right: 16px;
 }
 		/* Inline stylesheets */
-:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-ca1de63{font-size:14pt}	</style>
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}	</style>
 </head>
 
 <body class="">
@@ -426,32 +426,56 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Android phone as security key for Google Sign-In</h1>
+		<h1 class="amp-wp-title">Install Anbox and run Android Apps in Ubuntu</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-06-13T16:27:42+00:00">
-		2 months ago	</time>
+	<time datetime="2019-07-29T13:19:28+00:00">
+		12 mins ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">Android Phones can be now used as physical security key over any platform available, and now that includes iOS devices too. The current 2-Step Verification process usually requires the SMS service, however newer method provides a way to sign-in with Android phone as security key.</p>
-<p class="amp-wp-7d27179">To use the feature, your Android Phone must be running version 7 or higher, and PC/Laptops with Operating Systems – Windows 10, macOS, or Chrome OS with Google Chrome 72 or later. The latest upgrade by Google also lets you sign-in on iOS as well.</p>
-<p class="amp-wp-7d27179">This feature uses Bluetooth as underlying technology using FIDO’s CTAP2 protocol. In platforms except iOS, Google Chrome can communicate with android phone over Bluetooth and verify, but with iOS, Google’s Smart Lock app is used to confirm sign-in, which in turn also communicates over Bluetooth.</p>
-<h4 class="amp-wp-7d27179"><span class="amp-wp-ca1de63"><strong>Why Smart Lock app in iOS ?</strong></span></h4>
-<p class="amp-wp-7d27179">Google Chrome in iOS is based on Apple’s WebKit rendering engine, as Apple in it’s app store guidelines states to only use Webkit framework and Webkit Javascript, Google Chrome can not use its own Blink framework in iOS.</p>
-<p class="amp-wp-7d27179">FIDO and Bluetooth connectivity are both implemented in Google Chrome. One can easily view Bluetooth connected devices by opening :</p>
-<pre>chrome://bluetooth-internals/</pre>
-<p class="amp-wp-7d27179">in chrome browser, where current state of adapter as well as devices can be seen.</p>
-<p class="amp-wp-7d27179">FIDO source code can be found in Google Chrome’s open-source project Chromium, the present implementation use USB and Bluetooth Low Energy (BLE) both.</p>
-<p>Source code is available at:</p>
-<pre>https://chromium.googlesource.com/chromium/src/+/master/device/fido/</pre>
+		<p class="amp-wp-7d27179">Anbox package utilizes a LXC container-based approach to run Android Applications in Ubuntu or any other Linux distribution. With LXC containers, we could run multiple instances of Linux environment on host Linux Kernel. There are two options available to run Android Apps on Ubuntu –</p>
+<p class="amp-wp-7d27179">1. Container-based Anbox and,<br>
+2. Android-x86 on VirtualBox.</p>
+<p class="amp-wp-7d27179">In this article, we would discuss how to install Anbox and run Android apps in it.</p>
+<h4>Install Anbox in Ubuntu</h4>
+<p class="amp-wp-7d27179">Firstly, you need superuser privileges to complete installation process. If you don’t have one then contact your system administrator. Run the following in terminal and provide password.</p>
+<pre>sudo -i</pre>
+<p class="amp-wp-7d27179">We would start by installing Anbox from standard Ubuntu repository –</p>
+<pre>apt update
+apt install anbox</pre>
+<p class="amp-wp-7d27179">This would install anbox and related dependencies. Next, we would have to download a pre-build Android image for Anbox. You can download one from the link –</p>
+<pre>https://build.anbox.io/android-images/</pre>
+<p class="amp-wp-7d27179">Now, move the <code>.img</code> file to the folder – <code>/var/lib/anbox/android.img</code>. Note: It is important to rename the <code>android_amd64.img</code> to <code>android.img</code>.</p>
+<p class="amp-wp-7d27179">Next, download and install two kernel modules – Binder and Ashmem. These are dkms-based kernel modules which are not yet part of standard Linux kernel. Although, these dkms-based kernel modules are available in AOSPs’ kernel trees. The kernel modules could be install through PPAs –</p>
+<pre>add-apt-repository ppa:morphis/anbox-support
+apt update
+apt install linux-headers-generic anbox-modules-dkms</pre>
+<p class="amp-wp-7d27179">Once installed, you need to issue the following command to load the respective kernel modules without restarting the OS.</p>
+<pre>modprobe ashmem_linux
+modprobe binder_linux</pre>
+<p class="amp-wp-7d27179">Cross-check if the modules are properly installed –</p>
+<pre>ls -1 /dev/{ashmem,binder}</pre>
+<p class="amp-wp-7d27179">and, start the following services –</p>
+<pre>systemctl start anbox-container-manager.service
+systemctl start anbox-session-manager.service
+systemctl start anbox-session-manager.service</pre>
+<p class="amp-wp-7d27179">Finally, you need to start Anbox from the desktop menu.</p>
+<h4 class="amp-wp-7d27179">Install Android apps in Anbox</h4>
+<p class="amp-wp-7d27179">So far, we have discussed how to install Anbox in Ubuntu. But, merely installing Anbox would not solve the purpose of running Android apps. Therefore, we have to install Android apps in Anbox. This could be achieved with the help of <code>adb</code> command line utility.</p>
+<pre>apt update
+apt install adb</pre>
+<p class="amp-wp-7d27179">this will install <code>adb</code> (Android Debug Bridge) in Ubuntu. If have <code>.apk</code> extension file available with you then, run the following command in terminal.</p>
+<pre>adb install path-to/my/app.apk</pre>
+<p class="amp-wp-7d27179">Once done, you will see the application shortcut available in Anbox.</p>
+<p class="amp-wp-7d27179">In conclusion, we have discussed how to install Anbox in Ubuntu. Installation of apps through adb command-line utility was also covered in this article.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
 			<div class="amp-wp-meta amp-wp-tax-category">
-		Categories: <a href="https://techpiezo.com/android/" rel="category tag">Android</a>, <a href="https://techpiezo.com/android/android-recent/" rel="category tag">Recent</a>	</div>
+		Categories: <a href="https://techpiezo.com/android/" rel="category tag">Android</a>, <a href="https://techpiezo.com/linux/" rel="category tag">Linux</a>	</div>
 
 	</footer>
 </article>
