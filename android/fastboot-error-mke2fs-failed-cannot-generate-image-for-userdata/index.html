@@ -6,11 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
-	<title>Debian Buster set to release on 6th of July - TechPiezo</title>
+	<title>[Fixed] Fastboot error: mke2fs failed, Cannot generate image for userdata - TechPiezo</title>
 
 <!-- This site is optimized with the Yoast SEO plugin v11.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
-<meta name="description" content="Debian Buster is set to release on July 6. As per Debian&#039;s policy, only emergency bug fixes are allowed before releases enter the freeze phase."/>
-<link rel="canonical" href="https://techpiezo.com/linux/debian-buster-set-to-release-on-6th-of-july/" />
+<meta name="description" content="While updating a factory image of our Nexus devices we come across mke2fs failed status. It can be resolved by removing &quot;-w&quot; from the fastboot command."/>
+<link rel="canonical" href="https://techpiezo.com/android/fastboot-error-mke2fs-failed-cannot-generate-image-for-userdata/" />
 <!-- / Yoast SEO plugin. -->
 
 <style id="ct-main-styles-inline-css" type="text/css">:root {
@@ -748,7 +748,7 @@ h6 {
 <link rel='stylesheet' id='ct-style-css'  href='https://techpiezo.com/wp-content/themes/blocksy/style.css' type='text/css' media='all' />
 <link rel='stylesheet' id='ct-main-styles-css'  href='https://techpiezo.com/wp-content/themes/blocksy/static/bundle/main.css' type='text/css' media='all' />
 
-<link rel="amphtml" href="https://techpiezo.com/linux/debian-buster-set-to-release-on-6th-of-july/amp/"><link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" sizes="32x32" />
+<link rel="amphtml" href="https://techpiezo.com/android/fastboot-error-mke2fs-failed-cannot-generate-image-for-userdata/amp/"><link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" sizes="32x32" />
 <link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" sizes="192x192" />
 <link rel="apple-touch-icon-precomposed" href="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" />
 <meta name="msapplication-TileImage" content="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" />
@@ -777,7 +777,7 @@ h6 {
 
 </head>
 
-<body class="post-template-default single single-post postid-380 single-format-standard ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
+<body class="post-template-default single single-post postid-1001 single-format-standard ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
 <div id="main-container">
 
 	<header
@@ -814,11 +814,11 @@ h6 {
 		<ul id="primary-menu" class="primary-menu menu"><li id="menu-item-70" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-70"><a href="https://techpiezo.com">Home</a></li>
 <li id="menu-item-41" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-41"><a href="https://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
 <ul class="sub-menu">
-	<li id="menu-item-350" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-350"><a href="https://techpiezo.com/linux/linux-quick-fix/">Quick Fix</a></li>
-	<li id="menu-item-349" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-349"><a href="https://techpiezo.com/linux/linux-recent/">What&#8217;s New</a></li>
+	<li id="menu-item-350" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-350"><a href="https://techpiezo.com/linux/linux-quick-fix/">Quick Fix</a></li>
+	<li id="menu-item-349" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-349"><a href="https://techpiezo.com/linux/linux-recent/">What&#8217;s New</a></li>
 </ul>
 </li>
-<li id="menu-item-43" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-43"><a href="https://techpiezo.com/android/">Android<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
+<li id="menu-item-43" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-43"><a href="https://techpiezo.com/android/">Android<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
 <ul class="sub-menu">
 	<li id="menu-item-348" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-348"><a href="https://techpiezo.com/android/android-kotlin/">Kotlin</a></li>
 	<li id="menu-item-347" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-347"><a href="https://techpiezo.com/android/android-recent/">What&#8217;s New</a></li>
@@ -896,13 +896,13 @@ h6 {
 			<section>
 				
 	<article
-		id="post-380"
-		class="post-380 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-recent"		data-content="boxed"				>
+		id="post-1001"
+		class="post-1001 post type-post status-publish format-standard has-post-thumbnail hentry category-android category-linux category-linux-quick-fix"		data-content="boxed"				>
 
 		
 		<section class="hero-section" data-type="type-1" data-alignment="left">
 			<header class="entry-header">
-				<h1 class="page-title">Debian Buster set to release on 6th of July</h1>
+				<h1 class="page-title">[Fixed] Fastboot error: mke2fs failed, Cannot generate image for userdata</h1>
 				<div class="entry-meta has-avatar" data-label data-type="simple">
 		
 
@@ -929,11 +929,11 @@ h6 {
 					<span
 						class="ct-meta-element"
 						>
-						Jun 13, 2019					</span>
+						Jul 29, 2019					</span>
 				</li>
 			
 			
-			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-label">In </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/" rel="tag">Linux</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/linux-recent/" rel="tag">Recent</a></span></li>					</ul>
+			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-label">In </span><span class="ct-meta-element"><a href="https://techpiezo.com/android/" rel="tag">Android</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/" rel="tag">Linux</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/linux-quick-fix/" rel="tag">Quick Fix</a></span></li>					</ul>
 				</div>
 		
 					</header>
@@ -942,46 +942,53 @@ h6 {
 		
 		
 		<div class="entry-content">
-			<p style="text-align: justify;">Debian 10, code-named Buster, is set to release on July 6, 2019. As per Debian&#8217;s policy, only emergency bug fixes are allowed for releases which are about to enter the freeze phase. Once the release is frozen, that means no further changes are allowed. But, prior to that, changes and unblock requests will be limited to :</p>
-<ol style="list-style-type: upper-alpha; text-align: justify;">
-<li>RC Bugs,</li>
-<li>Security bugs,</li>
-<li>Patches for crashes or memory leaks,</li>
-<li>Upgrade issues from Stretch to Buster (Debian 9 to Debian 10)</li>
-</ol>
-<p style="text-align: justify;">Debian 10 has now entered a phase wherein only emergency bug fixes will be allowed and those final bug fixes will be accepted till June 25, 2019.</p>
-<h4 style="text-align: justify;">Debian Release Cycle</h4>
-<p style="text-align: justify;">The current Debian Stable release is code-named Debian Stretch, it will be supported till 2022, which also marks the End Of Life for Long-term support(LTS) provided for the release. Upcoming stable release is code-named Buster, and the support for which will be provided till 2022 (i.e. its End of Life).</p>
-<p style="text-align: justify;">A Stable version for Debian distribution is released every two years and LTS (Long-term support) version is supported for a period of 5 years. Furthermore, Releases are classified as old-stable, stable, testing, unstable and experimental. There is one interesting fact: Code-names of all the releases of Debian are based on characters of Pixar/Disney&#8217;s movie Toy Story.</p>
-<p>Debian Project was founded by Ian Murdock on August 16, 1993 and the first stable version was released on June 17, 1996. Being based on an open-source model, Debian contains packages that are available for free. Although, you can install non-free packages from its repositories. There are three components of Debian&#8217;s packages: main, contrib &amp; non-free.</p>
+			<p style="text-align: justify;">While flashing the factory images of our Nexus devices, we get the Fastboot error &#8211; Cannot generate image for userdata. Or, in detail &#8211;</p>
+<pre>Couldn't parse erase-block-size '0x'.
+Couldn't parse logical-block-size '0x'.
+mke2fs 1.44.6 (5-Mar-2019)
+/tmp/TemporaryFile-HqqlrY: Unimplemented ext2 library function while setting up superblock
+/usr/lib/android-sdk/platform-tools/mke2fs failed with status 1
+mke2fs failed: 1
+error: Cannot generate image for userdata</pre>
+<h4 style="text-align: justify;">Remove &#8220;-w&#8221; from the fastboot update command</h4>
+<p style="text-align: justify;">In <code>flash-all.sh</code> script file, you must have noticed few line of code resembling &#8211;</p>
+<pre>fastboot oem unlock
+fastboot erase boot
+fastboot erase cache
+fastboot erase recovery
+fastboot erase system
+fastboot erase userdata
+fastboot flash bootloader bootloader-grouper-4.23.img
+fastboot reboot-bootloader
+sleep 10
+fastboot -w update image-nakasi-ktu84p.zip</pre>
+<p style="text-align: justify;">All you have to do is &#8211; remove &#8220;-w&#8221; option from the last line. Then save the script and execute it again.</p>
+<pre>fastboot update image-nakasi-ktu84p.zip</pre>
+<p style="text-align: justify;">Fastboot is basically a command line utility which is used for flashing and booting Android devices. Here, &#8220;-w&#8221; option is used to erase both cache as well as user data. The utility option can format the partition type too. Since, the commands for erasing user data and cache (i.e. <code>fastboot erase cache</code> and <code>fastboot erase userdata</code>) are already present in our script file. So, apart from formatting the partition (of supported type) there is nothing more the &#8220;-w&#8221; option does. In that scenario, we can safely ignore the option.</p>
+<p style="text-align: justify;">For man page of fastboot &#8211;</p>
+<pre>man fastboot</pre>
+<p style="text-align: justify;">Scroll down the man page of fastboot to get yourself acquainted with more options. Or, you could simple run the following in terminal &#8211;</p>
+<pre>fastboot help</pre>
+<p style="text-align: justify;">In conclusion, Fastboot error: mke2fs failed, Cannot generate image for userdata could be resolved by removing the &#8220;-w&#8221; option from the fastboot update command line section provided with the script.</p>
 		</div>
 
 		
 		
 		
 		<nav class="post-navigation ">
-							<a href="https://techpiezo.com/linux/add-user-to-sudoers-in-ubuntu-distribution/" class="nav-item-prev">
+							<a href="https://techpiezo.com/android/install-anbox-and-run-android-apps-in-ubuntu/" class="nav-item-prev">
 					
 					<div class="item-content">
 						<span>
 							Previous <span>&nbsp;Post</span>						</span>
 
 													<h4 class="item-title">
-								Add User to Sudoers in Ubuntu Distribution							</h4>
+								Install Anbox and run Android Apps in Ubuntu							</h4>
 											</div>
 
 				</a>
 			
-							<a href="https://techpiezo.com/android/android-phone-as-security-key-for-google-sign-in/" class="nav-item-next">
-					
-					<div class="item-content">
-						<span>
-							Next <span>&nbsp;Post</span>						</span>
-
-													<h4 class="item-title">
-								Android phone as security key for Google Sign-In							</h4>
-											</div>
-				</a>
+							<div class="nav-item-next"></div>
 			
 		</nav>
 
@@ -1121,11 +1128,11 @@ h6 {
 				<ul id="primary-menu" class="mobile-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-70"><a href="https://techpiezo.com">Home</a></li>
 <li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-41"><a href="https://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
 <ul class="sub-menu">
-	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-350"><a href="https://techpiezo.com/linux/linux-quick-fix/">Quick Fix</a></li>
-	<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-349"><a href="https://techpiezo.com/linux/linux-recent/">What&#8217;s New</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-350"><a href="https://techpiezo.com/linux/linux-quick-fix/">Quick Fix</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-349"><a href="https://techpiezo.com/linux/linux-recent/">What&#8217;s New</a></li>
 </ul>
 </li>
-<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-43"><a href="https://techpiezo.com/android/">Android<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-43"><a href="https://techpiezo.com/android/">Android<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
 <ul class="sub-menu">
 	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-348"><a href="https://techpiezo.com/android/android-kotlin/">Kotlin</a></li>
 	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-347"><a href="https://techpiezo.com/android/android-recent/">What&#8217;s New</a></li>

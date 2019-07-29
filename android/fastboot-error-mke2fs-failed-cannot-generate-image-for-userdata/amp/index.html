@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Install Anbox and run Android Apps in Ubuntu - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/android/install-anbox-and-run-android-apps-in-ubuntu/" />
+		<title>[Fixed] Fastboot error: mke2fs failed, Cannot generate image for userdata - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/android/fastboot-error-mke2fs-failed-cannot-generate-image-for-userdata/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -426,56 +426,49 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Install Anbox and run Android Apps in Ubuntu</h1>
+		<h1 class="amp-wp-title">[Fixed] Fastboot error: mke2fs failed, Cannot generate image for userdata</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-07-29T13:19:28+00:00">
-		4 hours ago	</time>
+	<time datetime="2019-07-29T17:01:04+00:00">
+		9 mins ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">Anbox package utilizes a LXC container-based approach to run Android Applications in Ubuntu or any other Linux distribution. With LXC containers, we could run multiple instances of Linux environment on host Linux Kernel. There are two options available to run Android Apps on Ubuntu –</p>
-<p class="amp-wp-7d27179">1. Container-based Anbox and,<br>
-2. Android-x86 on VirtualBox.</p>
-<p class="amp-wp-7d27179">In this article, we would discuss how to install Anbox and run Android apps in it.</p>
-<h4>Install Anbox in Ubuntu</h4>
-<p class="amp-wp-7d27179">Firstly, you need superuser privileges to complete installation process. If you don’t have one then contact your system administrator. Run the following in terminal and provide password.</p>
-<pre>sudo -i</pre>
-<p class="amp-wp-7d27179">We would start by installing Anbox from standard Ubuntu repository –</p>
-<pre>apt update
-apt install anbox</pre>
-<p class="amp-wp-7d27179">This would install anbox and related dependencies. Next, we would have to download a pre-build Android image for Anbox. You can download one from the link –</p>
-<pre>https://build.anbox.io/android-images/</pre>
-<p class="amp-wp-7d27179">Now, move the <code>.img</code> file to the folder – <code>/var/lib/anbox/android.img</code>. Note: It is important to rename the file  <code>android_amd64.img</code> to <code>android.img</code>.</p>
-<p class="amp-wp-7d27179">Next, download and install two kernel modules – Binder and Ashmem. These two kernel-based modules are already available since Debian kernel 4.17. So, skip installation of these modules for Debian. For Ubuntu, the kernel modules can be installed through PPAs (Personal Package Archives) –</p>
-<pre>add-apt-repository ppa:morphis/anbox-support
-apt update
-apt install linux-headers-generic anbox-modules-dkms</pre>
-<p class="amp-wp-7d27179">Once installed, you need to issue the following command to load the respective kernel modules without restarting the OS.</p>
-<pre>modprobe ashmem_linux
-modprobe binder_linux</pre>
-<p class="amp-wp-7d27179">Cross-check if the modules are properly installed –</p>
-<pre>ls -1 /dev/{ashmem,binder}</pre>
-<p class="amp-wp-7d27179">and, start the following services –</p>
-<pre>systemctl start anbox-container-manager.service
-systemctl start anbox-session-manager.service
-systemctl start anbox-session-manager.service</pre>
-<p class="amp-wp-7d27179">Lastly, Anbox could be started from your desktop’s menu.</p>
-<h4 class="amp-wp-7d27179">Install Android apps in Anbox</h4>
-<p class="amp-wp-7d27179">So far, we have discussed how to install Anbox in Ubuntu. But, merely installing Anbox would not solve the purpose of running Android apps. Therefore, we have to install Android apps in Anbox. This could be achieved with the help of <code>adb</code> command line utility. Hence, we have to install <code>adb</code>(Android Debug Bridge) utility by running the following command in terminal.</p>
-<pre>apt update
-apt install adb</pre>
-<p class="amp-wp-7d27179">If you have <code>.apk</code> extension file available then, run the following command in terminal to install Android app in Anbox.</p>
-<pre>adb install path-to/my/app.apk</pre>
-<p class="amp-wp-7d27179">Once done, you will see the application shortcut in Anbox.</p>
-<p class="amp-wp-7d27179">In conclusion, we have discussed how to install Anbox in Ubuntu. Installation of apps through adb command-line utility was also covered in this article.</p>
+		<p class="amp-wp-7d27179">While flashing the factory images of our Nexus devices, we get the Fastboot error – Cannot generate image for userdata. Or, in detail –</p>
+<pre>Couldn't parse erase-block-size '0x'.
+Couldn't parse logical-block-size '0x'.
+mke2fs 1.44.6 (5-Mar-2019)
+/tmp/TemporaryFile-HqqlrY: Unimplemented ext2 library function while setting up superblock
+/usr/lib/android-sdk/platform-tools/mke2fs failed with status 1
+mke2fs failed: 1
+error: Cannot generate image for userdata</pre>
+<h4 class="amp-wp-7d27179">Remove “-w” from the fastboot update command</h4>
+<p class="amp-wp-7d27179">In <code>flash-all.sh</code> script file, you must have noticed few line of code resembling –</p>
+<pre>fastboot oem unlock
+fastboot erase boot
+fastboot erase cache
+fastboot erase recovery
+fastboot erase system
+fastboot erase userdata
+fastboot flash bootloader bootloader-grouper-4.23.img
+fastboot reboot-bootloader
+sleep 10
+fastboot -w update image-nakasi-ktu84p.zip</pre>
+<p class="amp-wp-7d27179">All you have to do is – remove “-w” option from the last line. Then save the script and execute it again.</p>
+<pre>fastboot update image-nakasi-ktu84p.zip</pre>
+<p class="amp-wp-7d27179">Fastboot is basically a command line utility which is used for flashing and booting Android devices. Here, “-w” option is used to erase both cache as well as user data. The utility option can format the partition type too. Since, the commands for erasing user data and cache (i.e. <code>fastboot erase cache</code> and <code>fastboot erase userdata</code>) are already present in our script file. So, apart from formatting the partition (of supported type) there is nothing more the “-w” option does. In that scenario, we can safely ignore the option.</p>
+<p class="amp-wp-7d27179">For man page of fastboot –</p>
+<pre>man fastboot</pre>
+<p class="amp-wp-7d27179">Scroll down the man page of fastboot to get yourself acquainted with more options. Or, you could simple run the following in terminal –</p>
+<pre>fastboot help</pre>
+<p class="amp-wp-7d27179">In conclusion, Fastboot error: mke2fs failed, Cannot generate image for userdata could be resolved by removing the “-w” option from the fastboot update command line section provided with the script.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
 			<div class="amp-wp-meta amp-wp-tax-category">
-		Categories: <a href="https://techpiezo.com/android/" rel="category tag">Android</a>, <a href="https://techpiezo.com/linux/" rel="category tag">Linux</a>	</div>
+		Categories: <a href="https://techpiezo.com/android/" rel="category tag">Android</a>, <a href="https://techpiezo.com/linux/" rel="category tag">Linux</a>, <a href="https://techpiezo.com/linux/linux-quick-fix/" rel="category tag">Quick Fix</a>	</div>
 
 	</footer>
 </article>
