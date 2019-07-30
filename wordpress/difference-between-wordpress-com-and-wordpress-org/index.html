@@ -33,15 +33,15 @@
     --shareItemsBorder: #e0e5eb;
     --topShareBoxSpacing: 70px;
     --relatedPostsMetaColor: #667380;
-    --relatedPostsContainerSpacing: 70px;
+    --relatedPostsContainerSpacing: 15px;
     --paginationAccentHoverColor: var(--paletteColor2);
     --paginationFontColor: var(--paletteColor3);
-    --sidebarInnerSpacing: 35px;
+    --sidebarInnerSpacing: 15px;
     --sidebarDividerSize: 1px;
     --sidebarBorderSize: 0px;
     --sidebarBackgroundColor: var(--paletteColor5);
-    --sidebarGap: 4%;
-    --sidebarWidth: 27%;
+    --sidebarGap: 3%;
+    --sidebarWidth: 28%;
     --narrowContainerWidth: 60%;
     --maxSiteWidth: 1290px;
     --buttonInitialColor: var(--paletteColor2);
@@ -63,13 +63,13 @@
     --cardBackground: #ffffff;
     --pageTitleFontHoverColor: var(--paletteColor1);
     --letterSpacing: 0em;
-    --fontSize: 16px;
+    --fontSize: 18px;
     --textTransform: none;
     --fontWeight: 400;
     --fontFamily: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
     --fontStyle: normal;
     --textDecoration: none;
-    --lineHeight: 1.5;
+    --lineHeight: 1.65;
     --pageTitleFontInitialColor: var(--paletteColor4);
     --cardExcerptSize: 16px;
     --cardsGap: 30px;
@@ -90,7 +90,7 @@
     --buttonHoverColor: var(--paletteColor3);
     --contentAreaSpacing: 35px;
     --wideOffset: 130px;
-    --sidebarWidthNoUnit: 27;
+    --sidebarWidthNoUnit: 28;
     --sidebarOffset: 50px;
     --sidebarBorderColor: rgba(224, 229, 235, 0.8);
     --sidebarDividerColor: rgba(224, 229, 235, 0.8);
@@ -99,7 +99,7 @@
     --paginationAccentInitialColor: var(--paletteColor1);
     --paginationDivider: none;
     --relatedPostsLabelColor: var(--paletteColor4);
-    --postNavSpacing: 80px;
+    --postNavSpacing: 50px;
     --bottomShareBoxSpacing: 70px;
     --shareItemsIcon: #ffffff;
     --pageContentBoxedSpacing: 40px;
@@ -122,7 +122,7 @@
 
 h1 {
     --letterSpacing: 0em;
-    --fontSize: 34px;
+    --fontSize: 40px;
     --textTransform: none;
     --fontWeight: 700;
     --fontStyle: normal;
@@ -133,7 +133,7 @@ h1 {
 
 h2 {
     --letterSpacing: 0em;
-    --fontSize: 30px;
+    --fontSize: 35px;
     --textTransform: none;
     --fontWeight: 700;
     --fontStyle: normal;
@@ -144,7 +144,7 @@ h2 {
 
 h3 {
     --letterSpacing: 0em;
-    --fontSize: 23px;
+    --fontSize: 30px;
     --textTransform: none;
     --fontWeight: 700;
     --fontStyle: normal;
@@ -155,7 +155,29 @@ h3 {
 
 h4 {
     --letterSpacing: 0em;
+    --fontSize: 25px;
+    --textTransform: none;
+    --fontWeight: 700;
+    --fontStyle: normal;
+    --textDecoration: none;
+    --lineHeight: 1.5;
+    --fontColor: var(--paletteColor4);
+}
+
+h5 {
+    --letterSpacing: 0em;
     --fontSize: 20px;
+    --textTransform: none;
+    --fontWeight: 700;
+    --fontStyle: normal;
+    --textDecoration: none;
+    --lineHeight: 1.5;
+    --fontColor: var(--paletteColor4);
+}
+
+h6 {
+    --letterSpacing: 0em;
+    --fontSize: 16px;
     --textTransform: none;
     --fontWeight: 700;
     --fontStyle: normal;
@@ -274,8 +296,12 @@ code, kbd, samp, pre {
 }
 
 .site-main {
-    --backgroundImage: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='24' viewBox='0 0 88 24'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='autumn' fill='%23666666' fill-opacity='1'%3E%3Cpath d='M10 0l30 15 2 1V2.18A10 10 0 0 0 41.76 0H39.7a8 8 0 0 1 .3 2.18v10.58L14.47 0H10zm31.76 24a10 10 0 0 0-5.29-6.76L4 1 2 0v13.82a10 10 0 0 0 5.53 8.94L10 24h4.47l-6.05-3.02A8 8 0 0 1 4 13.82V3.24l31.58 15.78A8 8 0 0 1 39.7 24h2.06zM78 24l2.47-1.24A10 10 0 0 0 86 13.82V0l-2 1-32.47 16.24A10 10 0 0 0 46.24 24h2.06a8 8 0 0 1 4.12-4.98L84 3.24v10.58a8 8 0 0 1-4.42 7.16L73.53 24H78zm0-24L48 15l-2 1V2.18A10 10 0 0 1 46.24 0h2.06a8 8 0 0 0-.3 2.18v10.58L73.53 0H78z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    --backgroundColor: #4b5154;
+    --backgroundImage: url(https://techpiezo.com/wp-content/uploads/2019/07/grey-white.jpg);
+    --backgroundAttachment: fixed;
+    --backgroundPosition: 50% 50%;
+    --backgroundSize: cover;
+    --backgroundRepeat: no-repeat;
+    --backgroundColor: rgba(4,77,107,0.65);
 }
 
 .header-desktop {
@@ -406,18 +432,6 @@ code, kbd, samp, pre {
     --buttonHoverColor: var(--paletteColor4);
 }
 
-h5,
-h6 {
-    --letterSpacing: 0em;
-    --fontSize: 16px;
-    --textTransform: none;
-    --fontWeight: 700;
-    --fontStyle: normal;
-    --textDecoration: none;
-    --lineHeight: 1.5;
-    --fontColor: var(--paletteColor4);
-}
-
 .header-mobile,
 .post[data-content="boxed"],
 .page[data-content="boxed"] {
@@ -465,8 +479,8 @@ h6 {
     --transparentLogoMaxHeight: 50px;
     --cardSpacing: 35px;
     --cardExcerptSize: 16px;
-    --lineHeight: 1.5;
-    --fontSize: 16px;
+    --lineHeight: 1.65;
+    --fontSize: 18px;
     --letterSpacing: 0em;
     --cardsGap: 30px;
     --logoMaxHeight: 50px;
@@ -474,7 +488,7 @@ h6 {
     --navSectionHeight: 15px;
     --mobileHeaderHeight: 40px;
     --contentAreaSpacing: 25px;
-    --sidebarInnerSpacing: 35px;
+    --sidebarInnerSpacing: 15px;
     --relatedPostsContainerSpacing: 50px;
     --topShareBoxSpacing: 50px;
     --singleContentBoxedSpacing: 30px;
@@ -485,25 +499,37 @@ h6 {
 
 h1 {
     --lineHeight: 1.5;
-    --fontSize: 34px;
+    --fontSize: 40px;
     --letterSpacing: 0em;
 }
 
 h2 {
     --lineHeight: 1.5;
-    --fontSize: 30px;
+    --fontSize: 35px;
     --letterSpacing: 0em;
 }
 
 h3 {
     --lineHeight: 1.5;
-    --fontSize: 23px;
+    --fontSize: 30px;
     --letterSpacing: 0em;
 }
 
 h4 {
     --lineHeight: 1.5;
+    --fontSize: 25px;
+    --letterSpacing: 0em;
+}
+
+h5 {
+    --lineHeight: 1.5;
     --fontSize: 20px;
+    --letterSpacing: 0em;
+}
+
+h6 {
+    --lineHeight: 1.5;
+    --fontSize: 16px;
     --letterSpacing: 0em;
 }
 
@@ -577,13 +603,6 @@ code, kbd, samp, pre {
     --metaFontSize: 12px;
 }
 
-h5,
-h6 {
-    --lineHeight: 1.5;
-    --fontSize: 16px;
-    --letterSpacing: 0em;
-}
-
 #mobile-menu .mobile-menu,
 .product_title {
     --lineHeight: 1.65;
@@ -609,8 +628,8 @@ h6 {
     --transparentLogoMaxHeight: 50px;
     --cardSpacing: 25px;
     --cardExcerptSize: 16px;
-    --lineHeight: 1.5;
-    --fontSize: 16px;
+    --lineHeight: 1.65;
+    --fontSize: 18px;
     --letterSpacing: 0em;
     --cardsGap: 30px;
     --logoMaxHeight: 50px;
@@ -618,7 +637,7 @@ h6 {
     --navSectionHeight: 15px;
     --mobileHeaderHeight: 50px;
     --contentAreaSpacing: 20px;
-    --sidebarInnerSpacing: 35px;
+    --sidebarInnerSpacing: 15px;
     --relatedPostsContainerSpacing: 30px;
     --topShareBoxSpacing: 30px;
     --singleContentBoxedSpacing: 30px;
@@ -629,25 +648,37 @@ h6 {
 
 h1 {
     --lineHeight: 1.5;
-    --fontSize: 34px;
+    --fontSize: 40px;
     --letterSpacing: 0em;
 }
 
 h2 {
     --lineHeight: 1.5;
-    --fontSize: 30px;
+    --fontSize: 35px;
     --letterSpacing: 0em;
 }
 
 h3 {
     --lineHeight: 1.5;
-    --fontSize: 23px;
+    --fontSize: 30px;
     --letterSpacing: 0em;
 }
 
 h4 {
     --lineHeight: 1.5;
+    --fontSize: 25px;
+    --letterSpacing: 0em;
+}
+
+h5 {
+    --lineHeight: 1.5;
     --fontSize: 20px;
+    --letterSpacing: 0em;
+}
+
+h6 {
+    --lineHeight: 1.5;
+    --fontSize: 16px;
     --letterSpacing: 0em;
 }
 
@@ -733,13 +764,6 @@ code, kbd, samp, pre {
     --metaFontSize: 12px;
 }
 
-h5,
-h6 {
-    --lineHeight: 1.5;
-    --fontSize: 16px;
-    --letterSpacing: 0em;
-}
-
 .header-top-bar-menu,
 .footer-menu {
     --menuItemsSpacing: 20px;
@@ -761,9 +785,7 @@ h6 {
 	  padding-left: 20px;
 	padding-right: 20px;
 }
-.ct-last-page-text{
-	color:white;
-}		</style>
+		</style>
 		
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135581354-3"></script>
@@ -957,6 +979,9 @@ h6 {
 		
 		<nav class="post-navigation ">
 							<a href="https://techpiezo.com/wordpress/introduction-to-wordpress-cms/" class="nav-item-prev">
+											<figure>
+							<span><svg width="20px" height="15px" viewBox="0 0 20 15"><polygon points="0,7.5 5.5,13 6.4,12.1 2.4,8.1 20,8.1 20,6.9 2.4,6.9 6.4,2.9 5.5,2 "/></svg></span>
+							<div class="ct-image-container"><img width="300" height="200" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Markus-Spiske-on-Unsplash.jpg" class="attachment-medium size-medium" alt="" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 100%"></div></div>						</figure>
 					
 					<div class="item-content">
 						<span>
@@ -969,6 +994,9 @@ h6 {
 				</a>
 			
 							<a href="https://techpiezo.com/wordpress/how-to-install-wordpress-on-ubuntu-19-04/" class="nav-item-next">
+											<figure>
+							<span><svg width="20px" height="15px" viewBox="0 0 20 15"><polygon points="14.5,2 13.6,2.9 17.6,6.9 0,6.9 0,8.1 17.6,8.1 13.6,12.1 14.5,13 20,7.5 "/></svg></span>
+							<div class="ct-image-container"><img width="300" height="200" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Joanna-Kosinska-on-Unsplash-1.jpg" class="attachment-medium size-medium" alt="" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 100%"></div></div>						</figure>
 					
 					<div class="item-content">
 						<span>
@@ -1019,7 +1047,69 @@ h6 {
 	</div>
 
 	
+		<div class="ct-related-posts ct-hidden-sm ct-hidden-md">
+			<div class="ct-container">
+				<h4 class="ct-related-posts-label">
+					Related Posts				</h4>
 
+				<ul data-columns="4">
+											
+						<li>
+							<a class="ct-image-container" href="https://techpiezo.com/wordpress/install-wordpress-on-debian-buster/"><img width="640" height="427" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-NordWood-Themes-on-Unsplash.jpg" class="attachment-large size-large" alt="" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<h3 class="related-entry-title">
+								<a href="https://techpiezo.com/wordpress/install-wordpress-on-debian-buster/">Install WordPress on Debian Buster</a>
+							</h3>
+
+							<div class="related-entry-meta">
+								<span>
+									Jul 12, 2019								</span>
+
+															</div>
+						</li>
+											
+						<li>
+							<a class="ct-image-container" href="https://techpiezo.com/wordpress/how-to-install-wordpress-on-windows-10-using-xampp/"><img width="640" height="800" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Daniel-Fazio-on-Unsplash.jpg" class="attachment-large size-large" alt="" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<h3 class="related-entry-title">
+								<a href="https://techpiezo.com/wordpress/how-to-install-wordpress-on-windows-10-using-xampp/">Install WordPress on Windows 10 using XAMPP</a>
+							</h3>
+
+							<div class="related-entry-meta">
+								<span>
+									Jun 10, 2019								</span>
+
+															</div>
+						</li>
+											
+						<li>
+							<a class="ct-image-container" href="https://techpiezo.com/wordpress/how-to-install-wordpress-on-ubuntu-19-04/"><img width="640" height="427" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Joanna-Kosinska-on-Unsplash-1.jpg" class="attachment-large size-large" alt="" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<h3 class="related-entry-title">
+								<a href="https://techpiezo.com/wordpress/how-to-install-wordpress-on-ubuntu-19-04/">Install WordPress on Ubuntu 19.04</a>
+							</h3>
+
+							<div class="related-entry-meta">
+								<span>
+									Jun 9, 2019								</span>
+
+															</div>
+						</li>
+											
+						<li>
+							<a class="ct-image-container" href="https://techpiezo.com/wordpress/introduction-to-wordpress-cms/"><img width="640" height="427" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Markus-Spiske-on-Unsplash.jpg" class="attachment-large size-large" alt="" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<h3 class="related-entry-title">
+								<a href="https://techpiezo.com/wordpress/introduction-to-wordpress-cms/">Introduction to WordPress &#8211; CMS</a>
+							</h3>
+
+							<div class="related-entry-meta">
+								<span>
+									Jun 9, 2019								</span>
+
+															</div>
+						</li>
+									</ul>
+			</div>
+		</div>
+
+		
 
 
 	</main>
