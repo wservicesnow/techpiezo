@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="July 30, 2019 4:49 pm" -->
+<!-- generated-on="July 30, 2019 5:15 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>https://techpiezo.com/android/fastboot-error-mke2fs-failed-cannot-generate-image-for-userdata/</loc>
 		<lastmod>2019-07-29T17:02:02+00:00</lastmod>
@@ -90,4 +90,4 @@
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: c96924c210b00dc609daa355a7f0dacc; Queries for sitemap: 12; Total queries: 23; Seconds: 0.01; Memory for sitemap: 0MB; Total memory: 2MB -->
+</urlset><!-- Request ID: dfe6a28b4c4c7f4aa99cc938c1018e4c; Queries for sitemap: 12; Total queries: 23; Seconds: 0.01; Memory for sitemap: 0MB; Total memory: 2MB -->
