@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="July 30, 2019 7:28 pm" -->
+<!-- generated-on="July 31, 2019 7:25 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>https://techpiezo.com/android/</loc>
-		<lastmod>2019-07-29T11:31:04+00:00</lastmod>
+		<lastmod>2019-07-31T13:49:00+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
@@ -14,7 +14,7 @@
 	</url>
 	<url>
 		<loc>https://techpiezo.com/android/android-kotlin/</loc>
-		<lastmod>2019-07-27T12:05:21+00:00</lastmod>
+		<lastmod>2019-07-31T13:49:00+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
@@ -54,4 +54,4 @@
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
-</urlset><!-- Request ID: a6c3743a5a086a3b4b63342cecf16526; Queries for sitemap: 4; Total queries: 15; Seconds: 0; Memory for sitemap: 0MB; Total memory: 2MB -->
+</urlset><!-- Request ID: 896fe5f7b23b8c03e7027b87aa3b5f60; Queries for sitemap: 4; Total queries: 15; Seconds: 0; Memory for sitemap: 0MB; Total memory: 2MB -->

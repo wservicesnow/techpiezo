@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Introduction to Kotlin - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/android/introduction-to-kotlin/" />
+		<title>Code Comments in Kotlin - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/android/code-comments-in-kotlin/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -426,31 +426,46 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Introduction to Kotlin</h1>
+		<h1 class="amp-wp-title">Code Comments in Kotlin</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-07-25T14:05:46+00:00">
-		6 days ago	</time>
+	<time datetime="2019-07-31T19:19:00+00:00">
+		7 mins ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">Kotlin is an open-source programming language, which supports functional as well as object-oriented programming. Advancement in language is being taken care of by Kotlin Foundation group, created by Google and JetBrains. In 2017, Google announced first-class support for the language. Recently, Google also announced that Kotlin will be its preferred language for Android Application development.</p>
-<p class="amp-wp-7d27179">Furthermore, the language can be compiled through a Java Virtual Machine, we can also develop Android applications, server-side applications, transpile JavaScript code etc. In addition to, if we are working on a Java-based application there also we can use Kotlin alongside as it is inter-operable with Java.</p>
-<h4>Kotlin – A Statically Typed Programming Language</h4>
-<p class="amp-wp-7d27179">Programming languages have been classified as Dynamically typed and Statically typed. In Dynamically typed programming languages, the type is checked during run time thus saving us lot of space and time. But, our code will compile despite having run-time errors. In case of Statically typed programming languages, type is checked during compile time and it will not compile until we have fixed the errors. Also, data types need to be declared beforehand in case of statically typed programming languages. Kotlin is a statically typed programming language. In contrast to Java, which is also a statically typed programming language we need to declare variable types before assigning any values. But in Kotlin, we don’t have to explicitly define variable types in our source code. Kotlin in most cases will determine the variable type. The attribute which assists programming language to identify the type of a variable is defined as type inference.</p>
-<h4>Supports Object-Oriented and Functional Programming</h4>
-<p class="amp-wp-7d27179">It also supports both object-oriented programming as well as functional programming. As the name suggests, the object-oriented programming is based on objects. These objects are the instances of classes defined. On the other hand, we get to work with functions in functional programming. We can store functions as values in variables, pass them as parameters etc.</p>
-<h4>Special Attribute</h4>
-<p class="amp-wp-7d27179">The attribute that makes it stand out is – Kotlin code can be called from Java and Java code can be called from Kotlin. It is inter-operable with Java and also let developers to write concise codes. Concise codes can help increase developers’ productivity as the time needed to read, analyze the code is cut short and developers’ could devote their time to some other relevant work. Further, Java developers wouldn’t have to put in a lot of effort to understand Kotlin.</p>
-<h4>Forbids NullPointerException</h4>
-<p class="amp-wp-7d27179">Last but not least, we can use operator (<code>?</code>) in our code to get rid of NullPointerException. In case our variable contains null value then it would exclude any operations on it thereby eliminating the event that leads to NullPointerException. For example,</p>
-<pre>var a: String = null</pre>
-<p class="amp-wp-7d27179">This code will fail to compile as variable <code>a</code> can’t be null. On the other hand, we can use operator (<code>?</code>) to make sure our code compiles.</p>
-<pre>var a: String? = null</pre>
-<p class="amp-wp-7d27179">Kotlin programming language is provided under Apache License 2.0 and we can build our applications through any of the following IntelliJ IDEA, Eclipse, &amp; Command line compiler.</p>
-<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have just introduced you to the beautiful world of Kotlin.</p>
+		<p class="amp-wp-7d27179">It is imperative to for us understand code comments before we delve further to understand basics of Kotlin. Developers who have worked on large projects do understand the need of code comments. Understand from the perspective of a developer, who have recently been asked to fix a project. If the project contained few lines of code then it could be fixed in seconds. But, what if our code comprises of thousands of lines then it may take hours or days to fix it. All the time lost could have been put to some good use if our code was commented properly. Under such scenario, all the developer had to do was just read code comments and move to the section where alteration was required.</p>
+<p class="amp-wp-7d27179">Kotlin just like other programming languages allow us to write code comments. There are two ways to comment our code –</p>
+<ol><li class="amp-wp-7d27179">
+<h5><strong>Single-line Comments,</strong></h5>
+</li>
+<li class="amp-wp-7d27179">
+<h5><strong>Multi-line or Block comments.</strong></h5>
+</li>
+</ol><p class="amp-wp-7d27179">In addition to, the comments which we write along-side or in-between our code are ignored by the compiler.</p>
+<p class="amp-wp-7d27179">1.<strong> Single-line Comments</strong>: These are preceded by <code>//</code> and can also be provided as end-of-line comments. For instance –</p>
+<pre>// This is single-line comment
+val a=4 // This is an end-of-line comment</pre>
+<p class="amp-wp-7d27179">For single-line or end-of-line comments, anything written after <code>//</code> is ignored by the compiler. In case our comment are spread over multiple lines then we can provide <code>//</code> in the beginning of every line. For instance –</p>
+<pre>// This a single-line
+// comment
+// spread over multiple lines.</pre>
+<p class="amp-wp-7d27179">But, this not considered a good practice. For such a scenario, it is best to go with multi-line comments.</p>
+<p class="amp-wp-7d27179">2. <strong>Multi-line or Block Comments</strong>: Block comments are spread over multiple lines. Such comments start with <code>/*</code> and end with <code>*/</code>. Anything written in-between is ignored by the compiler. For instance –</p>
+<pre>/* This is a multi-line comment
+or Block comment
+spread over multiple lines. */</pre>
+<p class="amp-wp-7d27179">It is worth mentioning here that Kotlin allows nested comments. <strong>Nested comments</strong> are comments inside other comments. For instance –</p>
+<pre>/* This is a multi-line comment
+or Block comment
+               /* Nested Comments
+                   explained
+               */
+spread over multiple lines. */</pre>
+<p class="amp-wp-7d27179"><strong>Note</strong>: Only Block or Multi-line comments can be nested in Kotlin.</p>
+<p class="amp-wp-7d27179">In conclusion, in this article we have discussed single-line and block comments and their significance.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
