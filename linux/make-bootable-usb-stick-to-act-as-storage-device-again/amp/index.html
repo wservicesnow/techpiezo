@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Code Comments in Kotlin - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/android/code-comments-in-kotlin/" />
+		<title>Make Bootable USB stick to act as Storage device again - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/linux/make-bootable-usb-stick-to-act-as-storage-device-again/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -426,51 +426,80 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Code Comments in Kotlin</h1>
+		<h1 class="amp-wp-title">Make Bootable USB stick to act as Storage device again</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-07-31T19:19:00+00:00">
-		23 hours ago	</time>
+	<time datetime="2019-08-01T18:03:28+00:00">
+		13 mins ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">It is imperative to for us understand code comments before we delve further to understand basics of Kotlin. Developers who have worked on large projects do understand the need of code comments. Understand from the perspective of a developer, who have recently been asked to fix a project. If the project contained few lines of code then it could be fixed in seconds. But, what if our code comprises of thousands of lines then it may take hours or days to fix it. All the time lost could have been put to some good use if our code was commented properly. Under such scenario, all the developer had to do was just read code comments and move to the section where alteration was required.</p>
-<p class="amp-wp-7d27179">Kotlin just like other programming languages allow us to write code comments. There are two ways to comment our code –</p>
-<ol><li class="amp-wp-7d27179">
-<h5><strong>Single-line Comments,</strong></h5>
-</li>
-<li class="amp-wp-7d27179">
-<h5><strong>Multi-line or Block comments.</strong></h5>
-</li>
-</ol><p class="amp-wp-7d27179">In addition to, the comments which we write along-side or in-between our code are ignored by the compiler.</p>
-<p class="amp-wp-7d27179">1.<strong> Single-line Comments</strong>: These are preceded by <code>//</code> and can also be provided as end-of-line comments. For instance –</p>
-<pre>// This is single-line comment
-val a=4 // This is an end-of-line comment</pre>
-<p class="amp-wp-7d27179">For single-line or end-of-line comments, anything written after <code>//</code> is ignored by the compiler. In case our comment are spread over multiple lines then we can provide <code>//</code> in the beginning of every line. For instance –</p>
-<pre>// This a single-line
-// comment
-// spread over multiple lines.</pre>
-<p class="amp-wp-7d27179">But, this not considered a good practice. For such a scenario, it is best to go with multi-line comments.</p>
-<p class="amp-wp-7d27179">2. <strong>Multi-line or Block Comments</strong>: Block comments are spread over multiple lines. Such comments start with <code>/*</code> and end with <code>*/</code>. Anything written in-between is ignored by the compiler. For instance –</p>
-<pre>/* This is a multi-line comment
-or Block comment
-spread over multiple lines. */</pre>
-<p class="amp-wp-7d27179">It is worth mentioning here that Kotlin allows nested comments. <strong>Nested comments</strong> are comments inside other comments. For instance –</p>
-<pre>/* This is a multi-line comment
-or Block comment
-               /* Nested Comments
-                   explained
-               */
-spread over multiple lines. */</pre>
-<p class="amp-wp-7d27179"><strong>Note</strong>: Only Block or Multi-line comments can be nested in Kotlin.</p>
-<p class="amp-wp-7d27179">In conclusion, in this article we have discussed single-line and block comments and their significance.</p>
+		<p class="amp-wp-7d27179">To make a bootable USB stick to acts as a storage device once again, we will have to use the <code>fdisk</code> command line utility. <code>fdisk</code> command line utility can be used to make modifications in our partition table. Through <code>fdisk</code> utility, we can create, delete, list, print, toggle a bootable flag and many other related operations on our partition table. Furthermore, utility supports GPT, SGI (IRIX), DOS and SUN partition tables.</p>
+<p class="amp-wp-7d27179">To make any modification through <code>fdisk</code> command line utility, we need to have superuser privileges. If you don’t have one then contact your system administrator.</p>
+<pre>sudo -i</pre>
+<p class="amp-wp-7d27179">and, provide the password.</p>
+<h5>Make changes to the Partition table</h5>
+<p class="amp-wp-7d27179">Identify you USB device with the help of <code>lsblk</code> command.</p>
+<pre>lsblk -p</pre>
+<p class="amp-wp-7d27179">Output may resemble –</p>
+<pre>/dev/sda 8:0 0 465.8G 0 disk 
+├─/dev/sda1 8:1 0 512M 0 part /boot/efi
+├─/dev/sda2 8:2 0 4.7G 0 part 
+└─/dev/sda3 8:5 0 414.6G 0 part /
+<strong>/dev/sdc</strong> 8:32 1 <strong>7.2G</strong> 0 disk 
+└─<strong>/dev/sdc1</strong> 8:33 1 <strong>1.8G</strong> 0 part /media/&lt;Home-Directory&gt;/UUID-Device
+/dev/sr0 11:0 1 1024M 0 rom</pre>
+<p class="amp-wp-7d27179">It may be different for your USB device, in our case it is <code>/dev/sdc</code>. Furthermore, <code>/dev/sdc1</code>(of our .iso file size i.e. 1.8G) is the partition already present on our USB stick. The rest of the space i.e. 5.4G is available on our USB stick as free space.</p>
+<p class="amp-wp-7d27179">So, in order to make our USB stick as a storage device we have to delete the <code>/dev/sdc1</code> partition first. Thereafter, we will be utilizing the free space i.e. 7.2G to create a new partition through <code>fdisk</code> command line utility.</p>
+<p class="amp-wp-7d27179">Thus, to make modifications through <code>fdisk</code> command line utility, run the following in terminal –</p>
+<pre>fdisk /dev/sdc</pre>
+<p class="amp-wp-7d27179">You can press m for help or more options. Press <code>p</code> to print the partition table  –</p>
+<p class="amp-wp-7d27179">Command (m for help): p</p>
+<p class="amp-wp-7d27179">it may return –</p>
+<pre>Device Boot Start End Sectors Size Id Type
+/dev/sdc1 2048 3737599 3735552 1.8G 83 Linux</pre>
+<p class="amp-wp-7d27179">To delete the partition, press d –</p>
+<pre>command (m for help): d</pre>
+<p class="amp-wp-7d27179">it will automatically delete the partition if your partition table contains just one partition. Otherwise, enter the partitions number. The output may resemble –</p>
+<pre>Selected partition 1
+Partition 1 has been deleted.</pre>
+<p class="amp-wp-7d27179">Now, the free space of size 7.2G(may depend on storage size of your USB stick) is available to us. To create a new partition on available free space, use the option <code>n</code>–</p>
+<pre>Command (m for help): n
+Partition type
+p primary (0 primary, 0 extended, 4 free)
+e extended (container for logical partitions)
+Select (default p): p
+Partition number (1-4, default 1): 
+First sector (2048-15138815, default 2048): 
+Last sector, +/-sectors or +/-size{K,M,G,T,P} (2048-15138815, default 15138815):
+
+Created a new partition 1 of type 'Linux' and of size 7.2 GiB.</pre>
+<p class="amp-wp-7d27179">If you want multiple partitions for your USB stick, choose the appropriate options on prompt. Otherwise, default options can be chosen. We just pressed enter when asked for choices. The final outcome is – the <code>fdisk</code> utility has created a new partition of size 7.2GB of type ‘Linux’.</p>
+<p class="amp-wp-7d27179">Next, we have to write changes to our partition table. Use the <code>w</code> option accordingly.</p>
+<pre>Command (m for help): w
+The partition table has been altered.
+Calling ioctl() to re-read partition table.
+Syncing disks.</pre>
+<p class="amp-wp-7d27179">So, far we have created a new partition of size 7.2G which can be verified by <code>lsblk</code> command.</p>
+<pre>lsblk -p</pre>
+<p class="amp-wp-7d27179">Output –</p>
+<pre>/dev/sdc 8:32 1 7.2G 0 disk 
+└─/dev/sdc1 8:33 1 7.2G 0 part</pre>
+<h5>Format your Partition <code>/dev/sdc1</code></h5>
+<p class="amp-wp-7d27179">Now, to use USB stick as a storage device we will have to format the <code>/dev/sdc1</code> partition. This can be achieved through <code>mkfs.vfat</code> command line utility. If you want to format it to other types – read the man pages of <code>mkfs</code> command line utility.</p>
+<pre> man mkfs</pre>
+<p class="amp-wp-7d27179">To format the <code>/dev/sdc1</code> as FAT32 run the following –</p>
+<pre>mkfs.vfat -F 32 /dev/sdc1</pre>
+<p class="amp-wp-7d27179">Lastly, use the command <code>partprobe</code> to inform the Operating system for the partition tables changes we just did.</p>
+<pre># partprobe</pre>
+<p class="amp-wp-7d27179">In conclusion, we have made our bootable USB stick to act as storage device through <code>fdisk</code> command line utility.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
 			<div class="amp-wp-meta amp-wp-tax-category">
-		Categories: <a href="https://techpiezo.com/android/" rel="category tag">Android</a>, <a href="https://techpiezo.com/android/android-kotlin/" rel="category tag">Kotlin</a>	</div>
+		Categories: <a href="https://techpiezo.com/linux/" rel="category tag">Linux</a>, <a href="https://techpiezo.com/linux/linux-quick-fix/" rel="category tag">Quick Fix</a>	</div>
 
 	</footer>
 </article>
