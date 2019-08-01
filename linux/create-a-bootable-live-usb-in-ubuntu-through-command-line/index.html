@@ -6,11 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
-	<title>/tmp on RAM - TechPiezo</title>
+	<title>Create a bootable Live USB in Ubuntu through Command Line - TechPiezo</title>
 
 <!-- This site is optimized with the Yoast SEO plugin v11.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
-<meta name="description" content="The purpose of /tmp directory on GNU/Linux has been to provide programs a directory for temporary files. Files in /tmp are deleted after a system reboot."/>
-<link rel="canonical" href="https://techpiezo.com/tech-insights/tmp-on-ram/" />
+<meta name="description" content="Create a bootable live USB stick through command line interface. This is applicable only for making other Linux distributions bootable."/>
+<link rel="canonical" href="https://techpiezo.com/linux/create-a-bootable-live-usb-in-ubuntu-through-command-line/" />
 <!-- / Yoast SEO plugin. -->
 
 <style id="ct-main-styles-inline-css" type="text/css">:root {
@@ -772,7 +772,7 @@ code, kbd, samp, pre {
 <link rel='stylesheet' id='ct-style-css'  href='https://techpiezo.com/wp-content/themes/blocksy/style.css' type='text/css' media='all' />
 <link rel='stylesheet' id='ct-main-styles-css'  href='https://techpiezo.com/wp-content/themes/blocksy/static/bundle/main.css' type='text/css' media='all' />
 
-<link rel="amphtml" href="https://techpiezo.com/tech-insights/tmp-on-ram/amp/"><link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" sizes="32x32" />
+<link rel="amphtml" href="https://techpiezo.com/linux/create-a-bootable-live-usb-in-ubuntu-through-command-line/amp/"><link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" sizes="32x32" />
 <link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" sizes="192x192" />
 <link rel="apple-touch-icon-precomposed" href="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" />
 <meta name="msapplication-TileImage" content="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" />
@@ -802,7 +802,7 @@ code, kbd, samp, pre {
 
 </head>
 
-<body class="post-template-default single single-post postid-351 single-format-standard ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
+<body class="post-template-default single single-post postid-1317 single-format-standard ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
 <div id="main-container">
 
 	<header
@@ -837,9 +837,9 @@ code, kbd, samp, pre {
 				>
 
 		<ul id="primary-menu" class="primary-menu menu"><li id="menu-item-70" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-70"><a href="https://techpiezo.com">Home</a></li>
-<li id="menu-item-41" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-41"><a href="https://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
+<li id="menu-item-41" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-41"><a href="https://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
 <ul class="sub-menu">
-	<li id="menu-item-350" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-350"><a href="https://techpiezo.com/linux/linux-quick-fix/">Quick Fix</a></li>
+	<li id="menu-item-350" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-350"><a href="https://techpiezo.com/linux/linux-quick-fix/">Quick Fix</a></li>
 	<li id="menu-item-349" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-349"><a href="https://techpiezo.com/linux/linux-recent/">What&#8217;s New</a></li>
 </ul>
 </li>
@@ -851,7 +851,7 @@ code, kbd, samp, pre {
 </li>
 <li id="menu-item-42" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-42"><a href="https://techpiezo.com/wordpress/">WordPress</a></li>
 <li id="menu-item-40" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-40"><a href="https://techpiezo.com/seo/">SEO</a></li>
-<li id="menu-item-39" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-39"><a href="https://techpiezo.com/tech-insights/">Insights</a></li>
+<li id="menu-item-39" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-39"><a href="https://techpiezo.com/tech-insights/">Insights</a></li>
 </ul>
 	</nav>
 
@@ -921,13 +921,13 @@ code, kbd, samp, pre {
 			<section>
 				
 	<article
-		id="post-351"
-		class="post-351 post type-post status-publish format-standard has-post-thumbnail hentry category-tech-insights"		data-content="boxed"				>
+		id="post-1317"
+		class="post-1317 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"		data-content="boxed"				>
 
 		
 		<section class="hero-section" data-type="type-1" data-alignment="left">
 			<header class="entry-header">
-				<h1 class="page-title">/tmp on RAM</h1>
+				<h1 class="page-title">Create a bootable Live USB in Ubuntu through Command Line</h1>
 				<div class="entry-meta has-avatar" data-label data-type="simple">
 		
 
@@ -954,11 +954,11 @@ code, kbd, samp, pre {
 					<span
 						class="ct-meta-element"
 						>
-						Jun 11, 2019					</span>
+						Jul 31, 2019					</span>
 				</li>
 			
 			
-			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-label">In </span><span class="ct-meta-element"><a href="https://techpiezo.com/tech-insights/" rel="tag">Insights</a></span></li>					</ul>
+			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-label">In </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/" rel="tag">Linux</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/linux-quick-fix/" rel="tag">Quick Fix</a></span></li>					</ul>
 				</div>
 		
 					</header>
@@ -967,81 +967,51 @@ code, kbd, samp, pre {
 		
 		
 		<div class="entry-content">
-			<p style="text-align: justify;">The purpose of <code>/tmp</code> directory on GNU/Linux has been to provide programs a directory for temporary files. Files in <code>/tmp</code> are deleted after a system reboot.</p>
-<p style="text-align: justify;">Many GNU/Linux based distributions have mounted <code>/tmp</code> as RAM based tmpfs (temporary file system). It not only removes disk I/O but also increases performance. However, it has certain aspects to clearly understood.</p>
-<h4 style="text-align: center;">What /tmp on RAM disk provides:</h4>
-<p style="text-align: justify;"><strong>A. Performance</strong></p>
-<p style="text-align: justify;">Since <code>/tmp</code> will be mounted on ram disk as tmpfs, Read and Write will be significantly faster as RAM&#8217;s Read and Write speeds are faster then that of Hard Drive or Solid State Drive. Hence programs accessing data on <code>/tmp</code> will be faster.</p>
-<p style="text-align: justify;"><strong>B. Disk Optimization</strong></p>
-<p style="text-align: justify;">Temporary files been placed on tmpfs, frees disk I/O which allow disk activity to go down and allocate resources to other disk I/O operations. Specially fewer Read and Write to Flash based Storage reduces the requirement to TRIM NAND based Disk.<br />
-Also fewer Disk wake-ups.</p>
-<p style="text-align: justify;"><strong>C. Data Security</strong></p>
-<p style="text-align: justify;">As temporary data is not written to disk, the chances of data leak from Hard Disk/SSD are none.</p>
-<h4 style="text-align: center;">What are limitations of /tmp on RAM disk:</h4>
-<p style="text-align: justify;"><strong>A. Pseudo Data Security</strong></p>
-<p style="text-align: justify;">Data can however still leak, while system is live and program&#8217;s data resides in tmpfs or other side channels depending upon security measures taken by the program.</p>
-<p style="text-align: justify;">But data will not leak after device is powered down, with exception for cold boot method for data recovery.</p>
-<p style="text-align: justify;"><strong>B. RAM Limit</strong></p>
-<p style="text-align: justify;">tmpfs size is limited to amount of RAM provided in the system, hence <code>/tmp</code> will not be able to grow beyond limit. If program hogs on <code>/tmp</code> directory for huge amounts of data then system will resort back to swap space or slow down the whole system, leaving you with no RAM for other processes.</p>
-<h4 style="text-align: center;">Configure /tmp on tmpfs</h4>
-<p style="text-align: justify;"><strong>On RHEL 7 / CentOS 7 / Fedora:</strong></p>
-<p style="text-align: justify;">To Check</p>
-<pre>systemctl is-enabled tmp.mount</pre>
-<p style="text-align: justify;">To Enable</p>
-<pre>systemctl enable tmp.mount</pre>
-<p style="text-align: justify;">To Disable</p>
-<pre>systemctl disable tmp.mount</pre>
-<p style="text-align: justify;"><strong>On Debian Stretch :</strong></p>
-<p style="text-align: justify;">To Check</p>
-<pre>systemctl is-enabled tmp.mount</pre>
-<p style="text-align: justify;">To Enable</p>
-<pre>cp /usr/share/systemd/tmp.mount /etc/systemd/system/
-
-systemctl enable tmp.mount</pre>
-<p style="text-align: justify;">To Disable</p>
-<pre>systemctl disable tmp.mount</pre>
-<p style="text-align: justify;"><strong>Manually On GNU/Linux :</strong></p>
-<pre>Add to /etc/fstab
-
-tmpfs /tmp tmpfs rw,nosuid,noatime,nodev,size=4G,mode=1777 0 0
-
-*size=4G depending on ram allocation.</pre>
-<p style="text-align: justify;">Manually resize on fly :</p>
-<pre>mount -o remount,size=4G,noatime /tmp</pre>
+			<p style="text-align: justify;">A Live USB stick is the one which contains a bootable Operating System. In this article, we would create a bootable Live USB for a Linux distribution through command-line interface. Before making any changes it is advisable to take a backup of all the data present on our USB stick. The moment we start performing relevant operations, all your data already present on USB stick will be lost. Also, you need to have superuser privileges to make any modifications to the disk. If you don&#8217;t have one, please contact your system administration.</p>
+<h5>Identify USB stick through lsblk command</h5>
+<p style="text-align: justify;">To print the path of available block devices run the following in terminal,</p>
+<pre>lsblk -p</pre>
+<p style="text-align: justify;">Output should resemble &#8211;</p>
+<pre>/dev/sda 8:0 0 465.8G 0 disk 
+├─/dev/sda1 8:1 0 512M 0 part /boot/efi
+├─/dev/sda2 8:2 0 4.7G 0 part 
+└─/dev/sda3 8:5 0 414.6G 0 part /
+/dev/sdc 8:32 1 7.2G 0 disk /media/&lt;Home-Directory&gt;/UUID-Device
+/dev/sr0 11:0 1 1024M 0 rom</pre>
+<p style="text-align: justify;">From the output, we can identify the USB stick (<code>/dev/sdc</code>) of size 7.2G mounted on <code>/media/&lt;Home-Directory&gt;/UUID-Device</code>. It would be different in your case.</p>
+<p style="text-align: justify;">Next, we will have to login to terminal with superuser privileges by &#8211;</p>
+<pre>sudo -i</pre>
+<p style="text-align: justify;">and provide the password.</p>
+<h5>Umount device and make USB stick bootable</h5>
+<p style="text-align: justify;">Firstly, we will have to unmount our USB stick with the help of <code>umount</code> command. In our example, it is <code>/dev/sdc</code> &#8211; identify one for your system. And, run the following command in terminal &#8211;</p>
+<pre>umount /dev/sdc</pre>
+<p style="text-align: justify;">Locate the directory where you have saved your <code>.iso</code> file and use <code>cp</code> command to copy the file to <code>/dev/sdc</code>. For instance &#8211;</p>
+<pre>cp /path/to/iso/file.iso /dev/sdc</pre>
+<p style="text-align: justify;">Wait for a few minutes before the file gets copied to your USB stick. Merely copying the <code>.iso</code> file will make your USB stick bootable as the <code>.iso</code> file itself contains all the relevant files needed.</p>
+<p style="text-align: justify;">So far, we have identified our device through <code>lsblk</code> command, unmounted it and made it bootable by using the <code>cp</code> command. Things have been pretty easy till now but, in case we would want the USB stick to act as storage device again. For this purpose, we will have to use the <code>fdisk</code> command which will be discussed next.</p>
+<p style="text-align: justify;">In conclusion, we have made our USB stick bootable. This could be done for any of the Linux distributions, provided we have <code>.iso</code> file available.</p>
 		</div>
 
 		
 		
 		
 		<nav class="post-navigation ">
-							<a href="https://techpiezo.com/android/live-speedometer-introduced-in-google-maps/" class="nav-item-prev">
+							<a href="https://techpiezo.com/android/code-comments-in-kotlin/" class="nav-item-prev">
 											<figure>
 							<span><svg width="20px" height="15px" viewBox="0 0 20 15"><polygon points="0,7.5 5.5,13 6.4,12.1 2.4,8.1 20,8.1 20,6.9 2.4,6.9 6.4,2.9 5.5,2 "/></svg></span>
-							<div class="ct-image-container"><img width="300" height="200" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Adolfo-Félix-on-Unsplash.jpg" class="attachment-medium size-medium" alt="" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 100%"></div></div>						</figure>
+							<div class="ct-image-container"><img width="300" height="200" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Ilya-Pavlov-on-Unsplash.jpg" class="attachment-medium size-medium" alt="" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 100%"></div></div>						</figure>
 					
 					<div class="item-content">
 						<span>
 							Previous <span>&nbsp;Post</span>						</span>
 
 													<h4 class="item-title">
-								Live Speedometer Introduced in Google Maps							</h4>
+								Code Comments in Kotlin							</h4>
 											</div>
 
 				</a>
 			
-							<a href="https://techpiezo.com/linux/i386-or-amd64-ubuntu-distribution/" class="nav-item-next">
-											<figure>
-							<span><svg width="20px" height="15px" viewBox="0 0 20 15"><polygon points="14.5,2 13.6,2.9 17.6,6.9 0,6.9 0,8.1 17.6,8.1 13.6,12.1 14.5,13 20,7.5 "/></svg></span>
-							<div class="ct-image-container"><img width="300" height="200" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Jeroen-den-Otter-on-Unsplash.jpg" class="attachment-medium size-medium" alt="" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 100%"></div></div>						</figure>
-					
-					<div class="item-content">
-						<span>
-							Next <span>&nbsp;Post</span>						</span>
-
-													<h4 class="item-title">
-								i386 or amd64 - Ubuntu distribution							</h4>
-											</div>
-				</a>
+							<div class="nav-item-next"></div>
 			
 		</nav>
 
@@ -1091,27 +1061,53 @@ tmpfs /tmp tmpfs rw,nosuid,noatime,nodev,size=4G,mode=1777 0 0
 				<ul data-columns="4">
 											
 						<li>
-							<a class="ct-image-container" href="https://techpiezo.com/tech-insights/raw-vs-qcow2-disk-images-in-qemu-kvm/"><img width="640" height="427" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Patrick-Lindenberg-on-Unsplash.jpg" class="attachment-large size-large" alt="" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<a class="ct-image-container" href="https://techpiezo.com/android/fastboot-error-mke2fs-failed-cannot-generate-image-for-userdata/"><img width="640" height="427" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Blake-Wisz-on-Unsplash.jpg" class="attachment-large size-large" alt="" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
 							<h3 class="related-entry-title">
-								<a href="https://techpiezo.com/tech-insights/raw-vs-qcow2-disk-images-in-qemu-kvm/">Raw vs Qcow2 Disk Images in QEMU/KVM</a>
+								<a href="https://techpiezo.com/android/fastboot-error-mke2fs-failed-cannot-generate-image-for-userdata/">[Fixed] Fastboot error: mke2fs failed, Cannot generate image for userdata</a>
 							</h3>
 
 							<div class="related-entry-meta">
 								<span>
-									Jun 19, 2019								</span>
+									Jul 29, 2019								</span>
 
 															</div>
 						</li>
 											
 						<li>
-							<a class="ct-image-container" href="https://techpiezo.com/tech-insights/command-line-calendar-on-debian/"><img width="640" height="425" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-William-Iven-on-Unsplash.jpg" class="attachment-large size-large" alt="" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<a class="ct-image-container" href="https://techpiezo.com/android/install-anbox-and-run-android-apps-in-ubuntu/"><img width="640" height="462" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Benjaminrobyn-Jespersen-on-Unsplash.jpg" class="attachment-large size-large" alt="" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
 							<h3 class="related-entry-title">
-								<a href="https://techpiezo.com/tech-insights/command-line-calendar-on-debian/">Command line Calendar utilities on Debian</a>
+								<a href="https://techpiezo.com/android/install-anbox-and-run-android-apps-in-ubuntu/">Install Anbox and run Android Apps in Ubuntu</a>
 							</h3>
 
 							<div class="related-entry-meta">
 								<span>
-									Jun 18, 2019								</span>
+									Jul 29, 2019								</span>
+
+															</div>
+						</li>
+											
+						<li>
+							<a class="ct-image-container" href="https://techpiezo.com/linux/split-files-in-linux-distributions/"><img width="640" height="427" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Joanna-Kosinska-on-Unsplash.jpg" class="attachment-large size-large" alt="" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<h3 class="related-entry-title">
+								<a href="https://techpiezo.com/linux/split-files-in-linux-distributions/">Split files in Linux distributions</a>
+							</h3>
+
+							<div class="related-entry-meta">
+								<span>
+									Jul 26, 2019								</span>
+
+															</div>
+						</li>
+											
+						<li>
+							<a class="ct-image-container" href="https://techpiezo.com/linux/switch-back-to-ifupdown-etc-network-interfaces-in-ubuntu/"><img width="640" height="427" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Ilya-Pavlov-on-Unsplash.jpg" class="attachment-large size-large" alt="" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<h3 class="related-entry-title">
+								<a href="https://techpiezo.com/linux/switch-back-to-ifupdown-etc-network-interfaces-in-ubuntu/">Switch back to ifupdown &#8211; /etc/network/interfaces in Ubuntu</a>
+							</h3>
+
+							<div class="related-entry-meta">
+								<span>
+									Jul 25, 2019								</span>
 
 															</div>
 						</li>
@@ -1215,9 +1211,9 @@ tmpfs /tmp tmpfs rw,nosuid,noatime,nodev,size=4G,mode=1777 0 0
 			<div class="ct-bag-content" >
 				
 				<ul id="primary-menu" class="mobile-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-70"><a href="https://techpiezo.com">Home</a></li>
-<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-41"><a href="https://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-41"><a href="https://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
 <ul class="sub-menu">
-	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-350"><a href="https://techpiezo.com/linux/linux-quick-fix/">Quick Fix</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-350"><a href="https://techpiezo.com/linux/linux-quick-fix/">Quick Fix</a></li>
 	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-349"><a href="https://techpiezo.com/linux/linux-recent/">What&#8217;s New</a></li>
 </ul>
 </li>
@@ -1229,7 +1225,7 @@ tmpfs /tmp tmpfs rw,nosuid,noatime,nodev,size=4G,mode=1777 0 0
 </li>
 <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-42"><a href="https://techpiezo.com/wordpress/">WordPress</a></li>
 <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-40"><a href="https://techpiezo.com/seo/">SEO</a></li>
-<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-39"><a href="https://techpiezo.com/tech-insights/">Insights</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-39"><a href="https://techpiezo.com/tech-insights/">Insights</a></li>
 </ul>			</div>
 		</div>
 	</div>

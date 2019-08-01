@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="July 31, 2019 7:44 pm" -->
+<!-- generated-on="August 1, 2019 4:10 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
+		<loc>https://techpiezo.com/linux/create-a-bootable-live-usb-in-ubuntu-through-command-line/</loc>
+		<lastmod>2019-08-01T16:09:57+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
 		<loc>https://techpiezo.com/android/code-comments-in-kotlin/</loc>
 		<lastmod>2019-07-31T19:24:59+00:00</lastmod>
 		<changefreq>monthly</changefreq>
@@ -96,4 +102,4 @@
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: b81817bf55c10430a8daf1d81e2788e4; Queries for sitemap: 15; Total queries: 26; Seconds: 0.01; Memory for sitemap: 0MB; Total memory: 2MB -->
+</urlset><!-- Request ID: e559b14dda370bb01b34315bf00c2f76; Queries for sitemap: 18; Total queries: 29; Seconds: 0.01; Memory for sitemap: 0MB; Total memory: 2MB -->
