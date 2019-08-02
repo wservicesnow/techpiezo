@@ -6,11 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
-	<title>Kill a Process in Linux Distribution - TechPiezo</title>
+	<title>Declare Variables (var and val) in Kotlin - TechPiezo</title>
 
 <!-- This site is optimized with the Yoast SEO plugin v11.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
-<meta name="description" content="The most effective way out is to identify the process that has caused the system failure and then kill it. Caution - all unsaved changes will be lost."/>
-<link rel="canonical" href="https://techpiezo.com/linux/kill-a-process-in-linux-distribution/" />
+<meta name="description" content="We use var and val prefixes to declare variables in Kotlin programming language. If the value stored is static - val prefix is used otherwise, var."/>
+<link rel="canonical" href="https://techpiezo.com/android/declare-variables-var-and-val-in-kotlin/" />
 <!-- / Yoast SEO plugin. -->
 
 <style id="ct-main-styles-inline-css" type="text/css">:root {
@@ -773,7 +773,7 @@ code, kbd, samp, pre {
 <link rel='stylesheet' id='ct-style-css'  href='https://techpiezo.com/wp-content/themes/blocksy/style.css' type='text/css' media='all' />
 <link rel='stylesheet' id='ct-main-styles-css'  href='https://techpiezo.com/wp-content/themes/blocksy/static/bundle/main.css' type='text/css' media='all' />
 
-<link rel="amphtml" href="https://techpiezo.com/linux/kill-a-process-in-linux-distribution/amp/"><link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" sizes="32x32" />
+<link rel="amphtml" href="https://techpiezo.com/android/declare-variables-var-and-val-in-kotlin/amp/"><link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" sizes="32x32" />
 <link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" sizes="192x192" />
 <link rel="apple-touch-icon-precomposed" href="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" />
 <meta name="msapplication-TileImage" content="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" />
@@ -803,7 +803,7 @@ code, kbd, samp, pre {
 
 </head>
 
-<body class="post-template-default single single-post postid-699 single-format-standard ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
+<body class="post-template-default single single-post postid-1344 single-format-standard ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
 <div id="main-container">
 
 	<header
@@ -838,15 +838,15 @@ code, kbd, samp, pre {
 				>
 
 		<ul id="primary-menu" class="primary-menu menu"><li id="menu-item-70" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-70"><a href="https://techpiezo.com">Home</a></li>
-<li id="menu-item-41" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-41"><a href="https://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
+<li id="menu-item-41" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-41"><a href="https://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
 <ul class="sub-menu">
-	<li id="menu-item-350" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-350"><a href="https://techpiezo.com/linux/linux-quick-fix/">Quick Fix</a></li>
+	<li id="menu-item-350" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-350"><a href="https://techpiezo.com/linux/linux-quick-fix/">Quick Fix</a></li>
 	<li id="menu-item-349" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-349"><a href="https://techpiezo.com/linux/linux-recent/">What&#8217;s New</a></li>
 </ul>
 </li>
-<li id="menu-item-43" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-43"><a href="https://techpiezo.com/android/">Android<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
+<li id="menu-item-43" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-43"><a href="https://techpiezo.com/android/">Android<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
 <ul class="sub-menu">
-	<li id="menu-item-348" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-348"><a href="https://techpiezo.com/android/android-kotlin/">Kotlin</a></li>
+	<li id="menu-item-348" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-348"><a href="https://techpiezo.com/android/android-kotlin/">Kotlin</a></li>
 	<li id="menu-item-347" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-347"><a href="https://techpiezo.com/android/android-recent/">What&#8217;s New</a></li>
 </ul>
 </li>
@@ -922,13 +922,13 @@ code, kbd, samp, pre {
 			<section>
 				
 	<article
-		id="post-699"
-		class="post-699 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"		data-content="boxed"				>
+		id="post-1344"
+		class="post-1344 post type-post status-publish format-standard has-post-thumbnail hentry category-android category-android-kotlin"		data-content="boxed"				>
 
 		
 		<section class="hero-section" data-type="type-1" data-alignment="left">
 			<header class="entry-header">
-				<h1 class="page-title">Kill a Process in Linux Distribution</h1>
+				<h1 class="page-title">Declare Variables (var and val) in Kotlin</h1>
 				<div class="entry-meta has-avatar" data-label data-type="simple">
 		
 
@@ -955,11 +955,11 @@ code, kbd, samp, pre {
 					<span
 						class="ct-meta-element"
 						>
-						Jul 6, 2019					</span>
+						Aug 1, 2019					</span>
 				</li>
 			
 			
-			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-label">In </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/" rel="tag">Linux</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/linux-quick-fix/" rel="tag">Quick Fix</a></span></li>					</ul>
+			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-label">In </span><span class="ct-meta-element"><a href="https://techpiezo.com/android/" rel="tag">Android</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/android/android-kotlin/" rel="tag">Kotlin</a></span></li>					</ul>
 				</div>
 		
 					</header>
@@ -968,62 +968,56 @@ code, kbd, samp, pre {
 		
 		
 		<div class="entry-content">
-			<p style="text-align: justify;">Stuck operating systems is a very common issue that almost every user has dealt at least once in their lifetime. We have all tried various methods as a solution. Few of them have proven successful and others not. One of the most effective one, if everything else fails, is to identify the process that has caused the system failure and then kill it. Killing a process is fairly easy if you already have some idea of how to manage system processes. First we have to identify the process that is sending harsh signals and if we can&#8217;t troubleshoot then it is better to terminate it. Word of caution &#8211; all the work that has not yet been saved will be lost once the process gets terminated. So, if things hang in balance analyze carefully before stepping forward.</p>
-<h4 style="text-align: center;">Show currently running processes with ps command</h4>
-<p style="text-align: justify;">Before killing a process, we need to understand what is currently running on our system. After running ps command in the terminal &#8211;</p>
-<p><img class="aligncenter wp-image-700 size-full" title="ps-command" src="https://techpiezo.com/wp-content/uploads/2019/07/ps-command.png" alt="ps-command" width="332" height="71" /></p>
-<p style="text-align: justify;">It will show us the list of currently running processes that executed the command. Did you notice PID in the output? Each process is assigned a process ID by the kernel. So, here PID &#8211; 26464 is assigned to bash process and similarly PID &#8211; 26470 is assigned to the ps process.</p>
-<p style="text-align: justify;">There are other ways to identify the Process IDs of the running programs or processes. pidof is one such command. For example,</p>
-<pre>pidof &lt;process-name&gt;</pre>
-<p style="text-align: justify;">This will provide us the process ID for the running program.</p>
-<p style="text-align: justify;">We are limiting ourselves here with basic introduction to the ps command. If you type <code>ps aux</code> command in the terminal, then you will get a more detailed output. This lists all the process that are running on our system including system-level processes.</p>
-<h4 style="text-align: center;">Use kill command to control processes</h4>
-<p style="text-align: justify;">We should first try to troubleshoot the process if it sends harsh signals. If it fails to respond then it is better to kill it. We will be using two commands to kill a process &#8211; kill and killall.</p>
-<p style="text-align: justify;">The use of kill command is fairly simple and all you have to do is run the following &#8211;</p>
-<pre>kill &lt;PID&gt;</pre>
-<p style="text-align: justify;">with the kill command, we send the SIGTERM (15) signal wherein our process would terminate and free up the space. Our system wouldn&#8217;t be impacted negatively.</p>
-<p style="text-align: justify;">But, sometimes the process won&#8217;t respond to the kill SIGTERM (15) option. In such a scenario we need to use SIGKILL (9). Word of caution &#8211; it may create memory issues, corrupt our files etc. So, it should only be used when all other options have been ruled out. Run the following if you really want to &#8211;</p>
-<pre>kill -9 &lt;PID&gt;</pre>
-<h4 style="text-align: center;">Use killall command to control processes</h4>
-<p style="text-align: justify;">Instead of providing the Process ID, we can directly use the name of the process to be killed. Also, it will kill all the processes which are associated with the Process name we provide. So, for SIGTERM (15), run the following &#8211;</p>
-<pre>killall &lt;process-name&gt;</pre>
-<p style="text-align: justify;">If all options to terminate the process are exhausted, then use the command with the SIGKILL (9) option. But, the risks that are associated with the kill -9 option do exist with the killall -9 command too. So, opt for it after due consideration &#8211;</p>
-<pre>killall -9 &lt;process-name&gt;</pre>
-<p style="text-align: justify;">In conclusion, we have touched upon ps, kill and killall commands. It is always better to assess what is causing your system to stuck. Once you identify the issue then, it is better to resolve the conflict. Killing a process should be opted only when all other options have been exhausted.</p>
+			<p style="text-align: justify;">In Kotlin, we can use both variables as well as constants (read-only variables). Depending on the instructions provided to the Compiler, we can store static as well as dynamic values to the Variables. In case, our stored value is dynamic then <code>var</code> keyword will be succeeded by variable name. On the other hand, <code>val</code> keyword in place of <code>var</code> if the value so stored is static. In this article, we would discuss different options available to declare variables in Kotlin.</p>
+<h5>Declare Variables in Kotlin</h5>
+<p style="text-align: justify;">In Kotlin, we can initialize variables without even specifying its type. On the contrary, if we don&#8217;t initialize the variable then we have to mandatorily declare its variable type. For instance &#8211;</p>
+<pre>val a=6</pre>
+<p style="text-align: justify;">Kotlin compiler would take <code>a</code> variable of <code>int</code> type with value <code>6</code>. In case we intend to initialize variable at a later stage then we can just declare its variable type &#8211;</p>
+<pre>val a: Int
+a=6                  //initialize the variable later</pre>
+<p style="text-align: justify;">If we choose to skip variable declaration and just initialize it. The compiler even then is capable to identify the variable type on its own. We call this mechanism <strong>type inference</strong>.</p>
+<p style="text-align: justify;">Furthermore, there are two references available to us for declaring variables. These are &#8211;</p>
+<ol style="text-align: justify;">
+<li>Immutable References (val keyword) and,</li>
+<li>Mutable References (var keyword).</li>
+</ol>
+<p style="text-align: justify;">For Immutable references (val keyword), the value stored in the variable is considered as read-only. Thus, it is not possible to reference the variable to some other value. In other words, once variable declaration and initialization is done we are not allowed to make further modifications to it. For instance &#8211;</p>
+<pre>val x="Hello"
+val y: Int
+y=24
+var x="World!"      //This will throw an error
+y=48               //This will throw an error</pre>
+<p style="text-align: justify;">For Mutable references (var keyword), the value stored in the variable can be reassigned. Therefore, to make desired modifications we prefix <code>var</code> keyword before the variable name. For instance &#8211;</p>
+<pre>var x: Int
+x=7
+x=10              //It will reassign the value of x as 10</pre>
+<p style="text-align: justify;">It is worth mentioning here that, we can&#8217;t change variable type through initialization once our variable is declared.</p>
+<pre>var x: Int        //We have declared variable as Int
+x="Hello"        //We are initializing a string to x</pre>
+<p style="text-align: justify;">The above code will throw a type mismatch error and it won&#8217;t compile. Also, a variable prefixed with <code>val</code> keyword cannot be modified later so it needs to be initialized when created.</p>
+<p>In conclusion, we discussed how to declare variables through <code>val</code> and <code>var</code> keywords.</p>
 		</div>
 
 		
 		
 		
 		<nav class="post-navigation ">
-							<a href="https://techpiezo.com/linux/install-remove-deb-package-in-ubuntu-debian/" class="nav-item-prev">
+							<a href="https://techpiezo.com/linux/make-bootable-usb-stick-to-act-as-storage-device-again/" class="nav-item-prev">
 											<figure>
 							<span><svg width="20px" height="15px" viewBox="0 0 20 15"><polygon points="0,7.5 5.5,13 6.4,12.1 2.4,8.1 20,8.1 20,6.9 2.4,6.9 6.4,2.9 5.5,2 "/></svg></span>
-							<div class="ct-image-container"><img width="300" height="194" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Kaleidico-on-Unsplash.jpg" class="attachment-medium size-medium" alt="" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 100%"></div></div>						</figure>
+							<div class="ct-image-container"><img width="300" height="200" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Ilya-Pavlov-on-Unsplash.jpg" class="attachment-medium size-medium" alt="" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 100%"></div></div>						</figure>
 					
 					<div class="item-content">
 						<span>
 							Previous <span>&nbsp;Post</span>						</span>
 
 													<h4 class="item-title">
-								Install/Remove .deb package in Ubuntu/Debian							</h4>
+								Make Bootable USB stick to act as Storage device again							</h4>
 											</div>
 
 				</a>
 			
-							<a href="https://techpiezo.com/linux/install-virtualbox-in-debian-buster/" class="nav-item-next">
-											<figure>
-							<span><svg width="20px" height="15px" viewBox="0 0 20 15"><polygon points="14.5,2 13.6,2.9 17.6,6.9 0,6.9 0,8.1 17.6,8.1 13.6,12.1 14.5,13 20,7.5 "/></svg></span>
-							<div class="ct-image-container"><img width="300" height="194" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Kaleidico-on-Unsplash.jpg" class="attachment-medium size-medium" alt="" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 100%"></div></div>						</figure>
-					
-					<div class="item-content">
-						<span>
-							Next <span>&nbsp;Post</span>						</span>
-
-													<h4 class="item-title">
-								Install VirtualBox in Debian Buster							</h4>
-											</div>
-				</a>
+							<div class="nav-item-next"></div>
 			
 		</nav>
 
@@ -1073,22 +1067,9 @@ code, kbd, samp, pre {
 				<ul data-columns="4">
 											
 						<li>
-							<a class="ct-image-container" href="https://techpiezo.com/linux/make-bootable-usb-stick-to-act-as-storage-device-again/"><img width="640" height="427" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Ilya-Pavlov-on-Unsplash.jpg" class="attachment-large size-large" alt="" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<a class="ct-image-container" href="https://techpiezo.com/android/code-comments-in-kotlin/"><img width="640" height="427" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Ilya-Pavlov-on-Unsplash.jpg" class="attachment-large size-large" alt="" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
 							<h3 class="related-entry-title">
-								<a href="https://techpiezo.com/linux/make-bootable-usb-stick-to-act-as-storage-device-again/">Make Bootable USB stick to act as Storage device again</a>
-							</h3>
-
-							<div class="related-entry-meta">
-								<span>
-									Aug 1, 2019								</span>
-
-															</div>
-						</li>
-											
-						<li>
-							<a class="ct-image-container" href="https://techpiezo.com/linux/create-a-bootable-live-usb-in-ubuntu-through-command-line/"><img width="640" height="427" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Sara-Kurfeß-on-Unsplash.jpg" class="attachment-large size-large" alt="" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
-							<h3 class="related-entry-title">
-								<a href="https://techpiezo.com/linux/create-a-bootable-live-usb-in-ubuntu-through-command-line/">Create a bootable Live USB in Ubuntu through Command Line</a>
+								<a href="https://techpiezo.com/android/code-comments-in-kotlin/">Code Comments in Kotlin</a>
 							</h3>
 
 							<div class="related-entry-meta">
@@ -1120,6 +1101,19 @@ code, kbd, samp, pre {
 							<div class="related-entry-meta">
 								<span>
 									Jul 29, 2019								</span>
+
+															</div>
+						</li>
+											
+						<li>
+							<a class="ct-image-container" href="https://techpiezo.com/android/write-your-first-code-in-kotlin/"><img width="640" height="427" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Joshua-Aragon-on-Unsplash.jpg" class="attachment-large size-large" alt="" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<h3 class="related-entry-title">
+								<a href="https://techpiezo.com/android/write-your-first-code-in-kotlin/">Write your first code in Kotlin</a>
+							</h3>
+
+							<div class="related-entry-meta">
+								<span>
+									Jul 27, 2019								</span>
 
 															</div>
 						</li>
@@ -1223,15 +1217,15 @@ code, kbd, samp, pre {
 			<div class="ct-bag-content" >
 				
 				<ul id="primary-menu" class="mobile-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-70"><a href="https://techpiezo.com">Home</a></li>
-<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-41"><a href="https://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-41"><a href="https://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
 <ul class="sub-menu">
-	<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-350"><a href="https://techpiezo.com/linux/linux-quick-fix/">Quick Fix</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-350"><a href="https://techpiezo.com/linux/linux-quick-fix/">Quick Fix</a></li>
 	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-349"><a href="https://techpiezo.com/linux/linux-recent/">What&#8217;s New</a></li>
 </ul>
 </li>
-<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-43"><a href="https://techpiezo.com/android/">Android<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-43"><a href="https://techpiezo.com/android/">Android<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
 <ul class="sub-menu">
-	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-348"><a href="https://techpiezo.com/android/android-kotlin/">Kotlin</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-348"><a href="https://techpiezo.com/android/android-kotlin/">Kotlin</a></li>
 	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-347"><a href="https://techpiezo.com/android/android-recent/">What&#8217;s New</a></li>
 </ul>
 </li>
