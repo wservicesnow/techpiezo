@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Update/Upgrade your Debian distribution - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/linux/update-upgrade-your-debian-distribution/" />
+		<title>Install Google Chrome in Debian Buster - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/linux/install-google-chrome-in-debian-buster/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -409,7 +409,7 @@ amp-carousel > amp-img > img {
 	right: 16px;
 }
 		/* Inline stylesheets */
-:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cdd8ca0{text-align:center}	</style>
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}	</style>
 </head>
 
 <body class="">
@@ -426,50 +426,43 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Update/Upgrade your Debian distribution</h1>
+		<h1 class="amp-wp-title">Install Google Chrome in Debian Buster</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-06-18T20:07:40+00:00">
-		2 months ago	</time>
+	<time datetime="2019-08-02T20:35:20+00:00">
+		15 mins ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">For users who have recently installed a Debian distribution, might have been looking ways to update their systems. In this article, we would discuss how to update as well as upgrade a Debian distribution through command line interface.</p>
-<p class="amp-wp-7d27179">Open Terminal and login as superuser by using the command:</p>
+		<p class="amp-wp-7d27179">Google Chrome is a web browser developed by Google LLC. The first stable version of Google Chrome was released on December 11, 2008. Ever since, Google Chrome has held a considerable web browser’s market share. At the time of writing the article, the latest Stable release of Google Chrome was 76.0.3809.87-1. The other supported releases for Google Chrome is Dev (for developers) and a beta version. In this article, we would discuss installation of Stable version of Google Chrome in Debian Buster.</p>
+<p class="amp-wp-7d27179">To install the package, you must have superuser privileges. If you don’t have one then contact your System Administrator. Thereafter, run the following in terminal –</p>
 <pre>su -l</pre>
-<p class="amp-wp-7d27179">It will ask for superuser’s password. If you don’t have one, then its time to contact your system administrator.</p>
-<h4 class="amp-wp-cdd8ca0">Update your Debian distribution</h4>
-<p class="amp-wp-7d27179">Once you have successfully logged in, we need to update our systems repositories. Use the command:</p>
-<pre>apt update</pre>
-<p class="amp-wp-7d27179">The command assists our system to know the latest version of packages available on Debian’s mirror. So, if we update our system then by default it would install/update the most recent version available for the package.</p>
-<p class="amp-wp-7d27179">To upgrade installed packages, we need to run the following command:</p>
-<pre>apt upgrade</pre>
-<p class="amp-wp-7d27179">After running the command, it will provide us with the list of packages that have an upgrade available. We are also provided with the size of our upgrade. If your are ready to upgrade, then press Y or otherwise.</p>
-<p class="amp-wp-7d27179">When newer version of packages and related dependencies have been installed. Then, it could be possible that we may still have dependencies installed that are no longer required. To remove those installed dependencies run the following command:</p>
-<pre>apt autoremove</pre>
-<p class="amp-wp-7d27179">Lastly, all the packages that have ever been downloaded and installed are available in the directory</p>
-<pre>/var/cache/apt/archives/</pre>
-<p class="amp-wp-7d27179">If you no longer need these installed packages, and want to free some disk space then run the following command:</p>
-<pre>apt autoclean</pre>
-<p class="amp-wp-7d27179">So, next time you want to install the same version of the packages that you previously installed. Then, you have to download that package again as it would no longer be available in archives. If you are not worried about disk space then, perhaps its a good notion to leave the archives directory untouched.</p>
-<h4 class="amp-wp-cdd8ca0">Upgrading your Debian distribution to newer Release</h4>
-<p class="amp-wp-7d27179">Till now, we have discussed how to update your Debian distribution. When it comes to upgrade, it means moving from one Debian release to another i.e. from Stretch to Buster. For that, we must first read release notes provided by Debian on:</p>
-<pre>www.debian.org/releases/stable/releasenotes</pre>
-<p class="amp-wp-7d27179">We need to first update the file to move from one stable version of release to another:</p>
-<pre>nano /etc/apt/sources.list</pre>
-<p class="amp-wp-7d27179">with the following entries:</p>
-<pre>http://ftp.us.debian.org/debian stable main contrib</pre>
-<p class="amp-wp-7d27179">Then, save and exit. Run the following command:</p>
-<pre>apt update</pre>
-<p class="amp-wp-7d27179">Updating the entries in <code>sources.list</code> file would help us to move to next stable distribution.</p>
-<p class="amp-wp-7d27179"><code>Word of Caution</code>: Moving from one stable version to another stable version is possible but, we can’t move from testing and unstable versions to stable version. So, make sure you are not using the testing/unstable versions of Debian. If so, then update the <code>sources.list</code> files accordingly.</p>
-<p class="amp-wp-7d27179">Now, run the following command to upgrade to next stable distribution:</p>
-<pre>apt dist-upgrade</pre>
-<p class="amp-wp-7d27179">Debian uses a <code>start-stop-daemon</code> program that can restart running packages during a package upgrade. Hence, you don’t need to boot to single user mode or rescue mode to upgrade your Debian distribution.</p>
-<p class="amp-wp-7d27179">
-</p>	</div>
+<p class="amp-wp-7d27179">and provide the password.</p>
+<h5>Install Google Chrome in Debian Buster</h5>
+<p class="amp-wp-7d27179">Since, package of Google Chrome is not available in standard Debian repository. Therefore, we need to download the relevant <code>.deb</code> package file from the Google’s website. The package for Google Chrome is available at –</p>
+<pre>https://www.google.com/chrome/</pre>
+<p class="amp-wp-7d27179">After visiting the website, you need to click the “Download Chrome” button. In the dialog box so opened, select 64-bit version for Debian and Accept the terms and conditions to download the <code>.deb</code> package.</p>
+<p class="amp-wp-7d27179">Move to the directory wherein the package downloaded was saved in the terminal by <code>cd</code> command. The <code>cd</code> command is used to change directories in the terminal. In case it was downloaded in Downloads folder. Run the following in terminal –</p>
+<pre>cd ~/Downloads</pre>
+<p class="amp-wp-7d27179">The file so downloaded should be –</p>
+<pre>google-chrome-stable_current_amd64.deb</pre>
+<p class="amp-wp-7d27179">Next, we would use the <code>dpkg</code> command line utility to install Google Chrome. <code>dpkg</code> is a package manager, through which we can install, remove, purge and many other package related operations on our Debian operating system. For the purpose of this article, we would limit ourselves to the installation process.</p>
+<pre>dpkg -i google-chrome-stable_current_amd64.deb</pre>
+<p class="amp-wp-7d27179">where,<br><strong>-i</strong> option is used to install the package file.</p>
+<p class="amp-wp-7d27179">This will install stable version of Google Chrome in Debian.</p>
+<h5>Errors were encountered while processing: google-chrome-stable</h5>
+<p class="amp-wp-7d27179">But, there are times when relevant dependencies are not installed and most users encounter the error as mentioned –</p>
+<pre>dpkg: dependency problems prevent configuration of google-chrome-stable:
+dpkg: error processing google-chrome-stable (--install):
+Errors were encountered while processing:
+google-chrome-stable</pre>
+<p class="amp-wp-7d27179">If you too have encountered one, then not to worry. All we need is to run the command that installs all the required dependencies.</p>
+<pre>apt install -f</pre>
+<p class="amp-wp-7d27179">The above command is used to fix the broken packages. Once you run the above command, stable version of Google Chrome will be installed. You can access Google Chrome from your desktop environment’s Main menu.</p>
+<p class="amp-wp-7d27179">In conclusion, we have discussed Google Chrome installation on Debian through <code>dpkg</code> command line utility. We have also provided a quick fix in case we encounter a dependency error.</p>
+	</div>
 
 	<footer class="amp-wp-article-footer">
 			<div class="amp-wp-meta amp-wp-tax-category">
