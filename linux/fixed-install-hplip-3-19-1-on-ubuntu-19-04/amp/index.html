@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Declare Variables (var and val) in Kotlin - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/android/declare-variables-var-and-val-in-kotlin/" />
+		<title>[Fixed] Install HPLIP 3.19.1 on Ubuntu 19.04 - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/linux/fixed-install-hplip-3-19-1-on-ubuntu-19-04/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -426,47 +426,60 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Declare Variables (var and val) in Kotlin</h1>
+		<h1 class="amp-wp-title">[Fixed] Install HPLIP 3.19.1 on Ubuntu 19.04</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-08-01T19:22:03+00:00">
-		2 days ago	</time>
+	<time datetime="2019-08-03T13:20:28+00:00">
+		10 mins ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">In Kotlin, we can use both variables as well as constants (read-only variables). Depending on the instructions provided to the Compiler, we can store static as well as dynamic values to the Variables. In case, our stored value is dynamic then <code>var</code> keyword will be succeeded by variable name. On the other hand, <code>val</code> keyword in place of <code>var</code> if the value so stored is static. In this article, we would discuss different options available to declare variables in Kotlin.</p>
-<h5>Declare Variables in Kotlin</h5>
-<p class="amp-wp-7d27179">In Kotlin, we can initialize variables without even specifying its type. On the contrary, if we don’t initialize the variable then we have to mandatorily declare its variable type. For instance –</p>
-<pre>val a=6</pre>
-<p class="amp-wp-7d27179">Kotlin compiler would take <code>a</code> variable of <code>int</code> type with value <code>6</code>. In case we intend to initialize variable at a later stage then we can just declare its variable type –</p>
-<pre>val a: Int
-a=6                  //initialize the variable later</pre>
-<p class="amp-wp-7d27179">If we choose to skip variable declaration and just initialize it. The compiler even then is capable to identify the variable type on its own. We call this mechanism <strong>type inference</strong>.</p>
-<p class="amp-wp-7d27179">Furthermore, there are two references available to us for declaring variables. These are –</p>
-<ol class="amp-wp-7d27179"><li>Immutable References (val keyword) and,</li>
-<li>Mutable References (var keyword).</li>
-</ol><p class="amp-wp-7d27179">For Immutable references (val keyword), the value stored in the variable is considered as read-only. Thus, it is not possible to reference the variable to some other value. In other words, once variable declaration and initialization is done we are not allowed to make further modifications to it. For instance –</p>
-<pre>val x="Hello"
-val y: Int
-y=24
-var x="World!"      //This will throw an error
-y=48               //This will throw an error</pre>
-<p class="amp-wp-7d27179">For Mutable references (var keyword), the value stored in the variable can be reassigned. Therefore, to make desired modifications we prefix <code>var</code> keyword before the variable name. For instance –</p>
-<pre>var x: Int
-x=7
-x=10              //It will reassign the value of x as 10</pre>
-<p class="amp-wp-7d27179">It is worth mentioning here that, we can’t change variable type through initialization once our variable is declared.</p>
-<pre>var x: Int        //We have declared variable as Int
-x="Hello"        //We are initializing a string to x</pre>
-<p class="amp-wp-7d27179">The above code will throw a type mismatch error and it won’t compile. Also, a variable prefixed with <code>val</code> keyword cannot be modified later so it needs to be initialized when created.</p>
-<p>In conclusion, we discussed how to declare variables through <code>val</code> and <code>var</code> keywords.</p>
+		<p class="amp-wp-7d27179">HP Linux Printing and Imaging System (HPLIP) is a package available in standard Ubuntu repository. The HPLIP package make Linux distributions access HP’s printing and scanning devices. In this article, we will cover HPLIP v3.19.1 installation process on Ubuntu 19.04. Few of the operations mentioned below may require superuser privileges, if you don’t have one then contact your System Administrator for assistance.</p>
+<h5>Install HPLIP 3.19.1 on Ubuntu 19.04</h5>
+<p class="amp-wp-7d27179">For superuser privileges, run the following in terminal –</p>
+<pre>sudo -i</pre>
+<p class="amp-wp-7d27179">and provide the password.</p>
+<p class="amp-wp-7d27179">Next, we need to update Ubuntu’s standard repository for latest version of packages –</p>
+<pre>apt update</pre>
+<p class="amp-wp-7d27179">Thereafter, install the relevant packages through the command <code>apt install</code> –</p>
+<pre>apt install hplip hplip-data hplip-gui</pre>
+<p class="amp-wp-7d27179">It will also install all the associated dependencies. Meanwhile, connect your printing devices to – USB, Network or Parallel-port for device discovery. Once the installation process is completed, we will setup our printing device. Also, operations discussed below do not require superuser privileges. Thus, you may choose to logout as superuser at this point in time.</p>
+<h5>hp-setup on Ubuntu 19.04</h5>
+<p class="amp-wp-7d27179">Prerequisites –</p>
+<p class="amp-wp-7d27179">We will have to download both the plugin as well its associated digital signature manually. Even if we try to download the plugin through <code>hp-setup</code> command line utility directly, it may throw a file checksum error. So, download the required files from the links provided below –</p>
+<p class="amp-wp-7d27179">For hplip plugin</p>
+<pre>http://www.openprinting.org/download/printdriver/auxfiles/HP/plugins/hplip-3.19.1-plugin.run</pre>
+<p class="amp-wp-7d27179">For hplip plugin’s digital signature</p>
+<pre>http://www.openprinting.org/download/printdriver/auxfiles/HP/plugins/hplip-3.19.1-plugin.run.asc</pre>
+<p class="amp-wp-7d27179">Note: Make sure both the downloaded files are kept in same directory.</p>
+<p class="amp-wp-7d27179">Run <code>hp-plugin</code> utility in the terminal –</p>
+<pre>hp-plugin</pre>
+<p class="amp-wp-7d27179">It will prompt us to either download the plugin, or to provide the path where plug-in is stored. Since, we have already downloaded the plug-in in advance. We need to specify the path of plug-in, choose <code>p</code> as option. Next, it will ask us to enter the path of plug-in file hplip-3.19.1-plugin.run –</p>
+<p class="amp-wp-7d27179">In case, its stored in ~/Downloads folder –</p>
+<pre>/home/&lt;Directory-Name&gt;/Downloads</pre>
+<p class="amp-wp-7d27179">Afterwards, it will try to receive keys from the keyserver. Even if it fails to do so, you can choose the option <code>yes</code> if it asks whether to continue with the installation.</p>
+<p class="amp-wp-7d27179">Accept the licence terms to successfully install the required plug-in.</p>
+<p class="amp-wp-7d27179">Lastly, we need to run the <code>hp-setup</code> command –</p>
+<pre>hp-setup</pre>
+<p class="amp-wp-7d27179">Choose the connection type – USB/Ethernet/Wireless/ParallelPort.</p>
+<p class="amp-wp-7d27179">The setup will automatically detect the printing device. In the next dialog box, it will show us the Model name and Device URI. Click the Next button to get the details of our devices. Select the relevant devices and click on Add Printer button. This installs your <code>hplip</code> package successfully.</p>
+<h5>error: The device you are trying to setup requires a binary plug-in</h5>
+<p class="amp-wp-7d27179">In case, we encounter the error “The device you are trying to setup requires a binary plug-in”. That has happened because a directory and few symbolic links are missing. To fix the issue we need superuser privileges.</p>
+<p class="amp-wp-7d27179">Create the relevant directory –</p>
+<pre>mkdir -p /usr/lib64/x86_64-linux-gnu</pre>
+<p class="amp-wp-7d27179">And, to make symbolic links between the files –</p>
+<pre>ln -s /usr/lib/sane /usr/lib/i386-linux-gnu/sane
+ln -s /usr/lib64/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu
+ln -s /usr/lib64/sane /usr/lib64/x86_64-linux-gnu/sane</pre>
+<p class="amp-wp-7d27179">Now, you will have to run the <code>hp-setup</code> command line utility again in the terminal. And, follow the same steps as mentioned in the article above.</p>
+<p class="amp-wp-7d27179">In conclusion, we have installed <code>hplip</code> package version 3.19.1 and its associated plug-in with digital signatures in Ubuntu 19.04.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
 			<div class="amp-wp-meta amp-wp-tax-category">
-		Categories: <a href="https://techpiezo.com/android/" rel="category tag">Android</a>, <a href="https://techpiezo.com/android/android-kotlin/" rel="category tag">Kotlin</a>	</div>
+		Categories: <a href="https://techpiezo.com/linux/" rel="category tag">Linux</a>, <a href="https://techpiezo.com/linux/linux-quick-fix/" rel="category tag">Quick Fix</a>	</div>
 
 	</footer>
 </article>

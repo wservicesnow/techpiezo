@@ -6,11 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
-	<title>Install WordPress on Windows 10 using XAMPP - TechPiezo</title>
+	<title>[Fixed] Install HPLIP 3.19.1 on Ubuntu 19.04 - TechPiezo</title>
 
 <!-- This site is optimized with the Yoast SEO plugin v11.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
-<meta name="description" content="WordPress is a Content Management System for building websites. In this article, we would discuss how to install &amp; configure WordPress using XAMPP."/>
-<link rel="canonical" href="https://techpiezo.com/wordpress/how-to-install-wordpress-on-windows-10-using-xampp/" />
+<meta name="description" content="HP Linux Imaging and Printing (HPLIP) package in Ubuntu supports HP&#039;s printing and scanning devices. It can be installed through command line interface."/>
+<link rel="canonical" href="https://techpiezo.com/linux/fixed-install-hplip-3-19-1-on-ubuntu-19-04/" />
 <!-- / Yoast SEO plugin. -->
 
 <style id="ct-main-styles-inline-css" type="text/css">:root {
@@ -773,7 +773,7 @@ code, kbd, samp, pre {
 <link rel='stylesheet' id='ct-style-css'  href='https://techpiezo.com/wp-content/themes/blocksy/style.css' type='text/css' media='all' />
 <link rel='stylesheet' id='ct-main-styles-css'  href='https://techpiezo.com/wp-content/themes/blocksy/static/bundle/main.css' type='text/css' media='all' />
 
-<link rel="amphtml" href="https://techpiezo.com/wordpress/how-to-install-wordpress-on-windows-10-using-xampp/amp/"><link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" sizes="32x32" />
+<link rel="amphtml" href="https://techpiezo.com/linux/fixed-install-hplip-3-19-1-on-ubuntu-19-04/amp/"><link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" sizes="32x32" />
 <link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" sizes="192x192" />
 <link rel="apple-touch-icon-precomposed" href="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" />
 <meta name="msapplication-TileImage" content="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" />
@@ -803,7 +803,7 @@ code, kbd, samp, pre {
 
 </head>
 
-<body class="post-template-default single single-post postid-309 single-format-standard ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
+<body class="post-template-default single single-post postid-1415 single-format-standard ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
 <div id="main-container">
 
 	<header
@@ -838,9 +838,9 @@ code, kbd, samp, pre {
 				>
 
 		<ul id="primary-menu" class="primary-menu menu"><li id="menu-item-70" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-70"><a href="https://techpiezo.com">Home</a></li>
-<li id="menu-item-41" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-41"><a href="https://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
+<li id="menu-item-41" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-41"><a href="https://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
 <ul class="sub-menu">
-	<li id="menu-item-350" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-350"><a href="https://techpiezo.com/linux/linux-quick-fix/">Quick Fix</a></li>
+	<li id="menu-item-350" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-350"><a href="https://techpiezo.com/linux/linux-quick-fix/">Quick Fix</a></li>
 	<li id="menu-item-349" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-349"><a href="https://techpiezo.com/linux/linux-recent/">What&#8217;s New</a></li>
 </ul>
 </li>
@@ -850,7 +850,7 @@ code, kbd, samp, pre {
 	<li id="menu-item-347" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-347"><a href="https://techpiezo.com/android/android-recent/">What&#8217;s New</a></li>
 </ul>
 </li>
-<li id="menu-item-42" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-42"><a href="https://techpiezo.com/wordpress/">WordPress</a></li>
+<li id="menu-item-42" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-42"><a href="https://techpiezo.com/wordpress/">WordPress</a></li>
 <li id="menu-item-40" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-40"><a href="https://techpiezo.com/seo/">SEO</a></li>
 <li id="menu-item-39" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-39"><a href="https://techpiezo.com/tech-insights/">Insights</a></li>
 </ul>
@@ -922,13 +922,13 @@ code, kbd, samp, pre {
 			<section>
 				
 	<article
-		id="post-309"
-		class="post-309 post type-post status-publish format-standard has-post-thumbnail hentry category-wordpress"		data-content="boxed"				>
+		id="post-1415"
+		class="post-1415 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"		data-content="boxed"				>
 
 		
 		<section class="hero-section" data-type="type-1" data-alignment="left">
 			<header class="entry-header">
-				<h1 class="page-title">Install WordPress on Windows 10 using XAMPP</h1>
+				<h1 class="page-title">[Fixed] Install HPLIP 3.19.1 on Ubuntu 19.04</h1>
 				<div class="entry-meta has-avatar" data-label data-type="simple">
 		
 
@@ -955,11 +955,11 @@ code, kbd, samp, pre {
 					<span
 						class="ct-meta-element"
 						>
-						Jun 10, 2019					</span>
+						Aug 3, 2019					</span>
 				</li>
 			
 			
-			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-label">In </span><span class="ct-meta-element"><a href="https://techpiezo.com/wordpress/" rel="tag">Wordpress</a></span></li>					</ul>
+			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-label">In </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/" rel="tag">Linux</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/linux-quick-fix/" rel="tag">Quick Fix</a></span></li>					</ul>
 				</div>
 		
 					</header>
@@ -968,73 +968,67 @@ code, kbd, samp, pre {
 		
 		
 		<div class="entry-content">
-			<p style="text-align: justify;">WordPress is a Content Management System for building websites. In this article, we would discuss how to install &amp; configure WordPress using XAMPP.</p>
-<p style="text-align: justify;">All you have to do is install XAMPP for Windows through a <code>.exe</code> file. Afterwards, you have to download and configure WordPress. We will discuss these steps in detail next.</p>
-<h4 style="text-align: center;">How to Install WordPress on Windows 10 using XAMPP?</h4>
-<p style="text-align: justify;"><strong>STEP &#8211; I:</strong> Download XAMPP for Windows from the website:</p>
-<pre>https://www.apachefriends.org/download.html</pre>
-<p style="text-align: justify;"><img class="alignnone wp-image-310 aligncenter" src="https://techpiezo.com/wp-content/uploads/2019/06/apachefriends-xampp.png" alt="download xampp" width="600" height="302" /></p>
-<p style="text-align: justify;">The file size is around 144 MBs and download time would depend on your Internet connection speed. There are multiple versions available, download anyone of your choice. After the file gets downloaded, you have to run the setup. You may opt out of installing Bitnami. Rest of the steps are self-explanatory. Default installation folder is <code>C:\xampp\</code></p>
-<p style="text-align: justify;"><img class="alignnone wp-image-318 aligncenter" src="https://techpiezo.com/wp-content/uploads/2019/06/XAMPP-installation-screen.png" alt="xampp setup" width="605" height="362" /></p>
-<p style="text-align: justify;"><strong>STEP &#8211; II</strong>: Download WordPress; Visit the link &#8211;</p>
-<pre>https://wordpress.org/download/</pre>
-<p style="text-align: justify;">This would download a file with <code>.zip</code> extension. Once, the file gets downloaded. Extract it to a desired folder either with the help of software application or through in-built Windows support by right-clicking it.</p>
-<p style="text-align: justify;">When the file gets extracted, you have to copy the entire extracted directory to the location <code>C:\xampp\htdocs\</code></p>
-<p style="text-align: justify;"><strong>STEP &#8211; III</strong>: Now, we have to enable Apache, MySQL services from the XAMPP control panel to configure WordPress. Open the XAMPP control panel. You have to start Services modules for Apache and MySQL.</p>
-<p style="text-align: justify;"><img class="wp-image-319 aligncenter" src="https://techpiezo.com/wp-content/uploads/2019/06/xampp-start-services-apache-mysql.png" alt="XAMPP start services" width="636" height="285" /></p>
-<p style="text-align: justify;">Subsequently, you have to cross-check if your XAMPP installation is working as required. You have to open your web browser and type <code>http://localhost</code> in address bar. If XAMPP is installed and running successfully, your web browser will return with Welcome message from XAMPP.</p>
-<p style="text-align: justify;">Next, click <code>Admin</code> button available next to MySQL service stop module. This is being done to create a database for our WordPress installation. After clicking the <code>Admin</code> button you would be redirected to web page for phpMyAdmin. Click on database tab and create a database with the name that would be provided when we configure WordPress.</p>
-<p style="text-align: justify;"><img class="wp-image-311 aligncenter" src="https://techpiezo.com/wp-content/uploads/2019/06/create-database.png" alt="create database" width="584" height="115" /></p>
-<p style="text-align: justify;">Now, open <code>C:\xampp\htdocs\wordpress\</code> folder and copy <code>wp-config-sample.php</code> to <code>wp-config.php</code> in the same folder. Now, you have to locate entries provided below and make suitable changes in the <code>wp-config.php</code> file.</p>
-<pre>/** The name of the database for WordPress */
-define( 'DB_NAME', 'wordpress' );
-
-/** MySQL database username */
-define( 'DB_USER', 'root' );
-
-/** MySQL database password */
-define( 'DB_PASSWORD', '' );
-
-/** MySQL hostname */
-define( 'DB_HOST', 'localhost' );</pre>
-<p style="text-align: justify;">Thereafter, we would proceed with WordPress installation. Visit</p>
-<pre>http://localhost/wordpress/</pre>
-<p>in your web browser. It will take you to the installation page. In order to login to WordPress, you will be asked to provide username and password.</p>
-<p style="text-align: justify;">
+			<p style="text-align: justify;">HP Linux Printing and Imaging System (HPLIP) is a package available in standard Ubuntu repository. The HPLIP package make Linux distributions access HP&#8217;s printing and scanning devices. In this article, we will cover HPLIP v3.19.1 installation process on Ubuntu 19.04. Few of the operations mentioned below may require superuser privileges, if you don&#8217;t have one then contact your System Administrator for assistance.</p>
+<h5>Install HPLIP 3.19.1 on Ubuntu 19.04</h5>
+<p style="text-align: justify;">For superuser privileges, run the following in terminal &#8211;</p>
+<pre>sudo -i</pre>
+<p style="text-align: justify;">and provide the password.</p>
+<p style="text-align: justify;">Next, we need to update Ubuntu&#8217;s standard repository for latest version of packages &#8211;</p>
+<pre>apt update</pre>
+<p style="text-align: justify;">Thereafter, install the relevant packages through the command <code>apt install</code> &#8211;</p>
+<pre>apt install hplip hplip-data hplip-gui</pre>
+<p style="text-align: justify;">It will also install all the associated dependencies. Meanwhile, connect your printing devices to &#8211; USB, Network or Parallel-port for device discovery. Once the installation process is completed, we will setup our printing device. Also, operations discussed below do not require superuser privileges. Thus, you may choose to logout as superuser at this point in time.</p>
+<h5>hp-setup on Ubuntu 19.04</h5>
+<p style="text-align: justify;">Prerequisites &#8211;</p>
+<p style="text-align: justify;">We will have to download both the plugin as well its associated digital signature manually. Even if we try to download the plugin through <code>hp-setup</code> command line utility directly, it may throw a file checksum error. So, download the required files from the links provided below &#8211;</p>
+<p style="text-align: justify;">For hplip plugin</p>
+<pre>http://www.openprinting.org/download/printdriver/auxfiles/HP/plugins/hplip-3.19.1-plugin.run</pre>
+<p style="text-align: justify;">For hplip plugin&#8217;s digital signature</p>
+<pre>http://www.openprinting.org/download/printdriver/auxfiles/HP/plugins/hplip-3.19.1-plugin.run.asc</pre>
+<p style="text-align: justify;">Note: Make sure both the downloaded files are kept in same directory.</p>
+<p style="text-align: justify;">Run <code>hp-plugin</code> utility in the terminal &#8211;</p>
+<pre>hp-plugin</pre>
+<p style="text-align: justify;">It will prompt us to either download the plugin, or to provide the path where plug-in is stored. Since, we have already downloaded the plug-in in advance. We need to specify the path of plug-in, choose <code>p</code> as option. Next, it will ask us to enter the path of plug-in file hplip-3.19.1-plugin.run &#8211;</p>
+<p style="text-align: justify;">In case, its stored in ~/Downloads folder &#8211;</p>
+<pre>/home/&lt;Directory-Name&gt;/Downloads</pre>
+<p style="text-align: justify;">Afterwards, it will try to receive keys from the keyserver. Even if it fails to do so, you can choose the option <code>yes</code> if it asks whether to continue with the installation.</p>
+<p style="text-align: justify;">Accept the licence terms to successfully install the required plug-in.</p>
+<p style="text-align: justify;">Lastly, we need to run the <code>hp-setup</code> command &#8211;</p>
+<pre>hp-setup</pre>
+<p style="text-align: justify;">Choose the connection type &#8211; USB/Ethernet/Wireless/ParallelPort.</p>
+<p style="text-align: justify;">The setup will automatically detect the printing device. In the next dialog box, it will show us the Model name and Device URI. Click the Next button to get the details of our devices. Select the relevant devices and click on Add Printer button. This installs your <code>hplip</code> package successfully.</p>
+<h5>error: The device you are trying to setup requires a binary plug-in</h5>
+<p style="text-align: justify;">In case, we encounter the error &#8220;The device you are trying to setup requires a binary plug-in&#8221;. That has happened because a directory and few symbolic links are missing. To fix the issue we need superuser privileges.</p>
+<p style="text-align: justify;">Create the relevant directory &#8211;</p>
+<pre>mkdir -p /usr/lib64/x86_64-linux-gnu</pre>
+<p style="text-align: justify;">And, to make symbolic links between the files &#8211;</p>
+<pre>ln -s /usr/lib/sane /usr/lib/i386-linux-gnu/sane
+ln -s /usr/lib64/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu
+ln -s /usr/lib64/sane /usr/lib64/x86_64-linux-gnu/sane</pre>
+<p style="text-align: justify;">Now, you will have to run the <code>hp-setup</code> command line utility again in the terminal. And, follow the same steps as mentioned in the article above.</p>
+<p style="text-align: justify;">In conclusion, we have installed <code>hplip</code> package version 3.19.1 and its associated plug-in with digital signatures in Ubuntu 19.04.</p>
 		</div>
 
 		
 		
 		
 		<nav class="post-navigation ">
-							<a href="https://techpiezo.com/wordpress/how-to-install-wordpress-on-ubuntu-19-04/" class="nav-item-prev">
+							<a href="https://techpiezo.com/linux/install-google-chrome-in-debian-buster/" class="nav-item-prev">
 											<figure>
 							<span><svg width="20px" height="15px" viewBox="0 0 20 15"><polygon points="0,7.5 5.5,13 6.4,12.1 2.4,8.1 20,8.1 20,6.9 2.4,6.9 6.4,2.9 5.5,2 "/></svg></span>
-							<div class="ct-image-container"><img width="300" height="200" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Joanna-Kosinska-on-Unsplash-1.jpg" class="attachment-medium size-medium" alt="" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 100%"></div></div>						</figure>
+							<div class="ct-image-container"><img width="300" height="200" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Adolfo-Félix-on-Unsplash.jpg" class="attachment-medium size-medium" alt="" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 100%"></div></div>						</figure>
 					
 					<div class="item-content">
 						<span>
 							Previous <span>&nbsp;Post</span>						</span>
 
 													<h4 class="item-title">
-								Install WordPress on Ubuntu 19.04							</h4>
+								Install Google Chrome in Debian Buster							</h4>
 											</div>
 
 				</a>
 			
-							<a href="https://techpiezo.com/linux/introduction-to-ubuntu/" class="nav-item-next">
-											<figure>
-							<span><svg width="20px" height="15px" viewBox="0 0 20 15"><polygon points="14.5,2 13.6,2.9 17.6,6.9 0,6.9 0,8.1 17.6,8.1 13.6,12.1 14.5,13 20,7.5 "/></svg></span>
-							<div class="ct-image-container"><img width="300" height="198" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Hayden-Walker-on-Unsplash.jpg" class="attachment-medium size-medium" alt="" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 100%"></div></div>						</figure>
-					
-					<div class="item-content">
-						<span>
-							Next <span>&nbsp;Post</span>						</span>
-
-													<h4 class="item-title">
-								Introduction to Ubuntu							</h4>
-											</div>
-				</a>
+							<div class="nav-item-next"></div>
 			
 		</nav>
 
@@ -1084,53 +1078,53 @@ define( 'DB_HOST', 'localhost' );</pre>
 				<ul data-columns="4">
 											
 						<li>
-							<a class="ct-image-container" href="https://techpiezo.com/wordpress/install-wordpress-on-debian-buster/"><img width="640" height="427" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-NordWood-Themes-on-Unsplash.jpg" class="attachment-large size-large" alt="" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<a class="ct-image-container" href="https://techpiezo.com/linux/install-google-chrome-in-debian-buster/"><img width="640" height="427" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Adolfo-Félix-on-Unsplash.jpg" class="attachment-large size-large" alt="" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
 							<h3 class="related-entry-title">
-								<a href="https://techpiezo.com/wordpress/install-wordpress-on-debian-buster/">Install WordPress on Debian Buster</a>
+								<a href="https://techpiezo.com/linux/install-google-chrome-in-debian-buster/">Install Google Chrome in Debian Buster</a>
 							</h3>
 
 							<div class="related-entry-meta">
 								<span>
-									Jul 12, 2019								</span>
+									Aug 2, 2019								</span>
 
 															</div>
 						</li>
 											
 						<li>
-							<a class="ct-image-container" href="https://techpiezo.com/wordpress/how-to-install-wordpress-on-ubuntu-19-04/"><img width="640" height="427" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Joanna-Kosinska-on-Unsplash-1.jpg" class="attachment-large size-large" alt="" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<a class="ct-image-container" href="https://techpiezo.com/linux/make-bootable-usb-stick-to-act-as-storage-device-again/"><img width="640" height="427" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Ilya-Pavlov-on-Unsplash.jpg" class="attachment-large size-large" alt="" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
 							<h3 class="related-entry-title">
-								<a href="https://techpiezo.com/wordpress/how-to-install-wordpress-on-ubuntu-19-04/">Install WordPress on Ubuntu 19.04</a>
+								<a href="https://techpiezo.com/linux/make-bootable-usb-stick-to-act-as-storage-device-again/">Make Bootable USB stick to act as Storage device again</a>
 							</h3>
 
 							<div class="related-entry-meta">
 								<span>
-									Jun 9, 2019								</span>
+									Aug 1, 2019								</span>
 
 															</div>
 						</li>
 											
 						<li>
-							<a class="ct-image-container" href="https://techpiezo.com/wordpress/difference-between-wordpress-com-and-wordpress-org/"><img width="640" height="428" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Sergi-Kabrera-on-Unsplash.jpg" class="attachment-large size-large" alt="" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<a class="ct-image-container" href="https://techpiezo.com/linux/create-a-bootable-live-usb-in-ubuntu-through-command-line/"><img width="640" height="427" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Sara-Kurfeß-on-Unsplash.jpg" class="attachment-large size-large" alt="" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
 							<h3 class="related-entry-title">
-								<a href="https://techpiezo.com/wordpress/difference-between-wordpress-com-and-wordpress-org/">Difference between WordPress.com and WordPress.org</a>
+								<a href="https://techpiezo.com/linux/create-a-bootable-live-usb-in-ubuntu-through-command-line/">Create a bootable Live USB in Ubuntu through Command Line</a>
 							</h3>
 
 							<div class="related-entry-meta">
 								<span>
-									Jun 9, 2019								</span>
+									Jul 31, 2019								</span>
 
 															</div>
 						</li>
 											
 						<li>
-							<a class="ct-image-container" href="https://techpiezo.com/wordpress/introduction-to-wordpress-cms/"><img width="640" height="427" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Markus-Spiske-on-Unsplash.jpg" class="attachment-large size-large" alt="" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<a class="ct-image-container" href="https://techpiezo.com/android/fastboot-error-mke2fs-failed-cannot-generate-image-for-userdata/"><img width="640" height="427" src="https://techpiezo.com/wp-content/uploads/2019/06/Photo-by-Blake-Wisz-on-Unsplash.jpg" class="attachment-large size-large" alt="" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
 							<h3 class="related-entry-title">
-								<a href="https://techpiezo.com/wordpress/introduction-to-wordpress-cms/">Introduction to WordPress &#8211; CMS</a>
+								<a href="https://techpiezo.com/android/fastboot-error-mke2fs-failed-cannot-generate-image-for-userdata/">[Fixed] Fastboot error: mke2fs failed, Cannot generate image for userdata</a>
 							</h3>
 
 							<div class="related-entry-meta">
 								<span>
-									Jun 9, 2019								</span>
+									Jul 29, 2019								</span>
 
 															</div>
 						</li>
@@ -1234,9 +1228,9 @@ define( 'DB_HOST', 'localhost' );</pre>
 			<div class="ct-bag-content" >
 				
 				<ul id="primary-menu" class="mobile-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-70"><a href="https://techpiezo.com">Home</a></li>
-<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-41"><a href="https://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-41"><a href="https://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
 <ul class="sub-menu">
-	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-350"><a href="https://techpiezo.com/linux/linux-quick-fix/">Quick Fix</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-350"><a href="https://techpiezo.com/linux/linux-quick-fix/">Quick Fix</a></li>
 	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-349"><a href="https://techpiezo.com/linux/linux-recent/">What&#8217;s New</a></li>
 </ul>
 </li>
@@ -1246,7 +1240,7 @@ define( 'DB_HOST', 'localhost' );</pre>
 	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-347"><a href="https://techpiezo.com/android/android-recent/">What&#8217;s New</a></li>
 </ul>
 </li>
-<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-42"><a href="https://techpiezo.com/wordpress/">WordPress</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-42"><a href="https://techpiezo.com/wordpress/">WordPress</a></li>
 <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-40"><a href="https://techpiezo.com/seo/">SEO</a></li>
 <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-39"><a href="https://techpiezo.com/tech-insights/">Insights</a></li>
 </ul>			</div>

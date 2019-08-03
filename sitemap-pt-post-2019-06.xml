@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="August 2, 2019 8:50 pm" -->
+<!-- generated-on="August 3, 2019 1:30 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>https://techpiezo.com/tech-insights/raw-vs-qcow2-disk-images-in-qemu-kvm/</loc>
 		<lastmod>2019-07-09T11:14:48+00:00</lastmod>
@@ -174,4 +174,4 @@
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: 7676f689e3523c08e09c47e962a1a9fb; Queries for sitemap: 95; Total queries: 106; Seconds: 0.06; Memory for sitemap: 0MB; Total memory: 2MB -->
+</urlset><!-- Request ID: 1de1982c96cf1d646e53fd9dec27a5bb; Queries for sitemap: 95; Total queries: 106; Seconds: 0.06; Memory for sitemap: 0MB; Total memory: 2MB -->
