@@ -973,32 +973,31 @@ code, kbd, samp, pre {
 2. Android-x86 on VirtualBox.</p>
 <p style="text-align: justify;">In this article, we would discuss how to install Anbox and run Android apps in it.</p>
 <h4>Install Anbox in Ubuntu</h4>
-<p style="text-align: justify;">Firstly, you need superuser privileges to complete installation process. If you don&#8217;t have one then contact your system administrator. Run the following in terminal and provide password.</p>
-<pre>sudo -i</pre>
+<p style="text-align: justify;">Firstly, you need superuser privileges to complete installation process. If you don&#8217;t have one then contact your system administrator for assistance.</p>
 <p style="text-align: justify;">We would start by installing Anbox from standard Ubuntu repository &#8211;</p>
-<pre>apt update
-apt install anbox</pre>
+<pre>sudo apt update
+sudo apt install anbox</pre>
 <p style="text-align: justify;">This would install anbox and related dependencies. Next, we would have to download a pre-build Android image for Anbox. You can download one from the link &#8211;</p>
 <pre>https://build.anbox.io/android-images/</pre>
 <p style="text-align: justify;">Now, move the <code>.img</code> file to the folder &#8211; <code>/var/lib/anbox/android.img</code>. Note: It is important to rename the file  <code>android_amd64.img</code> to <code>android.img</code>.</p>
 <p style="text-align: justify;">Next, download and install two kernel modules &#8211; Binder and Ashmem. These two kernel-based modules are already available since Debian kernel 4.17. So, skip installation of these modules for Debian. For Ubuntu, the kernel modules can be installed through PPAs (Personal Package Archives) &#8211;</p>
-<pre>add-apt-repository ppa:morphis/anbox-support
-apt update
-apt install linux-headers-generic anbox-modules-dkms</pre>
+<pre>sudo add-apt-repository ppa:morphis/anbox-support
+sudo apt update
+sudo apt install linux-headers-generic anbox-modules-dkms</pre>
 <p style="text-align: justify;">Once installed, you need to issue the following command to load the respective kernel modules without restarting the OS.</p>
-<pre>modprobe ashmem_linux
-modprobe binder_linux</pre>
+<pre>sudo modprobe ashmem_linux
+sudo modprobe binder_linux</pre>
 <p style="text-align: justify;">Cross-check if the modules are properly installed &#8211;</p>
 <pre>ls -1 /dev/{ashmem,binder}</pre>
 <p style="text-align: justify;">and, start the following services &#8211;</p>
-<pre>systemctl start anbox-container-manager.service
-systemctl start anbox-session-manager.service
-systemctl start anbox-session-manager.service</pre>
+<pre>sudo systemctl start anbox-container-manager.service
+sudo systemctl start anbox-session-manager.service
+sudo systemctl start anbox-session-manager.service</pre>
 <p style="text-align: justify;">Lastly, Anbox could be started from your desktop&#8217;s menu.</p>
 <h4 style="text-align: justify;">Install Android apps in Anbox</h4>
 <p style="text-align: justify;">So far, we have discussed how to install Anbox in Ubuntu. But, merely installing Anbox would not solve the purpose of running Android apps. Therefore, we have to install Android apps in Anbox. This could be achieved with the help of <code>adb</code> command line utility. Hence, we have to install <code>adb</code>(Android Debug Bridge) utility by running the following command in terminal.</p>
-<pre>apt update
-apt install adb</pre>
+<pre>sudo apt update
+sudo apt install adb</pre>
 <p style="text-align: justify;">If you have <code>.apk</code> extension file available then, run the following command in terminal to install Android app in Anbox.</p>
 <pre>adb install path-to/my/app.apk</pre>
 <p style="text-align: justify;">Once done, you will see the application shortcut in Anbox.</p>

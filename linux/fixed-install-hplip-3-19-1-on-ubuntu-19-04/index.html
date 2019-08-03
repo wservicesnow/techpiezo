@@ -970,41 +970,38 @@ code, kbd, samp, pre {
 		<div class="entry-content">
 			<p style="text-align: justify;">HP Linux Printing and Imaging System (HPLIP) is a package available in standard Ubuntu repository. The HPLIP package make Linux distributions access HP&#8217;s printing and scanning devices. In this article, we will cover HPLIP v3.19.1 installation process on Ubuntu 19.04. Few of the operations mentioned below may require superuser privileges, if you don&#8217;t have one then contact your System Administrator for assistance.</p>
 <h5>Install HPLIP 3.19.1 on Ubuntu 19.04</h5>
-<p style="text-align: justify;">For superuser privileges, run the following in terminal &#8211;</p>
-<pre>sudo -i</pre>
-<p style="text-align: justify;">and provide the password.</p>
-<p style="text-align: justify;">Next, we need to update Ubuntu&#8217;s standard repository for latest version of packages &#8211;</p>
-<pre>apt update</pre>
+<p style="text-align: justify;">We need to update Ubuntu&#8217;s standard repository for latest version of packages &#8211;</p>
+<pre>sudo apt update</pre>
 <p style="text-align: justify;">Thereafter, install the relevant packages through the command <code>apt install</code> &#8211;</p>
-<pre>apt install hplip hplip-data hplip-gui</pre>
-<p style="text-align: justify;">It will also install all the associated dependencies. Meanwhile, connect your printing devices to &#8211; USB, Network or Parallel-port for device discovery. Once the installation process is completed, we will setup our printing device. Also, operations discussed below do not require superuser privileges. Thus, you may choose to logout as superuser at this point in time.</p>
+<pre>sudo apt install hplip hplip-data hplip-gui</pre>
+<p style="text-align: justify;">It will also install all the associated dependencies. Meanwhile, connect your printing devices to &#8211; USB, Network or Parallel-port for device discovery. Once the installation process is completed, we will setup our printing device.</p>
 <h5>hp-setup on Ubuntu 19.04</h5>
 <p style="text-align: justify;">Prerequisites &#8211;</p>
 <p style="text-align: justify;">We will have to download both the plugin as well its associated digital signature manually. Even if we try to download the plugin through <code>hp-setup</code> command line utility directly, it may throw a file checksum error. So, download the required files from the links provided below &#8211;</p>
 <p style="text-align: justify;">For hplip plugin</p>
-<pre>http://www.openprinting.org/download/printdriver/auxfiles/HP/plugins/hplip-3.19.1-plugin.run</pre>
+<pre>cd /home/</pre>
+<pre>wget -c 'http://www.openprinting.org/download/printdriver/auxfiles/HP/plugins/hplip-3.19.1-plugin.run'</pre>
 <p style="text-align: justify;">For hplip plugin&#8217;s digital signature</p>
-<pre>http://www.openprinting.org/download/printdriver/auxfiles/HP/plugins/hplip-3.19.1-plugin.run.asc</pre>
+<pre>wget -c 'http://www.openprinting.org/download/printdriver/auxfiles/HP/plugins/hplip-3.19.1-plugin.run.asc'</pre>
 <p style="text-align: justify;">Note: Make sure both the downloaded files are kept in same directory.</p>
 <p style="text-align: justify;">Run <code>hp-plugin</code> utility in the terminal &#8211;</p>
 <pre>hp-plugin</pre>
 <p style="text-align: justify;">It will prompt us to either download the plugin, or to provide the path where plug-in is stored. Since, we have already downloaded the plug-in in advance. We need to specify the path of plug-in, choose <code>p</code> as option. Next, it will ask us to enter the path of plug-in file hplip-3.19.1-plugin.run &#8211;</p>
-<p style="text-align: justify;">In case, its stored in ~/Downloads folder &#8211;</p>
-<pre>/home/&lt;Directory-Name&gt;/Downloads</pre>
-<p style="text-align: justify;">Afterwards, it will try to receive keys from the keyserver. Even if it fails to do so, you can choose the option <code>yes</code> if it asks whether to continue with the installation.</p>
+<pre>/home/</pre>
+<p style="text-align: justify;">Afterwards, it will try to receive keys from the key-server. Even if it fails to do so, you can choose the option <code>yes</code> if it asks whether to continue with the installation.</p>
 <p style="text-align: justify;">Accept the licence terms to successfully install the required plug-in.</p>
 <p style="text-align: justify;">Lastly, we need to run the <code>hp-setup</code> command &#8211;</p>
 <pre>hp-setup</pre>
 <p style="text-align: justify;">Choose the connection type &#8211; USB/Ethernet/Wireless/ParallelPort.</p>
-<p style="text-align: justify;">The setup will automatically detect the printing device. In the next dialog box, it will show us the Model name and Device URI. Click the Next button to get the details of our devices. Select the relevant devices and click on Add Printer button. This installs your <code>hplip</code> package successfully.</p>
+<p style="text-align: justify;">The setup will automatically detect the printing device. In the next dialog box, it will show us the Model name and Device URI. Click the Next button to get the details of our devices. Select the relevant devices and click on Add Printer button. This will setup your <code>hplip</code> package successfully.</p>
 <h5>error: The device you are trying to setup requires a binary plug-in</h5>
-<p style="text-align: justify;">In case, we encounter the error &#8220;The device you are trying to setup requires a binary plug-in&#8221;. That has happened because a directory and few symbolic links are missing. To fix the issue we need superuser privileges.</p>
-<p style="text-align: justify;">Create the relevant directory &#8211;</p>
-<pre>mkdir -p /usr/lib64/x86_64-linux-gnu</pre>
+<p style="text-align: justify;">In case, we encounter the error &#8220;The device you are trying to setup requires a binary plug-in&#8221;. That has happened because a directory and few symbolic links are missing.</p>
+<p style="text-align: justify;">To create the relevant directory &#8211;</p>
+<pre>sudo mkdir -p /usr/lib64/x86_64-linux-gnu</pre>
 <p style="text-align: justify;">And, to make symbolic links between the files &#8211;</p>
-<pre>ln -s /usr/lib/sane /usr/lib/i386-linux-gnu/sane
-ln -s /usr/lib64/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu
-ln -s /usr/lib64/sane /usr/lib64/x86_64-linux-gnu/sane</pre>
+<pre>sudo ln -s /usr/lib/sane /usr/lib/i386-linux-gnu/sane
+sudo ln -s /usr/lib64/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu
+sudo ln -s /usr/lib64/sane /usr/lib64/x86_64-linux-gnu/sane</pre>
 <p style="text-align: justify;">Now, you will have to run the <code>hp-setup</code> command line utility again in the terminal. And, follow the same steps as mentioned in the article above.</p>
 <p style="text-align: justify;">In conclusion, we have installed <code>hplip</code> package version 3.19.1 and its associated plug-in with digital signatures in Ubuntu 19.04.</p>
 		</div>

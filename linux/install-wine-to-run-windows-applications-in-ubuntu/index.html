@@ -971,13 +971,11 @@ code, kbd, samp, pre {
 			<p style="text-align: justify;">Wine was originally an acronym for &#8220;Wine is not an emulator&#8221;. Now, we simply call it Wine. It is an open-source windows compatibility layer through which we can run windows applications on Ubuntu or any other supported Linux distribution. It should never be considered as an alternative to Windows operating system. The development of Wine started in 1993. Windows applications, at the time had very few alternatives. With Linux based distributions still evolving, Wine took the center-stage. Therefore, those who couldn&#8217;t afford Windows operating system for variety of reasons, were able to run applications that were specifically developed for it. There are multiple methods to install Wine but, we will be doing it through Ubuntu&#8217;s standard repository.</p>
 <p style="text-align: justify;">At the time of writing the article, there are 26,000-odd applications that are supported by Wine. And, considerable effort is being made every day to get support for far more number of applications.</p>
 <h4 style="text-align: center;">Install Wine on Ubuntu</h4>
-<p style="text-align: justify;"><strong>1.</strong> If you don&#8217;t have superuser access or privileges then, contact your system administrator. Login to super user by running the following command in terminal &#8211;</p>
-<pre>sudo -i</pre>
-<p style="text-align: justify;">and provide the password.</p>
+<p style="text-align: justify;"><strong>1.</strong> If you don&#8217;t have superuser privileges then, contact your system administrator for assistance.</p>
 <p style="text-align: justify;"><strong>2.</strong> We will be installing Wine from Ubuntu&#8217;s standard repository. To update the Ubuntu standard repository &#8211;</p>
-<pre>apt update</pre>
+<pre>sudo apt update</pre>
 <p style="text-align: justify;"><strong>3.</strong> To install Wine &#8211;</p>
-<pre>apt install wine64</pre>
+<pre>sudo apt install wine64</pre>
 <p style="text-align: justify;">Lastly, to check the wine version installed, run the following in terminal &#8211;</p>
 <pre>wine --version</pre>
 <p><img class="aligncenter" src="https://techpiezo.com/wp-content/uploads/2019/07/wine-version.png" alt="wine version" width="410" height="48" /></p>

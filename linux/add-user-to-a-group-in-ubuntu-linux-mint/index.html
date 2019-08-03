@@ -976,19 +976,18 @@ code, kbd, samp, pre {
 <pre>groups user_name</pre>
 <p style="text-align: justify;">We can use various command line tools to manage groups. Now, we will create a new user (&#8220;username&#8221;) and shuffle its primary and secondary groups.</p>
 <h4 style="text-align: center;">Add user to a group and make changes to its Primary Group</h4>
-<p style="text-align: justify;"><strong>STEP &#8211; I:</strong> Login with superuser access through command &#8211;</p>
-<pre>sudo -i</pre>
+<p style="text-align: justify;"><strong>STEP &#8211; I: </strong>We need superuser privileges to make any changes, otherwise contact your System Administrator for assistance.</p>
 <p style="text-align: justify;">Next, add a new user &#8211;</p>
-<pre>useradd username</pre>
+<pre>sudo useradd username</pre>
 <p style="text-align: justify;">Now, we will be creating a password for the user &#8211;</p>
-<pre>passwd username</pre>
+<pre>sudo passwd username</pre>
 <p style="text-align: justify;">Check its default group name with the help of command &#8211;</p>
-<pre>groups username</pre>
+<pre>sudo groups username</pre>
 <p style="text-align: justify;"><strong>STEP &#8211; II:</strong> In this step, we will be creating two groups &#8211; primary and secondary.</p>
-<pre>groupadd groupprimary
-groupadd groupsecondary</pre>
+<pre>sudo groupadd groupprimary
+sudo groupadd groupsecondary</pre>
 <p style="text-align: justify;"><strong>STEP &#8211; III:</strong> Now, with the help of a <code>usermod</code> command, we would change primary and secondary group of our user &#8211;</p>
-<pre>usermod -g groupprimary -G groupsecondary username</pre>
+<pre>sudo usermod -g groupprimary -G groupsecondary username</pre>
 <p style="text-align: justify;"><code>-g</code> is used for the user&#8217;s primary group and <code>-G</code> for its secondary group. Then, we will verify it with command &#8211;</p>
 <pre>groups username</pre>
 <p style="text-align: justify;">In conclusion, we have discussed the command line tools available to add user to a group, then learnt how to shuffle its primary and secondary groups.</p>

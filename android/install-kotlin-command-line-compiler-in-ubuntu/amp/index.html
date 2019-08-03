@@ -439,22 +439,23 @@ amp-carousel > amp-img > img {
 		<p class="amp-wp-7d27179">Kotlin is an open-source, statically typed programming language. It supports both functional as well as object-oriented programming. Moreover, there are multiple ways to install Kotlin in Ubuntu. In addition to command line compiler, Kotlin code can also be compiled from IntelliJ IDEA and Eclipse. Also, Kotlin is interoperable with Java. In this article, we would focus on installation of command line compiler of Kotlin.</p>
 <p class="amp-wp-7d27179">Even though, we can install Kotlin Compiler with ease. To launch the interactive shell (REPL) or running the compiler would require the presence of Java run-time on our Operating system. Since, Ubuntu already has one in its repository. We would install OpenJDK Java runtime if its not already installed. The package that we would install is <code>openjdk-11-jre</code>.</p>
 <h4>Install OpenJDK Java runtime</h4>
-<p class="amp-wp-7d27179">To install OpenJDK Java run-time, you need to have superuser privileges. Otherwise, contact your system administrator.</p>
-<pre>sudo -i
-apt install openjdk-11-jre</pre>
+<p class="amp-wp-7d27179">To install OpenJDK Java run-time, you need to have superuser privileges. Otherwise, contact your system administrator for assistance.</p>
+<pre>sudo apt install openjdk-11-jre</pre>
 <h4>Install Kotlin – Command line compiler</h4>
 <p class="amp-wp-7d27179">To download the command line compiler, visit</p>
 <pre>https://github.com/JetBrains/kotlin/releases/latest</pre>
 <p class="amp-wp-7d27179">At the time of writing the article, the latest stable version was 1.3.41.</p>
 <p class="amp-wp-7d27179">When you will scroll down the page, there is list of files available to download. To install Kotlin compiler, we need to have <code>kotlin-compiler-X.X.XX.zip</code> file.</p>
-<p class="amp-wp-7d27179">The direct link available for the version 1.3.41 is –</p>
-<pre>https://github.com/JetBrains/kotlin/releases/download/v1.3.41/kotlin-compiler-1.3.41.zip</pre>
-<p class="amp-wp-7d27179">Go to the location, where you have downloaded the file. Unzip it with the help of <code>unzip</code> command.</p>
+<p>Move to the Downloads directory.</p>
+<pre>cd ~/Downloads/</pre>
+<p class="amp-wp-7d27179">The direct link available for the version 1.3.41 is  –</p>
+<pre>wget -c 'https://github.com/JetBrains/kotlin/releases/download/v1.3.41/kotlin-compiler-1.3.41.zip'</pre>
+<p class="amp-wp-7d27179">Unzip it with the help of <code>unzip</code> command.</p>
 <pre>unzip kotlin-compiler-1.3.41.zip</pre>
 <p class="amp-wp-7d27179">Furthermore, we will add the path variable to the <code>.bashrc</code> file to access the compiler directly without providing its complete path.</p>
 <pre>nano ~/.bashrc</pre>
-<p class="amp-wp-7d27179">We have used nano text editor, you can use one of your own choice. In case you have unzipped the file in Desktop folder, or you can modify the path accordingly. Afterwards, append the file with the following –</p>
-<pre>export PATH=~/Desktop/kotlinc/bin:$PATH</pre>
+<p class="amp-wp-7d27179">We have used nano text editor, you can use one of your own choice. Afterwards, append the file with the following –</p>
+<pre>export PATH=~/Downloads/kotlinc/bin:$PATH</pre>
 <h4>Running the REPL</h4>
 <p class="amp-wp-7d27179">REPL is an acronym for Read-Eval-Print-Loop; it is basically an interactive shell for the programming language. To run the REPL, we need to open the terminal and type the following –</p>
 <pre>kotlinc-jvm</pre>

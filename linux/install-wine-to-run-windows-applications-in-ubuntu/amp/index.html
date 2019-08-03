@@ -439,13 +439,11 @@ amp-carousel > amp-img > img {
 		<p class="amp-wp-7d27179">Wine was originally an acronym for “Wine is not an emulator”. Now, we simply call it Wine. It is an open-source windows compatibility layer through which we can run windows applications on Ubuntu or any other supported Linux distribution. It should never be considered as an alternative to Windows operating system. The development of Wine started in 1993. Windows applications, at the time had very few alternatives. With Linux based distributions still evolving, Wine took the center-stage. Therefore, those who couldn’t afford Windows operating system for variety of reasons, were able to run applications that were specifically developed for it. There are multiple methods to install Wine but, we will be doing it through Ubuntu’s standard repository.</p>
 <p class="amp-wp-7d27179">At the time of writing the article, there are 26,000-odd applications that are supported by Wine. And, considerable effort is being made every day to get support for far more number of applications.</p>
 <h4 class="amp-wp-cdd8ca0">Install Wine on Ubuntu</h4>
-<p class="amp-wp-7d27179"><strong>1.</strong> If you don’t have superuser access or privileges then, contact your system administrator. Login to super user by running the following command in terminal –</p>
-<pre>sudo -i</pre>
-<p class="amp-wp-7d27179">and provide the password.</p>
+<p class="amp-wp-7d27179"><strong>1.</strong> If you don’t have superuser privileges then, contact your system administrator for assistance.</p>
 <p class="amp-wp-7d27179"><strong>2.</strong> We will be installing Wine from Ubuntu’s standard repository. To update the Ubuntu standard repository –</p>
-<pre>apt update</pre>
+<pre>sudo apt update</pre>
 <p class="amp-wp-7d27179"><strong>3.</strong> To install Wine –</p>
-<pre>apt install wine64</pre>
+<pre>sudo apt install wine64</pre>
 <p class="amp-wp-7d27179">Lastly, to check the wine version installed, run the following in terminal –</p>
 <pre>wine --version</pre>
 <p><amp-img class="aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/07/wine-version.png" alt="wine version" width="410" height="48" layout="intrinsic"></amp-img></p>

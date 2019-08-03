@@ -437,10 +437,8 @@ amp-carousel > amp-img > img {
 
 	<div class="amp-wp-article-content">
 		<p class="amp-wp-7d27179">To make a bootable USB stick to acts as a storage device once again, we will have to use the <code>fdisk</code> command line utility. <code>fdisk</code> command line utility can be used to make modifications in our partition table. Through <code>fdisk</code> utility, we can create, delete, list, print, toggle a bootable flag and many other related operations on our partition table. Furthermore, utility supports GPT, SGI (IRIX), DOS and SUN partition tables.</p>
-<p class="amp-wp-7d27179">To make any modification through <code>fdisk</code> command line utility, we need to have superuser privileges. If you don’t have one then contact your system administrator.</p>
-<pre>sudo -i</pre>
-<p class="amp-wp-7d27179">and, provide the password.</p>
-<h5>Make changes to the Partition table</h5>
+<p class="amp-wp-7d27179">To make any modification through <code>fdisk</code> command line utility, we need to have superuser privileges. If you don’t have one then contact your system administrator for assistance.</p>
+<h5 class="amp-wp-7d27179">Make changes to the Partition table</h5>
 <p class="amp-wp-7d27179">Identify you USB device with the help of <code>lsblk</code> command.</p>
 <pre>lsblk -p</pre>
 <p class="amp-wp-7d27179">Output may resemble –</p>
@@ -449,12 +447,12 @@ amp-carousel > amp-img > img {
 ├─/dev/sda2 8:2 0 4.7G 0 part 
 └─/dev/sda3 8:5 0 414.6G 0 part /
 <strong>/dev/sdc</strong> 8:32 1 <strong>7.2G</strong> 0 disk 
-└─<strong>/dev/sdc1</strong> 8:33 1 <strong>1.8G</strong> 0 part /media/&lt;Home-Directory&gt;/UUID-Device
+└─<strong>/dev/sdc1</strong> 8:33 1 <strong>1.8G</strong> 0 part /media/&lt;username&gt;/UUID-Device
 /dev/sr0 11:0 1 1024M 0 rom</pre>
-<p class="amp-wp-7d27179">It may be different for your USB device, in our case it is <code>/dev/sdc</code>. Furthermore, <code>/dev/sdc1</code>(of our .iso file size i.e. 1.8G) is the partition already present on our USB stick. The rest of the space i.e. 5.4G is available on our USB stick as free space.</p>
+<p class="amp-wp-7d27179">The naming scheme for disk devices is <code>/dev/sdX</code>, where X can be a,b,c, etc. It is order in which our disk device was found. It may be different for your USB device, in our case it is <code>/dev/sdc</code>. Furthermore, <code>/dev/sdc1</code>(of our .iso file size i.e. 1.8G) is the partition already present on our USB stick. The rest of the space i.e. 5.4G is available on our USB stick as free space.</p>
 <p class="amp-wp-7d27179">So, in order to make our USB stick as a storage device we have to delete the <code>/dev/sdc1</code> partition first. Thereafter, we will be utilizing the free space i.e. 7.2G to create a new partition through <code>fdisk</code> command line utility.</p>
 <p class="amp-wp-7d27179">Thus, to make modifications through <code>fdisk</code> command line utility, run the following in terminal –</p>
-<pre>fdisk /dev/sdc</pre>
+<pre>sudo fdisk /dev/sdc</pre>
 <p class="amp-wp-7d27179">You can press m for help or more options. Press <code>p</code> to print the partition table  –</p>
 <p class="amp-wp-7d27179">Command (m for help): p</p>
 <p class="amp-wp-7d27179">it may return –</p>
@@ -465,7 +463,7 @@ amp-carousel > amp-img > img {
 <p class="amp-wp-7d27179">it will automatically delete the partition if your partition table contains just one partition. Otherwise, enter the partitions number. The output may resemble –</p>
 <pre>Selected partition 1
 Partition 1 has been deleted.</pre>
-<p class="amp-wp-7d27179">Now, the free space of size 7.2G(may depend on storage size of your USB stick) is available to us. To create a new partition on available free space, use the option <code>n</code>–</p>
+<p class="amp-wp-7d27179">Now, the free space of size 7.2G (may depend on storage size of your USB stick) is available to us. To create a new partition on available free space, use the option <code>n</code>–</p>
 <pre>Command (m for help): n
 Partition type
 p primary (0 primary, 0 extended, 4 free)
@@ -491,9 +489,9 @@ Syncing disks.</pre>
 <p class="amp-wp-7d27179">Now, to use USB stick as a storage device we will have to format the <code>/dev/sdc1</code> partition. This can be achieved through <code>mkfs.vfat</code> command line utility. If you want to format it to other types – read the man pages of <code>mkfs</code> command line utility.</p>
 <pre> man mkfs</pre>
 <p class="amp-wp-7d27179">To format the <code>/dev/sdc1</code> as FAT32 run the following –</p>
-<pre>mkfs.vfat -F 32 /dev/sdc1</pre>
+<pre>sudo mkfs.vfat -F 32 /dev/sdc1</pre>
 <p class="amp-wp-7d27179">Lastly, use the command <code>partprobe</code> to inform the Operating system for the partition tables changes we just did.</p>
-<pre># partprobe</pre>
+<pre># sudo partprobe</pre>
 <p class="amp-wp-7d27179">In conclusion, we have made our bootable USB stick to act as storage device through <code>fdisk</code> command line utility.</p>
 	</div>
 

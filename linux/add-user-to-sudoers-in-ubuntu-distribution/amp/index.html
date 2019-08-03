@@ -441,23 +441,23 @@ amp-carousel > amp-img > img {
 <pre>sudo nano /etc/hosts</pre>
 <p class="amp-wp-7d27179">Next, it will ask for users’ password. After providing the password you can edit the hosts file. If you are unable to get super user access even after providing your password. Then, you may have to ask system administrator to either provide you super user access or ask the system admin to do it for you. To provide you the super user access, the system admin will add you to sudoers list. We will discuss it next:</p>
 <h4 class="amp-wp-cdd8ca0">Add user to Sudoers</h4>
-<p class="amp-wp-7d27179"><span class="amp-wp-ca1de63"><strong>STEP – I:</strong></span> Login to your system with root access. Or, try one who has super user access.</p>
+<p class="amp-wp-7d27179"><span class="amp-wp-ca1de63"><strong>STEP – I:</strong></span> Login to your system with root access. Or, try one which has super user access.</p>
 <p class="amp-wp-7d27179"><span class="amp-wp-ca1de63"><strong>STEP – II:</strong></span> Add a user, say username, with the help of <code>useradd</code> command.</p>
-<pre>useradd username</pre>
+<pre>sudo useradd username</pre>
 <p class="amp-wp-7d27179"><span class="amp-wp-ca1de63"><strong>STEP – III:</strong></span> Set password for the new user – username, through <code>passwd</code> command.</p>
-<pre>passwd username</pre>
+<pre>sudo passwd username</pre>
 <p class="amp-wp-7d27179">Next, we will log in with our newly created user – username. Then, type <code>sudo whoami</code> and enter password. It will return that we are not present in sudoers file.</p>
 <p> </p>
 <p><amp-img class="aligncenter wp-image-372 size-full amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/06/username-not-sudoers.png" alt="check whoami" width="831" height="98" layout="intrinsic"></amp-img></p>
 <p> </p>
 <p class="amp-wp-7d27179"><span class="amp-wp-ca1de63"><strong>STEP – IV:</strong></span> Edit <code>/etc/sudoers/</code> file with the help of a text editor. We have used nano, you can choose any text editor like gedit, mousepad, leafpad, vi, vim etc.</p>
-<pre>nano /etc/sudoers
+<pre>sudo nano /etc/sudoers
 </pre>
 <p><amp-img class="aligncenter wp-image-373 amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/06/sudoers-allow-all-commands.png" alt="sudoers file" width="468" height="39" layout="intrinsic"></amp-img></p>
 <p> </p>
 <p class="amp-wp-7d27179">If you see a group sudo in the sudoers file, all you have to do is add your user to this group. However, if the group is not present in your sudoers file then make an entry similar to one shown above.</p>
 <p class="amp-wp-7d27179"><span class="amp-wp-ca1de63"><strong>STEP – V</strong><strong>:</strong></span> Add user to the group sudo.</p>
-<pre>usermod -aG sudo username</pre>
+<pre>sudo usermod -aG sudo username</pre>
 <p class="amp-wp-7d27179"><span class="amp-wp-ca1de63"><strong>STEP – VI:</strong></span> To verify, if we have successfully completed all the steps:</p>
 <pre>su username
 groups

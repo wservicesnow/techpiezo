@@ -444,19 +444,18 @@ amp-carousel > amp-img > img {
 <pre>groups user_name</pre>
 <p class="amp-wp-7d27179">We can use various command line tools to manage groups. Now, we will create a new user (“username”) and shuffle its primary and secondary groups.</p>
 <h4 class="amp-wp-cdd8ca0">Add user to a group and make changes to its Primary Group</h4>
-<p class="amp-wp-7d27179"><strong>STEP – I:</strong> Login with superuser access through command –</p>
-<pre>sudo -i</pre>
+<p class="amp-wp-7d27179"><strong>STEP – I: </strong>We need superuser privileges to make any changes, otherwise contact your System Administrator for assistance.</p>
 <p class="amp-wp-7d27179">Next, add a new user –</p>
-<pre>useradd username</pre>
+<pre>sudo useradd username</pre>
 <p class="amp-wp-7d27179">Now, we will be creating a password for the user –</p>
-<pre>passwd username</pre>
+<pre>sudo passwd username</pre>
 <p class="amp-wp-7d27179">Check its default group name with the help of command –</p>
-<pre>groups username</pre>
+<pre>sudo groups username</pre>
 <p class="amp-wp-7d27179"><strong>STEP – II:</strong> In this step, we will be creating two groups – primary and secondary.</p>
-<pre>groupadd groupprimary
-groupadd groupsecondary</pre>
+<pre>sudo groupadd groupprimary
+sudo groupadd groupsecondary</pre>
 <p class="amp-wp-7d27179"><strong>STEP – III:</strong> Now, with the help of a <code>usermod</code> command, we would change primary and secondary group of our user –</p>
-<pre>usermod -g groupprimary -G groupsecondary username</pre>
+<pre>sudo usermod -g groupprimary -G groupsecondary username</pre>
 <p class="amp-wp-7d27179"><code>-g</code> is used for the user’s primary group and <code>-G</code> for its secondary group. Then, we will verify it with command –</p>
 <pre>groups username</pre>
 <p class="amp-wp-7d27179">In conclusion, we have discussed the command line tools available to add user to a group, then learnt how to shuffle its primary and secondary groups.</p>

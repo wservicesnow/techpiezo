@@ -429,7 +429,7 @@ amp-carousel > amp-img > img {
 		<h1 class="amp-wp-title">[Fixed] Install HPLIP 3.19.1 on Ubuntu 19.04</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
 	<time datetime="2019-08-03T13:20:28+00:00">
-		10 mins ago	</time>
+		3 hours ago	</time>
 </div>
 	</header>
 
@@ -438,41 +438,38 @@ amp-carousel > amp-img > img {
 	<div class="amp-wp-article-content">
 		<p class="amp-wp-7d27179">HP Linux Printing and Imaging System (HPLIP) is a package available in standard Ubuntu repository. The HPLIP package make Linux distributions access HP’s printing and scanning devices. In this article, we will cover HPLIP v3.19.1 installation process on Ubuntu 19.04. Few of the operations mentioned below may require superuser privileges, if you don’t have one then contact your System Administrator for assistance.</p>
 <h5>Install HPLIP 3.19.1 on Ubuntu 19.04</h5>
-<p class="amp-wp-7d27179">For superuser privileges, run the following in terminal –</p>
-<pre>sudo -i</pre>
-<p class="amp-wp-7d27179">and provide the password.</p>
-<p class="amp-wp-7d27179">Next, we need to update Ubuntu’s standard repository for latest version of packages –</p>
-<pre>apt update</pre>
+<p class="amp-wp-7d27179">We need to update Ubuntu’s standard repository for latest version of packages –</p>
+<pre>sudo apt update</pre>
 <p class="amp-wp-7d27179">Thereafter, install the relevant packages through the command <code>apt install</code> –</p>
-<pre>apt install hplip hplip-data hplip-gui</pre>
-<p class="amp-wp-7d27179">It will also install all the associated dependencies. Meanwhile, connect your printing devices to – USB, Network or Parallel-port for device discovery. Once the installation process is completed, we will setup our printing device. Also, operations discussed below do not require superuser privileges. Thus, you may choose to logout as superuser at this point in time.</p>
+<pre>sudo apt install hplip hplip-data hplip-gui</pre>
+<p class="amp-wp-7d27179">It will also install all the associated dependencies. Meanwhile, connect your printing devices to – USB, Network or Parallel-port for device discovery. Once the installation process is completed, we will setup our printing device.</p>
 <h5>hp-setup on Ubuntu 19.04</h5>
 <p class="amp-wp-7d27179">Prerequisites –</p>
 <p class="amp-wp-7d27179">We will have to download both the plugin as well its associated digital signature manually. Even if we try to download the plugin through <code>hp-setup</code> command line utility directly, it may throw a file checksum error. So, download the required files from the links provided below –</p>
 <p class="amp-wp-7d27179">For hplip plugin</p>
-<pre>http://www.openprinting.org/download/printdriver/auxfiles/HP/plugins/hplip-3.19.1-plugin.run</pre>
+<pre>cd /home/</pre>
+<pre>wget -c 'http://www.openprinting.org/download/printdriver/auxfiles/HP/plugins/hplip-3.19.1-plugin.run'</pre>
 <p class="amp-wp-7d27179">For hplip plugin’s digital signature</p>
-<pre>http://www.openprinting.org/download/printdriver/auxfiles/HP/plugins/hplip-3.19.1-plugin.run.asc</pre>
+<pre>wget -c 'http://www.openprinting.org/download/printdriver/auxfiles/HP/plugins/hplip-3.19.1-plugin.run.asc'</pre>
 <p class="amp-wp-7d27179">Note: Make sure both the downloaded files are kept in same directory.</p>
 <p class="amp-wp-7d27179">Run <code>hp-plugin</code> utility in the terminal –</p>
 <pre>hp-plugin</pre>
 <p class="amp-wp-7d27179">It will prompt us to either download the plugin, or to provide the path where plug-in is stored. Since, we have already downloaded the plug-in in advance. We need to specify the path of plug-in, choose <code>p</code> as option. Next, it will ask us to enter the path of plug-in file hplip-3.19.1-plugin.run –</p>
-<p class="amp-wp-7d27179">In case, its stored in ~/Downloads folder –</p>
-<pre>/home/&lt;Directory-Name&gt;/Downloads</pre>
-<p class="amp-wp-7d27179">Afterwards, it will try to receive keys from the keyserver. Even if it fails to do so, you can choose the option <code>yes</code> if it asks whether to continue with the installation.</p>
+<pre>/home/</pre>
+<p class="amp-wp-7d27179">Afterwards, it will try to receive keys from the key-server. Even if it fails to do so, you can choose the option <code>yes</code> if it asks whether to continue with the installation.</p>
 <p class="amp-wp-7d27179">Accept the licence terms to successfully install the required plug-in.</p>
 <p class="amp-wp-7d27179">Lastly, we need to run the <code>hp-setup</code> command –</p>
 <pre>hp-setup</pre>
 <p class="amp-wp-7d27179">Choose the connection type – USB/Ethernet/Wireless/ParallelPort.</p>
-<p class="amp-wp-7d27179">The setup will automatically detect the printing device. In the next dialog box, it will show us the Model name and Device URI. Click the Next button to get the details of our devices. Select the relevant devices and click on Add Printer button. This installs your <code>hplip</code> package successfully.</p>
+<p class="amp-wp-7d27179">The setup will automatically detect the printing device. In the next dialog box, it will show us the Model name and Device URI. Click the Next button to get the details of our devices. Select the relevant devices and click on Add Printer button. This will setup your <code>hplip</code> package successfully.</p>
 <h5>error: The device you are trying to setup requires a binary plug-in</h5>
-<p class="amp-wp-7d27179">In case, we encounter the error “The device you are trying to setup requires a binary plug-in”. That has happened because a directory and few symbolic links are missing. To fix the issue we need superuser privileges.</p>
-<p class="amp-wp-7d27179">Create the relevant directory –</p>
-<pre>mkdir -p /usr/lib64/x86_64-linux-gnu</pre>
+<p class="amp-wp-7d27179">In case, we encounter the error “The device you are trying to setup requires a binary plug-in”. That has happened because a directory and few symbolic links are missing.</p>
+<p class="amp-wp-7d27179">To create the relevant directory –</p>
+<pre>sudo mkdir -p /usr/lib64/x86_64-linux-gnu</pre>
 <p class="amp-wp-7d27179">And, to make symbolic links between the files –</p>
-<pre>ln -s /usr/lib/sane /usr/lib/i386-linux-gnu/sane
-ln -s /usr/lib64/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu
-ln -s /usr/lib64/sane /usr/lib64/x86_64-linux-gnu/sane</pre>
+<pre>sudo ln -s /usr/lib/sane /usr/lib/i386-linux-gnu/sane
+sudo ln -s /usr/lib64/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu
+sudo ln -s /usr/lib64/sane /usr/lib64/x86_64-linux-gnu/sane</pre>
 <p class="amp-wp-7d27179">Now, you will have to run the <code>hp-setup</code> command line utility again in the terminal. And, follow the same steps as mentioned in the article above.</p>
 <p class="amp-wp-7d27179">In conclusion, we have installed <code>hplip</code> package version 3.19.1 and its associated plug-in with digital signatures in Ubuntu 19.04.</p>
 	</div>

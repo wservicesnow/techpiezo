@@ -439,24 +439,24 @@ amp-carousel > amp-img > img {
 		<p class="amp-wp-7d27179">ClamAV is an open-source Antivirus tool available for Linux distributions. It is integrated with Mail servers to scan attachments received. In addition to scanning mail attachments, it provides protection to corporate networks. Other functions also include web scanning. We are provided with a command line interface, with the installation of ClamAV package in repositories. For those who are not comfortable with command line interface, may opt to install Clamtk package to get the Graphical User Interface (GUI). ClamAV utilizes Milter interface for Sendmail and has built-in support for various file formats.</p>
 <h4 class="amp-wp-cdd8ca0"><strong>Install ClamAV on Ubuntu 19.04</strong></h4>
 <p class="amp-wp-7d27179">Open Ubuntu terminal using the shortcut key – <code>Ctrl+Alt+T</code></p>
-<p class="amp-wp-7d27179">Get superuser access by typing <code>sudo -i</code> command in the terminal.</p>
+<p class="amp-wp-7d27179">You need to have superuser privileges to make any changes, otherwise contact your System Administrator for assistance.</p>
 <p class="amp-wp-7d27179">Type the following command to update and install repositories and ClamAV Antivirus respectively.</p>
-<pre>apt update
-apt install clamav clamav-daemon</pre>
+<pre>sudo apt update
+sudo apt install clamav clamav-daemon</pre>
 <p class="amp-wp-7d27179">Once, the packages are successfully installed, the Antivirus will update its relevant packages in the background by itself.</p>
 <p class="amp-wp-7d27179">To scan directories we need to type the following command in terminal:</p>
 <pre>clamscan -r -i --bell /home/</pre>
-<p>here,</p>
-<p class="amp-wp-fe4704d">-r, is used for scanning sub directories recursively,</p>
-<p class="amp-wp-fe4704d">-i, for printing infected files,</p>
-<p class="amp-wp-fe4704d">–bell, there will be a bell sound if a virus is detected,</p>
-<p class="amp-wp-fe4704d">/home/, directory we intend to scan – you can use directories of your choice</p>
+<p>where,</p>
+<p class="amp-wp-fe4704d"><strong>-r</strong>, is used for scanning sub directories recursively,</p>
+<p class="amp-wp-fe4704d"><strong>-i</strong>, for printing infected files,</p>
+<p class="amp-wp-fe4704d"><strong>–bell</strong>, there will be a bell sound if a virus is detected,</p>
+<p class="amp-wp-fe4704d"><strong>/home/</strong>, directory we intend to scan – you can use directories of your choice</p>
 <p class="amp-wp-7d27179">This command only scan directories and provides us with the list of infected files. But, what if we plan to move infected files to some other directory. It could be a better choice as removing an infected file may break our system. Hence, we tread with caution and move the infected file to some other directory. We need to type the following command in terminal –</p>
 <pre>clamscan -i -r --move="/home/test/Downloads/" /home</pre>
 <p class="amp-wp-7d27179">The above command will scan the directory <code>/home/</code> and if infected files are detected then, it will move those files to the directory <code>/home/test/Downloads/</code>.</p>
 <p class="amp-wp-7d27179">Type <code>clamscan -h</code> for more options.</p>
 <p class="amp-wp-7d27179">Some users are not comfortable when using a command line interface. They can install a graphical version through package <code>clamtk</code>. Type the following command –</p>
-<pre>apt install clamtk</pre>
+<pre>sudo apt install clamtk</pre>
 <p class="amp-wp-7d27179">Once the package <code>clamtk</code> is successfully installed you can use the Graphical User Interface for further operations.</p>
 <p class="amp-wp-7d27179">You can also install packages through Synaptic Package Manager or Software Centre. All you have to do is search for the relevant packages mentioned above and perform the install operation. It is worth mentioning here that, you can install the packages through command line interface or you could take the help of a package manager – the outcome will be the same in both the cases.</p>
 	</div>

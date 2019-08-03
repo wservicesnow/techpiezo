@@ -968,7 +968,7 @@ code, kbd, samp, pre {
 		
 		
 		<div class="entry-content">
-			<p style="text-align: justify;">A Live USB stick is the one which contains a bootable Operating System. In this article, we would create a bootable Live USB for a Linux distribution through command-line interface. Before making any changes it is advisable to take a backup of all the data present on our USB stick. The moment we start performing relevant operations, all your data already present on USB stick will be lost. Also, you need to have superuser privileges to make any modifications to the disk. If you don&#8217;t have one, please contact your system administration.</p>
+			<p style="text-align: justify;">A Live USB stick is the one which contains a bootable Operating System. In this article, we would create a bootable Live USB for a Linux distribution through command-line interface. Before making any changes it is advisable to take a backup of all the data present on our USB stick. The moment we start performing relevant operations, all your data already present on USB stick will be lost. Also, you need to have superuser privileges to make any modifications to the disk. If you don&#8217;t have one, please contact your system administrator for assistance.</p>
 <h5>Identify USB stick through lsblk command</h5>
 <p style="text-align: justify;">To print the path of available block devices run the following in terminal,</p>
 <pre>lsblk -p</pre>
@@ -977,17 +977,14 @@ code, kbd, samp, pre {
 ├─/dev/sda1 8:1 0 512M 0 part /boot/efi
 ├─/dev/sda2 8:2 0 4.7G 0 part 
 └─/dev/sda3 8:5 0 414.6G 0 part /
-/dev/sdc 8:32 1 7.2G 0 disk /media/&lt;Home-Directory&gt;/UUID-Device
+/dev/sdc 8:32 1 7.2G 0 disk /media/&lt;username&gt;/UUID-Device
 /dev/sr0 11:0 1 1024M 0 rom</pre>
-<p style="text-align: justify;">From the output, we can identify the USB stick (<code>/dev/sdc</code>) of size 7.2G mounted on <code>/media/&lt;Home-Directory&gt;/UUID-Device</code>. It would be different in your case.</p>
-<p style="text-align: justify;">Next, we will have to login to terminal with superuser privileges by &#8211;</p>
-<pre>sudo -i</pre>
-<p style="text-align: justify;">and provide the password.</p>
+<p style="text-align: justify;">From the output, we can identify the USB stick (<code>/dev/sdc</code>) of size 7.2G mounted on <code>/media/&lt;username&gt;/UUID-Device</code>.</p>
 <h5>Umount device and make USB stick bootable</h5>
-<p style="text-align: justify;">Firstly, we will have to unmount our USB stick with the help of <code>umount</code> command. In our example, it is <code>/dev/sdc</code> &#8211; identify one for your system. And, run the following command in terminal &#8211;</p>
-<pre>umount /dev/sdc</pre>
+<p style="text-align: justify;">Firstly, we will have to unmount our USB stick with the help of <code>umount</code> command. The naming scheme for disk devices is <code>/dev/sdX</code>, where X can be a,b,c, etc. It is order in which our disk device was found. In our case, <code>/dev/sdX</code> is <code>/dev/sdc</code> &#8211; identify one for your system. And, run the following command in terminal &#8211;</p>
+<pre>sudo umount /dev/sdc</pre>
 <p style="text-align: justify;">Locate the directory where you have saved your <code>.iso</code> file and use <code>cp</code> command to copy the file to <code>/dev/sdc</code>. For instance &#8211;</p>
-<pre>cp /path/to/iso/file.iso /dev/sdc</pre>
+<pre>sudo cp /path/to/iso/file.iso /dev/sdc</pre>
 <p style="text-align: justify;">Wait for a few minutes before the file gets copied to your USB stick. Merely copying the <code>.iso</code> file will make your USB stick bootable as the <code>.iso</code> file itself contains all the relevant files needed.</p>
 <p style="text-align: justify;">So far, we have identified our device through <code>lsblk</code> command, unmounted it and made it bootable by using the <code>cp</code> command. Things have been pretty easy till now but, in case we would want the USB stick to act as storage device again. For this purpose, we will have to use the <code>fdisk</code> command which will be discussed next.</p>
 <p style="text-align: justify;">In conclusion, we have made our USB stick bootable. This could be done for any of the Linux distributions, provided we have <code>.iso</code> file available.</p>

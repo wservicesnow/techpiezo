@@ -973,21 +973,19 @@ code, kbd, samp, pre {
 B. Install packages as a group with the help of package tool <strong><em>tasksel</em></strong>.</p>
 <p style="text-align: justify;">Installing packages with the help of package tasksel is usually preferred. Therefore, we are going discuss steps involved in installing Lamp-Server through tasksel.</p>
 <p style="text-align: justify;">The whole installation process is easy to execute and mainly involves five steps that are mentioned below:</p>
-<p style="text-align: justify;">STEP &#8211; 1: Login as superuser by issuing <code>sudo -i</code> command.<br />
+<p style="text-align: justify;">STEP &#8211; 1: Get super user privileges.<br />
 STEP &#8211; 2: Install Lamp-Server.<br />
 STEP &#8211; 3: Create database user and grant privileges.<br />
 STEP &#8211; 4: Install relevant PHP packages and edit few config files.<br />
 STEP &#8211; 5: Install WordPress.</p>
 <h4 style="text-align: center;">How to Install WordPress on Ubuntu 19.04?</h4>
-<p style="text-align: justify;"><span style="font-size: 14pt;"><strong>STEP &#8211; 1:</strong></span> Login as superuser, by typing following command in the terminal.</p>
-<pre>sudo -i</pre>
-<p style="text-align: justify;">Thereafter, you have to provide password for superuser privileges. Move to STEP &#8211; 2 after you have successfully logged in.</p>
+<p style="text-align: justify;"><span style="font-size: 14pt;"><strong>STEP &#8211; 1:</strong></span> Login with superuser privileges, if you don&#8217;t have one then contact System Administrator for assistance.</p>
 <p style="text-align: justify;"><span style="font-size: 14pt;"><strong>STEP &#8211; 2:</strong></span> If you don&#8217;t have the <strong>package tasksel</strong> installed, then install it by issuing following command.</p>
-<pre>apt -y install tasksel</pre>
+<pre>sudo apt install tasksel</pre>
 <p style="text-align: justify;">Then,<strong> install lamp-server</strong> with by typing the following command in terminal &#8211;</p>
-<pre>tasksel install lamp-server</pre>
+<pre>sudo tasksel install lamp-server</pre>
 <p style="text-align: justify;"><span style="font-size: 14pt;"><strong>STEP &#8211; 3:</strong></span> Now, we need to securely install MySQL. So, type &#8211;</p>
-<pre>mysql_secure_installation</pre>
+<pre>sudo mysql_secure_installation</pre>
 <p style="text-align: justify;">It will ask for a password. Remember the password as it will be used while creating a database for WordPress soon. For plugin validation, we need to press NO and for the rests of prompts press YES. Now, we will be create a database for WordPress. So, type &#8211;</p>
 <pre>mysql -u root -p</pre>
 <p style="text-align: justify;">Enter the password that was provided while doing secure installation of MySQL and type the following commands. This is being done to create a database <code>"wp_database"</code> for user <code>"wp_user"</code> and password as <code>"password"</code>. We will next grant privileges to the user.</p>
@@ -997,22 +995,22 @@ GRANT ALL PRIVILEGES ON wp_database.* TO `wp_user`@`localhost`;
 FLUSH PRIVILEGES;
 quit</pre>
 <p style="text-align: justify;"><span style="font-size: 14pt;"><strong>STEP &#8211; 4:</strong></span> You can install following useful PHP extensions by issuing following commands:</p>
-<pre>apt -y install php-curl php-mbstring php-xml</pre>
+<pre>sudo apt install php-curl php-mbstring php-xml</pre>
 <p style="text-align: justify;">Now restart Apache services,</p>
-<pre>systemctl restart apache2</pre>
+<pre>sudo systemctl restart apache2</pre>
 <p style="text-align: justify;">We are doing configuration of hosting one website on our server, so we will edit the default file:</p>
-<pre>nano /etc/apache2/sites-available/000-default.conf</pre>
+<pre>sudo nano /etc/apache2/sites-available/000-default.conf</pre>
 <p style="text-align: justify;">and, add the following code in the above file &#8211; <code>000-default.conf</code>. Then, save and exit.</p>
 <pre>&lt;Directory /var/www/html/&gt;
     AllowOverride All
 &lt;/Directory&gt;</pre>
 <p style="text-align: justify;">We now have enable rewrite module so that we can use Permalink feature of WordPress;</p>
-<pre>a2enmod rewrite</pre>
+<pre>sudo a2enmod rewrite</pre>
 <p style="text-align: justify;">Run the following command to spot any error in syntax.</p>
-<pre>apache2ctl configtest</pre>
+<pre>sudo apache2ctl configtest</pre>
 <p style="text-align: justify;">It should return with the output Syntax OK.</p>
 <p style="text-align: justify;">Lastly, run</p>
-<pre>systemctl restart apache2</pre>
+<pre>sudo systemctl restart apache2</pre>
 <p style="text-align: justify;"><span style="font-size: 14pt;"><strong>STEP &#8211; 5:</strong></span> Download WordPress in <code>/tmp</code> directory with the help of <code>wget</code> command &#8211;</p>
 <pre>cd /tmp
 wget "https://wordpress.org/latest.tar.gz"
@@ -1020,17 +1018,17 @@ tar xzvf latest.tar.gz</pre>
 <p style="text-align: justify;">tar command extracts the downloaded file. Now, we have to copy the <code>wp-config-sample.php</code> file as <code>wp-config.php</code> in the same folder by typing the following command.</p>
 <pre>cp /tmp/wordpress/wp-config-sample.php /tmp/wordpress/wp-config.php</pre>
 <p style="text-align: justify;">Once done, copy the entire WordPress directory to <code>/var/www/html/</code> directory.</p>
-<pre>cp -a /tmp/wordpress/. /var/www/html/</pre>
+<pre>sudo cp -a /tmp/wordpress/. /var/www/html/</pre>
 <p style="text-align: justify;">Next, we provide ownership of the all files copied (also making plugins and themes editable) to the Apache Web Server by using <code>chown</code> command,</p>
-<pre>chown -R www-data:www-data /var/www/html/</pre>
+<pre>sudo chown -R www-data:www-data /var/www/html/</pre>
 <p style="text-align: justify;">Lastly, update details in <code>wp-config.php</code> file &#8211;</p>
-<pre>nano /var/www/html/wp-config.php</pre>
+<pre>sudo nano /var/www/html/wp-config.php</pre>
 <p style="text-align: justify;">and, edit the following entries with relevant ones created in the STEP &#8211; 3.</p>
 <pre>define( 'DB_NAME', 'wp_database' );
 define( 'DB_USER', 'wp_user' );
 define( 'DB_PASSWORD', 'password' );</pre>
 <p style="text-align: justify;">Now, save and exit. Remove <code>index.html</code> file from <code>/var/www/html/</code> directory by issuing following command,</p>
-<pre>rm /var/www/html/index.html</pre>
+<pre>sudo rm /var/www/html/index.html</pre>
 <p style="text-align: justify;">Open your Web Browser and type:</p>
 <pre>http://localhost</pre>
 <p style="text-align: justify;">and, provide relevant details including your username and password for WordPress login. Once, successfully done you will taken to WordPress login prompt.</p>

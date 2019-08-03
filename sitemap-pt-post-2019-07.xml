@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="August 3, 2019 1:30 pm" -->
+<!-- generated-on="August 3, 2019 4:31 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>https://techpiezo.com/linux/create-a-bootable-live-usb-in-ubuntu-through-command-line/</loc>
-		<lastmod>2019-08-01T16:09:57+00:00</lastmod>
+		<lastmod>2019-08-03T15:34:48+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
@@ -20,7 +20,7 @@
 	</url>
 	<url>
 		<loc>https://techpiezo.com/android/install-anbox-and-run-android-apps-in-ubuntu/</loc>
-		<lastmod>2019-07-29T15:05:49+00:00</lastmod>
+		<lastmod>2019-08-03T15:44:45+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
@@ -32,7 +32,7 @@
 	</url>
 	<url>
 		<loc>https://techpiezo.com/android/install-kotlin-command-line-compiler-in-ubuntu/</loc>
-		<lastmod>2019-07-31T19:42:49+00:00</lastmod>
+		<lastmod>2019-08-03T15:52:01+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
@@ -44,7 +44,7 @@
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/switch-back-to-ifupdown-etc-network-interfaces-in-ubuntu/</loc>
-		<lastmod>2019-07-25T20:17:08+00:00</lastmod>
+		<lastmod>2019-08-03T16:00:10+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
@@ -62,7 +62,7 @@
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/install-wine-to-run-windows-applications-in-ubuntu/</loc>
-		<lastmod>2019-07-10T19:13:41+00:00</lastmod>
+		<lastmod>2019-08-03T16:03:12+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
@@ -86,7 +86,7 @@
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/install-remove-deb-package-in-ubuntu-debian/</loc>
-		<lastmod>2019-07-05T17:19:01+00:00</lastmod>
+		<lastmod>2019-08-03T16:04:55+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
@@ -98,8 +98,8 @@
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/managing-users-and-groups-in-ubuntu/</loc>
-		<lastmod>2019-07-05T17:20:29+00:00</lastmod>
+		<lastmod>2019-08-03T16:08:59+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: 9a6e9164db20f22da12152eb3b3389b2; Queries for sitemap: 32; Total queries: 43; Seconds: 0.02; Memory for sitemap: 0MB; Total memory: 2MB -->
+</urlset><!-- Request ID: 6a3fedc4fbf51ea3a756b2da17b6cccf; Queries for sitemap: 32; Total queries: 43; Seconds: 0.02; Memory for sitemap: 0MB; Total memory: 2MB -->

@@ -969,10 +969,8 @@ code, kbd, samp, pre {
 		
 		<div class="entry-content">
 			<p style="text-align: justify;">To make a bootable USB stick to acts as a storage device once again, we will have to use the <code>fdisk</code> command line utility. <code>fdisk</code> command line utility can be used to make modifications in our partition table. Through <code>fdisk</code> utility, we can create, delete, list, print, toggle a bootable flag and many other related operations on our partition table. Furthermore, utility supports GPT, SGI (IRIX), DOS and SUN partition tables.</p>
-<p style="text-align: justify;">To make any modification through <code>fdisk</code> command line utility, we need to have superuser privileges. If you don&#8217;t have one then contact your system administrator.</p>
-<pre>sudo -i</pre>
-<p style="text-align: justify;">and, provide the password.</p>
-<h5>Make changes to the Partition table</h5>
+<p style="text-align: justify;">To make any modification through <code>fdisk</code> command line utility, we need to have superuser privileges. If you don&#8217;t have one then contact your system administrator for assistance.</p>
+<h5 style="text-align: justify;">Make changes to the Partition table</h5>
 <p style="text-align: justify;">Identify you USB device with the help of <code>lsblk</code> command.</p>
 <pre>lsblk -p</pre>
 <p style="text-align: justify;">Output may resemble &#8211;</p>
@@ -981,12 +979,12 @@ code, kbd, samp, pre {
 ├─/dev/sda2 8:2 0 4.7G 0 part 
 └─/dev/sda3 8:5 0 414.6G 0 part /
 <strong>/dev/sdc</strong> 8:32 1 <strong>7.2G</strong> 0 disk 
-└─<strong>/dev/sdc1</strong> 8:33 1 <strong>1.8G</strong> 0 part /media/&lt;Home-Directory&gt;/UUID-Device
+└─<strong>/dev/sdc1</strong> 8:33 1 <strong>1.8G</strong> 0 part /media/&lt;username&gt;/UUID-Device
 /dev/sr0 11:0 1 1024M 0 rom</pre>
-<p style="text-align: justify;">It may be different for your USB device, in our case it is <code>/dev/sdc</code>. Furthermore, <code>/dev/sdc1</code>(of our .iso file size i.e. 1.8G) is the partition already present on our USB stick. The rest of the space i.e. 5.4G is available on our USB stick as free space.</p>
+<p style="text-align: justify;">The naming scheme for disk devices is <code>/dev/sdX</code>, where X can be a,b,c, etc. It is order in which our disk device was found. It may be different for your USB device, in our case it is <code>/dev/sdc</code>. Furthermore, <code>/dev/sdc1</code>(of our .iso file size i.e. 1.8G) is the partition already present on our USB stick. The rest of the space i.e. 5.4G is available on our USB stick as free space.</p>
 <p style="text-align: justify;">So, in order to make our USB stick as a storage device we have to delete the <code>/dev/sdc1</code> partition first. Thereafter, we will be utilizing the free space i.e. 7.2G to create a new partition through <code>fdisk</code> command line utility.</p>
 <p style="text-align: justify;">Thus, to make modifications through <code>fdisk</code> command line utility, run the following in terminal &#8211;</p>
-<pre>fdisk /dev/sdc</pre>
+<pre>sudo fdisk /dev/sdc</pre>
 <p style="text-align: justify;">You can press m for help or more options. Press <code>p</code> to print the partition table  &#8211;</p>
 <p style="text-align: justify;">Command (m for help): p</p>
 <p style="text-align: justify;">it may return &#8211;</p>
@@ -997,7 +995,7 @@ code, kbd, samp, pre {
 <p style="text-align: justify;">it will automatically delete the partition if your partition table contains just one partition. Otherwise, enter the partitions number. The output may resemble &#8211;</p>
 <pre>Selected partition 1
 Partition 1 has been deleted.</pre>
-<p style="text-align: justify;">Now, the free space of size 7.2G(may depend on storage size of your USB stick) is available to us. To create a new partition on available free space, use the option <code>n</code>&#8211;</p>
+<p style="text-align: justify;">Now, the free space of size 7.2G (may depend on storage size of your USB stick) is available to us. To create a new partition on available free space, use the option <code>n</code>&#8211;</p>
 <pre>Command (m for help): n
 Partition type
 p primary (0 primary, 0 extended, 4 free)
@@ -1023,9 +1021,9 @@ Syncing disks.</pre>
 <p style="text-align: justify;">Now, to use USB stick as a storage device we will have to format the <code>/dev/sdc1</code> partition. This can be achieved through <code>mkfs.vfat</code> command line utility. If you want to format it to other types &#8211; read the man pages of <code>mkfs</code> command line utility.</p>
 <pre> man mkfs</pre>
 <p style="text-align: justify;">To format the <code>/dev/sdc1</code> as FAT32 run the following &#8211;</p>
-<pre>mkfs.vfat -F 32 /dev/sdc1</pre>
+<pre>sudo mkfs.vfat -F 32 /dev/sdc1</pre>
 <p style="text-align: justify;">Lastly, use the command <code>partprobe</code> to inform the Operating system for the partition tables changes we just did.</p>
-<pre># partprobe</pre>
+<pre># sudo partprobe</pre>
 <p style="text-align: justify;">In conclusion, we have made our bootable USB stick to act as storage device through <code>fdisk</code> command line utility.</p>
 		</div>
 
