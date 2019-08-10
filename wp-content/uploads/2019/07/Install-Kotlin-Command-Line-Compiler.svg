@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   width="211.40207mm"
+   height="119.0625mm"
+   viewBox="0 0 211.40207 119.0625"
+   version="1.1"
+   id="svg3357">
+  <defs
+     id="defs3351">
+    <linearGradient
+       id="linearGradient6114">
+      <stop
+         style="stop-color:#6f7c91;stop-opacity:1;"
+         offset="0"
+         id="stop6110" />
+      <stop
+         style="stop-color:#162d50;stop-opacity:1"
+         offset="1"
+         id="stop6112" />
+    </linearGradient>
+    <radialGradient
+       xlink:href="#linearGradient6114"
+       id="radialGradient6126"
+       cx="73.77433"
+       cy="66.986313"
+       fx="73.77433"
+       fy="66.986313"
+       r="31.67275"
+       gradientTransform="matrix(3.0071285,0,0,1.83657,-125.12732,-58.151445)"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <metadata
+     id="metadata3354">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <rect
+     ry="0"
+     y="5.3290705e-15"
+     x="0"
+     height="119.0625"
+     width="211.40207"
+     id="rect6108"
+     style="opacity:1;fill:#ff9900;fill-opacity:1;stroke:none;stroke-width:4.38045835;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke markers fill" />
+  <flowRoot
+     transform="matrix(1.1097917,0,0,1.0234149,-1.6397721,-6.8613634)"
+     style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     id="flowRoot874"
+     xml:space="preserve"><flowRegion
+       id="flowRegion876"><rect
+         y="215.22041"
+         x="200.72992"
+         height="44.525547"
+         width="166.0584"
+         id="rect878" /></flowRegion><flowPara
+       id="flowPara880" /></flowRoot>  <flowRoot
+     transform="translate(-1.4775493,-3.9803138)"
+     style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     id="flowRoot1087"
+     xml:space="preserve"><flowRegion
+       id="flowRegion1089"><rect
+         y="161.32643"
+         x="459.55276"
+         height="216.1263"
+         width="296.88928"
+         id="rect1091" /></flowRegion><flowPara
+       id="flowPara1093" /></flowRoot>  <rect
+     ry="1.9520296"
+     y="34.32169"
+     x="24.687136"
+     height="51"
+     width="54.690243"
+     id="rect815"
+     style="opacity:1;fill:#373e48;fill-opacity:1;stroke:none;stroke-width:0.8369382;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill" />
+  <text
+     transform="scale(1.1313787,0.88387734)"
+     id="text1353"
+     y="76.626953"
+     x="33.82122"
+     style="font-style:normal;font-weight:normal;font-size:32.36412048px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.80910301"
+     xml:space="preserve"><tspan
+       style="stroke-width:0.80910301"
+       id="tspan1351"
+       y="76.626953"
+       x="33.82122"><tspan
+         id="tspan1349"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Sansita One';-inkscape-font-specification:'Sansita One';fill:#ffffff;stroke-width:0.80910301"
+         y="76.626953"
+         x="33.82122">K</tspan></tspan></text>
+  <rect
+     ry="1.5446657"
+     y="34.32169"
+     x="24.640451"
+     height="11.408408"
+     width="54.737"
+     id="rect918"
+     style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0.74336612;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill" />
+  <rect
+     ry="1.5446634"
+     y="38.702583"
+     x="39.208973"
+     height="3.0893269"
+     width="25.646559"
+     id="rect817"
+     style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.73087931;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill" />
+  <rect
+     ry="1.0065612"
+     y="70.107803"
+     x="31.815027"
+     height="2.9437194"
+     width="40.434452"
+     id="rect914"
+     style="opacity:1;fill:#aa4400;fill-opacity:1;stroke:none;stroke-width:0.7427516;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill" />
+  <rect
+     style="opacity:1;fill:#aa4400;fill-opacity:1;stroke:none;stroke-width:0.7427516;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+     id="rect916"
+     width="40.434452"
+     height="2.9437194"
+     x="31.815027"
+     y="75.829414"
+     ry="1.0065612" />
+  <g
+     transform="matrix(1.3407053,0,0,2.1503173,204.83855,-324.19089)"
+     id="g1179">
+    <text
+       id="text1163"
+       y="167.79674"
+       x="-11.779041"
+       style="font-style:normal;font-weight:normal;font-size:10.58333397px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#d45500;fill-opacity:1;stroke:#d45500;stroke-width:1.32291663;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       xml:space="preserve"><tspan
+         style="text-align:center;text-anchor:middle;fill:#d45500;stroke:#d45500;stroke-width:1.32291663;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="tspan1153"
+         y="167.79674"
+         x="-51.607185"><tspan
+           id="tspan1151"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Sansita One';-inkscape-font-specification:'Sansita One';text-align:center;text-anchor:middle;fill:#d45500;stroke:#d45500;stroke-width:1.32291663;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+           y="167.79674"
+           x="-51.607185">Install   Kotlin</tspan></tspan><tspan
+         style="text-align:center;text-anchor:middle;fill:#d45500;stroke:#d45500;stroke-width:1.32291663;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="tspan1157"
+         y="181.22462"
+         x="-51.607185"><tspan
+           id="tspan1155"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Sansita One';-inkscape-font-specification:'Sansita One';text-align:center;text-anchor:middle;fill:#d45500;stroke:#d45500;stroke-width:1.32291663;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+           y="181.22462"
+           x="-51.607185">Command   Line</tspan></tspan><tspan
+         style="text-align:center;text-anchor:middle;fill:#d45500;stroke:#d45500;stroke-width:1.32291663;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="tspan1161"
+         y="194.65248"
+         x="-51.607185"><tspan
+           id="tspan1159"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Sansita One';-inkscape-font-specification:'Sansita One';text-align:center;text-anchor:middle;fill:#d45500;stroke:#d45500;stroke-width:1.32291663;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+           y="194.65248"
+           x="-51.607185">Compiler</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333397px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458335"
+       x="-11.779041"
+       y="167.79674"
+       id="text1149"><tspan
+         x="-51.607185"
+         y="167.79674"
+         id="tspan1137"
+         style="text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458335"><tspan
+           x="-51.607185"
+           y="167.79674"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Sansita One';-inkscape-font-specification:'Sansita One';text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458335"
+           id="tspan1133">Install   Kotlin</tspan></tspan><tspan
+         x="-51.607185"
+         y="181.22462"
+         id="tspan1143"
+         style="text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458335"><tspan
+           x="-51.607185"
+           y="181.22462"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Sansita One';-inkscape-font-specification:'Sansita One';text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458335"
+           id="tspan1139">Command   Line</tspan></tspan><tspan
+         x="-51.607185"
+         y="194.65248"
+         id="tspan1147"
+         style="text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458335"><tspan
+           x="-51.607185"
+           y="194.65248"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Sansita One';-inkscape-font-specification:'Sansita One';text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458335"
+           id="tspan1145">Compiler</tspan></tspan></text>
+  </g>
+</svg>

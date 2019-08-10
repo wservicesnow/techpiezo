@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   id="svg3357"
+   version="1.1"
+   viewBox="0 0 211.40208 119.0625"
+   height="119.0625mm"
+   width="211.40208mm">
+  <defs
+     id="defs3351">
+    <linearGradient
+       osb:paint="solid"
+       id="linearGradient4115">
+      <stop
+         id="stop4113"
+         offset="0"
+         style="stop-color:#000000;stop-opacity:1;" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient6114">
+      <stop
+         id="stop6110"
+         offset="0"
+         style="stop-color:#6f7c91;stop-opacity:1;" />
+      <stop
+         id="stop6112"
+         offset="1"
+         style="stop-color:#162d50;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(3.0071285,0,0,1.83657,-125.12732,-58.151445)"
+       r="31.67275"
+       fy="66.986313"
+       fx="73.77433"
+       cy="66.986313"
+       cx="73.77433"
+       id="radialGradient6126"
+       xlink:href="#linearGradient6114" />
+    <filter
+       style="color-interpolation-filters:sRGB"
+       id="filter1675"
+       x="-0.3948538"
+       width="1.7897075"
+       y="-0.41694748"
+       height="1.833895">
+      <feGaussianBlur
+         stdDeviation="4.84354"
+         id="feGaussianBlur1677" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       id="filter1819"
+       x="-0.53712809"
+       width="2.0742562"
+       y="-0.52150255"
+       height="2.043005">
+      <feGaussianBlur
+         stdDeviation="4.78044"
+         id="feGaussianBlur1821" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       id="filter1839"
+       x="-0.81550115"
+       width="2.6310022"
+       y="-0.44667512"
+       height="1.8933502">
+      <feGaussianBlur
+         stdDeviation="4.75709"
+         id="feGaussianBlur1841" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       id="filter1859"
+       x="-0.92055434"
+       width="2.8411088"
+       y="-0.38688162"
+       height="1.7737632">
+      <feGaussianBlur
+         stdDeviation="4.77154"
+         id="feGaussianBlur1861" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       id="filter1879"
+       x="-0.92952859"
+       width="2.8590572"
+       y="-0.38172641"
+       height="1.7634528">
+      <feGaussianBlur
+         stdDeviation="4.77158"
+         id="feGaussianBlur1881" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       id="filter1899"
+       x="-0.50136924"
+       width="2.0027385"
+       y="-0.521424"
+       height="2.0428481">
+      <feGaussianBlur
+         stdDeviation="4.77972"
+         id="feGaussianBlur1901" />
+    </filter>
+    <filter
+       height="1.5038185"
+       y="-0.25190923"
+       width="2.1987953"
+       x="-0.5993976"
+       id="filter1132"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur1134"
+         stdDeviation="0.82202809" />
+    </filter>
+    <filter
+       height="1.6778646"
+       y="-0.33893231"
+       width="1.6483915"
+       x="-0.32419577"
+       id="filter1136"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur1138"
+         stdDeviation="0.82202809" />
+    </filter>
+    <filter
+       height="1.6778646"
+       y="-0.33893231"
+       width="1.6916978"
+       x="-0.34584892"
+       id="filter1140"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur1142"
+         stdDeviation="0.82202809" />
+    </filter>
+    <filter
+       height="1.5326051"
+       y="-0.2663025"
+       width="1.5474675"
+       x="-0.27373376"
+       id="filter1144"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur1146"
+         stdDeviation="0.82202809" />
+    </filter>
+    <filter
+       height="1.6778646"
+       y="-0.33893231"
+       width="1.7047738"
+       x="-0.35238692"
+       id="filter1148"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur1150"
+         stdDeviation="0.82202809" />
+    </filter>
+    <filter
+       height="1.6778646"
+       y="-0.33893231"
+       width="1.6483918"
+       x="-0.32419592"
+       id="filter1152"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur1154"
+         stdDeviation="0.82202809" />
+    </filter>
+    <filter
+       height="1.6778646"
+       y="-0.33893231"
+       width="1.6916981"
+       x="-0.34584904"
+       id="filter1156"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur1158"
+         stdDeviation="0.82202809" />
+    </filter>
+    <filter
+       height="3.4367518"
+       y="-1.2183759"
+       width="2.1723998"
+       x="-0.58619988"
+       id="filter1160"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur1162"
+         stdDeviation="0.82202809" />
+    </filter>
+    <filter
+       height="1.6778646"
+       y="-0.33893231"
+       width="1.7734967"
+       x="-0.38674834"
+       id="filter1164"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur1166"
+         stdDeviation="0.82202809" />
+    </filter>
+    <filter
+       height="1.6778646"
+       y="-0.33893231"
+       width="1.7456508"
+       x="-0.37282538"
+       id="filter1168"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur1170"
+         stdDeviation="0.82202809" />
+    </filter>
+    <filter
+       height="1.5038185"
+       y="-0.25190923"
+       width="2.1987953"
+       x="-0.5993976"
+       id="filter1172"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur1174"
+         stdDeviation="0.82202809" />
+    </filter>
+    <filter
+       height="1.5038165"
+       y="-0.25190827"
+       width="1.6575402"
+       x="-0.3287701"
+       id="filter1176"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur1178"
+         stdDeviation="0.82202809" />
+    </filter>
+    <filter
+       height="1.6778646"
+       y="-0.33893231"
+       width="1.6483918"
+       x="-0.32419592"
+       id="filter1180"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur1182"
+         stdDeviation="0.82202809" />
+    </filter>
+    <filter
+       height="1.4971005"
+       y="-0.24855024"
+       width="2.2104719"
+       x="-0.60523587"
+       id="filter1184"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur1186"
+         stdDeviation="0.82202809" />
+    </filter>
+    <filter
+       height="1.6778646"
+       y="-0.33893231"
+       width="1.7047738"
+       x="-0.35238692"
+       id="filter1188"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur1190"
+         stdDeviation="0.82202809" />
+    </filter>
+    <filter
+       height="1.6778646"
+       y="-0.33893231"
+       width="1.6483918"
+       x="-0.32419589"
+       id="filter1192"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur1194"
+         stdDeviation="0.82202809" />
+    </filter>
+    <filter
+       height="1.5482723"
+       y="-0.27413616"
+       width="1.5946178"
+       x="-0.29730889"
+       id="filter1196"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur1198"
+         stdDeviation="0.82202809" />
+    </filter>
+    <filter
+       height="1.6778635"
+       y="-0.33893174"
+       width="1.7456516"
+       x="-0.3728258"
+       id="filter1200"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur1202"
+         stdDeviation="0.82202809" />
+    </filter>
+    <filter
+       height="1.6778635"
+       y="-0.33893174"
+       width="1.7047741"
+       x="-0.3523871"
+       id="filter1204"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur1206"
+         stdDeviation="0.82202809" />
+    </filter>
+    <filter
+       height="1.6778635"
+       y="-0.33893174"
+       width="1.6483915"
+       x="-0.32419577"
+       id="filter1208"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur1210"
+         stdDeviation="0.82202809" />
+    </filter>
+    <filter
+       height="1.5038178"
+       y="-0.2519089"
+       width="2.1987953"
+       x="-0.5993976"
+       id="filter1212"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur1214"
+         stdDeviation="0.82202809" />
+    </filter>
+    <filter
+       height="1.6778635"
+       y="-0.33893174"
+       width="1.7593181"
+       x="-0.37965903"
+       id="filter1216"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur1218"
+         stdDeviation="0.82202809" />
+    </filter>
+    <filter
+       height="1.6778635"
+       y="-0.33893174"
+       width="1.7456506"
+       x="-0.37282532"
+       id="filter1220"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur1222"
+         stdDeviation="0.82202809" />
+    </filter>
+    <filter
+       height="1.5458641"
+       y="-0.27293205"
+       width="1.5666037"
+       x="-0.28330186"
+       id="filter1224"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur1226"
+         stdDeviation="0.82202809" />
+    </filter>
+  </defs>
+  <metadata
+     id="metadata3354">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <flowRoot
+     xml:space="preserve"
+     id="flowRoot874"
+     style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     transform="matrix(1.1097917,0,0,1.0234149,-1.6397722,-7.1516095)"><flowRegion
+       id="flowRegion876"><rect
+         id="rect878"
+         width="166.0584"
+         height="44.525547"
+         x="200.72992"
+         y="215.22041" /></flowRegion><flowPara
+       id="flowPara880" /></flowRoot>  <flowRoot
+     xml:space="preserve"
+     id="flowRoot1713"
+     style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     transform="translate(-1.4775493,-4.2705599)"><flowRegion
+       id="flowRegion1715"><rect
+         id="rect1717"
+         width="429.74008"
+         height="136.07001"
+         x="98.177094"
+         y="580.82324" /></flowRegion><flowPara
+       id="flowPara1719" /></flowRoot>  <rect
+     style="opacity:1;fill:#555753;fill-opacity:1;stroke:none;stroke-width:4.38045835;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke markers fill"
+     id="rect6108"
+     width="211.40208"
+     height="119.0625"
+     x="0"
+     y="2.6645353e-15"
+     ry="0" />
+  <rect
+     style="opacity:1;fill:#373e48;fill-opacity:1;stroke:none;stroke-width:0.8369382;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+     id="rect815"
+     width="54.690243"
+     height="51"
+     x="24.687136"
+     y="34.031437"
+     ry="1.9520296" />
+  <rect
+     style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0.74336612;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+     id="rect918"
+     width="54.737"
+     height="11.408408"
+     x="24.640451"
+     y="34.031437"
+     ry="1.5446657" />
+  <rect
+     style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.73087931;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+     id="rect817"
+     width="25.646559"
+     height="3.0893269"
+     x="39.208973"
+     y="38.412331"
+     ry="1.5446634" />
+  <rect
+     style="opacity:1;fill:#aa4400;fill-opacity:1;stroke:none;stroke-width:0.7427516;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+     id="rect914"
+     width="40.434452"
+     height="2.9437194"
+     x="31.815027"
+     y="69.817558"
+     ry="1.0065612" />
+  <rect
+     ry="1.0065612"
+     y="75.539169"
+     x="31.815027"
+     height="2.9437194"
+     width="40.434452"
+     id="rect916"
+     style="opacity:1;fill:#aa4400;fill-opacity:1;stroke:none;stroke-width:0.7427516;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:32.36412048px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.80910295"
+     x="33.821224"
+     y="76.188156"
+     id="text1353"
+     transform="scale(1.1313787,0.88387734)"><tspan
+       x="33.821224"
+       y="76.188156"
+       id="tspan1351"
+       style="stroke-width:0.80910295"><tspan
+         x="33.821224"
+         y="76.188156"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Sansita One';-inkscape-font-specification:'Sansita One';fill:#ffffff;stroke-width:0.80910295"
+         id="tspan1349">K</tspan></tspan></text>
+  <g
+     transform="matrix(2.0448084,0,0,1.8697784,208.37483,-249.35582)"
+     id="g964">
+    <text
+       id="text948"
+       y="153.91876"
+       x="-8.8273687"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#373e48;fill-opacity:1;stroke:#373e48;stroke-width:1.32291663;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Sansita One';-inkscape-font-specification:'Sansita One';text-align:center;text-anchor:middle;fill:#373e48;stroke:#373e48;stroke-width:1.32291663;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="tspan938"
+         y="153.91876"
+         x="-35.440731"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Sansita One';-inkscape-font-specification:'Sansita One';text-align:center;text-anchor:middle;fill:#373e48;stroke:#373e48;stroke-width:1.32291663;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+           id="tspan936"
+           y="153.91876"
+           x="-35.440731">var  &amp;  val</tspan></tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Sansita One';-inkscape-font-specification:'Sansita One';text-align:center;text-anchor:middle;fill:#373e48;stroke:#373e48;stroke-width:1.32291663;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="tspan942"
+         y="167.14793"
+         x="-35.440731"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Sansita One';-inkscape-font-specification:'Sansita One';text-align:center;text-anchor:middle;fill:#373e48;stroke:#373e48;stroke-width:1.32291663;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+           id="tspan940"
+           y="167.14793"
+           x="-35.440731">in</tspan></tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Sansita One';-inkscape-font-specification:'Sansita One';text-align:center;text-anchor:middle;fill:#373e48;stroke:#373e48;stroke-width:1.32291663;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="tspan946"
+         y="180.37711"
+         x="-35.440731"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Sansita One';-inkscape-font-specification:'Sansita One';text-align:center;text-anchor:middle;fill:#373e48;stroke:#373e48;stroke-width:1.32291663;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+           id="tspan944"
+           y="180.37711"
+           x="-35.440731">Kotlin</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="-8.8273687"
+       y="153.91876"
+       id="text934"><tspan
+         x="-35.440731"
+         y="153.91876"
+         id="tspan922"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Sansita One';-inkscape-font-specification:'Sansita One';text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458332"><tspan
+           x="-35.440731"
+           y="153.91876"
+           id="tspan918"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Sansita One';-inkscape-font-specification:'Sansita One';text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458332">var  &amp;  val</tspan></tspan><tspan
+         x="-35.440731"
+         y="167.14793"
+         id="tspan928"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Sansita One';-inkscape-font-specification:'Sansita One';text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458332"><tspan
+           x="-35.440731"
+           y="167.14793"
+           id="tspan924"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Sansita One';-inkscape-font-specification:'Sansita One';text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458332">in</tspan></tspan><tspan
+         x="-35.440731"
+         y="180.37711"
+         id="tspan932"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Sansita One';-inkscape-font-specification:'Sansita One';text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458332"><tspan
+           x="-35.440731"
+           y="180.37711"
+           id="tspan930"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Sansita One';-inkscape-font-specification:'Sansita One';text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458332">Kotlin</tspan></tspan></text>
+  </g>
+</svg>

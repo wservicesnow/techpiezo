@@ -1,0 +1,1244 @@
+
+<!doctype html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+
+	<title>[Fixed] Install HPLIP 3.19.1 in Ubuntu 19.04 - TechPiezo</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v11.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="HP Linux Imaging and Printing (HPLIP) package in Ubuntu supports HP&#039;s printing and scanning devices. It can be installed through command line interface."/>
+<link rel="canonical" href="https://techpiezo.com/linux/fixed-install-hplip-3-19-1-in-ubuntu-19-04/" />
+<!-- / Yoast SEO plugin. -->
+
+<style id="ct-main-styles-inline-css" type="text/css">:root {
+    --passepartoutSize: 10px;
+    --selectDropdownItemActiveColor: var(--paletteColor1);
+    --selectDropdownTextActiveColor: #ffffff;
+    --selectDropdownTextInitialColor: var(--paletteColor3);
+    --radioCheckboxInitialColor: #e8ebf0;
+    --formInputHeight: 45px;
+    --formFontSize: 15px;
+    --formTextInitialColor: var(--paletteColor3);
+    --formBorderInitialColor: rgba(232, 235, 240, 1);
+    --copyrightSpacing: 25px;
+    --copyrightText: var(--paletteColor3);
+    --footerPrimaryBackground: #eef0f4;
+    --widgetsAreaDivider: 1px dashed #dddddd;
+    --singleAuthorBoxBorder: #e8ebf0;
+    --singleAuthorBoxSpacing: 40px;
+    --singleContentBoxedSpacing: 30px;
+    --shareItemsBorder: #e0e5eb;
+    --topShareBoxSpacing: 70px;
+    --relatedPostsMetaColor: #667380;
+    --relatedPostsContainerSpacing: 15px;
+    --paginationAccentHoverColor: var(--paletteColor2);
+    --paginationFontColor: var(--paletteColor3);
+    --sidebarInnerSpacing: 15px;
+    --sidebarDividerSize: 1px;
+    --sidebarBorderSize: 0px;
+    --sidebarBackgroundColor: var(--paletteColor5);
+    --sidebarGap: 3%;
+    --sidebarWidth: 28%;
+    --narrowContainerWidth: 60%;
+    --maxSiteWidth: 1290px;
+    --buttonInitialColor: var(--paletteColor2);
+    --linkInitialColor: var(--paletteColor4);
+    --paletteColor5: #ffffff;
+    --paletteColor3: #222222;
+    --paletteColor1: #108ae8;
+    --headerTopBorder: 1px dashed rgba(44,62,80,0.2);
+    --offCanvasWidth: 280px;
+    --topBarHeight: 0px;
+    --dropDownBackground: var(--paletteColor5);
+    --dropdownMenuWidth: 150px;
+    --navSectionHeight: 60px;
+    --transparentHeaderHoverFontColor: var(--paletteColor1);
+    --headerHeight: 50px;
+    --headerLogoContainerHeight: 110px;
+    --logoMaxHeight: 50px;
+    --cardSpacing: 35px;
+    --cardBackground: #ffffff;
+    --pageTitleFontHoverColor: var(--paletteColor1);
+    --letterSpacing: 0em;
+    --fontSize: 18px;
+    --textTransform: none;
+    --fontWeight: 400;
+    --fontFamily: Ubuntu;
+    --fontStyle: normal;
+    --textDecoration: none;
+    --lineHeight: 1.65;
+    --pageTitleFontInitialColor: var(--paletteColor4);
+    --cardExcerptSize: 16px;
+    --cardsGap: 30px;
+    --transparentHeaderBackground: rgba(255, 255, 255, 0.1);
+    --transparentLogoMaxHeight: 50px;
+    --headerShadow: rgba(210,213,218,0.15);
+    --transparentHeaderInitialFontColor: #ffffff;
+    --dropdownTopOffset: 20px;
+    --dropDownDivider: none;
+    --topBarBackground: #29333d;
+    --mobileHeaderHeight: 70px;
+    --headerButtonRadius: 5px;
+    --headerBottomBorder: none;
+    --paletteColor2: #215d9c;
+    --paletteColor4: #1c1c1c;
+    --fontColor: var(--paletteColor3);
+    --linkHoverColor: var(--paletteColor1);
+    --buttonHoverColor: var(--paletteColor3);
+    --contentAreaSpacing: 35px;
+    --wideOffset: 130px;
+    --sidebarWidthNoUnit: 28;
+    --sidebarOffset: 50px;
+    --sidebarBorderColor: rgba(224, 229, 235, 0.8);
+    --sidebarDividerColor: rgba(224, 229, 235, 0.8);
+    --sidebarWidgetsSpacing: 60px;
+    --paginationSpacing: 80px;
+    --paginationAccentInitialColor: var(--paletteColor1);
+    --paginationDivider: none;
+    --relatedPostsLabelColor: var(--paletteColor4);
+    --postNavSpacing: 50px;
+    --bottomShareBoxSpacing: 70px;
+    --shareItemsIcon: #ffffff;
+    --pageContentBoxedSpacing: 40px;
+    --singleAuthorBoxBackground: #ffffff;
+    --singleAuthorBoxShadow: rgba(210, 213, 218, 0.4);
+    --widgetAreaSpacing: 70px;
+    --footerPrimarySpacing: 30px;
+    --copyrightBackground: #eef0f4;
+    --formLabelColor: var(--paletteColor3);
+    --formBorderFocusColor: var(--paletteColor1);
+    --formTextFocusColor: var(--paletteColor3);
+    --formBorderSize: 1px;
+    --formTextAreaHeight: 170px;
+    --radioCheckboxAccentColor: var(--paletteColor1);
+    --selectDropdownTextHoverColor: var(--paletteColor3);
+    --selectDropdownItemHoverColor: rgba(232, 235, 240, 0.4);
+    --selectDropdownBackground: #ffffff;
+    --passepartoutColor: var(--paletteColor1);
+}
+
+h1 {
+    --letterSpacing: 0em;
+    --fontSize: 40px;
+    --textTransform: none;
+    --fontWeight: 700;
+    --fontStyle: normal;
+    --textDecoration: none;
+    --lineHeight: 1.5;
+    --fontColor: var(--paletteColor4);
+}
+
+h2 {
+    --letterSpacing: 0em;
+    --fontSize: 35px;
+    --textTransform: none;
+    --fontWeight: 700;
+    --fontStyle: normal;
+    --textDecoration: none;
+    --lineHeight: 1.5;
+    --fontColor: var(--paletteColor4);
+}
+
+h3 {
+    --letterSpacing: 0em;
+    --fontSize: 30px;
+    --textTransform: none;
+    --fontWeight: 700;
+    --fontStyle: normal;
+    --textDecoration: none;
+    --lineHeight: 1.5;
+    --fontColor: var(--paletteColor4);
+}
+
+h4 {
+    --letterSpacing: 0em;
+    --fontSize: 25px;
+    --textTransform: none;
+    --fontWeight: 700;
+    --fontStyle: normal;
+    --textDecoration: none;
+    --lineHeight: 1.5;
+    --fontColor: var(--paletteColor4);
+}
+
+h5 {
+    --letterSpacing: 0em;
+    --fontSize: 20px;
+    --textTransform: none;
+    --fontWeight: 700;
+    --fontStyle: normal;
+    --textDecoration: none;
+    --lineHeight: 1.5;
+    --fontColor: var(--paletteColor4);
+}
+
+h6 {
+    --letterSpacing: 0em;
+    --fontSize: 16px;
+    --textTransform: none;
+    --fontWeight: 700;
+    --fontStyle: normal;
+    --textDecoration: none;
+    --lineHeight: 1.5;
+    --fontColor: var(--paletteColor4);
+}
+
+.entry-content blockquote p, .ct-quote-widget blockquote p {
+    --lineHeight: 1.65;
+    --textDecoration: none;
+    --fontStyle: normal;
+    --fontFamily: Georgia;
+    --fontWeight: 600;
+    --textTransform: none;
+    --fontSize: 25px;
+    --letterSpacing: 0em;
+}
+
+code, kbd, samp, pre {
+    --lineHeight: 1.65;
+    --textDecoration: none;
+    --fontFamily: monospace;
+    --textTransform: none;
+    --fontSize: 16px;
+    --letterSpacing: 0em;
+}
+
+.site-title {
+    --linkInitialColor: #2c3e50;
+    --lineHeight: 1.65;
+    --textDecoration: none;
+    --fontStyle: normal;
+    --fontWeight: 700;
+    --textTransform: none;
+    --fontSize: 22px;
+    --letterSpacing: 0em;
+    --linkHoverColor: var(--paletteColor1);
+}
+
+.primary-menu > li {
+    --lineHeight: 1.3;
+    --textDecoration: none;
+    --fontStyle: normal;
+    --fontWeight: 700;
+    --textTransform: uppercase;
+    --fontSize: 14px;
+    --letterSpacing: 0em;
+}
+
+.primary-menu .sub-menu li {
+    --lineHeight: 1.3;
+    --textDecoration: none;
+    --fontStyle: normal;
+    --fontWeight: 700;
+    --textTransform: uppercase;
+    --fontSize: 12px;
+    --letterSpacing: 0em;
+}
+
+#mobile-menu .mobile-menu {
+    --lineHeight: 1.65;
+    --textDecoration: none;
+    --fontStyle: normal;
+    --fontWeight: 700;
+    --textTransform: none;
+    --fontSize: 30px;
+    --letterSpacing: 0em;
+}
+
+.ct-sidebar .widget-title {
+    --lineHeight: 1.65;
+    --textDecoration: none;
+    --textTransform: none;
+    --fontSize: 18px;
+    --letterSpacing: 0em;
+}
+
+.ct-sidebar .ct-post-title {
+    --lineHeight: 1.4;
+    --textDecoration: none;
+    --fontStyle: normal;
+    --fontWeight: 500;
+    --textTransform: none;
+    --fontSize: 15px;
+    --letterSpacing: 0em;
+}
+
+.product_title {
+    --lineHeight: 1.65;
+    --textDecoration: none;
+    --textTransform: none;
+    --fontSize: 30px;
+    --letterSpacing: 0em;
+}
+
+.woocommerce-loop-product__title {
+    --lineHeight: 1.65;
+    --textDecoration: none;
+    --fontStyle: normal;
+    --fontWeight: 500;
+    --textTransform: none;
+    --fontSize: 17px;
+    --letterSpacing: 0em;
+}
+
+.site-description {
+    --letterSpacing: 0em;
+    --fontSize: 13px;
+    --textTransform: none;
+    --fontWeight: 500;
+    --fontStyle: normal;
+    --textDecoration: none;
+    --lineHeight: 1.65;
+    --fontColor: var(--paletteColor3);
+}
+
+.site-main {
+    --backgroundImage: url(https://techpiezo.com/wp-content/uploads/2019/08/site-background.svg);
+    --backgroundAttachment: fixed;
+    --backgroundPosition: 50% 50%;
+    --backgroundSize: auto;
+    --backgroundRepeat: repeat-y;
+    --backgroundColor: #535d6c;
+}
+
+.header-desktop {
+    --backgroundColor: #ffffff;
+    --backgroundImage: none;
+    --menuItemsSpacing: 25px;
+}
+
+.single .site-main {
+    --backgroundImage: url(https://techpiezo.com/wp-content/uploads/2019/08/page-background.svg);
+    --backgroundAttachment: fixed;
+    --backgroundPosition: 50% 50%;
+    --backgroundSize: auto;
+    --backgroundRepeat: repeat-y;
+    --backgroundColor: #ffffff;
+}
+
+.ct-related-posts {
+    --linkInitialColor: var(--paletteColor3);
+    --backgroundImage: none;
+    --backgroundColor: #eff1f5;
+    --linkHoverColor: var(--paletteColor1);
+}
+
+.footer-widgets-area {
+    --backgroundImage: none;
+    --backgroundColor: #f4f5f8;
+}
+
+.entry-header .page-title {
+    --lineHeight: 1.3;
+    --textDecoration: none;
+    --fontStyle: normal;
+    --fontWeight: 700;
+    --textTransform: none;
+    --fontSize: 27px;
+    --letterSpacing: 0em;
+}
+
+.entry-card .entry-title {
+    --lineHeight: 1.3;
+    --textDecoration: none;
+    --fontStyle: normal;
+    --fontWeight: 700;
+    --textTransform: none;
+    --fontSize: 20px;
+    --letterSpacing: 0em;
+}
+
+.entry-title {
+    --linkInitialColor: var(--paletteColor4);
+    --linkHoverColor: var(--paletteColor1);
+}
+
+.entry-excerpt {
+    --cardExcerptColor: var(--fontColor);
+}
+
+.entry-card {
+    --metaFontSize: 12px;
+}
+
+.entry-meta {
+    --linkInitialColor: var(--fontColor);
+    --linkHoverColor: var(--paletteColor1);
+}
+
+.entry-button {
+    --linkInitialColor: #ffffff;
+    --linkHoverColor: #ffffff;
+}
+
+.site-header {
+    --menuActiveColor: #ffffff;
+    --menuInitialColor: var(--paletteColor3);
+    --menuHoverColor: var(--paletteColor1);
+}
+
+.primary-menu .sub-menu {
+    --menuInitialColor: var(--paletteColor4);
+    --menuHoverColor: var(--paletteColor1);
+}
+
+.header-top-bar {
+    --linkInitialColor: rgba(255, 255, 255, 0.8);
+    --linkHoverColor: var(--paletteColor1);
+}
+
+#mobile-menu {
+    --menuHoverColor: var(--paletteColor1);
+    --menuInitialColor: var(--paletteColor4);
+    --modalBackground: #ffffff;
+}
+
+#mobile-menu .custom-logo {
+    --logoMaxHeight: 50px;
+}
+
+#search-modal {
+    --linkInitialColor: var(--paletteColor5);
+    --modalBackground: rgba(18, 21, 25, 0.98);
+    --linkHoverColor: var(--paletteColor1);
+}
+
+.ct-header-cart {
+    --cartBadgeBackground: var(--paletteColor1);
+    --cartBadgeText: #ffffff;
+}
+
+.ct-cart-content {
+    --linkHoverColor: var(--paletteColor1);
+    --linkInitialColor: #ffffff;
+    --cartDropDownBackground: #29333C;
+}
+
+.ct-header-button {
+    --buttonInitialColor: var(--paletteColor1);
+    --linkInitialColor: #ffffff;
+    --linkHoverColor: #ffffff;
+    --buttonHoverColor: var(--paletteColor2);
+}
+
+.share-box[data-type="type-1"] {
+    --shareItemsIconInitial: var(--paletteColor3);
+    --shareItemsIconHover: var(--paletteColor1);
+}
+
+.share-box[data-type="type-2"] {
+    --shareBoxBackgroundInitial: var(--paletteColor1);
+    --shareBoxBackgroundHover: var(--paletteColor2);
+}
+
+.ct-back-to-top {
+    --buttonInitialColor: var(--paletteColor3);
+    --linkInitialColor: #ffffff;
+    --linkHoverColor: #ffffff;
+    --buttonHoverColor: var(--paletteColor4);
+}
+
+.header-mobile,
+.post[data-content="boxed"],
+.page[data-content="boxed"] {
+    --backgroundImage: none;
+    --backgroundColor: #ffffff;
+}
+
+.single .ct-comments-container,
+.page .ct-comments-container {
+    --backgroundImage: none;
+    --backgroundColor: #f8f9fb;
+}
+
+.header-top-bar-menu,
+.footer-menu {
+    --menuItemsSpacing: 20px;
+}
+
+.mobile-menu-toggle,
+.search-button,
+.ct-cart-icon,
+.footer-primary-area {
+    --linkInitialColor: var(--paletteColor3);
+    --linkHoverColor: var(--paletteColor1);
+}
+
+.ct-sidebar,
+.footer-widgets {
+    --linkInitialColor: var(--paletteColor3);
+    --widgetsTitleColor: var(--paletteColor4);
+    --widgetsFontColor: var(--paletteColor3);
+    --linkHoverColor: var(--paletteColor1);
+}</style>
+<style id="ct-main-styles-tablet-inline-css" type="text/css" media="(max-width: 1000px) and (min-width: 690px)">:root {
+    --copyrightSpacing: 25px;
+    --widgetAreaSpacing: 50px;
+    --pageContentBoxedSpacing: 40px;
+    --bottomShareBoxSpacing: 50px;
+    --postNavSpacing: 60px;
+    --paginationSpacing: 60px;
+    --sidebarWidgetsSpacing: 40px;
+    --offCanvasWidth: 280px;
+    --topBarHeight: 0px;
+    --headerHeight: 35px;
+    --transparentLogoMaxHeight: 50px;
+    --cardSpacing: 35px;
+    --cardExcerptSize: 16px;
+    --lineHeight: 1.65;
+    --fontSize: 18px;
+    --letterSpacing: 0em;
+    --cardsGap: 30px;
+    --logoMaxHeight: 50px;
+    --headerLogoContainerHeight: 35px;
+    --navSectionHeight: 15px;
+    --mobileHeaderHeight: 40px;
+    --contentAreaSpacing: 25px;
+    --sidebarInnerSpacing: 15px;
+    --relatedPostsContainerSpacing: 50px;
+    --topShareBoxSpacing: 50px;
+    --singleContentBoxedSpacing: 30px;
+    --singleAuthorBoxSpacing: 40px;
+    --footerPrimarySpacing: 30px;
+    --passepartoutSize: 10px;
+}
+
+h1 {
+    --lineHeight: 1.5;
+    --fontSize: 40px;
+    --letterSpacing: 0em;
+}
+
+h2 {
+    --lineHeight: 1.5;
+    --fontSize: 35px;
+    --letterSpacing: 0em;
+}
+
+h3 {
+    --lineHeight: 1.5;
+    --fontSize: 30px;
+    --letterSpacing: 0em;
+}
+
+h4 {
+    --lineHeight: 1.5;
+    --fontSize: 25px;
+    --letterSpacing: 0em;
+}
+
+h5 {
+    --lineHeight: 1.5;
+    --fontSize: 20px;
+    --letterSpacing: 0em;
+}
+
+h6 {
+    --lineHeight: 1.5;
+    --fontSize: 16px;
+    --letterSpacing: 0em;
+}
+
+.entry-content blockquote p, .ct-quote-widget blockquote p {
+    --lineHeight: 1.65;
+    --fontSize: 25px;
+    --letterSpacing: 0em;
+}
+
+code, kbd, samp, pre {
+    --lineHeight: 1.65;
+    --fontSize: 16px;
+    --letterSpacing: 0em;
+}
+
+.site-title {
+    --lineHeight: 1.65;
+    --fontSize: 22px;
+    --letterSpacing: 0em;
+}
+
+.primary-menu > li {
+    --lineHeight: 1.3;
+    --fontSize: 14px;
+    --letterSpacing: 0em;
+}
+
+.primary-menu .sub-menu li {
+    --lineHeight: 1.3;
+    --fontSize: 12px;
+    --letterSpacing: 0em;
+}
+
+.ct-sidebar .widget-title {
+    --lineHeight: 1.65;
+    --fontSize: 18px;
+    --letterSpacing: 0em;
+}
+
+.ct-sidebar .ct-post-title {
+    --lineHeight: 1.4;
+    --fontSize: 15px;
+    --letterSpacing: 0em;
+}
+
+.woocommerce-loop-product__title {
+    --lineHeight: 1.65;
+    --fontSize: 17px;
+    --letterSpacing: 0em;
+}
+
+.site-description {
+    --lineHeight: 1.65;
+    --fontSize: 13px;
+    --letterSpacing: 0em;
+}
+
+.entry-header .page-title {
+    --lineHeight: 1.3;
+    --fontSize: 25px;
+    --letterSpacing: 0em;
+}
+
+.entry-card .entry-title {
+    --lineHeight: 1.3;
+    --fontSize: 20px;
+    --letterSpacing: 0em;
+}
+
+.entry-card {
+    --metaFontSize: 12px;
+}
+
+#mobile-menu .mobile-menu,
+.product_title {
+    --lineHeight: 1.65;
+    --fontSize: 30px;
+    --letterSpacing: 0em;
+}
+
+.header-top-bar-menu,
+.footer-menu {
+    --menuItemsSpacing: 20px;
+}</style>
+<style id="ct-main-styles-mobile-inline-css" type="text/css" media="(max-width: 690px)">:root {
+    --copyrightSpacing: 15px;
+    --widgetAreaSpacing: 40px;
+    --pageContentBoxedSpacing: 40px;
+    --bottomShareBoxSpacing: 30px;
+    --postNavSpacing: 40px;
+    --paginationSpacing: 50px;
+    --sidebarWidgetsSpacing: 30px;
+    --offCanvasWidth: 200px;
+    --topBarHeight: 0px;
+    --headerHeight: 35px;
+    --transparentLogoMaxHeight: 50px;
+    --cardSpacing: 25px;
+    --cardExcerptSize: 16px;
+    --lineHeight: 1.65;
+    --fontSize: 18px;
+    --letterSpacing: 0em;
+    --cardsGap: 30px;
+    --logoMaxHeight: 50px;
+    --headerLogoContainerHeight: 35px;
+    --navSectionHeight: 15px;
+    --mobileHeaderHeight: 50px;
+    --contentAreaSpacing: 20px;
+    --sidebarInnerSpacing: 15px;
+    --relatedPostsContainerSpacing: 30px;
+    --topShareBoxSpacing: 30px;
+    --singleContentBoxedSpacing: 30px;
+    --singleAuthorBoxSpacing: 40px;
+    --footerPrimarySpacing: 30px;
+    --passepartoutSize: 0px;
+}
+
+h1 {
+    --lineHeight: 1.5;
+    --fontSize: 40px;
+    --letterSpacing: 0em;
+}
+
+h2 {
+    --lineHeight: 1.5;
+    --fontSize: 35px;
+    --letterSpacing: 0em;
+}
+
+h3 {
+    --lineHeight: 1.5;
+    --fontSize: 30px;
+    --letterSpacing: 0em;
+}
+
+h4 {
+    --lineHeight: 1.5;
+    --fontSize: 25px;
+    --letterSpacing: 0em;
+}
+
+h5 {
+    --lineHeight: 1.5;
+    --fontSize: 20px;
+    --letterSpacing: 0em;
+}
+
+h6 {
+    --lineHeight: 1.5;
+    --fontSize: 16px;
+    --letterSpacing: 0em;
+}
+
+.entry-content blockquote p, .ct-quote-widget blockquote p {
+    --lineHeight: 1.65;
+    --fontSize: 25px;
+    --letterSpacing: 0em;
+}
+
+code, kbd, samp, pre {
+    --lineHeight: 1.65;
+    --fontSize: 16px;
+    --letterSpacing: 0em;
+}
+
+.site-title {
+    --lineHeight: 1.65;
+    --fontSize: 22px;
+    --letterSpacing: 0em;
+}
+
+.primary-menu > li {
+    --lineHeight: 1.3;
+    --fontSize: 14px;
+    --letterSpacing: 0em;
+}
+
+.primary-menu .sub-menu li {
+    --lineHeight: 1.3;
+    --fontSize: 12px;
+    --letterSpacing: 0em;
+}
+
+#mobile-menu .mobile-menu {
+    --lineHeight: 1.65;
+    --fontSize: 21px;
+    --letterSpacing: 0em;
+}
+
+.ct-sidebar .widget-title {
+    --lineHeight: 1.65;
+    --fontSize: 18px;
+    --letterSpacing: 0em;
+}
+
+.ct-sidebar .ct-post-title {
+    --lineHeight: 1.4;
+    --fontSize: 15px;
+    --letterSpacing: 0em;
+}
+
+.product_title {
+    --lineHeight: 1.65;
+    --fontSize: 30px;
+    --letterSpacing: 0em;
+}
+
+.woocommerce-loop-product__title {
+    --lineHeight: 1.65;
+    --fontSize: 17px;
+    --letterSpacing: 0em;
+}
+
+.site-description {
+    --lineHeight: 1.65;
+    --fontSize: 13px;
+    --letterSpacing: 0em;
+}
+
+.entry-header .page-title {
+    --lineHeight: 1.3;
+    --fontSize: 25px;
+    --letterSpacing: 0em;
+}
+
+.entry-card .entry-title {
+    --lineHeight: 1.3;
+    --fontSize: 18px;
+    --letterSpacing: 0em;
+}
+
+.entry-card {
+    --metaFontSize: 12px;
+}
+
+.header-top-bar-menu,
+.footer-menu {
+    --menuItemsSpacing: 20px;
+}</style>
+<link rel='stylesheet' id='wp-block-library-css'  href='https://techpiezo.com/wp-includes/css/dist/block-library/style.min.css' type='text/css' media='all' />
+<link crossorigin="anonymous" rel='stylesheet' id='blocksy-fonts-font-source-google-css'  href='https://fonts.googleapis.com/css?family=Ubuntu%3A400&#038;display=swap' type='text/css' media='all' />
+<link rel='stylesheet' id='ct-style-css'  href='https://techpiezo.com/wp-content/themes/blocksy/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='ct-main-styles-css'  href='https://techpiezo.com/wp-content/themes/blocksy/static/bundle/main.css' type='text/css' media='all' />
+
+<link rel="amphtml" href="https://techpiezo.com/linux/fixed-install-hplip-3-19-1-in-ubuntu-19-04/amp/"><link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" sizes="32x32" />
+<link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" />
+<meta name="msapplication-TileImage" content="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" />
+		<style type="text/css" id="wp-custom-css">
+			.archive-description, .archive.category .page-title,
+.archive.category .page-description, .archive.category .taxonomy-description, .cart-search, .ct-meta-author{
+    display: none !important;
+}
+.post{    
+	  padding-left: 20px;
+	padding-right: 20px;
+}
+.ct-last-page-text{
+	color: whitesmoke
+}
+		</style>
+		
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135581354-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-135581354-3');
+</script>
+
+
+</head>
+
+<body class="post-template-default single single-post postid-1415 single-format-standard ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
+<div id="main-container">
+
+	<header
+		class="site-header"
+						>
+		
+		
+<div class="header-desktop" data-type="type-1">
+	<div class="ct-container-fluid" data-menu-alignment="right">
+
+		
+	<div
+		class="site-branding"
+				>
+
+		<h1 class="site-title">
+							<a href="https://techpiezo.com/" rel="home">
+					TechPiezo				</a>
+					</h1>
+
+		<h2 class="site-description ct-hidden-sm ct-hidden-md ct-hidden-lg">
+			Future is Here		</h2>
+	</div>
+
+	
+		
+	<nav
+		id="site-navigation"
+		class="main-navigation"
+		data-menu-type="type-1"
+		data-dropdown-animation="type-3"
+				>
+
+		<ul id="primary-menu" class="primary-menu menu"><li id="menu-item-70" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-70"><a href="https://techpiezo.com">Home</a></li>
+<li id="menu-item-41" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-41"><a href="https://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-350" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-350"><a href="https://techpiezo.com/linux/linux-quick-fix/">Quick Fix</a></li>
+	<li id="menu-item-349" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-349"><a href="https://techpiezo.com/linux/linux-recent/">What&#8217;s New</a></li>
+</ul>
+</li>
+<li id="menu-item-43" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-43"><a href="https://techpiezo.com/android/">Android<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-348" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-348"><a href="https://techpiezo.com/android/android-kotlin/">Kotlin</a></li>
+	<li id="menu-item-347" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-347"><a href="https://techpiezo.com/android/android-recent/">What&#8217;s New</a></li>
+</ul>
+</li>
+<li id="menu-item-42" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-42"><a href="https://techpiezo.com/wordpress/">WordPress</a></li>
+<li id="menu-item-40" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-40"><a href="https://techpiezo.com/seo/">SEO</a></li>
+<li id="menu-item-39" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-39"><a href="https://techpiezo.com/tech-insights/">Insights</a></li>
+</ul>
+	</nav>
+
+	
+		<div class="header-group">
+			<a href="#search-modal" class="search-button ct-hidden-sm ct-hidden-md ct-hidden-lg">
+				<svg width="12" height="12" viewBox="0 0 50 50">
+					<path d="M48.6,48.6c-1.8,1.8-4.8,1.8-6.6,0l-8.3-8.3c-3.4,2.2-7.4,3.5-11.8,3.5C9.8,43.8,0,34,0,21.9S9.8,0,21.9,0
+					C34,0,43.8,9.8,43.8,21.9c0,4.3-1.3,8.4-3.5,11.8l8.3,8.3C50.5,43.8,50.5,46.8,48.6,48.6z M21.9,6.3c-8.6,0-15.7,7-15.7,15.7
+					s7,15.7,15.7,15.7c8.6,0,15.7-7,15.7-15.7C37.6,13.3,30.6,6.3,21.9,6.3z"/>
+				</svg>
+			</a>
+
+			<a class="ct-header-button ct-hidden-sm ct-hidden-md ct-hidden-lg" data-type="type-1" data-size="medium" >Download</a>		</div>
+	</div>
+</div>
+		
+<div class="header-mobile" data-type="type-1">
+	<div class="ct-container">
+		
+	<div
+		class="site-branding"
+				>
+
+		<h1 class="site-title">
+							<a href="https://techpiezo.com/" rel="home">
+					TechPiezo				</a>
+					</h1>
+
+		<h2 class="site-description ct-hidden-sm ct-hidden-md ct-hidden-lg">
+			Future is Here		</h2>
+	</div>
+
+	
+		<div class="header-group">
+			<a href="#search-modal" class="search-button ct-hidden-sm ct-hidden-md ct-hidden-lg">
+				<svg width="12" height="12" viewBox="0 0 50 50">
+					<path d="M48.6,48.6c-1.8,1.8-4.8,1.8-6.6,0l-8.3-8.3c-3.4,2.2-7.4,3.5-11.8,3.5C9.8,43.8,0,34,0,21.9S9.8,0,21.9,0
+					C34,0,43.8,9.8,43.8,21.9c0,4.3-1.3,8.4-3.5,11.8l8.3,8.3C50.5,43.8,50.5,46.8,48.6,48.6z M21.9,6.3c-8.6,0-15.7,7-15.7,15.7
+					s7,15.7,15.7,15.7c8.6,0,15.7-7,15.7-15.7C37.6,13.3,30.6,6.3,21.9,6.3z"/>
+				</svg>
+			</a>
+
+			<a class="ct-header-button ct-hidden-sm ct-hidden-md ct-hidden-lg" data-type="type-1" data-size="medium" >Download</a>		</div>
+
+			<nav id="site-navigation" class="main-navigation">
+		<a href="#mobile-menu" class="mobile-menu-toggle">
+			<span
+				data-type="type-1"
+				class="lines-button"></span>
+		</a>
+	</nav>
+
+		</div>
+</div>
+	</header>
+
+	<main id="main" class="site-main">
+
+		
+
+	
+	<div id="primary" class="content-area">
+
+		<div class="ct-container" data-sidebar="right">
+
+			<section>
+				
+	<article
+		id="post-1415"
+		class="post-1415 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"		data-content="boxed"				>
+
+		
+		<section class="hero-section" data-type="type-1" data-alignment="left">
+			<header class="entry-header">
+				<h1 class="page-title">[Fixed] Install HPLIP 3.19.1 in Ubuntu 19.04</h1>
+				<div class="entry-meta has-avatar" data-label data-type="simple">
+		
+
+			<ul >
+				
+							<li class="ct-meta-author" >
+
+					
+											<span class="ct-meta-label">
+							By						</span>
+					
+					<span class="ct-meta-element" >
+						<a href="https://techpiezo.com/author/editorialteam/" title="Posts by Editorial Team" rel="author">Editorial Team</a>					</span>
+				</li>
+			
+							<li
+					class="ct-meta-date"
+					>
+
+					
+											<span class="ct-meta-label">
+							On						</span>
+					
+					<span
+						class="ct-meta-element"
+						>
+						Aug 3, 2019					</span>
+				</li>
+			
+			
+			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-label">In </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/" rel="tag">Linux</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/linux-quick-fix/" rel="tag">Quick Fix</a></span></li>					</ul>
+				</div>
+		
+					</header>
+		</section>
+
+		<figure class="ct-featured-image " ><div class="ct-image-container" ><img src="https://techpiezo.com/wp-content/uploads/2019/08/Install-HPLIP-in-Ubuntu.svg" class="attachment-full size-full" alt="Install HPLIP 3.19.1 in Ubuntu 19.04" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
+		
+		<div class="entry-content">
+			<p style="text-align: justify;">HP Linux Printing and Imaging System (HPLIP) is a package available in standard Ubuntu repository. The HPLIP package make Linux distributions access HP&#8217;s printing and scanning devices. In this article, we will cover HPLIP v3.19.1 installation process in Ubuntu 19.04. Few of the operations mentioned below may require superuser privileges, if you don&#8217;t have one then contact your System Administrator for assistance.</p>
+<h5>Install HPLIP 3.19.1 in Ubuntu 19.04</h5>
+<p style="text-align: justify;">We need to update Ubuntu&#8217;s standard repository for latest version of packages &#8211;</p>
+<pre>sudo apt update</pre>
+<p style="text-align: justify;">Thereafter, install the relevant packages through the command <code>apt install</code> &#8211;</p>
+<pre>sudo apt install hplip hplip-data hplip-gui</pre>
+<p style="text-align: justify;">It will also install all the associated dependencies. Meanwhile, connect your printing devices to &#8211; USB, Network or Parallel-port for device discovery. Once the installation process is completed, we will setup our printing device.</p>
+<h5>hp-setup in Ubuntu 19.04</h5>
+<p style="text-align: justify;">Prerequisites &#8211;</p>
+<p style="text-align: justify;">We will have to download both the plugin as well its associated digital signature manually. Even if we try to download the plugin through <code>hp-setup</code> command line utility directly, it may throw a file checksum error. So, download the required files from the links provided below &#8211;</p>
+<p style="text-align: justify;">For hplip plugin</p>
+<pre>cd /home/</pre>
+<pre>wget -c 'http://www.openprinting.org/download/printdriver/auxfiles/HP/plugins/hplip-3.19.1-plugin.run'</pre>
+<p style="text-align: justify;">For hplip plugin&#8217;s digital signature</p>
+<pre>wget -c 'http://www.openprinting.org/download/printdriver/auxfiles/HP/plugins/hplip-3.19.1-plugin.run.asc'</pre>
+<p style="text-align: justify;">Note: Make sure both the downloaded files are kept in same directory.</p>
+<p style="text-align: justify;">Run <code>hp-plugin</code> utility in the terminal &#8211;</p>
+<pre>hp-plugin</pre>
+<p style="text-align: justify;">It will prompt us to either download the plugin, or to provide the path where plug-in is stored. Since, we have already downloaded the plug-in in advance. We need to specify the path of plug-in, choose <code>p</code> as option. Next, it will ask us to enter the path of plug-in file hplip-3.19.1-plugin.run &#8211;</p>
+<pre>/home/</pre>
+<p style="text-align: justify;">Afterwards, it will try to receive keys from the key-server. Even if it fails to do so, you can choose the option <code>yes</code> if it asks whether to continue with the installation.</p>
+<p style="text-align: justify;">Accept the licence terms to successfully install the required plug-in.</p>
+<p style="text-align: justify;">Lastly, we need to run the <code>hp-setup</code> command &#8211;</p>
+<pre>hp-setup</pre>
+<p style="text-align: justify;">Choose the connection type &#8211; USB / Ethernet / Wireless / Parallel-Port.</p>
+<p style="text-align: justify;">The setup will automatically detect the printing device. In the next dialog box, it will show us the Model name and Device URI. Click the Next button to get the details of our devices. Select the relevant devices and click on Add Printer button. This will setup your <code>hplip</code> package successfully.</p>
+<h5>error: The device you are trying to setup requires a binary plug-in</h5>
+<p style="text-align: justify;">In case, we encounter the error &#8220;The device you are trying to setup requires a binary plug-in&#8221;. That has happened because a directory and few symbolic links are missing.</p>
+<p style="text-align: justify;">To create the relevant directory &#8211;</p>
+<pre>sudo mkdir -p /usr/lib64/x86_64-linux-gnu</pre>
+<p style="text-align: justify;">And, to make symbolic links between the files &#8211;</p>
+<pre>sudo ln -s /usr/lib/sane /usr/lib/i386-linux-gnu/sane
+sudo ln -s /usr/lib64/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu
+sudo ln -s /usr/lib64/sane /usr/lib64/x86_64-linux-gnu/sane</pre>
+<p style="text-align: justify;">Now, you will have to run the <code>hp-setup</code> command line utility again in the terminal. And, follow the same steps as mentioned in the article above.</p>
+<p style="text-align: justify;">In conclusion, we have installed <code>hplip</code> package version 3.19.1 and its associated plug-in with digital signatures in Ubuntu 19.04.</p>
+		</div>
+
+		
+		
+		
+	</article>
+
+				</section>
+
+			
+<aside
+	class="ct-hidden-sm ct-hidden-md"    data-type="type-2"
+	>
+
+    <div
+		class="ct-sidebar" data-sticky		data-widgets="separated">
+				<div class="ct-widget widget_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
+											<li>
+					<a href="https://techpiezo.com/linux/fixed-install-hplip-3-19-1-in-ubuntu-19-04/">[Fixed] Install HPLIP 3.19.1 in Ubuntu 19.04</a>
+									</li>
+											<li>
+					<a href="https://techpiezo.com/linux/install-google-chrome-in-debian-buster/">Install Google Chrome in Debian Buster</a>
+									</li>
+											<li>
+					<a href="https://techpiezo.com/android/declare-variables-var-and-val-in-kotlin/">Declare Variables (var and val) in Kotlin</a>
+									</li>
+											<li>
+					<a href="https://techpiezo.com/linux/make-bootable-usb-stick-to-act-as-storage-device-again/">Make Bootable USB stick to act as Storage device again</a>
+									</li>
+											<li>
+					<a href="https://techpiezo.com/linux/create-a-bootable-live-usb-in-ubuntu-through-command-line/">Create a bootable Live USB in Ubuntu through Command Line</a>
+									</li>
+					</ul>
+		</div>	</div>
+</aside>
+
+
+		</div>
+
+	</div>
+
+	
+		<div class="ct-related-posts ct-hidden-sm">
+			<div class="ct-container">
+				<h4 class="ct-related-posts-label">
+					Related Posts				</h4>
+
+				<ul data-columns="2">
+											
+						<li>
+							<a class="ct-image-container" href="https://techpiezo.com/linux/install-google-chrome-in-debian-buster/"><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/08/Install-Google-Chrome-in-Debian-Buster.svg" class="attachment-large size-large" alt="Install Google Chrome in Debian Buster" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<h3 class="related-entry-title">
+								<a href="https://techpiezo.com/linux/install-google-chrome-in-debian-buster/">Install Google Chrome in Debian Buster</a>
+							</h3>
+
+							<div class="related-entry-meta">
+								<span>
+									Aug 2, 2019								</span>
+
+															</div>
+						</li>
+											
+						<li>
+							<a class="ct-image-container" href="https://techpiezo.com/linux/make-bootable-usb-stick-to-act-as-storage-device-again/"><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/08/Bootable-USB-as-Storage-Device.svg" class="attachment-large size-large" alt="Make Bootable USB act as Storage Device" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<h3 class="related-entry-title">
+								<a href="https://techpiezo.com/linux/make-bootable-usb-stick-to-act-as-storage-device-again/">Make Bootable USB stick to act as Storage device again</a>
+							</h3>
+
+							<div class="related-entry-meta">
+								<span>
+									Aug 1, 2019								</span>
+
+															</div>
+						</li>
+											
+						<li>
+							<a class="ct-image-container" href="https://techpiezo.com/linux/create-a-bootable-live-usb-in-ubuntu-through-command-line/"><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/07/Create-Bootable-USB-in-Ubuntu.svg" class="attachment-large size-large" alt="Create Bootable Live USB in Ubuntu" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<h3 class="related-entry-title">
+								<a href="https://techpiezo.com/linux/create-a-bootable-live-usb-in-ubuntu-through-command-line/">Create a bootable Live USB in Ubuntu through Command Line</a>
+							</h3>
+
+							<div class="related-entry-meta">
+								<span>
+									Jul 31, 2019								</span>
+
+															</div>
+						</li>
+											
+						<li>
+							<a class="ct-image-container" href="https://techpiezo.com/android/fastboot-error-mke2fs-failed-cannot-generate-image-for-userdata/"><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/07/Fastboot-error-mke2fs-failed-Fixed.svg" class="attachment-large size-large" alt="Fastboot Error mke2fs Failed" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<h3 class="related-entry-title">
+								<a href="https://techpiezo.com/android/fastboot-error-mke2fs-failed-cannot-generate-image-for-userdata/">[Fixed] Fastboot error: mke2fs failed, Cannot generate image for userdata</a>
+							</h3>
+
+							<div class="related-entry-meta">
+								<span>
+									Jul 29, 2019								</span>
+
+															</div>
+						</li>
+									</ul>
+			</div>
+		</div>
+
+		
+
+
+	</main>
+
+	<footer
+		class="site-footer"
+				>
+
+		<div
+			class="footer-inner"
+			data-type="type-1">
+
+			
+			
+			<section class="footer-primary-area ">
+				<div class="ct-container-fluid">
+					<div
+						class="grid-columns"
+						data-columns="1"						data-stack="mobile:tablet">
+						<section><nav data-menu-type="type-1"><ul id="footer-menu" class="footer-menu menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-56"><a href="https://techpiezo.com/terms/">Terms</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-57"><a href="https://techpiezo.com/privacy-policy/">Privacy Policy</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-55"><a href="https://techpiezo.com/about-us/">About Us</a></li>
+</ul></nav></section>					</div>
+				</div>
+			</section>
+
+			
+			
+					</div>
+	</footer>
+
+</div>
+
+
+	<a href="#" class="ct-back-to-top "
+		data-shape="circle"
+		data-alignment="right"
+		title="Go to top">
+
+		<svg width="12" height="12" viewBox="0 0 20 20"><path d="M10,0L9.4,0.6L0.8,9.1l1.2,1.2l7.1-7.1V20h1.7V3.3l7.1,7.1l1.2-1.2l-8.5-8.5L10,0z"/></svg>
+		
+	</a>
+
+	
+<div id="search-modal" class="ct-modal" >
+	<div class="ct-bag-container">
+		<div class="ct-bag-actions">
+			<div class="ct-bag-close">
+				<span class="lines-button close"></span>
+			</div>
+		</div>
+
+		<div class="ct-bag-content" data-align="middle">
+			
+<form role="search" method="get" class="search-form" action="https://techpiezo.com/">
+	<div class="ct-search-input">
+		<input type="search" class="search-field" placeholder="Search" value="" name="s" autocomplete="off" />
+
+		<button class="search-submit">
+			<i>
+				<svg
+					width="12px"
+					height="12px"
+					viewBox="0 0 24 24">
+
+					<path d="M23.3,23.3c-0.9,0.9-2.3,0.9-3.2,0l-4-4c-1.6,1-3.6,1.7-5.7,1.7C4.7,21,0,16.3,0,10.5S4.7,0,10.5,0C16.3,0,21,4.7,21,10.5
+					c0,2.1-0.6,4-1.7,5.7l4,4C24.2,21,24.2,22.5,23.3,23.3z M10.5,3C6.4,3,3,6.4,3,10.5S6.4,18,10.5,18c4.1,0,7.5-3.4,7.5-7.5
+					C18,6.4,14.7,3,10.5,3z"/>
+				</svg>
+			</i>
+
+			<span data-loader="circles"><span></span><span></span><span></span></span>
+		</button>
+	</div>
+</form>
+
+
+		</div>
+	</div>
+</div>
+
+
+
+	<div id="mobile-menu" class="ct-offcanvas-menu">
+		
+		<div class="ct-bag-container contains-sub-menus">
+			<div class="ct-bag-actions">
+				<div class="ct-bag-close">
+					<span class="lines-button close"></span>
+				</div>
+			</div>
+
+			<div class="ct-bag-content" >
+				
+				<ul id="primary-menu" class="mobile-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-70"><a href="https://techpiezo.com">Home</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-41"><a href="https://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-350"><a href="https://techpiezo.com/linux/linux-quick-fix/">Quick Fix</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-349"><a href="https://techpiezo.com/linux/linux-recent/">What&#8217;s New</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-43"><a href="https://techpiezo.com/android/">Android<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-348"><a href="https://techpiezo.com/android/android-kotlin/">Kotlin</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-347"><a href="https://techpiezo.com/android/android-recent/">What&#8217;s New</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-42"><a href="https://techpiezo.com/wordpress/">WordPress</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-40"><a href="https://techpiezo.com/seo/">SEO</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-39"><a href="https://techpiezo.com/tech-insights/">Insights</a></li>
+</ul>			</div>
+		</div>
+	</div>
+
+	
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ct_localizations = {"public_url":"https:\/\/techpiezo.com\/wp-content\/themes\/blocksy\/static\/bundle\/","show_more_text":"Show more"};
+/* ]]> */
+</script>
+<script async type='text/javascript' src='https://techpiezo.com/wp-content/themes/blocksy/static/bundle/main.js'></script>
+<script type='text/javascript' src='https://techpiezo.com/wp-includes/js/wp-embed.min.js'></script>
+</body>
+</html>

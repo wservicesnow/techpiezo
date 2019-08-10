@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="August 4, 2019 3:59 pm" -->
+<!-- generated-on="August 10, 2019 9:56 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
-		<loc>https://techpiezo.com/linux/fixed-install-hplip-3-19-1-on-ubuntu-19-04/</loc>
-		<lastmod>2019-08-04T12:56:23+00:00</lastmod>
+		<loc>https://techpiezo.com/linux/fixed-install-hplip-3-19-1-in-ubuntu-19-04/</loc>
+		<lastmod>2019-08-09T20:22:09+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/install-google-chrome-in-debian-buster/</loc>
-		<lastmod>2019-08-02T20:48:17+00:00</lastmod>
+		<lastmod>2019-08-09T18:51:54+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/android/declare-variables-var-and-val-in-kotlin/</loc>
-		<lastmod>2019-08-02T17:01:00+00:00</lastmod>
+		<lastmod>2019-08-10T05:41:17+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/make-bootable-usb-stick-to-act-as-storage-device-again/</loc>
-		<lastmod>2019-08-03T15:37:35+00:00</lastmod>
+		<lastmod>2019-08-09T18:50:03+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: 37ae023120ca42e36dd1b7e9f3d9d880; Queries for sitemap: 2; Total queries: 13; Seconds: 0; Memory for sitemap: 0MB; Total memory: 2MB -->
+</urlset><!-- Request ID: 34f09f5c3537c38c29ce9253256a86c7; Queries for sitemap: 2; Total queries: 13; Seconds: 0; Memory for sitemap: 0MB; Total memory: 2MB -->

@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   id="svg3357"
+   version="1.1"
+   viewBox="0 0 211.40207 119.0625"
+   height="119.0625mm"
+   width="211.40207mm">
+  <defs
+     id="defs3351">
+    <linearGradient
+       id="linearGradient6114">
+      <stop
+         id="stop6110"
+         offset="0"
+         style="stop-color:#6f7c91;stop-opacity:1;" />
+      <stop
+         id="stop6112"
+         offset="1"
+         style="stop-color:#162d50;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(3.0071285,0,0,1.83657,-125.12732,-58.151445)"
+       r="31.67275"
+       fy="66.986313"
+       fx="73.77433"
+       cy="66.986313"
+       cx="73.77433"
+       id="radialGradient6126"
+       xlink:href="#linearGradient6114" />
+    <filter
+       height="1.8874642"
+       y="-0.44373208"
+       width="1.85333"
+       x="-0.42666499"
+       id="filter1742"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur1744"
+         stdDeviation="1.0762038" />
+    </filter>
+    <filter
+       height="1.6508067"
+       y="-0.32540334"
+       width="2.5847549"
+       x="-0.79237746"
+       id="filter1746"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur1748"
+         stdDeviation="1.0762038" />
+    </filter>
+    <filter
+       height="1.6596019"
+       y="-0.32980096"
+       width="2.5694727"
+       x="-0.78473634"
+       id="filter1750"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur1752"
+         stdDeviation="1.0762038" />
+    </filter>
+    <filter
+       height="1.7638576"
+       y="-0.3819288"
+       width="2.394586"
+       x="-0.697293"
+       id="filter1754"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur1756"
+         stdDeviation="1.0762038" />
+    </filter>
+    <filter
+       height="1.8874642"
+       y="-0.44373208"
+       width="1.9140543"
+       x="-0.45702717"
+       id="filter1758"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur1760"
+         stdDeviation="1.0762038" />
+    </filter>
+    <filter
+       height="1.7002945"
+       y="-0.35014723"
+       width="1.6631862"
+       x="-0.33159309"
+       id="filter1762"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur1764"
+         stdDeviation="1.0762038" />
+    </filter>
+    <filter
+       height="1.8874642"
+       y="-0.44373208"
+       width="1.85333"
+       x="-0.42666499"
+       id="filter1766"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur1768"
+         stdDeviation="1.0762038" />
+    </filter>
+    <filter
+       height="1.6508067"
+       y="-0.32540334"
+       width="2.5847598"
+       x="-0.79237989"
+       id="filter1770"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur1772"
+         stdDeviation="1.0762038" />
+    </filter>
+    <filter
+       height="1.8874642"
+       y="-0.44373208"
+       width="1.97621"
+       x="-0.48810498"
+       id="filter1774"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur1776"
+         stdDeviation="1.0762038" />
+    </filter>
+    <filter
+       height="1.6596019"
+       y="-0.32980096"
+       width="1.7962565"
+       x="-0.39812827"
+       id="filter1778"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur1780"
+         stdDeviation="1.0762038" />
+    </filter>
+    <filter
+       height="1.8874642"
+       y="-0.44373208"
+       width="1.9140545"
+       x="-0.45702725"
+       id="filter1782"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur1784"
+         stdDeviation="1.0762038" />
+    </filter>
+    <filter
+       height="1.6982904"
+       y="-0.34914522"
+       width="1.7936667"
+       x="-0.39683334"
+       id="filter1786"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur1788"
+         stdDeviation="1.0762038" />
+    </filter>
+    <filter
+       height="1.7638576"
+       y="-0.3819288"
+       width="2.3945958"
+       x="-0.69729789"
+       id="filter1790"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur1792"
+         stdDeviation="1.0762038" />
+    </filter>
+    <filter
+       height="1.8874626"
+       y="-0.44373132"
+       width="2.0126663"
+       x="-0.50633317"
+       id="filter1794"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur1796"
+         stdDeviation="1.0762038" />
+    </filter>
+    <filter
+       height="1.8874626"
+       y="-0.44373132"
+       width="1.9226938"
+       x="-0.46134692"
+       id="filter1798"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur1800"
+         stdDeviation="1.0762038" />
+    </filter>
+    <filter
+       height="1.6508067"
+       y="-0.32540334"
+       width="2.5847564"
+       x="-0.79237819"
+       id="filter1802"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur1804"
+         stdDeviation="1.0762038" />
+    </filter>
+    <filter
+       height="1.739553"
+       y="-0.36977652"
+       width="1.8518412"
+       x="-0.4259206"
+       id="filter1806"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur1808"
+         stdDeviation="1.0762038" />
+    </filter>
+    <filter
+       height="1.8874626"
+       y="-0.44373132"
+       width="1.922693"
+       x="-0.46134651"
+       id="filter1810"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur1812"
+         stdDeviation="1.0762038" />
+    </filter>
+    <filter
+       height="1.8874626"
+       y="-0.44373132"
+       width="1.8430134"
+       x="-0.42150671"
+       id="filter1814"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur1816"
+         stdDeviation="1.0762038" />
+    </filter>
+    <filter
+       height="1.8874626"
+       y="-0.44373132"
+       width="1.9140543"
+       x="-0.45702717"
+       id="filter1818"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur1820"
+         stdDeviation="1.0762038" />
+    </filter>
+    <filter
+       height="1.7199189"
+       y="-0.35995945"
+       width="1.7772372"
+       x="-0.3886186"
+       id="filter1822"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur1824"
+         stdDeviation="1.0762038" />
+    </filter>
+  </defs>
+  <metadata
+     id="metadata3354">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <rect
+     style="opacity:1;fill:#c83737;fill-opacity:1;stroke:none;stroke-width:4.38045835;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke markers fill"
+     id="rect6108"
+     width="211.40207"
+     height="119.0625"
+     x="1.4498902e-08"
+     y="-2.2076415e-08"
+     ry="0" />
+  <flowRoot
+     xml:space="preserve"
+     id="flowRoot874"
+     style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     transform="matrix(1.1097917,0,0,1.0234149,-1.6397721,-6.8613634)"><flowRegion
+       id="flowRegion876"><rect
+         id="rect878"
+         width="166.0584"
+         height="44.525547"
+         x="200.72992"
+         y="215.22041" /></flowRegion><flowPara
+       id="flowPara880" /></flowRoot>  <flowRoot
+     xml:space="preserve"
+     id="flowRoot1087"
+     style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     transform="translate(-1.4775493,-3.9803138)"><flowRegion
+       id="flowRegion1089"><rect
+         id="rect1091"
+         width="296.88928"
+         height="216.1263"
+         x="459.55276"
+         y="161.32643" /></flowRegion><flowPara
+       id="flowPara1093" /></flowRoot>  <rect
+     style="opacity:1;fill:#373e48;fill-opacity:1;stroke:none;stroke-width:0.8369382;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+     id="rect815"
+     width="54.690243"
+     height="51"
+     x="24.687136"
+     y="34.32169"
+     ry="1.9520296" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:32.36412048px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.80910301"
+     x="33.82122"
+     y="76.626953"
+     id="text1353"
+     transform="scale(1.1313787,0.88387734)"><tspan
+       x="33.82122"
+       y="76.626953"
+       id="tspan1351"
+       style="stroke-width:0.80910301"><tspan
+         x="33.82122"
+         y="76.626953"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Sansita One';-inkscape-font-specification:'Sansita One';fill:#ffffff;stroke-width:0.80910301"
+         id="tspan1349">K</tspan></tspan></text>
+  <rect
+     style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0.74336612;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+     id="rect918"
+     width="54.737"
+     height="11.408408"
+     x="24.640451"
+     y="34.32169"
+     ry="1.5446657" />
+  <rect
+     style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.73087931;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+     id="rect817"
+     width="25.646559"
+     height="3.0893269"
+     x="39.208973"
+     y="38.702583"
+     ry="1.5446634" />
+  <rect
+     style="opacity:1;fill:#aa4400;fill-opacity:1;stroke:none;stroke-width:0.7427516;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+     id="rect914"
+     width="40.434452"
+     height="2.9437194"
+     x="31.815027"
+     y="70.107803"
+     ry="1.0065612" />
+  <rect
+     ry="1.0065612"
+     y="75.829414"
+     x="31.815027"
+     height="2.9437194"
+     width="40.434452"
+     id="rect916"
+     style="opacity:1;fill:#aa4400;fill-opacity:1;stroke:none;stroke-width:0.7427516;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill" />
+  <g
+     transform="matrix(1.3232243,0,0,1.8282547,113.20199,-272.03378)"
+     id="g1044">
+    <text
+       id="text1028"
+       y="170.70689"
+       x="58.417461"
+       style="font-style:normal;font-weight:normal;font-size:10.58333397px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#782121;fill-opacity:1;stroke:#782121;stroke-width:1.32291663;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Sansita One';-inkscape-font-specification:'Sansita One';text-align:center;text-anchor:middle;fill:#782121;stroke:#782121;stroke-width:1.32291663;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="tspan1018"
+         y="170.70689"
+         x="18.03146"><tspan
+           dx="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Sansita One';-inkscape-font-specification:'Sansita One';text-align:center;text-anchor:middle;fill:#782121;stroke:#782121;stroke-width:1.32291663;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+           id="tspan1016"
+           y="170.70689"
+           x="18.031458">Your  first  Code</tspan></tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Sansita One';-inkscape-font-specification:'Sansita One';text-align:center;text-anchor:middle;fill:#782121;stroke:#782121;stroke-width:1.32291663;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="tspan1022"
+         y="183.93607"
+         x="19.116663"><tspan
+           dx="0 0 0 0"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Sansita One';-inkscape-font-specification:'Sansita One';text-align:center;text-anchor:middle;fill:#782121;stroke:#782121;stroke-width:1.32291663;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+           id="tspan1020"
+           y="183.93607"
+           x="18.031458">in </tspan></tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Sansita One';-inkscape-font-specification:'Sansita One';text-align:center;text-anchor:middle;fill:#782121;stroke:#782121;stroke-width:1.32291663;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="tspan1026"
+         y="197.16524"
+         x="18.031458"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Sansita One';-inkscape-font-specification:'Sansita One';text-align:center;text-anchor:middle;fill:#782121;stroke:#782121;stroke-width:1.32291663;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+           id="tspan1024"
+           y="197.16524"
+           x="18.031458">Kotlin</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333397px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458335"
+       x="58.417461"
+       y="170.70689"
+       id="text1014"><tspan
+         x="18.03146"
+         y="170.70689"
+         id="tspan1002"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Sansita One';-inkscape-font-specification:'Sansita One';text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458335"><tspan
+           x="18.031458"
+           y="170.70689"
+           id="tspan998"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Sansita One';-inkscape-font-specification:'Sansita One';text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458335"
+           dx="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0">Your  first  Code</tspan></tspan><tspan
+         x="19.116663"
+         y="183.93607"
+         id="tspan1008"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Sansita One';-inkscape-font-specification:'Sansita One';text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458335"><tspan
+           x="18.031458"
+           y="183.93607"
+           id="tspan1004"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Sansita One';-inkscape-font-specification:'Sansita One';text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458335"
+           dx="0 0 0 0">in </tspan></tspan><tspan
+         x="18.031458"
+         y="197.16524"
+         id="tspan1012"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Sansita One';-inkscape-font-specification:'Sansita One';text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458335"><tspan
+           x="18.031458"
+           y="197.16524"
+           id="tspan1010"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Sansita One';-inkscape-font-specification:'Sansita One';text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458335">Kotlin</tspan></tspan></text>
+  </g>
+</svg>
