@@ -24,24 +24,12 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <g
-     transform="translate(-13.29926,340.26785)"
-     id="layer1">
-    <rect
-       ry="63.969166"
-       y="-340.26785"
-       x="13.29926"
-       height="571.5"
-       width="1016"
-       id="rect815"
-       style="opacity:1;fill:#214478;fill-opacity:1;stroke:none;stroke-width:12.07559013;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill" />
-    <rect
-       style="opacity:1;fill:#ececec;fill-opacity:1;stroke:none;stroke-width:9.08419228;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
-       id="rect819"
-       width="1016"
-       height="323.42392"
-       x="13.29926"
-       y="-340.26785"
-       ry="36.201504" />
-  </g>
+  <path
+     id="rect815"
+     d="M 0,0 H 1016 V 571.5 H 0 Z"
+     style="opacity:1;fill:#214478;fill-opacity:1;stroke:none;stroke-width:12.07559013;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill" />
+  <path
+     id="rect819"
+     d="M 0,0 H 1016 V 290.94371 H 0 Z"
+     style="opacity:1;fill:#ececec;fill-opacity:1;stroke:none;stroke-width:8.6159811;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill" />
 </svg>
