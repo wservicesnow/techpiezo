@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="August 11, 2019 8:31 am" -->
+<!-- generated-on="August 11, 2019 5:06 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>https://techpiezo.com/linux/create-a-bootable-live-usb-in-ubuntu-through-command-line/</loc>
 		<lastmod>2019-08-09T19:26:50+00:00</lastmod>
@@ -102,4 +102,4 @@
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: 6a7a956f695d70607d54983d830598ac; Queries for sitemap: 38; Total queries: 49; Seconds: 0.02; Memory for sitemap: 0MB; Total memory: 2MB -->
+</urlset><!-- Request ID: 303e9ba838145bf6bf46830ab64ec71d; Queries for sitemap: 38; Total queries: 49; Seconds: 0.03; Memory for sitemap: 0MB; Total memory: 2MB -->
