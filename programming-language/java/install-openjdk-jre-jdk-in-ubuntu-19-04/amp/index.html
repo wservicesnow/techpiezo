@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Install Kotlin - Command line compiler in Ubuntu - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/android/install-kotlin-command-line-compiler-in-ubuntu/" />
+		<title>Install OpenJDK JRE / JDK in Ubuntu 19.04 - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/programming-language/java/install-openjdk-jre-jdk-in-ubuntu-19-04/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -426,47 +426,53 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Install Kotlin &#8211; Command line compiler in Ubuntu</h1>
+		<h1 class="amp-wp-title">Install OpenJDK JRE / JDK in Ubuntu 19.04</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-07-26T17:27:47+00:00">
-		3 weeks ago	</time>
+	<time datetime="2019-08-17T14:11:14+00:00">
+		2 hours ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">Kotlin is an open-source, statically typed programming language. It supports both functional as well as object-oriented programming. Moreover, there are multiple ways to install Kotlin in Ubuntu. In addition to command line compiler, Kotlin code can also be compiled from IntelliJ IDEA and Eclipse. Also, Kotlin is interoperable with Java. In this article, we would focus on installation of command line compiler of Kotlin.</p>
-<p class="amp-wp-7d27179">Even though, we can install Kotlin Compiler with ease. To launch the interactive shell (REPL) or running the compiler would require the presence of Java run-time on our Operating system. Since, Ubuntu already has one in its repository. We would install OpenJDK Java runtime if its not already installed. The package that we would install is <code>openjdk-11-jre</code>.</p>
-<h4>Install OpenJDK Java runtime</h4>
-<p class="amp-wp-7d27179">To install OpenJDK Java run-time, you need to have superuser privileges. Otherwise, contact your system administrator for assistance.</p>
+		<p class="amp-wp-7d27179">In this article, we would discuss installation steps for both JRE as well as JDK. Here, JRE is an acronym for Java runtime and JDK is an acronym for Java Development Kit. For those who just want to run Java applications / programs can install Java runtime. On the other hand, to develop Java applications you need to install Java Development Kit. In case, if you plan on to install JDK, then you wouldn’t have to install JRE separately. JRE package itself comes bundled with JDK. Both the packages are available in standard Ubuntu repository. Also, you need to first check whether you have JDK/JRE already installed. Therefore, run the following in terminal –</p>
+<pre>java -version</pre>
+<p class="amp-wp-7d27179">If Java is not installed, then it will return with the following output. We have been using Ubuntu 19.04, if you are on a different release of Ubuntu then you may see different versions in the output.</p>
+<pre>Command 'java' not found, but can be installed with:
+
+sudo apt install default-jre                         # version 2:1.11-71, or
+sudo apt install openjdk-11-jre-headless             # version 11.0.3+7-1ubuntu2~19.04.1
+sudo apt install openjdk-8-jre-headless              # version 8u212-b03-0ubuntu1.19.04.2
+sudo apt install openjdk-12-jre-headless             # version 12.0.1+12-1
+sudo apt install openjdk-13-jre-headless             # version 13~13-0ubunt1</pre>
+<p class="amp-wp-7d27179">The following operations would require superuser privileges. In case, if you don’t one then contact your system administrator for assistance.</p>
+<h5>Install OpenJDK Java Runtime Environment (JRE)</h5>
+<p class="amp-wp-7d27179">Firstly, we would install Java Runtime Environment (JRE) to run Java written applications / programs. To do so, run the following in the terminal –</p>
 <pre>sudo apt install openjdk-11-jre</pre>
-<h4>Install Kotlin – Command line compiler</h4>
-<p class="amp-wp-7d27179">To download the command line compiler, visit</p>
-<pre>https://github.com/JetBrains/kotlin/releases/latest</pre>
-<p class="amp-wp-7d27179">At the time of writing the article, the latest stable version was 1.3.41.</p>
-<p class="amp-wp-7d27179">When you will scroll down the page, there is list of files available to download. To install Kotlin compiler, we need to have <code>kotlin-compiler-X.X.XX.zip</code> file.</p>
-<p>Move to the Downloads directory.</p>
-<pre>cd ~/Downloads/</pre>
-<p class="amp-wp-7d27179">The direct link available for the version 1.3.41 is  –</p>
-<pre>wget -c 'https://github.com/JetBrains/kotlin/releases/download/v1.3.41/kotlin-compiler-1.3.41.zip'</pre>
-<p class="amp-wp-7d27179">Unzip it with the help of <code>unzip</code> command.</p>
-<pre>unzip kotlin-compiler-1.3.41.zip</pre>
-<p class="amp-wp-7d27179">Furthermore, we will add the path variable to the <code>.bashrc</code> file to access the compiler directly without providing its complete path.</p>
-<pre>nano ~/.bashrc</pre>
-<p class="amp-wp-7d27179">We have used nano text editor, you can use one of your own choice. Afterwards, append the file with the following –</p>
-<pre>export PATH=~/Downloads/kotlinc/bin:$PATH</pre>
-<h4>Running the REPL</h4>
-<p class="amp-wp-7d27179">REPL is an acronym for Read-Eval-Print-Loop; it is basically an interactive shell for the programming language. To run the REPL, we need to open the terminal and type the following –</p>
-<pre>kotlinc-jvm</pre>
-<p class="amp-wp-7d27179">Lastly, to quit from REPL,</p>
-<pre>:quit</pre>
-<p class="amp-wp-7d27179">In Conclusion, we have discussed Command-line Compiler installation for Kotlin programming language.</p>
+<p class="amp-wp-7d27179">Why did we choose to install openjdk-11-jre not other packages like openjdk-12-jre? The answer to the question is pretty easy, openjdk-11-jre is currently the package supported by Ubuntu distribution. If you intend to install other package versions then you may opt one. But remember, those packages may not be supported by the Ubuntu distribution. It may take few minutes to install the packages depending on your speed of your network connection.</p>
+<p class="amp-wp-7d27179">Once, done again run the following command in the terminal –</p>
+<pre>java -version</pre>
+<p class="amp-wp-7d27179">This time around, you would get the output –</p>
+<pre>openjdk version "11.0.4" 2019-07-16
+OpenJDK Runtime Environment (build 11.0.4+11-post-Ubuntu-1ubuntu219.04)
+OpenJDK 64-Bit Server VM (build 11.0.4+11-post-Ubuntu-1ubuntu219.04, mixed mode, sharing)</pre>
+<p class="amp-wp-7d27179">This installs Java runtime environment on your system. Next, we would discuss installation steps for Java Development Kit (JDK).</p>
+<h5>Install OpenJDK Development Kit (JDK)</h5>
+<p class="amp-wp-7d27179">In case you would like to develop Java applications then, you would have to install OpenJDK Development Kit (JDK). To do so, run the following command in terminal –</p>
+<pre>sudo apt install openjdk-11-jdk</pre>
+<p class="amp-wp-7d27179">As discussed earlier, this will also install openjdk-11-jre. Upon successful installation, run the following in the terminal –</p>
+<pre>java -version</pre>
+<p class="amp-wp-7d27179">It will return with the following output.</p>
+<pre>openjdk version "11.0.4" 2019-07-16
+OpenJDK Runtime Environment (build 11.0.4+11-post-Ubuntu-1ubuntu219.04)
+OpenJDK 64-Bit Server VM (build 11.0.4+11-post-Ubuntu-1ubuntu219.04, mixed mode, sharing)</pre>
+<p class="amp-wp-7d27179">In conclusion, both JDK as well as JRE could be installed depending on our requirements. JDK for development purposes and JRE for simply running Java applications.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
 			<div class="amp-wp-meta amp-wp-tax-category">
-		Categories: <a href="https://techpiezo.com/android/" rel="category tag">Android</a>, <a href="https://techpiezo.com/android/android-kotlin/" rel="category tag">Kotlin</a>	</div>
+		Categories: <a href="https://techpiezo.com/programming-language/java/" rel="category tag">Java</a>, <a href="https://techpiezo.com/linux/" rel="category tag">Linux</a>	</div>
 
 	</footer>
 </article>

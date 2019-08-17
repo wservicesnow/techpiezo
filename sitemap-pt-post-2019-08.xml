@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="August 17, 2019 2:18 pm" -->
+<!-- generated-on="August 17, 2019 4:03 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
-		<loc>https://techpiezo.com/android/java/install-openjdk-jre-jdk-in-ubuntu-19-04/</loc>
+		<loc>https://techpiezo.com/programming-language/java/install-openjdk-jre-jdk-in-ubuntu-19-04/</loc>
 		<lastmod>2019-08-17T14:17:31+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
@@ -19,8 +19,8 @@
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>https://techpiezo.com/android/declare-variables-var-and-val-in-kotlin/</loc>
-		<lastmod>2019-08-10T05:41:17+00:00</lastmod>
+		<loc>https://techpiezo.com/programming-language/kotlin/declare-variables-var-and-val-in-kotlin/</loc>
+		<lastmod>2019-08-17T16:00:09+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
@@ -30,4 +30,4 @@
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: 096b52d5ee5a8f5573a5e79042da4977; Queries for sitemap: 2; Total queries: 13; Seconds: 0; Memory for sitemap: 0MB; Total memory: 2MB -->
+</urlset><!-- Request ID: b13e4a2868f30cb116d1397e37633480; Queries for sitemap: 2; Total queries: 13; Seconds: 0; Memory for sitemap: 0MB; Total memory: 2MB -->
