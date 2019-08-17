@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Code Comments in Kotlin - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/programming-language/kotlin/code-comments-in-kotlin/" />
+		<title>Install Kotlin - Command line compiler in Ubuntu - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/linux/install-kotlin-command-line-compiler-in-ubuntu/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -426,51 +426,47 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Code Comments in Kotlin</h1>
+		<h1 class="amp-wp-title">Install Kotlin &#8211; Command line compiler in Ubuntu</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-07-31T19:19:00+00:00">
-		2 weeks ago	</time>
+	<time datetime="2019-07-26T17:27:47+00:00">
+		3 weeks ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">It is imperative to for us understand code comments before we delve further to understand basics of Kotlin. Developers who have worked on large projects do understand the need of code comments. Understand from the perspective of a developer, who have recently been asked to fix a project. If the project contained few lines of code then it could be fixed in seconds. But, what if our code comprises of thousands of lines then it may take hours or days to fix it. All the time lost could have been put to some good use if our code was commented properly. Under such scenario, all the developer had to do was just read code comments and move to the section where alteration was required.</p>
-<p class="amp-wp-7d27179">Kotlin just like other programming languages allow us to write code comments. There are two ways to comment our code –</p>
-<ol><li class="amp-wp-7d27179">
-<h5><strong>Single-line Comments,</strong></h5>
-</li>
-<li class="amp-wp-7d27179">
-<h5><strong>Multi-line or Block comments.</strong></h5>
-</li>
-</ol><p class="amp-wp-7d27179">In addition to, the comments which we write along-side or in-between our code are ignored by the compiler.</p>
-<p class="amp-wp-7d27179">1.<strong> Single-line Comments</strong>: These are preceded by <code>//</code> and can also be provided as end-of-line comments. For instance –</p>
-<pre>// This is single-line comment
-val a=4 // This is an end-of-line comment</pre>
-<p class="amp-wp-7d27179">For single-line or end-of-line comments, anything written after <code>//</code> is ignored by the compiler. In case our comment are spread over multiple lines then we can provide <code>//</code> in the beginning of every line. For instance –</p>
-<pre>// This a single-line
-// comment
-// spread over multiple lines.</pre>
-<p class="amp-wp-7d27179">But, this not considered a good practice. For such a scenario, it is best to go with multi-line comments.</p>
-<p class="amp-wp-7d27179">2. <strong>Multi-line or Block Comments</strong>: Block comments are spread over multiple lines. Such comments start with <code>/*</code> and end with <code>*/</code>. Anything written in-between is ignored by the compiler. For instance –</p>
-<pre>/* This is a multi-line comment
-or Block comment
-spread over multiple lines. */</pre>
-<p class="amp-wp-7d27179">It is worth mentioning here that Kotlin allows nested comments. <strong>Nested comments</strong> are comments inside other comments. For instance –</p>
-<pre>/* This is a multi-line comment
-or Block comment
-               /* Nested Comments
-                   explained
-               */
-spread over multiple lines. */</pre>
-<p class="amp-wp-7d27179"><strong>Note</strong>: Only Block or Multi-line comments can be nested in Kotlin.</p>
-<p class="amp-wp-7d27179">In conclusion, in this article we have discussed single-line and block comments and their significance.</p>
+		<p class="amp-wp-7d27179">Kotlin is an open-source, statically typed programming language. It supports both functional as well as object-oriented programming. Moreover, there are multiple ways to install Kotlin in Ubuntu. In addition to command line compiler, Kotlin code can also be compiled from IntelliJ IDEA and Eclipse. Also, Kotlin is interoperable with Java. In this article, we would focus on installation of command line compiler of Kotlin.</p>
+<p class="amp-wp-7d27179">Even though, we can install Kotlin Compiler with ease. To launch the interactive shell (REPL) or running the compiler would require the presence of Java run-time on our Operating system. Since, Ubuntu already has one in its repository. We would install OpenJDK Java runtime if its not already installed. The package that we would install is <code>openjdk-11-jre</code>.</p>
+<h4>Install OpenJDK Java runtime</h4>
+<p class="amp-wp-7d27179">To install OpenJDK Java run-time, you need to have superuser privileges. Otherwise, contact your system administrator for assistance.</p>
+<pre>sudo apt install openjdk-11-jre</pre>
+<h4>Install Kotlin – Command line compiler</h4>
+<p class="amp-wp-7d27179">To download the command line compiler, visit</p>
+<pre>https://github.com/JetBrains/kotlin/releases/latest</pre>
+<p class="amp-wp-7d27179">At the time of writing the article, the latest stable version was 1.3.41.</p>
+<p class="amp-wp-7d27179">When you will scroll down the page, there is list of files available to download. To install Kotlin compiler, we need to have <code>kotlin-compiler-X.X.XX.zip</code> file.</p>
+<p>Move to the Downloads directory.</p>
+<pre>cd ~/Downloads/</pre>
+<p class="amp-wp-7d27179">The direct link available for the version 1.3.41 is  –</p>
+<pre>wget -c 'https://github.com/JetBrains/kotlin/releases/download/v1.3.41/kotlin-compiler-1.3.41.zip'</pre>
+<p class="amp-wp-7d27179">Unzip it with the help of <code>unzip</code> command.</p>
+<pre>unzip kotlin-compiler-1.3.41.zip</pre>
+<p class="amp-wp-7d27179">Furthermore, we will add the path variable to the <code>.bashrc</code> file to access the compiler directly without providing its complete path.</p>
+<pre>nano ~/.bashrc</pre>
+<p class="amp-wp-7d27179">We have used nano text editor, you can use one of your own choice. Afterwards, append the file with the following –</p>
+<pre>export PATH=~/Downloads/kotlinc/bin:$PATH</pre>
+<h4>Running the REPL</h4>
+<p class="amp-wp-7d27179">REPL is an acronym for Read-Eval-Print-Loop; it is basically an interactive shell for the programming language. To run the REPL, we need to open the terminal and type the following –</p>
+<pre>kotlinc-jvm</pre>
+<p class="amp-wp-7d27179">Lastly, to quit from REPL,</p>
+<pre>:quit</pre>
+<p class="amp-wp-7d27179">In Conclusion, we have discussed Command-line Compiler installation for Kotlin programming language.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
 			<div class="amp-wp-meta amp-wp-tax-category">
-		Categories: <a href="https://techpiezo.com/programming-language/kotlin/" rel="category tag">Kotlin</a>, <a href="https://techpiezo.com/programming-language/" rel="category tag">Programming Languages</a>	</div>
+		Categories: <a href="https://techpiezo.com/kotlin/" rel="category tag">Kotlin</a>, <a href="https://techpiezo.com/linux/" rel="category tag">Linux</a>, <a href="https://techpiezo.com/programming/" rel="category tag">Programming</a>	</div>
 
 	</footer>
 </article>

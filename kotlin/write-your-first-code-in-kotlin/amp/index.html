@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Declare Variables (var and val) in Kotlin - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/programming-language/kotlin/declare-variables-var-and-val-in-kotlin/" />
+		<title>Write your first code in Kotlin - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/kotlin/write-your-first-code-in-kotlin/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -426,47 +426,64 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Declare Variables (var and val) in Kotlin</h1>
+		<h1 class="amp-wp-title">Write your first code in Kotlin</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-08-01T19:22:03+00:00">
-		2 weeks ago	</time>
+	<time datetime="2019-07-27T17:35:21+00:00">
+		3 weeks ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">In Kotlin, we can use both variables as well as constants (read-only variables). Depending on the instructions provided to the Compiler, we can store static as well as dynamic values to the Variables. In case, our stored value is dynamic then <code>var</code> keyword will be succeeded by variable name. On the other hand, <code>val</code> keyword in place of <code>var</code> if the value so stored is static. In this article, we would discuss different options available to declare variables in Kotlin.</p>
-<h5>Declare Variables in Kotlin</h5>
-<p class="amp-wp-7d27179">In Kotlin, we can initialize variables without even specifying its type. On the contrary, if we don’t initialize the variable then we have to mandatorily declare its variable type. For instance –</p>
-<pre>val a=6</pre>
-<p class="amp-wp-7d27179">Kotlin compiler would take <code>a</code> variable of <code>int</code> type with value <code>6</code>. In case we intend to initialize variable at a later stage then we can just declare its variable type –</p>
-<pre>val a: Int
-a=6                  //initialize the variable later</pre>
-<p class="amp-wp-7d27179">If we choose to skip variable declaration and just initialize it. The compiler even then is capable to identify the variable type on its own. We call this mechanism <strong>type inference</strong>.</p>
-<p class="amp-wp-7d27179">Furthermore, there are two references available to us for declaring variables. These are –</p>
-<ol class="amp-wp-7d27179"><li>Immutable References (val keyword) and,</li>
-<li>Mutable References (var keyword).</li>
-</ol><p class="amp-wp-7d27179">For Immutable references (val keyword), the value stored in the variable is considered as read-only. Thus, it is not possible to reference the variable to some other value. In other words, once variable declaration and initialization is done we are not allowed to make further modifications to it. For instance –</p>
-<pre>val x="Hello"
-val y: Int
-y=24
-var x="World!"      //This will throw an error
-y=48               //This will throw an error</pre>
-<p class="amp-wp-7d27179">For Mutable references (var keyword), the value stored in the variable can be reassigned. Therefore, to make desired modifications we prefix <code>var</code> keyword before the variable name. For instance –</p>
-<pre>var x: Int
-x=7
-x=10              //It will reassign the value of x as 10</pre>
-<p class="amp-wp-7d27179">It is worth mentioning here that, we can’t change variable type through initialization once our variable is declared.</p>
-<pre>var x: Int        //We have declared variable as Int
-x="Hello"        //We are initializing a string to x</pre>
-<p class="amp-wp-7d27179">The above code will throw a type mismatch error and it won’t compile. Also, a variable prefixed with <code>val</code> keyword cannot be modified later so it needs to be initialized when created.</p>
-<p>In conclusion, we discussed how to declare variables through <code>val</code> and <code>var</code> keywords.</p>
+		<p class="amp-wp-7d27179">Once you have installed the Kotlin Command-line Compiler, you may be wondering how to write your first code in Kotlin. In this article, we would also discuss how to create a .jar executable from it, which includes a class file as well as Kotlin run-time library.</p>
+<p class="amp-wp-7d27179">The source code written in Kotlin is saved in a file with .kt extension.</p>
+<h4 class="amp-wp-7d27179">Write your first “Hello World!” code in Kotlin</h4>
+<p class="amp-wp-7d27179">Open a text-editor and save the file as HelloWorld.kt. We have used nano text-editor, choose one which you are comfortable with.</p>
+<pre>nano HelloWorld.kt</pre>
+<p class="amp-wp-7d27179">Next, insert the following code –</p>
+<pre>fun main(args: Array&lt;String&gt;) {
+       println("Hello, World!")
+}</pre>
+<p>where,</p>
+<p class="amp-wp-7d27179"><strong>fun</strong> – it means function, just to let compiler know that we are going to call a function.<br><strong>main</strong> – its the function main() which is to be called.<br><strong>args</strong> – is the name of our variable.<br><strong>Array&lt;String&gt;</strong> – tells the compiler that variable args is an Array of type String.<br><strong>println()</strong> – print line function.<br><strong>“Hello, World!”</strong> – the message we would like to print.</p>
+<p class="amp-wp-7d27179">Save the HelloWorld.kt and exit.</p>
+<p class="amp-wp-7d27179">So far, we have created a file with .kt extension and then inserted our code understood by the Kotlin Compiler. Now, we will compile the code with the help of following command –</p>
+<pre>kotlinc HelloWorld.kt</pre>
+<p class="amp-wp-7d27179">Notice that, it has created a file – HelloWorldKt.class and a folder META-INF with main.kotlin_module. Compiling the code puts the main function inside the HelloWorldKt.class file, which later could run inside a Java Virtual Machine (JVM).</p>
+<p class="amp-wp-7d27179">If you would like to see byte-code inside the HelloWorldKt.class then you may have to use <code>javap</code> command. <code>javap</code> command is basically a command line utility which lets us see the code so generated inside the .class file.</p>
+<pre>javap -c HelloworldKt.class</pre>
+<p class="amp-wp-7d27179">Output should resemble –</p>
+<pre>Compiled from "HelloWorld.kt"
+public final class HelloWorldKt {
+public static final void main(java.lang.String[]);
+Code:
+0: aload_0
+1: ldc #9 // String args
+3: invokestatic #15 // Method kotlin/jvm/internal/Intrinsics.checkParameterIsNotNull:(Ljava/lang/Object;Ljava/lang/String;)V
+6: ldc #17 // String Hello, World!
+8: astore_1
+9: iconst_0
+10: istore_2
+11: getstatic #23 // Field java/lang/System.out:Ljava/io/PrintStream;
+14: aload_1
+15: invokevirtual #29 // Method java/io/PrintStream.println:(Ljava/lang/Object;)V
+18: return
+}</pre>
+<h4 class="amp-wp-7d27179">Make Kotlin Compiler produce a .jar executable</h4>
+<p class="amp-wp-7d27179">The executable so produced will include Kotlin run-time library as well as HelloworldKt.class. Thus, eliminating the need to distribute Kotlin run-time along-with .jar executable. To make one, run the following in terminal –</p>
+<pre>kotlinc HelloWorld.kt -include-runtime -d HelloWorld.jar</pre>
+<p class="amp-wp-7d27179">where,</p>
+<p class="amp-wp-7d27179"><strong>-include-runtime</strong> – asks the compiler to include Kotlin run-time library to make .jar executable.<br><strong>-d</strong> – for output compiled as .jar executable</p>
+<p class="amp-wp-7d27179">Lastly, run the following to execute .jar file –</p>
+<pre>java -jar HelloWorld.jar</pre>
+<p class="amp-wp-7d27179">This should get us expected output i.e. <code>Hello, World!</code></p>
+<p class="amp-wp-7d27179">In conclusion, we have discussed how to write our first Kotlin code and then compile it to a .jar executable.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
 			<div class="amp-wp-meta amp-wp-tax-category">
-		Categories: <a href="https://techpiezo.com/programming-language/kotlin/" rel="category tag">Kotlin</a>, <a href="https://techpiezo.com/programming-language/" rel="category tag">Programming Languages</a>	</div>
+		Categories: <a href="https://techpiezo.com/kotlin/" rel="category tag">Kotlin</a>, <a href="https://techpiezo.com/programming/" rel="category tag">Programming</a>	</div>
 
 	</footer>
 </article>

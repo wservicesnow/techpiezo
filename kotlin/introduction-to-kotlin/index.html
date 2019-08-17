@@ -6,11 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
-	<title>Install OpenJDK JRE / JDK in Ubuntu 19.04 - TechPiezo</title>
+	<title>Introduction to Kotlin - TechPiezo</title>
 
 <!-- This site is optimized with the Yoast SEO plugin v11.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
-<meta name="description" content="In this article, we would discuss installation steps for both OpenJDK Java runtime (JRE) / Development Kit (JDK) in Ubuntu 19.04"/>
-<link rel="canonical" href="https://techpiezo.com/programming-language/java/install-openjdk-jre-jdk-in-ubuntu-19-04/" />
+<meta name="description" content="Kotlin is an open-source programming language and in this article we would introduce you to the beautiful world of Kotlin."/>
+<link rel="canonical" href="https://techpiezo.com/kotlin/introduction-to-kotlin/" />
 <!-- / Yoast SEO plugin. -->
 
 <style id="ct-main-styles-inline-css" type="text/css">:root {
@@ -782,7 +782,7 @@ code, kbd, samp, pre {
 <link rel='stylesheet' id='ct-style-css'  href='https://techpiezo.com/wp-content/themes/blocksy/style.css' type='text/css' media='all' />
 <link rel='stylesheet' id='ct-main-styles-css'  href='https://techpiezo.com/wp-content/themes/blocksy/static/bundle/main.css' type='text/css' media='all' />
 
-<link rel="amphtml" href="https://techpiezo.com/programming-language/java/install-openjdk-jre-jdk-in-ubuntu-19-04/amp/"><link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" sizes="32x32" />
+<link rel="amphtml" href="https://techpiezo.com/kotlin/introduction-to-kotlin/amp/"><link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" sizes="32x32" />
 <link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" sizes="192x192" />
 <link rel="apple-touch-icon-precomposed" href="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" />
 <meta name="msapplication-TileImage" content="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" />
@@ -812,7 +812,7 @@ code, kbd, samp, pre {
 
 </head>
 
-<body class="post-template-default single single-post postid-1825 single-format-standard ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
+<body class="post-template-default single single-post postid-899 single-format-standard ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
 <div id="main-container">
 
 	<header
@@ -847,16 +847,16 @@ code, kbd, samp, pre {
 				>
 
 		<ul id="primary-menu" class="primary-menu menu"><li id="menu-item-70" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-70"><a href="https://techpiezo.com">Home</a></li>
-<li id="menu-item-41" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-41"><a href="https://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
+<li id="menu-item-41" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-41"><a href="https://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
 <ul class="sub-menu">
 	<li id="menu-item-350" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-350"><a href="https://techpiezo.com/linux/linux-quick-fix/">Quick Fix</a></li>
 	<li id="menu-item-349" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-349"><a href="https://techpiezo.com/linux/linux-recent/">What&#8217;s New</a></li>
 </ul>
 </li>
-<li id="menu-item-1838" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor menu-item-has-children menu-item-1838"><a href="https://techpiezo.com/programming-language/">Languages<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
+<li id="menu-item-1838" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-1838"><a href="https://techpiezo.com/programming/">Programming<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
 <ul class="sub-menu">
-	<li id="menu-item-1824" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-1824"><a href="https://techpiezo.com/programming-language/java/">Java</a></li>
-	<li id="menu-item-348" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-348"><a href="https://techpiezo.com/programming-language/kotlin/">Kotlin</a></li>
+	<li id="menu-item-1824" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1824"><a href="https://techpiezo.com/java/">Java</a></li>
+	<li id="menu-item-348" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-348"><a href="https://techpiezo.com/kotlin/">Kotlin</a></li>
 </ul>
 </li>
 <li id="menu-item-43" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-43"><a href="https://techpiezo.com/android/">Android<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
@@ -864,9 +864,13 @@ code, kbd, samp, pre {
 	<li id="menu-item-347" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-347"><a href="https://techpiezo.com/android/android-recent/">What&#8217;s New</a></li>
 </ul>
 </li>
-<li id="menu-item-42" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-42"><a href="https://techpiezo.com/wordpress/">WordPress</a></li>
-<li id="menu-item-40" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-40"><a href="https://techpiezo.com/seo/">SEO</a></li>
 <li id="menu-item-39" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-39"><a href="https://techpiezo.com/tech-insights/">Insights</a></li>
+<li id="menu-item-1846" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1846"><a href="#">More<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-42" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-42"><a href="https://techpiezo.com/wordpress/">WordPress</a></li>
+	<li id="menu-item-40" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-40"><a href="https://techpiezo.com/seo/">SEO</a></li>
+</ul>
+</li>
 </ul>
 	</nav>
 
@@ -936,13 +940,13 @@ code, kbd, samp, pre {
 			<section>
 				
 	<article
-		id="post-1825"
-		class="post-1825 post type-post status-publish format-standard has-post-thumbnail hentry category-java category-linux"		data-content="boxed"				>
+		id="post-899"
+		class="post-899 post type-post status-publish format-standard has-post-thumbnail hentry category-kotlin category-programming"		data-content="boxed"				>
 
 		
 		<section class="hero-section" data-type="type-1" data-alignment="left">
 			<header class="entry-header">
-				<h1 class="page-title">Install OpenJDK JRE / JDK in Ubuntu 19.04</h1>
+				<h1 class="page-title">Introduction to Kotlin</h1>
 				<div class="entry-meta has-avatar" data-label data-type="simple">
 		
 
@@ -955,7 +959,7 @@ code, kbd, samp, pre {
 							By						</span>
 					
 					<span class="ct-meta-element" >
-						<a href="https://techpiezo.com/author/user_tech/" title="Posts by user_tech" rel="author">user_tech</a>					</span>
+						<a href="https://techpiezo.com/author/editorialteam/" title="Posts by Editorial Team" rel="author">Editorial Team</a>					</span>
 				</li>
 			
 							<li
@@ -969,51 +973,34 @@ code, kbd, samp, pre {
 					<span
 						class="ct-meta-element"
 						>
-						Aug 17, 2019					</span>
+						Jul 25, 2019					</span>
 				</li>
 			
 			
-			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-label">In </span><span class="ct-meta-element"><a href="https://techpiezo.com/programming-language/java/" rel="tag">Java</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/" rel="tag">Linux</a></span></li>					</ul>
+			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-label">In </span><span class="ct-meta-element"><a href="https://techpiezo.com/kotlin/" rel="tag">Kotlin</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/programming/" rel="tag">Programming</a></span></li>					</ul>
 				</div>
 		
 					</header>
 		</section>
 
-		<figure class="ct-featured-image " ><div class="ct-image-container" ><img src="https://techpiezo.com/wp-content/uploads/2019/08/Install-OpenJDK-JRE.svg" class="attachment-full size-full" alt="Install OpenJDK Runtime and Development Kit" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
+		<figure class="ct-featured-image " ><div class="ct-image-container" ><img src="https://techpiezo.com/wp-content/uploads/2019/07/Introduction-to-Kotlin.svg" class="attachment-full size-full" alt="Introduction to Kotlin" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
 		
 		<div class="entry-content">
-			<p style="text-align: justify;">In this article, we would discuss installation steps for both JRE as well as JDK. Here, JRE is an acronym for Java runtime and JDK is an acronym for Java Development Kit. For those who just want to run Java applications / programs can install Java runtime. On the other hand, to develop Java applications you need to install Java Development Kit. In case, if you plan on to install JDK, then you wouldn&#8217;t have to install JRE separately. JRE package itself comes bundled with JDK. Both the packages are available in standard Ubuntu repository. Also, you need to first check whether you have JDK/JRE already installed. Therefore, run the following in terminal &#8211;</p>
-<pre>java -version</pre>
-<p style="text-align: justify;">If Java is not installed, then it will return with the following output. We have been using Ubuntu 19.04, if you are on a different release of Ubuntu then you may see different versions in the output.</p>
-<pre>Command 'java' not found, but can be installed with:
-
-sudo apt install default-jre                         # version 2:1.11-71, or
-sudo apt install openjdk-11-jre-headless             # version 11.0.3+7-1ubuntu2~19.04.1
-sudo apt install openjdk-8-jre-headless              # version 8u212-b03-0ubuntu1.19.04.2
-sudo apt install openjdk-12-jre-headless             # version 12.0.1+12-1
-sudo apt install openjdk-13-jre-headless             # version 13~13-0ubunt1</pre>
-<p style="text-align: justify;">The following operations would require superuser privileges. In case, if you don&#8217;t one then contact your system administrator for assistance.</p>
-<h5>Install OpenJDK Java Runtime Environment (JRE)</h5>
-<p style="text-align: justify;">Firstly, we would install Java Runtime Environment (JRE) to run Java written applications / programs. To do so, run the following in the terminal &#8211;</p>
-<pre>sudo apt install openjdk-11-jre</pre>
-<p style="text-align: justify;">Why did we choose to install openjdk-11-jre not other packages like openjdk-12-jre? The answer to the question is pretty easy, openjdk-11-jre is currently the package supported by Ubuntu distribution. If you intend to install other package versions then you may opt one. But remember, those packages may not be supported by the Ubuntu distribution. It may take few minutes to install the packages depending on your speed of your network connection.</p>
-<p style="text-align: justify;">Once, done again run the following command in the terminal &#8211;</p>
-<pre>java -version</pre>
-<p style="text-align: justify;">This time around, you would get the output &#8211;</p>
-<pre>openjdk version "11.0.4" 2019-07-16
-OpenJDK Runtime Environment (build 11.0.4+11-post-Ubuntu-1ubuntu219.04)
-OpenJDK 64-Bit Server VM (build 11.0.4+11-post-Ubuntu-1ubuntu219.04, mixed mode, sharing)</pre>
-<p style="text-align: justify;">This installs Java runtime environment on your system. Next, we would discuss installation steps for Java Development Kit (JDK).</p>
-<h5>Install OpenJDK Development Kit (JDK)</h5>
-<p style="text-align: justify;">In case you would like to develop Java applications then, you would have to install OpenJDK Development Kit (JDK). To do so, run the following command in terminal &#8211;</p>
-<pre>sudo apt install openjdk-11-jdk</pre>
-<p style="text-align: justify;">As discussed earlier, this will also install openjdk-11-jre. Upon successful installation, run the following in the terminal &#8211;</p>
-<pre>java -version</pre>
-<p style="text-align: justify;">It will return with the following output.</p>
-<pre>openjdk version "11.0.4" 2019-07-16
-OpenJDK Runtime Environment (build 11.0.4+11-post-Ubuntu-1ubuntu219.04)
-OpenJDK 64-Bit Server VM (build 11.0.4+11-post-Ubuntu-1ubuntu219.04, mixed mode, sharing)</pre>
-<p style="text-align: justify;">In conclusion, both JDK as well as JRE could be installed depending on our requirements. JDK for development purposes and JRE for simply running Java applications.</p>
+			<p style="text-align: justify;">Kotlin is an open-source programming language, which supports both functional as well as object-oriented programming. Advancement in language is being taken care of by Kotlin Foundation group, created by Google and JetBrains. In 2017, Google announced first-class support for the language. Recently, Google also announced that Kotlin will be its preferred language for Android Application development.</p>
+<p style="text-align: justify;">Furthermore, the language can be compiled through a Java Virtual Machine, we can also develop Android applications, server-side applications, transpile JavaScript code etc. In addition to, if we are working on a Java-based application there also we can use Kotlin alongside as it is interoperable with Java.</p>
+<h4>Kotlin &#8211; A Statically Typed Programming Language</h4>
+<p style="text-align: justify;">Programming languages have been classified as Dynamically typed and Statically typed. In Dynamically typed programming languages, the type is checked during run time thus saving us lot of space and time. But, our code will compile despite having run-time errors. In case of Statically typed programming languages, type is checked during compile time and it will not compile until we have fixed the errors. Also, data types need to be declared beforehand in case of statically typed programming languages. Kotlin is a statically typed programming language. In contrast to Java, which is also a statically typed programming language we need to declare variable types before assigning any values. But in Kotlin, we don&#8217;t have to explicitly define variable types in our source code. Kotlin in most cases will determine the variable type. The attribute which assists programming language to identify the type of a variable is defined as type inference.</p>
+<h4>Supports Object-Oriented and Functional Programming</h4>
+<p style="text-align: justify;">It also supports both object-oriented programming as well as functional programming. As the name suggests, the object-oriented programming is based on objects. These objects are the instances of classes defined. On the other hand, we get to work with functions in functional programming. We can store functions as values in variables, pass them as parameters etc.</p>
+<h4>Special Attribute</h4>
+<p style="text-align: justify;">The attribute that makes it stand out is &#8211; Kotlin code can be called from Java and Java code can be called from Kotlin. It is interoperable with Java and also let developers to write concise codes. Concise codes can help increase developers&#8217; productivity as the time needed to read, analyze the code is cut short and developers&#8217; could devote their time to some other relevant work. Further, Java developers wouldn&#8217;t have to put in a lot of effort to understand Kotlin.</p>
+<h4>Forbids NullPointerException</h4>
+<p style="text-align: justify;">Last but not least, we can use operator (<code>?</code>) in our code to get rid of NullPointerException. In case our variable contains null value then it would exclude any operations on it thereby eliminating the event that leads to NullPointerException. For example,</p>
+<pre>var a: String = null</pre>
+<p style="text-align: justify;">This code will fail to compile as variable <code>a</code> can&#8217;t be null. On the other hand, we can use operator (<code>?</code>) to make sure our code compiles.</p>
+<pre>var a: String? = null</pre>
+<p style="text-align: justify;">Kotlin programming language is provided under Apache License 2.0 and we can build our applications through any of the following IntelliJ IDEA, Eclipse, &amp; Command line compiler.</p>
+<p style="text-align: justify;"><strong>In conclusion</strong>, we have just introduced you to the beautiful world of Kotlin.</p>
 		</div>
 
 		
@@ -1032,7 +1019,7 @@ OpenJDK 64-Bit Server VM (build 11.0.4+11-post-Ubuntu-1ubuntu219.04, mixed mode,
 		class="ct-sidebar" data-sticky		data-widgets="separated">
 				<div class="ct-widget widget_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
 											<li>
-					<a href="https://techpiezo.com/programming-language/java/install-openjdk-jre-jdk-in-ubuntu-19-04/">Install OpenJDK JRE / JDK in Ubuntu 19.04</a>
+					<a href="https://techpiezo.com/java/install-openjdk-jre-jdk-in-ubuntu-19-04/">Install OpenJDK JRE / JDK in Ubuntu 19.04</a>
 									</li>
 											<li>
 					<a href="https://techpiezo.com/linux/fixed-install-hplip-3-19-1-in-ubuntu-19-04/">[Fixed] Install HPLIP 3.19.1 in Ubuntu 19.04</a>
@@ -1041,7 +1028,7 @@ OpenJDK 64-Bit Server VM (build 11.0.4+11-post-Ubuntu-1ubuntu219.04, mixed mode,
 					<a href="https://techpiezo.com/linux/install-google-chrome-in-debian-buster/">Install Google Chrome in Debian Buster</a>
 									</li>
 											<li>
-					<a href="https://techpiezo.com/programming-language/kotlin/declare-variables-var-and-val-in-kotlin/">Declare Variables (var and val) in Kotlin</a>
+					<a href="https://techpiezo.com/kotlin/declare-variables-var-and-val-in-kotlin/">Declare Variables (var and val) in Kotlin</a>
 									</li>
 											<li>
 					<a href="https://techpiezo.com/linux/make-bootable-usb-stick-to-act-as-storage-device-again/">Make Bootable USB stick to act as Storage device again</a>
@@ -1064,35 +1051,22 @@ OpenJDK 64-Bit Server VM (build 11.0.4+11-post-Ubuntu-1ubuntu219.04, mixed mode,
 				<ul data-columns="2">
 											
 						<li>
-							<a class="ct-image-container" href="https://techpiezo.com/linux/fixed-install-hplip-3-19-1-in-ubuntu-19-04/"><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/08/Install-HPLIP-in-Ubuntu.svg" class="attachment-large size-large" alt="Install HPLIP 3.19.1 in Ubuntu 19.04" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<a class="ct-image-container" href="https://techpiezo.com/java/install-openjdk-jre-jdk-in-ubuntu-19-04/"><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/08/Install-OpenJDK-JRE.svg" class="attachment-large size-large" alt="Install OpenJDK Runtime and Development Kit" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
 							<h3 class="related-entry-title">
-								<a href="https://techpiezo.com/linux/fixed-install-hplip-3-19-1-in-ubuntu-19-04/">[Fixed] Install HPLIP 3.19.1 in Ubuntu 19.04</a>
+								<a href="https://techpiezo.com/java/install-openjdk-jre-jdk-in-ubuntu-19-04/">Install OpenJDK JRE / JDK in Ubuntu 19.04</a>
 							</h3>
 
 							<div class="related-entry-meta">
 								<span>
-									Aug 3, 2019								</span>
+									Aug 17, 2019								</span>
 
 															</div>
 						</li>
 											
 						<li>
-							<a class="ct-image-container" href="https://techpiezo.com/linux/install-google-chrome-in-debian-buster/"><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/08/Install-Google-Chrome-in-Debian-Buster.svg" class="attachment-large size-large" alt="Install Google Chrome in Debian Buster" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<a class="ct-image-container" href="https://techpiezo.com/kotlin/declare-variables-var-and-val-in-kotlin/"><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/08/Declare-Variables-Var-and-Val.svg" class="attachment-large size-large" alt="Declare Variables - Var and Val in Kotlin" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
 							<h3 class="related-entry-title">
-								<a href="https://techpiezo.com/linux/install-google-chrome-in-debian-buster/">Install Google Chrome in Debian Buster</a>
-							</h3>
-
-							<div class="related-entry-meta">
-								<span>
-									Aug 2, 2019								</span>
-
-															</div>
-						</li>
-											
-						<li>
-							<a class="ct-image-container" href="https://techpiezo.com/linux/make-bootable-usb-stick-to-act-as-storage-device-again/"><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/08/Bootable-USB-as-Storage-Device.svg" class="attachment-large size-large" alt="Make Bootable USB act as Storage Device" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
-							<h3 class="related-entry-title">
-								<a href="https://techpiezo.com/linux/make-bootable-usb-stick-to-act-as-storage-device-again/">Make Bootable USB stick to act as Storage device again</a>
+								<a href="https://techpiezo.com/kotlin/declare-variables-var-and-val-in-kotlin/">Declare Variables (var and val) in Kotlin</a>
 							</h3>
 
 							<div class="related-entry-meta">
@@ -1103,14 +1077,27 @@ OpenJDK 64-Bit Server VM (build 11.0.4+11-post-Ubuntu-1ubuntu219.04, mixed mode,
 						</li>
 											
 						<li>
-							<a class="ct-image-container" href="https://techpiezo.com/linux/create-a-bootable-live-usb-in-ubuntu-through-command-line/"><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/07/Create-Bootable-USB-in-Ubuntu.svg" class="attachment-large size-large" alt="Create Bootable Live USB in Ubuntu" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<a class="ct-image-container" href="https://techpiezo.com/kotlin/code-comments-in-kotlin/"><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/07/Code-Comments-in-Kotlin.svg" class="attachment-large size-large" alt="Code Comments in Kotlin" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
 							<h3 class="related-entry-title">
-								<a href="https://techpiezo.com/linux/create-a-bootable-live-usb-in-ubuntu-through-command-line/">Create a bootable Live USB in Ubuntu through Command Line</a>
+								<a href="https://techpiezo.com/kotlin/code-comments-in-kotlin/">Code Comments in Kotlin</a>
 							</h3>
 
 							<div class="related-entry-meta">
 								<span>
 									Jul 31, 2019								</span>
+
+															</div>
+						</li>
+											
+						<li>
+							<a class="ct-image-container" href="https://techpiezo.com/kotlin/write-your-first-code-in-kotlin/"><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/07/Your-First-Code-in-Kotlin.svg" class="attachment-large size-large" alt="Your First Code in Kotlin" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<h3 class="related-entry-title">
+								<a href="https://techpiezo.com/kotlin/write-your-first-code-in-kotlin/">Write your first code in Kotlin</a>
+							</h3>
+
+							<div class="related-entry-meta">
+								<span>
+									Jul 27, 2019								</span>
 
 															</div>
 						</li>
@@ -1214,16 +1201,16 @@ OpenJDK 64-Bit Server VM (build 11.0.4+11-post-Ubuntu-1ubuntu219.04, mixed mode,
 			<div class="ct-bag-content" >
 				
 				<ul id="primary-menu" class="mobile-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-70"><a href="https://techpiezo.com">Home</a></li>
-<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-41"><a href="https://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-41"><a href="https://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
 <ul class="sub-menu">
 	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-350"><a href="https://techpiezo.com/linux/linux-quick-fix/">Quick Fix</a></li>
 	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-349"><a href="https://techpiezo.com/linux/linux-recent/">What&#8217;s New</a></li>
 </ul>
 </li>
-<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor menu-item-has-children menu-item-1838"><a href="https://techpiezo.com/programming-language/">Languages<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-1838"><a href="https://techpiezo.com/programming/">Programming<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
 <ul class="sub-menu">
-	<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-1824"><a href="https://techpiezo.com/programming-language/java/">Java</a></li>
-	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-348"><a href="https://techpiezo.com/programming-language/kotlin/">Kotlin</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1824"><a href="https://techpiezo.com/java/">Java</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-348"><a href="https://techpiezo.com/kotlin/">Kotlin</a></li>
 </ul>
 </li>
 <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-43"><a href="https://techpiezo.com/android/">Android<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
@@ -1231,9 +1218,13 @@ OpenJDK 64-Bit Server VM (build 11.0.4+11-post-Ubuntu-1ubuntu219.04, mixed mode,
 	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-347"><a href="https://techpiezo.com/android/android-recent/">What&#8217;s New</a></li>
 </ul>
 </li>
-<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-42"><a href="https://techpiezo.com/wordpress/">WordPress</a></li>
-<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-40"><a href="https://techpiezo.com/seo/">SEO</a></li>
 <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-39"><a href="https://techpiezo.com/tech-insights/">Insights</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1846"><a href="#">More<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-42"><a href="https://techpiezo.com/wordpress/">WordPress</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-40"><a href="https://techpiezo.com/seo/">SEO</a></li>
+</ul>
+</li>
 </ul>			</div>
 		</div>
 	</div>

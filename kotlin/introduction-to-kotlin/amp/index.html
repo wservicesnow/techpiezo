@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Install Kotlin - Command line compiler in Ubuntu - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/programming-language/kotlin/install-kotlin-command-line-compiler-in-ubuntu/" />
+		<title>Introduction to Kotlin - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/kotlin/introduction-to-kotlin/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -426,9 +426,9 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Install Kotlin &#8211; Command line compiler in Ubuntu</h1>
+		<h1 class="amp-wp-title">Introduction to Kotlin</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-07-26T17:27:47+00:00">
+	<time datetime="2019-07-25T14:05:46+00:00">
 		3 weeks ago	</time>
 </div>
 	</header>
@@ -436,37 +436,26 @@ amp-carousel > amp-img > img {
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">Kotlin is an open-source, statically typed programming language. It supports both functional as well as object-oriented programming. Moreover, there are multiple ways to install Kotlin in Ubuntu. In addition to command line compiler, Kotlin code can also be compiled from IntelliJ IDEA and Eclipse. Also, Kotlin is interoperable with Java. In this article, we would focus on installation of command line compiler of Kotlin.</p>
-<p class="amp-wp-7d27179">Even though, we can install Kotlin Compiler with ease. To launch the interactive shell (REPL) or running the compiler would require the presence of Java run-time on our Operating system. Since, Ubuntu already has one in its repository. We would install OpenJDK Java runtime if its not already installed. The package that we would install is <code>openjdk-11-jre</code>.</p>
-<h4>Install OpenJDK Java runtime</h4>
-<p class="amp-wp-7d27179">To install OpenJDK Java run-time, you need to have superuser privileges. Otherwise, contact your system administrator for assistance.</p>
-<pre>sudo apt install openjdk-11-jre</pre>
-<h4>Install Kotlin – Command line compiler</h4>
-<p class="amp-wp-7d27179">To download the command line compiler, visit</p>
-<pre>https://github.com/JetBrains/kotlin/releases/latest</pre>
-<p class="amp-wp-7d27179">At the time of writing the article, the latest stable version was 1.3.41.</p>
-<p class="amp-wp-7d27179">When you will scroll down the page, there is list of files available to download. To install Kotlin compiler, we need to have <code>kotlin-compiler-X.X.XX.zip</code> file.</p>
-<p>Move to the Downloads directory.</p>
-<pre>cd ~/Downloads/</pre>
-<p class="amp-wp-7d27179">The direct link available for the version 1.3.41 is  –</p>
-<pre>wget -c 'https://github.com/JetBrains/kotlin/releases/download/v1.3.41/kotlin-compiler-1.3.41.zip'</pre>
-<p class="amp-wp-7d27179">Unzip it with the help of <code>unzip</code> command.</p>
-<pre>unzip kotlin-compiler-1.3.41.zip</pre>
-<p class="amp-wp-7d27179">Furthermore, we will add the path variable to the <code>.bashrc</code> file to access the compiler directly without providing its complete path.</p>
-<pre>nano ~/.bashrc</pre>
-<p class="amp-wp-7d27179">We have used nano text editor, you can use one of your own choice. Afterwards, append the file with the following –</p>
-<pre>export PATH=~/Downloads/kotlinc/bin:$PATH</pre>
-<h4>Running the REPL</h4>
-<p class="amp-wp-7d27179">REPL is an acronym for Read-Eval-Print-Loop; it is basically an interactive shell for the programming language. To run the REPL, we need to open the terminal and type the following –</p>
-<pre>kotlinc-jvm</pre>
-<p class="amp-wp-7d27179">Lastly, to quit from REPL,</p>
-<pre>:quit</pre>
-<p class="amp-wp-7d27179">In Conclusion, we have discussed Command-line Compiler installation for Kotlin programming language.</p>
+		<p class="amp-wp-7d27179">Kotlin is an open-source programming language, which supports both functional as well as object-oriented programming. Advancement in language is being taken care of by Kotlin Foundation group, created by Google and JetBrains. In 2017, Google announced first-class support for the language. Recently, Google also announced that Kotlin will be its preferred language for Android Application development.</p>
+<p class="amp-wp-7d27179">Furthermore, the language can be compiled through a Java Virtual Machine, we can also develop Android applications, server-side applications, transpile JavaScript code etc. In addition to, if we are working on a Java-based application there also we can use Kotlin alongside as it is interoperable with Java.</p>
+<h4>Kotlin – A Statically Typed Programming Language</h4>
+<p class="amp-wp-7d27179">Programming languages have been classified as Dynamically typed and Statically typed. In Dynamically typed programming languages, the type is checked during run time thus saving us lot of space and time. But, our code will compile despite having run-time errors. In case of Statically typed programming languages, type is checked during compile time and it will not compile until we have fixed the errors. Also, data types need to be declared beforehand in case of statically typed programming languages. Kotlin is a statically typed programming language. In contrast to Java, which is also a statically typed programming language we need to declare variable types before assigning any values. But in Kotlin, we don’t have to explicitly define variable types in our source code. Kotlin in most cases will determine the variable type. The attribute which assists programming language to identify the type of a variable is defined as type inference.</p>
+<h4>Supports Object-Oriented and Functional Programming</h4>
+<p class="amp-wp-7d27179">It also supports both object-oriented programming as well as functional programming. As the name suggests, the object-oriented programming is based on objects. These objects are the instances of classes defined. On the other hand, we get to work with functions in functional programming. We can store functions as values in variables, pass them as parameters etc.</p>
+<h4>Special Attribute</h4>
+<p class="amp-wp-7d27179">The attribute that makes it stand out is – Kotlin code can be called from Java and Java code can be called from Kotlin. It is interoperable with Java and also let developers to write concise codes. Concise codes can help increase developers’ productivity as the time needed to read, analyze the code is cut short and developers’ could devote their time to some other relevant work. Further, Java developers wouldn’t have to put in a lot of effort to understand Kotlin.</p>
+<h4>Forbids NullPointerException</h4>
+<p class="amp-wp-7d27179">Last but not least, we can use operator (<code>?</code>) in our code to get rid of NullPointerException. In case our variable contains null value then it would exclude any operations on it thereby eliminating the event that leads to NullPointerException. For example,</p>
+<pre>var a: String = null</pre>
+<p class="amp-wp-7d27179">This code will fail to compile as variable <code>a</code> can’t be null. On the other hand, we can use operator (<code>?</code>) to make sure our code compiles.</p>
+<pre>var a: String? = null</pre>
+<p class="amp-wp-7d27179">Kotlin programming language is provided under Apache License 2.0 and we can build our applications through any of the following IntelliJ IDEA, Eclipse, &amp; Command line compiler.</p>
+<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have just introduced you to the beautiful world of Kotlin.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
 			<div class="amp-wp-meta amp-wp-tax-category">
-		Categories: <a href="https://techpiezo.com/programming-language/kotlin/" rel="category tag">Kotlin</a>, <a href="https://techpiezo.com/programming-language/" rel="category tag">Programming Languages</a>	</div>
+		Categories: <a href="https://techpiezo.com/kotlin/" rel="category tag">Kotlin</a>, <a href="https://techpiezo.com/programming/" rel="category tag">Programming</a>	</div>
 
 	</footer>
 </article>
