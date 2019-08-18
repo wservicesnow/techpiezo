@@ -983,7 +983,7 @@ code, kbd, samp, pre {
 					</header>
 		</section>
 
-		<figure class="ct-featured-image " ><div class="ct-image-container" ><img src="https://techpiezo.com/wp-content/uploads/2019/07/Backing-file-Snapshot-in-Qemu-KVM.svg" class="attachment-full size-full" alt="Backing file &amp; Snapshot in Qemu-KVM" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
+		<figure class="ct-featured-image ct-hidden-sm" ><div class="ct-image-container" ><img src="https://techpiezo.com/wp-content/uploads/2019/07/Backing-file-Snapshot-in-Qemu-KVM.svg" class="attachment-full size-full" alt="Backing file &amp; Snapshot in Qemu-KVM" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
 		
 		<div class="entry-content">
 			<p style="text-align: justify;">Ability to create snapshot is one of the important feature that is required in any Virtual Machine system. Snapshot saves the current machine state and any further changes to the disk of virtual machines will be saved so that it can be reverted to original state at any time. QEMU/KVM implements it by using backing file, backing file is paired with snapshot disk image of virtual machine, further QEMU/KVM uses original disk image as read only image and any writes to the disk image is redirected to snapshot file as Redirect-on-Write. This allows reads from backing file and writes to snapshot file, snapshot file is QCOW2 disk image hence only writes are registered on disk.</p>
