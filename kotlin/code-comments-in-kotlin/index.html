@@ -44,11 +44,11 @@
     --sidebarWidth: 28%;
     --narrowContainerWidth: 60%;
     --maxSiteWidth: 1290px;
-    --buttonInitialColor: var(--paletteColor2);
-    --linkInitialColor: var(--paletteColor4);
+    --buttonInitialColor: var(--paletteColor1);
+    --linkInitialColor: var(--paletteColor3);
     --paletteColor5: #ffffff;
-    --paletteColor3: #222222;
-    --paletteColor1: #108ae8;
+    --paletteColor3: #0e0c1b;
+    --paletteColor1: #3897f0;
     --headerTopBorder: 1px dashed rgba(44,62,80,0.2);
     --offCanvasWidth: 280px;
     --topBarHeight: 0px;
@@ -58,21 +58,21 @@
     --transparentHeaderHoverFontColor: var(--paletteColor1);
     --headerHeight: 50px;
     --headerLogoContainerHeight: 110px;
-    --logoMaxHeight: 50px;
+    --logoMaxHeight: 30px;
     --cardSpacing: 35px;
     --cardBackground: #ffffff;
     --pageTitleFontHoverColor: var(--paletteColor1);
     --letterSpacing: 0em;
-    --fontSize: 18px;
+    --fontSize: 22px;
     --textTransform: none;
     --fontWeight: 400;
-    --fontFamily: Ubuntu;
+    --fontFamily: Helvetica;
     --fontStyle: normal;
     --textDecoration: none;
     --lineHeight: 1.65;
     --pageTitleFontInitialColor: var(--paletteColor4);
-    --cardExcerptSize: 16px;
-    --cardsGap: 30px;
+    --cardExcerptSize: 20px;
+    --cardsGap: 35px;
     --transparentHeaderBackground: rgba(255, 255, 255, 0.1);
     --transparentLogoMaxHeight: 50px;
     --headerShadow: rgba(210,213,218,0.15);
@@ -83,11 +83,11 @@
     --mobileHeaderHeight: 70px;
     --headerButtonRadius: 5px;
     --headerBottomBorder: none;
-    --paletteColor2: #215d9c;
-    --paletteColor4: #1c1c1c;
+    --paletteColor2: #1da1f2;
+    --paletteColor4: #0e0c1b;
     --fontColor: var(--paletteColor3);
-    --linkHoverColor: var(--paletteColor1);
-    --buttonHoverColor: var(--paletteColor3);
+    --linkHoverColor: #00a562;
+    --buttonHoverColor: var(--paletteColor2);
     --contentAreaSpacing: 35px;
     --wideOffset: 130px;
     --sidebarWidthNoUnit: 28;
@@ -122,7 +122,7 @@
 
 h1 {
     --letterSpacing: 0em;
-    --fontSize: 40px;
+    --fontSize: 44px;
     --textTransform: none;
     --fontWeight: 700;
     --fontStyle: normal;
@@ -133,7 +133,7 @@ h1 {
 
 h2 {
     --letterSpacing: 0em;
-    --fontSize: 35px;
+    --fontSize: 39px;
     --textTransform: none;
     --fontWeight: 700;
     --fontStyle: normal;
@@ -144,7 +144,7 @@ h2 {
 
 h3 {
     --letterSpacing: 0em;
-    --fontSize: 30px;
+    --fontSize: 34px;
     --textTransform: none;
     --fontWeight: 700;
     --fontStyle: normal;
@@ -155,7 +155,7 @@ h3 {
 
 h4 {
     --letterSpacing: 0em;
-    --fontSize: 25px;
+    --fontSize: 29px;
     --textTransform: none;
     --fontWeight: 700;
     --fontStyle: normal;
@@ -166,7 +166,7 @@ h4 {
 
 h5 {
     --letterSpacing: 0em;
-    --fontSize: 20px;
+    --fontSize: 24px;
     --textTransform: none;
     --fontWeight: 700;
     --fontStyle: normal;
@@ -177,7 +177,7 @@ h5 {
 
 h6 {
     --letterSpacing: 0em;
-    --fontSize: 16px;
+    --fontSize: 20px;
     --textTransform: none;
     --fontWeight: 700;
     --fontStyle: normal;
@@ -193,7 +193,7 @@ h6 {
     --fontFamily: Georgia;
     --fontWeight: 600;
     --textTransform: none;
-    --fontSize: 25px;
+    --fontSize: 29px;
     --letterSpacing: 0em;
 }
 
@@ -202,7 +202,7 @@ code, kbd, samp, pre {
     --textDecoration: none;
     --fontFamily: monospace;
     --textTransform: none;
-    --fontSize: 16px;
+    --fontSize: 20px;
     --letterSpacing: 0em;
 }
 
@@ -213,7 +213,7 @@ code, kbd, samp, pre {
     --fontStyle: normal;
     --fontWeight: 700;
     --textTransform: none;
-    --fontSize: 22px;
+    --fontSize: 32px;
     --letterSpacing: 0em;
     --linkHoverColor: var(--paletteColor1);
 }
@@ -223,8 +223,8 @@ code, kbd, samp, pre {
     --textDecoration: none;
     --fontStyle: normal;
     --fontWeight: 700;
-    --textTransform: uppercase;
-    --fontSize: 14px;
+    --textTransform: capitalize;
+    --fontSize: 18px;
     --letterSpacing: 0em;
 }
 
@@ -233,8 +233,8 @@ code, kbd, samp, pre {
     --textDecoration: none;
     --fontStyle: normal;
     --fontWeight: 700;
-    --textTransform: uppercase;
-    --fontSize: 12px;
+    --textTransform: capitalize;
+    --fontSize: 16px;
     --letterSpacing: 0em;
 }
 
@@ -243,7 +243,7 @@ code, kbd, samp, pre {
     --textDecoration: none;
     --fontStyle: normal;
     --fontWeight: 700;
-    --textTransform: none;
+    --textTransform: capitalize;
     --fontSize: 30px;
     --letterSpacing: 0em;
 }
@@ -296,27 +296,14 @@ code, kbd, samp, pre {
 }
 
 .site-main {
-    --backgroundImage: url(https://techpiezo.com/wp-content/uploads/2019/08/site-background.svg);
-    --backgroundAttachment: fixed;
-    --backgroundPosition: 50% 50%;
-    --backgroundSize: auto;
-    --backgroundRepeat: repeat-y;
-    --backgroundColor: #535d6c;
+    --backgroundImage: none;
+    --backgroundColor: #f8f8f8;
 }
 
 .header-desktop {
     --backgroundColor: #ffffff;
     --backgroundImage: none;
     --menuItemsSpacing: 25px;
-}
-
-.single .site-main {
-    --backgroundImage: url(https://techpiezo.com/wp-content/uploads/2019/08/page-background.svg);
-    --backgroundAttachment: fixed;
-    --backgroundPosition: 50% 50%;
-    --backgroundSize: auto;
-    --backgroundRepeat: repeat-y;
-    --backgroundColor: #ffffff;
 }
 
 .ct-related-posts {
@@ -332,12 +319,12 @@ code, kbd, samp, pre {
 }
 
 .entry-header .page-title {
-    --lineHeight: 1.3;
+    --lineHeight: 1.5;
     --textDecoration: none;
     --fontStyle: normal;
     --fontWeight: 700;
     --textTransform: none;
-    --fontSize: 27px;
+    --fontSize: 36px;
     --letterSpacing: 0em;
 }
 
@@ -347,7 +334,7 @@ code, kbd, samp, pre {
     --fontStyle: normal;
     --fontWeight: 700;
     --textTransform: none;
-    --fontSize: 20px;
+    --fontSize: 30px;
     --letterSpacing: 0em;
 }
 
@@ -361,7 +348,7 @@ code, kbd, samp, pre {
 }
 
 .entry-card {
-    --metaFontSize: 12px;
+    --metaFontSize: 18px;
 }
 
 .entry-meta {
@@ -487,12 +474,12 @@ code, kbd, samp, pre {
     --headerHeight: 35px;
     --transparentLogoMaxHeight: 50px;
     --cardSpacing: 35px;
-    --cardExcerptSize: 16px;
+    --cardExcerptSize: 20px;
     --lineHeight: 1.65;
-    --fontSize: 18px;
+    --fontSize: 22px;
     --letterSpacing: 0em;
-    --cardsGap: 30px;
-    --logoMaxHeight: 50px;
+    --cardsGap: 35px;
+    --logoMaxHeight: 30px;
     --headerLogoContainerHeight: 35px;
     --navSectionHeight: 15px;
     --mobileHeaderHeight: 40px;
@@ -508,67 +495,67 @@ code, kbd, samp, pre {
 
 h1 {
     --lineHeight: 1.5;
-    --fontSize: 40px;
+    --fontSize: 44px;
     --letterSpacing: 0em;
 }
 
 h2 {
     --lineHeight: 1.5;
-    --fontSize: 35px;
+    --fontSize: 39px;
     --letterSpacing: 0em;
 }
 
 h3 {
     --lineHeight: 1.5;
-    --fontSize: 30px;
+    --fontSize: 34px;
     --letterSpacing: 0em;
 }
 
 h4 {
     --lineHeight: 1.5;
-    --fontSize: 25px;
+    --fontSize: 29px;
     --letterSpacing: 0em;
 }
 
 h5 {
     --lineHeight: 1.5;
-    --fontSize: 20px;
+    --fontSize: 24px;
     --letterSpacing: 0em;
 }
 
 h6 {
     --lineHeight: 1.5;
-    --fontSize: 16px;
+    --fontSize: 20px;
     --letterSpacing: 0em;
 }
 
 .entry-content blockquote p, .ct-quote-widget blockquote p {
     --lineHeight: 1.65;
-    --fontSize: 25px;
+    --fontSize: 29px;
     --letterSpacing: 0em;
 }
 
 code, kbd, samp, pre {
     --lineHeight: 1.65;
-    --fontSize: 16px;
+    --fontSize: 20px;
     --letterSpacing: 0em;
 }
 
 .site-title {
     --lineHeight: 1.65;
-    --fontSize: 22px;
+    --fontSize: 32px;
     --letterSpacing: 0em;
 }
 
 .primary-menu > li {
     --lineHeight: 1.3;
-    --fontSize: 14px;
+    --fontSize: 18px;
     --letterSpacing: 0em;
 }
 
 .primary-menu .sub-menu li {
     --lineHeight: 1.3;
-    --fontSize: 12px;
+    --fontSize: 16px;
     --letterSpacing: 0em;
 }
 
@@ -597,19 +584,19 @@ code, kbd, samp, pre {
 }
 
 .entry-header .page-title {
-    --lineHeight: 1.3;
-    --fontSize: 25px;
+    --lineHeight: 1.5;
+    --fontSize: 30px;
     --letterSpacing: 0em;
 }
 
 .entry-card .entry-title {
     --lineHeight: 1.3;
-    --fontSize: 20px;
+    --fontSize: 26px;
     --letterSpacing: 0em;
 }
 
 .entry-card {
-    --metaFontSize: 12px;
+    --metaFontSize: 18px;
 }
 
 #mobile-menu .mobile-menu,
@@ -636,12 +623,12 @@ code, kbd, samp, pre {
     --headerHeight: 35px;
     --transparentLogoMaxHeight: 50px;
     --cardSpacing: 25px;
-    --cardExcerptSize: 16px;
+    --cardExcerptSize: 20px;
     --lineHeight: 1.65;
-    --fontSize: 18px;
+    --fontSize: 22px;
     --letterSpacing: 0em;
-    --cardsGap: 30px;
-    --logoMaxHeight: 50px;
+    --cardsGap: 35px;
+    --logoMaxHeight: 30px;
     --headerLogoContainerHeight: 35px;
     --navSectionHeight: 15px;
     --mobileHeaderHeight: 50px;
@@ -657,67 +644,67 @@ code, kbd, samp, pre {
 
 h1 {
     --lineHeight: 1.5;
-    --fontSize: 40px;
+    --fontSize: 44px;
     --letterSpacing: 0em;
 }
 
 h2 {
     --lineHeight: 1.5;
-    --fontSize: 35px;
+    --fontSize: 39px;
     --letterSpacing: 0em;
 }
 
 h3 {
     --lineHeight: 1.5;
-    --fontSize: 30px;
+    --fontSize: 34px;
     --letterSpacing: 0em;
 }
 
 h4 {
     --lineHeight: 1.5;
-    --fontSize: 25px;
+    --fontSize: 29px;
     --letterSpacing: 0em;
 }
 
 h5 {
     --lineHeight: 1.5;
-    --fontSize: 20px;
+    --fontSize: 24px;
     --letterSpacing: 0em;
 }
 
 h6 {
     --lineHeight: 1.5;
-    --fontSize: 16px;
+    --fontSize: 20px;
     --letterSpacing: 0em;
 }
 
 .entry-content blockquote p, .ct-quote-widget blockquote p {
     --lineHeight: 1.65;
-    --fontSize: 25px;
+    --fontSize: 29px;
     --letterSpacing: 0em;
 }
 
 code, kbd, samp, pre {
     --lineHeight: 1.65;
-    --fontSize: 16px;
+    --fontSize: 20px;
     --letterSpacing: 0em;
 }
 
 .site-title {
     --lineHeight: 1.65;
-    --fontSize: 22px;
+    --fontSize: 32px;
     --letterSpacing: 0em;
 }
 
 .primary-menu > li {
     --lineHeight: 1.3;
-    --fontSize: 14px;
+    --fontSize: 18px;
     --letterSpacing: 0em;
 }
 
 .primary-menu .sub-menu li {
     --lineHeight: 1.3;
-    --fontSize: 12px;
+    --fontSize: 16px;
     --letterSpacing: 0em;
 }
 
@@ -758,19 +745,19 @@ code, kbd, samp, pre {
 }
 
 .entry-header .page-title {
-    --lineHeight: 1.3;
+    --lineHeight: 1.5;
     --fontSize: 25px;
     --letterSpacing: 0em;
 }
 
 .entry-card .entry-title {
     --lineHeight: 1.3;
-    --fontSize: 18px;
+    --fontSize: 24px;
     --letterSpacing: 0em;
 }
 
 .entry-card {
-    --metaFontSize: 12px;
+    --metaFontSize: 18px;
 }
 
 .header-top-bar-menu,
@@ -778,7 +765,6 @@ code, kbd, samp, pre {
     --menuItemsSpacing: 20px;
 }</style>
 <link rel='stylesheet' id='wp-block-library-css'  href='https://techpiezo.com/wp-includes/css/dist/block-library/style.min.css' type='text/css' media='all' />
-<link crossorigin="anonymous" rel='stylesheet' id='blocksy-fonts-font-source-google-css'  href='https://fonts.googleapis.com/css?family=Ubuntu%3A400&#038;display=swap' type='text/css' media='all' />
 <link rel='stylesheet' id='ct-style-css'  href='https://techpiezo.com/wp-content/themes/blocksy/style.css' type='text/css' media='all' />
 <link rel='stylesheet' id='ct-main-styles-css'  href='https://techpiezo.com/wp-content/themes/blocksy/static/bundle/main.css' type='text/css' media='all' />
 
@@ -796,7 +782,7 @@ code, kbd, samp, pre {
 	padding-right: 20px;
 }
 .ct-last-page-text{
-	color: whitesmoke
+	color: black;
 }
 
 		</style>
@@ -812,7 +798,7 @@ code, kbd, samp, pre {
 
 </head>
 
-<body class="post-template-default single single-post postid-1306 single-format-standard ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
+<body class="post-template-default single single-post postid-1306 single-format-standard wp-custom-logo ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
 <div id="main-container">
 
 	<header
@@ -829,12 +815,10 @@ code, kbd, samp, pre {
 				>
 
 		<h1 class="site-title">
-							<a href="https://techpiezo.com/" rel="home">
-					TechPiezo				</a>
-					</h1>
+							<a href="https://techpiezo.com/" class="custom-logo-link" rel="home"><img src="https://techpiezo.com/wp-content/uploads/2019/08/logo.svg" class="custom-logo ct-default-logo" alt="TechPiezo" /></a>					</h1>
 
 		<h2 class="site-description ct-hidden-sm ct-hidden-md ct-hidden-lg">
-			Future is Here		</h2>
+					</h2>
 	</div>
 
 	
@@ -896,12 +880,10 @@ code, kbd, samp, pre {
 				>
 
 		<h1 class="site-title">
-							<a href="https://techpiezo.com/" rel="home">
-					TechPiezo				</a>
-					</h1>
+							<a href="https://techpiezo.com/" class="custom-logo-link" rel="home"><img src="https://techpiezo.com/wp-content/uploads/2019/08/logo.svg" class="custom-logo ct-default-logo" alt="TechPiezo" /></a>					</h1>
 
 		<h2 class="site-description ct-hidden-sm ct-hidden-md ct-hidden-lg">
-			Future is Here		</h2>
+					</h2>
 	</div>
 
 	
@@ -983,7 +965,7 @@ code, kbd, samp, pre {
 					</header>
 		</section>
 
-		<figure class="ct-featured-image ct-hidden-sm" ><div class="ct-image-container" ><img src="https://techpiezo.com/wp-content/uploads/2019/07/Code-Comments-in-Kotlin.svg" class="attachment-full size-full" alt="Code Comments in Kotlin" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
+		<figure class="ct-featured-image ct-hidden-sm" ><div class="ct-image-container ct-lazy" ><img class="attachment-full size-full" alt="Code Comments in Kotlin" data-lazy="https://techpiezo.com/wp-content/uploads/2019/07/Code-Comments-in-Kotlin.svg" data-object-fit="~" /><noscript><img src="https://techpiezo.com/wp-content/uploads/2019/07/Code-Comments-in-Kotlin.svg" class="attachment-full size-full" alt="Code Comments in Kotlin" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
 		
 		<div class="entry-content">
 			<p style="text-align: justify;">It is imperative to for us understand code comments before we delve further to understand basics of Kotlin. Developers who have worked on large projects do understand the need of code comments. Understand from the perspective of a developer, who have recently been asked to fix a project. If the project contained few lines of code then it could be fixed in seconds. But, what if our code comprises of thousands of lines then it may take hours or days to fix it. All the time lost could have been put to some good use if our code was commented properly. Under such scenario, all the developer had to do was just read code comments and move to the section where alteration was required.</p>
@@ -997,15 +979,15 @@ code, kbd, samp, pre {
 </li>
 </ol>
 <p style="text-align: justify;">In addition to, the comments which we write along-side or in-between our code are ignored by the compiler.</p>
-<p style="text-align: justify;">1.<strong> Single-line Comments</strong>: These are preceded by <code>//</code> and can also be provided as end-of-line comments. For instance &#8211;</p>
+<p style="text-align: justify;">1.<strong> Single-line Comments</strong>: These are preceded by<strong> //</strong> and can also be provided as end-of-line comments. For instance &#8211;</p>
 <pre>// This is single-line comment
 val a=4 // This is an end-of-line comment</pre>
-<p style="text-align: justify;">For single-line or end-of-line comments, anything written after <code>//</code> is ignored by the compiler. In case our comment are spread over multiple lines then we can provide <code>//</code> in the beginning of every line. For instance &#8211;</p>
+<p style="text-align: justify;">For single-line or end-of-line comments, anything written after <strong>//</strong> is ignored by the compiler. In case our comment are spread over multiple lines then we can provide <strong>//</strong> in the beginning of every line. For instance &#8211;</p>
 <pre>// This a single-line
 // comment
 // spread over multiple lines.</pre>
 <p style="text-align: justify;">But, this not considered a good practice. For such a scenario, it is best to go with multi-line comments.</p>
-<p style="text-align: justify;">2. <strong>Multi-line or Block Comments</strong>: Block comments are spread over multiple lines. Such comments start with <code>/*</code> and end with <code>*/</code>. Anything written in-between is ignored by the compiler. For instance &#8211;</p>
+<p style="text-align: justify;">2. <strong>Multi-line or Block Comments</strong>: Block comments are spread over multiple lines. Such comments <strong>start with /* and end with */</strong>. Anything written in-between is ignored by the compiler. For instance &#8211;</p>
 <pre>/* This is a multi-line comment
 or Block comment
 spread over multiple lines. */</pre>
@@ -1060,15 +1042,15 @@ spread over multiple lines. */</pre>
 	</div>
 
 	
-		<div class="ct-related-posts ">
+		<div class="ct-related-posts ct-hidden-sm">
 			<div class="ct-container">
 				<h4 class="ct-related-posts-label">
 					Related Posts				</h4>
 
-				<ul data-columns="2">
+				<ul data-columns="3">
 											
 						<li>
-							<a class="ct-image-container" href="https://techpiezo.com/java/your-first-java-program/"><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/08/first-java-code.svg" class="attachment-large size-large" alt="Your first Java code" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/java/your-first-java-program/"><img width="1" height="1" class="attachment-large size-large" alt="Your first Java code" data-lazy="https://techpiezo.com/wp-content/uploads/2019/08/first-java-code.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/08/first-java-code.svg" class="attachment-large size-large" alt="Your first Java code" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
 							<h3 class="related-entry-title">
 								<a href="https://techpiezo.com/java/your-first-java-program/">Your first Java Program</a>
 							</h3>
@@ -1081,7 +1063,7 @@ spread over multiple lines. */</pre>
 						</li>
 											
 						<li>
-							<a class="ct-image-container" href="https://techpiezo.com/java/install-openjdk-jre-jdk-in-ubuntu-19-04/"><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/08/Install-OpenJDK-JRE.svg" class="attachment-large size-large" alt="Install OpenJDK Runtime and Development Kit" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/java/install-openjdk-jre-jdk-in-ubuntu-19-04/"><img width="1" height="1" class="attachment-large size-large" alt="Install OpenJDK Runtime and Development Kit" data-lazy="https://techpiezo.com/wp-content/uploads/2019/08/Install-OpenJDK-JRE.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/08/Install-OpenJDK-JRE.svg" class="attachment-large size-large" alt="Install OpenJDK Runtime and Development Kit" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
 							<h3 class="related-entry-title">
 								<a href="https://techpiezo.com/java/install-openjdk-jre-jdk-in-ubuntu-19-04/">Install OpenJDK JRE / JDK in Ubuntu 19.04</a>
 							</h3>
@@ -1094,7 +1076,7 @@ spread over multiple lines. */</pre>
 						</li>
 											
 						<li>
-							<a class="ct-image-container" href="https://techpiezo.com/kotlin/declare-variables-var-and-val-in-kotlin/"><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/08/Declare-Variables-Var-and-Val.svg" class="attachment-large size-large" alt="Declare Variables - Var and Val in Kotlin" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/kotlin/declare-variables-var-and-val-in-kotlin/"><img width="1" height="1" class="attachment-large size-large" alt="Declare Variables - Var and Val in Kotlin" data-lazy="https://techpiezo.com/wp-content/uploads/2019/08/Declare-Variables-Var-and-Val.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/08/Declare-Variables-Var-and-Val.svg" class="attachment-large size-large" alt="Declare Variables - Var and Val in Kotlin" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
 							<h3 class="related-entry-title">
 								<a href="https://techpiezo.com/kotlin/declare-variables-var-and-val-in-kotlin/">Declare Variables (var and val) in Kotlin</a>
 							</h3>
@@ -1102,19 +1084,6 @@ spread over multiple lines. */</pre>
 							<div class="related-entry-meta">
 								<span>
 									Aug 1, 2019								</span>
-
-															</div>
-						</li>
-											
-						<li>
-							<a class="ct-image-container" href="https://techpiezo.com/kotlin/write-your-first-code-in-kotlin/"><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/07/Your-First-Code-in-Kotlin.svg" class="attachment-large size-large" alt="Your First Code in Kotlin" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
-							<h3 class="related-entry-title">
-								<a href="https://techpiezo.com/kotlin/write-your-first-code-in-kotlin/">Write your first code in Kotlin</a>
-							</h3>
-
-							<div class="related-entry-meta">
-								<span>
-									Jul 27, 2019								</span>
 
 															</div>
 						</li>

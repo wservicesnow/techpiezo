@@ -440,7 +440,7 @@ amp-carousel > amp-img > img {
 <p class="amp-wp-7d27179">We create groups and add users to it. That means, each of user in the group is allowed to perform certain common tasks. But, they belong to different teams. So, instead of providing unlimited access to all the teams, we pick one user from each team and add them to a group. Then, we assign permissions to each group. Eventually, we are imposing restrictions to other users of team that are not part of a particular group.</p>
 <p class="amp-wp-7d27179">This approach provides us the efficient outcome. Hence, we can allocate our limited precious resources to other tasks.</p>
 <p class="amp-wp-7d27179">Ubuntu and other related Linux distributions for this approach have User Private Groups. When we create a user then, a new group is also created. The name of our new group is the same as that our of newly created user. Therefore, new user belongs to the same group. For instance, if a new user XYZ is created then, at the same time a new group with XYZ will also be created. And, user XYZ will be allotted the group XYZ.</p>
-<p class="amp-wp-7d27179"><code>/etc/group/</code>contains the list of groups on a Ubuntu/Linux distribution. To identify which group a user belongs to, we need to use groups command. For instance,</p>
+<p class="amp-wp-7d27179"><strong>/etc/group</strong> contains the list of groups on a Ubuntu/Linux distribution. To identify which group a user belongs to, we need to use groups command. For instance,</p>
 <pre>groups user_name</pre>
 <p class="amp-wp-7d27179">We can use various command line tools to manage groups. Now, we will create a new user (“username”) and shuffle its primary and secondary groups.</p>
 <h4 class="amp-wp-cdd8ca0">Add user to a group and make changes to its Primary Group</h4>
@@ -454,9 +454,9 @@ amp-carousel > amp-img > img {
 <p class="amp-wp-7d27179"><strong>STEP – II:</strong> In this step, we will be creating two groups – primary and secondary.</p>
 <pre>sudo groupadd groupprimary
 sudo groupadd groupsecondary</pre>
-<p class="amp-wp-7d27179"><strong>STEP – III:</strong> Now, with the help of a <code>usermod</code> command, we would change primary and secondary group of our user –</p>
+<p class="amp-wp-7d27179"><strong>STEP – III:</strong> Now, with the help of a <strong>usermod</strong> command, we would change primary and secondary group of our user –</p>
 <pre>sudo usermod -g groupprimary -G groupsecondary username</pre>
-<p class="amp-wp-7d27179"><code>-g</code> is used for the user’s primary group and <code>-G</code> for its secondary group. Then, we will verify it with command –</p>
+<p class="amp-wp-7d27179"><strong>-g</strong> is used for the user’s primary group and <strong>-G</strong> for its secondary group. Then, we will verify it with command –</p>
 <pre>groups username</pre>
 <p class="amp-wp-7d27179">In conclusion, we have discussed the command line tools available to add user to a group, then learnt how to shuffle its primary and secondary groups.</p>
 	</div>

@@ -44,11 +44,11 @@
     --sidebarWidth: 28%;
     --narrowContainerWidth: 60%;
     --maxSiteWidth: 1290px;
-    --buttonInitialColor: var(--paletteColor2);
-    --linkInitialColor: var(--paletteColor4);
+    --buttonInitialColor: var(--paletteColor1);
+    --linkInitialColor: var(--paletteColor3);
     --paletteColor5: #ffffff;
-    --paletteColor3: #222222;
-    --paletteColor1: #108ae8;
+    --paletteColor3: #0e0c1b;
+    --paletteColor1: #3897f0;
     --headerTopBorder: 1px dashed rgba(44,62,80,0.2);
     --offCanvasWidth: 280px;
     --topBarHeight: 0px;
@@ -58,21 +58,21 @@
     --transparentHeaderHoverFontColor: var(--paletteColor1);
     --headerHeight: 50px;
     --headerLogoContainerHeight: 110px;
-    --logoMaxHeight: 50px;
+    --logoMaxHeight: 30px;
     --cardSpacing: 35px;
     --cardBackground: #ffffff;
     --pageTitleFontHoverColor: var(--paletteColor1);
     --letterSpacing: 0em;
-    --fontSize: 18px;
+    --fontSize: 22px;
     --textTransform: none;
     --fontWeight: 400;
-    --fontFamily: Ubuntu;
+    --fontFamily: Helvetica;
     --fontStyle: normal;
     --textDecoration: none;
     --lineHeight: 1.65;
     --pageTitleFontInitialColor: var(--paletteColor4);
-    --cardExcerptSize: 16px;
-    --cardsGap: 30px;
+    --cardExcerptSize: 20px;
+    --cardsGap: 35px;
     --transparentHeaderBackground: rgba(255, 255, 255, 0.1);
     --transparentLogoMaxHeight: 50px;
     --headerShadow: rgba(210,213,218,0.15);
@@ -83,11 +83,11 @@
     --mobileHeaderHeight: 70px;
     --headerButtonRadius: 5px;
     --headerBottomBorder: none;
-    --paletteColor2: #215d9c;
-    --paletteColor4: #1c1c1c;
+    --paletteColor2: #1da1f2;
+    --paletteColor4: #0e0c1b;
     --fontColor: var(--paletteColor3);
-    --linkHoverColor: var(--paletteColor1);
-    --buttonHoverColor: var(--paletteColor3);
+    --linkHoverColor: #00a562;
+    --buttonHoverColor: var(--paletteColor2);
     --contentAreaSpacing: 35px;
     --wideOffset: 130px;
     --sidebarWidthNoUnit: 28;
@@ -122,7 +122,7 @@
 
 h1 {
     --letterSpacing: 0em;
-    --fontSize: 40px;
+    --fontSize: 44px;
     --textTransform: none;
     --fontWeight: 700;
     --fontStyle: normal;
@@ -133,7 +133,7 @@ h1 {
 
 h2 {
     --letterSpacing: 0em;
-    --fontSize: 35px;
+    --fontSize: 39px;
     --textTransform: none;
     --fontWeight: 700;
     --fontStyle: normal;
@@ -144,7 +144,7 @@ h2 {
 
 h3 {
     --letterSpacing: 0em;
-    --fontSize: 30px;
+    --fontSize: 34px;
     --textTransform: none;
     --fontWeight: 700;
     --fontStyle: normal;
@@ -155,7 +155,7 @@ h3 {
 
 h4 {
     --letterSpacing: 0em;
-    --fontSize: 25px;
+    --fontSize: 29px;
     --textTransform: none;
     --fontWeight: 700;
     --fontStyle: normal;
@@ -166,7 +166,7 @@ h4 {
 
 h5 {
     --letterSpacing: 0em;
-    --fontSize: 20px;
+    --fontSize: 24px;
     --textTransform: none;
     --fontWeight: 700;
     --fontStyle: normal;
@@ -177,7 +177,7 @@ h5 {
 
 h6 {
     --letterSpacing: 0em;
-    --fontSize: 16px;
+    --fontSize: 20px;
     --textTransform: none;
     --fontWeight: 700;
     --fontStyle: normal;
@@ -193,7 +193,7 @@ h6 {
     --fontFamily: Georgia;
     --fontWeight: 600;
     --textTransform: none;
-    --fontSize: 25px;
+    --fontSize: 29px;
     --letterSpacing: 0em;
 }
 
@@ -202,7 +202,7 @@ code, kbd, samp, pre {
     --textDecoration: none;
     --fontFamily: monospace;
     --textTransform: none;
-    --fontSize: 16px;
+    --fontSize: 20px;
     --letterSpacing: 0em;
 }
 
@@ -213,7 +213,7 @@ code, kbd, samp, pre {
     --fontStyle: normal;
     --fontWeight: 700;
     --textTransform: none;
-    --fontSize: 22px;
+    --fontSize: 32px;
     --letterSpacing: 0em;
     --linkHoverColor: var(--paletteColor1);
 }
@@ -223,8 +223,8 @@ code, kbd, samp, pre {
     --textDecoration: none;
     --fontStyle: normal;
     --fontWeight: 700;
-    --textTransform: uppercase;
-    --fontSize: 14px;
+    --textTransform: capitalize;
+    --fontSize: 18px;
     --letterSpacing: 0em;
 }
 
@@ -233,8 +233,8 @@ code, kbd, samp, pre {
     --textDecoration: none;
     --fontStyle: normal;
     --fontWeight: 700;
-    --textTransform: uppercase;
-    --fontSize: 12px;
+    --textTransform: capitalize;
+    --fontSize: 16px;
     --letterSpacing: 0em;
 }
 
@@ -243,7 +243,7 @@ code, kbd, samp, pre {
     --textDecoration: none;
     --fontStyle: normal;
     --fontWeight: 700;
-    --textTransform: none;
+    --textTransform: capitalize;
     --fontSize: 30px;
     --letterSpacing: 0em;
 }
@@ -296,27 +296,14 @@ code, kbd, samp, pre {
 }
 
 .site-main {
-    --backgroundImage: url(https://techpiezo.com/wp-content/uploads/2019/08/site-background.svg);
-    --backgroundAttachment: fixed;
-    --backgroundPosition: 50% 50%;
-    --backgroundSize: auto;
-    --backgroundRepeat: repeat-y;
-    --backgroundColor: #535d6c;
+    --backgroundImage: none;
+    --backgroundColor: #f8f8f8;
 }
 
 .header-desktop {
     --backgroundColor: #ffffff;
     --backgroundImage: none;
     --menuItemsSpacing: 25px;
-}
-
-.single .site-main {
-    --backgroundImage: url(https://techpiezo.com/wp-content/uploads/2019/08/page-background.svg);
-    --backgroundAttachment: fixed;
-    --backgroundPosition: 50% 50%;
-    --backgroundSize: auto;
-    --backgroundRepeat: repeat-y;
-    --backgroundColor: #ffffff;
 }
 
 .ct-related-posts {
@@ -332,12 +319,12 @@ code, kbd, samp, pre {
 }
 
 .entry-header .page-title {
-    --lineHeight: 1.3;
+    --lineHeight: 1.5;
     --textDecoration: none;
     --fontStyle: normal;
     --fontWeight: 700;
     --textTransform: none;
-    --fontSize: 27px;
+    --fontSize: 36px;
     --letterSpacing: 0em;
 }
 
@@ -347,7 +334,7 @@ code, kbd, samp, pre {
     --fontStyle: normal;
     --fontWeight: 700;
     --textTransform: none;
-    --fontSize: 20px;
+    --fontSize: 30px;
     --letterSpacing: 0em;
 }
 
@@ -361,7 +348,7 @@ code, kbd, samp, pre {
 }
 
 .entry-card {
-    --metaFontSize: 12px;
+    --metaFontSize: 18px;
 }
 
 .entry-meta {
@@ -487,12 +474,12 @@ code, kbd, samp, pre {
     --headerHeight: 35px;
     --transparentLogoMaxHeight: 50px;
     --cardSpacing: 35px;
-    --cardExcerptSize: 16px;
+    --cardExcerptSize: 20px;
     --lineHeight: 1.65;
-    --fontSize: 18px;
+    --fontSize: 22px;
     --letterSpacing: 0em;
-    --cardsGap: 30px;
-    --logoMaxHeight: 50px;
+    --cardsGap: 35px;
+    --logoMaxHeight: 30px;
     --headerLogoContainerHeight: 35px;
     --navSectionHeight: 15px;
     --mobileHeaderHeight: 40px;
@@ -508,67 +495,67 @@ code, kbd, samp, pre {
 
 h1 {
     --lineHeight: 1.5;
-    --fontSize: 40px;
+    --fontSize: 44px;
     --letterSpacing: 0em;
 }
 
 h2 {
     --lineHeight: 1.5;
-    --fontSize: 35px;
+    --fontSize: 39px;
     --letterSpacing: 0em;
 }
 
 h3 {
     --lineHeight: 1.5;
-    --fontSize: 30px;
+    --fontSize: 34px;
     --letterSpacing: 0em;
 }
 
 h4 {
     --lineHeight: 1.5;
-    --fontSize: 25px;
+    --fontSize: 29px;
     --letterSpacing: 0em;
 }
 
 h5 {
     --lineHeight: 1.5;
-    --fontSize: 20px;
+    --fontSize: 24px;
     --letterSpacing: 0em;
 }
 
 h6 {
     --lineHeight: 1.5;
-    --fontSize: 16px;
+    --fontSize: 20px;
     --letterSpacing: 0em;
 }
 
 .entry-content blockquote p, .ct-quote-widget blockquote p {
     --lineHeight: 1.65;
-    --fontSize: 25px;
+    --fontSize: 29px;
     --letterSpacing: 0em;
 }
 
 code, kbd, samp, pre {
     --lineHeight: 1.65;
-    --fontSize: 16px;
+    --fontSize: 20px;
     --letterSpacing: 0em;
 }
 
 .site-title {
     --lineHeight: 1.65;
-    --fontSize: 22px;
+    --fontSize: 32px;
     --letterSpacing: 0em;
 }
 
 .primary-menu > li {
     --lineHeight: 1.3;
-    --fontSize: 14px;
+    --fontSize: 18px;
     --letterSpacing: 0em;
 }
 
 .primary-menu .sub-menu li {
     --lineHeight: 1.3;
-    --fontSize: 12px;
+    --fontSize: 16px;
     --letterSpacing: 0em;
 }
 
@@ -597,19 +584,19 @@ code, kbd, samp, pre {
 }
 
 .entry-header .page-title {
-    --lineHeight: 1.3;
-    --fontSize: 25px;
+    --lineHeight: 1.5;
+    --fontSize: 30px;
     --letterSpacing: 0em;
 }
 
 .entry-card .entry-title {
     --lineHeight: 1.3;
-    --fontSize: 20px;
+    --fontSize: 26px;
     --letterSpacing: 0em;
 }
 
 .entry-card {
-    --metaFontSize: 12px;
+    --metaFontSize: 18px;
 }
 
 #mobile-menu .mobile-menu,
@@ -636,12 +623,12 @@ code, kbd, samp, pre {
     --headerHeight: 35px;
     --transparentLogoMaxHeight: 50px;
     --cardSpacing: 25px;
-    --cardExcerptSize: 16px;
+    --cardExcerptSize: 20px;
     --lineHeight: 1.65;
-    --fontSize: 18px;
+    --fontSize: 22px;
     --letterSpacing: 0em;
-    --cardsGap: 30px;
-    --logoMaxHeight: 50px;
+    --cardsGap: 35px;
+    --logoMaxHeight: 30px;
     --headerLogoContainerHeight: 35px;
     --navSectionHeight: 15px;
     --mobileHeaderHeight: 50px;
@@ -657,67 +644,67 @@ code, kbd, samp, pre {
 
 h1 {
     --lineHeight: 1.5;
-    --fontSize: 40px;
+    --fontSize: 44px;
     --letterSpacing: 0em;
 }
 
 h2 {
     --lineHeight: 1.5;
-    --fontSize: 35px;
+    --fontSize: 39px;
     --letterSpacing: 0em;
 }
 
 h3 {
     --lineHeight: 1.5;
-    --fontSize: 30px;
+    --fontSize: 34px;
     --letterSpacing: 0em;
 }
 
 h4 {
     --lineHeight: 1.5;
-    --fontSize: 25px;
+    --fontSize: 29px;
     --letterSpacing: 0em;
 }
 
 h5 {
     --lineHeight: 1.5;
-    --fontSize: 20px;
+    --fontSize: 24px;
     --letterSpacing: 0em;
 }
 
 h6 {
     --lineHeight: 1.5;
-    --fontSize: 16px;
+    --fontSize: 20px;
     --letterSpacing: 0em;
 }
 
 .entry-content blockquote p, .ct-quote-widget blockquote p {
     --lineHeight: 1.65;
-    --fontSize: 25px;
+    --fontSize: 29px;
     --letterSpacing: 0em;
 }
 
 code, kbd, samp, pre {
     --lineHeight: 1.65;
-    --fontSize: 16px;
+    --fontSize: 20px;
     --letterSpacing: 0em;
 }
 
 .site-title {
     --lineHeight: 1.65;
-    --fontSize: 22px;
+    --fontSize: 32px;
     --letterSpacing: 0em;
 }
 
 .primary-menu > li {
     --lineHeight: 1.3;
-    --fontSize: 14px;
+    --fontSize: 18px;
     --letterSpacing: 0em;
 }
 
 .primary-menu .sub-menu li {
     --lineHeight: 1.3;
-    --fontSize: 12px;
+    --fontSize: 16px;
     --letterSpacing: 0em;
 }
 
@@ -758,19 +745,19 @@ code, kbd, samp, pre {
 }
 
 .entry-header .page-title {
-    --lineHeight: 1.3;
+    --lineHeight: 1.5;
     --fontSize: 25px;
     --letterSpacing: 0em;
 }
 
 .entry-card .entry-title {
     --lineHeight: 1.3;
-    --fontSize: 18px;
+    --fontSize: 24px;
     --letterSpacing: 0em;
 }
 
 .entry-card {
-    --metaFontSize: 12px;
+    --metaFontSize: 18px;
 }
 
 .header-top-bar-menu,
@@ -778,7 +765,6 @@ code, kbd, samp, pre {
     --menuItemsSpacing: 20px;
 }</style>
 <link rel='stylesheet' id='wp-block-library-css'  href='https://techpiezo.com/wp-includes/css/dist/block-library/style.min.css' type='text/css' media='all' />
-<link crossorigin="anonymous" rel='stylesheet' id='blocksy-fonts-font-source-google-css'  href='https://fonts.googleapis.com/css?family=Ubuntu%3A400&#038;display=swap' type='text/css' media='all' />
 <link rel='stylesheet' id='ct-style-css'  href='https://techpiezo.com/wp-content/themes/blocksy/style.css' type='text/css' media='all' />
 <link rel='stylesheet' id='ct-main-styles-css'  href='https://techpiezo.com/wp-content/themes/blocksy/static/bundle/main.css' type='text/css' media='all' />
 
@@ -796,7 +782,7 @@ code, kbd, samp, pre {
 	padding-right: 20px;
 }
 .ct-last-page-text{
-	color: whitesmoke
+	color: black;
 }
 
 		</style>
@@ -812,7 +798,7 @@ code, kbd, samp, pre {
 
 </head>
 
-<body class="post-template-default single single-post postid-1330 single-format-standard ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
+<body class="post-template-default single single-post postid-1330 single-format-standard wp-custom-logo ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
 <div id="main-container">
 
 	<header
@@ -829,12 +815,10 @@ code, kbd, samp, pre {
 				>
 
 		<h1 class="site-title">
-							<a href="https://techpiezo.com/" rel="home">
-					TechPiezo				</a>
-					</h1>
+							<a href="https://techpiezo.com/" class="custom-logo-link" rel="home"><img src="https://techpiezo.com/wp-content/uploads/2019/08/logo.svg" class="custom-logo ct-default-logo" alt="TechPiezo" /></a>					</h1>
 
 		<h2 class="site-description ct-hidden-sm ct-hidden-md ct-hidden-lg">
-			Future is Here		</h2>
+					</h2>
 	</div>
 
 	
@@ -896,12 +880,10 @@ code, kbd, samp, pre {
 				>
 
 		<h1 class="site-title">
-							<a href="https://techpiezo.com/" rel="home">
-					TechPiezo				</a>
-					</h1>
+							<a href="https://techpiezo.com/" class="custom-logo-link" rel="home"><img src="https://techpiezo.com/wp-content/uploads/2019/08/logo.svg" class="custom-logo ct-default-logo" alt="TechPiezo" /></a>					</h1>
 
 		<h2 class="site-description ct-hidden-sm ct-hidden-md ct-hidden-lg">
-			Future is Here		</h2>
+					</h2>
 	</div>
 
 	
@@ -983,13 +965,13 @@ code, kbd, samp, pre {
 					</header>
 		</section>
 
-		<figure class="ct-featured-image ct-hidden-sm" ><div class="ct-image-container" ><img src="https://techpiezo.com/wp-content/uploads/2019/08/Bootable-USB-as-Storage-Device.svg" class="attachment-full size-full" alt="Make Bootable USB act as Storage Device" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
+		<figure class="ct-featured-image ct-hidden-sm" ><div class="ct-image-container ct-lazy" ><img class="attachment-full size-full" alt="Make Bootable USB act as Storage Device" data-lazy="https://techpiezo.com/wp-content/uploads/2019/08/Bootable-USB-as-Storage-Device.svg" data-object-fit="~" /><noscript><img src="https://techpiezo.com/wp-content/uploads/2019/08/Bootable-USB-as-Storage-Device.svg" class="attachment-full size-full" alt="Make Bootable USB act as Storage Device" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
 		
 		<div class="entry-content">
-			<p style="text-align: justify;">To make a bootable USB stick to acts as a storage device once again, we will have to use the <code>fdisk</code> command line utility. <code>fdisk</code> command line utility can be used to make modifications in our partition table. Through <code>fdisk</code> utility, we can create, delete, list, print, toggle a bootable flag and many other related operations on our partition table. Furthermore, utility supports GPT, SGI (IRIX), DOS and SUN partition tables.</p>
-<p style="text-align: justify;">To make any modification through <code>fdisk</code> command line utility, we need to have superuser privileges. If you don&#8217;t have one then contact your system administrator for assistance.</p>
+			<p style="text-align: justify;">To make a bootable USB stick to acts as a storage device once again, we will have to use the <strong>fdisk</strong> command line utility. <strong>fdisk</strong> command line utility can be used to make modifications in our partition table. Through <strong>fdisk</strong> utility, we can create, delete, list, print, toggle a bootable flag and many other related operations on our partition table. Furthermore, utility supports GPT, SGI (IRIX), DOS and SUN partition tables.</p>
+<p style="text-align: justify;">To make any modification through <strong>fdisk</strong> command line utility, we need to have superuser privileges. If you don&#8217;t have one then contact your system administrator for assistance.</p>
 <h5 style="text-align: justify;">Make changes to the Partition table</h5>
-<p style="text-align: justify;">Identify you USB device with the help of <code>lsblk</code> command.</p>
+<p style="text-align: justify;">Identify you USB device with the help of<strong> lsblk</strong> command.</p>
 <pre>lsblk -p</pre>
 <p style="text-align: justify;">Output may resemble &#8211;</p>
 <pre>/dev/sda 8:0 0 465.8G 0 disk 
@@ -999,21 +981,21 @@ code, kbd, samp, pre {
 <strong>/dev/sdc</strong> 8:32 1 <strong>7.2G</strong> 0 disk 
 └─<strong>/dev/sdc1</strong> 8:33 1 <strong>1.8G</strong> 0 part /media/&lt;username&gt;/UUID-Device
 /dev/sr0 11:0 1 1024M 0 rom</pre>
-<p style="text-align: justify;">The naming scheme for disk devices is <code>/dev/sdX</code>, where X can be a,b,c, etc. It is order in which our disk device was found. It may be different for your USB device, in our case it is <code>/dev/sdc</code>. Furthermore, <code>/dev/sdc1</code>(of our .iso file size i.e. 1.8G) is the partition already present on our USB stick. The rest of the space i.e. 5.4G is available on our USB stick as free space.</p>
-<p style="text-align: justify;">So, in order to make our USB stick as a storage device we have to delete the <code>/dev/sdc1</code> partition first. Thereafter, we will be utilizing the free space i.e. 7.2G to create a new partition through <code>fdisk</code> command line utility.</p>
-<p style="text-align: justify;">Thus, to make modifications through <code>fdisk</code> command line utility, run the following in terminal &#8211;</p>
+<p style="text-align: justify;">The naming scheme for disk devices is <strong>/dev/sdX</strong>, where X can be a,b,c, etc. It is order in which our disk device was found. It may be different for your USB device, in our case it is <strong>/dev/sdc</strong>. Furthermore,<strong> /dev/sdc1</strong> (of our <strong>.iso</strong> file size i.e. 1.8G) is the partition already present on our USB stick. The rest of the space i.e. 5.4G is available on our USB stick as free space.</p>
+<p style="text-align: justify;">So, in order to make our USB stick as a storage device we have to delete the <strong>/dev/sdc1</strong> partition first. Thereafter, we will be utilizing the free space i.e. 7.2G to create a new partition through <strong>fdisk</strong> command line utility.</p>
+<p style="text-align: justify;">Thus, to make modifications through<strong> fdisk</strong> command line utility, run the following in terminal &#8211;</p>
 <pre>sudo fdisk /dev/sdc</pre>
-<p style="text-align: justify;">You can press m for help or more options. Press <code>p</code> to print the partition table  &#8211;</p>
-<p style="text-align: justify;">Command (m for help): p</p>
+<p style="text-align: justify;">You can press <strong>m</strong> for help or more options. Press<strong> p</strong> to print the partition table  &#8211;</p>
+<pre style="text-align: justify;">Command (m for help): p</pre>
 <p style="text-align: justify;">it may return &#8211;</p>
 <pre>Device Boot Start End Sectors Size Id Type
 /dev/sdc1 2048 3737599 3735552 1.8G 83 Linux</pre>
-<p style="text-align: justify;">To delete the partition, press d &#8211;</p>
+<p style="text-align: justify;">To delete the partition, press <strong>d</strong> &#8211;</p>
 <pre>command (m for help): d</pre>
 <p style="text-align: justify;">it will automatically delete the partition if your partition table contains just one partition. Otherwise, enter the partitions number. The output may resemble &#8211;</p>
 <pre>Selected partition 1
 Partition 1 has been deleted.</pre>
-<p style="text-align: justify;">Now, the free space of size 7.2G (may depend on storage size of your USB stick) is available to us. To create a new partition on available free space, use the option <code>n</code>&#8211;</p>
+<p style="text-align: justify;">Now, the free space of size 7.2G (may depend on storage size of your USB stick) is available to us. To create a new partition on available free space, use the option<strong> n</strong>&#8211;</p>
 <pre>Command (m for help): n
 Partition type
 p primary (0 primary, 0 extended, 4 free)
@@ -1024,25 +1006,25 @@ First sector (2048-15138815, default 2048):
 Last sector, +/-sectors or +/-size{K,M,G,T,P} (2048-15138815, default 15138815):
 
 Created a new partition 1 of type 'Linux' and of size 7.2 GiB.</pre>
-<p style="text-align: justify;">If you want multiple partitions for your USB stick, choose the appropriate options on prompt. Otherwise, default options can be chosen. We just pressed enter when asked for choices. The final outcome is &#8211; the <code>fdisk</code> utility has created a new partition of size 7.2GB of type &#8216;Linux&#8217;.</p>
-<p style="text-align: justify;">Next, we have to write changes to our partition table. Use the <code>w</code> option accordingly.</p>
+<p style="text-align: justify;">If you want multiple partitions for your USB stick, choose the appropriate options on prompt. Otherwise, default options can be chosen. We just pressed enter when asked for choices. The final outcome is &#8211; the<strong> fdisk</strong> utility has created a new partition of size 7.2GB of type &#8216;Linux&#8217;.</p>
+<p style="text-align: justify;">Next, we have to write changes to our partition table. Use the <strong>w</strong> option accordingly.</p>
 <pre>Command (m for help): w
 The partition table has been altered.
 Calling ioctl() to re-read partition table.
 Syncing disks.</pre>
-<p style="text-align: justify;">So, far we have created a new partition of size 7.2G which can be verified by <code>lsblk</code> command.</p>
+<p style="text-align: justify;">So, far we have created a new partition of size 7.2G which can be verified by <strong>lsblk</strong> command.</p>
 <pre>lsblk -p</pre>
 <p style="text-align: justify;">Output &#8211;</p>
 <pre>/dev/sdc 8:32 1 7.2G 0 disk 
 └─/dev/sdc1 8:33 1 7.2G 0 part</pre>
-<h5>Format your Partition <code>/dev/sdc1</code></h5>
-<p style="text-align: justify;">Now, to use USB stick as a storage device we will have to format the <code>/dev/sdc1</code> partition. This can be achieved through <code>mkfs.vfat</code> command line utility. If you want to format it to other types &#8211; read the man pages of <code>mkfs</code> command line utility.</p>
+<h5>Format your Partition /dev/sdc1</h5>
+<p style="text-align: justify;">Now, to use USB stick as a storage device we will have to format the <strong>/dev/sdc1</strong> partition. This can be achieved through <strong>mkfs.vfat</strong> command line utility. If you want to format it to other types &#8211; read the <strong>man</strong> pages of <strong>mkfs</strong> command line utility.</p>
 <pre> man mkfs</pre>
-<p style="text-align: justify;">To format the <code>/dev/sdc1</code> as FAT32 run the following &#8211;</p>
+<p style="text-align: justify;">To format the<strong> /dev/sdc1</strong> as FAT32 run the following &#8211;</p>
 <pre>sudo mkfs.vfat -F 32 /dev/sdc1</pre>
-<p style="text-align: justify;">Lastly, use the command <code>partprobe</code> to inform the Operating system for the partition tables changes we just did.</p>
+<p style="text-align: justify;">Lastly, use the command <strong>partprobe</strong> to inform the Operating system for the partition tables changes we just did.</p>
 <pre># sudo partprobe</pre>
-<p style="text-align: justify;">In conclusion, we have made our bootable USB stick to act as storage device through <code>fdisk</code> command line utility.</p>
+<p style="text-align: justify;">In conclusion, we have made our bootable USB stick to act as storage device through <strong>fdisk</strong> command line utility.</p>
 		</div>
 
 		
@@ -1085,15 +1067,15 @@ Syncing disks.</pre>
 	</div>
 
 	
-		<div class="ct-related-posts ">
+		<div class="ct-related-posts ct-hidden-sm">
 			<div class="ct-container">
 				<h4 class="ct-related-posts-label">
 					Related Posts				</h4>
 
-				<ul data-columns="2">
+				<ul data-columns="3">
 											
 						<li>
-							<a class="ct-image-container" href="https://techpiezo.com/java/install-openjdk-jre-jdk-in-ubuntu-19-04/"><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/08/Install-OpenJDK-JRE.svg" class="attachment-large size-large" alt="Install OpenJDK Runtime and Development Kit" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/java/install-openjdk-jre-jdk-in-ubuntu-19-04/"><img width="1" height="1" class="attachment-large size-large" alt="Install OpenJDK Runtime and Development Kit" data-lazy="https://techpiezo.com/wp-content/uploads/2019/08/Install-OpenJDK-JRE.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/08/Install-OpenJDK-JRE.svg" class="attachment-large size-large" alt="Install OpenJDK Runtime and Development Kit" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
 							<h3 class="related-entry-title">
 								<a href="https://techpiezo.com/java/install-openjdk-jre-jdk-in-ubuntu-19-04/">Install OpenJDK JRE / JDK in Ubuntu 19.04</a>
 							</h3>
@@ -1106,7 +1088,7 @@ Syncing disks.</pre>
 						</li>
 											
 						<li>
-							<a class="ct-image-container" href="https://techpiezo.com/linux/fixed-install-hplip-3-19-1-in-ubuntu-19-04/"><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/08/Install-HPLIP-in-Ubuntu.svg" class="attachment-large size-large" alt="Install HPLIP 3.19.1 in Ubuntu 19.04" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/fixed-install-hplip-3-19-1-in-ubuntu-19-04/"><img width="1" height="1" class="attachment-large size-large" alt="Install HPLIP 3.19.1 in Ubuntu 19.04" data-lazy="https://techpiezo.com/wp-content/uploads/2019/08/Install-HPLIP-in-Ubuntu.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/08/Install-HPLIP-in-Ubuntu.svg" class="attachment-large size-large" alt="Install HPLIP 3.19.1 in Ubuntu 19.04" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
 							<h3 class="related-entry-title">
 								<a href="https://techpiezo.com/linux/fixed-install-hplip-3-19-1-in-ubuntu-19-04/">[Fixed] Install HPLIP 3.19.1 in Ubuntu 19.04</a>
 							</h3>
@@ -1119,7 +1101,7 @@ Syncing disks.</pre>
 						</li>
 											
 						<li>
-							<a class="ct-image-container" href="https://techpiezo.com/linux/install-google-chrome-in-debian-buster/"><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/08/Install-Google-Chrome-in-Debian-Buster.svg" class="attachment-large size-large" alt="Install Google Chrome in Debian Buster" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/install-google-chrome-in-debian-buster/"><img width="1" height="1" class="attachment-large size-large" alt="Install Google Chrome in Debian Buster" data-lazy="https://techpiezo.com/wp-content/uploads/2019/08/Install-Google-Chrome-in-Debian-Buster.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/08/Install-Google-Chrome-in-Debian-Buster.svg" class="attachment-large size-large" alt="Install Google Chrome in Debian Buster" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
 							<h3 class="related-entry-title">
 								<a href="https://techpiezo.com/linux/install-google-chrome-in-debian-buster/">Install Google Chrome in Debian Buster</a>
 							</h3>
@@ -1127,19 +1109,6 @@ Syncing disks.</pre>
 							<div class="related-entry-meta">
 								<span>
 									Aug 2, 2019								</span>
-
-															</div>
-						</li>
-											
-						<li>
-							<a class="ct-image-container" href="https://techpiezo.com/linux/create-a-bootable-live-usb-in-ubuntu-through-command-line/"><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/07/Create-Bootable-USB-in-Ubuntu.svg" class="attachment-large size-large" alt="Create Bootable Live USB in Ubuntu" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
-							<h3 class="related-entry-title">
-								<a href="https://techpiezo.com/linux/create-a-bootable-live-usb-in-ubuntu-through-command-line/">Create a bootable Live USB in Ubuntu through Command Line</a>
-							</h3>
-
-							<div class="related-entry-meta">
-								<span>
-									Jul 31, 2019								</span>
 
 															</div>
 						</li>

@@ -441,7 +441,7 @@ amp-carousel > amp-img > img {
 <p class="amp-wp-7d27179">Lets go through the process of implementation, first to get information about the clean base image, we can use</p>
 <pre>qemu-img info clean-disk.qcow2</pre>
 <p class="amp-wp-7d27179">It displays information such as file format type, name, virtual size, disk size, cluster size.</p>
-<p class="amp-wp-7d27179">To creates clean-disk.qcow2 as backing image for snapshot.qcow2</p>
+<p class="amp-wp-7d27179">To create clean-disk.qcow2 as backing image for snapshot.qcow2</p>
 <pre>qemu-img create -f qcow2 -b clean-disk.qcow2 snapshot.qcow2</pre>
 <p class="amp-wp-7d27179">In order to check the image file, run</p>
 <pre>qemu-img info snapshot.qcow2</pre>

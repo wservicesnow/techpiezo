@@ -429,33 +429,29 @@ amp-carousel > amp-img > img {
 		<h1 class="amp-wp-title">Split files in Linux distributions</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
 	<time datetime="2019-07-26T14:25:06+00:00">
-		3 weeks ago	</time>
+		4 weeks ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">Split is a command-line utility which is used to split files in linux. The utility is provided with coreutils (GNU Core Utilities) package. The package also contains cat command which will be used later in the article. Through split command, we can split larger files into smaller pieces. The utility also allows us choose the size of smaller pieces.</p>
+		<p class="amp-wp-7d27179">Split is a command-line utility which is used to split files in linux. The utility is provided with coreutils (GNU Core Utilities) package. The package also contains <strong>cat</strong> command which will be used later in the article. Through<strong> split</strong> command, we can split larger files into smaller pieces. The utility also allows us choose the size of smaller pieces.</p>
 <h4>How to Split larger files</h4>
-<p class="amp-wp-7d27179">Let’s say you have a file debian-10.0.0-amd64-DVD-1.iso of size 3.6 GB and you want to split the iso file in smaller pieces of size 500M. To do so, you need to run the following command in terminal,</p>
+<p class="amp-wp-7d27179">Let’s say you have a file <strong>debian-10.0.0-amd64-DVD-1.iso</strong> of size 3.6 GB and you want to split the<strong> iso</strong> file in smaller pieces of size 500M. To do so, you need to run the following command in terminal,</p>
 <pre>split --bytes=500M debian-10.0.0-amd64-DVD-1.iso split-file-</pre>
-<p class="amp-wp-7d27179">where,<br>
-split – command line utility,<br>
-–bytes=size – we define the size of smaller pieces here,<br>
-debian-10.0.0-amd64-DVD-1.iso – is the file that will be split and,<br>
-split-file- – prefix for smaller pieces, in case you don’t mention any prefix – default prefix ‘x’ will be used.</p>
+<p class="amp-wp-7d27179">where,<br><strong>split</strong> – command line utility,<br><strong>–bytes=size</strong> – we define the size of smaller pieces here,<br><strong>debian-10.0.0-amd64-DVD-1.iso</strong> – is the file that will be split and,<br><strong>split-file-</strong> – prefix for smaller pieces, in case you don’t mention any prefix – default prefix ‘<strong>x</strong>‘ will be used.</p>
 <p class="amp-wp-7d27179">The default syntax for the command is,</p>
 <pre>split --bytes=size &lt;file-to-be-split&gt; &lt;prefix-smaller-pieces&gt;</pre>
 <p class="amp-wp-7d27179">When we run the above command, our 3.6 GB file would be split to 8 pieces. Seven of those pieces would of 500M in size and last one would be of just 100M size. The name of files so generated would be split-file-aa, split-file-ab, split-file-ac … split-file-ag.</p>
 <p class="amp-wp-7d27179">So far, we have split our larger file to smaller pieces. Next, we will discuss how to join all the smaller pieces to get our file back.</p>
 <h4>Join smaller pieces</h4>
-<p class="amp-wp-7d27179">Once we have split our larger file, the smaller pieces are of no use till we join them together. To do so, we would have to use cat command –</p>
+<p class="amp-wp-7d27179">Once we have split our larger file, the smaller pieces are of no use till we join them together. To do so, we would have to use<strong> cat</strong> command –</p>
 <pre>cat split-file-* &gt; debian-10.0.0-amd64-DVD-1-combined.iso</pre>
-<p class="amp-wp-7d27179">This will combine all the smaller pieces i.e. split-file-ab, split-file-ac … split-file-ag to form our original file debian-10.0.0-amd64-DVD-1-combined.iso.</p>
+<p class="amp-wp-7d27179">This will combine all the smaller pieces i.e. split-file-ab, split-file-ac … split-file-ag to form our original file <strong>debian-10.0.0-amd64-DVD-1-combined.iso</strong>.</p>
 <h4>Verify data integrity using the md5sum</h4>
-<p class="amp-wp-7d27179">The command line utility md5sum is provided with the coreutils (GNU Core Utilities) package. The utility helps us to verify data integrity using Message-Digest Algorithm 5. MD5 generates 128-bit cryptographic hash, which can later be used to verify file integrity.</p>
-<p class="amp-wp-7d27179">We need to check md5sum for both original as well as combined file. To do so, run the following in the terminal –</p>
+<p class="amp-wp-7d27179">The command line utility <strong>md5sum</strong> is provided with the<strong> coreutils</strong> (GNU Core Utilities) package. The utility helps us to verify data integrity using Message-Digest Algorithm 5. MD5 generates 128-bit cryptographic hash, which can later be used to verify file integrity.</p>
+<p class="amp-wp-7d27179">We need to check <strong>md5sum</strong> for both original as well as combined file. To do so, run the following in the terminal –</p>
 <h4>md5sum debian-10.0.0-amd64-DVD-1.iso</h4>
 <p class="amp-wp-7d27179">this would return with the output –</p>
 <pre class="amp-wp-7d27179">5206549aab4b54026aa6dcd026f8ffcb debian-10.0.0-amd64-DVD-1.iso</pre>
@@ -463,10 +459,9 @@ split-file- – prefix for smaller pieces, in case you don’t mention any prefi
 <pre>md5sum debian-10.0.0-amd64-DVD-1-combined.iso</pre>
 <p class="amp-wp-7d27179">This should also return with the same hash value.</p>
 <pre class="amp-wp-7d27179">5206549aab4b54026aa6dcd026f8ffcb debian-10.0.0-amd64-DVD-1-combined.iso</pre>
-<p class="amp-wp-7d27179">If md5sum hashes for both the files match then our files are intact. Otherwise, the file has been altered and has lost its integrity.<br>
-To look for more options related to split command, it is advisable to go through man pages available on Linux distributions.</p>
+<p class="amp-wp-7d27179">If <strong>md5sum</strong> hashes for both the files match then our files are intact. Otherwise, the file has been altered and has lost its integrity. To look for more options related to split command, it is advisable to go through man pages available on Linux distributions.</p>
 <pre>man split</pre>
-<p class="amp-wp-7d27179">Conclusion, in this article we have discussed how to split a file in smaller pieces and then combine them again. To check integrity of our files we have used md5sum command line utility.</p>
+<p class="amp-wp-7d27179">Conclusion, in this article we have discussed how to split a file in smaller pieces and then combine them again. To check integrity of our files we have used <strong>md5sum</strong> command line utility.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">

@@ -44,11 +44,11 @@
     --sidebarWidth: 28%;
     --narrowContainerWidth: 60%;
     --maxSiteWidth: 1290px;
-    --buttonInitialColor: var(--paletteColor2);
-    --linkInitialColor: var(--paletteColor4);
+    --buttonInitialColor: var(--paletteColor1);
+    --linkInitialColor: var(--paletteColor3);
     --paletteColor5: #ffffff;
-    --paletteColor3: #222222;
-    --paletteColor1: #108ae8;
+    --paletteColor3: #0e0c1b;
+    --paletteColor1: #3897f0;
     --headerTopBorder: 1px dashed rgba(44,62,80,0.2);
     --offCanvasWidth: 280px;
     --topBarHeight: 0px;
@@ -58,21 +58,21 @@
     --transparentHeaderHoverFontColor: var(--paletteColor1);
     --headerHeight: 50px;
     --headerLogoContainerHeight: 110px;
-    --logoMaxHeight: 50px;
+    --logoMaxHeight: 30px;
     --cardSpacing: 35px;
     --cardBackground: #ffffff;
     --pageTitleFontHoverColor: var(--paletteColor1);
     --letterSpacing: 0em;
-    --fontSize: 18px;
+    --fontSize: 22px;
     --textTransform: none;
     --fontWeight: 400;
-    --fontFamily: Ubuntu;
+    --fontFamily: Helvetica;
     --fontStyle: normal;
     --textDecoration: none;
     --lineHeight: 1.65;
     --pageTitleFontInitialColor: var(--paletteColor4);
-    --cardExcerptSize: 16px;
-    --cardsGap: 30px;
+    --cardExcerptSize: 20px;
+    --cardsGap: 35px;
     --transparentHeaderBackground: rgba(255, 255, 255, 0.1);
     --transparentLogoMaxHeight: 50px;
     --headerShadow: rgba(210,213,218,0.15);
@@ -83,11 +83,11 @@
     --mobileHeaderHeight: 70px;
     --headerButtonRadius: 5px;
     --headerBottomBorder: none;
-    --paletteColor2: #215d9c;
-    --paletteColor4: #1c1c1c;
+    --paletteColor2: #1da1f2;
+    --paletteColor4: #0e0c1b;
     --fontColor: var(--paletteColor3);
-    --linkHoverColor: var(--paletteColor1);
-    --buttonHoverColor: var(--paletteColor3);
+    --linkHoverColor: #00a562;
+    --buttonHoverColor: var(--paletteColor2);
     --contentAreaSpacing: 35px;
     --wideOffset: 130px;
     --sidebarWidthNoUnit: 28;
@@ -122,7 +122,7 @@
 
 h1 {
     --letterSpacing: 0em;
-    --fontSize: 40px;
+    --fontSize: 44px;
     --textTransform: none;
     --fontWeight: 700;
     --fontStyle: normal;
@@ -133,7 +133,7 @@ h1 {
 
 h2 {
     --letterSpacing: 0em;
-    --fontSize: 35px;
+    --fontSize: 39px;
     --textTransform: none;
     --fontWeight: 700;
     --fontStyle: normal;
@@ -144,7 +144,7 @@ h2 {
 
 h3 {
     --letterSpacing: 0em;
-    --fontSize: 30px;
+    --fontSize: 34px;
     --textTransform: none;
     --fontWeight: 700;
     --fontStyle: normal;
@@ -155,7 +155,7 @@ h3 {
 
 h4 {
     --letterSpacing: 0em;
-    --fontSize: 25px;
+    --fontSize: 29px;
     --textTransform: none;
     --fontWeight: 700;
     --fontStyle: normal;
@@ -166,7 +166,7 @@ h4 {
 
 h5 {
     --letterSpacing: 0em;
-    --fontSize: 20px;
+    --fontSize: 24px;
     --textTransform: none;
     --fontWeight: 700;
     --fontStyle: normal;
@@ -177,7 +177,7 @@ h5 {
 
 h6 {
     --letterSpacing: 0em;
-    --fontSize: 16px;
+    --fontSize: 20px;
     --textTransform: none;
     --fontWeight: 700;
     --fontStyle: normal;
@@ -193,7 +193,7 @@ h6 {
     --fontFamily: Georgia;
     --fontWeight: 600;
     --textTransform: none;
-    --fontSize: 25px;
+    --fontSize: 29px;
     --letterSpacing: 0em;
 }
 
@@ -202,7 +202,7 @@ code, kbd, samp, pre {
     --textDecoration: none;
     --fontFamily: monospace;
     --textTransform: none;
-    --fontSize: 16px;
+    --fontSize: 20px;
     --letterSpacing: 0em;
 }
 
@@ -213,7 +213,7 @@ code, kbd, samp, pre {
     --fontStyle: normal;
     --fontWeight: 700;
     --textTransform: none;
-    --fontSize: 22px;
+    --fontSize: 32px;
     --letterSpacing: 0em;
     --linkHoverColor: var(--paletteColor1);
 }
@@ -223,8 +223,8 @@ code, kbd, samp, pre {
     --textDecoration: none;
     --fontStyle: normal;
     --fontWeight: 700;
-    --textTransform: uppercase;
-    --fontSize: 14px;
+    --textTransform: capitalize;
+    --fontSize: 18px;
     --letterSpacing: 0em;
 }
 
@@ -233,8 +233,8 @@ code, kbd, samp, pre {
     --textDecoration: none;
     --fontStyle: normal;
     --fontWeight: 700;
-    --textTransform: uppercase;
-    --fontSize: 12px;
+    --textTransform: capitalize;
+    --fontSize: 16px;
     --letterSpacing: 0em;
 }
 
@@ -243,7 +243,7 @@ code, kbd, samp, pre {
     --textDecoration: none;
     --fontStyle: normal;
     --fontWeight: 700;
-    --textTransform: none;
+    --textTransform: capitalize;
     --fontSize: 30px;
     --letterSpacing: 0em;
 }
@@ -296,27 +296,14 @@ code, kbd, samp, pre {
 }
 
 .site-main {
-    --backgroundImage: url(https://techpiezo.com/wp-content/uploads/2019/08/site-background.svg);
-    --backgroundAttachment: fixed;
-    --backgroundPosition: 50% 50%;
-    --backgroundSize: auto;
-    --backgroundRepeat: repeat-y;
-    --backgroundColor: #535d6c;
+    --backgroundImage: none;
+    --backgroundColor: #f8f8f8;
 }
 
 .header-desktop {
     --backgroundColor: #ffffff;
     --backgroundImage: none;
     --menuItemsSpacing: 25px;
-}
-
-.single .site-main {
-    --backgroundImage: url(https://techpiezo.com/wp-content/uploads/2019/08/page-background.svg);
-    --backgroundAttachment: fixed;
-    --backgroundPosition: 50% 50%;
-    --backgroundSize: auto;
-    --backgroundRepeat: repeat-y;
-    --backgroundColor: #ffffff;
 }
 
 .ct-related-posts {
@@ -332,12 +319,12 @@ code, kbd, samp, pre {
 }
 
 .entry-header .page-title {
-    --lineHeight: 1.3;
+    --lineHeight: 1.5;
     --textDecoration: none;
     --fontStyle: normal;
     --fontWeight: 700;
     --textTransform: none;
-    --fontSize: 27px;
+    --fontSize: 36px;
     --letterSpacing: 0em;
 }
 
@@ -347,7 +334,7 @@ code, kbd, samp, pre {
     --fontStyle: normal;
     --fontWeight: 700;
     --textTransform: none;
-    --fontSize: 20px;
+    --fontSize: 30px;
     --letterSpacing: 0em;
 }
 
@@ -361,7 +348,7 @@ code, kbd, samp, pre {
 }
 
 .entry-card {
-    --metaFontSize: 12px;
+    --metaFontSize: 18px;
 }
 
 .entry-meta {
@@ -487,12 +474,12 @@ code, kbd, samp, pre {
     --headerHeight: 35px;
     --transparentLogoMaxHeight: 50px;
     --cardSpacing: 35px;
-    --cardExcerptSize: 16px;
+    --cardExcerptSize: 20px;
     --lineHeight: 1.65;
-    --fontSize: 18px;
+    --fontSize: 22px;
     --letterSpacing: 0em;
-    --cardsGap: 30px;
-    --logoMaxHeight: 50px;
+    --cardsGap: 35px;
+    --logoMaxHeight: 30px;
     --headerLogoContainerHeight: 35px;
     --navSectionHeight: 15px;
     --mobileHeaderHeight: 40px;
@@ -508,67 +495,67 @@ code, kbd, samp, pre {
 
 h1 {
     --lineHeight: 1.5;
-    --fontSize: 40px;
+    --fontSize: 44px;
     --letterSpacing: 0em;
 }
 
 h2 {
     --lineHeight: 1.5;
-    --fontSize: 35px;
+    --fontSize: 39px;
     --letterSpacing: 0em;
 }
 
 h3 {
     --lineHeight: 1.5;
-    --fontSize: 30px;
+    --fontSize: 34px;
     --letterSpacing: 0em;
 }
 
 h4 {
     --lineHeight: 1.5;
-    --fontSize: 25px;
+    --fontSize: 29px;
     --letterSpacing: 0em;
 }
 
 h5 {
     --lineHeight: 1.5;
-    --fontSize: 20px;
+    --fontSize: 24px;
     --letterSpacing: 0em;
 }
 
 h6 {
     --lineHeight: 1.5;
-    --fontSize: 16px;
+    --fontSize: 20px;
     --letterSpacing: 0em;
 }
 
 .entry-content blockquote p, .ct-quote-widget blockquote p {
     --lineHeight: 1.65;
-    --fontSize: 25px;
+    --fontSize: 29px;
     --letterSpacing: 0em;
 }
 
 code, kbd, samp, pre {
     --lineHeight: 1.65;
-    --fontSize: 16px;
+    --fontSize: 20px;
     --letterSpacing: 0em;
 }
 
 .site-title {
     --lineHeight: 1.65;
-    --fontSize: 22px;
+    --fontSize: 32px;
     --letterSpacing: 0em;
 }
 
 .primary-menu > li {
     --lineHeight: 1.3;
-    --fontSize: 14px;
+    --fontSize: 18px;
     --letterSpacing: 0em;
 }
 
 .primary-menu .sub-menu li {
     --lineHeight: 1.3;
-    --fontSize: 12px;
+    --fontSize: 16px;
     --letterSpacing: 0em;
 }
 
@@ -597,19 +584,19 @@ code, kbd, samp, pre {
 }
 
 .entry-header .page-title {
-    --lineHeight: 1.3;
-    --fontSize: 25px;
+    --lineHeight: 1.5;
+    --fontSize: 30px;
     --letterSpacing: 0em;
 }
 
 .entry-card .entry-title {
     --lineHeight: 1.3;
-    --fontSize: 20px;
+    --fontSize: 26px;
     --letterSpacing: 0em;
 }
 
 .entry-card {
-    --metaFontSize: 12px;
+    --metaFontSize: 18px;
 }
 
 #mobile-menu .mobile-menu,
@@ -636,12 +623,12 @@ code, kbd, samp, pre {
     --headerHeight: 35px;
     --transparentLogoMaxHeight: 50px;
     --cardSpacing: 25px;
-    --cardExcerptSize: 16px;
+    --cardExcerptSize: 20px;
     --lineHeight: 1.65;
-    --fontSize: 18px;
+    --fontSize: 22px;
     --letterSpacing: 0em;
-    --cardsGap: 30px;
-    --logoMaxHeight: 50px;
+    --cardsGap: 35px;
+    --logoMaxHeight: 30px;
     --headerLogoContainerHeight: 35px;
     --navSectionHeight: 15px;
     --mobileHeaderHeight: 50px;
@@ -657,67 +644,67 @@ code, kbd, samp, pre {
 
 h1 {
     --lineHeight: 1.5;
-    --fontSize: 40px;
+    --fontSize: 44px;
     --letterSpacing: 0em;
 }
 
 h2 {
     --lineHeight: 1.5;
-    --fontSize: 35px;
+    --fontSize: 39px;
     --letterSpacing: 0em;
 }
 
 h3 {
     --lineHeight: 1.5;
-    --fontSize: 30px;
+    --fontSize: 34px;
     --letterSpacing: 0em;
 }
 
 h4 {
     --lineHeight: 1.5;
-    --fontSize: 25px;
+    --fontSize: 29px;
     --letterSpacing: 0em;
 }
 
 h5 {
     --lineHeight: 1.5;
-    --fontSize: 20px;
+    --fontSize: 24px;
     --letterSpacing: 0em;
 }
 
 h6 {
     --lineHeight: 1.5;
-    --fontSize: 16px;
+    --fontSize: 20px;
     --letterSpacing: 0em;
 }
 
 .entry-content blockquote p, .ct-quote-widget blockquote p {
     --lineHeight: 1.65;
-    --fontSize: 25px;
+    --fontSize: 29px;
     --letterSpacing: 0em;
 }
 
 code, kbd, samp, pre {
     --lineHeight: 1.65;
-    --fontSize: 16px;
+    --fontSize: 20px;
     --letterSpacing: 0em;
 }
 
 .site-title {
     --lineHeight: 1.65;
-    --fontSize: 22px;
+    --fontSize: 32px;
     --letterSpacing: 0em;
 }
 
 .primary-menu > li {
     --lineHeight: 1.3;
-    --fontSize: 14px;
+    --fontSize: 18px;
     --letterSpacing: 0em;
 }
 
 .primary-menu .sub-menu li {
     --lineHeight: 1.3;
-    --fontSize: 12px;
+    --fontSize: 16px;
     --letterSpacing: 0em;
 }
 
@@ -758,19 +745,19 @@ code, kbd, samp, pre {
 }
 
 .entry-header .page-title {
-    --lineHeight: 1.3;
+    --lineHeight: 1.5;
     --fontSize: 25px;
     --letterSpacing: 0em;
 }
 
 .entry-card .entry-title {
     --lineHeight: 1.3;
-    --fontSize: 18px;
+    --fontSize: 24px;
     --letterSpacing: 0em;
 }
 
 .entry-card {
-    --metaFontSize: 12px;
+    --metaFontSize: 18px;
 }
 
 .header-top-bar-menu,
@@ -778,7 +765,6 @@ code, kbd, samp, pre {
     --menuItemsSpacing: 20px;
 }</style>
 <link rel='stylesheet' id='wp-block-library-css'  href='https://techpiezo.com/wp-includes/css/dist/block-library/style.min.css' type='text/css' media='all' />
-<link crossorigin="anonymous" rel='stylesheet' id='blocksy-fonts-font-source-google-css'  href='https://fonts.googleapis.com/css?family=Ubuntu%3A400&#038;display=swap' type='text/css' media='all' />
 <link rel='stylesheet' id='ct-style-css'  href='https://techpiezo.com/wp-content/themes/blocksy/style.css' type='text/css' media='all' />
 <link rel='stylesheet' id='ct-main-styles-css'  href='https://techpiezo.com/wp-content/themes/blocksy/static/bundle/main.css' type='text/css' media='all' />
 
@@ -796,7 +782,7 @@ code, kbd, samp, pre {
 	padding-right: 20px;
 }
 .ct-last-page-text{
-	color: whitesmoke
+	color: black;
 }
 
 		</style>
@@ -812,7 +798,7 @@ code, kbd, samp, pre {
 
 </head>
 
-<body class="post-template-default single single-post postid-948 single-format-standard ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
+<body class="post-template-default single single-post postid-948 single-format-standard wp-custom-logo ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
 <div id="main-container">
 
 	<header
@@ -829,12 +815,10 @@ code, kbd, samp, pre {
 				>
 
 		<h1 class="site-title">
-							<a href="https://techpiezo.com/" rel="home">
-					TechPiezo				</a>
-					</h1>
+							<a href="https://techpiezo.com/" class="custom-logo-link" rel="home"><img src="https://techpiezo.com/wp-content/uploads/2019/08/logo.svg" class="custom-logo ct-default-logo" alt="TechPiezo" /></a>					</h1>
 
 		<h2 class="site-description ct-hidden-sm ct-hidden-md ct-hidden-lg">
-			Future is Here		</h2>
+					</h2>
 	</div>
 
 	
@@ -896,12 +880,10 @@ code, kbd, samp, pre {
 				>
 
 		<h1 class="site-title">
-							<a href="https://techpiezo.com/" rel="home">
-					TechPiezo				</a>
-					</h1>
+							<a href="https://techpiezo.com/" class="custom-logo-link" rel="home"><img src="https://techpiezo.com/wp-content/uploads/2019/08/logo.svg" class="custom-logo ct-default-logo" alt="TechPiezo" /></a>					</h1>
 
 		<h2 class="site-description ct-hidden-sm ct-hidden-md ct-hidden-lg">
-			Future is Here		</h2>
+					</h2>
 	</div>
 
 	
@@ -983,29 +965,29 @@ code, kbd, samp, pre {
 					</header>
 		</section>
 
-		<figure class="ct-featured-image ct-hidden-sm" ><div class="ct-image-container" ><img src="https://techpiezo.com/wp-content/uploads/2019/07/Split-files-in-Linux-Distributions.svg" class="attachment-full size-full" alt="Split files in Linux Distributions" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
+		<figure class="ct-featured-image ct-hidden-sm" ><div class="ct-image-container ct-lazy" ><img class="attachment-full size-full" alt="Split files in Linux Distributions" data-lazy="https://techpiezo.com/wp-content/uploads/2019/07/Split-files-in-Linux-Distributions.svg" data-object-fit="~" /><noscript><img src="https://techpiezo.com/wp-content/uploads/2019/07/Split-files-in-Linux-Distributions.svg" class="attachment-full size-full" alt="Split files in Linux Distributions" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
 		
 		<div class="entry-content">
-			<p style="text-align: justify;">Split is a command-line utility which is used to split files in linux. The utility is provided with coreutils (GNU Core Utilities) package. The package also contains cat command which will be used later in the article. Through split command, we can split larger files into smaller pieces. The utility also allows us choose the size of smaller pieces.</p>
+			<p style="text-align: justify;">Split is a command-line utility which is used to split files in linux. The utility is provided with coreutils (GNU Core Utilities) package. The package also contains <strong>cat</strong> command which will be used later in the article. Through<strong> split</strong> command, we can split larger files into smaller pieces. The utility also allows us choose the size of smaller pieces.</p>
 <h4>How to Split larger files</h4>
-<p style="text-align: justify;">Let&#8217;s say you have a file debian-10.0.0-amd64-DVD-1.iso of size 3.6 GB and you want to split the iso file in smaller pieces of size 500M. To do so, you need to run the following command in terminal,</p>
+<p style="text-align: justify;">Let&#8217;s say you have a file <strong>debian-10.0.0-amd64-DVD-1.iso</strong> of size 3.6 GB and you want to split the<strong> iso</strong> file in smaller pieces of size 500M. To do so, you need to run the following command in terminal,</p>
 <pre>split --bytes=500M debian-10.0.0-amd64-DVD-1.iso split-file-</pre>
 <p style="text-align: justify;">where,<br />
-split &#8211; command line utility,<br />
-&#8211;bytes=size &#8211; we define the size of smaller pieces here,<br />
-debian-10.0.0-amd64-DVD-1.iso &#8211; is the file that will be split and,<br />
-split-file- &#8211; prefix for smaller pieces, in case you don&#8217;t mention any prefix &#8211; default prefix &#8216;x&#8217; will be used.</p>
+<strong>split</strong> &#8211; command line utility,<br />
+<strong>&#8211;bytes=size</strong> &#8211; we define the size of smaller pieces here,<br />
+<strong>debian-10.0.0-amd64-DVD-1.iso</strong> &#8211; is the file that will be split and,<br />
+<strong>split-file-</strong> &#8211; prefix for smaller pieces, in case you don&#8217;t mention any prefix &#8211; default prefix &#8216;<strong>x</strong>&#8216; will be used.</p>
 <p style="text-align: justify;">The default syntax for the command is,</p>
 <pre>split --bytes=size &lt;file-to-be-split&gt; &lt;prefix-smaller-pieces&gt;</pre>
 <p style="text-align: justify;">When we run the above command, our 3.6 GB file would be split to 8 pieces. Seven of those pieces would of 500M in size and last one would be of just 100M size. The name of files so generated would be split-file-aa, split-file-ab, split-file-ac &#8230; split-file-ag.</p>
 <p style="text-align: justify;">So far, we have split our larger file to smaller pieces. Next, we will discuss how to join all the smaller pieces to get our file back.</p>
 <h4>Join smaller pieces</h4>
-<p style="text-align: justify;">Once we have split our larger file, the smaller pieces are of no use till we join them together. To do so, we would have to use cat command &#8211;</p>
+<p style="text-align: justify;">Once we have split our larger file, the smaller pieces are of no use till we join them together. To do so, we would have to use<strong> cat</strong> command &#8211;</p>
 <pre>cat split-file-* &gt; debian-10.0.0-amd64-DVD-1-combined.iso</pre>
-<p style="text-align: justify;">This will combine all the smaller pieces i.e. split-file-ab, split-file-ac &#8230; split-file-ag to form our original file debian-10.0.0-amd64-DVD-1-combined.iso.</p>
+<p style="text-align: justify;">This will combine all the smaller pieces i.e. split-file-ab, split-file-ac &#8230; split-file-ag to form our original file <strong>debian-10.0.0-amd64-DVD-1-combined.iso</strong>.</p>
 <h4>Verify data integrity using the md5sum</h4>
-<p style="text-align: justify;">The command line utility md5sum is provided with the coreutils (GNU Core Utilities) package. The utility helps us to verify data integrity using Message-Digest Algorithm 5. MD5 generates 128-bit cryptographic hash, which can later be used to verify file integrity.</p>
-<p style="text-align: justify;">We need to check md5sum for both original as well as combined file. To do so, run the following in the terminal &#8211;</p>
+<p style="text-align: justify;">The command line utility <strong>md5sum</strong> is provided with the<strong> coreutils</strong> (GNU Core Utilities) package. The utility helps us to verify data integrity using Message-Digest Algorithm 5. MD5 generates 128-bit cryptographic hash, which can later be used to verify file integrity.</p>
+<p style="text-align: justify;">We need to check <strong>md5sum</strong> for both original as well as combined file. To do so, run the following in the terminal &#8211;</p>
 <h4>md5sum debian-10.0.0-amd64-DVD-1.iso</h4>
 <p style="text-align: justify;">this would return with the output &#8211;</p>
 <pre style="text-align: justify;">5206549aab4b54026aa6dcd026f8ffcb debian-10.0.0-amd64-DVD-1.iso</pre>
@@ -1013,10 +995,9 @@ split-file- &#8211; prefix for smaller pieces, in case you don&#8217;t mention a
 <pre>md5sum debian-10.0.0-amd64-DVD-1-combined.iso</pre>
 <p style="text-align: justify;">This should also return with the same hash value.</p>
 <pre style="text-align: justify;">5206549aab4b54026aa6dcd026f8ffcb debian-10.0.0-amd64-DVD-1-combined.iso</pre>
-<p style="text-align: justify;">If md5sum hashes for both the files match then our files are intact. Otherwise, the file has been altered and has lost its integrity.<br />
-To look for more options related to split command, it is advisable to go through man pages available on Linux distributions.</p>
+<p style="text-align: justify;">If <strong>md5sum</strong> hashes for both the files match then our files are intact. Otherwise, the file has been altered and has lost its integrity. To look for more options related to split command, it is advisable to go through man pages available on Linux distributions.</p>
 <pre>man split</pre>
-<p style="text-align: justify;">Conclusion, in this article we have discussed how to split a file in smaller pieces and then combine them again. To check integrity of our files we have used md5sum command line utility.</p>
+<p style="text-align: justify;">Conclusion, in this article we have discussed how to split a file in smaller pieces and then combine them again. To check integrity of our files we have used <strong>md5sum</strong> command line utility.</p>
 		</div>
 
 		
@@ -1059,15 +1040,15 @@ To look for more options related to split command, it is advisable to go through
 	</div>
 
 	
-		<div class="ct-related-posts ">
+		<div class="ct-related-posts ct-hidden-sm">
 			<div class="ct-container">
 				<h4 class="ct-related-posts-label">
 					Related Posts				</h4>
 
-				<ul data-columns="2">
+				<ul data-columns="3">
 											
 						<li>
-							<a class="ct-image-container" href="https://techpiezo.com/java/install-openjdk-jre-jdk-in-ubuntu-19-04/"><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/08/Install-OpenJDK-JRE.svg" class="attachment-large size-large" alt="Install OpenJDK Runtime and Development Kit" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/java/install-openjdk-jre-jdk-in-ubuntu-19-04/"><img width="1" height="1" class="attachment-large size-large" alt="Install OpenJDK Runtime and Development Kit" data-lazy="https://techpiezo.com/wp-content/uploads/2019/08/Install-OpenJDK-JRE.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/08/Install-OpenJDK-JRE.svg" class="attachment-large size-large" alt="Install OpenJDK Runtime and Development Kit" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
 							<h3 class="related-entry-title">
 								<a href="https://techpiezo.com/java/install-openjdk-jre-jdk-in-ubuntu-19-04/">Install OpenJDK JRE / JDK in Ubuntu 19.04</a>
 							</h3>
@@ -1080,7 +1061,7 @@ To look for more options related to split command, it is advisable to go through
 						</li>
 											
 						<li>
-							<a class="ct-image-container" href="https://techpiezo.com/linux/fixed-install-hplip-3-19-1-in-ubuntu-19-04/"><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/08/Install-HPLIP-in-Ubuntu.svg" class="attachment-large size-large" alt="Install HPLIP 3.19.1 in Ubuntu 19.04" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/fixed-install-hplip-3-19-1-in-ubuntu-19-04/"><img width="1" height="1" class="attachment-large size-large" alt="Install HPLIP 3.19.1 in Ubuntu 19.04" data-lazy="https://techpiezo.com/wp-content/uploads/2019/08/Install-HPLIP-in-Ubuntu.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/08/Install-HPLIP-in-Ubuntu.svg" class="attachment-large size-large" alt="Install HPLIP 3.19.1 in Ubuntu 19.04" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
 							<h3 class="related-entry-title">
 								<a href="https://techpiezo.com/linux/fixed-install-hplip-3-19-1-in-ubuntu-19-04/">[Fixed] Install HPLIP 3.19.1 in Ubuntu 19.04</a>
 							</h3>
@@ -1093,7 +1074,7 @@ To look for more options related to split command, it is advisable to go through
 						</li>
 											
 						<li>
-							<a class="ct-image-container" href="https://techpiezo.com/linux/install-google-chrome-in-debian-buster/"><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/08/Install-Google-Chrome-in-Debian-Buster.svg" class="attachment-large size-large" alt="Install Google Chrome in Debian Buster" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/install-google-chrome-in-debian-buster/"><img width="1" height="1" class="attachment-large size-large" alt="Install Google Chrome in Debian Buster" data-lazy="https://techpiezo.com/wp-content/uploads/2019/08/Install-Google-Chrome-in-Debian-Buster.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/08/Install-Google-Chrome-in-Debian-Buster.svg" class="attachment-large size-large" alt="Install Google Chrome in Debian Buster" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
 							<h3 class="related-entry-title">
 								<a href="https://techpiezo.com/linux/install-google-chrome-in-debian-buster/">Install Google Chrome in Debian Buster</a>
 							</h3>
@@ -1101,19 +1082,6 @@ To look for more options related to split command, it is advisable to go through
 							<div class="related-entry-meta">
 								<span>
 									Aug 2, 2019								</span>
-
-															</div>
-						</li>
-											
-						<li>
-							<a class="ct-image-container" href="https://techpiezo.com/linux/make-bootable-usb-stick-to-act-as-storage-device-again/"><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/08/Bootable-USB-as-Storage-Device.svg" class="attachment-large size-large" alt="Make Bootable USB act as Storage Device" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
-							<h3 class="related-entry-title">
-								<a href="https://techpiezo.com/linux/make-bootable-usb-stick-to-act-as-storage-device-again/">Make Bootable USB stick to act as Storage device again</a>
-							</h3>
-
-							<div class="related-entry-meta">
-								<span>
-									Aug 1, 2019								</span>
 
 															</div>
 						</li>

@@ -44,11 +44,11 @@
     --sidebarWidth: 28%;
     --narrowContainerWidth: 60%;
     --maxSiteWidth: 1290px;
-    --buttonInitialColor: var(--paletteColor2);
-    --linkInitialColor: var(--paletteColor4);
+    --buttonInitialColor: var(--paletteColor1);
+    --linkInitialColor: var(--paletteColor3);
     --paletteColor5: #ffffff;
-    --paletteColor3: #222222;
-    --paletteColor1: #108ae8;
+    --paletteColor3: #0e0c1b;
+    --paletteColor1: #3897f0;
     --headerTopBorder: 1px dashed rgba(44,62,80,0.2);
     --offCanvasWidth: 280px;
     --topBarHeight: 0px;
@@ -58,19 +58,19 @@
     --transparentHeaderHoverFontColor: var(--paletteColor1);
     --headerHeight: 50px;
     --headerLogoContainerHeight: 110px;
-    --logoMaxHeight: 50px;
+    --logoMaxHeight: 30px;
     --cardSpacing: 35px;
     --cardBackground: #ffffff;
     --letterSpacing: 0em;
-    --fontSize: 18px;
+    --fontSize: 22px;
     --textTransform: none;
     --fontWeight: 400;
-    --fontFamily: Ubuntu;
+    --fontFamily: Helvetica;
     --fontStyle: normal;
     --textDecoration: none;
     --lineHeight: 1.65;
-    --cardExcerptSize: 16px;
-    --cardsGap: 30px;
+    --cardExcerptSize: 20px;
+    --cardsGap: 35px;
     --transparentHeaderBackground: rgba(255, 255, 255, 0.1);
     --transparentLogoMaxHeight: 50px;
     --headerShadow: rgba(210,213,218,0.15);
@@ -81,11 +81,11 @@
     --mobileHeaderHeight: 70px;
     --headerButtonRadius: 5px;
     --headerBottomBorder: none;
-    --paletteColor2: #215d9c;
-    --paletteColor4: #1c1c1c;
+    --paletteColor2: #1da1f2;
+    --paletteColor4: #0e0c1b;
     --fontColor: var(--paletteColor3);
-    --linkHoverColor: var(--paletteColor1);
-    --buttonHoverColor: var(--paletteColor3);
+    --linkHoverColor: #00a562;
+    --buttonHoverColor: var(--paletteColor2);
     --contentAreaSpacing: 35px;
     --wideOffset: 130px;
     --sidebarWidthNoUnit: 28;
@@ -120,7 +120,7 @@
 
 h1 {
     --letterSpacing: 0em;
-    --fontSize: 40px;
+    --fontSize: 44px;
     --textTransform: none;
     --fontWeight: 700;
     --fontStyle: normal;
@@ -131,7 +131,7 @@ h1 {
 
 h2 {
     --letterSpacing: 0em;
-    --fontSize: 35px;
+    --fontSize: 39px;
     --textTransform: none;
     --fontWeight: 700;
     --fontStyle: normal;
@@ -142,7 +142,7 @@ h2 {
 
 h3 {
     --letterSpacing: 0em;
-    --fontSize: 30px;
+    --fontSize: 34px;
     --textTransform: none;
     --fontWeight: 700;
     --fontStyle: normal;
@@ -153,7 +153,7 @@ h3 {
 
 h4 {
     --letterSpacing: 0em;
-    --fontSize: 25px;
+    --fontSize: 29px;
     --textTransform: none;
     --fontWeight: 700;
     --fontStyle: normal;
@@ -164,7 +164,7 @@ h4 {
 
 h5 {
     --letterSpacing: 0em;
-    --fontSize: 20px;
+    --fontSize: 24px;
     --textTransform: none;
     --fontWeight: 700;
     --fontStyle: normal;
@@ -175,7 +175,7 @@ h5 {
 
 h6 {
     --letterSpacing: 0em;
-    --fontSize: 16px;
+    --fontSize: 20px;
     --textTransform: none;
     --fontWeight: 700;
     --fontStyle: normal;
@@ -191,7 +191,7 @@ h6 {
     --fontFamily: Georgia;
     --fontWeight: 600;
     --textTransform: none;
-    --fontSize: 25px;
+    --fontSize: 29px;
     --letterSpacing: 0em;
 }
 
@@ -200,7 +200,7 @@ code, kbd, samp, pre {
     --textDecoration: none;
     --fontFamily: monospace;
     --textTransform: none;
-    --fontSize: 16px;
+    --fontSize: 20px;
     --letterSpacing: 0em;
 }
 
@@ -211,7 +211,7 @@ code, kbd, samp, pre {
     --fontStyle: normal;
     --fontWeight: 700;
     --textTransform: none;
-    --fontSize: 22px;
+    --fontSize: 32px;
     --letterSpacing: 0em;
     --linkHoverColor: var(--paletteColor1);
 }
@@ -221,8 +221,8 @@ code, kbd, samp, pre {
     --textDecoration: none;
     --fontStyle: normal;
     --fontWeight: 700;
-    --textTransform: uppercase;
-    --fontSize: 14px;
+    --textTransform: capitalize;
+    --fontSize: 18px;
     --letterSpacing: 0em;
 }
 
@@ -231,8 +231,8 @@ code, kbd, samp, pre {
     --textDecoration: none;
     --fontStyle: normal;
     --fontWeight: 700;
-    --textTransform: uppercase;
-    --fontSize: 12px;
+    --textTransform: capitalize;
+    --fontSize: 16px;
     --letterSpacing: 0em;
 }
 
@@ -241,7 +241,7 @@ code, kbd, samp, pre {
     --textDecoration: none;
     --fontStyle: normal;
     --fontWeight: 700;
-    --textTransform: none;
+    --textTransform: capitalize;
     --fontSize: 30px;
     --letterSpacing: 0em;
 }
@@ -294,27 +294,14 @@ code, kbd, samp, pre {
 }
 
 .site-main {
-    --backgroundImage: url(https://techpiezo.com/wp-content/uploads/2019/08/site-background.svg);
-    --backgroundAttachment: fixed;
-    --backgroundPosition: 50% 50%;
-    --backgroundSize: auto;
-    --backgroundRepeat: repeat-y;
-    --backgroundColor: #535d6c;
+    --backgroundImage: none;
+    --backgroundColor: #f8f8f8;
 }
 
 .header-desktop {
     --backgroundColor: #ffffff;
     --backgroundImage: none;
     --menuItemsSpacing: 25px;
-}
-
-.single .site-main {
-    --backgroundImage: url(https://techpiezo.com/wp-content/uploads/2019/08/page-background.svg);
-    --backgroundAttachment: fixed;
-    --backgroundPosition: 50% 50%;
-    --backgroundSize: auto;
-    --backgroundRepeat: repeat-y;
-    --backgroundColor: #ffffff;
 }
 
 .ct-related-posts {
@@ -335,12 +322,12 @@ code, kbd, samp, pre {
     --fontStyle: normal;
     --fontWeight: 700;
     --textTransform: none;
-    --fontSize: 20px;
+    --fontSize: 30px;
     --letterSpacing: 0em;
 }
 
 .entry-title {
-    --linkInitialColor: var(--paletteColor4);
+    --linkInitialColor: #2c3e50;
     --linkHoverColor: var(--paletteColor1);
 }
 
@@ -349,7 +336,7 @@ code, kbd, samp, pre {
 }
 
 .entry-card {
-    --metaFontSize: 12px;
+    --metaFontSize: 18px;
 }
 
 .entry-meta {
@@ -475,12 +462,12 @@ code, kbd, samp, pre {
     --headerHeight: 35px;
     --transparentLogoMaxHeight: 50px;
     --cardSpacing: 35px;
-    --cardExcerptSize: 16px;
+    --cardExcerptSize: 19px;
     --lineHeight: 1.65;
-    --fontSize: 18px;
+    --fontSize: 22px;
     --letterSpacing: 0em;
-    --cardsGap: 30px;
-    --logoMaxHeight: 50px;
+    --cardsGap: 35px;
+    --logoMaxHeight: 30px;
     --headerLogoContainerHeight: 35px;
     --navSectionHeight: 15px;
     --mobileHeaderHeight: 40px;
@@ -496,67 +483,67 @@ code, kbd, samp, pre {
 
 h1 {
     --lineHeight: 1.5;
-    --fontSize: 40px;
+    --fontSize: 44px;
     --letterSpacing: 0em;
 }
 
 h2 {
     --lineHeight: 1.5;
-    --fontSize: 35px;
+    --fontSize: 39px;
     --letterSpacing: 0em;
 }
 
 h3 {
     --lineHeight: 1.5;
-    --fontSize: 30px;
+    --fontSize: 34px;
     --letterSpacing: 0em;
 }
 
 h4 {
     --lineHeight: 1.5;
-    --fontSize: 25px;
+    --fontSize: 29px;
     --letterSpacing: 0em;
 }
 
 h5 {
     --lineHeight: 1.5;
-    --fontSize: 20px;
+    --fontSize: 24px;
     --letterSpacing: 0em;
 }
 
 h6 {
     --lineHeight: 1.5;
-    --fontSize: 16px;
+    --fontSize: 20px;
     --letterSpacing: 0em;
 }
 
 .entry-content blockquote p, .ct-quote-widget blockquote p {
     --lineHeight: 1.65;
-    --fontSize: 25px;
+    --fontSize: 29px;
     --letterSpacing: 0em;
 }
 
 code, kbd, samp, pre {
     --lineHeight: 1.65;
-    --fontSize: 16px;
+    --fontSize: 20px;
     --letterSpacing: 0em;
 }
 
 .site-title {
     --lineHeight: 1.65;
-    --fontSize: 22px;
+    --fontSize: 32px;
     --letterSpacing: 0em;
 }
 
 .primary-menu > li {
     --lineHeight: 1.3;
-    --fontSize: 14px;
+    --fontSize: 18px;
     --letterSpacing: 0em;
 }
 
 .primary-menu .sub-menu li {
     --lineHeight: 1.3;
-    --fontSize: 12px;
+    --fontSize: 16px;
     --letterSpacing: 0em;
 }
 
@@ -586,12 +573,12 @@ code, kbd, samp, pre {
 
 .entry-card .entry-title {
     --lineHeight: 1.3;
-    --fontSize: 20px;
+    --fontSize: 26px;
     --letterSpacing: 0em;
 }
 
 .entry-card {
-    --metaFontSize: 12px;
+    --metaFontSize: 13px;
 }
 
 #mobile-menu .mobile-menu,
@@ -618,12 +605,12 @@ code, kbd, samp, pre {
     --headerHeight: 35px;
     --transparentLogoMaxHeight: 50px;
     --cardSpacing: 25px;
-    --cardExcerptSize: 16px;
+    --cardExcerptSize: 19px;
     --lineHeight: 1.65;
-    --fontSize: 18px;
+    --fontSize: 22px;
     --letterSpacing: 0em;
-    --cardsGap: 30px;
-    --logoMaxHeight: 50px;
+    --cardsGap: 35px;
+    --logoMaxHeight: 30px;
     --headerLogoContainerHeight: 35px;
     --navSectionHeight: 15px;
     --mobileHeaderHeight: 50px;
@@ -639,67 +626,67 @@ code, kbd, samp, pre {
 
 h1 {
     --lineHeight: 1.5;
-    --fontSize: 40px;
+    --fontSize: 44px;
     --letterSpacing: 0em;
 }
 
 h2 {
     --lineHeight: 1.5;
-    --fontSize: 35px;
+    --fontSize: 39px;
     --letterSpacing: 0em;
 }
 
 h3 {
     --lineHeight: 1.5;
-    --fontSize: 30px;
+    --fontSize: 34px;
     --letterSpacing: 0em;
 }
 
 h4 {
     --lineHeight: 1.5;
-    --fontSize: 25px;
+    --fontSize: 29px;
     --letterSpacing: 0em;
 }
 
 h5 {
     --lineHeight: 1.5;
-    --fontSize: 20px;
+    --fontSize: 24px;
     --letterSpacing: 0em;
 }
 
 h6 {
     --lineHeight: 1.5;
-    --fontSize: 16px;
+    --fontSize: 20px;
     --letterSpacing: 0em;
 }
 
 .entry-content blockquote p, .ct-quote-widget blockquote p {
     --lineHeight: 1.65;
-    --fontSize: 25px;
+    --fontSize: 29px;
     --letterSpacing: 0em;
 }
 
 code, kbd, samp, pre {
     --lineHeight: 1.65;
-    --fontSize: 16px;
+    --fontSize: 20px;
     --letterSpacing: 0em;
 }
 
 .site-title {
     --lineHeight: 1.65;
-    --fontSize: 22px;
+    --fontSize: 32px;
     --letterSpacing: 0em;
 }
 
 .primary-menu > li {
     --lineHeight: 1.3;
-    --fontSize: 14px;
+    --fontSize: 18px;
     --letterSpacing: 0em;
 }
 
 .primary-menu .sub-menu li {
     --lineHeight: 1.3;
-    --fontSize: 12px;
+    --fontSize: 16px;
     --letterSpacing: 0em;
 }
 
@@ -741,27 +728,26 @@ code, kbd, samp, pre {
 
 .entry-card .entry-title {
     --lineHeight: 1.3;
-    --fontSize: 18px;
+    --fontSize: 24px;
     --letterSpacing: 0em;
 }
 
 .entry-card {
-    --metaFontSize: 12px;
+    --metaFontSize: 13px;
 }
 
 .header-top-bar-menu,
 .footer-menu {
     --menuItemsSpacing: 20px;
 }</style>
-<link rel='stylesheet' id='wp-block-library-css'  href='https://techpiezo.com/wp-includes/css/dist/block-library/style.min.css' type='text/css' media='all' />
-<link crossorigin="anonymous" rel='stylesheet' id='blocksy-fonts-font-source-google-css'  href='https://fonts.googleapis.com/css?family=Ubuntu%3A400&#038;display=swap' type='text/css' media='all' />
-<link rel='stylesheet' id='ct-style-css'  href='https://techpiezo.com/wp-content/themes/blocksy/style.css' type='text/css' media='all' />
-<link rel='stylesheet' id='ct-main-styles-css'  href='https://techpiezo.com/wp-content/themes/blocksy/static/bundle/main.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='http://techpiezo.com/wp-includes/css/dist/block-library/style.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='ct-style-css'  href='http://techpiezo.com/wp-content/themes/blocksy/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='ct-main-styles-css'  href='http://techpiezo.com/wp-content/themes/blocksy/static/bundle/main.css' type='text/css' media='all' />
 
-<link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" sizes="32x32" />
-<link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" sizes="192x192" />
-<link rel="apple-touch-icon-precomposed" href="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" />
-<meta name="msapplication-TileImage" content="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" />
+<link rel="icon" href="http://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" sizes="32x32" />
+<link rel="icon" href="http://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="http://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" />
+<meta name="msapplication-TileImage" content="http://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" />
 		<style type="text/css" id="wp-custom-css">
 			.archive-description, .archive.category .page-title,
 .archive.category .page-description, .archive.category .taxonomy-description, .cart-search, .ct-meta-author{
@@ -772,8 +758,9 @@ code, kbd, samp, pre {
 	padding-right: 20px;
 }
 .ct-last-page-text{
-	color: whitesmoke
+	color: black;
 }
+
 		</style>
 		
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -785,10 +772,9 @@ code, kbd, samp, pre {
   gtag('config', 'UA-135581354-3');
 </script>
 
-
 </head>
 
-<body class="error404 logged-in ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
+<body class="error404 logged-in wp-custom-logo ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
 <div id="main-container">
 
 	<header
@@ -805,12 +791,10 @@ code, kbd, samp, pre {
 				>
 
 		<h1 class="site-title">
-							<a href="https://techpiezo.com/" rel="home">
-					TechPiezo				</a>
-					</h1>
+							<a href="http://techpiezo.com/" class="custom-logo-link" rel="home"><img src="http://techpiezo.com/wp-content/uploads/2019/08/logo.svg" class="custom-logo ct-default-logo" alt="TechPiezo" /></a>					</h1>
 
 		<h2 class="site-description ct-hidden-sm ct-hidden-md ct-hidden-lg">
-			Future is Here		</h2>
+					</h2>
 	</div>
 
 	
@@ -822,22 +806,31 @@ code, kbd, samp, pre {
 		data-dropdown-animation="type-3"
 				>
 
-		<ul id="primary-menu" class="primary-menu menu"><li id="menu-item-70" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-70"><a href="https://techpiezo.com">Home</a></li>
-<li id="menu-item-41" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-41"><a href="https://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
+		<ul id="primary-menu" class="primary-menu menu"><li id="menu-item-70" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-70"><a href="http://techpiezo.com">Home</a></li>
+<li id="menu-item-41" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-41"><a href="http://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
 <ul class="sub-menu">
-	<li id="menu-item-350" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-350"><a href="https://techpiezo.com/linux/linux-quick-fix/">Quick Fix</a></li>
-	<li id="menu-item-349" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-349"><a href="https://techpiezo.com/linux/linux-recent/">What&#8217;s New</a></li>
+	<li id="menu-item-350" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-350"><a href="http://techpiezo.com/linux/linux-quick-fix/">Quick Fix</a></li>
+	<li id="menu-item-349" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-349"><a href="http://techpiezo.com/linux/linux-recent/">What&#8217;s New</a></li>
 </ul>
 </li>
-<li id="menu-item-43" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-43"><a href="https://techpiezo.com/android/">Android<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
+<li id="menu-item-1838" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1838"><a href="http://techpiezo.com/programming/">Programming<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
 <ul class="sub-menu">
-	<li id="menu-item-348" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-348"><a href="https://techpiezo.com/android/android-kotlin/">Kotlin</a></li>
-	<li id="menu-item-347" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-347"><a href="https://techpiezo.com/android/android-recent/">What&#8217;s New</a></li>
+	<li id="menu-item-1824" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1824"><a href="http://techpiezo.com/java/">Java</a></li>
+	<li id="menu-item-348" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-348"><a href="http://techpiezo.com/kotlin/">Kotlin</a></li>
 </ul>
 </li>
-<li id="menu-item-42" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-42"><a href="https://techpiezo.com/wordpress/">WordPress</a></li>
-<li id="menu-item-40" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-40"><a href="https://techpiezo.com/seo/">SEO</a></li>
-<li id="menu-item-39" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-39"><a href="https://techpiezo.com/tech-insights/">Insights</a></li>
+<li id="menu-item-43" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-43"><a href="http://techpiezo.com/android/">Android<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-347" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-347"><a href="http://techpiezo.com/android/android-recent/">What&#8217;s New</a></li>
+</ul>
+</li>
+<li id="menu-item-39" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-39"><a href="http://techpiezo.com/tech-insights/">Insights</a></li>
+<li id="menu-item-1846" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1846"><a href="#">More<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-42" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-42"><a href="http://techpiezo.com/wordpress/">WordPress</a></li>
+	<li id="menu-item-40" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-40"><a href="http://techpiezo.com/seo/">SEO</a></li>
+</ul>
+</li>
 </ul>
 	</nav>
 
@@ -863,12 +856,10 @@ code, kbd, samp, pre {
 				>
 
 		<h1 class="site-title">
-							<a href="https://techpiezo.com/" rel="home">
-					TechPiezo				</a>
-					</h1>
+							<a href="http://techpiezo.com/" class="custom-logo-link" rel="home"><img src="http://techpiezo.com/wp-content/uploads/2019/08/logo.svg" class="custom-logo ct-default-logo" alt="TechPiezo" /></a>					</h1>
 
 		<h2 class="site-description ct-hidden-sm ct-hidden-md ct-hidden-lg">
-			Future is Here		</h2>
+					</h2>
 	</div>
 
 	
@@ -909,10 +900,9 @@ code, kbd, samp, pre {
 
 				<div class="page-content">
 					<p>
-						It looks like nothing was found at this location. 					</p>
+						It looks like nothing was found at this location.</p>
 
 					
-
 
 				</div>
 			</section>
@@ -938,9 +928,9 @@ code, kbd, samp, pre {
 					<div
 						class="grid-columns"
 						data-columns="1"						data-stack="mobile:tablet">
-						<section><nav data-menu-type="type-1"><ul id="footer-menu" class="footer-menu menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-56"><a href="https://techpiezo.com/terms/">Terms</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-57"><a href="https://techpiezo.com/privacy-policy/">Privacy Policy</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-55"><a href="https://techpiezo.com/about-us/">About Us</a></li>
+						<section><nav data-menu-type="type-1"><ul id="footer-menu" class="footer-menu menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-56"><a href="http://techpiezo.com/terms/">Terms</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-57"><a href="http://techpiezo.com/privacy-policy/">Privacy Policy</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-55"><a href="http://techpiezo.com/about-us/">About Us</a></li>
 </ul></nav></section>					</div>
 				</div>
 			</section>
@@ -991,22 +981,31 @@ code, kbd, samp, pre {
 
 			<div class="ct-bag-content" >
 				
-				<ul id="primary-menu" class="mobile-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-70"><a href="https://techpiezo.com">Home</a></li>
-<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-41"><a href="https://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
+				<ul id="primary-menu" class="mobile-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-70"><a href="http://techpiezo.com">Home</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-41"><a href="http://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
 <ul class="sub-menu">
-	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-350"><a href="https://techpiezo.com/linux/linux-quick-fix/">Quick Fix</a></li>
-	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-349"><a href="https://techpiezo.com/linux/linux-recent/">What&#8217;s New</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-350"><a href="http://techpiezo.com/linux/linux-quick-fix/">Quick Fix</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-349"><a href="http://techpiezo.com/linux/linux-recent/">What&#8217;s New</a></li>
 </ul>
 </li>
-<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-43"><a href="https://techpiezo.com/android/">Android<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1838"><a href="http://techpiezo.com/programming/">Programming<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
 <ul class="sub-menu">
-	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-348"><a href="https://techpiezo.com/android/android-kotlin/">Kotlin</a></li>
-	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-347"><a href="https://techpiezo.com/android/android-recent/">What&#8217;s New</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1824"><a href="http://techpiezo.com/java/">Java</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-348"><a href="http://techpiezo.com/kotlin/">Kotlin</a></li>
 </ul>
 </li>
-<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-42"><a href="https://techpiezo.com/wordpress/">WordPress</a></li>
-<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-40"><a href="https://techpiezo.com/seo/">SEO</a></li>
-<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-39"><a href="https://techpiezo.com/tech-insights/">Insights</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-43"><a href="http://techpiezo.com/android/">Android<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-347"><a href="http://techpiezo.com/android/android-recent/">What&#8217;s New</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-39"><a href="http://techpiezo.com/tech-insights/">Insights</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1846"><a href="#">More<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-42"><a href="http://techpiezo.com/wordpress/">WordPress</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-40"><a href="http://techpiezo.com/seo/">SEO</a></li>
+</ul>
+</li>
 </ul>			</div>
 		</div>
 	</div>
@@ -1017,7 +1016,7 @@ code, kbd, samp, pre {
 var ct_localizations = {"public_url":"http:\/\/techpiezo.com\/wp-content\/themes\/blocksy\/static\/bundle\/","show_more_text":"Show more"};
 /* ]]> */
 </script>
-<script async type='text/javascript' src='https://techpiezo.com/wp-content/themes/blocksy/static/bundle/main.js'></script>
-<script type='text/javascript' src='https://techpiezo.com/wp-includes/js/wp-embed.min.js'></script>
+<script async type='text/javascript' src='http://techpiezo.com/wp-content/themes/blocksy/static/bundle/main.js'></script>
+<script type='text/javascript' src='http://techpiezo.com/wp-includes/js/wp-embed.min.js'></script>
 </body>
 </html>

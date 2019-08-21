@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="August 18, 2019 6:24 pm" -->
+<!-- generated-on="August 21, 2019 9:50 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>https://techpiezo.com/tech-insights/raw-vs-qcow2-disk-images-in-qemu-kvm/</loc>
 		<lastmod>2019-08-10T10:19:16+00:00</lastmod>
@@ -8,37 +8,37 @@
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/install-virtualbox-in-debian-stretch/</loc>
-		<lastmod>2019-08-10T10:29:07+00:00</lastmod>
+		<lastmod>2019-08-20T18:08:54+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/update-upgrade-your-debian-distribution/</loc>
-		<lastmod>2019-08-10T14:37:05+00:00</lastmod>
+		<lastmod>2019-08-20T18:09:44+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/tech-insights/command-line-calendar-on-debian/</loc>
-		<lastmod>2019-08-10T18:28:40+00:00</lastmod>
+		<lastmod>2019-08-20T18:10:24+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/create-a-bootable-usb-in-ubuntu/</loc>
-		<lastmod>2019-08-10T19:03:56+00:00</lastmod>
+		<lastmod>2019-08-20T18:15:38+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/install-clamav-antivirus-in-ubuntu/</loc>
-		<lastmod>2019-08-10T19:08:38+00:00</lastmod>
+		<lastmod>2019-08-20T18:20:03+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/best-antivirus-tools-for-ubuntu-linux-distributions/</loc>
-		<lastmod>2019-08-10T19:14:36+00:00</lastmod>
+		<lastmod>2019-08-20T18:25:32+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
@@ -56,7 +56,7 @@
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/add-user-to-a-group-in-ubuntu-linux-mint/</loc>
-		<lastmod>2019-08-10T19:32:45+00:00</lastmod>
+		<lastmod>2019-08-20T16:11:01+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
@@ -80,7 +80,7 @@
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/add-user-to-sudoers-in-ubuntu-distribution/</loc>
-		<lastmod>2019-08-10T19:48:42+00:00</lastmod>
+		<lastmod>2019-08-20T16:13:11+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
@@ -92,13 +92,13 @@
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/i386-or-amd64-ubuntu-distribution/</loc>
-		<lastmod>2019-08-10T19:56:12+00:00</lastmod>
+		<lastmod>2019-08-20T16:14:28+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/tech-insights/tmp-on-ram/</loc>
-		<lastmod>2019-08-10T19:58:39+00:00</lastmod>
+		<lastmod>2019-08-20T16:15:53+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
@@ -122,19 +122,19 @@
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/introduction-to-ubuntu/</loc>
-		<lastmod>2019-08-10T20:11:11+00:00</lastmod>
+		<lastmod>2019-08-20T16:17:35+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/wordpress/how-to-install-wordpress-on-windows-10-using-xampp/</loc>
-		<lastmod>2019-08-10T20:13:55+00:00</lastmod>
+		<lastmod>2019-08-20T16:19:16+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/wordpress/how-to-install-wordpress-on-ubuntu-19-04/</loc>
-		<lastmod>2019-08-10T20:19:11+00:00</lastmod>
+		<lastmod>2019-08-20T16:21:23+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
@@ -174,4 +174,4 @@
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: 1f79581127260a236b32843507bcb28f; Queries for sitemap: 95; Total queries: 106; Seconds: 0.06; Memory for sitemap: 0MB; Total memory: 2MB -->
+</urlset><!-- Request ID: 28403b5f630dbfe7a3f6005c43803098; Queries for sitemap: 95; Total queries: 106; Seconds: 0.06; Memory for sitemap: 0MB; Total memory: 2MB -->

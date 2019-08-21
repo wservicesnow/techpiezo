@@ -447,15 +447,15 @@ amp-carousel > amp-img > img {
 └─/dev/sda3 8:5 0 414.6G 0 part /
 /dev/sdc 8:32 1 7.2G 0 disk /media/&lt;username&gt;/UUID-Device
 /dev/sr0 11:0 1 1024M 0 rom</pre>
-<p class="amp-wp-7d27179">From the output, we can identify the USB stick (<code>/dev/sdc</code>) of size 7.2G mounted on <code>/media/&lt;username&gt;/UUID-Device</code>.</p>
+<p class="amp-wp-7d27179">From the output, we can identify the USB stick (<strong>/dev/sdc</strong>) of size 7.2G mounted on <strong>/media/&lt;username&gt;/UUID-Device</strong>.</p>
 <h5>Umount device and make USB stick bootable</h5>
-<p class="amp-wp-7d27179">Firstly, we will have to unmount our USB stick with the help of <code>umount</code> command. The naming scheme for disk devices is <code>/dev/sdX</code>, where X can be a,b,c, etc. It is order in which our disk device was found. In our case, <code>/dev/sdX</code> is <code>/dev/sdc</code> – identify one for your system. And, run the following command in terminal –</p>
+<p class="amp-wp-7d27179">Firstly, we will have to unmount our USB stick with the help of <strong>umount</strong> command. The naming scheme for disk devices is <strong>/dev/sdX</strong>, where <strong>X</strong> can be a,b,c, etc. It is order in which our disk device was found. In our case, <strong>/dev/sdX is /dev/sdc</strong> – identify one for your system. And, run the following command in terminal –</p>
 <pre>sudo umount /dev/sdc</pre>
-<p class="amp-wp-7d27179">Locate the directory where you have saved your <code>.iso</code> file and use <code>cp</code> command to copy the file to <code>/dev/sdc</code>. For instance –</p>
+<p class="amp-wp-7d27179">Locate the directory where you have saved your <strong>.iso</strong> file and use <strong>cp</strong> command to copy the file to<strong> /dev/sdc</strong>. For instance –</p>
 <pre>sudo cp /path/to/iso/file.iso /dev/sdc</pre>
-<p class="amp-wp-7d27179">Wait for a few minutes before the file gets copied to your USB stick. Merely copying the <code>.iso</code> file will make your USB stick bootable as the <code>.iso</code> file itself contains all the relevant files needed.</p>
-<p class="amp-wp-7d27179">So far, we have identified our device through <code>lsblk</code> command, unmounted it and made it bootable by using the <code>cp</code> command. Things have been pretty easy till now but, in case we would want the USB stick to act as storage device again. For this purpose, we will have to use the <code>fdisk</code> command which will be discussed next.</p>
-<p class="amp-wp-7d27179">In conclusion, we have made our USB stick bootable. This could be done for any of the Linux distributions, provided we have <code>.iso</code> file available.</p>
+<p class="amp-wp-7d27179">Wait for a few minutes before the file gets copied to your USB stick. Merely copying the <strong>.iso</strong> file will make your USB stick bootable as the <strong>.iso</strong> file itself contains all the relevant files needed.</p>
+<p class="amp-wp-7d27179">So far, we have identified our device through<strong> lsblk</strong> command, unmounted it and made it bootable by using the<strong> cp</strong> command. Things have been pretty easy till now but, in case we would want the USB stick to act as storage device again. For this purpose, we will have to use the <strong>fdisk</strong> command which will be discussed next.</p>
+<p class="amp-wp-7d27179">In conclusion, we have made our USB stick bootable. This could be done for any of the Linux distributions, provided we have <strong>.iso</strong> file available.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">

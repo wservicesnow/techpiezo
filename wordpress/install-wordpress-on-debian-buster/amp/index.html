@@ -446,8 +446,8 @@ amp-carousel > amp-img > img {
 <pre>apt install wordpress curl mariadb-server apache2 php-curl php-mbstring phpxml</pre>
 <p class="amp-wp-7d27179"><strong>4.</strong> Next, you will have to secure MySQL installation.</p>
 <pre>mysql_secure_installation</pre>
-<p class="amp-wp-7d27179">Then, provide password for root. If you want to change it then press Y in next step. Otherwise, it is best to leave as it is and Press N. For all the other options like anonymous users, disallow remote login, remove test database, and reload privilege tables, Press Y.</p>
-<p class="amp-wp-7d27179"><strong>5.</strong> Now, we will create a configuration file – <code>wp.conf</code> in the directory <code>/etc/apache2/sites-available/</code> to provide custom settings for our website. And, add the following entries. Also, You need to provide your domain name in place of <code>localhost</code> in ServerName and ServerAdmin. If you are planning to host your website locally for some reason then it is best to leave the entries as it is.</p>
+<p class="amp-wp-7d27179">Then, provide password for root. If you want to change it then press <strong>Y</strong> in next step. Otherwise, it is best to leave as it is and Press <strong>N</strong>. For all the other options like anonymous users, disallow remote login, remove test database, and reload privilege tables, Press <strong>Y</strong>.</p>
+<p class="amp-wp-7d27179"><strong>5.</strong> Now, we will create a configuration file – <strong>wp.conf</strong> in the directory <strong>/etc/apache2/sites-available/</strong> to provide custom settings for our website. And, add the following entries. Also, You need to provide your domain name in place of localhost in <strong>ServerName</strong> and <strong>ServerAdmin</strong>. If you are planning to host your website locally for some reason then it is best to leave the entries as it is.</p>
 <pre>&lt;VirtualHost *:80&gt;
 ServerName localhost
 
@@ -479,11 +479,11 @@ a2ensite wp</pre>
 <pre>systemctl reload apache2</pre>
 <p class="amp-wp-7d27179"><strong>8.</strong> Next, we will have to create a configuration file for WordPress database,</p>
 <pre>nano /etc/wordpress/config-&lt;ServerName&gt;.php</pre>
-<p class="amp-wp-7d27179">If in Step -5 your ServerName is localhost then,</p>
+<p class="amp-wp-7d27179">If in Step -5 your <strong>ServerName</strong> is localhost then,</p>
 <pre>nano /etc/wordpress/config-localhost.php</pre>
-<p class="amp-wp-7d27179">Otherwise, if your ServerName in Step-5 is example.com then,</p>
+<p class="amp-wp-7d27179">Otherwise, if your <strong>ServerName</strong> in Step-5 is <strong>example.com</strong> then,</p>
 <pre class="amp-wp-7d27179">nano /etc/wordpress/config-example.com.php</pre>
-<p class="amp-wp-7d27179">Add the following entries in the <code>config-&lt;ServerName&gt;.php</code> –</p>
+<p class="amp-wp-7d27179">Add the following entries in the config-<strong>&lt;ServerName&gt;.php</strong> –</p>
 <pre>&lt;?php
 define('DB_NAME', 'wp_database');
 define('DB_USER', 'user');
@@ -493,13 +493,13 @@ define('WP_CONTENT_DIR', '/var/lib/wordpress/wp-content');
 ?&gt;</pre>
 <p class="amp-wp-7d27179">In the above code, you need to edit following entries as per your convenience – DB_NAME, DB_USER, DB_PASSWORD and DB_HOST.</p>
 <p class="amp-wp-7d27179"><strong>9.</strong> For making themes and plugins editable by WordPress, there are two methods available to us –</p>
-<p class="amp-wp-7d27179"><strong>9.(i).</strong> You need to provide ownership of themes and plugins to your web server user (i.e. www-data). So, run the following next –</p>
+<p class="amp-wp-7d27179"><strong>9.(i).</strong> You need to provide ownership of themes and plugins to your web server user (i.e. <strong>www-data</strong>). So, run the following next –</p>
 <pre>chown -R www-data /var/lib/wordpress/wp-content</pre>
-<p class="amp-wp-7d27179"><strong>9.(ii).</strong> Once you have finished the installation process and still can’t update or edit themes and plugins, then you need to append the following entry in <code>/etc/wordpress/config-&lt;domain-name&gt;.php</code> file as mentioned in Step -8;</p>
+<p class="amp-wp-7d27179"><strong>9.(ii).</strong> Once you have finished the installation process and still can’t update or edit themes and plugins, then you need to append the following entry in <strong>/etc/wordpress/config-&lt;domain-name&gt;.php</strong> file as mentioned in Step -8;</p>
 <pre>define( 'FS_METHOD', 'direct' );</pre>
 <p class="amp-wp-7d27179"><strong>10.</strong> We will also create a file that will have database related instructions –</p>
 <pre>nano ~/wp.sql</pre>
-<p class="amp-wp-7d27179">and add the following in the <code>wp.sql</code> file –</p>
+<p class="amp-wp-7d27179">and add the following in the <strong>wp.sql</strong> file –</p>
 <pre>CREATE DATABASE wp_database;
 GRANT SELECT,INSERT,UPDATE,DELETE,CREATE,DROP,ALTER
 ON wp_database.*
@@ -511,8 +511,8 @@ FLUSH PRIVILEGES;</pre>
 <pre>cat ~/wp.sql | mysql --defaults-extra-file=/etc/mysql/debian.cnf</pre>
 <p class="amp-wp-7d27179">In addition to the above, if we want to enable permalink feature in WordPress, then run –</p>
 <pre>a2enmod rewrite</pre>
-<p class="amp-wp-7d27179">Once the installation process is completed, open your web browser and type your website’s address. For example, <code>http://localhost/</code> it will take you to WordPress installation page, fill in the relevant details. The username and password that you will provide at this stage would be used to login to WordPress CMS.</p>
-<p class="amp-wp-7d27179">Thereafter, always use <code>http://localhost/wp-admin</code> in your web browser to login to your WordPress CMS.</p>
+<p class="amp-wp-7d27179">Once the installation process is completed, open your web browser and type your website’s address. For example, <strong>http://localhost/</strong> it will take you to WordPress installation page, fill in the relevant details. The username and password that you will provide at this stage would be used to login to WordPress CMS.</p>
+<p class="amp-wp-7d27179">Thereafter, always use <strong>http://localhost/wp-admin</strong> in your web browser to login to your WordPress CMS.</p>
 <p class="amp-wp-7d27179">In conclusion, Web Content Management Systems like WordPress are easy to use and do not require the user to have programming background. But, it needs to be updated regularly to ward off any potential security threats. If you have installed WordPress through Debian’s standard repository then you need to update/upgrade your Debian installation for updating WordPress to latest available version.</p>
 	</div>
 

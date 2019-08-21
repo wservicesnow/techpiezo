@@ -456,7 +456,7 @@ STEP – 5: Install WordPress.</p>
 <pre>sudo mysql_secure_installation</pre>
 <p class="amp-wp-7d27179">It will ask for a password. Remember the password as it will be used while creating a database for WordPress soon. For plugin validation, we need to press NO and for the rests of prompts press YES. Now, we will be create a database for WordPress. So, type –</p>
 <pre>mysql -u root -p</pre>
-<p class="amp-wp-7d27179">Enter the password that was provided while doing secure installation of MySQL and type the following commands. This is being done to create a database <code>"wp_database"</code> for user <code>"wp_user"</code> and password as <code>"password"</code>. We will next grant privileges to the user.</p>
+<p class="amp-wp-7d27179">Enter the password that was provided while doing secure installation of MySQL and type the following commands. This is being done to create a database <strong>“wp_database”</strong> for user <strong>“wp_user”</strong> and password as <strong>“password”</strong>. We will next grant privileges to the user.</p>
 <pre>CREATE DATABASE wp_database;
 CREATE USER `wp_user`@`localhost` IDENTIFIED BY `password`;
 GRANT ALL PRIVILEGES ON wp_database.* TO `wp_user`@`localhost`;
@@ -468,7 +468,7 @@ quit</pre>
 <pre>sudo systemctl restart apache2</pre>
 <p class="amp-wp-7d27179">We are doing configuration of hosting one website on our server, so we will edit the default file:</p>
 <pre>sudo nano /etc/apache2/sites-available/000-default.conf</pre>
-<p class="amp-wp-7d27179">and, add the following code in the above file – <code>000-default.conf</code>. Then, save and exit.</p>
+<p class="amp-wp-7d27179">and, add the following code in the above file – <strong>000-default.conf</strong>. Then, save and exit.</p>
 <pre>&lt;Directory /var/www/html/&gt;
     AllowOverride All
 &lt;/Directory&gt;</pre>
@@ -479,28 +479,28 @@ quit</pre>
 <p class="amp-wp-7d27179">It should return with the output Syntax OK.</p>
 <p class="amp-wp-7d27179">Lastly, run</p>
 <pre>sudo systemctl restart apache2</pre>
-<p class="amp-wp-7d27179"><span class="amp-wp-ca1de63"><strong>STEP – 5:</strong></span> Download WordPress in <code>/tmp</code> directory with the help of <code>wget</code> command –</p>
+<p class="amp-wp-7d27179"><span class="amp-wp-ca1de63"><strong>STEP – 5:</strong></span> Download WordPress in <strong>/tmp</strong> directory with the help of <strong>wget</strong> command –</p>
 <pre>cd /tmp
 wget "https://wordpress.org/latest.tar.gz"
 tar xzvf latest.tar.gz</pre>
-<p class="amp-wp-7d27179">tar command extracts the downloaded file. Now, we have to copy the <code>wp-config-sample.php</code> file as <code>wp-config.php</code> in the same folder by typing the following command.</p>
+<p class="amp-wp-7d27179">tar command extracts the downloaded file. Now, we have to copy the <strong>wp-config-sample.php</strong> file as <strong>wp-config.php</strong> in the same folder by typing the following command.</p>
 <pre>cp /tmp/wordpress/wp-config-sample.php /tmp/wordpress/wp-config.php</pre>
-<p class="amp-wp-7d27179">Once done, copy the entire WordPress directory to <code>/var/www/html/</code> directory.</p>
+<p class="amp-wp-7d27179">Once done, copy the entire WordPress directory to <strong>/var/www/html/</strong> directory.</p>
 <pre>sudo cp -a /tmp/wordpress/. /var/www/html/</pre>
-<p class="amp-wp-7d27179">Next, we provide ownership of the all files copied (also making plugins and themes editable) to the Apache Web Server by using <code>chown</code> command,</p>
+<p class="amp-wp-7d27179">Next, we provide ownership of the all files copied (also making plugins and themes editable) to the Apache Web Server by using <strong>chown</strong> command,</p>
 <pre>sudo chown -R www-data:www-data /var/www/html/</pre>
-<p class="amp-wp-7d27179">Lastly, update details in <code>wp-config.php</code> file –</p>
+<p class="amp-wp-7d27179">Lastly, update details in <strong>wp-config.php</strong> file –</p>
 <pre>sudo nano /var/www/html/wp-config.php</pre>
 <p class="amp-wp-7d27179">and, edit the following entries with relevant ones created in the STEP – 3.</p>
 <pre>define( 'DB_NAME', 'wp_database' );
 define( 'DB_USER', 'wp_user' );
 define( 'DB_PASSWORD', 'password' );</pre>
-<p class="amp-wp-7d27179">Now, save and exit. Remove <code>index.html</code> file from <code>/var/www/html/</code> directory by issuing following command,</p>
+<p class="amp-wp-7d27179">Now, save and exit. Remove <strong>index.html</strong> file from <strong>/var/www/html/</strong> directory by issuing following command,</p>
 <pre>sudo rm /var/www/html/index.html</pre>
 <p class="amp-wp-7d27179">Open your Web Browser and type:</p>
 <pre>http://localhost</pre>
 <p class="amp-wp-7d27179">and, provide relevant details including your username and password for WordPress login. Once, successfully done you will taken to WordPress login prompt.</p>
-<p class="amp-wp-7d27179">For some reason, if you are still unable to edit themes and plugins then you need to append <code>/var/www/html/wp-config.php</code> file with the following –</p>
+<p class="amp-wp-7d27179">For some reason, if you are still unable to edit themes and plugins then you need to append <strong>/var/www/html/wp-config.php</strong> file with the following –</p>
 <pre>define( 'FS_Method', 'direct' );</pre>
 <p>In conclusion, we have discussed how to install WordPress on Ubuntu 19.04. In the following articles, we would discuss how to install WordPress on Windows 10 using XAMPP.</p>
 	</div>

@@ -429,18 +429,18 @@ amp-carousel > amp-img > img {
 		<h1 class="amp-wp-title">Declare Variables (var and val) in Kotlin</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
 	<time datetime="2019-08-01T19:22:03+00:00">
-		2 weeks ago	</time>
+		3 weeks ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">In Kotlin, we can use both variables as well as constants (read-only variables). Depending on the instructions provided to the Compiler, we can store static as well as dynamic values to the Variables. In case, our stored value is dynamic then <code>var</code> keyword will be succeeded by variable name. On the other hand, <code>val</code> keyword in place of <code>var</code> if the value so stored is static. In this article, we would discuss different options available to declare variables in Kotlin.</p>
+		<p class="amp-wp-7d27179">In Kotlin, we can use both variables as well as constants (read-only variables). Depending on the instructions provided to the Compiler, we can store static as well as dynamic values to the Variables. In case, our stored value is dynamic then<strong> var</strong> keyword will be succeeded by variable name. On the other hand, <strong>val</strong> keyword in place of <strong>var</strong> if the value so stored is static. In this article, we would discuss different options available to declare variables in Kotlin.</p>
 <h5>Declare Variables in Kotlin</h5>
 <p class="amp-wp-7d27179">In Kotlin, we can initialize variables without even specifying its type. On the contrary, if we don’t initialize the variable then we have to mandatorily declare its variable type. For instance –</p>
 <pre>val a=6</pre>
-<p class="amp-wp-7d27179">Kotlin compiler would take <code>a</code> variable of <code>int</code> type with value <code>6</code>. In case we intend to initialize variable at a later stage then we can just declare its variable type –</p>
+<p class="amp-wp-7d27179">Kotlin compiler would take <strong>a</strong> variable of<strong> int</strong> type with value<strong> 6</strong>. In case we intend to initialize variable at a later stage then we can just declare its variable type –</p>
 <pre>val a: Int
 a=6                  //initialize the variable later</pre>
 <p class="amp-wp-7d27179">If we choose to skip variable declaration and just initialize it. The compiler even then is capable to identify the variable type on its own. We call this mechanism <strong>type inference</strong>.</p>
@@ -453,15 +453,15 @@ val y: Int
 y=24
 var x="World!"      //This will throw an error
 y=48               //This will throw an error</pre>
-<p class="amp-wp-7d27179">For Mutable references (var keyword), the value stored in the variable can be reassigned. Therefore, to make desired modifications we prefix <code>var</code> keyword before the variable name. For instance –</p>
+<p class="amp-wp-7d27179">For Mutable references (var keyword), the value stored in the variable can be reassigned. Therefore, to make desired modifications we prefix <strong>var</strong> keyword before the variable name. For instance –</p>
 <pre>var x: Int
 x=7
 x=10              //It will reassign the value of x as 10</pre>
 <p class="amp-wp-7d27179">It is worth mentioning here that, we can’t change variable type through initialization once our variable is declared.</p>
 <pre>var x: Int        //We have declared variable as Int
 x="Hello"        //We are initializing a string to x</pre>
-<p class="amp-wp-7d27179">The above code will throw a type mismatch error and it won’t compile. Also, a variable prefixed with <code>val</code> keyword cannot be modified later so it needs to be initialized when created.</p>
-<p>In conclusion, we discussed how to declare variables through <code>val</code> and <code>var</code> keywords.</p>
+<p class="amp-wp-7d27179">The above code will throw a type mismatch error and it won’t compile. Also, a variable prefixed with val keyword cannot be modified later so it needs to be initialized when created.</p>
+<p>In conclusion, we discussed how to declare variables through <strong>val and var</strong> keywords.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">

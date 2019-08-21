@@ -429,57 +429,57 @@ amp-carousel > amp-img > img {
 		<h1 class="amp-wp-title">Switch back to ifupdown &#8211; /etc/network/interfaces in Ubuntu</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
 	<time datetime="2019-07-25T20:06:03+00:00">
-		3 weeks ago	</time>
+		4 weeks ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">Netplan is a network configuration tool which was introduced in the Ubuntu 17.10. Prior to that, Ubuntu had ifupdown package to configure and manage networks. There are still many users who would prefer ifupdown package for managing their networks for various reasons. In this article, we would discuss how desktop users can switch back to ifupdown package and manage their networks through <code>/etc/network/interfaces</code> configuration file. Furthermore, they can also use command-line utilities like <code>nmcli</code>, <code>nmtui</code> or GUI based <code>network-manager-gnome</code> to manage their networks.</p>
+		<p class="amp-wp-7d27179"><strong>Netplan</strong> is a network configuration tool which was introduced in the Ubuntu 17.10. Prior to that, Ubuntu had <strong>ifupdown</strong> package to configure and manage networks. There are still many users who would prefer <strong>ifupdown</strong> package for managing their networks for various reasons. In this article, we would discuss how desktop users can switch back to <strong>ifupdown</strong> package and manage their networks through <strong>/etc/network/interfaces</strong> configuration file. Furthermore, they can also use command-line utilities like nmcli, nmtui or GUI based network-manager-gnome to manage their networks.</p>
 <h4 class="amp-wp-7d27179">Install ifupdown package</h4>
 <p class="amp-wp-7d27179">Superuser privilege is a prerequisite before making any changes, if you don’t have one then contact your System Administrator for assistance.</p>
-<p class="amp-wp-7d27179">You need to install <code>ifupdown</code> package. To do so, run the following –</p>
+<p class="amp-wp-7d27179">You need to install<strong> ifupdown</strong> package. To do so, run the following –</p>
 <pre>sudo apt update
 sudo apt install ifupdown</pre>
 <p class="amp-wp-7d27179">Also, if you plan on to Install GUI version of Network Manager – various other tools like nmcli, nmtui are also included in it.</p>
 <pre>sudo apt install network-manager-gnome</pre>
 <h4 class="amp-wp-7d27179">Remove Netplan package</h4>
-<p class="amp-wp-7d27179">If you don’t want to keep configuration and other related files of Netplan package installed,</p>
+<p class="amp-wp-7d27179">If you don’t want to keep configuration and other related files of <strong>Netplan</strong> package installed,</p>
 <pre>sudo apt purge netplan.io</pre>
 <p class="amp-wp-7d27179">To remove associated folders –</p>
 <pre>sudo rm -rf /usr/share/netplan 
 sudo rm -rf /etc/netplan</pre>
-<p class="amp-wp-7d27179">So far, we have installed ifupdown package and subsequently removed Netplan package. Now, we will be editing <code>/etc/network/interfaces</code> file.</p>
+<p class="amp-wp-7d27179">So far, we have installed ifupdown package and subsequently removed Netplan package. Now, we will be editing<strong> /etc/network/interfaces</strong> file.</p>
 <h4 class="amp-wp-7d27179">Make necessary changes to /etc/network/interfaces</h4>
 <pre>sudo nano /etc/network/interfaces</pre>
-<p class="amp-wp-7d27179">We have used <code>nano</code> text editor, you may choose one of your choice. In <code>/etc/network/interfaces</code> configuration file, make the following entries –</p>
+<p class="amp-wp-7d27179">We have used nano text editor, you may choose one of your choice. In <strong>/etc/network/interfaces</strong> configuration file, make the following entries –</p>
 <pre>auto lo
 iface lo inet loopback</pre>
-<p class="amp-wp-7d27179">Now, we are have got two options available with us. Either we configure <code>/etc/network/interfaces</code> file manually or, let any of the <code>network-manager</code> tools do that for us. We will discuss both the available options in brief next.</p>
-<p class="amp-wp-7d27179"><span class="amp-wp-ca1de63"><strong>Option 1. Configure <code>/etc/network/interfaces</code> file.</strong></span></p>
+<p class="amp-wp-7d27179">Now, we are have got two options available with us. Either we configure<strong> /etc/network/interfaces</strong> file manually or, let any of the network-manager tools do that for us. We will discuss both the available options in brief next.</p>
+<p class="amp-wp-7d27179"><span class="amp-wp-ca1de63"><strong>Option 1. Configure</strong><strong> /etc/network/interfaces</strong><strong> file.</strong></span></p>
 <p class="amp-wp-7d27179">Use the following command to identify the network interfaces –</p>
 <pre>ip a</pre>
-<p class="amp-wp-7d27179">For instance, one interface could be – <code>enp2s0</code> and the most basic IPv4 DHCP configuration may resemble –</p>
+<p class="amp-wp-7d27179">For instance, one interface could be – <strong>enp2s0</strong> and the most basic IPv4 DHCP configuration may resemble –</p>
 <pre>auto lo
 iface lo inet loopback
 
 auto enp2s0
 iface enp2s0 inet dhcp</pre>
-<p class="amp-wp-7d27179"><strong>Note:</strong> You need to identify the interface which you are trying to connect with. Also, the above code just resemble the most common configuration. For advanced configurations, you are advised to refer to man pages for network interface configuration of ifup and ifdown packages. These can be accessed by running the following command –</p>
+<p class="amp-wp-7d27179"><strong>Note:</strong> You need to identify the interface which you are trying to connect with. Also, the above code just resemble the most common configuration. For advanced configurations, you are advised to refer to man pages for network interface configuration of <strong>ifup </strong>and<strong> ifdown</strong> packages. These can be accessed by running the following command –</p>
 <pre>man 5 interfaces</pre>
-<p class="amp-wp-7d27179">After making relevant changes mentioned in the man pages do,</p>
+<p class="amp-wp-7d27179">After making relevant changes mentioned in the <strong>man</strong> pages do,</p>
 <pre>sudo systemctl restart networking</pre>
-<p class="amp-wp-7d27179"><span class="amp-wp-ca1de63"><strong>Option 2. Use <code>network-manager</code> tools.</strong></span></p>
+<p><span class="amp-wp-ca1de63"><strong>Option 2. Use</strong><strong> network-manager </strong><strong>tools.</strong></span></p>
 <p class="amp-wp-7d27179">Edit the following configuration file –</p>
 <pre class="amp-wp-7d27179">sudo nano /etc/NetworkManager/NetworkManager.conf</pre>
-<p class="amp-wp-7d27179">In the configuration file, you need to edit – <code>managed=false</code> and update it with <code>managed=true</code></p>
-<p class="amp-wp-7d27179">Also, we need to make an empty file by using the <code>touch</code> command.</p>
+<p class="amp-wp-7d27179">In the configuration file, you need to edit – <strong>managed=false</strong> and update it with <strong>managed=true</strong></p>
+<p class="amp-wp-7d27179">Also, we need to make an empty file by using the touch command.</p>
 <pre>sudo touch /etc/NetworkManager/conf.d/10-globally-managed-devices.conf</pre>
-<p class="amp-wp-7d27179">The above steps are being advised to get rid of the error – “devices not managed” that comes up during network configuration.</p>
-<p class="amp-wp-7d27179">Now, we have got three commonly used tools available to us – <code>nmcli</code>, <code>nmtui</code>, or graphical version: network-manager-gnome.</p>
-<p class="amp-wp-7d27179">If you are an advanced user, go for <code>nmcli</code> else either run <code>nmtui</code> in terminal or use network-manager-gnome. The changes you make would be according to your requirements.</p>
-<p class="amp-wp-7d27179">Conclusion, in this article we have discussed the ways to manage your network configuration if you are planning to switch back to <code>ifupdown</code> package.</p>
+<p class="amp-wp-7d27179">The above steps are being advised to get rid of the error – “<strong>devices not managed</strong>” that comes up during network configuration.</p>
+<p class="amp-wp-7d27179">Now, we have got three commonly used tools available to us – <strong>nmcli</strong>, <strong>nmtui</strong>, or graphical version: <strong>network-manager-gnome</strong>.</p>
+<p class="amp-wp-7d27179">If you are an advanced user, go for<strong> nmcli</strong> else either run<strong> nmtui</strong> in terminal or use <strong>network-manager-gnome</strong>. The changes you make would be according to your requirements.</p>
+<p class="amp-wp-7d27179">Conclusion, in this article we have discussed the ways to manage your network configuration if you are planning to switch back to <strong>ifupdown</strong> package.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">

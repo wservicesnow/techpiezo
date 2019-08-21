@@ -429,7 +429,7 @@ amp-carousel > amp-img > img {
 		<h1 class="amp-wp-title">Install Google Chrome in Debian Buster</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
 	<time datetime="2019-08-02T20:35:20+00:00">
-		2 weeks ago	</time>
+		3 weeks ago	</time>
 </div>
 	</header>
 
@@ -441,14 +441,14 @@ amp-carousel > amp-img > img {
 <pre>su -l</pre>
 <p class="amp-wp-7d27179">and provide the password.</p>
 <h5>Install Google Chrome in Debian Buster</h5>
-<p class="amp-wp-7d27179">Since, package of Google Chrome is not available in standard Debian repository. Therefore, we need to download the relevant <code>.deb</code> package file from the Google’s website. The package for Google Chrome is available at –</p>
+<p class="amp-wp-7d27179">Since, package of Google Chrome is not available in standard Debian repository. Therefore, we need to download the relevant <strong>.deb</strong> package file from the Google’s website. The package for Google Chrome is available at –</p>
 <pre>https://www.google.com/chrome/</pre>
-<p class="amp-wp-7d27179">After visiting the website, you need to click the “Download Chrome” button. In the dialog box so opened, select 64-bit version for Debian and Accept the terms and conditions to download the <code>.deb</code> package.</p>
-<p class="amp-wp-7d27179">Move to the directory wherein the package downloaded was saved in the terminal by <code>cd</code> command. The <code>cd</code> command is used to change directories in the terminal. In case it was downloaded in Downloads folder. Run the following in terminal –</p>
+<p class="amp-wp-7d27179">After visiting the website, you need to click the “<strong>Download Chrome</strong>” button. In the dialog box so opened, select 64-bit version for Debian and Accept the terms and conditions to download the <strong>.deb</strong> package.</p>
+<p class="amp-wp-7d27179">Move to the directory wherein the package downloaded was saved in the terminal by <strong>cd</strong> command. The <strong>cd</strong> command is used to change directories in the terminal. In case it was downloaded in Downloads folder. Run the following in terminal –</p>
 <pre>cd ~/Downloads</pre>
 <p class="amp-wp-7d27179">The file so downloaded should be –</p>
 <pre>google-chrome-stable_current_amd64.deb</pre>
-<p class="amp-wp-7d27179">Next, we would use the <code>dpkg</code> command line utility to install Google Chrome. <code>dpkg</code> is a package manager, through which we can install, remove, purge and many other package related operations on our Debian operating system. For the purpose of this article, we would limit ourselves to the installation process.</p>
+<p class="amp-wp-7d27179">Next, we will use the <strong>dpkg</strong> command line utility to install Google Chrome. <strong>dpkg</strong> is a package manager, through which we can install, remove, purge and many other package related operations on our Debian operating system. For the purpose of this article, we would limit ourselves to the installation process.</p>
 <pre>dpkg -i google-chrome-stable_current_amd64.deb</pre>
 <p class="amp-wp-7d27179">where,<br><strong>-i</strong> option is used to install the package file.</p>
 <p class="amp-wp-7d27179">This will install stable version of Google Chrome in Debian.</p>
@@ -461,7 +461,7 @@ google-chrome-stable</pre>
 <p class="amp-wp-7d27179">If you too have encountered one, then not to worry. All we need is to run the command that installs all the required dependencies.</p>
 <pre>apt install -f</pre>
 <p class="amp-wp-7d27179">The above command is used to fix the broken packages. Once you run the above command, stable version of Google Chrome will be installed. You can access Google Chrome from your desktop environment’s Main menu.</p>
-<p class="amp-wp-7d27179">In conclusion, we have discussed Google Chrome installation on Debian through <code>dpkg</code> command line utility. We have also provided a quick fix in case we encounter a dependency error.</p>
+<p class="amp-wp-7d27179">In conclusion, we have discussed Google Chrome installation on Debian through <strong>dpkg</strong> command line utility. We have also provided a quick fix in case we encounter a dependency error.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">

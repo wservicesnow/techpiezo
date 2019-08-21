@@ -45,11 +45,11 @@
     --sidebarWidth: 28%;
     --narrowContainerWidth: 60%;
     --maxSiteWidth: 1290px;
-    --buttonInitialColor: var(--paletteColor2);
-    --linkInitialColor: var(--paletteColor4);
+    --buttonInitialColor: var(--paletteColor1);
+    --linkInitialColor: var(--paletteColor3);
     --paletteColor5: #ffffff;
-    --paletteColor3: #222222;
-    --paletteColor1: #108ae8;
+    --paletteColor3: #0e0c1b;
+    --paletteColor1: #3897f0;
     --headerTopBorder: 1px dashed rgba(44,62,80,0.2);
     --offCanvasWidth: 280px;
     --topBarHeight: 0px;
@@ -59,21 +59,19 @@
     --transparentHeaderHoverFontColor: var(--paletteColor1);
     --headerHeight: 50px;
     --headerLogoContainerHeight: 110px;
-    --logoMaxHeight: 50px;
+    --logoMaxHeight: 30px;
     --cardSpacing: 35px;
     --cardBackground: #ffffff;
-    --pageTitleFontHoverColor: var(--paletteColor1);
     --letterSpacing: 0em;
-    --fontSize: 18px;
+    --fontSize: 22px;
     --textTransform: none;
     --fontWeight: 400;
-    --fontFamily: Ubuntu;
+    --fontFamily: Helvetica;
     --fontStyle: normal;
     --textDecoration: none;
     --lineHeight: 1.65;
-    --pageTitleFontInitialColor: var(--paletteColor4);
-    --cardExcerptSize: 16px;
-    --cardsGap: 30px;
+    --cardExcerptSize: 20px;
+    --cardsGap: 35px;
     --transparentHeaderBackground: rgba(255, 255, 255, 0.1);
     --transparentLogoMaxHeight: 50px;
     --headerShadow: rgba(210,213,218,0.15);
@@ -84,11 +82,11 @@
     --mobileHeaderHeight: 70px;
     --headerButtonRadius: 5px;
     --headerBottomBorder: none;
-    --paletteColor2: #215d9c;
-    --paletteColor4: #1c1c1c;
+    --paletteColor2: #1da1f2;
+    --paletteColor4: #0e0c1b;
     --fontColor: var(--paletteColor3);
-    --linkHoverColor: var(--paletteColor1);
-    --buttonHoverColor: var(--paletteColor3);
+    --linkHoverColor: #00a562;
+    --buttonHoverColor: var(--paletteColor2);
     --contentAreaSpacing: 35px;
     --wideOffset: 130px;
     --sidebarWidthNoUnit: 28;
@@ -123,7 +121,7 @@
 
 h1 {
     --letterSpacing: 0em;
-    --fontSize: 40px;
+    --fontSize: 44px;
     --textTransform: none;
     --fontWeight: 700;
     --fontStyle: normal;
@@ -134,7 +132,7 @@ h1 {
 
 h2 {
     --letterSpacing: 0em;
-    --fontSize: 35px;
+    --fontSize: 39px;
     --textTransform: none;
     --fontWeight: 700;
     --fontStyle: normal;
@@ -145,7 +143,7 @@ h2 {
 
 h3 {
     --letterSpacing: 0em;
-    --fontSize: 30px;
+    --fontSize: 34px;
     --textTransform: none;
     --fontWeight: 700;
     --fontStyle: normal;
@@ -156,7 +154,7 @@ h3 {
 
 h4 {
     --letterSpacing: 0em;
-    --fontSize: 25px;
+    --fontSize: 29px;
     --textTransform: none;
     --fontWeight: 700;
     --fontStyle: normal;
@@ -167,7 +165,7 @@ h4 {
 
 h5 {
     --letterSpacing: 0em;
-    --fontSize: 20px;
+    --fontSize: 24px;
     --textTransform: none;
     --fontWeight: 700;
     --fontStyle: normal;
@@ -178,7 +176,7 @@ h5 {
 
 h6 {
     --letterSpacing: 0em;
-    --fontSize: 16px;
+    --fontSize: 20px;
     --textTransform: none;
     --fontWeight: 700;
     --fontStyle: normal;
@@ -194,7 +192,7 @@ h6 {
     --fontFamily: Georgia;
     --fontWeight: 600;
     --textTransform: none;
-    --fontSize: 25px;
+    --fontSize: 29px;
     --letterSpacing: 0em;
 }
 
@@ -203,7 +201,7 @@ code, kbd, samp, pre {
     --textDecoration: none;
     --fontFamily: monospace;
     --textTransform: none;
-    --fontSize: 16px;
+    --fontSize: 20px;
     --letterSpacing: 0em;
 }
 
@@ -214,7 +212,7 @@ code, kbd, samp, pre {
     --fontStyle: normal;
     --fontWeight: 700;
     --textTransform: none;
-    --fontSize: 22px;
+    --fontSize: 32px;
     --letterSpacing: 0em;
     --linkHoverColor: var(--paletteColor1);
 }
@@ -224,8 +222,8 @@ code, kbd, samp, pre {
     --textDecoration: none;
     --fontStyle: normal;
     --fontWeight: 700;
-    --textTransform: uppercase;
-    --fontSize: 14px;
+    --textTransform: capitalize;
+    --fontSize: 18px;
     --letterSpacing: 0em;
 }
 
@@ -234,8 +232,8 @@ code, kbd, samp, pre {
     --textDecoration: none;
     --fontStyle: normal;
     --fontWeight: 700;
-    --textTransform: uppercase;
-    --fontSize: 12px;
+    --textTransform: capitalize;
+    --fontSize: 16px;
     --letterSpacing: 0em;
 }
 
@@ -244,7 +242,7 @@ code, kbd, samp, pre {
     --textDecoration: none;
     --fontStyle: normal;
     --fontWeight: 700;
-    --textTransform: none;
+    --textTransform: capitalize;
     --fontSize: 30px;
     --letterSpacing: 0em;
 }
@@ -297,27 +295,14 @@ code, kbd, samp, pre {
 }
 
 .site-main {
-    --backgroundImage: url(https://techpiezo.com/wp-content/uploads/2019/08/site-background.svg);
-    --backgroundAttachment: fixed;
-    --backgroundPosition: 50% 50%;
-    --backgroundSize: auto;
-    --backgroundRepeat: repeat-y;
-    --backgroundColor: #535d6c;
+    --backgroundImage: none;
+    --backgroundColor: #f8f8f8;
 }
 
 .header-desktop {
     --backgroundColor: #ffffff;
     --backgroundImage: none;
     --menuItemsSpacing: 25px;
-}
-
-.single .site-main {
-    --backgroundImage: url(https://techpiezo.com/wp-content/uploads/2019/08/page-background.svg);
-    --backgroundAttachment: fixed;
-    --backgroundPosition: 50% 50%;
-    --backgroundSize: auto;
-    --backgroundRepeat: repeat-y;
-    --backgroundColor: #ffffff;
 }
 
 .ct-related-posts {
@@ -332,28 +317,18 @@ code, kbd, samp, pre {
     --backgroundColor: #f4f5f8;
 }
 
-.entry-header .page-title {
-    --lineHeight: 1.3;
-    --textDecoration: none;
-    --fontStyle: normal;
-    --fontWeight: 700;
-    --textTransform: none;
-    --fontSize: 32px;
-    --letterSpacing: 0em;
-}
-
 .entry-card .entry-title {
     --lineHeight: 1.3;
     --textDecoration: none;
     --fontStyle: normal;
     --fontWeight: 700;
     --textTransform: none;
-    --fontSize: 20px;
+    --fontSize: 30px;
     --letterSpacing: 0em;
 }
 
 .entry-title {
-    --linkInitialColor: var(--paletteColor4);
+    --linkInitialColor: #2c3e50;
     --linkHoverColor: var(--paletteColor1);
 }
 
@@ -362,7 +337,7 @@ code, kbd, samp, pre {
 }
 
 .entry-card {
-    --metaFontSize: 12px;
+    --metaFontSize: 18px;
 }
 
 .entry-meta {
@@ -488,12 +463,12 @@ code, kbd, samp, pre {
     --headerHeight: 35px;
     --transparentLogoMaxHeight: 50px;
     --cardSpacing: 35px;
-    --cardExcerptSize: 16px;
+    --cardExcerptSize: 19px;
     --lineHeight: 1.65;
-    --fontSize: 18px;
+    --fontSize: 22px;
     --letterSpacing: 0em;
-    --cardsGap: 30px;
-    --logoMaxHeight: 50px;
+    --cardsGap: 35px;
+    --logoMaxHeight: 30px;
     --headerLogoContainerHeight: 35px;
     --navSectionHeight: 15px;
     --mobileHeaderHeight: 40px;
@@ -509,67 +484,67 @@ code, kbd, samp, pre {
 
 h1 {
     --lineHeight: 1.5;
-    --fontSize: 40px;
+    --fontSize: 44px;
     --letterSpacing: 0em;
 }
 
 h2 {
     --lineHeight: 1.5;
-    --fontSize: 35px;
+    --fontSize: 39px;
     --letterSpacing: 0em;
 }
 
 h3 {
     --lineHeight: 1.5;
-    --fontSize: 30px;
+    --fontSize: 34px;
     --letterSpacing: 0em;
 }
 
 h4 {
     --lineHeight: 1.5;
-    --fontSize: 25px;
+    --fontSize: 29px;
     --letterSpacing: 0em;
 }
 
 h5 {
     --lineHeight: 1.5;
-    --fontSize: 20px;
+    --fontSize: 24px;
     --letterSpacing: 0em;
 }
 
 h6 {
     --lineHeight: 1.5;
-    --fontSize: 16px;
+    --fontSize: 20px;
     --letterSpacing: 0em;
 }
 
 .entry-content blockquote p, .ct-quote-widget blockquote p {
     --lineHeight: 1.65;
-    --fontSize: 25px;
+    --fontSize: 29px;
     --letterSpacing: 0em;
 }
 
 code, kbd, samp, pre {
     --lineHeight: 1.65;
-    --fontSize: 16px;
+    --fontSize: 20px;
     --letterSpacing: 0em;
 }
 
 .site-title {
     --lineHeight: 1.65;
-    --fontSize: 22px;
+    --fontSize: 32px;
     --letterSpacing: 0em;
 }
 
 .primary-menu > li {
     --lineHeight: 1.3;
-    --fontSize: 14px;
+    --fontSize: 18px;
     --letterSpacing: 0em;
 }
 
 .primary-menu .sub-menu li {
     --lineHeight: 1.3;
-    --fontSize: 12px;
+    --fontSize: 16px;
     --letterSpacing: 0em;
 }
 
@@ -597,20 +572,14 @@ code, kbd, samp, pre {
     --letterSpacing: 0em;
 }
 
-.entry-header .page-title {
-    --lineHeight: 1.3;
-    --fontSize: 30px;
-    --letterSpacing: 0em;
-}
-
 .entry-card .entry-title {
     --lineHeight: 1.3;
-    --fontSize: 20px;
+    --fontSize: 26px;
     --letterSpacing: 0em;
 }
 
 .entry-card {
-    --metaFontSize: 12px;
+    --metaFontSize: 13px;
 }
 
 #mobile-menu .mobile-menu,
@@ -637,12 +606,12 @@ code, kbd, samp, pre {
     --headerHeight: 35px;
     --transparentLogoMaxHeight: 50px;
     --cardSpacing: 25px;
-    --cardExcerptSize: 16px;
+    --cardExcerptSize: 19px;
     --lineHeight: 1.65;
-    --fontSize: 18px;
+    --fontSize: 22px;
     --letterSpacing: 0em;
-    --cardsGap: 30px;
-    --logoMaxHeight: 50px;
+    --cardsGap: 35px;
+    --logoMaxHeight: 30px;
     --headerLogoContainerHeight: 35px;
     --navSectionHeight: 15px;
     --mobileHeaderHeight: 50px;
@@ -658,67 +627,67 @@ code, kbd, samp, pre {
 
 h1 {
     --lineHeight: 1.5;
-    --fontSize: 40px;
+    --fontSize: 44px;
     --letterSpacing: 0em;
 }
 
 h2 {
     --lineHeight: 1.5;
-    --fontSize: 35px;
+    --fontSize: 39px;
     --letterSpacing: 0em;
 }
 
 h3 {
     --lineHeight: 1.5;
-    --fontSize: 30px;
+    --fontSize: 34px;
     --letterSpacing: 0em;
 }
 
 h4 {
     --lineHeight: 1.5;
-    --fontSize: 25px;
+    --fontSize: 29px;
     --letterSpacing: 0em;
 }
 
 h5 {
     --lineHeight: 1.5;
-    --fontSize: 20px;
+    --fontSize: 24px;
     --letterSpacing: 0em;
 }
 
 h6 {
     --lineHeight: 1.5;
-    --fontSize: 16px;
+    --fontSize: 20px;
     --letterSpacing: 0em;
 }
 
 .entry-content blockquote p, .ct-quote-widget blockquote p {
     --lineHeight: 1.65;
-    --fontSize: 25px;
+    --fontSize: 29px;
     --letterSpacing: 0em;
 }
 
 code, kbd, samp, pre {
     --lineHeight: 1.65;
-    --fontSize: 16px;
+    --fontSize: 20px;
     --letterSpacing: 0em;
 }
 
 .site-title {
     --lineHeight: 1.65;
-    --fontSize: 22px;
+    --fontSize: 32px;
     --letterSpacing: 0em;
 }
 
 .primary-menu > li {
     --lineHeight: 1.3;
-    --fontSize: 14px;
+    --fontSize: 18px;
     --letterSpacing: 0em;
 }
 
 .primary-menu .sub-menu li {
     --lineHeight: 1.3;
-    --fontSize: 12px;
+    --fontSize: 16px;
     --letterSpacing: 0em;
 }
 
@@ -758,20 +727,14 @@ code, kbd, samp, pre {
     --letterSpacing: 0em;
 }
 
-.entry-header .page-title {
-    --lineHeight: 1.3;
-    --fontSize: 25px;
-    --letterSpacing: 0em;
-}
-
 .entry-card .entry-title {
     --lineHeight: 1.3;
-    --fontSize: 18px;
+    --fontSize: 24px;
     --letterSpacing: 0em;
 }
 
 .entry-card {
-    --metaFontSize: 12px;
+    --metaFontSize: 13px;
 }
 
 .header-top-bar-menu,
@@ -779,7 +742,6 @@ code, kbd, samp, pre {
     --menuItemsSpacing: 20px;
 }</style>
 <link rel='stylesheet' id='wp-block-library-css'  href='https://techpiezo.com/wp-includes/css/dist/block-library/style.min.css' type='text/css' media='all' />
-<link crossorigin="anonymous" rel='stylesheet' id='blocksy-fonts-font-source-google-css'  href='https://fonts.googleapis.com/css?family=Ubuntu%3A400&#038;display=swap' type='text/css' media='all' />
 <link rel='stylesheet' id='ct-style-css'  href='https://techpiezo.com/wp-content/themes/blocksy/style.css' type='text/css' media='all' />
 <link rel='stylesheet' id='ct-main-styles-css'  href='https://techpiezo.com/wp-content/themes/blocksy/static/bundle/main.css' type='text/css' media='all' />
 
@@ -797,7 +759,7 @@ code, kbd, samp, pre {
 	padding-right: 20px;
 }
 .ct-last-page-text{
-	color: whitesmoke
+	color: black;
 }
 
 		</style>
@@ -813,7 +775,7 @@ code, kbd, samp, pre {
 
 </head>
 
-<body class="archive paged category category-linux category-3 paged-4 category-paged-4 ct-loading ct-no-js ct-modern-forms ct-offcanvas header-type-1" >
+<body class="archive paged category category-linux category-3 wp-custom-logo paged-4 category-paged-4 ct-loading ct-no-js ct-modern-forms ct-offcanvas header-type-1" >
 <div id="main-container">
 
 	<header
@@ -830,12 +792,10 @@ code, kbd, samp, pre {
 				>
 
 		<h1 class="site-title">
-							<a href="https://techpiezo.com/" rel="home">
-					TechPiezo				</a>
-					</h1>
+							<a href="https://techpiezo.com/" class="custom-logo-link" rel="home"><img src="https://techpiezo.com/wp-content/uploads/2019/08/logo.svg" class="custom-logo ct-default-logo" alt="TechPiezo" /></a>					</h1>
 
 		<h2 class="site-description ct-hidden-sm ct-hidden-md ct-hidden-lg">
-			Future is Here		</h2>
+					</h2>
 	</div>
 
 	
@@ -897,12 +857,10 @@ code, kbd, samp, pre {
 				>
 
 		<h1 class="site-title">
-							<a href="https://techpiezo.com/" rel="home">
-					TechPiezo				</a>
-					</h1>
+							<a href="https://techpiezo.com/" class="custom-logo-link" rel="home"><img src="https://techpiezo.com/wp-content/uploads/2019/08/logo.svg" class="custom-logo ct-default-logo" alt="TechPiezo" /></a>					</h1>
 
 		<h2 class="site-description ct-hidden-sm ct-hidden-md ct-hidden-lg">
-			Future is Here		</h2>
+					</h2>
 	</div>
 
 	
@@ -938,13 +896,6 @@ code, kbd, samp, pre {
 
 		<section>
 							
-		<section class="hero-section" data-type="type-1" data-alignment="left">
-			<header class="entry-header">
-				<h1 class="page-title"><span>Category</span> Linux</h1><div class="page-description ct-hidden-sm ct-hidden-md ct-hidden-lg"><p style="text-align: justify;">All the issues that you face while using various linux distros addressed. Also, learn basic to advanced linux in the most effective way.</p>
-</div>			</header>
-		</section>
-
-		
 									<div class="entries"
 						data-layout="enhanced-grid"
 						data-cards="boxed"																		>
@@ -952,19 +903,7 @@ code, kbd, samp, pre {
 <article
 	id="post-341" class="entry-card post-341 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-recent"	>
 
-	<a class="ct-image-container boundless-image" href="https://techpiezo.com/linux/linux-recent/libreoffice-6-3-beta-1-released-for-testing-with-new-features/" ><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/06/LibreOffice-6.3-Beta-1-Released.svg" class="attachment-medium_large size-medium_large" alt="LibreOffice 6.3 Beta 1 Released" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 56.3%"></div></a>
-				<div class="entry-meta"  data-type="simple">
-		
-
-			<ul >
-				
-			
-			
-			
-			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-element"><a href="https://techpiezo.com/linux/" rel="tag">Linux</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/linux-recent/" rel="tag">Recent</a></span></li>					</ul>
-				</div>
-		
-		
+	<a class="ct-image-container boundless-image ct-lazy" href="https://techpiezo.com/linux/linux-recent/libreoffice-6-3-beta-1-released-for-testing-with-new-features/" ><img width="1" height="1" class="attachment-medium_large size-medium_large" alt="LibreOffice 6.3 Beta 1 Released" data-lazy="https://techpiezo.com/wp-content/uploads/2019/06/LibreOffice-6.3-Beta-1-Released.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/06/LibreOffice-6.3-Beta-1-Released.svg" class="attachment-medium_large size-medium_large" alt="LibreOffice 6.3 Beta 1 Released" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></a>
 	<h2 class="entry-title">
 		<a href="https://techpiezo.com/linux/linux-recent/libreoffice-6-3-beta-1-released-for-testing-with-new-features/">
 			LibreOffice 6.3 Beta 1 Released for Testing with new Features		</a>
@@ -974,13 +913,7 @@ code, kbd, samp, pre {
 	<div class="entry-excerpt">
 		LibreOffice is a free and open-source office suite, from The Document Foundation. It includes word processing, spreadsheets, slideshows, diagrams and…	</div>
 
-	
-</article>
-
-<article
-	id="post-331" class="entry-card post-331 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-recent"	>
-
-	<a class="ct-image-container boundless-image" href="https://techpiezo.com/linux/gparted-1-0-released/" ><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/06/GParted-1-Released.svg" class="attachment-medium_large size-medium_large" alt="GParted 1 Released" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 56.3%"></div></a>
+	<div class="ct-ghost"></div>
 				<div class="entry-meta"  data-type="simple">
 		
 
@@ -993,6 +926,12 @@ code, kbd, samp, pre {
 				</div>
 		
 		
+</article>
+
+<article
+	id="post-331" class="entry-card post-331 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-recent"	>
+
+	<a class="ct-image-container boundless-image ct-lazy" href="https://techpiezo.com/linux/gparted-1-0-released/" ><img width="1" height="1" class="attachment-medium_large size-medium_large" alt="GParted 1 Released" data-lazy="https://techpiezo.com/wp-content/uploads/2019/06/GParted-1-Released.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/06/GParted-1-Released.svg" class="attachment-medium_large size-medium_large" alt="GParted 1 Released" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></a>
 	<h2 class="entry-title">
 		<a href="https://techpiezo.com/linux/gparted-1-0-released/">
 			GParted 1.0 Released!		</a>
@@ -1002,13 +941,35 @@ code, kbd, samp, pre {
 	<div class="entry-excerpt">
 		GParted is GUI interface for GNU Parted, used for Disk partitioning and has been included in many GNU/Linux systems. It…	</div>
 
-	
+	<div class="ct-ghost"></div>
+				<div class="entry-meta"  data-type="simple">
+		
+
+			<ul >
+				
+			
+			
+			
+			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-element"><a href="https://techpiezo.com/linux/" rel="tag">Linux</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/linux-recent/" rel="tag">Recent</a></span></li>					</ul>
+				</div>
+		
+		
 </article>
 
 <article
 	id="post-326" class="entry-card post-326 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"	>
 
-	<a class="ct-image-container boundless-image" href="https://techpiezo.com/linux/introduction-to-ubuntu/" ><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/06/Introduction-to-Ubuntu.svg" class="attachment-medium_large size-medium_large" alt="Introduction to Ubuntu" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 56.3%"></div></a>
+	<a class="ct-image-container boundless-image ct-lazy" href="https://techpiezo.com/linux/introduction-to-ubuntu/" ><img width="1" height="1" class="attachment-medium_large size-medium_large" alt="Introduction to Ubuntu" data-lazy="https://techpiezo.com/wp-content/uploads/2019/06/Introduction-to-Ubuntu.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/06/Introduction-to-Ubuntu.svg" class="attachment-medium_large size-medium_large" alt="Introduction to Ubuntu" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></a>
+	<h2 class="entry-title">
+		<a href="https://techpiezo.com/linux/introduction-to-ubuntu/">
+			Introduction to Ubuntu		</a>
+	</h2>
+
+	
+	<div class="entry-excerpt">
+		Ubuntu is a free and open source Linux distribution, that gets released every six months. There is also a long-term…	</div>
+
+	<div class="ct-ghost"></div>
 				<div class="entry-meta"  data-type="simple">
 		
 
@@ -1021,20 +982,17 @@ code, kbd, samp, pre {
 				</div>
 		
 		
-	<h2 class="entry-title">
-		<a href="https://techpiezo.com/linux/introduction-to-ubuntu/">
-			Introduction to Ubuntu		</a>
-	</h2>
-
-	
-	<div class="entry-excerpt">
-		Ubuntu is a free and open source Linux distribution, that gets released every six months. There is also a long-term…	</div>
-
-	
 </article>
 
 									</div>
-						</section>
+				
+		<div class="ct-pagination" role="navigation" data-type="simple" >
+			<nav><a class="prev page-numbers" href="https://techpiezo.com/linux/page/3/"><svg width="10px" height="10px" viewBox="0 0 15 15"><path class="st0" d="M10.9,15c-0.2,0-0.4-0.1-0.6-0.2L3.6,8c-0.3-0.3-0.3-0.8,0-1.1l6.6-6.6c0.3-0.3,0.8-0.3,1.1,0c0.3,0.3,0.3,0.8,0,1.1L5.2,7.4l6.2,6.2c0.3,0.3,0.3,0.8,0,1.1C11.3,14.9,11.1,15,10.9,15z"/></svg></a>
+<a class='page-numbers' href='https://techpiezo.com/linux/'>1</a>
+<span class="page-numbers dots">&hellip;</span>
+<span aria-current='page' class='page-numbers current'>4</span></nav>
+			
+		</div>		</section>
 
 			</div>
 </section>

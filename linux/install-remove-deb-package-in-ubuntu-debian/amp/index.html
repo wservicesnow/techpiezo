@@ -429,39 +429,39 @@ amp-carousel > amp-img > img {
 		<h1 class="amp-wp-title">Install/Remove .deb package in Ubuntu/Debian</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
 	<time datetime="2019-07-04T20:23:47+00:00">
-		1 month ago	</time>
+		2 months ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">Ubuntu/Debian Linux distributions contains huge list of packages in their software repositories. Still, we may need to install other packages due to various reasons like dependency issues, third party packages etc. There are two options available to us for installing these other packages. These are – either we add them to repository or we download the <code>.deb</code> package file. In this article, we would discuss the ways to install and remove <code>.deb</code> package file manually.</p>
-<p class="amp-wp-7d27179">Before downloading the <code>.deb</code> package file, we need to first check the processor architecture for our system. It would help us save a great deal of time, if we already know which package would be supported by our processor’s architecture. To do that, run the following command in terminal –</p>
+		<p class="amp-wp-7d27179">Ubuntu/Debian Linux distributions contains huge list of packages in their software repositories. Still, we may need to install other packages due to various reasons like dependency issues, third party packages etc. There are two options available to us for installing these other packages. These are – either we add them to repository or we download the <strong>.deb</strong> package file. In this article, we would discuss the ways to install and remove <strong>.deb</strong> package file manually.</p>
+<p class="amp-wp-7d27179">Before downloading the <strong>.deb</strong> package file, we need to first check the processor architecture for our system. It would help us save a great deal of time, if we already know which package would be supported by our processor’s architecture. To do that, run the following command in terminal –</p>
 <pre>lscpu</pre>
 <p class="amp-wp-7d27179">It would return with two results, which are self-explanatory.</p>
 <p class="amp-wp-7d27179">CPU op-mode(s): 32-bit, 64-bit – then its 64-bit Processor architecture. If its just – CPU op-mode(s): 32-bit – then its a 32-bit Processor architecture.</p>
 <p class="amp-wp-7d27179">To know more, about i386 and amd64 architectures follow the <span class="amp-wp-a1b1bb7"><a href="https://techpiezo.com/linux/i386-or-amd64-ubuntu-distribution/" target="_blank" rel="noopener noreferrer" class="amp-wp-a1b1bb7">link</a>.</span></p>
 <h4 class="amp-wp-cdd8ca0">Install using dpkg command</h4>
 <p class="amp-wp-7d27179">Then, download and save the supported package to a directory. Open terminal again, you need to have a super user access. If you don’t have one then contact your system administrator for assistance.</p>
-<p class="amp-wp-7d27179">Move to the directory where you downloaded the package by using the change directory <code>cd</code> command.</p>
+<p class="amp-wp-7d27179">Move to the directory where you downloaded the package by using the change directory <strong>cd</strong> command.</p>
 <pre>cd /path/to/package</pre>
-<p class="amp-wp-7d27179">Then, we will make use of <code>dpkg</code> command to install the package. DPKG is an acronym for Debian Package Manager.</p>
+<p class="amp-wp-7d27179">Then, we will make use of <strong>dpkg</strong> command to install the package. <strong>DPKG</strong> is an acronym for Debian Package Manager.</p>
 <pre>dpkg -i /path/to/package.deb</pre>
 <p class="amp-wp-7d27179">Next, there will be packages that may require additional packages to be installed. These additional packages are the dependencies without which our source package may/may not work. So, if it is required then we may need to pass the following command to the terminal.</p>
 <pre>apt install -f</pre>
 <p class="amp-wp-7d27179">If there was any error during package installation, that could be due to dependencies, then we need use the above command to fix the broken system.</p>
 <h4 class="amp-wp-cdd8ca0">Remove using dpkg command</h4>
-<p class="amp-wp-7d27179">For some reason, we may want to remove the package installed. We can do that with the help of <code>dpkg</code> command. But, first we need to know if the package which we are about to remove is installed on our system or not. To check, run the following command.</p>
+<p class="amp-wp-7d27179">For some reason, we may want to remove the package installed. We can do that with the help of <strong>dpkg</strong> command. But, first we need to know if the package which we are about to remove is installed on our system or not. To check, run the following command.</p>
 <pre>dpkg -l | grep &lt;package-name&gt;</pre>
 <p class="amp-wp-7d27179">There are two options available to us for removing a package – either we keep or remove configuration files of the packages already installed.</p>
-<p class="amp-wp-7d27179">To keep configuration files, run the following. <code>-r</code> option is for removing the package.</p>
+<p class="amp-wp-7d27179">To keep configuration files, run the following. <strong>-r</strong> option is for removing the package.</p>
 <pre>dpkg -r &lt;package-name&gt;</pre>
-<p class="amp-wp-7d27179">Or, to remove the configuration files too, run the following in terminal. <code>-P</code> option is for purging the package.</p>
+<p class="amp-wp-7d27179">Or, to remove the configuration files too, run the following in terminal. <strong>-P</strong> option is for purging the package.</p>
 <pre>dpkg -P &lt;package-name&gt;</pre>
 <p class="amp-wp-7d27179">Just to confirm if your package has been successfully removed, again run.</p>
 <pre>dpkg -l | grep &lt;package-name&gt;</pre>
-<p class="amp-wp-7d27179">In conclusion, we have discussed the ways to install and remove the <code>.deb</code> package files.</p>
+<p class="amp-wp-7d27179">In conclusion, we have discussed the ways to install and remove the <strong>.deb</strong> package files.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">

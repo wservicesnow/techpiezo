@@ -436,11 +436,11 @@ amp-carousel > amp-img > img {
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">The purpose of <code>/tmp</code> directory on GNU/Linux has been to provide programs a directory for temporary files. Files in <code>/tmp</code> are deleted after a system reboot.</p>
-<p class="amp-wp-7d27179">Many GNU/Linux based distributions have mounted <code>/tmp</code> as RAM based tmpfs (temporary file system). It not only removes disk I/O but also increases performance. However, it has certain aspects to clearly understood.</p>
+		<p class="amp-wp-7d27179">The purpose of <strong>/tmp</strong> directory on GNU/Linux has been to provide programs a directory for temporary files. Files in <strong>/tmp</strong> are deleted after a system reboot.</p>
+<p class="amp-wp-7d27179">Many GNU/Linux based distributions have mounted <strong>/tmp</strong> as RAM based tmpfs (temporary file system). It not only removes disk I/O but also increases performance. However, it has certain aspects to clearly understood.</p>
 <h4 class="amp-wp-cdd8ca0">What /tmp on RAM disk provides:</h4>
 <p class="amp-wp-7d27179"><strong>A. Performance</strong></p>
-<p class="amp-wp-7d27179">Since <code>/tmp</code> will be mounted on ram disk as tmpfs, Read and Write will be significantly faster as RAM’s Read and Write speeds are faster then that of Hard Drive or Solid State Drive. Hence programs accessing data on <code>/tmp</code> will be faster.</p>
+<p class="amp-wp-7d27179">Since <strong>/tmp</strong> will be mounted on ram disk as tmpfs, Read and Write will be significantly faster as RAM’s Read and Write speeds are faster then that of Hard Drive or Solid State Drive. Hence programs accessing data on <strong>/tmp</strong> will be faster.</p>
 <p class="amp-wp-7d27179"><strong>B. Disk Optimization</strong></p>
 <p class="amp-wp-7d27179">Temporary files been placed on tmpfs, frees disk I/O which allow disk activity to go down and allocate resources to other disk I/O operations. Specially fewer Read and Write to Flash based Storage reduces the requirement to TRIM NAND based Disk.<br>
 Also fewer Disk wake-ups.</p>
@@ -451,7 +451,7 @@ Also fewer Disk wake-ups.</p>
 <p class="amp-wp-7d27179">Data can however still leak, while system is live and program’s data resides in tmpfs or other side channels depending upon security measures taken by the program.</p>
 <p class="amp-wp-7d27179">But data will not leak after device is powered down, with exception for cold boot method for data recovery.</p>
 <p class="amp-wp-7d27179"><strong>B. RAM Limit</strong></p>
-<p class="amp-wp-7d27179">tmpfs size is limited to amount of RAM provided in the system, hence <code>/tmp</code> will not be able to grow beyond limit. If program hogs on <code>/tmp</code> directory for huge amounts of data then system will resort back to swap space or slow down the whole system, leaving you with no RAM for other processes.</p>
+<p class="amp-wp-7d27179">tmpfs size is limited to amount of RAM provided in the system, hence <strong>/tmp</strong> will not be able to grow beyond limit. If program hogs on <strong>/tmp</strong> directory for huge amounts of data then system will resort back to swap space or slow down the whole system, leaving you with no RAM for other processes.</p>
 <h4 class="amp-wp-cdd8ca0">Configure /tmp on tmpfs</h4>
 <p class="amp-wp-7d27179"><strong>On RHEL 7 / CentOS 7 / Fedora:</strong></p>
 <p class="amp-wp-7d27179">To Check</p>

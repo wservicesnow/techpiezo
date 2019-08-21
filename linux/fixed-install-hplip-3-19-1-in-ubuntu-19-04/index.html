@@ -44,11 +44,11 @@
     --sidebarWidth: 28%;
     --narrowContainerWidth: 60%;
     --maxSiteWidth: 1290px;
-    --buttonInitialColor: var(--paletteColor2);
-    --linkInitialColor: var(--paletteColor4);
+    --buttonInitialColor: var(--paletteColor1);
+    --linkInitialColor: var(--paletteColor3);
     --paletteColor5: #ffffff;
-    --paletteColor3: #222222;
-    --paletteColor1: #108ae8;
+    --paletteColor3: #0e0c1b;
+    --paletteColor1: #3897f0;
     --headerTopBorder: 1px dashed rgba(44,62,80,0.2);
     --offCanvasWidth: 280px;
     --topBarHeight: 0px;
@@ -58,21 +58,21 @@
     --transparentHeaderHoverFontColor: var(--paletteColor1);
     --headerHeight: 50px;
     --headerLogoContainerHeight: 110px;
-    --logoMaxHeight: 50px;
+    --logoMaxHeight: 30px;
     --cardSpacing: 35px;
     --cardBackground: #ffffff;
     --pageTitleFontHoverColor: var(--paletteColor1);
     --letterSpacing: 0em;
-    --fontSize: 18px;
+    --fontSize: 22px;
     --textTransform: none;
     --fontWeight: 400;
-    --fontFamily: Ubuntu;
+    --fontFamily: Helvetica;
     --fontStyle: normal;
     --textDecoration: none;
     --lineHeight: 1.65;
     --pageTitleFontInitialColor: var(--paletteColor4);
-    --cardExcerptSize: 16px;
-    --cardsGap: 30px;
+    --cardExcerptSize: 20px;
+    --cardsGap: 35px;
     --transparentHeaderBackground: rgba(255, 255, 255, 0.1);
     --transparentLogoMaxHeight: 50px;
     --headerShadow: rgba(210,213,218,0.15);
@@ -83,11 +83,11 @@
     --mobileHeaderHeight: 70px;
     --headerButtonRadius: 5px;
     --headerBottomBorder: none;
-    --paletteColor2: #215d9c;
-    --paletteColor4: #1c1c1c;
+    --paletteColor2: #1da1f2;
+    --paletteColor4: #0e0c1b;
     --fontColor: var(--paletteColor3);
-    --linkHoverColor: var(--paletteColor1);
-    --buttonHoverColor: var(--paletteColor3);
+    --linkHoverColor: #00a562;
+    --buttonHoverColor: var(--paletteColor2);
     --contentAreaSpacing: 35px;
     --wideOffset: 130px;
     --sidebarWidthNoUnit: 28;
@@ -122,7 +122,7 @@
 
 h1 {
     --letterSpacing: 0em;
-    --fontSize: 40px;
+    --fontSize: 44px;
     --textTransform: none;
     --fontWeight: 700;
     --fontStyle: normal;
@@ -133,7 +133,7 @@ h1 {
 
 h2 {
     --letterSpacing: 0em;
-    --fontSize: 35px;
+    --fontSize: 39px;
     --textTransform: none;
     --fontWeight: 700;
     --fontStyle: normal;
@@ -144,7 +144,7 @@ h2 {
 
 h3 {
     --letterSpacing: 0em;
-    --fontSize: 30px;
+    --fontSize: 34px;
     --textTransform: none;
     --fontWeight: 700;
     --fontStyle: normal;
@@ -155,7 +155,7 @@ h3 {
 
 h4 {
     --letterSpacing: 0em;
-    --fontSize: 25px;
+    --fontSize: 29px;
     --textTransform: none;
     --fontWeight: 700;
     --fontStyle: normal;
@@ -166,7 +166,7 @@ h4 {
 
 h5 {
     --letterSpacing: 0em;
-    --fontSize: 20px;
+    --fontSize: 24px;
     --textTransform: none;
     --fontWeight: 700;
     --fontStyle: normal;
@@ -177,7 +177,7 @@ h5 {
 
 h6 {
     --letterSpacing: 0em;
-    --fontSize: 16px;
+    --fontSize: 20px;
     --textTransform: none;
     --fontWeight: 700;
     --fontStyle: normal;
@@ -193,7 +193,7 @@ h6 {
     --fontFamily: Georgia;
     --fontWeight: 600;
     --textTransform: none;
-    --fontSize: 25px;
+    --fontSize: 29px;
     --letterSpacing: 0em;
 }
 
@@ -202,7 +202,7 @@ code, kbd, samp, pre {
     --textDecoration: none;
     --fontFamily: monospace;
     --textTransform: none;
-    --fontSize: 16px;
+    --fontSize: 20px;
     --letterSpacing: 0em;
 }
 
@@ -213,7 +213,7 @@ code, kbd, samp, pre {
     --fontStyle: normal;
     --fontWeight: 700;
     --textTransform: none;
-    --fontSize: 22px;
+    --fontSize: 32px;
     --letterSpacing: 0em;
     --linkHoverColor: var(--paletteColor1);
 }
@@ -223,8 +223,8 @@ code, kbd, samp, pre {
     --textDecoration: none;
     --fontStyle: normal;
     --fontWeight: 700;
-    --textTransform: uppercase;
-    --fontSize: 14px;
+    --textTransform: capitalize;
+    --fontSize: 18px;
     --letterSpacing: 0em;
 }
 
@@ -233,8 +233,8 @@ code, kbd, samp, pre {
     --textDecoration: none;
     --fontStyle: normal;
     --fontWeight: 700;
-    --textTransform: uppercase;
-    --fontSize: 12px;
+    --textTransform: capitalize;
+    --fontSize: 16px;
     --letterSpacing: 0em;
 }
 
@@ -243,7 +243,7 @@ code, kbd, samp, pre {
     --textDecoration: none;
     --fontStyle: normal;
     --fontWeight: 700;
-    --textTransform: none;
+    --textTransform: capitalize;
     --fontSize: 30px;
     --letterSpacing: 0em;
 }
@@ -296,27 +296,14 @@ code, kbd, samp, pre {
 }
 
 .site-main {
-    --backgroundImage: url(https://techpiezo.com/wp-content/uploads/2019/08/site-background.svg);
-    --backgroundAttachment: fixed;
-    --backgroundPosition: 50% 50%;
-    --backgroundSize: auto;
-    --backgroundRepeat: repeat-y;
-    --backgroundColor: #535d6c;
+    --backgroundImage: none;
+    --backgroundColor: #f8f8f8;
 }
 
 .header-desktop {
     --backgroundColor: #ffffff;
     --backgroundImage: none;
     --menuItemsSpacing: 25px;
-}
-
-.single .site-main {
-    --backgroundImage: url(https://techpiezo.com/wp-content/uploads/2019/08/page-background.svg);
-    --backgroundAttachment: fixed;
-    --backgroundPosition: 50% 50%;
-    --backgroundSize: auto;
-    --backgroundRepeat: repeat-y;
-    --backgroundColor: #ffffff;
 }
 
 .ct-related-posts {
@@ -332,12 +319,12 @@ code, kbd, samp, pre {
 }
 
 .entry-header .page-title {
-    --lineHeight: 1.3;
+    --lineHeight: 1.5;
     --textDecoration: none;
     --fontStyle: normal;
     --fontWeight: 700;
     --textTransform: none;
-    --fontSize: 27px;
+    --fontSize: 36px;
     --letterSpacing: 0em;
 }
 
@@ -347,7 +334,7 @@ code, kbd, samp, pre {
     --fontStyle: normal;
     --fontWeight: 700;
     --textTransform: none;
-    --fontSize: 20px;
+    --fontSize: 30px;
     --letterSpacing: 0em;
 }
 
@@ -361,7 +348,7 @@ code, kbd, samp, pre {
 }
 
 .entry-card {
-    --metaFontSize: 12px;
+    --metaFontSize: 18px;
 }
 
 .entry-meta {
@@ -487,12 +474,12 @@ code, kbd, samp, pre {
     --headerHeight: 35px;
     --transparentLogoMaxHeight: 50px;
     --cardSpacing: 35px;
-    --cardExcerptSize: 16px;
+    --cardExcerptSize: 20px;
     --lineHeight: 1.65;
-    --fontSize: 18px;
+    --fontSize: 22px;
     --letterSpacing: 0em;
-    --cardsGap: 30px;
-    --logoMaxHeight: 50px;
+    --cardsGap: 35px;
+    --logoMaxHeight: 30px;
     --headerLogoContainerHeight: 35px;
     --navSectionHeight: 15px;
     --mobileHeaderHeight: 40px;
@@ -508,67 +495,67 @@ code, kbd, samp, pre {
 
 h1 {
     --lineHeight: 1.5;
-    --fontSize: 40px;
+    --fontSize: 44px;
     --letterSpacing: 0em;
 }
 
 h2 {
     --lineHeight: 1.5;
-    --fontSize: 35px;
+    --fontSize: 39px;
     --letterSpacing: 0em;
 }
 
 h3 {
     --lineHeight: 1.5;
-    --fontSize: 30px;
+    --fontSize: 34px;
     --letterSpacing: 0em;
 }
 
 h4 {
     --lineHeight: 1.5;
-    --fontSize: 25px;
+    --fontSize: 29px;
     --letterSpacing: 0em;
 }
 
 h5 {
     --lineHeight: 1.5;
-    --fontSize: 20px;
+    --fontSize: 24px;
     --letterSpacing: 0em;
 }
 
 h6 {
     --lineHeight: 1.5;
-    --fontSize: 16px;
+    --fontSize: 20px;
     --letterSpacing: 0em;
 }
 
 .entry-content blockquote p, .ct-quote-widget blockquote p {
     --lineHeight: 1.65;
-    --fontSize: 25px;
+    --fontSize: 29px;
     --letterSpacing: 0em;
 }
 
 code, kbd, samp, pre {
     --lineHeight: 1.65;
-    --fontSize: 16px;
+    --fontSize: 20px;
     --letterSpacing: 0em;
 }
 
 .site-title {
     --lineHeight: 1.65;
-    --fontSize: 22px;
+    --fontSize: 32px;
     --letterSpacing: 0em;
 }
 
 .primary-menu > li {
     --lineHeight: 1.3;
-    --fontSize: 14px;
+    --fontSize: 18px;
     --letterSpacing: 0em;
 }
 
 .primary-menu .sub-menu li {
     --lineHeight: 1.3;
-    --fontSize: 12px;
+    --fontSize: 16px;
     --letterSpacing: 0em;
 }
 
@@ -597,19 +584,19 @@ code, kbd, samp, pre {
 }
 
 .entry-header .page-title {
-    --lineHeight: 1.3;
-    --fontSize: 25px;
+    --lineHeight: 1.5;
+    --fontSize: 30px;
     --letterSpacing: 0em;
 }
 
 .entry-card .entry-title {
     --lineHeight: 1.3;
-    --fontSize: 20px;
+    --fontSize: 26px;
     --letterSpacing: 0em;
 }
 
 .entry-card {
-    --metaFontSize: 12px;
+    --metaFontSize: 18px;
 }
 
 #mobile-menu .mobile-menu,
@@ -636,12 +623,12 @@ code, kbd, samp, pre {
     --headerHeight: 35px;
     --transparentLogoMaxHeight: 50px;
     --cardSpacing: 25px;
-    --cardExcerptSize: 16px;
+    --cardExcerptSize: 20px;
     --lineHeight: 1.65;
-    --fontSize: 18px;
+    --fontSize: 22px;
     --letterSpacing: 0em;
-    --cardsGap: 30px;
-    --logoMaxHeight: 50px;
+    --cardsGap: 35px;
+    --logoMaxHeight: 30px;
     --headerLogoContainerHeight: 35px;
     --navSectionHeight: 15px;
     --mobileHeaderHeight: 50px;
@@ -657,67 +644,67 @@ code, kbd, samp, pre {
 
 h1 {
     --lineHeight: 1.5;
-    --fontSize: 40px;
+    --fontSize: 44px;
     --letterSpacing: 0em;
 }
 
 h2 {
     --lineHeight: 1.5;
-    --fontSize: 35px;
+    --fontSize: 39px;
     --letterSpacing: 0em;
 }
 
 h3 {
     --lineHeight: 1.5;
-    --fontSize: 30px;
+    --fontSize: 34px;
     --letterSpacing: 0em;
 }
 
 h4 {
     --lineHeight: 1.5;
-    --fontSize: 25px;
+    --fontSize: 29px;
     --letterSpacing: 0em;
 }
 
 h5 {
     --lineHeight: 1.5;
-    --fontSize: 20px;
+    --fontSize: 24px;
     --letterSpacing: 0em;
 }
 
 h6 {
     --lineHeight: 1.5;
-    --fontSize: 16px;
+    --fontSize: 20px;
     --letterSpacing: 0em;
 }
 
 .entry-content blockquote p, .ct-quote-widget blockquote p {
     --lineHeight: 1.65;
-    --fontSize: 25px;
+    --fontSize: 29px;
     --letterSpacing: 0em;
 }
 
 code, kbd, samp, pre {
     --lineHeight: 1.65;
-    --fontSize: 16px;
+    --fontSize: 20px;
     --letterSpacing: 0em;
 }
 
 .site-title {
     --lineHeight: 1.65;
-    --fontSize: 22px;
+    --fontSize: 32px;
     --letterSpacing: 0em;
 }
 
 .primary-menu > li {
     --lineHeight: 1.3;
-    --fontSize: 14px;
+    --fontSize: 18px;
     --letterSpacing: 0em;
 }
 
 .primary-menu .sub-menu li {
     --lineHeight: 1.3;
-    --fontSize: 12px;
+    --fontSize: 16px;
     --letterSpacing: 0em;
 }
 
@@ -758,19 +745,19 @@ code, kbd, samp, pre {
 }
 
 .entry-header .page-title {
-    --lineHeight: 1.3;
+    --lineHeight: 1.5;
     --fontSize: 25px;
     --letterSpacing: 0em;
 }
 
 .entry-card .entry-title {
     --lineHeight: 1.3;
-    --fontSize: 18px;
+    --fontSize: 24px;
     --letterSpacing: 0em;
 }
 
 .entry-card {
-    --metaFontSize: 12px;
+    --metaFontSize: 18px;
 }
 
 .header-top-bar-menu,
@@ -778,7 +765,6 @@ code, kbd, samp, pre {
     --menuItemsSpacing: 20px;
 }</style>
 <link rel='stylesheet' id='wp-block-library-css'  href='https://techpiezo.com/wp-includes/css/dist/block-library/style.min.css' type='text/css' media='all' />
-<link crossorigin="anonymous" rel='stylesheet' id='blocksy-fonts-font-source-google-css'  href='https://fonts.googleapis.com/css?family=Ubuntu%3A400&#038;display=swap' type='text/css' media='all' />
 <link rel='stylesheet' id='ct-style-css'  href='https://techpiezo.com/wp-content/themes/blocksy/style.css' type='text/css' media='all' />
 <link rel='stylesheet' id='ct-main-styles-css'  href='https://techpiezo.com/wp-content/themes/blocksy/static/bundle/main.css' type='text/css' media='all' />
 
@@ -796,7 +782,7 @@ code, kbd, samp, pre {
 	padding-right: 20px;
 }
 .ct-last-page-text{
-	color: whitesmoke
+	color: black;
 }
 
 		</style>
@@ -812,7 +798,7 @@ code, kbd, samp, pre {
 
 </head>
 
-<body class="post-template-default single single-post postid-1415 single-format-standard ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
+<body class="post-template-default single single-post postid-1415 single-format-standard wp-custom-logo ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
 <div id="main-container">
 
 	<header
@@ -829,12 +815,10 @@ code, kbd, samp, pre {
 				>
 
 		<h1 class="site-title">
-							<a href="https://techpiezo.com/" rel="home">
-					TechPiezo				</a>
-					</h1>
+							<a href="https://techpiezo.com/" class="custom-logo-link" rel="home"><img src="https://techpiezo.com/wp-content/uploads/2019/08/logo.svg" class="custom-logo ct-default-logo" alt="TechPiezo" /></a>					</h1>
 
 		<h2 class="site-description ct-hidden-sm ct-hidden-md ct-hidden-lg">
-			Future is Here		</h2>
+					</h2>
 	</div>
 
 	
@@ -896,12 +880,10 @@ code, kbd, samp, pre {
 				>
 
 		<h1 class="site-title">
-							<a href="https://techpiezo.com/" rel="home">
-					TechPiezo				</a>
-					</h1>
+							<a href="https://techpiezo.com/" class="custom-logo-link" rel="home"><img src="https://techpiezo.com/wp-content/uploads/2019/08/logo.svg" class="custom-logo ct-default-logo" alt="TechPiezo" /></a>					</h1>
 
 		<h2 class="site-description ct-hidden-sm ct-hidden-md ct-hidden-lg">
-			Future is Here		</h2>
+					</h2>
 	</div>
 
 	
@@ -983,35 +965,35 @@ code, kbd, samp, pre {
 					</header>
 		</section>
 
-		<figure class="ct-featured-image ct-hidden-sm" ><div class="ct-image-container" ><img src="https://techpiezo.com/wp-content/uploads/2019/08/Install-HPLIP-in-Ubuntu.svg" class="attachment-full size-full" alt="Install HPLIP 3.19.1 in Ubuntu 19.04" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
+		<figure class="ct-featured-image ct-hidden-sm" ><div class="ct-image-container ct-lazy" ><img class="attachment-full size-full" alt="Install HPLIP 3.19.1 in Ubuntu 19.04" data-lazy="https://techpiezo.com/wp-content/uploads/2019/08/Install-HPLIP-in-Ubuntu.svg" data-object-fit="~" /><noscript><img src="https://techpiezo.com/wp-content/uploads/2019/08/Install-HPLIP-in-Ubuntu.svg" class="attachment-full size-full" alt="Install HPLIP 3.19.1 in Ubuntu 19.04" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
 		
 		<div class="entry-content">
-			<p style="text-align: justify;">HP Linux Printing and Imaging System (HPLIP) is a package available in standard Ubuntu repository. The HPLIP package make Linux distributions access HP&#8217;s printing and scanning devices. In this article, we will cover HPLIP v3.19.1 installation process in Ubuntu 19.04. Few of the operations mentioned below may require superuser privileges, if you don&#8217;t have one then contact your System Administrator for assistance.</p>
+			<p style="text-align: justify;">HP Linux Printing and Imaging System (HPLIP) is a package available in standard Ubuntu repository. The HPLIP package make Linux distributions access HP&#8217;s printing and scanning devices. In this article, we will cover <strong>HPLIP v3.19.1</strong> installation process in Ubuntu 19.04. Few of the operations mentioned below may require superuser privileges, if you don&#8217;t have one then contact your System Administrator for assistance.</p>
 <h5>Install HPLIP 3.19.1 in Ubuntu 19.04</h5>
 <p style="text-align: justify;">We need to update Ubuntu&#8217;s standard repository for latest version of packages &#8211;</p>
 <pre>sudo apt update</pre>
-<p style="text-align: justify;">Thereafter, install the relevant packages through the command <code>apt install</code> &#8211;</p>
+<p style="text-align: justify;">Thereafter, install the relevant packages through the command <strong>apt install</strong> &#8211;</p>
 <pre>sudo apt install hplip hplip-data hplip-gui</pre>
 <p style="text-align: justify;">It will also install all the associated dependencies. Meanwhile, connect your printing devices to &#8211; USB, Network or Parallel-port for device discovery. Once the installation process is completed, we will setup our printing device.</p>
 <h5>hp-setup in Ubuntu 19.04</h5>
 <p style="text-align: justify;">Prerequisites &#8211;</p>
-<p style="text-align: justify;">We will have to download both the plugin as well its associated digital signature manually. Even if we try to download the plugin through <code>hp-setup</code> command line utility directly, it may throw a file checksum error. So, download the required files from the links provided below &#8211;</p>
+<p style="text-align: justify;">We will have to download both the plugin as well its associated digital signature manually. Even if we try to download the plugin through hp-setup command line utility directly, it may throw a file checksum error. So, download the required files from the links provided below &#8211;</p>
 <p style="text-align: justify;">For hplip plugin</p>
 <pre>cd /home/</pre>
 <pre>wget -c 'http://www.openprinting.org/download/printdriver/auxfiles/HP/plugins/hplip-3.19.1-plugin.run'</pre>
 <p style="text-align: justify;">For hplip plugin&#8217;s digital signature</p>
 <pre>wget -c 'http://www.openprinting.org/download/printdriver/auxfiles/HP/plugins/hplip-3.19.1-plugin.run.asc'</pre>
 <p style="text-align: justify;">Note: Make sure both the downloaded files are kept in same directory.</p>
-<p style="text-align: justify;">Run <code>hp-plugin</code> utility in the terminal &#8211;</p>
+<p style="text-align: justify;">Run <strong>hp-plugin</strong> utility in the terminal &#8211;</p>
 <pre>hp-plugin</pre>
-<p style="text-align: justify;">It will prompt us to either download the plugin, or to provide the path where plug-in is stored. Since, we have already downloaded the plug-in in advance. We need to specify the path of plug-in, choose <code>p</code> as option. Next, it will ask us to enter the path of plug-in file hplip-3.19.1-plugin.run &#8211;</p>
+<p style="text-align: justify;">It will prompt us to either download the plugin, or to provide the path where plug-in is stored. Since, we have already downloaded the plug-in in advance. We need to specify the path of plug-in, choose &#8220;<strong>p</strong>&#8221; as option. Next, it will ask us to enter the path of plug-in file <strong>hplip-3.19.1-plugin.run</strong> &#8211;</p>
 <pre>/home/</pre>
-<p style="text-align: justify;">Afterwards, it will try to receive keys from the key-server. Even if it fails to do so, you can choose the option <code>yes</code> if it asks whether to continue with the installation.</p>
+<p style="text-align: justify;">Afterwards, it will try to receive keys from the key-server. Even if it fails to do so, you can choose the option &#8220;<strong>yes</strong>&#8221; if it asks whether to continue with the installation.</p>
 <p style="text-align: justify;">Accept the licence terms to successfully install the required plug-in.</p>
-<p style="text-align: justify;">Lastly, we need to run the <code>hp-setup</code> command &#8211;</p>
+<p style="text-align: justify;">Lastly, we need to run the <strong>hp-setup</strong> command &#8211;</p>
 <pre>hp-setup</pre>
 <p style="text-align: justify;">Choose the connection type &#8211; USB / Ethernet / Wireless / Parallel-Port.</p>
-<p style="text-align: justify;">The setup will automatically detect the printing device. In the next dialog box, it will show us the Model name and Device URI. Click the Next button to get the details of our devices. Select the relevant devices and click on Add Printer button. This will setup your <code>hplip</code> package successfully.</p>
+<p style="text-align: justify;">The setup will automatically detect the printing device. In the next dialog box, it will show us the Model name and Device URI. Click the Next button to get the details of our devices. Select the relevant devices and click on Add Printer button. This will setup your hplip package successfully.</p>
 <h5>error: The device you are trying to setup requires a binary plug-in</h5>
 <p style="text-align: justify;">In case, we encounter the error &#8220;The device you are trying to setup requires a binary plug-in&#8221;. That has happened because a directory and few symbolic links are missing.</p>
 <p style="text-align: justify;">To create the relevant directory &#8211;</p>
@@ -1020,8 +1002,8 @@ code, kbd, samp, pre {
 <pre>sudo ln -s /usr/lib/sane /usr/lib/i386-linux-gnu/sane
 sudo ln -s /usr/lib64/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu
 sudo ln -s /usr/lib64/sane /usr/lib64/x86_64-linux-gnu/sane</pre>
-<p style="text-align: justify;">Now, you will have to run the <code>hp-setup</code> command line utility again in the terminal. And, follow the same steps as mentioned in the article above.</p>
-<p style="text-align: justify;">In conclusion, we have installed <code>hplip</code> package version 3.19.1 and its associated plug-in with digital signatures in Ubuntu 19.04.</p>
+<p style="text-align: justify;">Now, you will have to run the hp-setup command line utility again in the terminal. And, follow the same steps as mentioned in the article above.</p>
+<p style="text-align: justify;">In conclusion, we have installed hplip package version 3.19.1 and its associated plug-in with digital signatures in Ubuntu 19.04.</p>
 		</div>
 
 		
@@ -1064,15 +1046,15 @@ sudo ln -s /usr/lib64/sane /usr/lib64/x86_64-linux-gnu/sane</pre>
 	</div>
 
 	
-		<div class="ct-related-posts ">
+		<div class="ct-related-posts ct-hidden-sm">
 			<div class="ct-container">
 				<h4 class="ct-related-posts-label">
 					Related Posts				</h4>
 
-				<ul data-columns="2">
+				<ul data-columns="3">
 											
 						<li>
-							<a class="ct-image-container" href="https://techpiezo.com/java/install-openjdk-jre-jdk-in-ubuntu-19-04/"><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/08/Install-OpenJDK-JRE.svg" class="attachment-large size-large" alt="Install OpenJDK Runtime and Development Kit" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/java/install-openjdk-jre-jdk-in-ubuntu-19-04/"><img width="1" height="1" class="attachment-large size-large" alt="Install OpenJDK Runtime and Development Kit" data-lazy="https://techpiezo.com/wp-content/uploads/2019/08/Install-OpenJDK-JRE.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/08/Install-OpenJDK-JRE.svg" class="attachment-large size-large" alt="Install OpenJDK Runtime and Development Kit" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
 							<h3 class="related-entry-title">
 								<a href="https://techpiezo.com/java/install-openjdk-jre-jdk-in-ubuntu-19-04/">Install OpenJDK JRE / JDK in Ubuntu 19.04</a>
 							</h3>
@@ -1085,7 +1067,7 @@ sudo ln -s /usr/lib64/sane /usr/lib64/x86_64-linux-gnu/sane</pre>
 						</li>
 											
 						<li>
-							<a class="ct-image-container" href="https://techpiezo.com/linux/install-google-chrome-in-debian-buster/"><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/08/Install-Google-Chrome-in-Debian-Buster.svg" class="attachment-large size-large" alt="Install Google Chrome in Debian Buster" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/install-google-chrome-in-debian-buster/"><img width="1" height="1" class="attachment-large size-large" alt="Install Google Chrome in Debian Buster" data-lazy="https://techpiezo.com/wp-content/uploads/2019/08/Install-Google-Chrome-in-Debian-Buster.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/08/Install-Google-Chrome-in-Debian-Buster.svg" class="attachment-large size-large" alt="Install Google Chrome in Debian Buster" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
 							<h3 class="related-entry-title">
 								<a href="https://techpiezo.com/linux/install-google-chrome-in-debian-buster/">Install Google Chrome in Debian Buster</a>
 							</h3>
@@ -1098,7 +1080,7 @@ sudo ln -s /usr/lib64/sane /usr/lib64/x86_64-linux-gnu/sane</pre>
 						</li>
 											
 						<li>
-							<a class="ct-image-container" href="https://techpiezo.com/linux/make-bootable-usb-stick-to-act-as-storage-device-again/"><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/08/Bootable-USB-as-Storage-Device.svg" class="attachment-large size-large" alt="Make Bootable USB act as Storage Device" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/make-bootable-usb-stick-to-act-as-storage-device-again/"><img width="1" height="1" class="attachment-large size-large" alt="Make Bootable USB act as Storage Device" data-lazy="https://techpiezo.com/wp-content/uploads/2019/08/Bootable-USB-as-Storage-Device.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/08/Bootable-USB-as-Storage-Device.svg" class="attachment-large size-large" alt="Make Bootable USB act as Storage Device" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
 							<h3 class="related-entry-title">
 								<a href="https://techpiezo.com/linux/make-bootable-usb-stick-to-act-as-storage-device-again/">Make Bootable USB stick to act as Storage device again</a>
 							</h3>
@@ -1106,19 +1088,6 @@ sudo ln -s /usr/lib64/sane /usr/lib64/x86_64-linux-gnu/sane</pre>
 							<div class="related-entry-meta">
 								<span>
 									Aug 1, 2019								</span>
-
-															</div>
-						</li>
-											
-						<li>
-							<a class="ct-image-container" href="https://techpiezo.com/linux/create-a-bootable-live-usb-in-ubuntu-through-command-line/"><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/07/Create-Bootable-USB-in-Ubuntu.svg" class="attachment-large size-large" alt="Create Bootable Live USB in Ubuntu" data-object-fit="~" /><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
-							<h3 class="related-entry-title">
-								<a href="https://techpiezo.com/linux/create-a-bootable-live-usb-in-ubuntu-through-command-line/">Create a bootable Live USB in Ubuntu through Command Line</a>
-							</h3>
-
-							<div class="related-entry-meta">
-								<span>
-									Jul 31, 2019								</span>
 
 															</div>
 						</li>

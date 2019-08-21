@@ -1,105 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="August 18, 2019 6:24 pm" -->
+<!-- generated-on="August 21, 2019 9:50 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>https://techpiezo.com/linux/create-a-bootable-live-usb-in-ubuntu-through-command-line/</loc>
-		<lastmod>2019-08-09T19:26:50+00:00</lastmod>
+		<lastmod>2019-08-20T16:37:34+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/kotlin/code-comments-in-kotlin/</loc>
-		<lastmod>2019-08-17T16:39:18+00:00</lastmod>
+		<lastmod>2019-08-20T16:39:47+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/android/fastboot-error-mke2fs-failed-cannot-generate-image-for-userdata/</loc>
-		<lastmod>2019-08-10T07:09:41+00:00</lastmod>
+		<lastmod>2019-08-20T16:40:54+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/android/install-anbox-and-run-android-apps-in-ubuntu/</loc>
-		<lastmod>2019-08-10T07:03:53+00:00</lastmod>
+		<lastmod>2019-08-20T16:42:06+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/kotlin/write-your-first-code-in-kotlin/</loc>
-		<lastmod>2019-08-17T16:39:23+00:00</lastmod>
+		<lastmod>2019-08-20T16:43:20+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/install-kotlin-command-line-compiler-in-ubuntu/</loc>
-		<lastmod>2019-08-17T16:39:29+00:00</lastmod>
+		<lastmod>2019-08-20T16:44:19+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/split-files-in-linux-distributions/</loc>
-		<lastmod>2019-08-10T07:35:41+00:00</lastmod>
+		<lastmod>2019-08-20T16:49:27+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/switch-back-to-ifupdown-etc-network-interfaces-in-ubuntu/</loc>
-		<lastmod>2019-08-10T07:43:13+00:00</lastmod>
+		<lastmod>2019-08-20T16:52:16+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/kotlin/introduction-to-kotlin/</loc>
-		<lastmod>2019-08-17T16:39:35+00:00</lastmod>
+		<lastmod>2019-08-20T16:53:07+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/wordpress/install-wordpress-on-debian-buster/</loc>
-		<lastmod>2019-08-10T08:00:01+00:00</lastmod>
+		<lastmod>2019-08-20T16:54:57+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/install-wine-to-run-windows-applications-in-ubuntu/</loc>
-		<lastmod>2019-08-10T08:08:09+00:00</lastmod>
+		<lastmod>2019-08-20T16:55:29+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/etc-skel-directory-in-linux/</loc>
-		<lastmod>2019-08-10T08:16:34+00:00</lastmod>
+		<lastmod>2019-08-20T16:56:50+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/install-virtualbox-in-debian-buster/</loc>
-		<lastmod>2019-08-10T09:34:47+00:00</lastmod>
+		<lastmod>2019-08-20T16:57:33+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/kill-a-process-in-linux-distribution/</loc>
-		<lastmod>2019-08-10T09:44:54+00:00</lastmod>
+		<lastmod>2019-08-20T17:00:29+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/install-remove-deb-package-in-ubuntu-debian/</loc>
-		<lastmod>2019-08-10T09:52:33+00:00</lastmod>
+		<lastmod>2019-08-20T17:15:01+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/use-and-implementation-of-backing-file-and-snapshot-in-qemu-kvm/</loc>
-		<lastmod>2019-08-10T10:01:24+00:00</lastmod>
+		<lastmod>2019-08-20T17:43:11+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/managing-users-and-groups-in-ubuntu/</loc>
-		<lastmod>2019-08-10T10:13:26+00:00</lastmod>
+		<lastmod>2019-08-20T17:53:20+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: 6df8c75fec0065c75d8e010cd3767f34; Queries for sitemap: 45; Total queries: 56; Seconds: 0.03; Memory for sitemap: 0MB; Total memory: 2MB -->
+</urlset><!-- Request ID: 5a594d3ad9834eb11d7f1bdf2b2539d1; Queries for sitemap: 45; Total queries: 56; Seconds: 0.03; Memory for sitemap: 0MB; Total memory: 2MB -->

@@ -445,7 +445,7 @@ mke2fs 1.44.6 (5-Mar-2019)
 mke2fs failed: 1
 error: Cannot generate image for userdata</pre>
 <h4 class="amp-wp-7d27179">Remove “-w” from the fastboot update command</h4>
-<p class="amp-wp-7d27179">In <code>flash-all.sh</code> script file, you must have noticed few line of code resembling –</p>
+<p class="amp-wp-7d27179">In <strong>flash-all.sh</strong> script file, you must have noticed few line of code resembling –</p>
 <pre>fastboot oem unlock
 fastboot erase boot
 fastboot erase cache
@@ -456,10 +456,10 @@ fastboot flash bootloader bootloader-grouper-4.23.img
 fastboot reboot-bootloader
 sleep 10
 fastboot -w update image-nakasi-ktu84p.zip</pre>
-<p class="amp-wp-7d27179">All you have to do is – remove “-w” option from the last line. Then save the script and execute it again.</p>
+<p class="amp-wp-7d27179">All you have to do is – remove “<strong>-w</strong>” option from the last line. Then save the script and execute it again.</p>
 <pre>fastboot update image-nakasi-ktu84p.zip</pre>
-<p class="amp-wp-7d27179">Fastboot is basically a command line utility which is used for flashing and booting Android devices. Here, “-w” option is used to erase both cache as well as user data. The utility option can format the partition type too. Since, the commands for erasing user data and cache (i.e. <code>fastboot erase cache</code> and <code>fastboot erase userdata</code>) are already present in our script file. So, apart from formatting the partition (of supported type) there is nothing more the “-w” option does. In that scenario, we can safely ignore the option.</p>
-<p class="amp-wp-7d27179">For man page of fastboot –</p>
+<p class="amp-wp-7d27179">Fastboot is basically a command line utility which is used for flashing and booting Android devices. Here, “<strong>-w</strong>” option is used to erase both cache as well as user data. The utility option can format the partition type too. Since, the commands for erasing user data and cache (i.e. <strong>fastboot erase cache</strong> and <strong>fastboot erase userdata</strong>) are already present in our script file. So, apart from formatting the partition (of supported type) there is nothing more the “<strong>-w</strong>” option does. In that scenario, we can safely ignore the option.</p>
+<p class="amp-wp-7d27179">For<strong> man</strong> page of fastboot –</p>
 <pre>man fastboot</pre>
 <p class="amp-wp-7d27179">Scroll down the man page of fastboot to get yourself acquainted with more options. Or, you could simple run the following in terminal –</p>
 <pre>fastboot help</pre>
