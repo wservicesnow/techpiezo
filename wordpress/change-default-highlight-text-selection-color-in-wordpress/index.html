@@ -66,12 +66,12 @@
     --fontSize: 22px;
     --textTransform: none;
     --fontWeight: 400;
-    --fontFamily: Helvetica;
+    --fontFamily: Ubuntu;
     --fontStyle: normal;
     --textDecoration: none;
     --lineHeight: 1.65;
     --pageTitleFontInitialColor: var(--paletteColor4);
-    --cardExcerptSize: 20px;
+    --cardExcerptSize: 18px;
     --cardsGap: 35px;
     --transparentHeaderBackground: rgba(255, 255, 255, 0.1);
     --transparentLogoMaxHeight: 50px;
@@ -324,7 +324,7 @@ code, kbd, samp, pre {
     --fontStyle: normal;
     --fontWeight: 700;
     --textTransform: none;
-    --fontSize: 36px;
+    --fontSize: 34px;
     --letterSpacing: 0em;
 }
 
@@ -334,7 +334,7 @@ code, kbd, samp, pre {
     --fontStyle: normal;
     --fontWeight: 700;
     --textTransform: none;
-    --fontSize: 30px;
+    --fontSize: 28px;
     --letterSpacing: 0em;
 }
 
@@ -348,7 +348,7 @@ code, kbd, samp, pre {
 }
 
 .entry-card {
-    --metaFontSize: 18px;
+    --metaFontSize: 16px;
 }
 
 .entry-meta {
@@ -474,7 +474,7 @@ code, kbd, samp, pre {
     --headerHeight: 35px;
     --transparentLogoMaxHeight: 50px;
     --cardSpacing: 35px;
-    --cardExcerptSize: 20px;
+    --cardExcerptSize: 18px;
     --lineHeight: 1.65;
     --fontSize: 22px;
     --letterSpacing: 0em;
@@ -596,7 +596,7 @@ code, kbd, samp, pre {
 }
 
 .entry-card {
-    --metaFontSize: 18px;
+    --metaFontSize: 16px;
 }
 
 #mobile-menu .mobile-menu,
@@ -623,7 +623,7 @@ code, kbd, samp, pre {
     --headerHeight: 35px;
     --transparentLogoMaxHeight: 50px;
     --cardSpacing: 25px;
-    --cardExcerptSize: 20px;
+    --cardExcerptSize: 18px;
     --lineHeight: 1.65;
     --fontSize: 22px;
     --letterSpacing: 0em;
@@ -757,7 +757,7 @@ code, kbd, samp, pre {
 }
 
 .entry-card {
-    --metaFontSize: 18px;
+    --metaFontSize: 16px;
 }
 
 .header-top-bar-menu,
@@ -765,6 +765,7 @@ code, kbd, samp, pre {
     --menuItemsSpacing: 20px;
 }</style>
 <link rel='stylesheet' id='wp-block-library-css'  href='https://techpiezo.com/wp-includes/css/dist/block-library/style.min.css' type='text/css' media='all' />
+<link crossorigin="anonymous" rel='stylesheet' id='blocksy-fonts-font-source-google-css'  href='https://fonts.googleapis.com/css?family=Ubuntu%3A400&#038;display=swap' type='text/css' media='all' />
 <link rel='stylesheet' id='ct-style-css'  href='https://techpiezo.com/wp-content/themes/blocksy/style.css' type='text/css' media='all' />
 <link rel='stylesheet' id='ct-main-styles-css'  href='https://techpiezo.com/wp-content/themes/blocksy/static/bundle/main.css' type='text/css' media='all' />
 
@@ -968,7 +969,7 @@ code, kbd, samp, pre {
 		<figure class="ct-featured-image ct-hidden-sm" ><div class="ct-image-container ct-lazy" ><img class="attachment-full size-full" alt="Change Default Highlight Color in WordPress" data-lazy="https://techpiezo.com/wp-content/uploads/2019/08/Change-Default-Highlight-Color-in-WordPress.svg" data-object-fit="~" /><noscript><img src="https://techpiezo.com/wp-content/uploads/2019/08/Change-Default-Highlight-Color-in-WordPress.svg" class="attachment-full size-full" alt="Change Default Highlight Color in WordPress" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
 		
 		<div class="entry-content">
-			<p style="text-align: justify;">In WordPress, the highlight / text selection color mainly depends on the theme which you have selected for your website. At times, we don&#8217;t like what we are looking at and obviously make changes accordingly. In this article, we would discuss how to change default text selection color in WordPress. The default text selection color is blue in most of the themes. Not only we could use any other color but also we could use thousands of variations available for blue color. To make the required changes all we need to do is make relevant modifications in Cascading Style Sheets (CSS) file. The CSS file describes how various elements on our web page are displayed.</p>
+			<p style="text-align: justify;">In WordPress, the highlight / text selection color mainly depends on the theme which you have selected for your website. At times, we don&#8217;t like what we are looking at and obviously make changes accordingly. In this article, we would discuss how to change default text selection color in WordPress. The default text selection color is blue in most of the themes. But, we can choose one of our own choice. To make the required changes all we need to do is make relevant modifications in Cascading Style Sheets (CSS) file. The CSS file describes how various elements on our web page are rendered.</p>
 <h5 style="text-align: justify;">Change default highlight / text selection color in WordPress</h5>
 <p style="text-align: justify;">We need to locate the <strong>.css</strong> file for the theme we have used for our website. In most of the cases, it is <strong>style.css</strong> or <strong>main.css</strong>. Once you have identified your default CSS file, you need to locate the following entries &#8211;</p>
 <pre>::-moz-selection {
@@ -980,8 +981,8 @@ code, kbd, samp, pre {
                color: white;
                background: green;
           }</pre>
-<p style="text-align: justify;">The color combination would be different for you. All you need to do is make the necessary modifications as per your requirements to <strong>color:</strong> and <strong>background:</strong> entries. For best results, you can use hexadecimal values. Now, we will discuss the above mentioned code a bit.</p>
-<p style="text-align: justify;"><strong>::-moz-selection</strong> entry is for the Firefox browser and <strong>::selection</strong> is for other browsers like Chrome, Opera, Internet Explorer and Safari. The syntax for the above code is &#8211;</p>
+<p style="text-align: justify;">The color combinations in the above code would be different for you. All you need to do is make the necessary modifications as per your requirements to <strong>color:</strong> and <strong>background:</strong> entries. For best results, you can use hexadecimal values. The hexadecimal values for colors are supported by all the internet browsers. In case, we would like to provide the hexadecimal value of color <strong>RED</strong> then it would be <strong>#FF0000</strong>. Now, we will discuss the above mentioned code a bit.</p>
+<p style="text-align: justify;"><strong>::-moz-selection</strong> selector is for the Firefox browser and <strong>::selection</strong> is for other browsers like Chrome, Opera, Internet Explorer and Safari. The syntax for the above code is &#8211;</p>
 <pre>::-moz-selection {
                declarations;
           }
@@ -989,7 +990,7 @@ code, kbd, samp, pre {
 ::selection {
                declarations;
           }</pre>
-<p style="text-align: justify;">Although, you can make necessary modifications as required manually. But, for those who are not comfortable with above operations should first try to make necessary modifications through WordPress&#8217; Graphical interface. If your theme allows such modifications then you can do so by customizing your theme. The option is available under &#8211; <strong>Appearance &#8211;&gt; Customize</strong> in the Admin Menu of your WordPress CMS.</p>
+<p style="text-align: justify;">Although, you can make necessary modifications as required by editing the source files yourself. But, for those who are not comfortable with above operations can try to make changes through options available through WordPress&#8217; dashboard. If your theme permits you to make required changes then you can do so by customizing your theme. The option is available under &#8211; <strong>Appearance &gt;&gt; Customize</strong> in the Admin Menu of your WordPress dashboard.</p>
 <p style="text-align: justify;">In conclusion, we have discussed how to change default highlight / text selection color in WordPress.</p>
 		</div>
 
@@ -1009,6 +1010,9 @@ code, kbd, samp, pre {
 		class="ct-sidebar" data-sticky		data-widgets="separated">
 				<div class="ct-widget widget_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
 											<li>
+					<a href="https://techpiezo.com/wordpress/menu-item-without-link-to-url-in-wordpress/">Menu item without link to a URL in WordPress</a>
+									</li>
+											<li>
 					<a href="https://techpiezo.com/wordpress/change-default-highlight-text-selection-color-in-wordpress/">Change default highlight / text selection color in WordPress</a>
 									</li>
 											<li>
@@ -1019,9 +1023,6 @@ code, kbd, samp, pre {
 									</li>
 											<li>
 					<a href="https://techpiezo.com/linux/fixed-install-hplip-3-19-1-in-ubuntu-19-04/">[Fixed] Install HPLIP 3.19.1 in Ubuntu 19.04</a>
-									</li>
-											<li>
-					<a href="https://techpiezo.com/linux/install-google-chrome-in-debian-buster/">Install Google Chrome in Debian Buster</a>
 									</li>
 					</ul>
 		</div>	</div>
@@ -1039,6 +1040,19 @@ code, kbd, samp, pre {
 					Related Posts				</h4>
 
 				<ul data-columns="3">
+											
+						<li>
+							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/wordpress/menu-item-without-link-to-url-in-wordpress/"><img width="1" height="1" class="attachment-large size-large" alt="Menu item without link in WordPress" data-lazy="https://techpiezo.com/wp-content/uploads/2019/08/Menu-item-without-link-in-WordPress.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/08/Menu-item-without-link-in-WordPress.svg" class="attachment-large size-large" alt="Menu item without link in WordPress" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<h3 class="related-entry-title">
+								<a href="https://techpiezo.com/wordpress/menu-item-without-link-to-url-in-wordpress/">Menu item without link to a URL in WordPress</a>
+							</h3>
+
+							<div class="related-entry-meta">
+								<span>
+									Aug 22, 2019								</span>
+
+															</div>
+						</li>
 											
 						<li>
 							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/wordpress/install-wordpress-on-debian-buster/"><img width="1" height="1" class="attachment-large size-large" alt="Install WordPress on Debian Buster" data-lazy="https://techpiezo.com/wp-content/uploads/2019/07/Install-WordPress-on-Debian-Buster.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/07/Install-WordPress-on-Debian-Buster.svg" class="attachment-large size-large" alt="Install WordPress on Debian Buster" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
@@ -1062,19 +1076,6 @@ code, kbd, samp, pre {
 							<div class="related-entry-meta">
 								<span>
 									Jun 10, 2019								</span>
-
-															</div>
-						</li>
-											
-						<li>
-							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/wordpress/how-to-install-wordpress-on-ubuntu-19-04/"><img width="1" height="1" class="attachment-large size-large" alt="Install WordPress on Ubuntu" data-lazy="https://techpiezo.com/wp-content/uploads/2019/06/Install-WordPress-on-Ubuntu.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/06/Install-WordPress-on-Ubuntu.svg" class="attachment-large size-large" alt="Install WordPress on Ubuntu" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
-							<h3 class="related-entry-title">
-								<a href="https://techpiezo.com/wordpress/how-to-install-wordpress-on-ubuntu-19-04/">Install WordPress on Ubuntu 19.04</a>
-							</h3>
-
-							<div class="related-entry-meta">
-								<span>
-									Jun 9, 2019								</span>
 
 															</div>
 						</li>

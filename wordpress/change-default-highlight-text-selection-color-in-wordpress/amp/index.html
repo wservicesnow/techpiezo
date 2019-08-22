@@ -429,14 +429,14 @@ amp-carousel > amp-img > img {
 		<h1 class="amp-wp-title">Change default highlight / text selection color in WordPress</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
 	<time datetime="2019-08-22T15:03:03+00:00">
-		9 mins ago	</time>
+		4 hours ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">In WordPress, the highlight / text selection color mainly depends on the theme which you have selected for your website. At times, we don’t like what we are looking at and obviously make changes accordingly. In this article, we would discuss how to change default text selection color in WordPress. The default text selection color is blue in most of the themes. Not only we could use any other color but also we could use thousands of variations available for blue color. To make the required changes all we need to do is make relevant modifications in Cascading Style Sheets (CSS) file. The CSS file describes how various elements on our web page are displayed.</p>
+		<p class="amp-wp-7d27179">In WordPress, the highlight / text selection color mainly depends on the theme which you have selected for your website. At times, we don’t like what we are looking at and obviously make changes accordingly. In this article, we would discuss how to change default text selection color in WordPress. The default text selection color is blue in most of the themes. But, we can choose one of our own choice. To make the required changes all we need to do is make relevant modifications in Cascading Style Sheets (CSS) file. The CSS file describes how various elements on our web page are rendered.</p>
 <h5 class="amp-wp-7d27179">Change default highlight / text selection color in WordPress</h5>
 <p class="amp-wp-7d27179">We need to locate the <strong>.css</strong> file for the theme we have used for our website. In most of the cases, it is <strong>style.css</strong> or <strong>main.css</strong>. Once you have identified your default CSS file, you need to locate the following entries –</p>
 <pre>::-moz-selection {
@@ -448,8 +448,8 @@ amp-carousel > amp-img > img {
                color: white;
                background: green;
           }</pre>
-<p class="amp-wp-7d27179">The color combination would be different for you. All you need to do is make the necessary modifications as per your requirements to <strong>color:</strong> and <strong>background:</strong> entries. For best results, you can use hexadecimal values. Now, we will discuss the above mentioned code a bit.</p>
-<p class="amp-wp-7d27179"><strong>::-moz-selection</strong> entry is for the Firefox browser and <strong>::selection</strong> is for other browsers like Chrome, Opera, Internet Explorer and Safari. The syntax for the above code is –</p>
+<p class="amp-wp-7d27179">The color combinations in the above code would be different for you. All you need to do is make the necessary modifications as per your requirements to <strong>color:</strong> and <strong>background:</strong> entries. For best results, you can use hexadecimal values. The hexadecimal values for colors are supported by all the internet browsers. In case, we would like to provide the hexadecimal value of color <strong>RED</strong> then it would be <strong>#FF0000</strong>. Now, we will discuss the above mentioned code a bit.</p>
+<p class="amp-wp-7d27179"><strong>::-moz-selection</strong> selector is for the Firefox browser and <strong>::selection</strong> is for other browsers like Chrome, Opera, Internet Explorer and Safari. The syntax for the above code is –</p>
 <pre>::-moz-selection {
                declarations;
           }
@@ -457,7 +457,7 @@ amp-carousel > amp-img > img {
 ::selection {
                declarations;
           }</pre>
-<p class="amp-wp-7d27179">Although, you can make necessary modifications as required manually. But, for those who are not comfortable with above operations should first try to make necessary modifications through WordPress’ Graphical interface. If your theme allows such modifications then you can do so by customizing your theme. The option is available under – <strong>Appearance –&gt; Customize</strong> in the Admin Menu of your WordPress CMS.</p>
+<p class="amp-wp-7d27179">Although, you can make necessary modifications as required by editing the source files yourself. But, for those who are not comfortable with above operations can try to make changes through options available through WordPress’ dashboard. If your theme permits you to make required changes then you can do so by customizing your theme. The option is available under – <strong>Appearance &gt;&gt; Customize</strong> in the Admin Menu of your WordPress dashboard.</p>
 <p class="amp-wp-7d27179">In conclusion, we have discussed how to change default highlight / text selection color in WordPress.</p>
 	</div>
 
