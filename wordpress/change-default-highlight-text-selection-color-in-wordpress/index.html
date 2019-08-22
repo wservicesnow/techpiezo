@@ -6,13 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
-	<title>TechPiezo - Page 5 of 6 -</title>
+	<title>Change default highlight / text selection color in WordPress - TechPiezo</title>
 
 <!-- This site is optimized with the Yoast SEO plugin v11.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
-<meta name="description" content="TechPiezo - Stay ahead of the curve in Digital Space."/>
-<link rel="canonical" href="https://techpiezo.com/page/5/" />
-<link rel="prev" href="https://techpiezo.com/page/4/" />
-<link rel="next" href="https://techpiezo.com/page/6/" />
+<meta name="description" content="To change the default highlight / text selection color, all we need to do is make relevant modifications in your default CSS file in WordPress."/>
+<link rel="canonical" href="https://techpiezo.com/wordpress/change-default-highlight-text-selection-color-in-wordpress/" />
 <!-- / Yoast SEO plugin. -->
 
 <style id="ct-main-styles-inline-css" type="text/css">:root {
@@ -63,6 +61,7 @@
     --logoMaxHeight: 30px;
     --cardSpacing: 35px;
     --cardBackground: #ffffff;
+    --pageTitleFontHoverColor: var(--paletteColor1);
     --letterSpacing: 0em;
     --fontSize: 22px;
     --textTransform: none;
@@ -71,6 +70,7 @@
     --fontStyle: normal;
     --textDecoration: none;
     --lineHeight: 1.65;
+    --pageTitleFontInitialColor: var(--paletteColor4);
     --cardExcerptSize: 20px;
     --cardsGap: 35px;
     --transparentHeaderBackground: rgba(255, 255, 255, 0.1);
@@ -316,6 +316,16 @@ code, kbd, samp, pre {
 .footer-widgets-area {
     --backgroundImage: none;
     --backgroundColor: #f4f5f8;
+}
+
+.entry-header .page-title {
+    --lineHeight: 1.5;
+    --textDecoration: none;
+    --fontStyle: normal;
+    --fontWeight: 700;
+    --textTransform: none;
+    --fontSize: 36px;
+    --letterSpacing: 0em;
 }
 
 .entry-card .entry-title {
@@ -573,6 +583,12 @@ code, kbd, samp, pre {
     --letterSpacing: 0em;
 }
 
+.entry-header .page-title {
+    --lineHeight: 1.5;
+    --fontSize: 30px;
+    --letterSpacing: 0em;
+}
+
 .entry-card .entry-title {
     --lineHeight: 1.3;
     --fontSize: 26px;
@@ -728,6 +744,12 @@ code, kbd, samp, pre {
     --letterSpacing: 0em;
 }
 
+.entry-header .page-title {
+    --lineHeight: 1.5;
+    --fontSize: 25px;
+    --letterSpacing: 0em;
+}
+
 .entry-card .entry-title {
     --lineHeight: 1.3;
     --fontSize: 24px;
@@ -746,7 +768,7 @@ code, kbd, samp, pre {
 <link rel='stylesheet' id='ct-style-css'  href='https://techpiezo.com/wp-content/themes/blocksy/style.css' type='text/css' media='all' />
 <link rel='stylesheet' id='ct-main-styles-css'  href='https://techpiezo.com/wp-content/themes/blocksy/static/bundle/main.css' type='text/css' media='all' />
 
-<link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" sizes="32x32" />
+<link rel="amphtml" href="https://techpiezo.com/wordpress/change-default-highlight-text-selection-color-in-wordpress/amp/"><link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" sizes="32x32" />
 <link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" sizes="192x192" />
 <link rel="apple-touch-icon-precomposed" href="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" />
 <meta name="msapplication-TileImage" content="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" />
@@ -776,7 +798,7 @@ code, kbd, samp, pre {
 
 </head>
 
-<body class="home blog paged wp-custom-logo paged-5 ct-loading ct-no-js ct-modern-forms ct-offcanvas header-type-1" >
+<body class="post-template-default single single-post postid-2270 single-format-standard wp-custom-logo ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
 <div id="main-container">
 
 	<header
@@ -808,7 +830,7 @@ code, kbd, samp, pre {
 		data-dropdown-animation="type-3"
 				>
 
-		<ul id="primary-menu" class="primary-menu menu"><li id="menu-item-70" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-home menu-item-70"><a href="https://techpiezo.com">Home</a></li>
+		<ul id="primary-menu" class="primary-menu menu"><li id="menu-item-70" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-70"><a href="https://techpiezo.com">Home</a></li>
 <li id="menu-item-41" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-41"><a href="https://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
 <ul class="sub-menu">
 	<li id="menu-item-350" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-350"><a href="https://techpiezo.com/linux/linux-quick-fix/">Quick Fix</a></li>
@@ -829,7 +851,7 @@ code, kbd, samp, pre {
 <li id="menu-item-39" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-39"><a href="https://techpiezo.com/tech-insights/">Insights</a></li>
 <li id="menu-item-1846" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1846"><a href="#">More<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
 <ul class="sub-menu">
-	<li id="menu-item-42" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-42"><a href="https://techpiezo.com/wordpress/">WordPress</a></li>
+	<li id="menu-item-42" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-42"><a href="https://techpiezo.com/wordpress/">WordPress</a></li>
 	<li id="menu-item-40" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-40"><a href="https://techpiezo.com/seo/">SEO</a></li>
 </ul>
 </li>
@@ -892,309 +914,175 @@ code, kbd, samp, pre {
 
 		
 
-<section id="primary" class="content-area">
-	<div class="ct-container" >
-
-		<section>
-							
-									<div class="entries"
-						data-layout="enhanced-grid"
-						data-cards="boxed"																		>
-				
-<article
-	id="post-351" class="entry-card post-351 post type-post status-publish format-standard has-post-thumbnail hentry category-tech-insights"	>
-
-	<a class="ct-image-container boundless-image ct-lazy" href="https://techpiezo.com/tech-insights/tmp-on-ram/" ><img width="1" height="1" class="attachment-medium_large size-medium_large" alt="tmp on RAM" data-lazy="https://techpiezo.com/wp-content/uploads/2019/06/tmp-on-RAM.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/06/tmp-on-RAM.svg" class="attachment-medium_large size-medium_large" alt="tmp on RAM" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></a>
-	<h2 class="entry-title">
-		<a href="https://techpiezo.com/tech-insights/tmp-on-ram/">
-			/tmp on RAM		</a>
-	</h2>
-
 	
-	<div class="entry-excerpt">
-		The purpose of /tmp directory on GNU/Linux has been to provide programs a directory for temporary files. Files in /tmp…	</div>
+	<div id="primary" class="content-area">
 
-	<div class="ct-ghost"></div>
-				<div class="entry-meta" data-label data-type="simple">
+		<div class="ct-container" data-sidebar="right">
+
+			<section>
+				
+	<article
+		id="post-2270"
+		class="post-2270 post type-post status-publish format-standard has-post-thumbnail hentry category-wordpress"		data-content="boxed"				>
+
+		
+		<section class="hero-section" data-type="type-1" data-alignment="left">
+			<header class="entry-header">
+				<h1 class="page-title">Change default highlight / text selection color in WordPress</h1>
+				<div class="entry-meta has-avatar" data-label data-type="simple">
 		
 
 			<ul >
 				
+							<li class="ct-meta-author" >
+
+					
+											<span class="ct-meta-label">
+							By						</span>
+					
+					<span class="ct-meta-element" >
+						<a href="https://techpiezo.com/author/user_tech/" title="Posts by user_tech" rel="author">user_tech</a>					</span>
+				</li>
 			
-			
-			
-			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-label">In </span><span class="ct-meta-element"><a href="https://techpiezo.com/tech-insights/" rel="tag">Insights</a></span></li>					</ul>
-				</div>
-		
-		
-</article>
+							<li
+					class="ct-meta-date"
+					>
 
-<article
-	id="post-343" class="entry-card post-343 post type-post status-publish format-standard has-post-thumbnail hentry category-android category-android-recent"	>
-
-	<a class="ct-image-container boundless-image ct-lazy" href="https://techpiezo.com/android/live-speedometer-introduced-in-google-maps/" ><img width="1" height="1" class="attachment-medium_large size-medium_large" alt="Live Speedometer Introduced in Google Maps" data-lazy="https://techpiezo.com/wp-content/uploads/2019/06/Live-Speedometer-Introduced-in-Google-Maps.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/06/Live-Speedometer-Introduced-in-Google-Maps.svg" class="attachment-medium_large size-medium_large" alt="Live Speedometer Introduced in Google Maps" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></a>
-	<h2 class="entry-title">
-		<a href="https://techpiezo.com/android/live-speedometer-introduced-in-google-maps/">
-			Live Speedometer Introduced in Google Maps		</a>
-	</h2>
-
-	
-	<div class="entry-excerpt">
-		Google Maps is now including a live speedometer along with speed limit indicator. The new feature introduced in Google Maps…	</div>
-
-	<div class="ct-ghost"></div>
-				<div class="entry-meta" data-label data-type="simple">
-		
-
-			<ul >
-				
-			
-			
-			
-			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-label">In </span><span class="ct-meta-element"><a href="https://techpiezo.com/android/" rel="tag">Android</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/android/android-recent/" rel="tag">Recent</a></span></li>					</ul>
-				</div>
-		
-		
-</article>
-
-<article
-	id="post-341" class="entry-card post-341 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-recent"	>
-
-	<a class="ct-image-container boundless-image ct-lazy" href="https://techpiezo.com/linux/linux-recent/libreoffice-6-3-beta-1-released-for-testing-with-new-features/" ><img width="1" height="1" class="attachment-medium_large size-medium_large" alt="LibreOffice 6.3 Beta 1 Released" data-lazy="https://techpiezo.com/wp-content/uploads/2019/06/LibreOffice-6.3-Beta-1-Released.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/06/LibreOffice-6.3-Beta-1-Released.svg" class="attachment-medium_large size-medium_large" alt="LibreOffice 6.3 Beta 1 Released" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></a>
-	<h2 class="entry-title">
-		<a href="https://techpiezo.com/linux/linux-recent/libreoffice-6-3-beta-1-released-for-testing-with-new-features/">
-			LibreOffice 6.3 Beta 1 Released for Testing with new Features		</a>
-	</h2>
-
-	
-	<div class="entry-excerpt">
-		LibreOffice is a free and open-source office suite, from The Document Foundation. It includes word processing, spreadsheets, slideshows, diagrams and…	</div>
-
-	<div class="ct-ghost"></div>
-				<div class="entry-meta" data-label data-type="simple">
-		
-
-			<ul >
-				
-			
-			
-			
-			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-label">In </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/" rel="tag">Linux</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/linux-recent/" rel="tag">Recent</a></span></li>					</ul>
-				</div>
-		
-		
-</article>
-
-<article
-	id="post-331" class="entry-card post-331 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-recent"	>
-
-	<a class="ct-image-container boundless-image ct-lazy" href="https://techpiezo.com/linux/gparted-1-0-released/" ><img width="1" height="1" class="attachment-medium_large size-medium_large" alt="GParted 1 Released" data-lazy="https://techpiezo.com/wp-content/uploads/2019/06/GParted-1-Released.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/06/GParted-1-Released.svg" class="attachment-medium_large size-medium_large" alt="GParted 1 Released" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></a>
-	<h2 class="entry-title">
-		<a href="https://techpiezo.com/linux/gparted-1-0-released/">
-			GParted 1.0 Released!		</a>
-	</h2>
-
-	
-	<div class="entry-excerpt">
-		GParted is GUI interface for GNU Parted, used for Disk partitioning and has been included in many GNU/Linux systems. It…	</div>
-
-	<div class="ct-ghost"></div>
-				<div class="entry-meta" data-label data-type="simple">
-		
-
-			<ul >
-				
-			
-			
-			
-			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-label">In </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/" rel="tag">Linux</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/linux-recent/" rel="tag">Recent</a></span></li>					</ul>
-				</div>
-		
-		
-</article>
-
-<article
-	id="post-326" class="entry-card post-326 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"	>
-
-	<a class="ct-image-container boundless-image ct-lazy" href="https://techpiezo.com/linux/introduction-to-ubuntu/" ><img width="1" height="1" class="attachment-medium_large size-medium_large" alt="Introduction to Ubuntu" data-lazy="https://techpiezo.com/wp-content/uploads/2019/06/Introduction-to-Ubuntu.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/06/Introduction-to-Ubuntu.svg" class="attachment-medium_large size-medium_large" alt="Introduction to Ubuntu" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></a>
-	<h2 class="entry-title">
-		<a href="https://techpiezo.com/linux/introduction-to-ubuntu/">
-			Introduction to Ubuntu		</a>
-	</h2>
-
-	
-	<div class="entry-excerpt">
-		Ubuntu is a free and open source Linux distribution, that gets released every six months. There is also a long-term…	</div>
-
-	<div class="ct-ghost"></div>
-				<div class="entry-meta" data-label data-type="simple">
-		
-
-			<ul >
-				
-			
-			
-			
-			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-label">In </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/" rel="tag">Linux</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/linux-quick-fix/" rel="tag">Quick Fix</a></span></li>					</ul>
-				</div>
-		
-		
-</article>
-
-<article
-	id="post-309" class="entry-card post-309 post type-post status-publish format-standard has-post-thumbnail hentry category-wordpress"	>
-
-	<a class="ct-image-container boundless-image ct-lazy" href="https://techpiezo.com/wordpress/how-to-install-wordpress-on-windows-10-using-xampp/" ><img width="1" height="1" class="attachment-medium_large size-medium_large" alt="Install WordPress on Windows 10 using XAMPP" data-lazy="https://techpiezo.com/wp-content/uploads/2019/06/Install-WordPress-on-Windows-10-using-XAMPP.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/06/Install-WordPress-on-Windows-10-using-XAMPP.svg" class="attachment-medium_large size-medium_large" alt="Install WordPress on Windows 10 using XAMPP" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></a>
-	<h2 class="entry-title">
-		<a href="https://techpiezo.com/wordpress/how-to-install-wordpress-on-windows-10-using-xampp/">
-			Install WordPress on Windows 10 using XAMPP		</a>
-	</h2>
-
-	
-	<div class="entry-excerpt">
-		WordPress is a Content Management System for building websites. In this article, we would discuss how to install &amp; configure…	</div>
-
-	<div class="ct-ghost"></div>
-				<div class="entry-meta" data-label data-type="simple">
-		
-
-			<ul >
-				
-			
+					
+											<span class="ct-meta-label">
+							On						</span>
+					
+					<span
+						class="ct-meta-element"
+						>
+						Aug 22, 2019					</span>
+				</li>
 			
 			
 			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-label">In </span><span class="ct-meta-element"><a href="https://techpiezo.com/wordpress/" rel="tag">Wordpress</a></span></li>					</ul>
 				</div>
 		
+					</header>
+		</section>
+
+		<figure class="ct-featured-image ct-hidden-sm" ><div class="ct-image-container ct-lazy" ><img class="attachment-full size-full" alt="Change Default Highlight Color in WordPress" data-lazy="https://techpiezo.com/wp-content/uploads/2019/08/Change-Default-Highlight-Color-in-WordPress.svg" data-object-fit="~" /><noscript><img src="https://techpiezo.com/wp-content/uploads/2019/08/Change-Default-Highlight-Color-in-WordPress.svg" class="attachment-full size-full" alt="Change Default Highlight Color in WordPress" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
 		
-</article>
+		<div class="entry-content">
+			<p style="text-align: justify;">In WordPress, the highlight / text selection color mainly depends on the theme which you have selected for your website. At times, we don&#8217;t like what we are looking at and obviously make changes accordingly. In this article, we would discuss how to change default text selection color in WordPress. The default text selection color is blue in most of the themes. Not only we could use any other color but also we could use thousands of variations available for blue color. To make the required changes all we need to do is make relevant modifications in Cascading Style Sheets (CSS) file. The CSS file describes how various elements on our web page are displayed.</p>
+<h5 style="text-align: justify;">Change default highlight / text selection color in WordPress</h5>
+<p style="text-align: justify;">We need to locate the <strong>.css</strong> file for the theme we have used for our website. In most of the cases, it is <strong>style.css</strong> or <strong>main.css</strong>. Once you have identified your default CSS file, you need to locate the following entries &#8211;</p>
+<pre>::-moz-selection {
+               color: white;
+               background: green;
+          }
 
-<article
-	id="post-248" class="entry-card post-248 post type-post status-publish format-standard has-post-thumbnail hentry category-wordpress"	>
+::selection {
+               color: white;
+               background: green;
+          }</pre>
+<p style="text-align: justify;">The color combination would be different for you. All you need to do is make the necessary modifications as per your requirements to <strong>color:</strong> and <strong>background:</strong> entries. For best results, you can use hexadecimal values. Now, we will discuss the above mentioned code a bit.</p>
+<p style="text-align: justify;"><strong>::-moz-selection</strong> entry is for the Firefox browser and <strong>::selection</strong> is for other browsers like Chrome, Opera, Internet Explorer and Safari. The syntax for the above code is &#8211;</p>
+<pre>::-moz-selection {
+               declarations;
+          }
 
-	<a class="ct-image-container boundless-image ct-lazy" href="https://techpiezo.com/wordpress/how-to-install-wordpress-on-ubuntu-19-04/" ><img width="1" height="1" class="attachment-medium_large size-medium_large" alt="Install WordPress on Ubuntu" data-lazy="https://techpiezo.com/wp-content/uploads/2019/06/Install-WordPress-on-Ubuntu.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/06/Install-WordPress-on-Ubuntu.svg" class="attachment-medium_large size-medium_large" alt="Install WordPress on Ubuntu" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></a>
-	<h2 class="entry-title">
-		<a href="https://techpiezo.com/wordpress/how-to-install-wordpress-on-ubuntu-19-04/">
-			Install WordPress on Ubuntu 19.04		</a>
-	</h2>
+::selection {
+               declarations;
+          }</pre>
+<p style="text-align: justify;">Although, you can make necessary modifications as required manually. But, for those who are not comfortable with above operations should first try to make necessary modifications through WordPress&#8217; Graphical interface. If your theme allows such modifications then you can do so by customizing your theme. The option is available under &#8211; <strong>Appearance &#8211;&gt; Customize</strong> in the Admin Menu of your WordPress CMS.</p>
+<p style="text-align: justify;">In conclusion, we have discussed how to change default highlight / text selection color in WordPress.</p>
+		</div>
+
+		
+		
+		
+	</article>
+
+				</section>
+
+			
+<aside
+	class="ct-hidden-sm ct-hidden-md"    data-type="type-2"
+	>
+
+    <div
+		class="ct-sidebar" data-sticky		data-widgets="separated">
+				<div class="ct-widget widget_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
+											<li>
+					<a href="https://techpiezo.com/wordpress/change-default-highlight-text-selection-color-in-wordpress/">Change default highlight / text selection color in WordPress</a>
+									</li>
+											<li>
+					<a href="https://techpiezo.com/java/your-first-java-program/">Your first Java Program</a>
+									</li>
+											<li>
+					<a href="https://techpiezo.com/java/install-openjdk-jre-jdk-in-ubuntu-19-04/">Install OpenJDK JRE / JDK in Ubuntu 19.04</a>
+									</li>
+											<li>
+					<a href="https://techpiezo.com/linux/fixed-install-hplip-3-19-1-in-ubuntu-19-04/">[Fixed] Install HPLIP 3.19.1 in Ubuntu 19.04</a>
+									</li>
+											<li>
+					<a href="https://techpiezo.com/linux/install-google-chrome-in-debian-buster/">Install Google Chrome in Debian Buster</a>
+									</li>
+					</ul>
+		</div>	</div>
+</aside>
+
+
+		</div>
+
+	</div>
 
 	
-	<div class="entry-excerpt">
-		WordPress is one of the most popular Content Management Systems available. It is being used for building websites. To install…	</div>
+		<div class="ct-related-posts ct-hidden-sm">
+			<div class="ct-container">
+				<h4 class="ct-related-posts-label">
+					Related Posts				</h4>
 
-	<div class="ct-ghost"></div>
-				<div class="entry-meta" data-label data-type="simple">
-		
+				<ul data-columns="3">
+											
+						<li>
+							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/wordpress/install-wordpress-on-debian-buster/"><img width="1" height="1" class="attachment-large size-large" alt="Install WordPress on Debian Buster" data-lazy="https://techpiezo.com/wp-content/uploads/2019/07/Install-WordPress-on-Debian-Buster.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/07/Install-WordPress-on-Debian-Buster.svg" class="attachment-large size-large" alt="Install WordPress on Debian Buster" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<h3 class="related-entry-title">
+								<a href="https://techpiezo.com/wordpress/install-wordpress-on-debian-buster/">Install WordPress on Debian Buster</a>
+							</h3>
 
-			<ul >
-				
-			
-			
-			
-			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-label">In </span><span class="ct-meta-element"><a href="https://techpiezo.com/wordpress/" rel="tag">Wordpress</a></span></li>					</ul>
-				</div>
-		
-		
-</article>
+							<div class="related-entry-meta">
+								<span>
+									Jul 12, 2019								</span>
 
-<article
-	id="post-245" class="entry-card post-245 post type-post status-publish format-standard has-post-thumbnail hentry category-wordpress"	>
+															</div>
+						</li>
+											
+						<li>
+							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/wordpress/how-to-install-wordpress-on-windows-10-using-xampp/"><img width="1" height="1" class="attachment-large size-large" alt="Install WordPress on Windows 10 using XAMPP" data-lazy="https://techpiezo.com/wp-content/uploads/2019/06/Install-WordPress-on-Windows-10-using-XAMPP.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/06/Install-WordPress-on-Windows-10-using-XAMPP.svg" class="attachment-large size-large" alt="Install WordPress on Windows 10 using XAMPP" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<h3 class="related-entry-title">
+								<a href="https://techpiezo.com/wordpress/how-to-install-wordpress-on-windows-10-using-xampp/">Install WordPress on Windows 10 using XAMPP</a>
+							</h3>
 
-	<a class="ct-image-container boundless-image ct-lazy" href="https://techpiezo.com/wordpress/difference-between-wordpress-com-and-wordpress-org/" ><img width="1" height="1" class="attachment-medium_large size-medium_large" alt="Difference between WordPress.com and WordPress.org" data-lazy="https://techpiezo.com/wp-content/uploads/2019/06/WordPress-Difference.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/06/WordPress-Difference.svg" class="attachment-medium_large size-medium_large" alt="Difference between WordPress.com and WordPress.org" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></a>
-	<h2 class="entry-title">
-		<a href="https://techpiezo.com/wordpress/difference-between-wordpress-com-and-wordpress-org/">
-			Difference between WordPress.com and WordPress.org		</a>
-	</h2>
+							<div class="related-entry-meta">
+								<span>
+									Jun 10, 2019								</span>
 
-	
-	<div class="entry-excerpt">
-		If you have been planning to build your own website lately, with the help of a Content Management System. And,…	</div>
+															</div>
+						</li>
+											
+						<li>
+							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/wordpress/how-to-install-wordpress-on-ubuntu-19-04/"><img width="1" height="1" class="attachment-large size-large" alt="Install WordPress on Ubuntu" data-lazy="https://techpiezo.com/wp-content/uploads/2019/06/Install-WordPress-on-Ubuntu.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/06/Install-WordPress-on-Ubuntu.svg" class="attachment-large size-large" alt="Install WordPress on Ubuntu" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<h3 class="related-entry-title">
+								<a href="https://techpiezo.com/wordpress/how-to-install-wordpress-on-ubuntu-19-04/">Install WordPress on Ubuntu 19.04</a>
+							</h3>
 
-	<div class="ct-ghost"></div>
-				<div class="entry-meta" data-label data-type="simple">
-		
+							<div class="related-entry-meta">
+								<span>
+									Jun 9, 2019								</span>
 
-			<ul >
-				
-			
-			
-			
-			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-label">In </span><span class="ct-meta-element"><a href="https://techpiezo.com/wordpress/" rel="tag">Wordpress</a></span></li>					</ul>
-				</div>
-		
-		
-</article>
-
-<article
-	id="post-242" class="entry-card post-242 post type-post status-publish format-standard has-post-thumbnail hentry category-wordpress"	>
-
-	<a class="ct-image-container boundless-image ct-lazy" href="https://techpiezo.com/wordpress/introduction-to-wordpress-cms/" ><img width="1" height="1" class="attachment-medium_large size-medium_large" alt="Introduction to WordPress" data-lazy="https://techpiezo.com/wp-content/uploads/2019/06/Introduction-to-WordPress.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/06/Introduction-to-WordPress.svg" class="attachment-medium_large size-medium_large" alt="Introduction to WordPress" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></a>
-	<h2 class="entry-title">
-		<a href="https://techpiezo.com/wordpress/introduction-to-wordpress-cms/">
-			Introduction to WordPress &#8211; CMS		</a>
-	</h2>
-
-	
-	<div class="entry-excerpt">
-		WordPress is an open-source Content Management System for websites. It is based on PHP and MySQL. We would first discuss…	</div>
-
-	<div class="ct-ghost"></div>
-				<div class="entry-meta" data-label data-type="simple">
-		
-
-			<ul >
-				
-			
-			
-			
-			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-label">In </span><span class="ct-meta-element"><a href="https://techpiezo.com/wordpress/" rel="tag">Wordpress</a></span></li>					</ul>
-				</div>
-		
-		
-</article>
-
-<article
-	id="post-233" class="entry-card post-233 post type-post status-publish format-standard has-post-thumbnail hentry category-seo"	>
-
-	<a class="ct-image-container boundless-image ct-lazy" href="https://techpiezo.com/seo/on-site-search-engine-optimization-factors-that-matter/" ><img width="1" height="1" class="attachment-medium_large size-medium_large" alt="On Site Search Engine Optimization" data-lazy="https://techpiezo.com/wp-content/uploads/2019/06/On-Site-Search-Engine-Optimization.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/06/On-Site-Search-Engine-Optimization.svg" class="attachment-medium_large size-medium_large" alt="On Site Search Engine Optimization" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></a>
-	<h2 class="entry-title">
-		<a href="https://techpiezo.com/seo/on-site-search-engine-optimization-factors-that-matter/">
-			On Site Search Engine Optimization &#8211; Factors that matter		</a>
-	</h2>
-
-	
-	<div class="entry-excerpt">
-		In last article, we discussed On Page Search Engine Optimization for a web page. When we talk about On Site…	</div>
-
-	<div class="ct-ghost"></div>
-				<div class="entry-meta" data-label data-type="simple">
-		
-
-			<ul >
-				
-			
-			
-			
-			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-label">In </span><span class="ct-meta-element"><a href="https://techpiezo.com/seo/" rel="tag">SEO</a></span></li>					</ul>
-				</div>
-		
-		
-</article>
-
-									</div>
-				
-		<div class="ct-pagination" role="navigation" data-type="simple" >
-			<nav><a class="prev page-numbers" href="https://techpiezo.com/page/4/"><svg width="10px" height="10px" viewBox="0 0 15 15"><path class="st0" d="M10.9,15c-0.2,0-0.4-0.1-0.6-0.2L3.6,8c-0.3-0.3-0.3-0.8,0-1.1l6.6-6.6c0.3-0.3,0.8-0.3,1.1,0c0.3,0.3,0.3,0.8,0,1.1L5.2,7.4l6.2,6.2c0.3,0.3,0.3,0.8,0,1.1C11.3,14.9,11.1,15,10.9,15z"/></svg></a>
-<a class='page-numbers' href='https://techpiezo.com/'>1</a>
-<span class="page-numbers dots">&hellip;</span>
-<span aria-current='page' class='page-numbers current'>5</span>
-<a class='page-numbers' href='https://techpiezo.com/page/6/'>6</a>
-<a class="next page-numbers" href="https://techpiezo.com/page/6/"><svg width="10px" height="10px" viewBox="0 0 15 15"><path class="st0" d="M4.1,15c0.2,0,0.4-0.1,0.6-0.2L11.4,8c0.3-0.3,0.3-0.8,0-1.1L4.8,0.2C4.5-0.1,4-0.1,3.7,0.2C3.4,0.5,3.4,1,3.7,1.3l6.1,6.1l-6.2,6.2c-0.3,0.3-0.3,0.8,0,1.1C3.7,14.9,3.9,15,4.1,15z"/></svg></a></nav>
-			
-		</div>		</section>
-
+															</div>
+						</li>
+									</ul>
 			</div>
-</section>
+		</div>
+
+		
 
 
 	</main>
@@ -1289,7 +1177,7 @@ code, kbd, samp, pre {
 
 			<div class="ct-bag-content" >
 				
-				<ul id="primary-menu" class="mobile-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-home menu-item-70"><a href="https://techpiezo.com">Home</a></li>
+				<ul id="primary-menu" class="mobile-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-70"><a href="https://techpiezo.com">Home</a></li>
 <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-41"><a href="https://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
 <ul class="sub-menu">
 	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-350"><a href="https://techpiezo.com/linux/linux-quick-fix/">Quick Fix</a></li>
@@ -1310,7 +1198,7 @@ code, kbd, samp, pre {
 <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-39"><a href="https://techpiezo.com/tech-insights/">Insights</a></li>
 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1846"><a href="#">More<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
 <ul class="sub-menu">
-	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-42"><a href="https://techpiezo.com/wordpress/">WordPress</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-42"><a href="https://techpiezo.com/wordpress/">WordPress</a></li>
 	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-40"><a href="https://techpiezo.com/seo/">SEO</a></li>
 </ul>
 </li>

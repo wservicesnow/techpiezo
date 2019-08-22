@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Install OpenJDK JRE / JDK in Ubuntu 19.04 - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/java/install-openjdk-jre-jdk-in-ubuntu-19-04/" />
+		<title>Change default highlight / text selection color in WordPress - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/wordpress/change-default-highlight-text-selection-color-in-wordpress/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -426,53 +426,44 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Install OpenJDK JRE / JDK in Ubuntu 19.04</h1>
+		<h1 class="amp-wp-title">Change default highlight / text selection color in WordPress</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-08-17T14:11:14+00:00">
-		5 days ago	</time>
+	<time datetime="2019-08-22T15:03:03+00:00">
+		2 mins ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">In this article, we would discuss installation steps for both JRE as well as JDK. Here, JRE is an acronym for Java runtime and JDK is an acronym for Java Development Kit. For those who just want to run Java applications / programs can install Java runtime. On the other hand, to develop Java applications you need to install Java Development Kit. In case, if you plan on to install JDK, then you wouldn’t have to install JRE separately. JRE package itself comes bundled with JDK. Both the packages are available in standard Ubuntu repository. Also, you need to first check whether you have JDK/JRE already installed. Therefore, run the following in terminal –</p>
-<pre>java -version</pre>
-<p class="amp-wp-7d27179">If Java is not installed, then it will return with the following output. We have been using Ubuntu 19.04, if you are on a different release of Ubuntu then you may see different versions in the output.</p>
-<pre>Command 'java' not found, but can be installed with:
+		<p class="amp-wp-7d27179">In WordPress, the highlight / text selection color mainly depends on the theme which you have selected for your website. At times, we don’t like what we are looking at and obviously make changes accordingly. In this article, we would discuss how to change default text selection color in WordPress. The default text selection color is blue in most of the themes. Not only we could use any other color but also we could use thousands of variations available for blue color. To make the required changes all we need to do is make relevant modifications in Cascading Style Sheets (CSS) file. The CSS file describes how various elements on our web page are displayed.</p>
+<h5 class="amp-wp-7d27179">Change default highlight / text selection color in WordPress</h5>
+<p class="amp-wp-7d27179">We need to locate the <strong>.css</strong> file for the theme we have used for our website. In most of the cases, it is <strong>style.css</strong> or <strong>main.css</strong>. Once you have identified your default CSS file, you need to locate the following entries –</p>
+<pre>::-moz-selection {
+               color: white;
+               background: green;
+          }
 
-sudo apt install default-jre                         # version 2:1.11-71, or
-sudo apt install openjdk-11-jre-headless             # version 11.0.3+7-1ubuntu2~19.04.1
-sudo apt install openjdk-8-jre-headless              # version 8u212-b03-0ubuntu1.19.04.2
-sudo apt install openjdk-12-jre-headless             # version 12.0.1+12-1
-sudo apt install openjdk-13-jre-headless             # version 13~13-0ubunt1</pre>
-<p class="amp-wp-7d27179">The following operations would require superuser privileges. In case, if you don’t one then contact your system administrator for assistance.</p>
-<h5>Install OpenJDK Java Runtime Environment (JRE)</h5>
-<p class="amp-wp-7d27179">Firstly, we would install Java Runtime Environment (JRE) to run Java written applications / programs. To do so, run the following in the terminal –</p>
-<pre>sudo apt install openjdk-11-jre</pre>
-<p class="amp-wp-7d27179">Why did we choose to install <strong>openjdk-11-jre</strong> not other packages like openjdk-12-jre? The answer to the question is pretty easy, <strong>openjdk-11-jre</strong> is currently the package supported by Ubuntu distribution. If you intend to install other package versions then you may opt one. But remember, those packages may not be supported by the Ubuntu distribution. It may take few minutes to install the packages depending on your speed of your network connection.</p>
-<p class="amp-wp-7d27179">Once, done again run the following command in the terminal –</p>
-<pre>java -version</pre>
-<p class="amp-wp-7d27179">This time around, you would get the output –</p>
-<pre>openjdk version "11.0.4" 2019-07-16
-OpenJDK Runtime Environment (build 11.0.4+11-post-Ubuntu-1ubuntu219.04)
-OpenJDK 64-Bit Server VM (build 11.0.4+11-post-Ubuntu-1ubuntu219.04, mixed mode, sharing)</pre>
-<p class="amp-wp-7d27179">This installs Java runtime environment on your system. Next, we would discuss installation steps for Java Development Kit (JDK).</p>
-<h5>Install OpenJDK Development Kit (JDK)</h5>
-<p class="amp-wp-7d27179">In case you would like to develop Java applications then, you would have to install OpenJDK Development Kit (JDK). To do so, run the following command in terminal –</p>
-<pre>sudo apt install openjdk-11-jdk</pre>
-<p class="amp-wp-7d27179">As discussed earlier, this will also install <strong>openjdk-11-jre</strong>. Upon successful installation, run the following in the terminal –</p>
-<pre>java -version</pre>
-<p class="amp-wp-7d27179">It will return with the following output.</p>
-<pre>openjdk version "11.0.4" 2019-07-16
-OpenJDK Runtime Environment (build 11.0.4+11-post-Ubuntu-1ubuntu219.04)
-OpenJDK 64-Bit Server VM (build 11.0.4+11-post-Ubuntu-1ubuntu219.04, mixed mode, sharing)</pre>
-<p class="amp-wp-7d27179">In conclusion, both JDK as well as JRE could be installed depending on our requirements. JDK for development purposes and JRE for simply running Java applications.</p>
+::selection {
+               color: white;
+               background: green;
+          }</pre>
+<p class="amp-wp-7d27179">The color combination would be different for you. All you need to do is make the necessary modifications as per your requirements to <strong>color:</strong> and <strong>background:</strong> entries. For best results, you can use hexadecimal values. Now, we will discuss the above mentioned code a bit.</p>
+<p class="amp-wp-7d27179"><strong>::-moz-selection</strong> entry is for the Firefox browser and <strong>::selection</strong> is for other browsers like Chrome, Opera, Internet Explorer and Safari. The syntax for the above code is –</p>
+<pre>::-moz-selection {
+               declarations;
+          }
+
+::selection {
+               declarations;
+          }</pre>
+<p class="amp-wp-7d27179">Although, you can make necessary modifications as required manually. But, for those who are not comfortable with above operations should first try to make necessary modifications through WordPress’ Graphical interface. If your theme allows such modifications then you can do so by customizing your theme. The option is available under – <strong>Appearance –&gt; Customize</strong> in the Admin Menu of your WordPress CMS.</p>
+<p class="amp-wp-7d27179">In conclusion, we have discussed how to change default highlight / text selection color in WordPress.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
 			<div class="amp-wp-meta amp-wp-tax-category">
-		Categories: <a href="https://techpiezo.com/java/" rel="category tag">Java</a>, <a href="https://techpiezo.com/linux/" rel="category tag">Linux</a>, <a href="https://techpiezo.com/programming/" rel="category tag">Programming</a>	</div>
+		Categories: <a href="https://techpiezo.com/wordpress/" rel="category tag">Wordpress</a>	</div>
 
 	</footer>
 </article>
