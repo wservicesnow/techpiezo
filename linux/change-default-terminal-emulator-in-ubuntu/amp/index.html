@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Install OpenJDK JRE / JDK in Ubuntu 19.04 - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/java/install-openjdk-jre-jdk-in-ubuntu-19-04/" />
+		<title>Change default Terminal emulator in Ubuntu - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/linux/change-default-terminal-emulator-in-ubuntu/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -426,53 +426,38 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Install OpenJDK JRE / JDK in Ubuntu 19.04</h1>
+		<h1 class="amp-wp-title">Change default Terminal emulator in Ubuntu</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-08-17T14:11:14+00:00">
-		1 week ago	</time>
+	<time datetime="2019-08-24T20:08:18+00:00">
+		23 mins ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">In this article, we would discuss installation steps for both JRE as well as JDK. Here, JRE is an acronym for Java runtime and JDK is an acronym for Java Development Kit. For those who just want to run Java applications / programs can install Java runtime. On the other hand, to develop Java applications you need to install Java Development Kit. In case, if you plan on to install JDK, then you wouldn’t have to install JRE separately. JRE package itself comes bundled with JDK. Both the packages are available in standard Ubuntu repository. Also, you need to first check whether you have JDK/JRE already installed. Therefore, run the following in terminal –</p>
-<pre>java -version</pre>
-<p class="amp-wp-7d27179">If Java is not installed, then it will return with the following output. We have been using Ubuntu 19.04, if you are on a different release of Ubuntu then you may see different versions in the output.</p>
-<pre>Command 'java' not found, but can be installed with:
-
-sudo apt install default-jre                         # version 2:1.11-71, or
-sudo apt install openjdk-11-jre-headless             # version 11.0.3+7-1ubuntu2~19.04.1
-sudo apt install openjdk-8-jre-headless              # version 8u212-b03-0ubuntu1.19.04.2
-sudo apt install openjdk-12-jre-headless             # version 12.0.1+12-1
-sudo apt install openjdk-13-jre-headless             # version 13~13-0ubunt1</pre>
-<p class="amp-wp-7d27179">The following operations would require superuser privileges. In case, if you don’t one then contact your system administrator for assistance.</p>
-<h5>Install OpenJDK Java Runtime Environment (JRE)</h5>
-<p class="amp-wp-7d27179">Firstly, we would install Java Runtime Environment (JRE) to run Java written applications / programs. To do so, run the following in the terminal –</p>
-<pre>sudo apt install openjdk-11-jre</pre>
-<p class="amp-wp-7d27179">Why did we choose to install <strong>openjdk-11-jre</strong> not other packages like openjdk-12-jre? The answer to the question is pretty easy, <strong>openjdk-11-jre</strong> is currently the package supported by Ubuntu distribution. If you intend to install other package versions then you may opt one. But remember, those packages may not be supported by the Ubuntu distribution. It may take few minutes to install the packages depending on your speed of your network connection.</p>
-<p class="amp-wp-7d27179">Once, done again run the following command in the terminal –</p>
-<pre>java -version</pre>
-<p class="amp-wp-7d27179">This time around, you would get the output –</p>
-<pre>openjdk version "11.0.4" 2019-07-16
-OpenJDK Runtime Environment (build 11.0.4+11-post-Ubuntu-1ubuntu219.04)
-OpenJDK 64-Bit Server VM (build 11.0.4+11-post-Ubuntu-1ubuntu219.04, mixed mode, sharing)</pre>
-<p class="amp-wp-7d27179">This installs Java runtime environment on your system. Next, we would discuss installation steps for Java Development Kit (JDK).</p>
-<h5>Install OpenJDK Development Kit (JDK)</h5>
-<p class="amp-wp-7d27179">In case you would like to develop Java applications then, you would have to install OpenJDK Development Kit (JDK). To do so, run the following command in terminal –</p>
-<pre>sudo apt install openjdk-11-jdk</pre>
-<p class="amp-wp-7d27179">As discussed earlier, this will also install <strong>openjdk-11-jre</strong>. Upon successful installation, run the following in the terminal –</p>
-<pre>java -version</pre>
-<p class="amp-wp-7d27179">It will return with the following output.</p>
-<pre>openjdk version "11.0.4" 2019-07-16
-OpenJDK Runtime Environment (build 11.0.4+11-post-Ubuntu-1ubuntu219.04)
-OpenJDK 64-Bit Server VM (build 11.0.4+11-post-Ubuntu-1ubuntu219.04, mixed mode, sharing)</pre>
-<p class="amp-wp-7d27179">In conclusion, both JDK as well as JRE could be installed depending on our requirements. JDK for development purposes and JRE for simply running Java applications.</p>
+		<p class="amp-wp-7d27179">x-terminal-emulator is a virtual package for the terminal emulators. A virtual package is just a logical term, which signifies the common features that are being offered by various other packages. Hence, there are several packages which provide the virtual package – x-terminal-emulator. Few of such packages are gnome-terminal, konsole, lxterminal, mate-terminal, pterm, xfce4-terminal, xterm etc.</p>
+<p class="amp-wp-7d27179">All these above mentioned packages provide features which are similar in nature. However, these packages may differ in the manner in which few of the common features are offered. Otherwise, underlying functionality remains the same. Terminal emulators can execute variety of tasks including providing us the access to default shell of our Ubuntu distribution. We can access shell interface through both command-line as well as graphical user interface. gnome-terminal, lxterminal, xfce4-terminal etc. are the packages which let us access shell through graphical user interface. Also, we can access command-line shell interface through shortcut key – Ctrl+Alt+F1…F6.</p>
+<h5 class="amp-wp-7d27179">Change default Terminal emulator in Ubuntu</h5>
+<p class="amp-wp-7d27179">Our default terminal emulator is the one which comes packaged with our Desktop environment. So, if we chose to install LXDE then our default terminal emulator would be lxterminal. However, if we are not comfortable using lxterminal and would want to install some other terminal emulator(lets say gnome-terminal) instead. Then, we need to install the one(i.e. gnome-terminal) first before making any changes to the default entries. The following operations may require superuser privileges. Contact your system administrator if you don’t have one. We can install the terminal emulator of our choice by using <strong>apt-get</strong> command.</p>
+<pre>sudo apt install &lt;package-name&gt;</pre>
+<p class="amp-wp-7d27179">for instance,</p>
+<pre>sudo apt install gnome-terminal</pre>
+<p class="amp-wp-7d27179">Once, we have finished installing the terminal emulator of our choice. Run the following command in the terminal –</p>
+<pre>sudo update-alternatives --config x-terminal-emulator</pre>
+<p class="amp-wp-7d27179">The term <strong>x-terminal-emulator</strong> has already been explained in the beginning of the article.</p>
+<p><amp-img class="aligncenter wp-image-2323 size-full amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/08/Choose-default-terminal-emulator.png" alt="x-terminal-emulator alternatives" width="1023" height="316" layout="intrinsic"></amp-img></p>
+<p class="amp-wp-7d27179">You could see the<strong> *</strong> mark against selection 4 – /usr/bin/lxterminal. This shows our current default terminal emulator. Also, the output lists all the terminal emulators installed on our operating system. Here, we have nine of those installed.</p>
+<p class="amp-wp-7d27179">You need to <strong>enter the selection number</strong> for updating the default terminal emulator. Otherwise, if you want keep the current configuration then press &lt;enter&gt;.</p>
+<p class="amp-wp-7d27179">If you chose to enter a selection number instead, then the output would resemble –</p>
+<pre>update-alternatives: using /usr/bin/&lt;terminal-emulator&gt; to provide /usr/bin/x-terminal-emulator (x-terminal-emulator) in manual mode</pre>
+<p class="amp-wp-7d27179">This will successfully change your terminal emulator to the one of your choice. You can verify by using the shortcut key Ctrl+Alt+T. The shortcut key may not work for all the desktop environments in Ubuntu. We can bind the key to execute a particular instruction, which will be discussed in coming articles.</p>
+<p class="amp-wp-7d27179">In conclusion, we have discussed virtual packages and how to change the default terminal emulator of our Ubuntu distribution thereafter.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
 			<div class="amp-wp-meta amp-wp-tax-category">
-		Categories: <a href="https://techpiezo.com/java/" rel="category tag">Java</a>, <a href="https://techpiezo.com/linux/" rel="category tag">Linux</a>, <a href="https://techpiezo.com/programming/" rel="category tag">Programming</a>	</div>
+		Categories: <a href="https://techpiezo.com/linux/" rel="category tag">Linux</a>, <a href="https://techpiezo.com/linux/linux-quick-fix/" rel="category tag">Quick Fix</a>	</div>
 
 	</footer>
 </article>

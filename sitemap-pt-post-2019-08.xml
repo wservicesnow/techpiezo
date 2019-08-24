@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="August 24, 2019 9:26 am" -->
+<!-- generated-on="August 24, 2019 8:31 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
+		<loc>https://techpiezo.com/linux/change-default-terminal-emulator-in-ubuntu/</loc>
+		<lastmod>2019-08-24T20:30:46+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
 		<loc>https://techpiezo.com/wordpress/menu-item-without-link-to-url-in-wordpress/</loc>
 		<lastmod>2019-08-22T18:33:35+00:00</lastmod>
 		<changefreq>monthly</changefreq>
@@ -48,4 +54,4 @@
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: a7887d40636fd9ff5a20c89399a016f3; Queries for sitemap: 2; Total queries: 13; Seconds: 0; Memory for sitemap: 0MB; Total memory: 4MB -->
+</urlset><!-- Request ID: 7f7a9cca8db04bd1cc20f6153f3c6f31; Queries for sitemap: 2; Total queries: 13; Seconds: 0; Memory for sitemap: 0MB; Total memory: 2MB -->
