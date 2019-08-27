@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Change default highlight / text selection color in WordPress - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/wordpress/change-default-highlight-text-selection-color-in-wordpress/" />
+		<title>Optimize/Compress JPEG files in Ubuntu - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/linux/optimize-compress-jpeg-files-in-ubuntu/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -426,44 +426,51 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Change default highlight / text selection color in WordPress</h1>
+		<h1 class="amp-wp-title">Optimize/Compress JPEG files in Ubuntu</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-08-22T15:03:03+00:00">
-		5 days ago	</time>
+	<time datetime="2019-08-27T20:34:01+00:00">
+		16 mins ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">In WordPress, the highlight / text selection color mainly depends on the theme which you have selected for your website. At times, we don’t like what we are looking at and obviously make changes accordingly. In this article, we would discuss how to change default text selection color in WordPress. The default text selection color is blue in most of the themes. But, we can choose one of our own choice. To make the required changes all we need to do is make relevant modifications in Cascading Style Sheets (CSS) file. The CSS file describes how various elements on our web page are rendered.</p>
-<h5 class="amp-wp-7d27179">Change default highlight / text selection color in WordPress</h5>
-<p class="amp-wp-7d27179">We need to locate the <strong>.css</strong> file for the theme we have used for our website. In most of the cases, it is <strong>style.css</strong> or <strong>main.css</strong>. Once you have identified your default CSS file, you need to locate the following entries –</p>
-<pre>::-moz-selection {
-               color: white;
-               background: green;
-          }
-
-::selection {
-               color: white;
-               background: green;
-          }</pre>
-<p class="amp-wp-7d27179">The color combinations in the above code would be different for you. All you need to do is make the necessary modifications as per your requirements to <strong>color:</strong> and <strong>background:</strong> entries. For best results, you can use hexadecimal values. The hexadecimal values for colors are supported by all the internet browsers. In case, we would like to provide the hexadecimal value of color <strong>RED</strong> then it would be <strong>#FF0000</strong>. Now, we will discuss the above mentioned code a bit.</p>
-<p class="amp-wp-7d27179"><strong>::-moz-selection</strong> selector is for the Firefox browser and <strong>::selection</strong> is for other browsers like Chrome, Opera, Internet Explorer and Safari. The syntax for the above code is –</p>
-<pre>::-moz-selection {
-               declarations;
-          }
-
-::selection {
-               declarations;
-          }</pre>
-<p class="amp-wp-7d27179">Although, you can make necessary modifications as required by editing the source files yourself. But, for those who are not comfortable with above operations can try to make changes through options available through WordPress’ dashboard. If your theme permits you to make required changes then you can do so by customizing your theme. The option is available under – <strong>Appearance &gt;&gt; Customize</strong> in the Admin Menu of your WordPress dashboard.</p>
-<p class="amp-wp-7d27179">In conclusion, we have discussed how to change default highlight / text selection color in WordPress.</p>
+		<p class="amp-wp-7d27179">In this article, we would discuss how to optimize/compress jpeg files in Ubuntu using command-line utility <strong>jpegoptim</strong>. There could be various reasons why you may want to optimize your jpeg files. For instance, you could be uploading photos to a cloud storage, sharing it on social media networks etc. The utility would also be useful for those who may want to upload jpeg files on their websites. This will reduce the time required to upload jpeg files and at the same time will lead to substantial reduction in bandwidth needed.</p>
+<h5 class="amp-wp-7d27179">Install jpegoptim in Ubuntu</h5>
+<p class="amp-wp-7d27179"><strong>jpegoptim</strong> package is available in standard Ubuntu repository. But, installation will require you to have access to superuser privileges. In case, you don’t have one then contact your System Administrator for assistance. Thereafter, run the following in terminal –</p>
+<pre>sudo apt update
+sudo apt install jpegoptim</pre>
+<h5 class="amp-wp-7d27179">Optimize/Compress JPEG files</h5>
+<p class="amp-wp-7d27179">Before performing any operations using the utility <strong>jpegoptim</strong>, you should know that all operations will be performed on original file(i.e. input file) by default. If you want to preserve your original file then, you need to use the option <code>--dest</code> which is path to the directory where the optimized file will stored. This will leave the original file as it is. We will explain <code>--dest</code> option in subsequent examples.</p>
+<p class="amp-wp-7d27179">The syntax for the utility is –</p>
+<pre>jpegoptim [options] [file_name]</pre>
+<p class="amp-wp-7d27179">To optimize your image file <strong>quality-wise</strong> and save it to a directory leaving your original file intact, use the following command with options <strong><code>--dest</code></strong> and <code>--max</code></p>
+<pre>jpegoptim --dest=directory_path --max=&lt;quality&gt; file_name.jpeg</pre>
+<p class="amp-wp-7d27179">for instance,</p>
+<pre>jpegoptim --dest=/home/ --max=75 file_name.jpeg</pre>
+<p class="amp-wp-7d27179">You can provide maximum quality values for an image between 0 and 100. <strong><code>--max</code></strong> option disables the lossless optimization mode.</p>
+<p class="amp-wp-7d27179">Also, to optimize an image file <strong>size-wise </strong>we have to use the <b><code>--size</code></b> option –</p>
+<pre>jpegoptim --dest=directory_path --size=&lt;size&gt; file_name.jpeg</pre>
+<p class="amp-wp-7d27179">where, <strong>&lt;size&gt;</strong> could be provided in Kilobytes or as a percentage of the image size.</p>
+<p class="amp-wp-7d27179">for instance,</p>
+<pre>jpegoptim --dest=/home/ --size=500 file_name.jpeg
+jpegoptim --dest=/home/ --size=50% file_name.jpeg</pre>
+<p class="amp-wp-7d27179">In above example, the <code>--size</code>=500 reduces the file to a size of 500 KB. And, <code>--size</code>=50% reduces the size of our image file to half.</p>
+<p>In case you are using<strong> <code>--dest</code></strong> option and the file already exists then you would have to use <strong><code>-o</code> or <code>--overwrite</code> </strong>option to overwrite the existing file.</p>
+<p class="amp-wp-7d27179">Note: If you are unable to reduce the file size to the required size then, you need to run the command again on the same file.</p>
+<p class="amp-wp-7d27179">Apart from optimizing a jpeg file, we can do perform other operations too like striping all markers, preserving file permissions, preserving file modification times, etc. All these and other options will be discussed in brief.</p>
+<p class="amp-wp-7d27179"><code>--preserve</code> preserves file modified time<strong>,</strong></p>
+<p class="amp-wp-7d27179"><strong><code>-P</code></strong> or <code>--preserve-perms</code> preserves file permissions,</p>
+<p class="amp-wp-7d27179"><strong><code>--strip-all</code></strong> is used to strip all markers except Comment and Exif / IPTC / PhotoShop / ICC / XMP markers,</p>
+<p class="amp-wp-7d27179"><strong><code>--strip-none</code></strong> to preserve all markers except JFIF (APP0) &amp; Adobe (APP14)</p>
+<p class="amp-wp-7d27179"><strong><code>--strip-exif</code></strong>, <code>--strip-iptc</code>,<strong><code>--strip-icc</code></strong>, <b><code>--strip-xmp</code></b> to strip respective markers as mentioned in the option.</p>
+<p class="amp-wp-7d27179">In conclusion, we have discussed how to optimize/compress jpeg files in Ubuntu using package <strong>jpegoptim</strong>.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
 			<div class="amp-wp-meta amp-wp-tax-category">
-		Categories: <a href="https://techpiezo.com/wordpress/" rel="category tag">Wordpress</a>	</div>
+		Categories: <a href="https://techpiezo.com/linux/" rel="category tag">Linux</a>, <a href="https://techpiezo.com/linux/linux-quick-fix/" rel="category tag">Quick Fix</a>	</div>
 
 	</footer>
 </article>

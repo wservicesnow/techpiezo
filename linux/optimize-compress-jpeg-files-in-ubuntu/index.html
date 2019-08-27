@@ -6,11 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
-	<title>Raw vs Qcow2 Disk Images in QEMU/KVM - TechPiezo</title>
+	<title>Optimize/Compress JPEG files in Ubuntu - TechPiezo</title>
 
 <!-- This site is optimized with the Yoast SEO plugin v11.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
-<meta name="description" content="Qemu/KVM provides support for different image formats. The two major disk image formats that are widely recommended and used are raw and qcow2."/>
-<link rel="canonical" href="https://techpiezo.com/tech-insights/raw-vs-qcow2-disk-images-in-qemu-kvm/" />
+<meta name="description" content="We can optimize/compress JPEG files in Ubuntu through command-line utility jpegoptim. The package is already available in standard Ubuntu repository."/>
+<link rel="canonical" href="https://techpiezo.com/linux/optimize-compress-jpeg-files-in-ubuntu/" />
 <!-- / Yoast SEO plugin. -->
 
 <style id="ct-main-styles-inline-css" type="text/css">:root {
@@ -769,7 +769,7 @@ code, kbd, samp, pre {
 <link rel='stylesheet' id='ct-style-css'  href='https://techpiezo.com/wp-content/themes/blocksy/style.css' type='text/css' media='all' />
 <link rel='stylesheet' id='ct-main-styles-css'  href='https://techpiezo.com/wp-content/themes/blocksy/static/bundle/main.css' type='text/css' media='all' />
 
-<link rel="amphtml" href="https://techpiezo.com/tech-insights/raw-vs-qcow2-disk-images-in-qemu-kvm/amp/"><link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" sizes="32x32" />
+<link rel="amphtml" href="https://techpiezo.com/linux/optimize-compress-jpeg-files-in-ubuntu/amp/"><link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" sizes="32x32" />
 <link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" sizes="192x192" />
 <link rel="apple-touch-icon-precomposed" href="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" />
 <meta name="msapplication-TileImage" content="https://techpiezo.com/wp-content/uploads/2019/07/favicon.ico" />
@@ -799,7 +799,7 @@ code, kbd, samp, pre {
 
 </head>
 
-<body class="post-template-default single single-post postid-442 single-format-standard wp-custom-logo ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
+<body class="post-template-default single single-post postid-2380 single-format-standard wp-custom-logo ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
 <div id="main-container">
 
 	<header
@@ -832,9 +832,9 @@ code, kbd, samp, pre {
 				>
 
 		<ul id="primary-menu" class="primary-menu menu"><li id="menu-item-70" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-70"><a href="https://techpiezo.com">Home</a></li>
-<li id="menu-item-41" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-41"><a href="https://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
+<li id="menu-item-41" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-41"><a href="https://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
 <ul class="sub-menu">
-	<li id="menu-item-350" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-350"><a href="https://techpiezo.com/linux/linux-quick-fix/">Quick Fix</a></li>
+	<li id="menu-item-350" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-350"><a href="https://techpiezo.com/linux/linux-quick-fix/">Quick Fix</a></li>
 	<li id="menu-item-349" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-349"><a href="https://techpiezo.com/linux/linux-recent/">What&#8217;s New</a></li>
 </ul>
 </li>
@@ -849,7 +849,7 @@ code, kbd, samp, pre {
 	<li id="menu-item-347" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-347"><a href="https://techpiezo.com/android/android-recent/">What&#8217;s New</a></li>
 </ul>
 </li>
-<li id="menu-item-39" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-39"><a href="https://techpiezo.com/tech-insights/">Insights</a></li>
+<li id="menu-item-39" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-39"><a href="https://techpiezo.com/tech-insights/">Insights</a></li>
 <li id="menu-item-1846" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1846"><a href="#">More<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
 <ul class="sub-menu">
 	<li id="menu-item-42" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-42"><a href="https://techpiezo.com/wordpress/">WordPress</a></li>
@@ -923,13 +923,13 @@ code, kbd, samp, pre {
 			<section>
 				
 	<article
-		id="post-442"
-		class="post-442 post type-post status-publish format-standard has-post-thumbnail hentry category-tech-insights"		data-content="boxed"				>
+		id="post-2380"
+		class="post-2380 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"		data-content="boxed"				>
 
 		
 		<section class="hero-section" data-type="type-1" data-alignment="left">
 			<header class="entry-header">
-				<h1 class="page-title">Raw vs Qcow2 Disk Images in QEMU/KVM</h1>
+				<h1 class="page-title">Optimize/Compress JPEG files in Ubuntu</h1>
 				<div class="entry-meta has-avatar" data-label data-type="simple">
 		
 
@@ -956,69 +956,49 @@ code, kbd, samp, pre {
 					<span
 						class="ct-meta-element"
 						>
-						Jun 19, 2019					</span>
+						Aug 27, 2019					</span>
 				</li>
 			
 			
-			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-label">In </span><span class="ct-meta-element"><a href="https://techpiezo.com/tech-insights/" rel="tag">Insights</a></span></li>					</ul>
+			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-label">In </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/" rel="tag">Linux</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/linux-quick-fix/" rel="tag">Quick Fix</a></span></li>					</ul>
 				</div>
 		
 					</header>
 		</section>
 
-		<figure class="ct-featured-image ct-hidden-sm" ><div class="ct-image-container ct-lazy" ><img class="attachment-full size-full" alt="Raw vs Qcow2" data-lazy="https://techpiezo.com/wp-content/uploads/2019/06/Raw-vs-Qcow2.svg" data-object-fit="~" /><noscript><img src="https://techpiezo.com/wp-content/uploads/2019/06/Raw-vs-Qcow2.svg" class="attachment-full size-full" alt="Raw vs Qcow2" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
+		<figure class="ct-featured-image ct-hidden-sm" ><div class="ct-image-container ct-lazy" ><img class="attachment-full size-full" alt="Optimize/Compress JPEG files in Ubuntu" data-lazy="https://techpiezo.com/wp-content/uploads/2019/08/Optimize-Compress-JPEG-files-in-Ubuntu.svg" data-object-fit="~" /><noscript><img src="https://techpiezo.com/wp-content/uploads/2019/08/Optimize-Compress-JPEG-files-in-Ubuntu.svg" class="attachment-full size-full" alt="Optimize/Compress JPEG files in Ubuntu" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
 		
 		<div class="entry-content">
-			<p style="text-align: justify;">One of the important part of virtualization is storage. Storage allows virtualized environment to read and write data over variety of different methods. Disk Image is widely popular method of storage in virtualization.</p>
-<p style="text-align: justify;">A disk image in virtualization represents a block of data on hard disk, however for a virtualized environment, it will be a virtual disk. This method of storage is known as File-based storage.</p>
-<p style="text-align: justify;">Qemu/KVM provides support for different image formats. The two major disk image formats that are widely recommended and used are raw and qcow2. Lets understand what they are and their differences.</p>
-<h4 style="text-align: justify;">RAW Disk Images</h4>
-<p style="text-align: justify;">Raw disk image format is default format in Qemu.</p>
-<p style="text-align: justify;"><strong>Pros of using RAW Disk Images:</strong></p>
-<ol style="text-align: justify;">
-<li style="text-align: justify;">Simple and can be easily portable to any other machine.</li>
-<li style="text-align: justify;">It represents default binary format of a hard disk.</li>
-<li style="text-align: justify;">Nearly raw performance then other formats, as it has very little overhead and no metadata.</li>
-<li style="text-align: justify;">Only data written will occupy space, rest of space will be filled with zeros, as it is a sparse file.</li>
-</ol>
-<p style="text-align: justify;"><strong>Cons of using RAW Disk Images:</strong></p>
-<ol style="text-align: justify;">
-<li style="text-align: justify;">Does not have other features like compression, AES encryption and snapshot.</li>
-<li style="text-align: justify;">Backup requires full disk-up, as no incremental back-up.</li>
-<li style="text-align: justify;">Deleted files still occupy space and have to be removed.</li>
-</ol>
-<p style="text-align: justify;"><strong>Implementation</strong></p>
-<pre>qemu-img create -f raw /var/lib/libvirt/images/sample1.img 5G</pre>
-<p style="text-align: justify;"><strong>For Preallocating size</strong></p>
-<pre>qemu-img create -f raw -o preallocation=full /var/lib/libvirt/images/sample1.img 5G</pre>
-<p style="text-align: justify;"><strong>To verify</strong></p>
-<pre>qemu-img info /var/lib/libvirt/images/sample1.img</pre>
-<h4 style="text-align: justify;">qcow2 Disk Images</h4>
-<p style="text-align: justify;">qcow2 is copy on write image disk, where file is composed of constant size units called clusters. A cluster holds both data as well as image metadata.</p>
-<p style="text-align: justify;"><strong>Pros of using qcow2 Disk Images:</strong></p>
-<ol style="text-align: justify;">
-<li style="text-align: justify;">Smaller images are produced, as no sparse file.</li>
-<li style="text-align: justify;">It provides zlib based compression.</li>
-<li style="text-align: justify;">For data security, AES encryption can be used to protect disk image.</li>
-<li style="text-align: justify;">Multiple Virtual Machine snapshots are offered, as incremental back-up.</li>
-<li style="text-align: justify;">Small Cluster Size improve image file size, and larger can be used for better performance.</li>
-<li style="text-align: justify;">Larger Preallocation increases performance as image size increases to grow.</li>
-</ol>
-<p style="text-align: justify;"><strong>Cons of using qcow2 Disk Images:</strong>:</p>
-<ol style="text-align: justify;">
-<li style="text-align: justify;">Very slight performance loss in comparison to raw disk image, due to metadata, compression and encryption.</li>
-<li style="text-align: justify;">One needs to use fstrim to trim image file, as deleted files does increases image size.</li>
-</ol>
-<p style="text-align: justify;"><strong>Implementation</strong></p>
-<pre>qemu-img create -f qcow2 /var/lib/libvirt/images/sample1.qcow2 5G</pre>
-<p style="text-align: justify;"><strong>For Cluster size image of 2M</strong></p>
-<pre>qemu-img create -f qcow2 -o cluster_size=2M /var/lib/libvirt/images/sample1.qcow2 5G
-</pre>
-<p style="text-align: justify;"><strong>For Preallocated size</strong></p>
-<pre>qemu-img create -f qcow2 -o preallocation=full /var/lib/libvirt/images/sample1.qcow2 5G</pre>
-<p style="text-align: justify;"><strong>To verify</strong></p>
-<pre>qemu-img info /var/lib/libvirt/images/sample1.qcow2</pre>
-<p style="text-align: justify;">In Conclusion, Raw and Qcow2 have both advantages and disadvantages, while raw offers pure performance but qcow2 offers practical and useful features, in the end use of image format comes down to use case scenario.</p>
+			<p style="text-align: justify;">In this article, we would discuss how to optimize/compress jpeg files in Ubuntu using command-line utility <strong>jpegoptim</strong>. There could be various reasons why you may want to optimize your jpeg files. For instance, you could be uploading photos to a cloud storage, sharing it on social media networks etc. The utility would also be useful for those who may want to upload jpeg files on their websites. This will reduce the time required to upload jpeg files and at the same time will lead to substantial reduction in bandwidth needed.</p>
+<h5 style="text-align: justify;">Install jpegoptim in Ubuntu</h5>
+<p style="text-align: justify;"><strong>jpegoptim</strong> package is available in standard Ubuntu repository. But, installation will require you to have access to superuser privileges. In case, you don&#8217;t have one then contact your System Administrator for assistance. Thereafter, run the following in terminal &#8211;</p>
+<pre>sudo apt update
+sudo apt install jpegoptim</pre>
+<h5 style="text-align: justify;">Optimize/Compress JPEG files</h5>
+<p style="text-align: justify;">Before performing any operations using the utility <strong>jpegoptim</strong>, you should know that all operations will be performed on original file(i.e. input file) by default. If you want to preserve your original file then, you need to use the option <code>--dest</code> which is path to the directory where the optimized file will stored. This will leave the original file as it is. We will explain <code>--dest</code> option in subsequent examples.</p>
+<p style="text-align: justify;">The syntax for the utility is &#8211;</p>
+<pre>jpegoptim [options] [file_name]</pre>
+<p style="text-align: justify;">To optimize your image file <strong>quality-wise</strong> and save it to a directory leaving your original file intact, use the following command with options <strong><code>--dest</code></strong> and <code>--max</code></p>
+<pre>jpegoptim --dest=directory_path --max=&lt;quality&gt; file_name.jpeg</pre>
+<p style="text-align: justify;">for instance,</p>
+<pre>jpegoptim --dest=/home/ --max=75 file_name.jpeg</pre>
+<p style="text-align: justify;">You can provide maximum quality values for an image between 0 and 100. <strong><code>--max</code></strong> option disables the lossless optimization mode.</p>
+<p style="text-align: justify;">Also, to optimize an image file <strong>size-wise </strong>we have to use the <b><code>--size</code></b> option &#8211;</p>
+<pre>jpegoptim --dest=directory_path --size=&lt;size&gt; file_name.jpeg</pre>
+<p style="text-align: justify;">where, <strong>&lt;size&gt;</strong> could be provided in Kilobytes or as a percentage of the image size.</p>
+<p style="text-align: justify;">for instance,</p>
+<pre>jpegoptim --dest=/home/ --size=500 file_name.jpeg
+jpegoptim --dest=/home/ --size=50% file_name.jpeg</pre>
+<p style="text-align: justify;">In above example, the <code>--size</code>=500 reduces the file to a size of 500 KB. And, <code>--size</code>=50% reduces the size of our image file to half.</p>
+<p>In case you are using<strong> <code>--dest</code></strong> option and the file already exists then you would have to use <strong><code>-o</code> or <code>--overwrite</code> </strong>option to overwrite the existing file.</p>
+<p style="text-align: justify;">Note: If you are unable to reduce the file size to the required size then, you need to run the command again on the same file.</p>
+<p style="text-align: justify;">Apart from optimizing a jpeg file, we can do perform other operations too like striping all markers, preserving file permissions, preserving file modification times, etc. All these and other options will be discussed in brief.</p>
+<p style="text-align: justify;"><code>--preserve</code> preserves file modified time<strong>,</strong></p>
+<p style="text-align: justify;"><strong><code>-P</code></strong> or <code>--preserve-perms</code> preserves file permissions,</p>
+<p style="text-align: justify;"><strong><code>--strip-all</code></strong> is used to strip all markers except Comment and Exif / IPTC / PhotoShop / ICC / XMP markers,</p>
+<p style="text-align: justify;"><strong><code>--strip-none</code></strong> to preserve all markers except JFIF (APP0) &amp; Adobe (APP14)</p>
+<p style="text-align: justify;"><strong><code>--strip-exif</code></strong>, <code>--strip-iptc</code>,<strong><code>--strip-icc</code></strong>, <b><code>--strip-xmp</code></b> to strip respective markers as mentioned in the option.</p>
+<p style="text-align: justify;">In conclusion, we have discussed how to optimize/compress jpeg files in Ubuntu using package <strong>jpegoptim</strong>.</p>
 		</div>
 
 		
@@ -1069,27 +1049,40 @@ code, kbd, samp, pre {
 				<ul data-columns="3">
 											
 						<li>
-							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/tech-insights/command-line-calendar-on-debian/"><img width="1" height="1" class="attachment-large size-large" alt="Command Line Calendar Utilities Debian" data-lazy="https://techpiezo.com/wp-content/uploads/2019/06/Command-Line-Calendar-Utilities-Debian.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/06/Command-Line-Calendar-Utilities-Debian.svg" class="attachment-large size-large" alt="Command Line Calendar Utilities Debian" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/key-bindings-in-openbox/"><img width="1" height="1" class="attachment-large size-large" alt="Key bindings in Openbox" data-lazy="https://techpiezo.com/wp-content/uploads/2019/08/Key-bindings-in-Openbox.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/08/Key-bindings-in-Openbox.svg" class="attachment-large size-large" alt="Key bindings in Openbox" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
 							<h3 class="related-entry-title">
-								<a href="https://techpiezo.com/tech-insights/command-line-calendar-on-debian/">Command line Calendar utilities on Debian</a>
+								<a href="https://techpiezo.com/linux/key-bindings-in-openbox/">Key bindings in Openbox</a>
 							</h3>
 
 							<div class="related-entry-meta">
 								<span>
-									Jun 18, 2019								</span>
+									Aug 25, 2019								</span>
 
 															</div>
 						</li>
 											
 						<li>
-							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/tech-insights/tmp-on-ram/"><img width="1" height="1" class="attachment-large size-large" alt="tmp on RAM" data-lazy="https://techpiezo.com/wp-content/uploads/2019/06/tmp-on-RAM.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/06/tmp-on-RAM.svg" class="attachment-large size-large" alt="tmp on RAM" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/change-default-terminal-emulator-in-ubuntu/"><img width="1" height="1" class="attachment-large size-large" alt="Change Default Terminal Emulator in Ubuntu" data-lazy="https://techpiezo.com/wp-content/uploads/2019/08/Change-Default-Terminal-Emulator-in-Ubuntu.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/08/Change-Default-Terminal-Emulator-in-Ubuntu.svg" class="attachment-large size-large" alt="Change Default Terminal Emulator in Ubuntu" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
 							<h3 class="related-entry-title">
-								<a href="https://techpiezo.com/tech-insights/tmp-on-ram/">/tmp on RAM</a>
+								<a href="https://techpiezo.com/linux/change-default-terminal-emulator-in-ubuntu/">Change default Terminal emulator in Ubuntu</a>
 							</h3>
 
 							<div class="related-entry-meta">
 								<span>
-									Jun 11, 2019								</span>
+									Aug 24, 2019								</span>
+
+															</div>
+						</li>
+											
+						<li>
+							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/java/install-openjdk-jre-jdk-in-ubuntu-19-04/"><img width="1" height="1" class="attachment-large size-large" alt="Install OpenJDK Runtime and Development Kit" data-lazy="https://techpiezo.com/wp-content/uploads/2019/08/Install-OpenJDK-JRE.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/08/Install-OpenJDK-JRE.svg" class="attachment-large size-large" alt="Install OpenJDK Runtime and Development Kit" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<h3 class="related-entry-title">
+								<a href="https://techpiezo.com/java/install-openjdk-jre-jdk-in-ubuntu-19-04/">Install OpenJDK JRE / JDK in Ubuntu 19.04</a>
+							</h3>
+
+							<div class="related-entry-meta">
+								<span>
+									Aug 17, 2019								</span>
 
 															</div>
 						</li>
@@ -1193,9 +1186,9 @@ code, kbd, samp, pre {
 			<div class="ct-bag-content" >
 				
 				<ul id="primary-menu" class="mobile-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-70"><a href="https://techpiezo.com">Home</a></li>
-<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-41"><a href="https://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-41"><a href="https://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
 <ul class="sub-menu">
-	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-350"><a href="https://techpiezo.com/linux/linux-quick-fix/">Quick Fix</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-350"><a href="https://techpiezo.com/linux/linux-quick-fix/">Quick Fix</a></li>
 	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-349"><a href="https://techpiezo.com/linux/linux-recent/">What&#8217;s New</a></li>
 </ul>
 </li>
@@ -1210,7 +1203,7 @@ code, kbd, samp, pre {
 	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-347"><a href="https://techpiezo.com/android/android-recent/">What&#8217;s New</a></li>
 </ul>
 </li>
-<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-39"><a href="https://techpiezo.com/tech-insights/">Insights</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-39"><a href="https://techpiezo.com/tech-insights/">Insights</a></li>
 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1846"><a href="#">More<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
 <ul class="sub-menu">
 	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-42"><a href="https://techpiezo.com/wordpress/">WordPress</a></li>
