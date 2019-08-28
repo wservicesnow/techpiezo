@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Optimize/Compress JPEG files in Ubuntu - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/linux/optimize-compress-jpeg-files-in-ubuntu/" />
+		<title>Install Oracle Java SE Development Kit 12 in Ubuntu - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/linux/install-oracle-java-se-development-kit-12-in-ubuntu/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -409,7 +409,7 @@ amp-carousel > amp-img > img {
 	right: 16px;
 }
 		/* Inline stylesheets */
-:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}	</style>
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cc68ddc{color:#f00}	</style>
 </head>
 
 <body class="">
@@ -426,46 +426,44 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Optimize/Compress JPEG files in Ubuntu</h1>
+		<h1 class="amp-wp-title">Install Oracle Java SE Development Kit 12 in Ubuntu</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-08-27T20:34:01+00:00">
-		1 day ago	</time>
+	<time datetime="2019-08-28T19:52:13+00:00">
+		55 mins ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">In this article, we would discuss how to optimize/compress jpeg files in Ubuntu using command-line utility <strong>jpegoptim</strong>. There could be various reasons why you may want to optimize your jpeg files. For instance, you could be uploading photos to a cloud storage, sharing it on social media networks etc. The utility would also be useful for those who may want to upload jpeg files on their websites. This will reduce the time required to upload jpeg files and at the same time will lead to substantial reduction in bandwidth needed.</p>
-<h5 class="amp-wp-7d27179">Install jpegoptim in Ubuntu</h5>
-<p class="amp-wp-7d27179"><strong>jpegoptim</strong> package is available in standard Ubuntu repository. But, installation will require you to have access to superuser privileges. In case, you don’t have one then contact your System Administrator for assistance. Thereafter, run the following in terminal –</p>
-<pre>sudo apt update
-sudo apt install jpegoptim</pre>
-<h5 class="amp-wp-7d27179">Optimize/Compress JPEG files</h5>
-<p class="amp-wp-7d27179">Before performing any operations using the utility <strong>jpegoptim</strong>, you should know that all operations will be performed on original file(i.e. input file) by default. If you want to preserve your original file then, you need to use the option <code>--dest</code> which is path to the directory where the optimized file will stored. This will leave the original file as it is. We will explain <code>--dest</code> option in subsequent examples.</p>
-<p class="amp-wp-7d27179">The syntax for the utility is –</p>
-<pre>jpegoptim [options] [file_name]</pre>
-<p class="amp-wp-7d27179">To optimize your image file <strong>quality-wise</strong> and save it to a directory leaving your original file intact, use the following command with options <strong><code>--dest</code></strong> and <code>--max</code></p>
-<pre>jpegoptim --dest=directory_path --max=&lt;quality&gt; file_name.jpeg</pre>
-<p class="amp-wp-7d27179">for instance,</p>
-<pre>jpegoptim --dest=/home/ --max=75 file_name.jpeg</pre>
-<p class="amp-wp-7d27179">You can provide maximum quality values for an image between 0 and 100. <strong><code>--max</code></strong> option disables the lossless optimization mode.</p>
-<p class="amp-wp-7d27179">Also, to optimize an image file <strong>size-wise </strong>we have to use the <b><code>--size</code></b> option –</p>
-<pre>jpegoptim --dest=directory_path --size=&lt;size&gt; file_name.jpeg</pre>
-<p class="amp-wp-7d27179">where, <strong>&lt;size&gt;</strong> could be provided in Kilobytes or as a percentage of the image size.</p>
-<p class="amp-wp-7d27179">for instance,</p>
-<pre>jpegoptim --dest=/home/ --size=500 file_name.jpeg
-jpegoptim --dest=/home/ --size=50% file_name.jpeg</pre>
-<p class="amp-wp-7d27179">In above example, the <code>--size</code>=500 reduces the file to a size of 500 KB. And, <code>--size</code>=50% reduces the size of our image file to half.</p>
-<p>In case you are using<strong> <code>--dest</code></strong> option and the file already exists then you would have to use <strong><code>-o</code> or <code>--overwrite</code> </strong>option to overwrite the existing file.</p>
-<p class="amp-wp-7d27179">Note: If you are unable to reduce the file size to the required size then, you need to run the command again on the same file.</p>
-<p class="amp-wp-7d27179">Apart from optimizing a jpeg file, we can do perform other operations too like striping all markers, preserving file permissions, preserving file modification times, etc. All these and other options will be discussed in brief.</p>
-<p class="amp-wp-7d27179"><code>--preserve</code> preserves file modified time<strong>,</strong></p>
-<p class="amp-wp-7d27179"><strong><code>-P</code></strong> or <code>--preserve-perms</code> preserves file permissions,</p>
-<p class="amp-wp-7d27179"><strong><code>--strip-all</code></strong> is used to strip all markers except Comment and Exif / IPTC / PhotoShop / ICC / XMP markers,</p>
-<p class="amp-wp-7d27179"><strong><code>--strip-none</code></strong> to preserve all markers except JFIF (APP0) &amp; Adobe (APP14)</p>
-<p class="amp-wp-7d27179"><strong><code>--strip-exif</code></strong>, <code>--strip-iptc</code>,<strong><code>--strip-icc</code></strong>, <b><code>--strip-xmp</code></b> to strip respective markers as mentioned in the option.</p>
-<p class="amp-wp-7d27179">In conclusion, we have discussed how to optimize/compress jpeg files in Ubuntu using package <strong>jpegoptim</strong>.</p>
+		<p class="amp-wp-7d27179">Java SE Development Kit 12 is provided by Oracle Corporation. At the time of writing the article, the latest stable release of Oracle Java SE Development Kit 12 is 12.0.2. Java is a programming language developed by James Gosling of Sun Microsystems in the year 1995. We already have <span class="amp-wp-cc68ddc"><a href="https://techpiezo.com/java/install-openjdk-jre-jdk-in-ubuntu-19-04/" class="amp-wp-cc68ddc">OpenJDK package</a></span> available in standard Ubuntu repository. In this article, we would discuss how to install Oracle Java SE Development Kit 12 in Ubuntu.</p>
+<h5>Install Oracle Java SE Development Kit 12 in Ubuntu</h5>
+<p class="amp-wp-7d27179">We have to first download the relevant package <strong>(.deb)</strong> file from the Oracle’s website. On the web page, you would also see a .tar.gz package file. Although you can install Oracle Java through both the packages but we would stick with <strong>.deb</strong> package in this article.</p>
+<p class="amp-wp-7d27179">The website link is –</p>
+<pre>https://www.oracle.com/technetwork/java/javase/downloads/jdk12-downloads-5295953.html</pre>
+<p class="amp-wp-7d27179">Choose the one available for <strong>Linux – jdk-12.0.2_linux-x64_bin.deb</strong> after accepting the license agreement. Once the file gets downloaded, you need to run the following command in terminal.</p>
+<p class="amp-wp-7d27179"><strong>Note:</strong> This may require superuser privileges, if you don’t have one then contact your System Administrator for assistance.</p>
+<pre>sudo dpkg -i jdk-12.0.2_linux-x64_bin.deb</pre>
+<p class="amp-wp-7d27179">where,</p>
+<p class="amp-wp-7d27179"><strong>dpkg</strong> is the debian package manager,<br><strong>-i</strong> is for installation.</p>
+<p class="amp-wp-7d27179">This will successfully install the <strong>.deb</strong> package.</p>
+<p class="amp-wp-7d27179">There are times, when more than one package is installed on a single system for same set of functions. In such a scenario, you would have to provide a preference among installed programs. We can solve this issue through Debian’s alternative system. This is executed through command-line utility <strong>update-alternatives</strong> which maintains symbolic links for determining the default programs as per users’ preference.</p>
+<p class="amp-wp-7d27179">Hence, run the following in terminal –</p>
+<pre>sudo update-alternatives --install /usr/bin/javac javac /usr/lib/jvm/jdk-12.0.2/bin/javac 1
+
+sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk-12.0.2/bin/java 1</pre>
+<p class="amp-wp-7d27179">Above code will also work if your system doesn’t recognize command <code>java -version</code> in your terminal. If you have multiple programs installed then choose the default one through –</p>
+<pre>sudo update-alternatives --config javac
+
+sudo update-alternatives --config java</pre>
+<p class="amp-wp-7d27179">Once you are done with the installation process, run the following in terminal –</p>
+<pre>java -version</pre>
+<p class="amp-wp-7d27179">and it will return with the output –</p>
+<pre>java version "12.0.2" 2019-07-16
+Java(TM) SE Runtime Environment (build 12.0.2+10)
+Java HotSpot(TM) 64-Bit Server VM (build 12.0.2+10, mixed mode, sharing)</pre>
+<p class="amp-wp-7d27179">In conclusion, we have discussed how to install Oracle Java SE Development Kit 12 in Ubuntu distribution.</p>
+<p> </p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
