@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Create a favicon.ico with Ubuntu distribution - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/linux/create-a-favicon-ico-with-ubuntu-distribution/" />
+		<title>Resume Google Chrome Downloads in Ubuntu - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/linux/resume-google-chrome-downloads-in-ubuntu/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -426,37 +426,30 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Create a favicon.ico with Ubuntu distribution</h1>
+		<h1 class="amp-wp-title">Resume Google Chrome Downloads in Ubuntu</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-09-03T05:13:18+00:00">
-		11 hours ago	</time>
+	<time datetime="2019-09-03T16:12:37+00:00">
+		7 mins ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">In this article, we will discuss how to create a favicon.ico with Ubuntu distribution. We would illustrate it with the help of <strong>Inkscape</strong> and<strong> Imagemagick</strong> packages. First, we will discuss the installation process for both the packages. To continue with the installation process, you should have access to superuser privileges. In case if you don’t have one, then contact your System Administrator for assistance.</p>
-<h5>Inkscape and Imagemagick in Ubuntu</h5>
-<p class="amp-wp-7d27179">Run the following in terminal –</p>
-<pre>sudo apt install inkscape imagemagick</pre>
-<p class="amp-wp-7d27179">The above command will install package – Inkscape and Imagemagick. Through <strong>Inkscape</strong> package, we will create a Scalable Vector Graphic thereafter we will convert the<strong> .svg extension file to .ico</strong> through <strong>convert</strong> command.</p>
-<h5>Create a Scalable Vector Graphic through Inkscape</h5>
-<p class="amp-wp-7d27179">You could design virtually anything with Inkscape. But, for the purpose of this article we will be creating a text favicon. Open Inkscape and you will taken to blank page. You would also notice a toolbar on the left hand side, we need to click on the icon provided on the toolbar –</p>
-<p><amp-img class="wp-image-2424 size-full aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/09/text.png" alt="create edit text objects inkscape" width="35" height="32" layout="intrinsic"></amp-img></p>
-<p class="amp-wp-7d27179">This is used to create and edit text objects in Inkscape. Alternately, you could press <strong>F8</strong> through keyboard. Thereafter, create a rectangular box in the default empty space. <amp-img class="wp-image-2425 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/09/empty-space-text-inkscape.png" alt="empty space text inkscape" width="485" height="208" layout="intrinsic"></amp-img></p>
-<p class="amp-wp-7d27179">Write anything you would like, and select the text. Just below the menu bar, you would notice that you could change the font of your text. We have chosen the font – <strong>TeX Gyre Chorus</strong>. Choose one as per your liking and make it bold, italic etc.</p>
-<p><amp-img class="wp-image-2426 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/09/text-inkscape.png" alt="text inkscape" width="114" height="53" layout="intrinsic"></amp-img></p>
-<p class="amp-wp-7d27179">Thereafter, press<strong> F1</strong> to select and transform the text object. <amp-img class="wp-image-2428 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/09/transform-text-object.png" alt="transform text object" width="218" height="134" layout="intrinsic"></amp-img></p>
-<p class="amp-wp-7d27179">Notice, you can resize your text object now. Furthermore, we will color the text object using the option <strong>Fill and Stroke</strong>. This could be invoked through <strong>F8</strong> keyboard shortcut. We have used the color #FF6600.</p>
-<p><amp-img class="size-full wp-image-2429 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/09/color-text-object-inkscape.png" alt="color text object inkscape" width="252" height="140" layout="intrinsic"></amp-img></p>
-<p class="amp-wp-7d27179">The text object should be converted to path, this could be done through shortcut key <strong>Ctrl+Shft+C</strong> &amp;<strong> Ctrl+Shft+R</strong> is to resize page to selection. And, save it – <strong>Ctrl+Shft+S</strong>. Save your file as <strong>input.svg</strong>.</p>
-<h5>Convert .svg to .ico</h5>
-<p class="amp-wp-7d27179">To convert <strong>input.svg file to favicon.ico</strong>, you need to run the following in terminal –</p>
-<pre>convert -background transparent -define icon:auto-resize=192 input.svg favicon.ico</pre>
-<p class="amp-wp-7d27179">We have chosen background as transparent, icon size as 192. You can choose icon size as per your requirements.</p>
-<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have discussed how to create and convert a scalable vector graphic to favicon.ico with Ubuntu distribution using packages Inkscape and Imagemagick.</p>
-<p> </p>
+		<p class="amp-wp-7d27179">Google Chrome today commands considerable market share when it comes to web browsers. It was first released on September 02, 2008. In this article, we would focus on how to resume Google Chrome downloads in Ubuntu. Although we can pause and resume our downloads on Google Chrome but, there are times when we can’t resume a download due to variety of reasons including network error. For this purpose, we would use the command-line utility <strong>wget</strong>. It is worth mentioning here that we don’t have to install any package to get the wget command-line utility. Its already there with default OS installation but if its not there for some reason, then run the following in terminal with superuser privileges –</p>
+<pre>sudo apt install wget</pre>
+<h5 class="amp-wp-7d27179">Resume Google Chrome downloads in Ubuntu</h5>
+<p class="amp-wp-7d27179">We will discuss it with the help of an example. Lets say, we were downloading the latest stable release of Ubuntu distribution available on –</p>
+<pre>https://ubuntu.com/download/desktop</pre>
+<p class="amp-wp-7d27179">If 100% downloaded, then the file (ubuntu-18.04.3-desktop-amd64.iso) would have saved to ~/Downloads directory. Now, for some reason the file download gets interrupted. A part of file which gets downloaded is saved with <strong>.crdownload extension</strong> in our ~/Downloads directory. Hence, instead of ubuntu-18.04.3-desktop-amd64.iso it will be now <strong>ubuntu-18.04.3-desktop-amd64.iso.crdownload</strong>.</p>
+<p class="amp-wp-7d27179">All we have to do is rename ubuntu-18.04.3-desktop-amd64.iso.crdownload as ubuntu-18.04.3-desktop-amd64.iso. Hence, run the following in the terminal –</p>
+<pre>mv ubuntu-18.04.3-desktop-amd64.iso.crdownload ubuntu-18.04.3-desktop-amd64.iso</pre>
+<p class="amp-wp-7d27179">Thereafter, we need to get the download link from where our file was getting downloaded. It can be different from the web page from where you were downloading the file due to redirects. Therefore, head over to the Downloads section of Google Chrome by using the shortcut key <strong>Ctrl+J</strong>.</p>
+<p><amp-img class="size-full wp-image-2448 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/09/Resume-Downloads-Google-Chrome.png" alt="Resume Downloads Google Chrome" width="624" height="73" layout="intrinsic"></amp-img></p>
+<p class="amp-wp-7d27179">Notice, the link just below our file name in Download section. Copy the link and run the following in terminal –</p>
+<pre>wget -c 'http://ubuntu-releases.mirrors.estointernet.in/18.04.3/ubuntu-18.04.3-desktop-amd64.iso'</pre>
+<p class="amp-wp-7d27179">This will resume our download. We have used <strong>wget</strong> command-line utility with<strong> -c option</strong>. <strong>-c or –continue option</strong> is for receiving the partially-downloaded file. <strong>Remember</strong>, if -c option is not used with wget then all progress would be lost and the file download would start from scratch.</p>
+<p class="amp-wp-7d27179">In conclusion, we have discussed how to resume interrupted file downloads in Google Chrome web browser using <strong>command-line utility wget</strong>.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">

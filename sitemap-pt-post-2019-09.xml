@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="September 3, 2019 1:51 pm" -->
+<!-- generated-on="September 3, 2019 4:20 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
-		<loc>https://techpiezo.com/linux/create-a-favicon-ico-with-ubuntu-distribution/</loc>
-		<lastmod>2019-09-03T13:50:16+00:00</lastmod>
+		<loc>https://techpiezo.com/linux/resume-google-chrome-downloads-in-ubuntu/</loc>
+		<lastmod>2019-09-03T16:19:34+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: fee0d4523a411c3db1dc487d6625b4ac; Queries for sitemap: 2; Total queries: 13; Seconds: 0; Memory for sitemap: 0MB; Total memory: 2MB -->
+	<url>
+		<loc>https://techpiezo.com/linux/create-a-favicon-ico-with-ubuntu-distribution/</loc>
+		<lastmod>2019-09-03T15:22:33+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+</urlset><!-- Request ID: 77bacc21c2992a7ac6fb116bcb20e041; Queries for sitemap: 2; Total queries: 13; Seconds: 0; Memory for sitemap: 0MB; Total memory: 2MB -->
