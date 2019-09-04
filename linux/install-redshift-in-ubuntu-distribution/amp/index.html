@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Resume Google Chrome Downloads in Ubuntu - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/linux/resume-google-chrome-downloads-in-ubuntu/" />
+		<title>Install Redshift in Ubuntu Distribution - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/linux/install-redshift-in-ubuntu-distribution/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -426,30 +426,53 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Resume Google Chrome Downloads in Ubuntu</h1>
+		<h1 class="amp-wp-title">Install Redshift in Ubuntu Distribution</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-09-03T16:12:37+00:00">
-		1 day ago	</time>
+	<time datetime="2019-09-04T18:03:55+00:00">
+		9 mins ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">Google Chrome today commands considerable market share when it comes to web browsers. It was first released on September 02, 2008. In this article, we would focus on how to resume Google Chrome downloads in Ubuntu. Although we can pause and resume our downloads on Google Chrome but, there are times when we can’t resume a download due to variety of reasons including network error. For this purpose, we would use the command-line utility <strong>wget</strong>. It is worth mentioning here that we don’t have to install any package to get the wget command-line utility. Its already there with default OS installation but if its not there for some reason, then run the following in terminal with superuser privileges –</p>
-<pre>sudo apt install wget</pre>
-<h5 class="amp-wp-7d27179">Resume Google Chrome downloads in Ubuntu</h5>
-<p class="amp-wp-7d27179">We will discuss it with the help of an example. Lets say, we were downloading the latest stable release of Ubuntu distribution available on –</p>
-<pre>https://ubuntu.com/download/desktop</pre>
-<p class="amp-wp-7d27179">If 100% downloaded, then the file (ubuntu-18.04.3-desktop-amd64.iso) would have saved to ~/Downloads directory. Now, for some reason the file download gets interrupted. A part of file which gets downloaded is saved with <strong>.crdownload extension</strong> in our ~/Downloads directory. Hence, instead of ubuntu-18.04.3-desktop-amd64.iso it will be now <strong>ubuntu-18.04.3-desktop-amd64.iso.crdownload</strong>.</p>
-<p class="amp-wp-7d27179">All we have to do is rename ubuntu-18.04.3-desktop-amd64.iso.crdownload as ubuntu-18.04.3-desktop-amd64.iso. Hence, run the following in the terminal –</p>
-<pre>mv ubuntu-18.04.3-desktop-amd64.iso.crdownload ubuntu-18.04.3-desktop-amd64.iso</pre>
-<p class="amp-wp-7d27179">Thereafter, we need to get the download link from where our file was getting downloaded. It can be different from the web page from where you were downloading the file due to redirects. Therefore, head over to the Downloads section of Google Chrome by using the shortcut key <strong>Ctrl+J</strong>.</p>
-<p><amp-img class="size-full wp-image-2448 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/09/Resume-Downloads-Google-Chrome.png" alt="Resume Downloads Google Chrome" width="624" height="73" layout="intrinsic"></amp-img></p>
-<p class="amp-wp-7d27179">Notice, the link just below our file name in Download section. Copy the link and run the following in terminal –</p>
-<pre>wget -c 'http://ubuntu-releases.mirrors.estointernet.in/18.04.3/ubuntu-18.04.3-desktop-amd64.iso'</pre>
-<p class="amp-wp-7d27179">This will resume our download. We have used <strong>wget</strong> command-line utility with<strong> -c option</strong>. <strong>-c or –continue option</strong> is for receiving the partially-downloaded file. <strong>Remember</strong>, if -c option is not used with wget then all progress would be lost and the file download would start from scratch.</p>
-<p class="amp-wp-7d27179">In conclusion, we have discussed how to resume interrupted file downloads in Google Chrome web browser using <strong>command-line utility wget</strong>.</p>
+		<p class="amp-wp-7d27179">With Redshift, we can set color temperatures as per our requirements. The package is available in Ubuntu’s repository. Before proceeding with its installation process and its use, we discuss a bit about color temperatures. In 1848, William Kelvin heated a block of carbon while doing a research and observed the color changes at different levels of temperature. At lower temperatures, red color was detected which later progressed to yellow and blue as the temperature increased. Ultimately, white color was detected at the highest temperatures. <strong>Warmer colors</strong> – red and yellow are in the range of 2000K to 3000K whereas <strong>Cooler colors</strong> – blue and white are in the range of 5500K to 6500K.</p>
+<h5>Install Redshift in Ubuntu Distribution</h5>
+<p class="amp-wp-7d27179">Redshift package is already available in default Ubuntu repository. You must have access to superuser privileges, in case you don’t have one then contact your System Administrator for assistance. Thereafter, run the following in terminal –</p>
+<pre>sudo apt update
+sudo apt install redshift redshift-gtk</pre>
+<p class="amp-wp-7d27179">This will install Redshift package. Next, we will discuss how to set up its configuration.</p>
+<h5>Configure Redshift</h5>
+<p class="amp-wp-7d27179">With Redshift package, we can set color temperature depending on whether its day or night. During early morning or in twilight hours, the package enters a transition phase wherein gradual changes occur in color temperatures. Thereby, making the user adapt to changes with minimal discomfort.</p>
+<p class="amp-wp-7d27179"> The default temperature value during daytime is 6500K and at night its 4500K. To set the color temperature as per our requirements, look for its configuration file –</p>
+<pre>~/.config/redshift.conf</pre>
+<p class="amp-wp-7d27179">The default configuration file may resemble –</p>
+<pre>[redshift]
+temp-day=3500
+temp-night=3000
+location-provider=manual
+transition=1
+
+[manual]
+lat=40.7
+lon=74.0</pre>
+<p class="amp-wp-7d27179">where,<br><strong>temp-day</strong> is daytime temperature,<br><strong>temp-night</strong> is night temperature,<br><strong>transition</strong> for smooth transition between daytime and night color temperature.<strong> 1 – enable, 0 – disable</strong>, and<br><strong>location-provider</strong> is set to <strong>manual</strong> and latitude and longitude positions are provided below, values could also be<strong> geoclue/geoclue2</strong>.</p>
+<p class="amp-wp-7d27179">Apart from the above mentioned options you could also set values for gamma, dawn-time, dusk-time, screen brightness for day and night etc. All these options and their syntax would be discussed next.</p>
+<p class="amp-wp-7d27179">To set screen brightness at daytime –</p>
+<pre>brightness-day = 0.1 to 1.0</pre>
+<p class="amp-wp-7d27179">To set screen brightness at night –</p>
+<pre>brightness-night = 0.1 to 1.0</pre>
+<p class="amp-wp-7d27179">Both dusk-time as well as dawn-time need to be specified together. This provides the time period for transition from day to night and vice versa.</p>
+<pre>dusk-time = HH:MM
+dawn-time = HH:MM</pre>
+<p class="amp-wp-7d27179">To adjust Gamma for day &amp; night –</p>
+<pre>gamma = R:G:B</pre>
+<p class="amp-wp-7d27179">Adjust Gamma only for day –</p>
+<pre>gamma-day = R:G:B</pre>
+<p class="amp-wp-7d27179">To adjust Gamma only for night –</p>
+<pre>gamma-night = R:G:B</pre>
+<p class="amp-wp-7d27179">Apart from the command-line utility for redshift, you would also notice that we have installed the package redshift-gtk. The package provides us the GUI for Redshift, a notification icon. Although we can enable/disable, suspend, autostart and get information about our configuration from the icon itself. But, we can do more by editing configuration file rather than solely relying on its graphical user interface.</p>
+<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have discuss how to adjust color temperatures using the package redshift in Ubuntu distribution.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
