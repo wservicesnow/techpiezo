@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Benefits of Implementing Search Engine Optimization - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/seo/benefits-of-implementing-search-engine-optimization/" />
+		<title>Download a file in parts with curl in Ubuntu - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/linux/download-a-file-in-parts-with-curl-in-ubuntu/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -426,32 +426,49 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Benefits of Implementing Search Engine Optimization</h1>
+		<h1 class="amp-wp-title">Download a file in parts with curl in Ubuntu</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-05-28T17:14:17+00:00">
-		4 months ago	</time>
+	<time datetime="2019-09-12T21:34:27+00:00">
+		21 mins ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">First we need to understand that by implementing Search Engine Optimization techniques, we are in for a long haul. It could take months before we could say that through Search Engine Optimization we have got effective outcomes. We can never be sure that only by implementing just one part of the technique, we could get desired effect. It is basically a combination of several factors that would ultimately lead to our target of higher rank on a Search Engine Results Page (SERP).</p>
-<p class="amp-wp-7d27179">There are numerous benefits of implementing a Search Engine Optimization technique. We will discuss a few now:</p>
-<h4>A. Implementing SEO results in higher organic traffic:</h4>
-<p class="amp-wp-7d27179">We already know that the websites, which are listed on the first few pages are going to get more traffic than the websites which are listed on, say, 1000<sup>th</sup> page. The reason for the above is quite obvious. People are looking to get their search query related results in the shortest amount of time. Nobody would wait to read all the website links up to the 1000<sup>th</sup> page, they are looking for a quick resolution of their query.</p>
-<p class="amp-wp-7d27179">It could easily be understood with the help of an example, some user ABC wants to find the address of XYZ store in his locality. He would simply type in the store name, and pretty much that’s all he / she has to do to get the address. The result would itself be provided on the first page and user moves on.</p>
-<p class="amp-wp-7d27179">So, SEO technique if implemented appropriately would lead to more organic traffic, if you have the content that the user is looking for.</p>
-<h4>B. Associated Costs of Implementing SEO are next to nothing:</h4>
-<p class="amp-wp-7d27179">We do not have to incur huge cost in printing brochures, newspaper advertisements, television ads etc. There could be some cost associated with hiring a SEO expert to get our work done, if we do not know the methodology. But, if we have brief idea of how we can make use of the technique, then we can do it for ourselves.</p>
-<h4>C. Credibility increases with the increase in organic traffic:</h4>
-<p class="amp-wp-7d27179">Search Engine Results Page ranks websites on the basis of content quality. Fresh content would also keep users interested and bring regular flow of organic traffic. This also helps us in creating a brand out of our product.</p>
-<p class="amp-wp-7d27179">The website that is ranked higher on a Search Engine Results Page would have some credibility associated with it. Organizations that have funds to invest in branding / advertisements can get traffic through variety of channels but those with the lack of funds have could have tough time bringing the traffic to their website. For those, Search Engine Optimization is a tool that can be used to produce desired outcomes. It takes its own time but on a longer time horizon, the SEO technique would built an organic traffic base that would be free from any cheap tricks. SEO technique would then assist us in creating a brand with minimal investment.</p>
+		<p class="amp-wp-7d27179">There could be multiple reasons why one would want to download a larger file in parts. One of the most common reason affecting users is limited bandwidth available. In this article, we would discuss how to download a file in parts with curl in Ubuntu. <strong>curl</strong> – a command-line utility is used to transfer data from/to a server. Although curl offers numerous features but for the purpose of this article we would only discuss its <strong>-range</strong> option.</p>
+<h5>Install curl in Ubuntu</h5>
+<p class="amp-wp-7d27179">The following operations would require you to have superuser privileges. In case, you don’t have one then contact your System Administrator for assistance. <strong>curl</strong> package is already available in standard Ubuntu repository. We need to update the repository to get the latest version available first thereafter, we will install the package. Run the following in terminal –</p>
+<pre>sudo apt update
+sudo apt install curl</pre>
+<h5>Download a file in parts with curl</h5>
+<p class="amp-wp-7d27179">We would discuss the steps involved with the help of an example. Lets say we are about to download <strong>ubuntu-19.04-desktop-amd64.iso</strong>. The download size is of about 2.0GB. For some reason, we can download the file only in parts of 500MBs. Therefore, we would use <strong>curl</strong> command-line utility with <strong>-range option</strong> defining the size of download for each of the parts.</p>
+<p class="amp-wp-7d27179">First, we will discuss the syntax for the command –</p>
+<pre>curl --range start-stop -o file-name.partn &lt;url&gt;</pre>
+<p class="amp-wp-7d27179">where,</p>
+<p class="amp-wp-7d27179"><strong>curl</strong> is the command-line utility,<br><strong>– – range</strong> specifies the range of the file to be downloaded,<br><strong>start-stop</strong> to define the start and stop byte range,<br><strong>-o</strong> is for output,<br><strong>file-name-n.part</strong> is the output for part file downloaded, and<br><strong>&lt;url&gt;</strong> from where the file gets downloaded.</p>
+<p class="amp-wp-7d27179">So, it may look like –</p>
+<pre>curl --range 0-499999999 -o ubuntu.part1 http://releases.ubuntu.com/19.04/ubuntu-19.04-desktop-amd64.iso</pre>
+<p class="amp-wp-7d27179">This downloads the file size of approximately 475 MBs. We have not chosen the exact file size of 500MBs to make it less tedious.</p>
+<p class="amp-wp-7d27179">Similarly for subsequent parts –</p>
+<pre>curl --range 500000000-999999999 -o ubuntu.part2 http://releases.ubuntu.com/19.04/ubuntu-19.04-desktop-amd64.iso</pre>
+<pre>curl --range 1000000000-1499999999 -o ubuntu.part3 http://releases.ubuntu.com/19.04/ubuntu-19.04-desktop-amd64.iso</pre>
+<pre>curl --range 1500000000- -o ubuntu.part4 http://releases.ubuntu.com/19.04/ubuntu-19.04-desktop-amd64.iso</pre>
+<p class="amp-wp-7d27179">In the last instruction we have not specified any stop range. It will download the remaining part of the file itself.</p>
+<p class="amp-wp-7d27179">Lastly, we need to combine different parts of the downloaded file. To get the desired outcome, we would use <strong>cat</strong> command.</p>
+<h5>Join downloaded parts of our file</h5>
+<p class="amp-wp-7d27179">First, we will discuss the syntax of the command.</p>
+<pre>cat download-file.part &gt; file-name.original</pre>
+<p class="amp-wp-7d27179">where,</p>
+<p class="amp-wp-7d27179"><strong>cat</strong> is the command-line utility used to join files,<br><strong>download-file.part</strong> are parts which we have just downloaded, and<br><strong>file-name.original</strong> the original name of our file.</p>
+<p class="amp-wp-7d27179">We will continue with above example to make things more clear.</p>
+<pre>cat ubuntu.part* &gt; ubuntu-19.04-desktop-amd64.iso</pre>
+<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have discussed how to download parts of a file with curl and subsequently join them to get the desired output.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
 			<div class="amp-wp-meta amp-wp-tax-category">
-		Categories: <a href="https://techpiezo.com/seo/" rel="category tag">SEO</a>	</div>
+		Categories: <a href="https://techpiezo.com/linux/" rel="category tag">Linux</a>, <a href="https://techpiezo.com/linux/linux-quick-fix/" rel="category tag">Quick Fix</a>	</div>
 
 	</footer>
 </article>
