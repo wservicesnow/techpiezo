@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="September 15, 2019 7:53 am" -->
+<!-- generated-on="September 15, 2019 8:01 am" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>https://techpiezo.com/linux/fixed-command-add-apt-repository-not-found-in-ubuntu/</loc>
-		<lastmod>2019-09-15T07:51:06+00:00</lastmod>
+		<lastmod>2019-09-15T08:00:21+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
@@ -54,4 +54,4 @@
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: 9b7f3b5f07ec10d1c0e928446b44f08e; Queries for sitemap: 2; Total queries: 13; Seconds: 0; Memory for sitemap: 0MB; Total memory: 2MB -->
+</urlset><!-- Request ID: 3ae61cdc534e234caf0eb34b2f2aae95; Queries for sitemap: 2; Total queries: 13; Seconds: 0; Memory for sitemap: 0MB; Total memory: 2MB -->
