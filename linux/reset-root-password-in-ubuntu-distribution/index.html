@@ -6,11 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
-	<title>Switch back to ifupdown - /etc/network/interfaces in Ubuntu - TechPiezo</title>
+	<title>Reset root password in Ubuntu distribution - TechPiezo</title>
 
 <!-- This site is optimized with the Yoast SEO plugin v11.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
-<meta name="description" content="There are still many users who prefer ifupdown package over netplan. Ifupdown is a tool which is used to configure network interfaces."/>
-<link rel="canonical" href="https://techpiezo.com/linux/switch-back-to-ifupdown-etc-network-interfaces-in-ubuntu/" />
+<meta name="description" content="If we have forgotten root password then we can&#039;t reset it from the Ubuntu distribution itself. We need to make use of GRUB menu to get things done."/>
+<link rel="canonical" href="https://techpiezo.com/linux/reset-root-password-in-ubuntu-distribution/" />
 <!-- / Yoast SEO plugin. -->
 
 <style id="ct-main-styles-inline-css" type="text/css">:root {
@@ -768,7 +768,7 @@ code, kbd, samp, pre {
 <link rel='stylesheet' id='ct-style-css'  href='https://techpiezo.com/wp-content/themes/blocksy/style.css' type='text/css' media='all' />
 <link rel='stylesheet' id='ct-main-styles-css'  href='https://techpiezo.com/wp-content/themes/blocksy/static/bundle/main.css' type='text/css' media='all' />
 
-<link rel="amphtml" href="https://techpiezo.com/linux/switch-back-to-ifupdown-etc-network-interfaces-in-ubuntu/amp/"><link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" sizes="32x32" />
+<link rel="amphtml" href="https://techpiezo.com/linux/reset-root-password-in-ubuntu-distribution/amp/"><link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" sizes="32x32" />
 <link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" sizes="192x192" />
 <link rel="apple-touch-icon-precomposed" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" />
 <meta name="msapplication-TileImage" content="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" />
@@ -798,7 +798,7 @@ code, kbd, samp, pre {
 
 </head>
 
-<body class="post-template-default single single-post postid-938 single-format-standard wp-custom-logo ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
+<body class="post-template-default single single-post postid-2617 single-format-standard wp-custom-logo ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
 <div id="main-container">
 
 	<header
@@ -922,13 +922,13 @@ code, kbd, samp, pre {
 			<section>
 				
 	<article
-		id="post-938"
-		class="post-938 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"		data-content="boxed"				>
+		id="post-2617"
+		class="post-2617 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"		data-content="boxed"				>
 
 		
 		<section class="hero-section" data-type="type-1" data-alignment="left">
 			<header class="entry-header">
-				<h1 class="page-title">Switch back to ifupdown &#8211; /etc/network/interfaces in Ubuntu</h1>
+				<h1 class="page-title">Reset root password in Ubuntu distribution</h1>
 				<div class="entry-meta has-avatar" data-label data-type="simple">
 		
 
@@ -955,7 +955,7 @@ code, kbd, samp, pre {
 					<span
 						class="ct-meta-element"
 						>
-						Jul 25, 2019					</span>
+						Sep 20, 2019					</span>
 				</li>
 			
 			
@@ -965,53 +965,44 @@ code, kbd, samp, pre {
 					</header>
 		</section>
 
-		<figure class="ct-featured-image ct-hidden-sm" ><div class="ct-image-container ct-lazy" ><img class="attachment-full size-full" alt="Switch Back to ifupdown in Ubuntu" data-lazy="https://techpiezo.com/wp-content/uploads/2019/07/Switch-Back-to-ifupdown.svg" data-object-fit="~" /><noscript><img src="https://techpiezo.com/wp-content/uploads/2019/07/Switch-Back-to-ifupdown.svg" class="attachment-full size-full" alt="Switch Back to ifupdown in Ubuntu" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
+		<figure class="ct-featured-image ct-hidden-sm" ><div class="ct-image-container ct-lazy" ><img class="attachment-full size-full" alt="Reset root password in Ubuntu distribution" data-lazy="https://techpiezo.com/wp-content/uploads/2019/09/Reset-root-password-in-Ubuntu-distribution.svg" data-object-fit="~" /><noscript><img src="https://techpiezo.com/wp-content/uploads/2019/09/Reset-root-password-in-Ubuntu-distribution.svg" class="attachment-full size-full" alt="Reset root password in Ubuntu distribution" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
 		
 		<div class="entry-content">
-			<p style="text-align: justify;"><strong>Netplan</strong> is a network configuration tool which was introduced in the Ubuntu 17.10. Prior to that, Ubuntu had <strong>ifupdown</strong> package to configure and manage networks. There are still many users who would prefer <strong>ifupdown</strong> package for managing their networks for various reasons. In this article, we would discuss how desktop users can switch back to <strong>ifupdown</strong> package and manage their networks through <strong>/etc/network/interfaces</strong> configuration file. Furthermore, they can also use command-line utilities like nmcli, nmtui or GUI based network-manager-gnome to manage their networks.</p>
-<h4 style="text-align: justify;">Install ifupdown package</h4>
-<p style="text-align: justify;">Superuser privilege is a prerequisite before making any changes, if you don&#8217;t have one then contact your System Administrator for assistance.</p>
-<p style="text-align: justify;">You need to install<strong> ifupdown</strong> package. To do so, run the following &#8211;</p>
-<pre>sudo apt update
-sudo apt install ifupdown</pre>
-<p style="text-align: justify;">Also, if you plan on to Install GUI version of Network Manager &#8211; various other tools like nmcli, nmtui are also included in it.</p>
-<pre>sudo apt install network-manager-gnome</pre>
-<h4 style="text-align: justify;">Remove Netplan package</h4>
-<p style="text-align: justify;">If you don&#8217;t want to keep configuration and other related files of <strong>Netplan</strong> package installed,</p>
-<pre>sudo apt purge netplan.io</pre>
-<p style="text-align: justify;">To remove associated folders &#8211;</p>
-<pre>sudo rm -rf /usr/share/netplan 
-sudo rm -rf /etc/netplan</pre>
-<p style="text-align: justify;">So far, we have installed ifupdown package and subsequently removed Netplan package. Now, we will be editing<strong> /etc/network/interfaces</strong> file.</p>
-<h4 style="text-align: justify;">Make necessary changes to /etc/network/interfaces</h4>
-<pre>sudo nano /etc/network/interfaces</pre>
-<p style="text-align: justify;">We have used nano text editor, you may choose one of your choice. In <strong>/etc/network/interfaces</strong> configuration file, make the following entries &#8211;</p>
-<pre>auto lo
-iface lo inet loopback</pre>
-<p style="text-align: justify;">Now, we are have got two options available with us. Either we configure<strong> /etc/network/interfaces</strong> file manually or, let any of the network-manager tools do that for us. We will discuss both the available options in brief next.</p>
-<p style="text-align: justify;"><span style="font-size: 14pt;"><strong>Option 1. Configure</strong><strong> /etc/network/interfaces</strong><strong> file.</strong></span></p>
-<p style="text-align: justify;">Use the following command to identify the network interfaces &#8211;</p>
-<pre>ip a</pre>
-<p style="text-align: justify;">For instance, one interface could be &#8211; <strong>enp2s0</strong> and the most basic IPv4 DHCP configuration may resemble &#8211;</p>
-<pre>auto lo
-iface lo inet loopback
-
-auto enp2s0
-iface enp2s0 inet dhcp</pre>
-<p style="text-align: justify;"><strong>Note:</strong> You need to identify the interface which you are trying to connect with. Also, the above code just resemble the most common configuration. For advanced configurations, you are advised to refer to man pages for network interface configuration of <strong>ifup </strong>and<strong> ifdown</strong> packages. These can be accessed by running the following command &#8211;</p>
-<pre>man 5 interfaces</pre>
-<p style="text-align: justify;">After making relevant changes mentioned in the <strong>man</strong> pages do,</p>
-<pre>sudo systemctl restart networking</pre>
-<p><span style="font-size: 14pt;"><strong>Option 2. Use</strong><strong> network-manager </strong><strong>tools.</strong></span></p>
-<p style="text-align: justify;">Edit the following configuration file &#8211;</p>
-<pre style="text-align: justify;">sudo nano /etc/NetworkManager/NetworkManager.conf</pre>
-<p style="text-align: justify;">In the configuration file, you need to edit &#8211; <strong>managed=false</strong> and update it with <strong>managed=true</strong></p>
-<p style="text-align: justify;">Also, we need to make an empty file by using the touch command.</p>
-<pre>sudo touch /etc/NetworkManager/conf.d/10-globally-managed-devices.conf</pre>
-<p style="text-align: justify;">The above steps are being advised to get rid of the error &#8211; &#8220;<strong>devices not managed</strong>&#8221; that comes up during network configuration.</p>
-<p style="text-align: justify;">Now, we have got three commonly used tools available to us &#8211; <strong>nmcli</strong>, <strong>nmtui</strong>, or graphical version: <strong>network-manager-gnome</strong>.</p>
-<p style="text-align: justify;">If you are an advanced user, go for<strong> nmcli</strong> else either run<strong> nmtui</strong> in terminal or use <strong>network-manager-gnome</strong>. The changes you make would be according to your requirements.</p>
-<p style="text-align: justify;">Conclusion, in this article we have discussed the ways to manage your network configuration if you are planning to switch back to <strong>ifupdown</strong> package.</p>
+			<p style="text-align: justify;">By default, when we install Ubuntu it doesn&#8217;t ask for root&#8217;s password. The password we provided at the time of installation enables us to access superuser privileges through <strong>sudo -i</strong> command. But, at times we need to create a separate password to access superuser privileges for security reasons. In case, we forget our root&#8217;s password it is next to impossible to make any relevant changes to our Ubuntu distribution. Therefore, it becomes imperative for us to reset root password. The method which we are about to discuss will let us reset both root&#8217;s password as well as of any other user. It is pretty straightforward and easy in execution.</p>
+<p style="text-align: justify;">But, there are few things we need to keep in mind as the steps we are about to discuss could also be done by someone else too &#8211;</p>
+<ol style="text-align: justify;">
+<li>Don&#8217;t allow anyone to have physical access to our hard disk.</li>
+<li>We need to lock BIOS &#8211; this won&#8217;t let anyone who has bootable removable media to access our filesystem.</li>
+<li>Always set GRUB password and lock GRUB menu.</li>
+</ol>
+<p style="text-align: justify;">We would discuss each of these in coming articles. For the purpose of this article, we would focus only on how to reset root password of our Ubuntu distribution. Also, what we are about to do may damage our system so it is advisable to keep backup beforehand.</p>
+<h5>Reset root password in Ubuntu distribution</h5>
+<p style="text-align: justify;">First, we need to reboot our system. And, just when its about to boot long press <strong>SHIFT key</strong> to get <strong>GRUB Menu</strong>.</p>
+<p><img class="aligncenter wp-image-2621 size-full" src="https://techpiezo.com/wp-content/uploads/2019/09/grub-menu.png" alt="grub menu" width="831" height="547" /></p>
+<p style="text-align: justify;">Next, we need to <strong>press &#8216;e&#8217;</strong> to edit the first entry &#8216;<strong>Ubuntu</strong>&#8216;.</p>
+<p><img class="aligncenter wp-image-2623 size-full" src="https://techpiezo.com/wp-content/uploads/2019/09/gnu-grub.png" alt="gnu-grub" width="782" height="567" /></p>
+<p style="text-align: justify;">We need to scroll down to the line starting with <strong>linux /boot/vmlinuz</strong>&#8230; and append the line with &#8211;</p>
+<pre>init=/bin/bash</pre>
+<p style="text-align: justify;">To illustrate &#8211;</p>
+<p><img class="size-full wp-image-2624 aligncenter" src="https://techpiezo.com/wp-content/uploads/2019/09/init-bin-bash.png" alt="init bin bash" width="780" height="580" /></p>
+<p style="text-align: justify;">Now, we need to press<strong> Ctrl+x</strong> or <strong>F10</strong> to boot our system. It will take us to command-line prompt &#8211;</p>
+<p style="text-align: justify;"><strong>root@(none):/#</strong></p>
+<p style="text-align: justify;">Next, we will have to <strong>remount / in read/write</strong> mode. So, at the prompt run the following &#8211;</p>
+<pre>mount -o remount,rw /</pre>
+<p style="text-align: justify;">Now, we can rest password for any user through <strong>passwd</strong> command. It should be &#8211;</p>
+<pre>passwd &lt;user-name&gt;</pre>
+<p style="text-align: justify;">To reset password for root &#8211;</p>
+<pre>passwd root</pre>
+<p style="text-align: justify;">It will ask us for new password twice. Thereafter, we should get the following message if password updation is successfully done.</p>
+<pre>​passwd: password updated successfully</pre>
+<h5>passwd: Authentication token manipulation error</h5>
+<p style="text-align: justify;">If for some reason things didn&#8217;t go well then we may get the following error &#8211;</p>
+<pre>passwd: Authentication token manipulation error
+passwd: password unchanged</pre>
+<p style="text-align: justify;">Recheck whether we have typed the following command correctly &#8211;</p>
+<pre>mount -o remount,rw /</pre>
+<p>If everything is successfully completed then reboot the system.</p>
+<p style="text-align: justify;">In conclusion, we have discussed what things we need to keep in mind before we do a reset of root&#8217;s password. Thereafter, we discussed the steps needed to get the desired outcome.</p>
 		</div>
 
 		
@@ -1062,19 +1053,6 @@ iface enp2s0 inet dhcp</pre>
 				<ul data-columns="3">
 											
 						<li>
-							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/reset-root-password-in-ubuntu-distribution/"><img width="1" height="1" class="attachment-large size-large" alt="Reset root password in Ubuntu distribution" data-lazy="https://techpiezo.com/wp-content/uploads/2019/09/Reset-root-password-in-Ubuntu-distribution.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/09/Reset-root-password-in-Ubuntu-distribution.svg" class="attachment-large size-large" alt="Reset root password in Ubuntu distribution" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
-							<h3 class="related-entry-title">
-								<a href="https://techpiezo.com/linux/reset-root-password-in-ubuntu-distribution/">Reset root password in Ubuntu distribution</a>
-							</h3>
-
-							<div class="related-entry-meta">
-								<span>
-									Sep 20, 2019								</span>
-
-															</div>
-						</li>
-											
-						<li>
 							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/fixed-command-add-apt-repository-not-found-in-ubuntu/"><img width="1" height="1" class="attachment-large size-large" alt="Command add-apt-repository not found in Ubuntu" data-lazy="https://techpiezo.com/wp-content/uploads/2019/09/Command-add-apt-repository-not-found.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/09/Command-add-apt-repository-not-found.svg" class="attachment-large size-large" alt="Command add-apt-repository not found in Ubuntu" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
 							<h3 class="related-entry-title">
 								<a href="https://techpiezo.com/linux/fixed-command-add-apt-repository-not-found-in-ubuntu/">[Fixed] Command &#8216;add-apt-repository&#8217; not found in Ubuntu</a>
@@ -1096,6 +1074,19 @@ iface enp2s0 inet dhcp</pre>
 							<div class="related-entry-meta">
 								<span>
 									Sep 14, 2019								</span>
+
+															</div>
+						</li>
+											
+						<li>
+							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/download-a-file-in-parts-with-curl-in-ubuntu/"><img width="1" height="1" class="attachment-large size-large" alt="Download a file in parts with curl" data-lazy="https://techpiezo.com/wp-content/uploads/2019/09/Download-a-file-in-parts-with-curl.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/09/Download-a-file-in-parts-with-curl.svg" class="attachment-large size-large" alt="Download a file in parts with curl" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<h3 class="related-entry-title">
+								<a href="https://techpiezo.com/linux/download-a-file-in-parts-with-curl-in-ubuntu/">Download a file in parts with curl in Ubuntu</a>
+							</h3>
+
+							<div class="related-entry-meta">
+								<span>
+									Sep 12, 2019								</span>
 
 															</div>
 						</li>

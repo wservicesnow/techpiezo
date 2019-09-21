@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Use IBus &amp; change Keyboard Input language in Ubuntu - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/linux/use-ibus-change-keyboard-input-language-in-ubuntu/" />
+		<title>Reset root password in Ubuntu distribution - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/linux/reset-root-password-in-ubuntu-distribution/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -426,39 +426,49 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Use IBus &#038; change Keyboard Input language in Ubuntu</h1>
+		<h1 class="amp-wp-title">Reset root password in Ubuntu distribution</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-09-06T12:43:05+00:00">
-		2 weeks ago	</time>
+	<time datetime="2019-09-20T18:12:22+00:00">
+		11 hours ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">IBus is an acronym for Intelligent Input Bus. It is an input method for multiple languages in Linux distributions. Furthermore, we need to install an IM engine along with IBus. An IM engine provides the required support for multiple languages. In this article, we would discuss how to install and configure IBus to change our Keyboard’s input language in Ubuntu distribution.</p>
-<h5>Install IBus and related packages</h5>
-<p class="amp-wp-7d27179">The following operations would require superuser privileges, in case you don’t have one then contact your System Administrator for assistance. As we have already discussed, we need to install IBus along with an IM engine. Therefore, run the following in terminal –</p>
-<pre>sudo apt install ibus-m17n</pre>
-<p class="amp-wp-7d27179">Observe, we are only installing <strong>ibus-m17n</strong> package. All other relevant packages would get installed through <strong>ibus-m17n</strong> package itself.</p>
-<h5>Configure IBus</h5>
-<p class="amp-wp-7d27179">Once installation gets completed, we will have to configure the package Ibus. This could be achieved through <strong>IBus Preferences</strong> option available in our Main menu. After clicking the IBus Preferences, it will open a dialog box –</p>
-<p><amp-img class="size-full wp-image-2478 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/09/IBus-Daemon-not-running.png" alt="IBus Daemon not running" width="733" height="139" layout="intrinsic"></amp-img></p>
-<p class="amp-wp-7d27179">It informs us that IBus Daemon is not running. To start it we need to click <strong>Yes</strong>.</p>
-<p class="amp-wp-7d27179">This will start the IBus Daemon successfully, thereafter you will be presented with another dialog box specifying the current status for IBus Daemon – Click <strong>OK</strong>.</p>
-<p><amp-img class="size-full wp-image-2480 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/09/IBus-Started.png" alt="IBus Started" width="764" height="141" layout="intrinsic"></amp-img></p>
-<p class="amp-wp-7d27179">Incase, you are unable to start IBus Daemon then change the <strong>Keyboard input method system to IBus in Language support</strong> package. Remember, you need to log out of the system after making the changes. Otherwise, it will not allow you to switch between input methods.</p>
-<p class="amp-wp-7d27179">Thereafter, select the Input method tab in IBus Preferences –</p>
-<p><amp-img class="size-full wp-image-2481 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/09/IBus-Preferences.png" alt="IBus Preferences" width="814" height="474" layout="intrinsic"></amp-img></p>
-<p class="amp-wp-7d27179">To Add an Input method, click <strong>Add.</strong></p>
-<p class="amp-wp-7d27179">Next, select the input method which you would like to use, we have selected <strong>German</strong> –</p>
-<p><amp-img class="size-full wp-image-2482 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/09/select-input-method.png" alt="select input method" width="314" height="358" layout="intrinsic"></amp-img></p>
-<p class="amp-wp-7d27179">After you click on <strong>Add</strong> button, the input language will be added to your input method.</p>
-<p><amp-img class="size-full wp-image-2483 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/09/input-method-added.png" alt="input method added" width="817" height="468" layout="intrinsic"></amp-img></p>
-<p class="amp-wp-7d27179">Lastly, you could switch between input method through Keyboard shortcut keys or clicking the IBus panel icon. Keyboard shortcut keys can be changed in General tab. Here, by default keyboard shortcut key for switching between input methods is <strong>&lt;Super&gt;space</strong>.</p>
-<p><amp-img class="size-full wp-image-2484 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/09/keyboard-shortcut-input-method.png" alt="keyboard shortcut input method" width="812" height="470" layout="intrinsic"></amp-img></p>
-<p class="amp-wp-7d27179">Open any text editor like gedit, featherpad to check if you can successfully switch between input methods.</p>
-<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have discuss how to install and configure IBus to change keyboard input languages in this article.</p>
+		<p class="amp-wp-7d27179">By default, when we install Ubuntu it doesn’t ask for root’s password. The password we provided at the time of installation enables us to access superuser privileges through <strong>sudo -i</strong> command. But, at times we need to create a separate password to access superuser privileges for security reasons. In case, we forget our root’s password it is next to impossible to make any relevant changes to our Ubuntu distribution. Therefore, it becomes imperative for us to reset root password. The method which we are about to discuss will let us reset both root’s password as well as of any other user. It is pretty straightforward and easy in execution.</p>
+<p class="amp-wp-7d27179">But, there are few things we need to keep in mind as the steps we are about to discuss could also be done by someone else too –</p>
+<ol class="amp-wp-7d27179"><li>Don’t allow anyone to have physical access to our hard disk.</li>
+<li>We need to lock BIOS – this won’t let anyone who has bootable removable media to access our filesystem.</li>
+<li>Always set GRUB password and lock GRUB menu.</li>
+</ol><p class="amp-wp-7d27179">We would discuss each of these in coming articles. For the purpose of this article, we would focus only on how to reset root password of our Ubuntu distribution. Also, what we are about to do may damage our system so it is advisable to keep backup beforehand.</p>
+<h5>Reset root password in Ubuntu distribution</h5>
+<p class="amp-wp-7d27179">First, we need to reboot our system. And, just when its about to boot long press <strong>SHIFT key</strong> to get <strong>GRUB Menu</strong>.</p>
+<p><amp-img class="aligncenter wp-image-2621 size-full amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/09/grub-menu.png" alt="grub menu" width="831" height="547" layout="intrinsic"></amp-img></p>
+<p class="amp-wp-7d27179">Next, we need to <strong>press ‘e’</strong> to edit the first entry ‘<strong>Ubuntu</strong>‘.</p>
+<p><amp-img class="aligncenter wp-image-2623 size-full amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/09/gnu-grub.png" alt="gnu-grub" width="782" height="567" layout="intrinsic"></amp-img></p>
+<p class="amp-wp-7d27179">We need to scroll down to the line starting with <strong>linux /boot/vmlinuz</strong>… and append the line with –</p>
+<pre>init=/bin/bash</pre>
+<p class="amp-wp-7d27179">To illustrate –</p>
+<p><amp-img class="size-full wp-image-2624 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/09/init-bin-bash.png" alt="init bin bash" width="780" height="580" layout="intrinsic"></amp-img></p>
+<p class="amp-wp-7d27179">Now, we need to press<strong> Ctrl+x</strong> or <strong>F10</strong> to boot our system. It will take us to command-line prompt –</p>
+<p class="amp-wp-7d27179"><strong>root@(none):/#</strong></p>
+<p class="amp-wp-7d27179">Next, we will have to <strong>remount / in read/write</strong> mode. So, at the prompt run the following –</p>
+<pre>mount -o remount,rw /</pre>
+<p class="amp-wp-7d27179">Now, we can rest password for any user through <strong>passwd</strong> command. It should be –</p>
+<pre>passwd &lt;user-name&gt;</pre>
+<p class="amp-wp-7d27179">To reset password for root –</p>
+<pre>passwd root</pre>
+<p class="amp-wp-7d27179">It will ask us for new password twice. Thereafter, we should get the following message if password updation is successfully done.</p>
+<pre>​passwd: password updated successfully</pre>
+<h5>passwd: Authentication token manipulation error</h5>
+<p class="amp-wp-7d27179">If for some reason things didn’t go well then we may get the following error –</p>
+<pre>passwd: Authentication token manipulation error
+passwd: password unchanged</pre>
+<p class="amp-wp-7d27179">Recheck whether we have typed the following command correctly –</p>
+<pre>mount -o remount,rw /</pre>
+<p>If everything is successfully completed then reboot the system.</p>
+<p class="amp-wp-7d27179">In conclusion, we have discussed what things we need to keep in mind before we do a reset of root’s password. Thereafter, we discussed the steps needed to get the desired outcome.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
