@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Screentest - to test quality of Screens in Ubuntu - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/tech-insights/screentest-to-test-quality-of-screens-in-ubuntu/" />
+		<title>Enable or Disable root user account access in Ubuntu - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/linux/enable-or-disable-root-user-account-access-in-ubuntu/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -409,7 +409,7 @@ amp-carousel > amp-img > img {
 	right: 16px;
 }
 		/* Inline stylesheets */
-:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}	</style>
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cc68ddc{color:#f00}	</style>
 </head>
 
 <body class="">
@@ -426,32 +426,40 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Screentest &#8211; to test quality of Screens in Ubuntu</h1>
+		<h1 class="amp-wp-title">Enable or Disable root user account access in Ubuntu</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-09-03T17:24:49+00:00">
-		3 weeks ago	</time>
+	<time datetime="2019-09-21T07:55:58+00:00">
+		5 hours ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">Sometimes we have to evaluate the quality of our screens due to various reasons. We may not notice smaller changes happening to our screen on a regular basis. But, over a period of time these smaller changes would be substantial. Therefore, it is always good to evaluate quality of our screens regularly. In Ubuntu’s repository, we are provided with a package – <strong>Screentest</strong>. With the package, we can evaluate our screens on various parameters which will be discussed in detail shortly. But before that, we would discuss how to install <strong>screentest</strong> package in Ubuntu. Screentest is basically a CRT / LCD / LED screen testing utility. We could identify any existing issues with our monitor well in time if we keep checking for the screen quality regularly.</p>
-<h5>Install Screentest Package in Ubuntu</h5>
-<p class="amp-wp-7d27179">The following operation would require access to superuser privileges. In case you don’t have one, then contact your System Administrator for assistance. Thereafter, run the following in terminal –</p>
-<pre>sudo apt install screentest</pre>
-<p class="amp-wp-7d27179">This would install the package screentest.</p>
-<h5 class="amp-wp-7d27179">Evaluate your screen with Screentest</h5>
-<p class="amp-wp-7d27179">To check the screen quality, we need to run the following in terminal –</p>
-<pre>screentest</pre>
-<p class="amp-wp-7d27179">This would take us to a black screen with few circles and colors. Right click anywhere and you would be introduced to <strong>different modes and background-foreground color options</strong>. Check for each of the individual modes like, horizontal, vertical, blink &amp; text. If you find things you are not comfortable with then take necessary corrective steps. Also, check for both background as well as foreground color.</p>
-<p class="amp-wp-7d27179">With screentest package, we are provided with testing patterns which helps us evaluate our quality of screen. We could check for sharpness, linearity &amp; convergence with the package. But remember, merely passing all the tests doesn’t make your screen any better. If you are still uncomfortable using the screen then it is best to contact your hardware support.</p>
-<p class="amp-wp-7d27179">In conclusion, we have discussed how to install and check the quality of our screen using the package <strong>screentest</strong>.</p>
+		<p class="amp-wp-7d27179">By default, in Ubuntu distribution you can’t login as root user. Although, You could have access to superuser privileges through <strong>sudo -i</strong> command. Moreover, this is specifically applicable only for the user account you created while installing Ubuntu distribution. However, for other users you create at a later stage, it will throw an error – ​<strong>&lt;user-name&gt; is not in the sudoers file. This incident will be reported</strong>. Read how to add a user as sudoers <span class="amp-wp-cc68ddc"><a href="https://techpiezo.com/linux/add-user-to-sudoers-in-ubuntu-distribution/" class="amp-wp-cc68ddc">here</a></span> if you have the issue. For the purpose of this article, we would focus only on how to enable or disable root user account access in Ubuntu.</p>
+<p class="amp-wp-7d27179"><strong>Note:</strong> We need to take utmost care while we are logged in as root. If you don’t know what you are doing then it is better to contact your System Administrator for assistance. Furthermore, following operations would require you to have access to superuser privileges.</p>
+<h5 class="amp-wp-7d27179">Enable root user account access</h5>
+<p class="amp-wp-7d27179">If you simply try to login as root, it won’t let you login.</p>
+<p><amp-img class="size-full wp-image-2640 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/09/root-cant-login-ubuntu.png" alt="root can't login ubuntu" width="277" height="115" layout="intrinsic"></amp-img></p>
+<p class="amp-wp-7d27179">Therefore, we would utilize the command-line utility <strong>passwd</strong>. Run the following in terminal, after you login with a user who has sudo access.</p>
+<pre>sudo passwd root</pre>
+<p class="amp-wp-7d27179">It would ask you to enter sudo password for the logged-in &lt;user-name&gt;.</p>
+<p><amp-img class="size-full wp-image-2641 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/09/root-access-in-ubuntu.png" alt="root access in ubuntu" width="375" height="127" layout="intrinsic"></amp-img></p>
+<p class="amp-wp-7d27179">Thereafter, it would ask you to enter the password details for root user. Enter the same password twice and you would receive the <strong>passwd: password updated successfully</strong> message.</p>
+<p class="amp-wp-7d27179">Thus, you should be able to login as root in command-prompt.</p>
+<h5 class="amp-wp-7d27179">Disable root user account access</h5>
+<p class="amp-wp-7d27179">Now, for some reason you would want to disable root user access. In that scenario too, we would use the <strong>passwd</strong> command-line utility. To disable root user account, run the following in terminal –</p>
+<pre>sudo passwd -l root</pre>
+<p class="amp-wp-7d27179">where,</p>
+<p class="amp-wp-7d27179"><strong>-l</strong> option is used to lock the user account followed by &lt;user-name&gt;.</p>
+<p class="amp-wp-7d27179">Once you have successfully modified user account access, you would get the message – <strong>passwd: password expiry information changed</strong></p>
+<p class="amp-wp-7d27179"><strong>Note:</strong> This won’t disable root user account itself. It just locks the user account rendering it inaccessible. Also, those users who have been locked with the option can’t change their own password any further.</p>
+<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have discussed how to enable or disable root user account access in Ubuntu distribution.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
 			<div class="amp-wp-meta amp-wp-tax-category">
-		Categories: <a href="https://techpiezo.com/tech-insights/" rel="category tag">Insights</a>	</div>
+		Categories: <a href="https://techpiezo.com/linux/" rel="category tag">Linux</a>, <a href="https://techpiezo.com/linux/linux-quick-fix/" rel="category tag">Quick Fix</a>	</div>
 
 	</footer>
 </article>
