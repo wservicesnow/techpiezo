@@ -6,12 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
-	<title>Quick Fix Archives - Page 2 of 4 - TechPiezo</title>
+	<title>Extract files from zip archive in Ubuntu - TechPiezo</title>
 
 <!-- This site is optimized with the Yoast SEO plugin v11.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
-<link rel="canonical" href="https://techpiezo.com/linux/linux-quick-fix/page/2/" />
-<link rel="prev" href="https://techpiezo.com/linux/linux-quick-fix/" />
-<link rel="next" href="https://techpiezo.com/linux/linux-quick-fix/page/3/" />
+<meta name="description" content="We can extract files from zip archive through unzip command-line utility available in Ubuntu distribution. zip is a data compression format."/>
+<link rel="canonical" href="https://techpiezo.com/linux/extract-files-from-zip-archive-in-ubuntu/" />
 <!-- / Yoast SEO plugin. -->
 
 <style id="ct-main-styles-inline-css" type="text/css">:root {
@@ -62,6 +61,7 @@
     --logoMaxHeight: 30px;
     --cardSpacing: 35px;
     --cardBackground: #ffffff;
+    --pageTitleFontHoverColor: var(--paletteColor1);
     --letterSpacing: 0em;
     --fontSize: 20px;
     --textTransform: none;
@@ -70,6 +70,7 @@
     --fontStyle: normal;
     --textDecoration: none;
     --lineHeight: 1.65;
+    --pageTitleFontInitialColor: var(--paletteColor4);
     --cardExcerptSize: 18px;
     --cardsGap: 35px;
     --transparentHeaderBackground: rgba(255, 255, 255, 0.1);
@@ -317,6 +318,16 @@ code, kbd, samp, pre {
     --backgroundColor: #f4f5f8;
 }
 
+.entry-header .page-title {
+    --lineHeight: 1.5;
+    --textDecoration: none;
+    --fontStyle: normal;
+    --fontWeight: 700;
+    --textTransform: none;
+    --fontSize: 34px;
+    --letterSpacing: 0em;
+}
+
 .entry-card .entry-title {
     --lineHeight: 1.3;
     --textDecoration: none;
@@ -328,7 +339,7 @@ code, kbd, samp, pre {
 }
 
 .entry-title {
-    --linkInitialColor: #2c3e50;
+    --linkInitialColor: var(--paletteColor4);
     --linkHoverColor: var(--paletteColor1);
 }
 
@@ -463,7 +474,7 @@ code, kbd, samp, pre {
     --headerHeight: 35px;
     --transparentLogoMaxHeight: 50px;
     --cardSpacing: 35px;
-    --cardExcerptSize: 19px;
+    --cardExcerptSize: 18px;
     --lineHeight: 1.65;
     --fontSize: 20px;
     --letterSpacing: 0em;
@@ -560,6 +571,12 @@ h6 {
     --letterSpacing: 0em;
 }
 
+.entry-header .page-title {
+    --lineHeight: 1.5;
+    --fontSize: 30px;
+    --letterSpacing: 0em;
+}
+
 .entry-card .entry-title {
     --lineHeight: 1.3;
     --fontSize: 26px;
@@ -567,7 +584,7 @@ h6 {
 }
 
 .entry-card {
-    --metaFontSize: 13px;
+    --metaFontSize: 16px;
 }
 
 code, kbd, samp, pre,
@@ -601,7 +618,7 @@ code, kbd, samp, pre,
     --headerHeight: 35px;
     --transparentLogoMaxHeight: 50px;
     --cardSpacing: 25px;
-    --cardExcerptSize: 19px;
+    --cardExcerptSize: 18px;
     --lineHeight: 1.65;
     --fontSize: 20px;
     --letterSpacing: 0em;
@@ -710,6 +727,12 @@ h6 {
     --letterSpacing: 0em;
 }
 
+.entry-header .page-title {
+    --lineHeight: 1.5;
+    --fontSize: 25px;
+    --letterSpacing: 0em;
+}
+
 .entry-card .entry-title {
     --lineHeight: 1.3;
     --fontSize: 24px;
@@ -717,7 +740,7 @@ h6 {
 }
 
 .entry-card {
-    --metaFontSize: 13px;
+    --metaFontSize: 16px;
 }
 
 code, kbd, samp, pre,
@@ -735,7 +758,7 @@ code, kbd, samp, pre,
 <link rel='stylesheet' id='ct-style-css'  href='https://techpiezo.com/wp-content/themes/blocksy/style.css' type='text/css' media='all' />
 <link rel='stylesheet' id='ct-main-styles-css'  href='https://techpiezo.com/wp-content/themes/blocksy/static/bundle/main.css' type='text/css' media='all' />
 
-<link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" sizes="32x32" />
+<link rel="amphtml" href="https://techpiezo.com/linux/extract-files-from-zip-archive-in-ubuntu/amp/"><link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" sizes="32x32" />
 <link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" sizes="192x192" />
 <link rel="apple-touch-icon-precomposed" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" />
 <meta name="msapplication-TileImage" content="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" />
@@ -765,7 +788,7 @@ code, kbd, samp, pre,
 
 </head>
 
-<body class="archive paged category category-linux-quick-fix category-9 wp-custom-logo paged-2 category-paged-2 ct-loading ct-no-js ct-modern-forms ct-offcanvas header-type-1" >
+<body class="post-template-default single single-post postid-2657 single-format-standard wp-custom-logo ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
 <div id="main-container">
 
 	<header
@@ -798,9 +821,9 @@ code, kbd, samp, pre,
 				>
 
 		<ul id="primary-menu" class="primary-menu menu"><li id="menu-item-70" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-70"><a href="https://techpiezo.com">Home</a></li>
-<li id="menu-item-41" class="menu-item menu-item-type-taxonomy menu-item-object-category current-category-ancestor current-menu-ancestor current-menu-parent current-category-parent menu-item-has-children menu-item-41"><a href="https://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
+<li id="menu-item-41" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-41"><a href="https://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
 <ul class="sub-menu">
-	<li id="menu-item-350" class="menu-item menu-item-type-taxonomy menu-item-object-category current-menu-item menu-item-350"><a href="https://techpiezo.com/linux/linux-quick-fix/" aria-current="page">Quick Fix</a></li>
+	<li id="menu-item-350" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-350"><a href="https://techpiezo.com/linux/linux-quick-fix/">Quick Fix</a></li>
 	<li id="menu-item-349" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-349"><a href="https://techpiezo.com/linux/linux-recent/">What&#8217;s New</a></li>
 </ul>
 </li>
@@ -881,309 +904,178 @@ code, kbd, samp, pre,
 
 		
 
-<section id="primary" class="content-area">
-	<div class="ct-container" >
-
-		<section>
-							
-									<div class="entries"
-						data-layout="enhanced-grid"
-						data-cards="boxed"																		>
-				
-<article
-	id="post-2417" class="entry-card post-2417 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"	>
-
-	<a class="ct-image-container boundless-image ct-lazy" href="https://techpiezo.com/linux/create-a-favicon-ico-with-ubuntu-distribution/" ><img width="1" height="1" class="attachment-medium_large size-medium_large" alt="Create favicon ico with Ubuntu distribution" data-lazy="https://techpiezo.com/wp-content/uploads/2019/09/Create-favicon-ico-with-Ubuntu-distribution.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/09/Create-favicon-ico-with-Ubuntu-distribution.svg" class="attachment-medium_large size-medium_large" alt="Create favicon ico with Ubuntu distribution" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></a>
-	<h2 class="entry-title">
-		<a href="https://techpiezo.com/linux/create-a-favicon-ico-with-ubuntu-distribution/">
-			Create a favicon.ico with Ubuntu distribution		</a>
-	</h2>
-
 	
-	<div class="entry-excerpt">
-		In this article, we will discuss how to create a favicon.ico with Ubuntu distribution. We would illustrate it with the…	</div>
+	<div id="primary" class="content-area">
 
-	<div class="ct-ghost"></div>
-				<div class="entry-meta"  data-type="simple">
+		<div class="ct-container" data-sidebar="right">
+
+			<section>
+				
+	<article
+		id="post-2657"
+		class="post-2657 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"		data-content="boxed"				>
+
+		
+		<section class="hero-section" data-type="type-1" data-alignment="left">
+			<header class="entry-header">
+				<h1 class="page-title">Extract files from zip archive in Ubuntu</h1>
+				<div class="entry-meta has-avatar" data-label data-type="simple">
 		
 
 			<ul >
 				
+							<li class="ct-meta-author" >
+
+					
+											<span class="ct-meta-label">
+							By						</span>
+					
+					<span class="ct-meta-element" >
+						<a href="https://techpiezo.com/author/editorialteam/" title="Posts by Editorial Team" rel="author">Editorial Team</a>					</span>
+				</li>
+			
+							<li
+					class="ct-meta-date"
+					>
+
+					
+											<span class="ct-meta-label">
+							On						</span>
+					
+					<span
+						class="ct-meta-element"
+						>
+						Sep 22, 2019					</span>
+				</li>
 			
 			
-			
-			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-element"><a href="https://techpiezo.com/linux/" rel="tag">Linux</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/linux-quick-fix/" rel="tag">Quick Fix</a></span></li>					</ul>
+			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-label">In </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/" rel="tag">Linux</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/linux-quick-fix/" rel="tag">Quick Fix</a></span></li>					</ul>
 				</div>
 		
+					</header>
+		</section>
+
+		<figure class="ct-featured-image ct-hidden-sm" ><div class="ct-image-container ct-lazy" ><img class="attachment-full size-full" alt="Extract files from zip archive in Ubuntu" data-lazy="https://techpiezo.com/wp-content/uploads/2019/09/Extract-files-from-zip-archive-in-Ubuntu.svg" data-object-fit="~" /><noscript><img src="https://techpiezo.com/wp-content/uploads/2019/09/Extract-files-from-zip-archive-in-Ubuntu.svg" class="attachment-full size-full" alt="Extract files from zip archive in Ubuntu" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
 		
-</article>
+		<div class="entry-content">
+			<p style="text-align: justify;">Zip is an archive file format. A zip file may consist of any number of compressed files and folders. It was developed by Phillip Walter Katz and the file format was first released in the year 1989. At the time of writing the article, the latest version available for the file format is 6.3.5. In this article, we would discuss how to extract files from zip archive in Ubuntu.</p>
+<p style="text-align: justify;">To extract files from a zip archive, we would use the command-line utility <strong>unzip</strong>. Also, following few operations would require to have superuser privileges. In case you don&#8217;t have one then contact your System Administrator for assistance.</p>
+<h5 style="text-align: justify;">Install unzip command-line utility in Ubuntu</h5>
+<p style="text-align: justify;">Although the package comes installed with the default Ubuntu distribution. This is being mentioned just in case you don&#8217;t have the package installed. To install <strong>unzip</strong> command-line utility, run the following in terminal &#8211;</p>
+<pre>sudo apt install unzip</pre>
+<h5 style="text-align: justify;">Extract files from zip archive</h5>
+<p style="text-align: justify;">The extensions used by zip archive is <strong>.zip or .ZIP</strong>. Also, to identify whether a file is zip archive or not we can use command-line utility <strong>file</strong>. To do so, run the following in terminal &#8211;</p>
+<pre>file &lt;file-name.zip&gt;</pre>
+<p style="text-align: justify;">The output should resemble-</p>
+<pre>&lt;file-name.zip&gt;: Zip archive data, at least v2.0 to extract</pre>
+<p style="text-align: justify;">Also, we can list all files available in a zip archive. To list the files present in zip archive, run the following in terminal &#8211;</p>
+<pre>unzip -l &lt;file-name.zip&gt;</pre>
+<p style="text-align: justify;">Thereafter, to extract a valid zip archive in the current directory. Run the following in terminal &#8211;</p>
+<pre>unzip &lt;file-name.zip&gt;</pre>
+<p style="text-align: justify;">This would extract all the files present in zip archive. But, to extract a specific file from zip archive, first we would get the path of file through &#8211;</p>
+<pre>unzip -l &lt;file-name.zip&gt;</pre>
+<p style="text-align: justify;">For instance, path of file to be extracted is <strong>path/to/file.png</strong>. Now, run the following in terminal &#8211;</p>
+<pre>unzip -j &lt;file-name.zip&gt; path/to/file.png</pre>
+<p style="text-align: justify;">Furthermore, we could extract a zip archive to a specific location. <strong>-d option</strong> is to be used along with the location where our archive is to be extracted.</p>
+<pre>unzip &lt;file-name.zip&gt; -d /path/to/directory</pre>
+<p style="text-align: justify;">For instance, we would want to extract <strong>firefox-71.0a1.en-US.win32.zip to Downloads</strong> directory. Then, run the following in terminal &#8211;</p>
+<pre>unzip firefox-71.0a1.en-US.win32.zip -d /home/&lt;user-name&gt;/Downloads</pre>
+<p style="text-align: justify;">If we would like to hide the messages specifying what all files are being extracted in command prompt, then we can use -q option.</p>
+<pre>unzip -q &lt;file-name.zip&gt; -d /path/to/directory</pre>
+<p style="text-align: justify;">By default, <strong>unzip</strong> utility would ask you what to do in case the extracted file already exists. You could choose any of following options accordingly &#8211; [<strong>y</strong>]es, [<strong>n</strong>]o, [<strong>A</strong>]ll, [<strong>N</strong>]one, [<strong>r</strong>]ename.</p>
+<p style="text-align: justify;">In conclusion, we have discussed few of the options available to extract files from a zip archive.</p>
+		</div>
 
-<article
-	id="post-2380" class="entry-card post-2380 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"	>
+		
+		
+		
+	</article>
 
-	<a class="ct-image-container boundless-image ct-lazy" href="https://techpiezo.com/linux/optimize-compress-jpeg-files-in-ubuntu/" ><img width="1" height="1" class="attachment-medium_large size-medium_large" alt="Optimize/Compress JPEG files in Ubuntu" data-lazy="https://techpiezo.com/wp-content/uploads/2019/08/Optimize-Compress-JPEG-files-in-Ubuntu.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/08/Optimize-Compress-JPEG-files-in-Ubuntu.svg" class="attachment-medium_large size-medium_large" alt="Optimize/Compress JPEG files in Ubuntu" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></a>
-	<h2 class="entry-title">
-		<a href="https://techpiezo.com/linux/optimize-compress-jpeg-files-in-ubuntu/">
-			Optimize/Compress JPEG files in Ubuntu		</a>
-	</h2>
+				</section>
+
+			
+<aside
+	class="ct-hidden-sm ct-hidden-md"    data-type="type-2"
+	>
+
+    <div
+		class="ct-sidebar" data-sticky		data-widgets="separated">
+				<div class="ct-widget widget_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
+											<li>
+					<a href="https://techpiezo.com/linux/extract-files-from-zip-archive-in-ubuntu/">Extract files from zip archive in Ubuntu</a>
+									</li>
+											<li>
+					<a href="https://techpiezo.com/linux/enable-or-disable-root-user-account-access-in-ubuntu/">Enable or Disable root user account access in Ubuntu</a>
+									</li>
+											<li>
+					<a href="https://techpiezo.com/linux/reset-root-password-in-ubuntu-distribution/">Reset root password in Ubuntu distribution</a>
+									</li>
+											<li>
+					<a href="https://techpiezo.com/linux/fixed-command-add-apt-repository-not-found-in-ubuntu/">[Fixed] Command &#8216;add-apt-repository&#8217; not found in Ubuntu</a>
+									</li>
+											<li>
+					<a href="https://techpiezo.com/linux/add-or-remove-ppas-in-ubuntu-distribution/">Add or Remove PPAs in Ubuntu distribution</a>
+									</li>
+					</ul>
+		</div>	</div>
+</aside>
+
+
+		</div>
+
+	</div>
 
 	
-	<div class="entry-excerpt">
-		In this article, we would discuss how to optimize/compress jpeg files in Ubuntu using command-line utility jpegoptim. There could be…	</div>
+		<div class="ct-related-posts ct-hidden-sm">
+			<div class="ct-container">
+				<h4 class="ct-related-posts-label">
+					Related Posts				</h4>
 
-	<div class="ct-ghost"></div>
-				<div class="entry-meta"  data-type="simple">
-		
+				<ul data-columns="3">
+											
+						<li>
+							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/enable-or-disable-root-user-account-access-in-ubuntu/"><img width="1" height="1" class="attachment-large size-large" alt="Enable or Disable root user account in Ubuntu distribution" data-lazy="https://techpiezo.com/wp-content/uploads/2019/09/Enable-or-Disable-root-user-account-in-Ubuntu-distribution.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/09/Enable-or-Disable-root-user-account-in-Ubuntu-distribution.svg" class="attachment-large size-large" alt="Enable or Disable root user account in Ubuntu distribution" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<h3 class="related-entry-title">
+								<a href="https://techpiezo.com/linux/enable-or-disable-root-user-account-access-in-ubuntu/">Enable or Disable root user account access in Ubuntu</a>
+							</h3>
 
-			<ul >
-				
-			
-			
-			
-			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-element"><a href="https://techpiezo.com/linux/" rel="tag">Linux</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/linux-quick-fix/" rel="tag">Quick Fix</a></span></li>					</ul>
-				</div>
-		
-		
-</article>
+							<div class="related-entry-meta">
+								<span>
+									Sep 21, 2019								</span>
 
-<article
-	id="post-2345" class="entry-card post-2345 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"	>
+															</div>
+						</li>
+											
+						<li>
+							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/reset-root-password-in-ubuntu-distribution/"><img width="1" height="1" class="attachment-large size-large" alt="Reset root password in Ubuntu distribution" data-lazy="https://techpiezo.com/wp-content/uploads/2019/09/Reset-root-password-in-Ubuntu-distribution.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/09/Reset-root-password-in-Ubuntu-distribution.svg" class="attachment-large size-large" alt="Reset root password in Ubuntu distribution" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<h3 class="related-entry-title">
+								<a href="https://techpiezo.com/linux/reset-root-password-in-ubuntu-distribution/">Reset root password in Ubuntu distribution</a>
+							</h3>
 
-	<a class="ct-image-container boundless-image ct-lazy" href="https://techpiezo.com/linux/key-bindings-in-openbox/" ><img width="1" height="1" class="attachment-medium_large size-medium_large" alt="Key bindings in Openbox" data-lazy="https://techpiezo.com/wp-content/uploads/2019/08/Key-bindings-in-Openbox.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/08/Key-bindings-in-Openbox.svg" class="attachment-medium_large size-medium_large" alt="Key bindings in Openbox" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></a>
-	<h2 class="entry-title">
-		<a href="https://techpiezo.com/linux/key-bindings-in-openbox/">
-			Key bindings in Openbox		</a>
-	</h2>
+							<div class="related-entry-meta">
+								<span>
+									Sep 20, 2019								</span>
 
-	
-	<div class="entry-excerpt">
-		Openbox is a Window manager through which we can manage our program windows. Whenever a program is opened, a program…	</div>
+															</div>
+						</li>
+											
+						<li>
+							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/fixed-command-add-apt-repository-not-found-in-ubuntu/"><img width="1" height="1" class="attachment-large size-large" alt="Command add-apt-repository not found in Ubuntu" data-lazy="https://techpiezo.com/wp-content/uploads/2019/09/Command-add-apt-repository-not-found.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/09/Command-add-apt-repository-not-found.svg" class="attachment-large size-large" alt="Command add-apt-repository not found in Ubuntu" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<h3 class="related-entry-title">
+								<a href="https://techpiezo.com/linux/fixed-command-add-apt-repository-not-found-in-ubuntu/">[Fixed] Command &#8216;add-apt-repository&#8217; not found in Ubuntu</a>
+							</h3>
 
-	<div class="ct-ghost"></div>
-				<div class="entry-meta"  data-type="simple">
-		
+							<div class="related-entry-meta">
+								<span>
+									Sep 15, 2019								</span>
 
-			<ul >
-				
-			
-			
-			
-			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-element"><a href="https://techpiezo.com/linux/" rel="tag">Linux</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/linux-quick-fix/" rel="tag">Quick Fix</a></span></li>					</ul>
-				</div>
-		
-		
-</article>
-
-<article
-	id="post-2322" class="entry-card post-2322 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"	>
-
-	<a class="ct-image-container boundless-image ct-lazy" href="https://techpiezo.com/linux/change-default-terminal-emulator-in-ubuntu/" ><img width="1" height="1" class="attachment-medium_large size-medium_large" alt="Change Default Terminal Emulator in Ubuntu" data-lazy="https://techpiezo.com/wp-content/uploads/2019/08/Change-Default-Terminal-Emulator-in-Ubuntu.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/08/Change-Default-Terminal-Emulator-in-Ubuntu.svg" class="attachment-medium_large size-medium_large" alt="Change Default Terminal Emulator in Ubuntu" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></a>
-	<h2 class="entry-title">
-		<a href="https://techpiezo.com/linux/change-default-terminal-emulator-in-ubuntu/">
-			Change default Terminal emulator in Ubuntu		</a>
-	</h2>
-
-	
-	<div class="entry-excerpt">
-		x-terminal-emulator is a virtual package for the terminal emulators. A virtual package is just a logical term, which signifies the…	</div>
-
-	<div class="ct-ghost"></div>
-				<div class="entry-meta"  data-type="simple">
-		
-
-			<ul >
-				
-			
-			
-			
-			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-element"><a href="https://techpiezo.com/linux/" rel="tag">Linux</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/linux-quick-fix/" rel="tag">Quick Fix</a></span></li>					</ul>
-				</div>
-		
-		
-</article>
-
-<article
-	id="post-1415" class="entry-card post-1415 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"	>
-
-	<a class="ct-image-container boundless-image ct-lazy" href="https://techpiezo.com/linux/fixed-install-hplip-3-19-1-in-ubuntu-19-04/" ><img width="1" height="1" class="attachment-medium_large size-medium_large" alt="Install HPLIP 3.19.1 in Ubuntu 19.04" data-lazy="https://techpiezo.com/wp-content/uploads/2019/08/Install-HPLIP-in-Ubuntu.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/08/Install-HPLIP-in-Ubuntu.svg" class="attachment-medium_large size-medium_large" alt="Install HPLIP 3.19.1 in Ubuntu 19.04" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></a>
-	<h2 class="entry-title">
-		<a href="https://techpiezo.com/linux/fixed-install-hplip-3-19-1-in-ubuntu-19-04/">
-			[Fixed] Install HPLIP 3.19.1 in Ubuntu 19.04		</a>
-	</h2>
-
-	
-	<div class="entry-excerpt">
-		HP Linux Printing and Imaging System (HPLIP) is a package available in standard Ubuntu repository. The HPLIP package make Linux…	</div>
-
-	<div class="ct-ghost"></div>
-				<div class="entry-meta"  data-type="simple">
-		
-
-			<ul >
-				
-			
-			
-			
-			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-element"><a href="https://techpiezo.com/linux/" rel="tag">Linux</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/linux-quick-fix/" rel="tag">Quick Fix</a></span></li>					</ul>
-				</div>
-		
-		
-</article>
-
-<article
-	id="post-1400" class="entry-card post-1400 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"	>
-
-	<a class="ct-image-container boundless-image ct-lazy" href="https://techpiezo.com/linux/install-google-chrome-in-debian-buster/" ><img width="1" height="1" class="attachment-medium_large size-medium_large" alt="Install Google Chrome in Debian Buster" data-lazy="https://techpiezo.com/wp-content/uploads/2019/08/Install-Google-Chrome-in-Debian-Buster.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/08/Install-Google-Chrome-in-Debian-Buster.svg" class="attachment-medium_large size-medium_large" alt="Install Google Chrome in Debian Buster" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></a>
-	<h2 class="entry-title">
-		<a href="https://techpiezo.com/linux/install-google-chrome-in-debian-buster/">
-			Install Google Chrome in Debian Buster		</a>
-	</h2>
-
-	
-	<div class="entry-excerpt">
-		Google Chrome is a web browser developed by Google LLC. The first stable version of Google Chrome was released on…	</div>
-
-	<div class="ct-ghost"></div>
-				<div class="entry-meta"  data-type="simple">
-		
-
-			<ul >
-				
-			
-			
-			
-			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-element"><a href="https://techpiezo.com/linux/" rel="tag">Linux</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/linux-quick-fix/" rel="tag">Quick Fix</a></span></li>					</ul>
-				</div>
-		
-		
-</article>
-
-<article
-	id="post-1330" class="entry-card post-1330 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"	>
-
-	<a class="ct-image-container boundless-image ct-lazy" href="https://techpiezo.com/linux/make-bootable-usb-stick-to-act-as-storage-device-again/" ><img width="1" height="1" class="attachment-medium_large size-medium_large" alt="Make Bootable USB act as Storage Device" data-lazy="https://techpiezo.com/wp-content/uploads/2019/08/Bootable-USB-as-Storage-Device.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/08/Bootable-USB-as-Storage-Device.svg" class="attachment-medium_large size-medium_large" alt="Make Bootable USB act as Storage Device" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></a>
-	<h2 class="entry-title">
-		<a href="https://techpiezo.com/linux/make-bootable-usb-stick-to-act-as-storage-device-again/">
-			Make Bootable USB stick to act as Storage device again		</a>
-	</h2>
-
-	
-	<div class="entry-excerpt">
-		To make a bootable USB stick to acts as a storage device once again, we will have to use the…	</div>
-
-	<div class="ct-ghost"></div>
-				<div class="entry-meta"  data-type="simple">
-		
-
-			<ul >
-				
-			
-			
-			
-			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-element"><a href="https://techpiezo.com/linux/" rel="tag">Linux</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/linux-quick-fix/" rel="tag">Quick Fix</a></span></li>					</ul>
-				</div>
-		
-		
-</article>
-
-<article
-	id="post-1317" class="entry-card post-1317 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"	>
-
-	<a class="ct-image-container boundless-image ct-lazy" href="https://techpiezo.com/linux/create-a-bootable-live-usb-in-ubuntu-through-command-line/" ><img width="1" height="1" class="attachment-medium_large size-medium_large" alt="Create Bootable Live USB in Ubuntu" data-lazy="https://techpiezo.com/wp-content/uploads/2019/07/Create-Bootable-USB-in-Ubuntu.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/07/Create-Bootable-USB-in-Ubuntu.svg" class="attachment-medium_large size-medium_large" alt="Create Bootable Live USB in Ubuntu" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></a>
-	<h2 class="entry-title">
-		<a href="https://techpiezo.com/linux/create-a-bootable-live-usb-in-ubuntu-through-command-line/">
-			Create a bootable Live USB in Ubuntu through Command Line		</a>
-	</h2>
-
-	
-	<div class="entry-excerpt">
-		A Live USB stick is the one which contains a bootable Operating System. In this article, we would create a…	</div>
-
-	<div class="ct-ghost"></div>
-				<div class="entry-meta"  data-type="simple">
-		
-
-			<ul >
-				
-			
-			
-			
-			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-element"><a href="https://techpiezo.com/linux/" rel="tag">Linux</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/linux-quick-fix/" rel="tag">Quick Fix</a></span></li>					</ul>
-				</div>
-		
-		
-</article>
-
-<article
-	id="post-1001" class="entry-card post-1001 post type-post status-publish format-standard has-post-thumbnail hentry category-android category-linux category-linux-quick-fix"	>
-
-	<a class="ct-image-container boundless-image ct-lazy" href="https://techpiezo.com/android/fastboot-error-mke2fs-failed-cannot-generate-image-for-userdata/" ><img width="1" height="1" class="attachment-medium_large size-medium_large" alt="Fastboot Error mke2fs Failed" data-lazy="https://techpiezo.com/wp-content/uploads/2019/07/Fastboot-error-mke2fs-failed-Fixed.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/07/Fastboot-error-mke2fs-failed-Fixed.svg" class="attachment-medium_large size-medium_large" alt="Fastboot Error mke2fs Failed" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></a>
-	<h2 class="entry-title">
-		<a href="https://techpiezo.com/android/fastboot-error-mke2fs-failed-cannot-generate-image-for-userdata/">
-			[Fixed] Fastboot error: mke2fs failed, Cannot generate image for userdata		</a>
-	</h2>
-
-	
-	<div class="entry-excerpt">
-		While flashing the factory images of our Nexus devices, we get the Fastboot error &#8211; Cannot generate image for userdata.…	</div>
-
-	<div class="ct-ghost"></div>
-				<div class="entry-meta"  data-type="simple">
-		
-
-			<ul >
-				
-			
-			
-			
-			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-element"><a href="https://techpiezo.com/android/" rel="tag">Android</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/" rel="tag">Linux</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/linux-quick-fix/" rel="tag">Quick Fix</a></span></li>					</ul>
-				</div>
-		
-		
-</article>
-
-<article
-	id="post-948" class="entry-card post-948 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"	>
-
-	<a class="ct-image-container boundless-image ct-lazy" href="https://techpiezo.com/linux/split-files-in-linux-distributions/" ><img width="1" height="1" class="attachment-medium_large size-medium_large" alt="Split files in Linux Distributions" data-lazy="https://techpiezo.com/wp-content/uploads/2019/07/Split-files-in-Linux-Distributions.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/07/Split-files-in-Linux-Distributions.svg" class="attachment-medium_large size-medium_large" alt="Split files in Linux Distributions" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></a>
-	<h2 class="entry-title">
-		<a href="https://techpiezo.com/linux/split-files-in-linux-distributions/">
-			Split files in Linux distributions		</a>
-	</h2>
-
-	
-	<div class="entry-excerpt">
-		Split is a command-line utility which is used to split files in linux. The utility is provided with coreutils (GNU…	</div>
-
-	<div class="ct-ghost"></div>
-				<div class="entry-meta"  data-type="simple">
-		
-
-			<ul >
-				
-			
-			
-			
-			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-element"><a href="https://techpiezo.com/linux/" rel="tag">Linux</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/linux-quick-fix/" rel="tag">Quick Fix</a></span></li>					</ul>
-				</div>
-		
-		
-</article>
-
-									</div>
-				
-		<div class="ct-pagination" role="navigation" data-type="simple" >
-			<nav><a class="prev page-numbers" href="https://techpiezo.com/linux/linux-quick-fix/"><svg width="10px" height="10px" viewBox="0 0 15 15"><path class="st0" d="M10.9,15c-0.2,0-0.4-0.1-0.6-0.2L3.6,8c-0.3-0.3-0.3-0.8,0-1.1l6.6-6.6c0.3-0.3,0.8-0.3,1.1,0c0.3,0.3,0.3,0.8,0,1.1L5.2,7.4l6.2,6.2c0.3,0.3,0.3,0.8,0,1.1C11.3,14.9,11.1,15,10.9,15z"/></svg></a>
-<a class='page-numbers' href='https://techpiezo.com/linux/linux-quick-fix/'>1</a>
-<span aria-current='page' class='page-numbers current'>2</span>
-<span class="page-numbers dots">&hellip;</span>
-<a class='page-numbers' href='https://techpiezo.com/linux/linux-quick-fix/page/4/'>4</a>
-<a class="next page-numbers" href="https://techpiezo.com/linux/linux-quick-fix/page/3/"><svg width="10px" height="10px" viewBox="0 0 15 15"><path class="st0" d="M4.1,15c0.2,0,0.4-0.1,0.6-0.2L11.4,8c0.3-0.3,0.3-0.8,0-1.1L4.8,0.2C4.5-0.1,4-0.1,3.7,0.2C3.4,0.5,3.4,1,3.7,1.3l6.1,6.1l-6.2,6.2c-0.3,0.3-0.3,0.8,0,1.1C3.7,14.9,3.9,15,4.1,15z"/></svg></a></nav>
-			
-		</div>		</section>
-
+															</div>
+						</li>
+									</ul>
 			</div>
-</section>
+		</div>
+
+		
 
 
 	</main>
@@ -1279,9 +1171,9 @@ code, kbd, samp, pre,
 			<div class="ct-bag-content" >
 				
 				<ul id="primary-menu" class="mobile-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-70"><a href="https://techpiezo.com">Home</a></li>
-<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-category-ancestor current-menu-ancestor current-menu-parent current-category-parent menu-item-has-children menu-item-41"><a href="https://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-41"><a href="https://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
 <ul class="sub-menu">
-	<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-menu-item menu-item-350"><a href="https://techpiezo.com/linux/linux-quick-fix/" aria-current="page">Quick Fix</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-350"><a href="https://techpiezo.com/linux/linux-quick-fix/">Quick Fix</a></li>
 	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-349"><a href="https://techpiezo.com/linux/linux-recent/">What&#8217;s New</a></li>
 </ul>
 </li>

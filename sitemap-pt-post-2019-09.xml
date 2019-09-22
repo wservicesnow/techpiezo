@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="September 21, 2019 1:01 pm" -->
+<!-- generated-on="September 22, 2019 5:24 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
+		<loc>https://techpiezo.com/linux/extract-files-from-zip-archive-in-ubuntu/</loc>
+		<lastmod>2019-09-22T17:24:04+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
 		<loc>https://techpiezo.com/linux/enable-or-disable-root-user-account-access-in-ubuntu/</loc>
 		<lastmod>2019-09-21T13:00:34+00:00</lastmod>
 		<changefreq>monthly</changefreq>
@@ -66,4 +72,4 @@
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: 3a11e4b34ab2ba64554b3fa467d7a352; Queries for sitemap: 6; Total queries: 17; Seconds: 0.01; Memory for sitemap: 0MB; Total memory: 2MB -->
+</urlset><!-- Request ID: 24cc4eacfc943a786f46c8fe2d3e4d08; Queries for sitemap: 9; Total queries: 20; Seconds: 0.01; Memory for sitemap: 0MB; Total memory: 2MB -->
