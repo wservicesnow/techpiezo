@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="September 22, 2019 7:33 pm" -->
+<!-- generated-on="September 23, 2019 2:10 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
+		<loc>https://techpiezo.com/linux/install-opera-web-browser-in-ubuntu-distribution/</loc>
+		<lastmod>2019-09-23T14:09:19+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
 		<loc>https://techpiezo.com/linux/extract-files-from-zip-archive-in-ubuntu/</loc>
 		<lastmod>2019-09-22T17:24:04+00:00</lastmod>
 		<changefreq>monthly</changefreq>
@@ -72,4 +78,4 @@
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: 72fa3b8039f4ae2f70a3c24cb8ada961; Queries for sitemap: 9; Total queries: 20; Seconds: 0.01; Memory for sitemap: 0MB; Total memory: 2MB -->
+</urlset><!-- Request ID: 3525f11ba02a66d65125d910a5ca1663; Queries for sitemap: 13; Total queries: 24; Seconds: 0.01; Memory for sitemap: 0MB; Total memory: 2MB -->
