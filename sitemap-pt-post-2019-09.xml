@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="September 23, 2019 2:10 pm" -->
+<!-- generated-on="September 26, 2019 6:18 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
+		<loc>https://techpiezo.com/linux/configure-ufw-uncomplicated-firewall-in-ubuntu/</loc>
+		<lastmod>2019-09-26T18:16:47+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
 		<loc>https://techpiezo.com/linux/install-opera-web-browser-in-ubuntu-distribution/</loc>
 		<lastmod>2019-09-23T14:09:19+00:00</lastmod>
 		<changefreq>monthly</changefreq>
@@ -78,4 +84,4 @@
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: 3525f11ba02a66d65125d910a5ca1663; Queries for sitemap: 13; Total queries: 24; Seconds: 0.01; Memory for sitemap: 0MB; Total memory: 2MB -->
+</urlset><!-- Request ID: 5be995df73084984c178621e84a27424; Queries for sitemap: 16; Total queries: 27; Seconds: 0.01; Memory for sitemap: 0MB; Total memory: 2MB -->

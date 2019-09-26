@@ -6,11 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
-	<title>Backing File and Snapshot in QEMU/KVM - TechPiezo</title>
+	<title>Configure Uncomplicated Firewall (UFW) in Ubuntu - TechPiezo</title>
 
 <!-- This site is optimized with the Yoast SEO plugin v11.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
-<meta name="description" content="Snapshot saves the machine state &amp; any further changes to the disk of virtual machines will be saved in a way it can reverted to original state at any time."/>
-<link rel="canonical" href="https://techpiezo.com/linux/use-and-implementation-of-backing-file-and-snapshot-in-qemu-kvm/" />
+<meta name="description" content="To Configure Uncomplicated Firewall (UFW) in Ubuntu distribution, we need to create/delete a set of rules as per our requirements through CLI."/>
+<link rel="canonical" href="https://techpiezo.com/linux/configure-ufw-uncomplicated-firewall-in-ubuntu/" />
 <!-- / Yoast SEO plugin. -->
 
 <style id="ct-main-styles-inline-css" type="text/css">:root {
@@ -758,7 +758,7 @@ code, kbd, samp, pre,
 <link rel='stylesheet' id='ct-style-css'  href='https://techpiezo.com/wp-content/themes/blocksy/style.css' type='text/css' media='all' />
 <link rel='stylesheet' id='ct-main-styles-css'  href='https://techpiezo.com/wp-content/themes/blocksy/static/bundle/main.css' type='text/css' media='all' />
 
-<link rel="amphtml" href="https://techpiezo.com/linux/use-and-implementation-of-backing-file-and-snapshot-in-qemu-kvm/amp/"><link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" sizes="32x32" />
+<link rel="amphtml" href="https://techpiezo.com/linux/configure-ufw-uncomplicated-firewall-in-ubuntu/amp/"><link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" sizes="32x32" />
 <link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" sizes="192x192" />
 <link rel="apple-touch-icon-precomposed" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" />
 <meta name="msapplication-TileImage" content="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" />
@@ -788,7 +788,7 @@ code, kbd, samp, pre,
 
 </head>
 
-<body class="post-template-default single single-post postid-452 single-format-standard wp-custom-logo ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
+<body class="post-template-default single single-post postid-2687 single-format-standard wp-custom-logo ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
 <div id="main-container">
 
 	<header
@@ -912,13 +912,13 @@ code, kbd, samp, pre,
 			<section>
 				
 	<article
-		id="post-452"
-		class="post-452 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"		data-content="boxed"				>
+		id="post-2687"
+		class="post-2687 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"		data-content="boxed"				>
 
 		
 		<section class="hero-section" data-type="type-1" data-alignment="left">
 			<header class="entry-header">
-				<h1 class="page-title">Backing File and Snapshot in QEMU/KVM</h1>
+				<h1 class="page-title">Configure Uncomplicated Firewall (UFW) in Ubuntu</h1>
 				<div class="entry-meta has-avatar" data-label data-type="simple">
 		
 
@@ -945,7 +945,7 @@ code, kbd, samp, pre,
 					<span
 						class="ct-meta-element"
 						>
-						Jul 4, 2019					</span>
+						Sep 26, 2019					</span>
 				</li>
 			
 			
@@ -955,28 +955,71 @@ code, kbd, samp, pre,
 					</header>
 		</section>
 
-		<figure class="ct-featured-image ct-hidden-sm" ><div class="ct-image-container ct-lazy" ><img class="attachment-full size-full" alt="Backing file &amp; Snapshot in Qemu-KVM" data-lazy="https://techpiezo.com/wp-content/uploads/2019/07/Backing-file-Snapshot-in-Qemu-KVM.svg" data-object-fit="~" /><noscript><img src="https://techpiezo.com/wp-content/uploads/2019/07/Backing-file-Snapshot-in-Qemu-KVM.svg" class="attachment-full size-full" alt="Backing file &amp; Snapshot in Qemu-KVM" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
+		<figure class="ct-featured-image ct-hidden-sm" ><div class="ct-image-container ct-lazy" ><img class="attachment-full size-full" alt="Configure Uncomplicated Firewall (UFW) in Ubuntu" data-lazy="https://techpiezo.com/wp-content/uploads/2019/09/Configure-Uncomplicated-Firewall-UFW-in-Ubuntu.svg" data-object-fit="~" /><noscript><img src="https://techpiezo.com/wp-content/uploads/2019/09/Configure-Uncomplicated-Firewall-UFW-in-Ubuntu.svg" class="attachment-full size-full" alt="Configure Uncomplicated Firewall (UFW) in Ubuntu" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
 		
 		<div class="entry-content">
-			<p style="text-align: justify;">Ability to create snapshot is one of the important feature that is required in any Virtual Machine system. Snapshot saves the current machine state and any further changes to the disk of virtual machines will be saved so that it can be reverted to original state at any time. QEMU/KVM implements it by using backing file, backing file is paired with snapshot disk image of virtual machine, further QEMU/KVM uses original disk image as read only image and any writes to the disk image is redirected to snapshot file as Redirect-on-Write. This allows reads from backing file and writes to snapshot file, snapshot file is QCOW2 disk image hence only writes are registered on disk.</p>
-<p style="text-align: justify;">However backing file is also effective for allowing multiple virtual machines to run backed by only single disk image as base image, where base image is immutable in nature.</p>
-<p style="text-align: justify;">Lets go through the process of implementation, first to get information about the clean base image, we can use</p>
-<pre>qemu-img info clean-disk.qcow2</pre>
-<p style="text-align: justify;">It displays information such as file format type, name, virtual size, disk size, cluster size.</p>
-<p style="text-align: justify;">To create clean-disk.qcow2 as backing image for snapshot.qcow2</p>
-<pre>qemu-img create -f qcow2 -b clean-disk.qcow2 snapshot.qcow2</pre>
-<p style="text-align: justify;">In order to check the image file, run</p>
-<pre>qemu-img info snapshot.qcow2</pre>
-<p style="text-align: justify;">This should display the clean-disk.qcow2 image as backing file for snapshot.qcow2, now use snapshot.qcow2 image as host disk image. The changes made will be backed-up in snapshot image.</p>
-<p style="text-align: justify;">To revert to original state of the machine, simply delete the backing file, which in this case is snapshot.qcow2 and also point the disk image to original image.</p>
-<p style="text-align: justify;">Now in case you want to save changes of snapshot to the original disk image and continue using the image further, then you follow following steps :</p>
-<p style="text-align: justify;">Make back-up of original clean disk image</p>
-<pre>cp clean-disk.qcow2 new-clean-disk.qcow2</pre>
-<p style="text-align: justify;">then rebase snapshot to use new disk image</p>
-<pre>qemu-img rebase -b new-clean-disk.qcow2 snapshot.qcow2</pre>
-<p style="text-align: justify;">then commit changes of snapshot by</p>
-<pre>qemu-img commit snapshot.qcow2</pre>
-<p style="text-align: justify;">This will store snapshot to original image with changes. Now new-clean-disk.qcow2 can be used as standalone image file with changes, snapshot.qcow2 can discarded if required.</p>
+			<p style="text-align: justify;">The Uncomplicated Firewall (UFW) is a tool available in Ubuntu distribution to configure <strong>iptables</strong>. In other words, it is a front-end for <strong>iptables</strong>. The tool enables us to set up a host-based firewall. A host-based firewall is best suited for individual devices which are connected to internet. With host-based firewalls we could protect our devices from potential threats like viruses, malware, hackers etc. Although, the package for UFW is available in Ubuntu distributions but it is not enabled by default. And, in some cases we need to install the package also. Therefore, first we will discuss how to install the relevant package. Thereafter, we would discuss how to configure Uncomplicated Firewall (UFW) in Ubuntu distributions.</p>
+<p style="text-align: justify;">Following operations would require you to have superuser privileges. In case you don&#8217;t have one, then contact your System Administrator for assistance.</p>
+<h5>Install UFW in Ubuntu</h5>
+<p style="text-align: justify;">Installing Uncomplicated Firewall (UFW) is pretty straight-forward. All we need to do is issue the following in terminal &#8211;</p>
+<pre>sudo apt update
+sudo apt install ufw</pre>
+<p style="text-align: justify;">Once the installation gets completed, check the status of <strong>ufw</strong>. By default, ufw is in <strong>inactive</strong> state.</p>
+<pre>sudo ufw status</pre>
+<h5>Configure Uncomplicated Firewall (UFW) in Ubuntu</h5>
+<p style="text-align: justify;">First, we need to enable the firewall. Therefore, issue the following in terminal &#8211;</p>
+<pre>sudo ufw enable</pre>
+<p style="text-align: justify;">Next, we need to check the status of <strong>ufw managed rules</strong>.</p>
+<pre>sudo ufw status verbose</pre>
+<p style="text-align: justify;">It would return with the message &#8211;</p>
+<pre>Status: active
+Logging: on (low)
+Default: deny (incoming), allow (outgoing), disabled (routed)
+New profiles: skip</pre>
+<p style="text-align: justify;">Observe, by default all incoming connections have been denied while all outgoing connections have been allowed.</p>
+<p style="text-align: justify;">Though already set, we could issue following command to set the default configuration &#8211;</p>
+<pre>sudo ufw default deny incoming
+sudo ufw default allow outgoing</pre>
+<p style="text-align: justify;">For most users, the default configuration is more than enough. But for advanced users, default configuration will not suffice. For instance, if we want to allow SSH connections then we need to create a rule which allows SSH service. This could be done by &#8211;</p>
+<pre>sudo ufw allow ssh</pre>
+<p style="text-align: justify;">To confirm whether ssh connections have been allowed or not &#8211;</p>
+<pre>sudo ufw status verbose</pre>
+<p style="text-align: justify;">and, the output should resemble &#8211;</p>
+<pre>Status: active
+Logging: on (low)
+Default: deny (incoming), allow (outgoing), disabled (routed)
+New profiles: skip
+
+To                 Action         From
+--                 ------         ----
+22/tcp             ALLOW IN       Anywhere 
+22/tcp (v6)        ALLOW IN       Anywhere (v6)</pre>
+<p style="text-align: justify;">To delete a rule, add <strong>delete prefix</strong> to the existing rule &#8211;</p>
+<pre>sudo ufw delete allow ssh</pre>
+<p style="text-align: justify;">Similarly, we could create or delete rules for other protocols too. The syntax comes out to be &#8211;</p>
+<p style="text-align: justify;">To allow a specific rule-</p>
+<pre>sudo ufw allow &lt;port&gt;/&lt;optional-protocol&gt;</pre>
+<p style="text-align: justify;">To deny a specific rule-</p>
+<pre>sudo ufw deny &lt;port&gt;/&lt;optional-protocol&gt;</pre>
+<p style="text-align: justify;">For instance,</p>
+<pre>sudo ufw allow 53/tcp
+sudo ufw deny 53/udp</pre>
+<p style="text-align: justify;">For port ranges &#8211;</p>
+<pre>sudo ufw allow 99:999/tcp</pre>
+<p style="text-align: justify;">We can also<strong> allow/deny connection from a specific ip</strong> &#8211;</p>
+<pre>sudo ufw allow from &lt;ip-address&gt;
+sudo ufw deny from &lt;ip-address&gt;</pre>
+<p style="text-align: justify;">For instance,</p>
+<pre>sudo ufw allow from 192.168.100.1
+sudo ufw deny from 192.168.100.1</pre>
+<p style="text-align: justify;"><strong>Allow/Deny connection by specific port and ip address</strong>&#8211;</p>
+<pre>sudo ufw allow from &lt;target&gt; to &lt;destination&gt; port &lt;port-number&gt;
+sudo ufw deny from &lt;ip-address&gt; to &lt;protocol&gt; port &lt;port-number&gt;</pre>
+<p style="text-align: justify;">For instance,</p>
+<pre>sudo ufw allow from 192.168.100.1 to any port 22
+sudo ufw deny from 192.168.100.1 to any port 22</pre>
+<p style="text-align: justify;">Sometimes, it necessary to let the sender know that its traffic is being denied. In such cases, use <strong>reject</strong> instead of deny.</p>
+<p style="text-align: justify;">In conclusion, we discussed a bit about Uncomplicated Firewall (UFW) in Ubuntu. Through the command-line tool we can manage Linux firewall with ease.</p>
 		</div>
 
 		
@@ -1027,19 +1070,6 @@ code, kbd, samp, pre,
 				<ul data-columns="3">
 											
 						<li>
-							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/configure-ufw-uncomplicated-firewall-in-ubuntu/"><img width="1" height="1" class="attachment-large size-large" alt="Configure Uncomplicated Firewall (UFW) in Ubuntu" data-lazy="https://techpiezo.com/wp-content/uploads/2019/09/Configure-Uncomplicated-Firewall-UFW-in-Ubuntu.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/09/Configure-Uncomplicated-Firewall-UFW-in-Ubuntu.svg" class="attachment-large size-large" alt="Configure Uncomplicated Firewall (UFW) in Ubuntu" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
-							<h3 class="related-entry-title">
-								<a href="https://techpiezo.com/linux/configure-ufw-uncomplicated-firewall-in-ubuntu/">Configure Uncomplicated Firewall (UFW) in Ubuntu</a>
-							</h3>
-
-							<div class="related-entry-meta">
-								<span>
-									Sep 26, 2019								</span>
-
-															</div>
-						</li>
-											
-						<li>
 							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/install-opera-web-browser-in-ubuntu-distribution/"><img width="1" height="1" class="attachment-large size-large" alt="Install Opera web browser in Ubuntu" data-lazy="https://techpiezo.com/wp-content/uploads/2019/09/Install-Opera-in-Ubuntu.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/09/Install-Opera-in-Ubuntu.svg" class="attachment-large size-large" alt="Install Opera web browser in Ubuntu" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
 							<h3 class="related-entry-title">
 								<a href="https://techpiezo.com/linux/install-opera-web-browser-in-ubuntu-distribution/">Install Opera web browser in Ubuntu distribution</a>
@@ -1061,6 +1091,19 @@ code, kbd, samp, pre,
 							<div class="related-entry-meta">
 								<span>
 									Sep 22, 2019								</span>
+
+															</div>
+						</li>
+											
+						<li>
+							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/enable-or-disable-root-user-account-access-in-ubuntu/"><img width="1" height="1" class="attachment-large size-large" alt="Enable or Disable root user account in Ubuntu distribution" data-lazy="https://techpiezo.com/wp-content/uploads/2019/09/Enable-or-Disable-root-user-account-in-Ubuntu-distribution.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/09/Enable-or-Disable-root-user-account-in-Ubuntu-distribution.svg" class="attachment-large size-large" alt="Enable or Disable root user account in Ubuntu distribution" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<h3 class="related-entry-title">
+								<a href="https://techpiezo.com/linux/enable-or-disable-root-user-account-access-in-ubuntu/">Enable or Disable root user account access in Ubuntu</a>
+							</h3>
+
+							<div class="related-entry-meta">
+								<span>
+									Sep 21, 2019								</span>
 
 															</div>
 						</li>
