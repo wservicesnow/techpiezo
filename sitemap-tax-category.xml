@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="September 26, 2019 6:20 pm" -->
+<!-- generated-on="September 27, 2019 12:43 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>https://techpiezo.com/android/</loc>
 		<lastmod>2019-07-29T11:31:04+00:00</lastmod>
@@ -26,7 +26,7 @@
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/</loc>
-		<lastmod>2019-09-26T08:33:02+00:00</lastmod>
+		<lastmod>2019-09-27T06:51:08+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
@@ -38,7 +38,7 @@
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/linux-quick-fix/</loc>
-		<lastmod>2019-09-26T08:33:02+00:00</lastmod>
+		<lastmod>2019-09-27T06:51:08+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
@@ -66,4 +66,4 @@
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
-</urlset><!-- Request ID: 106583a1de6c24c272d80d1c137e1233; Queries for sitemap: 4; Total queries: 15; Seconds: 0; Memory for sitemap: 0MB; Total memory: 2MB -->
+</urlset><!-- Request ID: b816a8c189317650974447204c384ded; Queries for sitemap: 4; Total queries: 15; Seconds: 0.01; Memory for sitemap: 0MB; Total memory: 2MB -->

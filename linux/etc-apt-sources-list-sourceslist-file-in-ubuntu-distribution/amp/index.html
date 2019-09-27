@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Extract files from zip archive in Ubuntu - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/linux/extract-files-from-zip-archive-in-ubuntu/" />
+		<title>/etc/apt/sources.list - SourcesList file in Ubuntu distribution - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/linux/etc-apt-sources-list-sourceslist-file-in-ubuntu-distribution/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -409,7 +409,7 @@ amp-carousel > amp-img > img {
 	right: 16px;
 }
 		/* Inline stylesheets */
-:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}	</style>
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cc68ddc{color:#f00}	</style>
 </head>
 
 <body class="">
@@ -426,42 +426,47 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Extract files from zip archive in Ubuntu</h1>
+		<h1 class="amp-wp-title">/etc/apt/sources.list &#8211; SourcesList file in Ubuntu distribution</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-09-22T16:09:33+00:00">
-		5 days ago	</time>
+	<time datetime="2019-09-27T12:21:08+00:00">
+		22 mins ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">Zip is an archive file format. A zip file may consist of any number of compressed files and folders. It was developed by Phillip Walter Katz and the file format was first released in the year 1989. At the time of writing the article, the latest version available for the file format is 6.3.5. In this article, we would discuss how to extract files from zip archive in Ubuntu.</p>
-<p class="amp-wp-7d27179">To extract files from a zip archive, we would use the command-line utility <strong>unzip</strong>. Also, following few operations would require to have superuser privileges. In case you don’t have one then contact your System Administrator for assistance.</p>
-<h5 class="amp-wp-7d27179">Install unzip command-line utility in Ubuntu</h5>
-<p class="amp-wp-7d27179">Although the package comes installed with the default Ubuntu distribution. This is being mentioned just in case you don’t have the package installed. To install <strong>unzip</strong> command-line utility, run the following in terminal –</p>
-<pre>sudo apt install unzip</pre>
-<h5 class="amp-wp-7d27179">Extract files from zip archive</h5>
-<p class="amp-wp-7d27179">The extensions used by zip archive is <strong>.zip or .ZIP</strong>. Also, to identify whether a file is zip archive or not we can use command-line utility <strong>file</strong>. To do so, run the following in terminal –</p>
-<pre>file &lt;file-name.zip&gt;</pre>
-<p class="amp-wp-7d27179">The output should resemble-</p>
-<pre>&lt;file-name.zip&gt;: Zip archive data, at least v2.0 to extract</pre>
-<p class="amp-wp-7d27179">Also, we can list all files available in a zip archive. To list the files present in zip archive, run the following in terminal –</p>
-<pre>unzip -l &lt;file-name.zip&gt;</pre>
-<p class="amp-wp-7d27179">Thereafter, to extract a valid zip archive in the current directory. Run the following in terminal –</p>
-<pre>unzip &lt;file-name.zip&gt;</pre>
-<p class="amp-wp-7d27179">This would extract all the files present in zip archive. But, to extract a specific file from zip archive, first we would get the path of file through –</p>
-<pre>unzip -l &lt;file-name.zip&gt;</pre>
-<p class="amp-wp-7d27179">For instance, path of file to be extracted is <strong>path/to/file.png</strong>. Now, run the following in terminal –</p>
-<pre>unzip -j &lt;file-name.zip&gt; path/to/file.png</pre>
-<p class="amp-wp-7d27179">Furthermore, we could extract a zip archive to a specific location. <strong>-d option</strong> is to be used along with the location where our archive is to be extracted.</p>
-<pre>unzip &lt;file-name.zip&gt; -d /path/to/directory</pre>
-<p class="amp-wp-7d27179">For instance, we would want to extract <strong>firefox-71.0a1.en-US.win32.zip to Downloads</strong> directory. Then, run the following in terminal –</p>
-<pre>unzip firefox-71.0a1.en-US.win32.zip -d /home/&lt;user-name&gt;/Downloads</pre>
-<p class="amp-wp-7d27179">If we would like to hide the messages specifying what all files are being extracted in command prompt, then we can use -q option.</p>
-<pre>unzip -q &lt;file-name.zip&gt; -d /path/to/directory</pre>
-<p class="amp-wp-7d27179">By default, <strong>unzip</strong> utility would ask you what to do in case the extracted file already exists. You could choose any of following options accordingly – [<strong>y</strong>]es, [<strong>n</strong>]o, [<strong>A</strong>]ll, [<strong>N</strong>]one, [<strong>r</strong>]ename.</p>
-<p class="amp-wp-7d27179">In conclusion, we have discussed few of the options available to extract files from a zip archive.</p>
+		<p class="amp-wp-7d27179">In this article, we would discuss a bit about SourcesList file i.e. <strong>/etc/apt/sources.list</strong> in Ubuntu distribution. There are two components, which are responsible for download and installation of various packages.</p>
+<ol><li class="amp-wp-7d27179"><strong>APT</strong> or <strong>Advanced Package Tool</strong> basically fetches packages available through repositories. Thereafter, the downloaded packages are installed on our system.</li>
+<li class="amp-wp-7d27179"><strong>A repository</strong> – It could be a network server. We can also provide path of Directories/CD/DVD as repository. In a repository, we have organized set of binary and sources packages. The repositories also contains files which have all the information about available packages. So, we could get list of packages available and their versions, information about their maintainers etc. Hence, we could decide what all packages need to be installed on our system.</li>
+</ol><p class="amp-wp-7d27179">Before downloading a package available in a repository, we need to provide the repository location to the Advanced Package Tool. This could be done through <strong>/etc/apt/sources.list</strong> file. It contains the path of all the repositories. Although, we could add a repository through <strong>add-apt-repository</strong> command-line utility which is already explained <span class="amp-wp-cc68ddc"><a href="https://techpiezo.com/linux/add-or-remove-ppas-in-ubuntu-distribution/" class="amp-wp-cc68ddc">here</a></span>. But, for the purpose of this article we would limit ourselves to the editing of <strong>/etc/apt/sources.list</strong> file through a text-editor.</p>
+<p class="amp-wp-7d27179">Note: Editing a <strong>/etc/apt/sources.list</strong> file would require you to have superuser privileges. You can’t edit the SourcesList through normal user. Otherwise, you may get the following error –</p>
+<pre>/etc/apt/sources.list permission denied</pre>
+<h5>SourcesList file in Ubuntu distribution</h5>
+<p class="amp-wp-7d27179">Any <strong>/etc/apt/sources.list</strong> file would contain entries which may resemble –</p>
+<pre>deb http://us.archive.ubuntu.com/ubuntu/ disco main restricted
+deb-src http://us.archive.ubuntu.com/ubuntu/ disco main restricted</pre>
+<p class="amp-wp-7d27179">The syntax for the above two entries is –</p>
+<pre>deb http://example.com/ubuntu/ distribution component1 component2 component3
+deb-src http://example.com/ubuntu/ distribution component1 component2 component3</pre>
+<p class="amp-wp-7d27179">where,</p>
+<p class="amp-wp-7d27179"><strong>deb</strong> tells us that the repository contains binary packages</p>
+<p class="amp-wp-7d27179"><strong>deb-src</strong> for source code of packages</p>
+<p class="amp-wp-7d27179"><strong>http://example.com/ubuntu/</strong> – is the URI (Uniform Resource Identifier)</p>
+<p class="amp-wp-7d27179"><strong>distribution</strong> – release of the Ubuntu package, for instance disco</p>
+<p class="amp-wp-7d27179"><strong>component</strong> – these could be free/non-free as per the packages available in repository</p>
+<p class="amp-wp-7d27179">For Ubuntu distribution, we have four components of repositories –</p>
+<ol class="amp-wp-7d27179"><li><strong>Main</strong> – Packages are free/open-source and supported by Canonical.</li>
+<li><strong>Universe</strong> – Package are free/open-source and maintained by community.</li>
+<li><strong>Restricted</strong> – These contain proprietary drivers for various devices.</li>
+<li><strong>Multiverse</strong> – These package are restricted due to legal/copyright issues.</li>
+</ol><p class="amp-wp-7d27179">You could add any or all of the above components in Ubuntu distribution as per your requirements.</p>
+<p class="amp-wp-7d27179">Once you make changes to the <strong>/etc/apt/sources.list</strong> file, don’t forget to update the repository. This ensures that information about the packages are updated and you always get the latest version of packages. To update the repository, issue the following in terminal –</p>
+<pre>sudo apt update</pre>
+<p class="amp-wp-7d27179">In conclusion, we have discussed <strong>/etc/apt/sources.list</strong> (SourcesList) file in Ubuntu distribution.</p>
+<p><strong>Additional Info</strong> –</p>
+<p class="amp-wp-7d27179">It is worth mentioning here that, installing a package through repository offers its own set of advantages. Foremost being, you don’t have to track and update each of the packages installed manually. Consider a scenario, where you install hundred of packages through <strong>dpkg</strong> command-line utility. And, now you have to download each of those packages and update them manually.</p>
+<p class="amp-wp-7d27179">Under such scenario, it is better to install packages through repository as far as possible. <strong>APT</strong> will take care of the rest when you update the repository and upgrade the packages.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
