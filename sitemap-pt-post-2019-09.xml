@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="September 27, 2019 12:43 pm" -->
+<!-- generated-on="September 28, 2019 1:52 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
+		<loc>https://techpiezo.com/linux/use-iso-image-as-cd-rom-repository-in-ubuntu/</loc>
+		<lastmod>2019-09-28T13:52:21+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
 		<loc>https://techpiezo.com/linux/etc-apt-sources-list-sourceslist-file-in-ubuntu-distribution/</loc>
 		<lastmod>2019-09-27T12:42:18+00:00</lastmod>
 		<changefreq>monthly</changefreq>
@@ -90,4 +96,4 @@
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: 3575558a6189f3f2dd1b5c934732ea51; Queries for sitemap: 19; Total queries: 30; Seconds: 0.02; Memory for sitemap: 0MB; Total memory: 2MB -->
+</urlset><!-- Request ID: bf0526b5a4093324977eb483c622718e; Queries for sitemap: 22; Total queries: 33; Seconds: 0.02; Memory for sitemap: 0MB; Total memory: 4MB -->

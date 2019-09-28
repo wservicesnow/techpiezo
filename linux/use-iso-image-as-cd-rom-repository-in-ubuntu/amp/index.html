@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Enable or Disable root user account access in Ubuntu - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/linux/enable-or-disable-root-user-account-access-in-ubuntu/" />
+		<title>Use ISO image as CD-ROM repository in Ubuntu - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/linux/use-iso-image-as-cd-rom-repository-in-ubuntu/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -409,7 +409,7 @@ amp-carousel > amp-img > img {
 	right: 16px;
 }
 		/* Inline stylesheets */
-:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cc68ddc{color:#f00}	</style>
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cdd8ca0{text-align:center}	</style>
 </head>
 
 <body class="">
@@ -426,35 +426,69 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Enable or Disable root user account access in Ubuntu</h1>
+		<h1 class="amp-wp-title">Use ISO image as CD-ROM repository in Ubuntu</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-09-21T07:55:58+00:00">
-		1 week ago	</time>
+	<time datetime="2019-09-27T14:19:33+00:00">
+		24 hours ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">By default, in Ubuntu distribution you can’t login as root user. Although, You could have access to superuser privileges through <strong>sudo -i</strong> command. Moreover, this is specifically applicable only for the user account you created while installing Ubuntu distribution. However, for other users you create at a later stage, it will throw an error – ​<strong>&lt;user-name&gt; is not in the sudoers file. This incident will be reported</strong>. Read how to add a user as sudoers <span class="amp-wp-cc68ddc"><a href="https://techpiezo.com/linux/add-user-to-sudoers-in-ubuntu-distribution/" class="amp-wp-cc68ddc">here</a></span> if you have the issue. For the purpose of this article, we would focus only on how to enable or disable root user account access in Ubuntu.</p>
-<p class="amp-wp-7d27179"><strong>Note:</strong> We need to take utmost care while we are logged in as root. If you don’t know what you are doing then it is better to contact your System Administrator for assistance. Furthermore, following operations would require you to have access to superuser privileges.</p>
-<h5 class="amp-wp-7d27179">Enable root user account access</h5>
-<p class="amp-wp-7d27179">If you simply try to login as root, it won’t let you login.</p>
-<p><amp-img class="size-full wp-image-2640 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/09/root-cant-login-ubuntu.png" alt="root can't login ubuntu" width="277" height="115" layout="intrinsic"></amp-img></p>
-<p class="amp-wp-7d27179">Therefore, we would utilize the command-line utility <strong>passwd</strong>. Run the following in terminal, after you login with a user who has sudo access.</p>
-<pre>sudo passwd root</pre>
-<p class="amp-wp-7d27179">It would ask you to enter sudo password for the logged-in &lt;user-name&gt;.</p>
-<p><amp-img class="size-full wp-image-2641 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/09/root-access-in-ubuntu.png" alt="root access in ubuntu" width="375" height="127" layout="intrinsic"></amp-img></p>
-<p class="amp-wp-7d27179">Thereafter, it would ask you to enter the password details for root user. Enter the same password twice and you would receive the <strong>passwd: password updated successfully</strong> message.</p>
-<p class="amp-wp-7d27179">Thus, you should be able to login as root in command-prompt.</p>
-<h5 class="amp-wp-7d27179">Disable root user account access</h5>
-<p class="amp-wp-7d27179">Now, for some reason you would want to disable root user access. In that scenario too, we would use the <strong>passwd</strong> command-line utility. To disable root user account, run the following in terminal –</p>
-<pre>sudo passwd -l root</pre>
-<p class="amp-wp-7d27179">where,</p>
-<p class="amp-wp-7d27179"><strong>-l</strong> option is used to lock the user account followed by &lt;user-name&gt;.</p>
-<p class="amp-wp-7d27179">Once you have successfully modified user account access, you would get the message – <strong>passwd: password expiry information changed</strong></p>
-<p class="amp-wp-7d27179"><strong>Note:</strong> This won’t disable root user account itself. It just locks the user account rendering it inaccessible. Also, those users who have been locked with the option can’t change their own password any further.</p>
-<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have discussed how to enable or disable root user account access in Ubuntu distribution.</p>
+		<p class="amp-wp-7d27179">In this article, we would discuss how to add ISO image as CD-ROM repository in Ubuntu distribution. The bootable ISO image of Ubuntu distribution contains hundreds of packages. These packages can be installed either during Ubuntu installation or later. It makes sense not to install all the packages available on CD/DVD beforehand. We can install required packages as and when required.</p>
+<p class="amp-wp-7d27179">To install the required packages; we have two options available –</p>
+<ol class="amp-wp-7d27179"><li>Download packages over internet, or</li>
+<li>Fetch them through ISO image.</li>
+</ol><p class="amp-wp-7d27179">Downloading a package over internet is pretty straight-forward. All we need to do is update the repository and then install the relevant packages. For instance, if we want to install Firefox web browser then issue the following in terminal –</p>
+<pre>sudo apt update
+sudo apt install firefox</pre>
+<p class="amp-wp-7d27179">But, installing a package from CD-ROM requires you to add the repository in <strong>/etc/apt/sources.list</strong> first. Thereafter, we can mount the ISO and fetch the relevant packages. Now, we will discuss each of these operations step-by-step and explain it with examples wherever necessary.</p>
+<p class="amp-wp-7d27179"><strong>Note:</strong> Following operations would require you to have superuser privileges. In case you don’t have one, then contact your System Administrator for assistance.</p>
+<h5>Use ISO image as CD-ROM repository</h5>
+<p class="amp-wp-7d27179">There are two methods through which we can add a CD-ROM repository.</p>
+<h5 class="amp-wp-cdd8ca0"><strong>Method 1. </strong>Manually edit the SourcesList</h5>
+<p class="amp-wp-7d27179">Firstly, we need to mount the ISO image. Thereafter, we would make relevant entries in <strong>/etc/apt/sources.list</strong> file.</p>
+<p class="amp-wp-7d27179">Make a directory to mount the ISO –</p>
+<pre class="amp-wp-7d27179">sudo mkdir -p /mnt/mount-iso/</pre>
+<p class="amp-wp-7d27179">Now, we will mount the ISO image on <strong>/mnt/mount-iso/</strong> through <strong>mount</strong> command –</p>
+<pre>mount -o loop /path/to/ubuntu-19.10-desktop-amd64.iso /mnt/mount-iso/</pre>
+<p class="amp-wp-7d27179">Open <strong>/etc/apt/sources.list</strong> in a text editor, we have used<strong> nano</strong>.</p>
+<pre>sudo nano /etc/apt/sources.list</pre>
+<p class="amp-wp-7d27179">And, add the following entries in <strong>/etc/apt/sources.list</strong></p>
+<pre>deb file:/mnt/mount-iso eoan main</pre>
+<p class="amp-wp-7d27179">and, run</p>
+<pre>sudo apt update</pre>
+<p class="amp-wp-7d27179">At this point you would get the error –</p>
+<p><strong>E: The repository ‘file:/mnt/mount-iso eoan Release’ does not have a Release file.</strong></p>
+<p class="amp-wp-7d27179">We did this on purpose. If everything has been done as mentioned up till now. Then, you are bound to get the error. Otherwise, there is something amiss. This error basically tells us that release file for Ubuntu distribution is not found on ISO image. To get rid of the issue, we need to add <strong>[trusted=yes]</strong> in the <strong>/etc/apt/sources.list</strong>.</p>
+<p class="amp-wp-7d27179">Hence, replace the following line –</p>
+<pre>deb file:/mnt/mount-iso eoan main</pre>
+<p class="amp-wp-7d27179">with –</p>
+<pre>deb [trusted=yes] file:/mnt/mount-iso eoan main</pre>
+<p class="amp-wp-7d27179">And, then do –</p>
+<pre>sudo apt update</pre>
+<p class="amp-wp-7d27179">Now, you can install required packages available in CD-ROM.</p>
+<p><strong>Additional Info</strong> –</p>
+<p class="amp-wp-7d27179">You need to mount (<code>mount -o loop /path/to/ubuntu-19.10-desktop-amd64.iso /mnt/mount-iso/</code>) the ISO image every time you log in to your system. Therefore, to make the mount permanent we need to make the following entries in <strong>/etc/fstab</strong> file.</p>
+<p class="amp-wp-7d27179">Open the file with a text editor –</p>
+<pre>sudo nano /etc/fstab</pre>
+<p class="amp-wp-7d27179">And, add following entries –</p>
+<pre>/path/to/iso/eoan-server-amd64.iso /mnt/mount-iso iso9660 loop,ro,auto 0 0</pre>
+<p class="amp-wp-7d27179">This will make sure your mount will survive after every reboot.</p>
+<h5 class="amp-wp-cdd8ca0"><strong>Method 2</strong>. Use apt-cdrom command-line utility.</h5>
+<p class="amp-wp-7d27179">We need to make a directory on which ISO image will be mounted.</p>
+<pre>sudo mkdir -p /mnt/mount-iso/</pre>
+<p class="amp-wp-7d27179">To temporary mount, which survives till next boot –</p>
+<pre>sudo mount -o loop /path/to/ubuntu-19.10-desktop-amd64.iso /mnt/mount-iso/</pre>
+<p class="amp-wp-7d27179">To make the mount permanent, we need to append <strong>/etc/fstab</strong> with following entries –</p>
+<pre>/path/to/iso/eoan-server-amd64.iso /mnt/mount-iso iso9660 loop,ro,auto 0 0</pre>
+<p class="amp-wp-7d27179">Now, we will use the command-line utility <strong>apt-cdrom</strong> to get the relevant entries added in <strong>/etc/apt/sources.list</strong></p>
+<pre>sudo apt-cdrom -m -d=/mnt/mount-iso add</pre>
+<p class="amp-wp-7d27179">To update the repository –</p>
+<pre>sudo apt update</pre>
+<p class="amp-wp-7d27179">And, you can install the relevant packages available in CD-ROM.</p>
+<p class="amp-wp-7d27179">In conclusion, we have discussed the two methods available to use ISO image as CD-ROM repository.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
