@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Install ClamAV Antivirus in Ubuntu - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/linux/install-clamav-antivirus-in-ubuntu/" />
+		<title>Install Python 3.7.4 in Ubuntu 19.04 - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/python/install-python-3-7-4-in-ubuntu-19-04/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -409,7 +409,7 @@ amp-carousel > amp-img > img {
 	right: 16px;
 }
 		/* Inline stylesheets */
-:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cdd8ca0{text-align:center}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-fe4704d{padding-left:40px}	</style>
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cdd8ca0{text-align:center}	</style>
 </head>
 
 <body class="">
@@ -426,45 +426,66 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Install ClamAV Antivirus in Ubuntu</h1>
+		<h1 class="amp-wp-title">Install Python 3.7.4 in Ubuntu 19.04</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-06-15T18:58:19+00:00">
-		4 months ago	</time>
+	<time datetime="2019-09-28T20:22:30+00:00">
+		13 hours ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">ClamAV is an open-source Antivirus tool available for Linux distributions. It is integrated with Mail servers to scan attachments received. In addition to scanning mail attachments, it provides protection to corporate networks. Other functions also include web scanning. We are provided with a command line interface, with the installation of ClamAV package in repositories. For those who are not comfortable with command line interface, may opt to install <strong>Clamtk</strong> package to get the Graphical User Interface (GUI). ClamAV utilizes Milter interface for Sendmail and has built-in support for various file formats.</p>
-<h4 class="amp-wp-cdd8ca0"><strong>Install ClamAV in Ubuntu 19.04</strong></h4>
-<p class="amp-wp-7d27179">Open Ubuntu terminal using the shortcut key –</p>
-<p class="amp-wp-7d27179"><code>Ctrl+Alt+T</code></p>
-<p class="amp-wp-7d27179">You need to have superuser privileges to make any changes, otherwise contact your System Administrator for assistance.</p>
-<p class="amp-wp-7d27179">Type the following command to update and install repositories and ClamAV Antivirus respectively.</p>
-<pre>sudo apt update
-sudo apt install clamav clamav-daemon</pre>
-<p class="amp-wp-7d27179">Once, the packages are successfully installed, the Antivirus will update its relevant packages in the background by itself.</p>
-<p class="amp-wp-7d27179">To scan directories we need to type the following command in terminal:</p>
-<pre>clamscan -r -i --bell /home/</pre>
-<p>where,</p>
-<p class="amp-wp-fe4704d"><strong>-r</strong>, is used for scanning sub directories recursively,</p>
-<p class="amp-wp-fe4704d"><strong>-i</strong>, for printing infected files,</p>
-<p class="amp-wp-fe4704d"><strong>–bell</strong>, there will be a bell sound if a virus is detected,</p>
-<p class="amp-wp-fe4704d"><strong>/home/</strong>, directory we intend to scan – you can use directories of your choice</p>
-<p class="amp-wp-7d27179">This command only scan directories and provides us with the list of infected files. But, what if we plan to move infected files to some other directory. It could be a better choice as removing an infected file may break our system. Hence, we tread with caution and move the infected file to some other directory. We need to type the following command in terminal –</p>
-<pre>clamscan -i -r --move="/home/&lt;home-directory&gt;/Downloads/" /home</pre>
-<p class="amp-wp-7d27179">The above command will scan the directory <strong>/home/</strong> and if infected files are detected then, it will move those files to the directory <strong>/home/&lt;home-directory&gt;/Downloads/</strong>.</p>
-<p class="amp-wp-7d27179">Type <code>clamscan -h</code> for more options.</p>
-<p class="amp-wp-7d27179">Some users are not comfortable when using a command line interface. They can install a graphical version through package <strong>clamtk</strong>. Type the following command –</p>
-<pre>sudo apt install clamtk</pre>
-<p class="amp-wp-7d27179">Once the package clamtk is successfully installed you can use the Graphical User Interface for further operations.</p>
-<p class="amp-wp-7d27179">You can also install packages through Synaptic Package Manager or Software Centre. All you have to do is search for the relevant packages mentioned above and perform the install operation. It is worth mentioning here that, you can install the packages through command line interface or you could take the help of a package manager – the outcome will be the same in both the cases.</p>
+		<p class="amp-wp-7d27179">Python is an object-oriented, high-level, interpreted programming language. Although, Python 3.7.3 comes installed by default in Ubuntu 19.04. But, there could be circumstances wherein users may have to install the latest stable package manually. At the time of writing the article, the latest stable version for Python is 3.7.4. It was released on July 08, 2019. In this article, we would discuss how to install Python 3.7.4 in Ubuntu 19.04.</p>
+<p class="amp-wp-7d27179">Furthermore, for users who would want to know which Python version is installed in their Ubuntu distribution may issue the following in terminal –</p>
+<pre>python3 -V</pre>
+<p class="amp-wp-7d27179">This should return with the output in Ubuntu 19.04-</p>
+<pre>Python 3.7.3</pre>
+<p class="amp-wp-7d27179">Ubuntu distributions do have the latest stable version of Python available at the time of release. So, in case of Ubuntu 19.10 you would get the latest stable version of Python i.e. Python 3.7.4+.</p>
+<p class="amp-wp-7d27179"><strong>Note</strong>: Following operations would require you to have superuser privileges. In case you don’t have one, then contact your System Administrator for assistance.</p>
+<h5 class="amp-wp-cdd8ca0">Install Python 3.7.4 in Ubuntu 19.04</h5>
+<p class="amp-wp-7d27179">To install Python 3.7.4 in Ubuntu 19.04, you need to download the relevant file from the official website –</p>
+<pre>https://www.python.org/downloads/</pre>
+<p class="amp-wp-7d27179">Press the<strong> Download Python 3.7.4</strong> button or, you can download it from the link –</p>
+<pre>https://www.python.org/ftp/python/3.7.4/Python-3.7.4.tar.xz</pre>
+<p class="amp-wp-7d27179">The package size is of 16.3 MBs and time taken to download would depend on your network connection speed.</p>
+<p class="amp-wp-7d27179">Thereafter, we would extract the downloaded file<strong> Python-3.7.4.tar.xz</strong> through command-line utility <strong>tar</strong>. Therefore, issue the following in terminal –</p>
+<pre>tar -xvf Python-3.7.4.tar.xz</pre>
+<p class="amp-wp-7d27179">This creates a folder <strong>Python-3.7.4</strong> in the same directory where <strong>Python-3.7.4.tar.xz</strong> was downloaded.</p>
+<p class="amp-wp-7d27179">Get inside the directory through <strong>cd</strong> command-line utility –</p>
+<pre>cd Python-3.7.4</pre>
+<p class="amp-wp-7d27179">and, run following commands in terminal –</p>
+<pre>./configure
+make
+make test
+</pre>
+<p class="amp-wp-7d27179">You got two options at this point, either to keep the installed version of Python and install latest version alongside it<strong> or</strong> overwrite the existing version.</p>
+<p class="amp-wp-7d27179">To Overwrite the existing version of Python –</p>
+<pre>sudo make install</pre>
+<p class="amp-wp-7d27179">To Keep the installed version of Python and install the latest stable version alongside it –</p>
+<pre>sudo make altinstall</pre>
+<p class="amp-wp-7d27179">During the installation process, you may encounter following errors –</p>
+<p><strong>Error 1.</strong></p>
+<pre>zipimport.ZipImportError: can't decompress data; zlib not available
+make: *** [Makefile:1132: install] Error 1</pre>
+<p class="amp-wp-7d27179"><strong>Solution</strong>. Install the relevant package –</p>
+<pre>sudo apt install zlib1g-dev</pre>
+<p><strong>Error 2</strong>.</p>
+<pre>ModuleNotFoundError: No module named '_ctypes'
+make: *** [Makefile:1132: install] Error 1</pre>
+<p class="amp-wp-7d27179"><strong>Solution</strong>. Install the relevant package –</p>
+<pre>sudo apt install libffi-dev</pre>
+<p class="amp-wp-7d27179">This will successfully install the latest stable version of Python. To check for the version installed, open a new terminal –</p>
+<pre>python3.7 -V
+python3.7m -V</pre>
+<p class="amp-wp-7d27179">It should return with the latest version of Python installed.</p>
+<pre>Python 3.7.4</pre>
+<p class="amp-wp-7d27179">In conclusion, we have discussed how to install the latest stable version of Python i.e. Python 3.7.4 in Ubuntu 19.04</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
 			<div class="amp-wp-meta amp-wp-tax-category">
-		Categories: <a href="https://techpiezo.com/linux/" rel="category tag">Linux</a>, <a href="https://techpiezo.com/linux/linux-quick-fix/" rel="category tag">Quick Fix</a>	</div>
+		Categories: <a href="https://techpiezo.com/linux/" rel="category tag">Linux</a>, <a href="https://techpiezo.com/python/" rel="category tag">Python</a>	</div>
 
 	</footer>
 </article>
