@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Extract files from zip archive in Ubuntu - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/linux/extract-files-from-zip-archive-in-ubuntu/" />
+		<title>Install PIP in Ubuntu 19.10 - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/python/install-pip-in-ubuntu-19-10/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -409,7 +409,7 @@ amp-carousel > amp-img > img {
 	right: 16px;
 }
 		/* Inline stylesheets */
-:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}	</style>
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cdd8ca0{text-align:center}	</style>
 </head>
 
 <body class="">
@@ -426,47 +426,51 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Extract files from zip archive in Ubuntu</h1>
+		<h1 class="amp-wp-title">Install PIP in Ubuntu 19.10</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-09-22T16:09:33+00:00">
-		1 week ago	</time>
+	<time datetime="2019-09-29T17:18:31+00:00">
+		9 mins ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">Zip is an archive file format. A zip file may consist of any number of compressed files and folders. It was developed by Phillip Walter Katz and the file format was first released in the year 1989. At the time of writing the article, the latest version available for the file format is 6.3.5. In this article, we would discuss how to extract files from zip archive in Ubuntu.</p>
-<p class="amp-wp-7d27179">To extract files from a zip archive, we would use the command-line utility <strong>unzip</strong>. Also, following few operations would require to have superuser privileges. In case you don’t have one then contact your System Administrator for assistance.</p>
-<h5 class="amp-wp-7d27179">Install unzip command-line utility in Ubuntu</h5>
-<p class="amp-wp-7d27179">Although the package comes installed with the default Ubuntu distribution. This is being mentioned just in case you don’t have the package installed. To install <strong>unzip</strong> command-line utility, run the following in terminal –</p>
-<pre>sudo apt install unzip</pre>
-<h5 class="amp-wp-7d27179">Extract files from zip archive</h5>
-<p class="amp-wp-7d27179">The extensions used by zip archive is <strong>.zip or .ZIP</strong>. Also, to identify whether a file is zip archive or not we can use command-line utility <strong>file</strong>. To do so, run the following in terminal –</p>
-<pre>file &lt;file-name.zip&gt;</pre>
-<p class="amp-wp-7d27179">The output should resemble-</p>
-<pre>&lt;file-name.zip&gt;: Zip archive data, at least v2.0 to extract</pre>
-<p class="amp-wp-7d27179">Also, we can list all files available in a zip archive. To list the files present in zip archive, run the following in terminal –</p>
-<pre>unzip -l &lt;file-name.zip&gt;</pre>
-<p class="amp-wp-7d27179">Thereafter, to extract a valid zip archive in the current directory. Run the following in terminal –</p>
-<pre>unzip &lt;file-name.zip&gt;</pre>
-<p class="amp-wp-7d27179">This would extract all the files present in zip archive. But, to extract a specific file from zip archive, first we would get the path of file through –</p>
-<pre>unzip -l &lt;file-name.zip&gt;</pre>
-<p class="amp-wp-7d27179">For instance, path of file to be extracted is <strong>path/to/file.png</strong>. Now, run the following in terminal –</p>
-<pre>unzip -j &lt;file-name.zip&gt; path/to/file.png</pre>
-<p class="amp-wp-7d27179">Furthermore, we could extract a zip archive to a specific location. <strong>-d option</strong> is to be used along with the location where our archive is to be extracted.</p>
-<pre>unzip &lt;file-name.zip&gt; -d /path/to/directory</pre>
-<p class="amp-wp-7d27179">For instance, we would want to extract <strong>firefox-71.0a1.en-US.win32.zip to Downloads</strong> directory. Then, run the following in terminal –</p>
-<pre>unzip firefox-71.0a1.en-US.win32.zip -d /home/&lt;user-name&gt;/Downloads</pre>
-<p class="amp-wp-7d27179">If we would like to hide the messages specifying what all files are being extracted in command prompt, then we can use -q option.</p>
-<pre>unzip -q &lt;file-name.zip&gt; -d /path/to/directory</pre>
-<p class="amp-wp-7d27179">By default, <strong>unzip</strong> utility would ask you what to do in case the extracted file already exists. You could choose any of following options accordingly – [<strong>y</strong>]es, [<strong>n</strong>]o, [<strong>A</strong>]ll, [<strong>N</strong>]one, [<strong>r</strong>]ename.</p>
-<p class="amp-wp-7d27179">In conclusion, we have discussed few of the options available to extract files from a zip archive.</p>
+		<p class="amp-wp-7d27179">PIP is basically a Python package installer. Python packages are available either in standard library or they could be fetched from PyPI (Python Package Index). When we install Python through its one of binary installers, we do get PIP with it. For users, who prefer to use the version of Python already available in standard Ubuntu repository need to install PIP on their own. This article focuses on installation steps required to get PIP in Ubuntu 19.10.</p>
+<p class="amp-wp-7d27179"><strong>Note</strong>: Following operations would require you to have superuser privileges. In case you don’t have one, then contact your System Administrator for assistance.</p>
+<h5 class="amp-wp-cdd8ca0">Install PIP in Ubuntu 19.10</h5>
+<p class="amp-wp-7d27179">The installation process is pretty straight-forward. We need to first identify the version of PIP we would like to install as per our requirements. This would depend largely on the version of Python you would use. Therefore, to use <strong>PIP/PIP2</strong> install <strong>python-pip</strong> package. Otherwise, install <strong>python3-pip</strong> package for <strong>PIP3</strong>.</p>
+<p class="amp-wp-7d27179">But, before that we need to update the repository.</p>
+<pre>sudo apt update</pre>
+<p class="amp-wp-7d27179">To install PIP/PIP2 –</p>
+<pre>sudo apt install python-pip</pre>
+<p class="amp-wp-7d27179">To install PIP3 –</p>
+<pre>sudo apt install python3-pip</pre>
+<p class="amp-wp-7d27179">Confirm the version installed with –</p>
+<pre>pip -V</pre>
+<p class="amp-wp-7d27179">or,</p>
+<pre>pip3 -V</pre>
+<p class="amp-wp-7d27179">In Conclusion, we have discussed how to install PIP/PIP2/PIP3 in Ubuntu 19.10</p>
+<p class="amp-wp-7d27179"><strong>Additional Info</strong> –</p>
+<p class="amp-wp-7d27179">There are three ways to install Python packages –</p>
+<ol class="amp-wp-7d27179"><li>Through Python package installer – PIP</li>
+<li>easy_install</li>
+<li>manually</li>
+</ol><p class="amp-wp-7d27179">Now, we will discuss a bit on how to install a Python package with the help of an example.</p>
+<p class="amp-wp-7d27179">To install Python packages, we issue the command in terminal –</p>
+<pre>pip install package_name</pre>
+<p class="amp-wp-7d27179">Consider installing <strong>beautifulsoup4</strong>, if you want to scrape data from web pages – HTML or XML. Therefore, to install the package for <strong>beautifulsoup4</strong> we need to issue the following in terminal –</p>
+<pre>pip install beautifulsoup4</pre>
+<p class="amp-wp-7d27179">Furthermore, if you want to uninstall a package then run the following in terminal –</p>
+<pre>pip uninstall package_name</pre>
+<p class="amp-wp-7d27179">for instance, if you want to remove the installed package <strong>beautifulsoup4</strong>. Then, issue the following in terminal –</p>
+<pre>pip uninstall beautifulsoup4</pre>
+<p class="amp-wp-7d27179">We would discuss more about PIP/PIP2/PIP3 in coming articles.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
 			<div class="amp-wp-meta amp-wp-tax-category">
-		Categories: <a href="https://techpiezo.com/linux/" rel="category tag">Linux</a>, <a href="https://techpiezo.com/linux/linux-quick-fix/" rel="category tag">Quick Fix</a>	</div>
+		Categories: <a href="https://techpiezo.com/python/" rel="category tag">Python</a>	</div>
 
 	</footer>
 </article>
