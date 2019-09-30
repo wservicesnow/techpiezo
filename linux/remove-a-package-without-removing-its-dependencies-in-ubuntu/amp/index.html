@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>/etc/apt/sources.list - SourcesList file in Ubuntu distribution - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/linux/etc-apt-sources-list-sourceslist-file-in-ubuntu-distribution/" />
+		<title>Remove a package without removing its dependencies in Ubuntu - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/linux/remove-a-package-without-removing-its-dependencies-in-ubuntu/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -409,7 +409,7 @@ amp-carousel > amp-img > img {
 	right: 16px;
 }
 		/* Inline stylesheets */
-:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cc68ddc{color:#f00}	</style>
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cdd8ca0{text-align:center}	</style>
 </head>
 
 <body class="">
@@ -426,47 +426,37 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">/etc/apt/sources.list &#8211; SourcesList file in Ubuntu distribution</h1>
+		<h1 class="amp-wp-title">Remove a package without removing its dependencies in Ubuntu</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-09-27T12:21:08+00:00">
-		3 days ago	</time>
+	<time datetime="2019-09-30T15:03:02+00:00">
+		9 mins ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">In this article, we would discuss a bit about SourcesList file i.e. <strong>/etc/apt/sources.list</strong> in Ubuntu distribution. There are two components, which are responsible for download and installation of various packages.</p>
-<ol><li class="amp-wp-7d27179"><strong>APT</strong> or <strong>Advanced Package Tool</strong> basically fetches packages available through repositories. Thereafter, the downloaded packages are installed on our system.</li>
-<li class="amp-wp-7d27179"><strong>A repository</strong> – It could be a network server. We can also provide path of Directories/CD/DVD as repository. In a repository, we have organized set of binary and sources packages. The repositories also contains files which have all the information about available packages. So, we could get list of packages available and their versions, information about their maintainers etc. Hence, we could decide what all packages need to be installed on our system.</li>
-</ol><p class="amp-wp-7d27179">Before downloading a package available in a repository, we need to provide the repository location to the Advanced Package Tool. This could be done through <strong>/etc/apt/sources.list</strong> file. It contains the path of all the repositories. Although, we could add a repository through <strong>add-apt-repository</strong> command-line utility which is already explained <span class="amp-wp-cc68ddc"><a href="https://techpiezo.com/linux/add-or-remove-ppas-in-ubuntu-distribution/" class="amp-wp-cc68ddc">here</a></span>. But, for the purpose of this article we would limit ourselves to the editing of <strong>/etc/apt/sources.list</strong> file through a text-editor.</p>
-<p class="amp-wp-7d27179">Note: Editing a <strong>/etc/apt/sources.list</strong> file would require you to have superuser privileges. You can’t edit the SourcesList through normal user. Otherwise, you may get the following error –</p>
-<pre>/etc/apt/sources.list permission denied</pre>
-<h5>SourcesList file in Ubuntu distribution</h5>
-<p class="amp-wp-7d27179">Any <strong>/etc/apt/sources.list</strong> file would contain entries which may resemble –</p>
-<pre>deb http://us.archive.ubuntu.com/ubuntu/ disco main restricted
-deb-src http://us.archive.ubuntu.com/ubuntu/ disco main restricted</pre>
-<p class="amp-wp-7d27179">The syntax for the above two entries is –</p>
-<pre>deb http://example.com/ubuntu/ distribution component1 component2 component3
-deb-src http://example.com/ubuntu/ distribution component1 component2 component3</pre>
-<p class="amp-wp-7d27179">where,</p>
-<p class="amp-wp-7d27179"><strong>deb</strong> tells us that the repository contains binary packages</p>
-<p class="amp-wp-7d27179"><strong>deb-src</strong> for source code of packages</p>
-<p class="amp-wp-7d27179"><strong>http://example.com/ubuntu/</strong> – is the URI (Uniform Resource Identifier)</p>
-<p class="amp-wp-7d27179"><strong>distribution</strong> – release of the Ubuntu package, for instance disco</p>
-<p class="amp-wp-7d27179"><strong>component</strong> – these could be free/non-free as per the packages available in repository</p>
-<p class="amp-wp-7d27179">For Ubuntu distribution, we have four components of repositories –</p>
-<ol class="amp-wp-7d27179"><li><strong>Main</strong> – Packages are free/open-source and supported by Canonical.</li>
-<li><strong>Universe</strong> – Package are free/open-source and maintained by community.</li>
-<li><strong>Restricted</strong> – These contain proprietary drivers for various devices.</li>
-<li><strong>Multiverse</strong> – These package are restricted due to legal/copyright issues.</li>
-</ol><p class="amp-wp-7d27179">You could add any or all of the above components in Ubuntu distribution as per your requirements.</p>
-<p class="amp-wp-7d27179">Once you make changes to the <strong>/etc/apt/sources.list</strong> file, don’t forget to update the repository. This ensures that information about the packages are updated and you always get the latest version of packages. To update the repository, issue the following in terminal –</p>
-<pre>sudo apt update</pre>
-<p class="amp-wp-7d27179">In conclusion, we have discussed <strong>/etc/apt/sources.list</strong> (SourcesList) file in Ubuntu distribution.</p>
-<p><strong>Additional Info</strong> –</p>
-<p class="amp-wp-7d27179">It is worth mentioning here that, installing a package through repository offers its own set of advantages. Foremost being, you don’t have to track and update each of the packages installed manually. Consider a scenario, where you install hundred of packages through <strong>dpkg</strong> command-line utility. And, now you have to download each of those packages and update them manually.</p>
-<p class="amp-wp-7d27179">Under such scenario, it is better to install packages through repository as far as possible. <strong>APT</strong> will take care of the rest when you update the repository and upgrade the packages.</p>
+		<p class="amp-wp-7d27179">We can remove packages installed in Ubuntu either through <strong>apt</strong> or <strong>dpkg</strong> command-line utility. Although removing a package in Ubuntu is fairly simple through <strong>apt/dpkg</strong> command-line utilities. But, there are other packages which depend on the package we would want to uninstall. We call these other package – <strong>dependencies</strong>. So, if we uninstall a package then its dependencies may also get uninstalled along with it. Consider a scenario, wherein hundreds of other packages installed also need these dependencies and uninstalling these dependencies would leave our system in broken state. Therefore, in this article we would discuss how to remove a package without removing its dependencies in Ubuntu distribution.</p>
+<p class="amp-wp-7d27179"><strong>Note:</strong> Following operations would require you to have superuser privileges. In case you don’t have one, then contact your System Administrator for assistance. Also, we would like to mention it beforehand that uninstalling a package without removing its dependencies must be considered on a case-by-case basis. We will see how it can affect your system with the help of an example later in the article.</p>
+<h5 class="amp-wp-cdd8ca0">Remove a package without removing its dependencies</h5>
+<p class="amp-wp-7d27179">We would use the <strong>dpkg</strong> command-line utility to remove a package while keeping its dependencies installed. Hence, run the following in terminal –</p>
+<pre>sudo dpkg -r --force-depends &lt;package_name&gt;</pre>
+<p class="amp-wp-7d27179">To completely remove the package, including configuration files, use <strong>purge (-P)</strong> option. This could be done through –</p>
+<pre>sudo dpkg -P --force-depends &lt;package_name&gt;</pre>
+<p class="amp-wp-7d27179">Now, we will discuss the worst-case scenario wherein you would want to remove Python3 package through Advanced Package Tool (APT). Since, the package is required by numerous other critical packages installed in our system. Thus, removing the package would render our system in an unusable state.</p>
+<p class="amp-wp-7d27179">But, if you tried to remove the package through following command –</p>
+<pre>sudo dpkg -r --force-depends python3</pre>
+<p class="amp-wp-7d27179">Output –</p>
+<pre>dpkg: python3: dependency problems, but removing anyway as you requested:</pre>
+<p class="amp-wp-7d27179">Then, it will remove the package without removing the dependencies. And, things will be fine till you want to upgrade/install any other package.</p>
+<p class="amp-wp-7d27179">So, next time you would want to install/upgrade a package it will throw an error –</p>
+<pre>E: Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).</pre>
+<p class="amp-wp-7d27179">Therefore, you need to fix the broken packages first i.e. python3. This could be fix through –</p>
+<pre>sudo apt install -f</pre>
+<p class="amp-wp-7d27179">The above command would fetch and install the python3 package again. And, then you are allowed to do further operations.</p>
+<p class="amp-wp-7d27179"><strong>Why this happened?</strong></p>
+<p class="amp-wp-7d27179">There are so many packages which depend on python3 package. Even if we remove just one package and keep its dependencies installed. It just won’t work.</p>
+<p class="amp-wp-7d27179">In conclusion, as we discussed at the beginning of the article. We need to remove the packages selectively. Since, dependencies is just a term in reference to the installed package. Otherwise, a dependency itself is a package. So, consider removing a package/dependency on a case-by-case basis.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
