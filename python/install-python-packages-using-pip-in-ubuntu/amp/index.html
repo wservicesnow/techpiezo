@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Your first Java Program - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/java/your-first-java-program/" />
+		<title>Install Python packages using PIP in Ubuntu - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/python/install-python-packages-using-pip-in-ubuntu/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -409,7 +409,7 @@ amp-carousel > amp-img > img {
 	right: 16px;
 }
 		/* Inline stylesheets */
-:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-a1b1bb7{color:#00f}	</style>
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cdd8ca0{text-align:center}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cc68ddc{color:#f00}	</style>
 </head>
 
 <body class="">
@@ -426,64 +426,73 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Your first Java Program</h1>
+		<h1 class="amp-wp-title">Install Python packages using PIP in Ubuntu</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-08-17T17:36:09+00:00">
-		2 months ago	</time>
+	<time datetime="2019-10-01T10:48:52+00:00">
+		7 hours ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">There are two items you will need to write your first Java program. These are:</p>
-<ol class="amp-wp-7d27179"><li>OpenJDK Development Kit (JDK)</li>
-<li>A text editor – vim, nano, featherpad, gedit etc.</li>
-</ol><p class="amp-wp-7d27179">If you haven’t yet installed OpenJDK Development Kit (JDK), then you may look how to install one <span class="amp-wp-a1b1bb7"><a href="https://techpiezo.com/java/install-openjdk-jre-jdk-in-ubuntu-19-04/" class="amp-wp-a1b1bb7">here</a></span>.</p>
-<p class="amp-wp-7d27179">Next, you need to open your text editor and type the following code –</p>
-<pre>//Your first Java code
-class HelloWorld {
-                  public static void main (String args [])  {
-                      System.out.println("Hello World!");
-          }
-}</pre>
-<p>Save as HelloWorld.java, the file has <strong>.java</strong> extension and file name is same as the name of our class. Although you could choose filename of your choice but, it is always better to have one that resembles name of your class. It is worth mentioning here that Java is case-sensitive.</p>
-<p class="amp-wp-7d27179">We will discuss the code after we have compiled and run it.</p>
-<p class="amp-wp-7d27179">To compile your Java code, you need to use<strong> javac</strong>. It will generate a Java bytecode file, HelloWorld.class. A Java bytecode file contains all the instruction which are to be executed by the Java Virtual Machine (JVM). So, to compile the code –</p>
-<pre>javac HelloWorld.java</pre>
-<p class="amp-wp-7d27179">The compiler generates a bytecode file. To run the program –</p>
-<pre>java HelloWorld</pre>
-<p class="amp-wp-7d27179">It will return with the output-</p>
-<pre>Hello World!</pre>
-<p class="amp-wp-7d27179">Till now, we have learnt how to write, compile and run our Java code. Next, we will be discussing the code we just wrote in detail.</p>
-<h5>Code Explained</h5>
-<pre>//Your first Java code
-class HelloWorld {
-         public static void main (String args [])  {
-                 System.out.println("Hello World!");
-         }
-}</pre>
-<p class="amp-wp-7d27179">The code starts with <strong>//</strong>, this is used for comments. Java supports three types of comments – single-line comment, multi-line comment and documentation comment. We will discuss each of those in a separate article.</p>
-<p>Next is – class HelloWorld {</p>
-<p class="amp-wp-7d27179"><strong>class</strong> is a keyword which is used to declare a new class HelloWorld. The class is defined in between curly braces {}.</p>
-<p class="amp-wp-7d27179">Hence, the class can be declared and defined as –</p>
-<pre>class class_name {
-         //Your code and data are defined here
-}</pre>
-<p class="amp-wp-7d27179">After class declaration, we have –</p>
-<pre>public static void main (String args [])  {</pre>
-<p class="amp-wp-7d27179"><strong>main()</strong> is a method, it is necessary to have the main() method in Java programs as it is considered a starting point. However, there are many programs that may not require main() method at all.</p>
-<p class="amp-wp-7d27179"><strong>public</strong> keyword is an access modifier, it signifies that the class member so declared inside the class can also be accessed from outside the class too.</p>
-<p class="amp-wp-7d27179"><strong>static</strong> keyword allows us to call our main() method without having to create an object. If we remove static keyword then, we need to create an object first to call main() method.</p>
-<p class="amp-wp-7d27179"><strong>void</strong> keyword is used when our method doesn’t return any value. In this case, we inform our Java compiler that our main() method doesn’t return any value.</p>
-<p class="amp-wp-7d27179"><strong>String args[]</strong>, we have declared a parameter named – args, an array of type String.</p>
-<p class="amp-wp-7d27179"><strong>System.out.println(“Hello World!”); </strong>System is a class, out is for the standard output. println() is a built-in method. Anything passed to the println() method would be displayed as the output. Then, at last there is a semi-colon.</p>
-<p>In conclusion, we have learnt how to write our first Java program.</p>
+		<p class="amp-wp-7d27179">We can install Python packages, not available in standard Ubuntu repository, using PIP. <strong>PIP</strong> is a command-line tool for managing Python packages. When we install a package through PIP, it installs all the associated dependencies thus preventing partial installs. In this article, we would discuss how to install Python packages using PIP in Ubuntu.</p>
+<p class="amp-wp-7d27179">Furthermore, there are two versions of PIP available – PIP and PIP3. Both the packages provide similar functionality except they are available for different versions of Python. So, if you want to install packages for version 2 of Python then go for PIP. For Python 3 packages, PIP3 should be considered.</p>
+<h5 class="amp-wp-cdd8ca0">Install Python packages using PIP</h5>
+<p class="amp-wp-7d27179">To ensure you have the right version of PIP installed. This could be identified through the command –</p>
+<pre>pip --version</pre>
+<p class="amp-wp-7d27179">or,</p>
+<pre>pip3 --version</pre>
+<p class="amp-wp-7d27179">In case you don’t have PIP package installed, then refer the article <span class="amp-wp-cc68ddc"><a href="https://techpiezo.com/python/install-pip-in-ubuntu-19-10/" class="amp-wp-cc68ddc">here</a></span>.</p>
+<p class="amp-wp-7d27179">Moving forward, we would discuss various operations which could be performed using the tool <strong>PIP3</strong>. You could <strong>replace PIP3 with PIP</strong> if you choose to go with version 2 of Python.</p>
+<p class="amp-wp-7d27179">To<strong> list installed packages</strong> –</p>
+<pre>pip3 list</pre>
+<p class="amp-wp-7d27179">To<strong> show information</strong> about the package –</p>
+<pre>pip3 show &lt;package_name&gt;</pre>
+<p class="amp-wp-7d27179">for instance,</p>
+<pre>pip3 show wheel</pre>
+<p class="amp-wp-7d27179">To <strong>search PyPI</strong> (Python Package Index) for a package –</p>
+<pre>pip3 search &lt;package_name&gt;</pre>
+<p class="amp-wp-7d27179">for instance,</p>
+<pre>pip3 search numpy</pre>
+<p class="amp-wp-7d27179">To <strong>install</strong> a package –</p>
+<pre>pip3 install &lt;package_name&gt;</pre>
+<p class="amp-wp-7d27179">for instance,</p>
+<pre>pip3 install numpy</pre>
+<p class="amp-wp-7d27179">To <strong>remove</strong> a package –</p>
+<pre>pip3 uninstall &lt;package_name&gt;</pre>
+<p class="amp-wp-7d27179">for instance,</p>
+<pre>pip3 uninstall numpy</pre>
+<p class="amp-wp-7d27179">Furthermore, you may want to<strong> install a specific version of package</strong> which could be compatible with other packages installed. Doing so would require you to issue the following in terminal –</p>
+<pre>pip3 install "package_name==package_version"</pre>
+<p class="amp-wp-7d27179">for instance,</p>
+<pre>pip3 install "numpy==1.17.2"</pre>
+<p class="amp-wp-7d27179">To <strong>upgrade</strong> already installed package –</p>
+<pre>pip3 install --upgrade &lt;package_name&gt;</pre>
+<p class="amp-wp-7d27179">for instance,</p>
+<pre>pip3 install --upgrade numpy</pre>
+<p class="amp-wp-7d27179">To specify a target directory for the package –</p>
+<pre>pip3 install -t /path/of/package/ &lt;package_name&gt;</pre>
+<p class="amp-wp-7d27179">for instance,</p>
+<pre>pip3 install -t /home/&lt;user_name&gt;/Downloads/ numpy</pre>
+<p class="amp-wp-7d27179">Lastly, install the package itself and<strong> ignore its dependencies</strong> –</p>
+<pre>pip3 install --no-deps &lt;package_name&gt;</pre>
+<p class="amp-wp-7d27179">for instance,</p>
+<pre>pip3 install --no-deps numpy</pre>
+<p class="amp-wp-7d27179"><strong>Note:</strong> You can choose to ignore dependencies on a case-by-case basis. If you don’t know what you are doing then it is best to install the package as it is. Otherwise, you may get a broken package.</p>
+<p>In conclusion, we have discussed a few options which are associated with the Python packages installation process with the help of an example.</p>
+<p class="amp-wp-7d27179"><strong>Additional Info –</strong></p>
+<p class="amp-wp-7d27179">In case you encounter a warning during installation of a Python package –</p>
+<pre>The scripts f2py, f2py3 and f2py3.7 are installed in '/home/&lt;user_name&gt;/.local/bin' which is not on PATH.
+Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.</pre>
+<p class="amp-wp-7d27179">It states that above mentioned scripts have been installed but the directory in which they are installed is not considered a <strong>PATH</strong>. Therefore, open a text editor and append <strong>~/.bashrc</strong> file with the following –</p>
+<pre>export PATH=/home/&lt;user_name&gt;/.local/bin:$PATH</pre>
+<p class="amp-wp-7d27179">or, if you want to go ahead without making any changes to ~/.bashrc file then use <strong>–no-warn-script-location</strong> option while installing Python packages.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
 			<div class="amp-wp-meta amp-wp-tax-category">
-		Categories: <a href="https://techpiezo.com/java/" rel="category tag">Java</a>, <a href="https://techpiezo.com/programming/" rel="category tag">Programming</a>	</div>
+		Categories: <a href="https://techpiezo.com/python/" rel="category tag">Python</a>	</div>
 
 	</footer>
 </article>
