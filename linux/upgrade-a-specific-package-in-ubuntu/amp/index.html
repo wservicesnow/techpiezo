@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Add or Remove PPAs in Ubuntu distribution - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/linux/add-or-remove-ppas-in-ubuntu-distribution/" />
+		<title>Upgrade a specific package in Ubuntu - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/linux/upgrade-a-specific-package-in-ubuntu/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -409,7 +409,7 @@ amp-carousel > amp-img > img {
 	right: 16px;
 }
 		/* Inline stylesheets */
-:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}	</style>
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cdd8ca0{text-align:center}	</style>
 </head>
 
 <body class="">
@@ -426,42 +426,36 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Add or Remove PPAs in Ubuntu distribution</h1>
+		<h1 class="amp-wp-title">Upgrade a specific package in Ubuntu</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-09-14T13:28:33+00:00">
-		3 weeks ago	</time>
+	<time datetime="2019-10-02T06:36:00+00:00">
+		35 mins ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">In this article, we would discuss how to Add or Remove PPAs in Ubuntu distribution with relevant examples. PPA is an acronym for <strong>Personal Package Archive</strong>. This route is available for those developers who do not want to distribute their packages through Ubuntu’s main repository. For users, it is better than downloading and installing a package from unknown sources.</p>
-<p class="amp-wp-7d27179">When compared to the packages available in standard Ubuntu repository, users have to settle with less security when they install packages through unverified PPAs. This, moreover, implies that these packages have not gone through the Ubuntu package validation checks. But, it should also not be construed as if the PPA developer would behave mischievously. Whether to go with installation of the package is left to users’ discretion.</p>
-<p class="amp-wp-7d27179">Furthermore, when users add packages through PPAs they allow the package developers to update their packages just like any other package available in standard Ubuntu repository.</p>
-<p class="amp-wp-7d27179">Also, the operations discussed below would require you to have superuser privileges. Contact your System Administrator for assistance in case you don’t have one.</p>
-<p>Through <strong>add-apt-repository</strong> command we are adding the repository to<strong> /etc/apt/sources.list</strong> file.</p>
-<h5 class="amp-wp-7d27179">Add PPAs in Ubuntu</h5>
-<p class="amp-wp-7d27179">There are two methods available to us for adding PPAs in our distribution. Besides, location of PPA is a prerequisite to its addition and removal.</p>
-<p class="amp-wp-7d27179">First, through <strong>uri</strong>. Run the following in terminal –</p>
-<pre>sudo add-apt-repository 'deb uri distribution [component] [..]'<span id="line-7" class="anchor"></span><span id="line-8" class="anchor"></span></pre>
-<p class="amp-wp-7d27179">For instance,</p>
-<pre>sudo add-apt-repository 'deb http://deb.debian.org/debian/ stable main contrib non-free'</pre>
-<p class="amp-wp-7d27179">Second, through PPA name –</p>
-<pre>sudo add-apt-repository ppa:&lt;ppa_name&gt;</pre>
-<p class="amp-wp-7d27179">To reflect the changes we just made, source list file needs to be updated. Hence, don’t forget to run the following in terminal –</p>
+		<p class="amp-wp-7d27179">One may upgrade a specific package in Ubuntu for various reasons. We can upgrade packages in Ubuntu using both<strong> apt (Advanced Package Tool)</strong> command-line utility as well as through graphical tool – <strong>Software Updater</strong>. We recommend you to update your packages regularly. This is to make sure you never miss out on important security updates and any added functionality. Upgrading a package through <strong>Software Updater</strong> would require you to have a desktop environment installed.</p>
+<p class="amp-wp-7d27179"><strong>Note</strong>: Following operations would require you to have superuser privileges, in case you don’t have one then contact your System Administrator for assistance.</p>
+<h5 class="amp-wp-cdd8ca0">Upgrade a specific package in Ubuntu</h5>
+<p class="amp-wp-7d27179">Before upgrading any package, we must always update the repositories. This makes sure you always get the latest version of the package available through repositories. Hence, open the terminal and issue the following –</p>
 <pre>sudo apt update</pre>
-<p class="amp-wp-7d27179">Now, we can install and remove packages available with the repositories.</p>
-<h5>Remove PPAs in Ubuntu</h5>
-<p class="amp-wp-7d27179">Just as we could add a repository through <strong>add-apt-repository</strong> command. To remove a repository, we need to pass <strong>– – remove</strong> option with the command.</p>
-<pre>sudo add-apt-repository --remove 'deb uri distribution [component] [..]'</pre>
-<pre>sudo add-apt-repository --remove ppa:&lt;ppa_name&gt;</pre>
+<p class="amp-wp-7d27179">To upgrade a specific package, issue the following in terminal –</p>
+<pre>sudo apt install --only-upgrade &lt;package_name&gt;</pre>
 <p class="amp-wp-7d27179">For instance,</p>
-<pre>sudo add-apt-repository --remove 'deb http://deb.debian.org/debian/ stable main contrib non-free'</pre>
-<p class="amp-wp-7d27179">Thereafter, update the source list through the command –</p>
-<pre>sudo apt-update</pre>
-<p class="amp-wp-7d27179"><strong>Note:</strong> Merely removing a repository would not remove the packages which were installed through repository.</p>
-<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have discussed how to Add or Remove PPAs in Ubuntu distribution.</p>
+<pre>sudo apt install --only-upgrade virtualbox-ext-pack</pre>
+<p class="amp-wp-7d27179">Also, we could selectively upgrade multiple packages. But, this may upgrade any associate packages along with it. Doing so would require you to issue the following in terminal –</p>
+<pre>sudo apt install --only-upgrade &lt;package_name1&gt; &lt;package_name2&gt; &lt;package_name3&gt; .... &lt;package_nameN&gt;</pre>
+<p class="amp-wp-7d27179">For instance,</p>
+<pre>sudo apt install --only-upgrade qemu qemu-block-extra qemu-kvm qemu-system-common qemu-system-data</pre>
+<p class="amp-wp-7d27179"><strong>Alternately,</strong> we could selectively upgrade packages through Graphical Tool – update manager (also, <strong>Software Updater</strong>).</p>
+<p class="amp-wp-7d27179">To install the relevant package, if its not available –</p>
+<pre>sudo apt install update-manager</pre>
+<p class="amp-wp-7d27179">Now, open the Software Updater package available in <strong>Main menu</strong> of your desktop environment. It would first update the repository and then look for any updates for the packages. Thereafter, it will provide us the list of packages to be upgraded.</p>
+<p><amp-img class="size-full wp-image-2831 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/10/Software-updater.png" alt="Software-updater" width="699" height="423" layout="intrinsic"></amp-img></p>
+<p class="amp-wp-7d27179">Herein, you can also look for Technical description (any changes made/description) about the package. Select the <strong>checkbox</strong> in front of the package you would want to upgrade. It also mentions the download size of the selected packages. And, then click <strong>Install Now</strong>.</p>
+<p>In conclusion, we have discussed both the tools i.e. command-line tool <strong>apt </strong>and graphical-tool <strong>Software Updater</strong>, which could be used to selectively upgrade the packages in your Ubuntu distribution. Choose one as per your requirements.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
