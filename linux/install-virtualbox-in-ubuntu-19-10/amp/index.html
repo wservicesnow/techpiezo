@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Write your first code in Kotlin - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/kotlin/write-your-first-code-in-kotlin/" />
+		<title>Install VirtualBox in Ubuntu 19.10 - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/linux/install-virtualbox-in-ubuntu-19-10/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -409,7 +409,7 @@ amp-carousel > amp-img > img {
 	right: 16px;
 }
 		/* Inline stylesheets */
-:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}	</style>
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cdd8ca0{text-align:center}	</style>
 </head>
 
 <body class="">
@@ -426,64 +426,36 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Write your first code in Kotlin</h1>
+		<h1 class="amp-wp-title">Install VirtualBox in Ubuntu 19.10</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-07-27T17:35:21+00:00">
-		3 months ago	</time>
+	<time datetime="2019-10-12T12:25:43+00:00">
+		7 mins ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">Once you have installed the Kotlin Command-line Compiler, you may be wondering how to write your first code in Kotlin. In this article, we would also discuss how to create a<strong> .jar</strong> executable from it, which includes a class file as well as Kotlin run-time library.</p>
-<p class="amp-wp-7d27179">The source code written in Kotlin is saved in a file with .kt extension.</p>
-<h4 class="amp-wp-7d27179">Write your first “Hello World!” code in Kotlin</h4>
-<p class="amp-wp-7d27179">Open a text-editor and save the file as HelloWorld.kt. We have used nano text-editor, choose one which you are comfortable with.</p>
-<pre>nano HelloWorld.kt</pre>
-<p class="amp-wp-7d27179">Next, insert the following code –</p>
-<pre>fun main(args: Array&lt;String&gt;) {
-       println("Hello, World!")
-}</pre>
-<p>where,</p>
-<p class="amp-wp-7d27179"><strong>fun</strong> – it means function, just to let compiler know that we are going to call a function.<br><strong>main</strong> – its the function main() which is to be called.<br><strong>args</strong> – is the name of our variable.<br><strong>Array&lt;String&gt;</strong> – tells the compiler that variable args is an Array of type String.<br><strong>println()</strong> – print line function.<br><strong>“Hello, World!”</strong> – the message we would like to print.</p>
-<p class="amp-wp-7d27179">Save the HelloWorld.kt and exit.</p>
-<p class="amp-wp-7d27179">So far, we have created a file with<strong> .kt extension</strong> and then inserted our code understood by the Kotlin Compiler. Now, we will compile the code with the help of following command –</p>
-<pre>kotlinc HelloWorld.kt</pre>
-<p class="amp-wp-7d27179">Notice that, it has created a file – HelloWorldKt.class and a folder META-INF with <strong>main.kotlin_module</strong>. Compiling the code puts the main function inside the HelloWorldKt.class file, which later could run inside a Java Virtual Machine (JVM).</p>
-<p class="amp-wp-7d27179">If you would like to see byte-code inside the HelloWorldKt.class then you may have to use<strong> javap</strong> command. <strong>javap</strong> command is basically a command line utility which lets us see the code so generated inside the <strong>.class</strong> file.</p>
-<pre>javap -c HelloworldKt.class</pre>
-<p class="amp-wp-7d27179">Output should resemble –</p>
-<pre>Compiled from "HelloWorld.kt"
-public final class HelloWorldKt {
-public static final void main(java.lang.String[]);
-Code:
-0: aload_0
-1: ldc #9 // String args
-3: invokestatic #15 // Method kotlin/jvm/internal/Intrinsics.checkParameterIsNotNull:(Ljava/lang/Object;Ljava/lang/String;)V
-6: ldc #17 // String Hello, World!
-8: astore_1
-9: iconst_0
-10: istore_2
-11: getstatic #23 // Field java/lang/System.out:Ljava/io/PrintStream;
-14: aload_1
-15: invokevirtual #29 // Method java/io/PrintStream.println:(Ljava/lang/Object;)V
-18: return
-}</pre>
-<h4 class="amp-wp-7d27179">Make Kotlin Compiler produce a .jar executable</h4>
-<p class="amp-wp-7d27179">The executable so produced will include Kotlin run-time library as well as HelloworldKt.class. Thus, eliminating the need to distribute Kotlin run-time along-with<strong> .jar</strong> executable. To make one, run the following in terminal –</p>
-<pre>kotlinc HelloWorld.kt -include-runtime -d HelloWorld.jar</pre>
-<p class="amp-wp-7d27179">where,</p>
-<p class="amp-wp-7d27179"><strong>-include-runtime</strong> – asks the compiler to include Kotlin run-time library to make .jar executable.<br><strong>-d</strong> – for output compiled as .jar executable</p>
-<p class="amp-wp-7d27179">Lastly, run the following to execute .jar file –</p>
-<pre>java -jar HelloWorld.jar</pre>
-<p class="amp-wp-7d27179">This should get us expected output i.e. <strong>Hello, World!</strong></p>
-<p class="amp-wp-7d27179">In conclusion, we have discussed how to write our first Kotlin code and then compile it to a <strong>.jar</strong> executable.</p>
+		<p class="amp-wp-7d27179">In this article, we would discuss how to install VirtualBox in Ubuntu 19.10. But, before that we would discuss a bit about VirtualBox itself in context on Virtualization. A<strong> Hypervisor</strong> is basically a Virtual machine monitor. Furthermore, there are mainly two types of Hypervisor – <strong>Type 1 (Bare-metal)</strong> and<strong> Type 2 (Hosted)</strong>. Type 1 Hypervisor runs on host’s hardware directly whereas Type 2 Hypervisor runs on an Operating system like Ubuntu, Windows etc. As presence of supported-OS is a prerequisite to run VirtualBox, therefore VirtualBox is a Type 2 Hypervisor.</p>
+<p class="amp-wp-7d27179">VirtualBox doesn’t need hardware virtualization, as already discussed. Apart from that, it provides seamless integration of Host OS with Virtual machines through VirtualBox Guest Additions. We would discuss its installation steps in a separate article. Also, we could create a Virtual machine inside Linux distribution like Ubuntu and then run the same in Windows Operating systems thus making Virtual machines portable.</p>
+<p class="amp-wp-7d27179">Also, risk-averse users can test any application/package or even an Operating system inside a Virtual machine without affecting their host Operating system. Next, we will discuss installation steps required to install VirtualBox in Ubuntu 19.10.</p>
+<p class="amp-wp-7d27179"><strong>Note:</strong> Following operations would require you to have superuser privileges. In case you don’t have one then contact your System Administrator for assistance.</p>
+<h5 class="amp-wp-cdd8ca0">Install VirtualBox in Ubuntu 19.10</h5>
+<p class="amp-wp-7d27179">As VirtualBox is already available in standard Ubuntu repositories. Therefore, we would have to update the repositories first to get the latest version of VirtualBox available. Hence, issue the following in terminal –</p>
+<pre>sudo apt update</pre>
+<p class="amp-wp-7d27179">After updating the repositories, we would install the VirtualBox with the command –</p>
+<pre>sudo apt install virtualbox</pre>
+<p class="amp-wp-7d27179">The download size and related dependencies installation may vary depending on your Operating systems configuration.</p>
+<p class="amp-wp-7d27179">At the time of writing the article, the latest stable version of VirtualBox available in Ubuntu 19.10 repository is <strong>6.0.12_Ubuntu r132055</strong>.</p>
+<p class="amp-wp-7d27179"><strong>Alternately (GUI)</strong>, if you have Synaptic Package Manager installed – then search for the package “VirtualBox” and install the package from the package manager itself.</p>
+<p class="amp-wp-7d27179">To install Synaptic Package Manger, run the following in terminal –</p>
+<pre>sudo apt install synaptic</pre>
+<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we discuss a bit about installation steps required to install VirtualBox – a free and open-source Virtualization product.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
 			<div class="amp-wp-meta amp-wp-tax-category">
-		Categories: <a href="https://techpiezo.com/kotlin/" rel="category tag">Kotlin</a>, <a href="https://techpiezo.com/programming/" rel="category tag">Programming</a>	</div>
+		Categories: <a href="https://techpiezo.com/linux/" rel="category tag">Linux</a>, <a href="https://techpiezo.com/linux/linux-quick-fix/" rel="category tag">Quick Fix</a>	</div>
 
 	</footer>
 </article>
