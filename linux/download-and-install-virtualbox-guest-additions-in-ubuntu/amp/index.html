@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Install Anbox and run Android Apps in Ubuntu - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/android/install-anbox-and-run-android-apps-in-ubuntu/" />
+		<title>Download and Install VirtualBox Guest Additions in Ubuntu - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/linux/download-and-install-virtualbox-guest-additions-in-ubuntu/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -409,7 +409,7 @@ amp-carousel > amp-img > img {
 	right: 16px;
 }
 		/* Inline stylesheets */
-:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}	</style>
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cdd8ca0{text-align:center}	</style>
 </head>
 
 <body class="">
@@ -426,55 +426,53 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Install Anbox and run Android Apps in Ubuntu</h1>
+		<h1 class="amp-wp-title">Download and Install VirtualBox Guest Additions in Ubuntu</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-07-29T13:19:28+00:00">
-		3 months ago	</time>
+	<time datetime="2019-10-12T12:34:23+00:00">
+		2 days ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">Anbox package utilizes a LXC container-based approach to run Android Applications in Ubuntu or any other Linux distribution. With LXC containers, we could run multiple instances of Linux environment on host Linux Kernel. There are two options available to run Android Apps on Ubuntu –</p>
-<p class="amp-wp-7d27179">1. Container-based Anbox and,<br>
-2. Android-x86 on VirtualBox.</p>
-<p class="amp-wp-7d27179">In this article, we would discuss how to install Anbox and run Android apps in it.</p>
-<h4>Install Anbox in Ubuntu</h4>
-<p class="amp-wp-7d27179">Firstly, you need superuser privileges to complete installation process. If you don’t have one then contact your system administrator for assistance.</p>
-<p class="amp-wp-7d27179">We would start by installing Anbox from standard Ubuntu repository –</p>
+		<p class="amp-wp-7d27179">In this article, we would discuss how to download and install <strong>VirtualBox Guest Additions</strong> in Ubuntu (Guest OS). We install VirtualBox Guest Additions inside our Virtual machine. Through Guest Additions we could <strong>share folders</strong> between Host OS and Guest OS. Furthermore, we could also <strong>share clipboards</strong>. Clipboards could be shared both ways, unidirectional as well as bidirectional. Apart from that, through Guest Additions we get <strong>better video support</strong>, <strong>integrated mouse pointer</strong> and <strong>synchronized time with Guest OS</strong> among others. With the help of <strong>Guest Control File Manager</strong> we could transfer files between Host OS and Guest OS too.</p>
+<p class="amp-wp-7d27179">Before proceeding with installation steps we need to first download the VirtualBox Guest Additions ISO. Thereafter, we would mount the ISO and later install it inside our Virtual Machine (Guest OS i.e. Ubuntu). We can proceed with other Guest Operating Systems too, but the installation steps for other OS would vary.</p>
+<h5 class="amp-wp-cdd8ca0">Download VirtualBox Guest Additions</h5>
+<p class="amp-wp-7d27179">First, check the version of VirtualBox installed on our Host Operating Systems. And, download VirtualBox Guest Additions through following link –</p>
+<pre>http://download.virtualbox.org/virtualbox/</pre>
+<p class="amp-wp-7d27179">Or, we could directly install VirtualBox from following link –</p>
+<pre>http://download.virtualbox.org/virtualbox/X.X.X/VBoxGuestAdditions_X.X.X.iso</pre>
+<p class="amp-wp-7d27179">Replace X.X.X with the VirtualBox’s version installed. For instance, if we have VirtualBox version – 6.0.12. Then, the above link should be –</p>
+<pre>http://download.virtualbox.org/virtualbox/6.0.12/VBoxGuestAdditions_6.0.12.iso</pre>
+<p class="amp-wp-7d27179">Now with VirtualBox Guest Additions downloaded, next step is to mount the VirtualBox Guest Additions ISO image.</p>
+<p class="amp-wp-7d27179"><strong>Alternately</strong>, if we are on Ubuntu Host OS then VirtualBox Guest Additions could be installed directly from standard Ubuntu repositories.</p>
 <pre>sudo apt update
-sudo apt install anbox</pre>
-<p class="amp-wp-7d27179">This would install anbox and related dependencies. Next, we would have to download a pre-build Android image for Anbox. You can download one from the link –</p>
-<pre>https://build.anbox.io/android-images/</pre>
-<p class="amp-wp-7d27179">Now, move the <strong>.img</strong> file to the folder –<strong> /var/lib/anbox/android.img</strong>. Note: It is important to rename the file <strong>android_amd64.img to android.img</strong>.</p>
-<p class="amp-wp-7d27179">Next, download and install two kernel modules – <strong>Binder</strong> and <strong>Ashmem</strong>. These two kernel-based modules are already available since Debian kernel 4.17. So, skip installation of these modules for Debian. For Ubuntu, the kernel modules can be installed through PPAs (Personal Package Archives) –</p>
-<pre>sudo add-apt-repository ppa:morphis/anbox-support
-sudo apt update
-sudo apt install linux-headers-generic anbox-modules-dkms</pre>
-<p class="amp-wp-7d27179">Once installed, you need to issue the following command to load the respective kernel modules without restarting the OS.</p>
-<pre>sudo modprobe ashmem_linux
-sudo modprobe binder_linux</pre>
-<p class="amp-wp-7d27179">Cross-check if the modules are properly installed –</p>
-<pre>ls -1 /dev/{ashmem,binder}</pre>
-<p class="amp-wp-7d27179">and, start the following services –</p>
-<pre>sudo systemctl start anbox-container-manager.service
-sudo systemctl start anbox-session-manager.service
-sudo systemctl start anbox-session-manager.service</pre>
-<p class="amp-wp-7d27179">Lastly, Anbox could be started from your desktop’s menu.</p>
-<h4 class="amp-wp-7d27179">Install Android apps in Anbox</h4>
-<p class="amp-wp-7d27179">So far, we have discussed how to install Anbox in Ubuntu. But, merely installing Anbox would not solve the purpose of running Android apps. Therefore, we have to install Android apps in Anbox. This could be achieved with the help of <strong>adb</strong> command line utility. Hence, we have to install <strong>adb</strong>(Android Debug Bridge) utility by running the following command in terminal.</p>
-<pre>sudo apt update
-sudo apt install adb</pre>
-<p class="amp-wp-7d27179">If you have <strong>.apk</strong> extension file available then, run the following command in terminal to install Android app in Anbox.</p>
-<pre>adb install path-to/my/app.apk</pre>
-<p class="amp-wp-7d27179">Once done, you will see the application shortcut in Anbox.</p>
-<p class="amp-wp-7d27179">In conclusion, we have discussed how to install Anbox in Ubuntu. Installation of apps through<strong> adb</strong> command-line utility was also covered in this article.</p>
+sudo apt install virtualbox-guest-additions-iso</pre>
+<h5 class="amp-wp-cdd8ca0">Mount VirtualBox Guest Additions</h5>
+<p class="amp-wp-7d27179">Run the Virtual machine next, and click on <strong>Devices</strong> available on VirtualBox menu.</p>
+<p><amp-img class="size-full wp-image-2872 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/10/VirtualBox-Menu.png" alt="VirtualBox Menu" width="367" height="31" layout="intrinsic"></amp-img></p>
+<p class="amp-wp-7d27179">Now, either load the ISO through <strong>Optical Drives -&gt; Choose Disk Image</strong> option if we have download the ISO manually or else, go with <strong>Insert Guest Additions CD Image</strong> if we have downloaded Guest Additions ISO through OS repositories.</p>
+<p class="amp-wp-7d27179"><strong>Note</strong>: Following operations would require you to have superuser privileges. In case you don’t have one, then contact your System Administrator for assistance.</p>
+<h5 class="amp-wp-cdd8ca0">Install VirtualBox Guest Additions in Ubuntu</h5>
+<p class="amp-wp-7d27179">Next, install relevant packages available in ISO image. On Ubuntu, we would have to execute <strong><em>VBoxLinuxAdditions</em>.run</strong>. Use the following command to get to the location of the executable file –</p>
+<pre>cd /media/&lt;user-name&gt;/VBox_GAs_X.X.X/</pre>
+<p class="amp-wp-7d27179">where,</p>
+<p class="amp-wp-7d27179"><strong>X.X.X</strong> represents the version of VirtualBox Guest Additions to be installed.</p>
+<p class="amp-wp-7d27179">Now, execute the above mentioned script through command –</p>
+<pre>sudo sh VBoxLinuxAdditions.run</pre>
+<p class="amp-wp-7d27179">If we are installing VirtualBox Guest Additions for the first time in Ubuntu Virtual machine. Then, we may encounter the following error –</p>
+<p class="amp-wp-7d27179"><strong>This system is currently not set up to build kernel modules. </strong><br><strong>Please install the gcc make perl packages from your distribution.</strong></p>
+<p class="amp-wp-7d27179">To resolve, we would have to install the mentioned packages first and then proceed with required installation step.</p>
+<pre>sudo apt install gcc make perl</pre>
+<p class="amp-wp-7d27179">Now, try executing the file again –</p>
+<pre>sudo sh VBoxLinuxAdditions.run</pre>
+<p>In conclusion, we have discussed how to download and install VirtualBox Guest Additions in Ubuntu Virtual machine.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
 			<div class="amp-wp-meta amp-wp-tax-category">
-		Categories: <a href="https://techpiezo.com/android/" rel="category tag">Android</a>, <a href="https://techpiezo.com/linux/" rel="category tag">Linux</a>	</div>
+		Categories: <a href="https://techpiezo.com/linux/" rel="category tag">Linux</a>, <a href="https://techpiezo.com/linux/linux-quick-fix/" rel="category tag">Quick Fix</a>	</div>
 
 	</footer>
 </article>
