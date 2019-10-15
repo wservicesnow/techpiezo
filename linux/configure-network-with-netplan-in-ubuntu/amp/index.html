@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Create a bootable Live USB in Ubuntu through Command Line - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/linux/create-a-bootable-live-usb-in-ubuntu-through-command-line/" />
+		<title>Configure network with Netplan in Ubuntu - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/linux/configure-network-with-netplan-in-ubuntu/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -409,7 +409,7 @@ amp-carousel > amp-img > img {
 	right: 16px;
 }
 		/* Inline stylesheets */
-:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}	</style>
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7185e16{color:#36f}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cdd8ca0{text-align:center}	</style>
 </head>
 
 <body class="">
@@ -426,36 +426,68 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Create a bootable Live USB in Ubuntu through Command Line</h1>
+		<h1 class="amp-wp-title">Configure network with Netplan in Ubuntu</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-07-31T20:57:26+00:00">
-		3 months ago	</time>
+	<time datetime="2019-10-14T18:22:10+00:00">
+		19 hours ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">A Live USB stick is the one which contains a bootable Operating System. In this article, we would create a bootable Live USB for a Linux distribution through command-line interface. Before making any changes it is advisable to take a backup of all the data present on our USB stick. The moment we start performing relevant operations, all your data already present on USB stick will be lost. Also, you need to have superuser privileges to make any modifications to the disk. If you don’t have one, please contact your system administrator for assistance.</p>
-<h5>Identify USB stick through lsblk command</h5>
-<p class="amp-wp-7d27179">To print the path of available block devices run the following in terminal,</p>
-<pre>lsblk -p</pre>
-<p class="amp-wp-7d27179">Output should resemble –</p>
-<pre>/dev/sda 8:0 0 465.8G 0 disk 
-├─/dev/sda1 8:1 0 512M 0 part /boot/efi
-├─/dev/sda2 8:2 0 4.7G 0 part 
-└─/dev/sda3 8:5 0 414.6G 0 part /
-/dev/sdc 8:32 1 7.2G 0 disk /media/&lt;username&gt;/UUID-Device
-/dev/sr0 11:0 1 1024M 0 rom</pre>
-<p class="amp-wp-7d27179">From the output, we can identify the USB stick (<strong>/dev/sdc</strong>) of size 7.2G mounted on <strong>/media/&lt;username&gt;/UUID-Device</strong>.</p>
-<h5>Umount device and make USB stick bootable</h5>
-<p class="amp-wp-7d27179">Firstly, we will have to unmount our USB stick with the help of <strong>umount</strong> command. The naming scheme for disk devices is <strong>/dev/sdX</strong>, where <strong>X</strong> can be a,b,c, etc. It is order in which our disk device was found. In our case, <strong>/dev/sdX is /dev/sdc</strong> – identify one for your system. And, run the following command in terminal –</p>
-<pre>sudo umount /dev/sdc</pre>
-<p class="amp-wp-7d27179">Locate the directory where you have saved your <strong>.iso</strong> file and use <strong>cp</strong> command to copy the file to<strong> /dev/sdc</strong>. For instance –</p>
-<pre>sudo cp /path/to/iso/file.iso /dev/sdc</pre>
-<p class="amp-wp-7d27179">Wait for a few minutes before the file gets copied to your USB stick. Merely copying the <strong>.iso</strong> file will make your USB stick bootable as the <strong>.iso</strong> file itself contains all the relevant files needed.</p>
-<p class="amp-wp-7d27179">So far, we have identified our device through<strong> lsblk</strong> command, unmounted it and made it bootable by using the<strong> cp</strong> command. Things have been pretty easy till now but, in case we would want the USB stick to act as storage device again. For this purpose, we will have to use the <strong>fdisk</strong> command which will be discussed next.</p>
-<p class="amp-wp-7d27179">In conclusion, we have made our USB stick bootable. This could be done for any of the Linux distributions, provided we have <strong>.iso</strong> file available.</p>
+		<p class="amp-wp-7d27179"><strong>Netplan</strong> has been the default network configuration tool ever since Ubuntu 17.10 was released. Earlier Ubuntu releases shipped with <strong>ifupdown</strong> as default tool for network configuration. In this article, we would discuss how to configure network with Netplan in Ubuntu. For users, who still prefer to use ifupdown tool are advised to read the related article – <span class="amp-wp-7185e16"><a href="https://techpiezo.com/linux/switch-back-to-ifupdown-etc-network-interfaces-in-ubuntu/" class="amp-wp-7185e16">Switch back to ifupdown – /etc/network/interfaces in Ubuntu</a> </span></p>
+<p class="amp-wp-7d27179">Netplan configuration tool utilizes <strong>YAML – YAML Ain’t Markup Language</strong>. It is a human-friendly data serialization language/standard. All we have to do is to provide YAML description for each of the network interfaces configuration. And, in turn the Netplan tool will generate the relevant configuration files. We would discuss couple of Netplans’ basic configurations next.</p>
+<p class="amp-wp-7d27179"><strong>Note</strong>: Following operations would require you to have superuser privileges. In case you don’t have one then contact your System Administrator for assistance.</p>
+<h5 class="amp-wp-cdd8ca0">Configure network with Netplan</h5>
+<p class="amp-wp-7d27179">We need to provide the configuration description in Netplans’ config file. The file can be located in folder <code>/etc/netplan/</code></p>
+<pre>cd /etc/netplan/</pre>
+<p class="amp-wp-7d27179">Here, you will find the config file – <strong>01-netcfg.yaml</strong></p>
+<p class="amp-wp-7d27179">Use a text-editor to make necessary changes. We have used <strong>nano</strong> text-editor. Also, before making any changes it is always better to backup the relevant data. So,</p>
+<pre>cp 01-netcfg.yaml 01-netcfg.yaml.bak</pre>
+<p class="amp-wp-7d27179">This will create a new file – <strong>01-netcfg.yaml.bak</strong>, which is the backup of our original file. Now, open the default config file with a text-editor –</p>
+<pre>sudo nano 01-netcfg.yaml</pre>
+<h5 class="amp-wp-7d27179">Basic configuration for connecting Wired Network</h5>
+<p class="amp-wp-7d27179">For connecting wired network (i.e. Ethernet) wherein you would want<strong> dhcp4</strong> to assign the IP addresses. And, make Netplan to override DNS settings as per your requirements. We would have to append the following entries in <strong>/etc/netplan/01-netcfg.yaml</strong> file –</p>
+<pre>network:
+       version: 2
+       renderer: networkd
+       ethernets:
+            enp0s3:
+                 dhcp4: yes
+                 dhcp4-overrides:
+                      use-dns: no
+                 nameservers:
+                      addresses: [8.8.8.8,8.8.4.4]</pre>
+<p class="amp-wp-7d27179">We can check the status of our DNS servers through the command –</p>
+<pre>resolvectl status enp0s3</pre>
+<p class="amp-wp-7d27179">where, enp0s3 is our <em><strong>Ethernet network peripheral</strong>. </em>This would be different for every network interface.</p>
+<h5>Basic configuration for connecting WPA Personal Wireless Network</h5>
+<p class="amp-wp-7d27179">Similarly, for wireless connections wherein we use dhcp4 and DNS servers as per our requirements.</p>
+<pre>network:
+          version: 2
+          renderer: networkd
+          wifis:
+               wlo1:
+                    dhcp4: yes
+                    dhcp4-overrides:
+                           use-dns: no
+                    nameservers:
+                           addresses: [8.8.8.8,8.8.4.4]
+                    access-points:
+                           "Network_SSID":
+                                    password: "****"</pre>
+<p class="amp-wp-7d27179">where, wlo1 is <strong>Wireless network interface</strong>.</p>
+<p class="amp-wp-7d27179">Next, check the status of our DNS servers through the command –</p>
+<pre>resolvectl status enp0s3</pre>
+<p class="amp-wp-7d27179">Once we are finished with either of the configurations, check whether the configuration supplied is as per defined standards.</p>
+<pre>sudo netplan try</pre>
+<p class="amp-wp-7d27179">If everything is in order, following message would get generated –</p>
+<pre>Configuration accepted.</pre>
+<p class="amp-wp-7d27179">Next, we would apply the configuration supplied for use.</p>
+<pre>sudo netplan apply</pre>
+<p class="amp-wp-7d27179"><strong>Note</strong>: The above code for configuration files is indentation-sensitive.</p>
+<p class="amp-wp-7d27179">In conclusion, we have discussed two of the most basic configurations to connect network with Netplan. We also specified how to override dns settings as per our requirements.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
