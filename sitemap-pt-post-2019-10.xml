@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="October 17, 2019 10:22 pm" -->
+<!-- generated-on="October 18, 2019 5:05 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
+		<loc>https://techpiezo.com/linux/install-vlc-media-player-in-ubuntu/</loc>
+		<lastmod>2019-10-18T17:05:00+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
 		<loc>https://techpiezo.com/python/your-first-python-program/</loc>
 		<lastmod>2019-10-17T22:21:04+00:00</lastmod>
 		<changefreq>monthly</changefreq>
@@ -42,4 +48,4 @@
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: 683b4ea327c0872e32c99c633b1b02b8; Queries for sitemap: 2; Total queries: 13; Seconds: 0; Memory for sitemap: 0MB; Total memory: 2MB -->
+</urlset><!-- Request ID: 0317fa478b21e370c4d61beea10955d8; Queries for sitemap: 2; Total queries: 13; Seconds: 0; Memory for sitemap: 0MB; Total memory: 2MB -->
