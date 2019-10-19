@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Your first Python program - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/python/your-first-python-program/" />
+		<title>Install and Setup Jupyter Notebook for Python - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/python/install-and-setup-jupyter-notebook-for-python/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -409,7 +409,7 @@ amp-carousel > amp-img > img {
 	right: 16px;
 }
 		/* Inline stylesheets */
-:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7185e16{color:#36f}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cdd8ca0{text-align:center}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-719eeea{font-family:Consolas,Monaco,monospace}	</style>
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7185e16{color:#36f}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cdd8ca0{text-align:center}	</style>
 </head>
 
 <body class="">
@@ -426,79 +426,40 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Your first Python program</h1>
+		<h1 class="amp-wp-title">Install and Setup Jupyter Notebook for Python</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-10-16T19:57:03+00:00">
-		3 days ago	</time>
+	<time datetime="2019-10-19T10:24:08+00:00">
+		44 mins ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">In this article, we would discuss how to write/execute your first Python program. First, we will discuss <strong>input()</strong> function which is used to get the input from the user. Later, <strong>modules</strong> will be imported for arithmetic operations. Lastly, <strong>print()</strong> function – to display the results.</p>
-<p class="amp-wp-7d27179">We have used<strong> Python v3.7.4</strong>. Ubuntu users get the latest stable version of Python installed by default. But for some reason, if its not there then you may want to check the article <span class="amp-wp-7185e16"><a href="https://techpiezo.com/python/install-python-3-7-4-in-ubuntu-19-04/" class="amp-wp-7185e16">here</a></span>.</p>
-<p class="amp-wp-7d27179">Also, to check the version of Python installed, open the terminal and issue –</p>
-<pre>python3 -V</pre>
-<h5 class="amp-wp-cdd8ca0">Your first Python program</h5>
-<pre>#This is your first Python program
-
-"""Three quotes
-are used for 
-multi-line 
-comments"""
-
-print("Hello World!")
-
-x=input("Enter number x: ")
-y=input("Enter number y: ")
-conc=x+y
-print("x &amp; y as string: ", conc)
-#It prints concatenated values
-print("\n")
-
-a=int(input("Enter number a: "))
-b=int(input("Enter number b: "))
-add=a+b
-print("a &amp; b as integers: ", a+b)
-#It prints the sum of two variables a and b
-print("\n")
-
-<span class="amp-wp-719eeea">from math import sqrt
-</span>p=int(input("Enter a number to get Square Root of: "))
-r=sqrt(p)
-print("The square root of the number provided: ", r)
-#sqrt() - square root function
-
-</pre>
-<p class="amp-wp-7d27179">We will explain our code next.</p>
-<p class="amp-wp-7d27179">Though it is not mandatory, but we must mention what our code is all about. Hence, we put comments in our code. Therefore, if its a single-line comment then put <strong>#</strong> in the beginning of the line. Otherwise, for multi-line comments – our comment must start and end with three quotes – <strong>“””</strong>.</p>
-<p><strong>print(“Hello World!”)</strong> – prints the message <strong>Hello World!</strong></p>
-<p class="amp-wp-7d27179">By default, <strong>input()</strong> function takes the values as string. So, we asked the user to input two values for variables<strong> x</strong> &amp; <strong>y</strong>. And, then stored the summation of values in variable <strong>conc</strong>. Since, <strong>input()</strong> function treats any value as string. Hence, it will print the concatenated values.</p>
-<p class="amp-wp-7d27179"><strong>print(“\n”) – </strong>to print the next line.</p>
-<p class="amp-wp-7d27179">Now, we will make the<strong> input()</strong> function to take integer values by preceding the function with <strong>int()</strong>. Enter the values of<strong> a</strong> and <strong>b</strong>. This time around, it will print the summation of values provided.</p>
-<p class="amp-wp-7d27179">Lastly, we imported<strong> sqrt()</strong> function from a <strong>module</strong> named – <strong>math</strong>. Thereafter, user enters a value to get its square root. Variable <strong>p </strong>stores the value of input number. And, the variable <strong>r</strong> stores the result from <strong>sqrt()</strong> function. Again, <strong>print()</strong> function prints the desired result.</p>
-<h5 class="amp-wp-cdd8ca0">Execute your Python program</h5>
-<p class="amp-wp-7d27179">Open a text editor and copy – paste the above code. Save the file as <strong>first-code.py</strong>. <strong>.py</strong> is a Python extension.</p>
-<p class="amp-wp-7d27179">Thereafter, open a terminal. And, use <strong>cd</strong> command to head to the directory where our file was saved.</p>
-<pre>cd /path/to/file</pre>
-<p class="amp-wp-7d27179">And, issue –</p>
-<pre>python3.7 first-code.py</pre>
-<p class="amp-wp-7d27179">User will be asked to enter values. Final outcome would resemble, although values would differ –</p>
-<pre>Hello World!
-Enter number x: 12
-Enter number y: 65
-x &amp; y as string: 1265
-
-
-Enter number a: 45
-Enter number b: 85
-a &amp; b as integers: 130
-
-
-Enter a number to get Square Root of: 49
-The square root of the number provided: 7.0</pre>
-<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have discussed how to write your first Python program.</p>
+		<p class="amp-wp-7d27179">In this article, we would discuss how to install and setup Jupyter Notebook for Python programming language in Ubuntu. A <strong>Jupyter Notebook</strong> enables us to have a <strong>browser-based REPL</strong> (read-evaluate-print-loop) shell. It supports many programming languages including Python, R, Haskell and Julia. Through Jupyter Notebook, we can run our code &amp; store its output in a notebook. The extension of the saved notebook, a JSON file, is <code>.ipynb</code>. Furthermore, there are <strong>three main components</strong> of a Jupyter Notebook – browser, notebook server, kernel.</p>
+<ol><li class="amp-wp-7d27179">The <strong>Browser</strong> acts as the front-end, it is the one with which user interacts.</li>
+<li class="amp-wp-7d27179"><strong>Notebook server</strong> handles the notebook files. It allows us to save, edit and load notebook files.</li>
+<li class="amp-wp-7d27179"><strong>Kernels</strong> are available for numerous programming languages. Hence, if we don’t have kernel for a particular programming language then we can’t run its code.</li>
+</ol><p class="amp-wp-7d27179">We would install Jupyter Notebook through PIP3. So, in case you haven’t installed it yet in your Ubuntu distribution then check the article – <span class="amp-wp-7185e16"><a href="https://techpiezo.com/python/install-pip-in-ubuntu-19-10/" class="amp-wp-7185e16">Install PIP in Ubuntu 19.10</a></span></p>
+<p class="amp-wp-7d27179"><strong>Note</strong>: Following operations would require you to have superuser privileges. In case you don’t have one then contact your System Administrator for assistance.</p>
+<h5 class="amp-wp-cdd8ca0">Install and Setup Jupyter Notebook for Python</h5>
+<p class="amp-wp-7d27179">After we have installed PIP3 in Ubuntu, we should use its upgraded version if available. Therefore, issue the following in terminal –</p>
+<pre>sudo pip3 install --upgrade pip</pre>
+<p class="amp-wp-7d27179">Next, for Jupyter Notebook –</p>
+<pre>sudo pip3 install jupyter</pre>
+<p class="amp-wp-7d27179">It will return with <strong>Successfully installed</strong> message for various packages.</p>
+<p class="amp-wp-7d27179">Now, there are two ways to launch Jupyter Notebook. Use either of the following –</p>
+<ol><li class="amp-wp-7d27179"><strong>Through Command-line interface</strong>: Issue the following command in terminal to launch Jupyter Notebook –
+<pre>jupyter notebook</pre>
+</li>
+<li class="amp-wp-7d27179"><strong>From the browser itself</strong>: Launch the web-browser and visit the following link –
+<pre>http://localhost:8888</pre>
+</li>
+</ol><p class="amp-wp-7d27179">where,</p>
+<p class="amp-wp-7d27179"><strong>localhost</strong> is your hostname and,</p>
+<p class="amp-wp-7d27179"><strong>8888</strong> is the port number.</p>
+<p class="amp-wp-7d27179">We will be taken to Jupyter dashboard through our web-browser. In the right-corner, click on <strong>New</strong> and you should see <strong>Python 3</strong> if everything has been working fine.</p>
+<p>In conclusion, we have discussed how to install and setup Jupyter Notebook for Python in Ubuntu distribution.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
