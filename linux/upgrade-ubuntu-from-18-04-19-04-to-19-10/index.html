@@ -6,11 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
-	<title>Update/Upgrade your Debian distribution - TechPiezo</title>
+	<title>Upgrade Ubuntu from 18.04/19.04 to 19.10 - TechPiezo</title>
 
 <!-- This site is optimized with the Yoast SEO plugin v11.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
-<meta name="description" content="In this article, we would discuss how to update as well as upgrade a Debian distribution through command line interface (CLI)."/>
-<link rel="canonical" href="https://techpiezo.com/linux/update-upgrade-your-debian-distribution/" />
+<meta name="description" content="In this article, we would discuss how to upgrade Ubuntu from 18.04/19.04 to 19.10 through command-line utility do-release-upgrade."/>
+<link rel="canonical" href="https://techpiezo.com/linux/upgrade-ubuntu-from-18-04-19-04-to-19-10/" />
 <!-- / Yoast SEO plugin. -->
 
 <style id="ct-main-styles-inline-css" type="text/css">:root {
@@ -758,7 +758,7 @@ code, kbd, samp, pre,
 <link rel='stylesheet' id='ct-style-css'  href='https://techpiezo.com/wp-content/themes/blocksy/style.css' type='text/css' media='all' />
 <link rel='stylesheet' id='ct-main-styles-css'  href='https://techpiezo.com/wp-content/themes/blocksy/static/bundle/main.css' type='text/css' media='all' />
 
-<link rel="amphtml" href="https://techpiezo.com/linux/update-upgrade-your-debian-distribution/amp/"><link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" sizes="32x32" />
+<link rel="amphtml" href="https://techpiezo.com/linux/upgrade-ubuntu-from-18-04-19-04-to-19-10/amp/"><link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" sizes="32x32" />
 <link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" sizes="192x192" />
 <link rel="apple-touch-icon-precomposed" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" />
 <meta name="msapplication-TileImage" content="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" />
@@ -788,7 +788,7 @@ code, kbd, samp, pre,
 
 </head>
 
-<body class="post-template-default single single-post postid-437 single-format-standard wp-custom-logo ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
+<body class="post-template-default single single-post postid-3066 single-format-standard wp-custom-logo ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
 <div id="main-container">
 
 	<header
@@ -913,13 +913,13 @@ code, kbd, samp, pre,
 			<section>
 				
 	<article
-		id="post-437"
-		class="post-437 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"		data-content="boxed"				>
+		id="post-3066"
+		class="post-3066 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"		data-content="boxed"				>
 
 		
 		<section class="hero-section" data-type="type-1" data-alignment="left">
 			<header class="entry-header">
-				<h1 class="page-title">Update/Upgrade your Debian distribution</h1>
+				<h1 class="page-title">Upgrade Ubuntu from 18.04/19.04 to 19.10</h1>
 				<div class="entry-meta has-avatar" data-label data-type="simple">
 		
 
@@ -946,7 +946,7 @@ code, kbd, samp, pre,
 					<span
 						class="ct-meta-element"
 						>
-						Jun 18, 2019					</span>
+						Oct 21, 2019					</span>
 				</li>
 			
 			
@@ -956,42 +956,54 @@ code, kbd, samp, pre,
 					</header>
 		</section>
 
-		<figure class="ct-featured-image ct-hidden-sm" ><div class="ct-image-container ct-lazy" ><img class="attachment-full size-full" alt="Upgrade Update Debian Distribution" data-lazy="https://techpiezo.com/wp-content/uploads/2019/06/Upgrade-Update-Debian-Distribution.svg" data-object-fit="~" /><noscript><img src="https://techpiezo.com/wp-content/uploads/2019/06/Upgrade-Update-Debian-Distribution.svg" class="attachment-full size-full" alt="Upgrade Update Debian Distribution" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
+		<figure class="ct-featured-image ct-hidden-sm" ><div class="ct-image-container ct-lazy" ><img class="attachment-full size-full" alt="Upgrade Ubuntu from 18.04/19.04 to 19.10" data-lazy="https://techpiezo.com/wp-content/uploads/2019/10/Upgrade-Ubuntu-to-19-10.svg" data-object-fit="~" /><noscript><img src="https://techpiezo.com/wp-content/uploads/2019/10/Upgrade-Ubuntu-to-19-10.svg" class="attachment-full size-full" alt="Upgrade Ubuntu from 18.04/19.04 to 19.10" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
 		
 		<div class="entry-content">
-			<p style="text-align: justify;">For users who have recently installed a Debian distribution, might have been looking ways to update their systems. In this article, we would discuss how to update as well as upgrade a Debian distribution through command line interface.</p>
-<p style="text-align: justify;">Open Terminal and login as superuser by using the command:</p>
-<pre>su -l</pre>
-<p style="text-align: justify;">It will ask for superuser&#8217;s password. If you don&#8217;t have one, then its time to contact your system administrator.</p>
-<h4 style="text-align: center;">Update your Debian distribution</h4>
-<p style="text-align: justify;">Once you have successfully logged in, we need to update our systems repositories. Use the command:</p>
-<pre>apt update</pre>
-<p style="text-align: justify;">The command assists our system to know the latest version of packages available on Debian&#8217;s mirror. So, if we update our system then by default it would install/update the most recent version available for the package.</p>
-<p style="text-align: justify;">To upgrade installed packages, we need to run the following command:</p>
-<pre>apt upgrade</pre>
-<p style="text-align: justify;">After running the command, it will provide us with the list of packages that have an upgrade available. We are also provided with the size of our upgrade. If your are ready to upgrade, then press <strong>Y</strong> or <strong>otherwise</strong>.</p>
-<p style="text-align: justify;">When newer version of packages and related dependencies have been installed. Then, it could be possible that we may still have dependencies installed that are no longer required. To remove those installed dependencies run the following command:</p>
-<pre>apt autoremove</pre>
-<p style="text-align: justify;">Lastly, all the packages that have ever been downloaded and installed are available in the directory</p>
-<pre>/var/cache/apt/archives/</pre>
-<p style="text-align: justify;">If you no longer need these installed packages, and want to free some disk space then run the following command:</p>
-<pre>apt autoclean</pre>
-<p style="text-align: justify;">So, next time you want to install the same version of the packages that you previously installed. Then, you have to download that package again as it would no longer be available in archives. If you are not worried about disk space then, perhaps its a good notion to leave the archives directory untouched.</p>
-<h4 style="text-align: center;">Upgrading your Debian distribution to newer Release</h4>
-<p style="text-align: justify;">Till now, we have discussed how to update your Debian distribution. When it comes to upgrade, it means moving from one Debian release to another i.e. from Stretch to Buster. For that, we must first read release notes provided by Debian on:</p>
-<pre>www.debian.org/releases/stable/releasenotes</pre>
-<p style="text-align: justify;">We need to first update the file to move from one stable version of release to another:</p>
-<pre>nano /etc/apt/sources.list</pre>
-<p style="text-align: justify;">with the following entries:</p>
-<pre>http://ftp.us.debian.org/debian stable main contrib</pre>
-<p style="text-align: justify;">Then, save and exit. Run the following command:</p>
-<pre>apt update</pre>
-<p style="text-align: justify;">Updating the entries in sources.list file would help us to move to next stable distribution.</p>
-<p style="text-align: justify;">Word of Caution: Moving from one stable version to another stable version is possible but, we can&#8217;t move from testing and unstable versions to stable version. So, make sure you are not using the testing/unstable versions of Debian. If so, then update the sources.list files accordingly.</p>
-<p style="text-align: justify;">Now, run the following command to upgrade to next stable distribution:</p>
-<pre>apt dist-upgrade</pre>
-<p style="text-align: justify;">Debian uses a start-stop-daemon program that can restart running packages during a package upgrade. Hence, you don&#8217;t need to boot to single user mode or rescue mode to upgrade your Debian distribution.</p>
-<p style="text-align: justify;">
+			<p style="text-align: justify;">In this article, we would discuss a bit about what&#8217;s new is available in Ubuntu 19.10. Also, how to upgrade Ubuntu from 18.04/19.04 to 19.10. Ubuntu 19.10 (code name &#8211; <strong>Eoan Ermine</strong>) was released on October 17, 2019. It will be supported till July 2020. Next, stable Long Term Support release is Ubuntu 20.04 (code name &#8211; Focal Fossa) and is due for release in April 2020.</p>
+<p style="text-align: justify;">i386 (32-bit) architecture isn&#8217;t supported in Ubuntu 19.10.</p>
+<p style="text-align: justify;">For <strong>Desktop users</strong> &#8211; Ubuntu 19.10 now comes with Gnome v3.34 &amp; default Digital Living Network Alliance (DLNA) support. In addition to, Chromium browser is available only through SNAP, ZFS support is also being provided as experimental feature. Furthermore, various applications like Firefox, LibreOffice etc have been updated.</p>
+<p style="text-align: justify;">Digital Living Network Alliance (DLNA) was founded in the year 2003, and is a standard for sharing audio/video to our smart TVs. Also, Chromium browser package is now available only as a transitional package for <strong>chromium snap</strong>. So, if you don&#8217;t have <strong>snapd</strong> package installed. Then, when you try to install Chromium browser it will ask you to install snapd package first. snapd service is used to manage snap packages.</p>
+<p style="text-align: justify;">For <strong>Server users</strong> &#8211; Qemu v4.0, libvirt v5.6, MySQL v8.0 &amp; PHP v7.3 is now available among others.</p>
+<p style="text-align: justify;">Apart from that, Linux kernel 5.3 is also being shipped with Eoan Ermine.</p>
+<p style="text-align: justify;"><strong>Note</strong>: Following operations would require you to have superuser privileges. In case you don&#8217;t have one, then contact your System Administrator for assistance.</p>
+<h5 style="text-align: center;">Upgrade Ubuntu from 19.04 to 19.10</h5>
+<p style="text-align: justify;">To upgrade Ubuntu, open a terminal and issue &#8211;</p>
+<pre>sudo apt update</pre>
+<p style="text-align: justify;">And, then upgrade all installed applications first. Otherwise, you would be asked to do the same later with message &#8211;</p>
+<pre>Checking for a new Ubuntu release
+Please install all available updates for your release before upgrading.</pre>
+<p style="text-align: justify;">Hence, issue the following in terminal &#8211;</p>
+<pre>sudo apt full-upgrade</pre>
+<p style="text-align: justify;">Thereafter, to upgrade Ubuntu to 19.10 &#8211;</p>
+<pre>sudo do-release-upgrade</pre>
+<p style="text-align: justify;">It will ask us, whether we want to start with the upgrade. Press <strong>d</strong> to know the details for the packages to be newly installed/upgraded and Press<strong> q</strong> at the [END]. It would again ask whether we want to continue or not. Press <strong>y</strong> if we would want to upgrade else press <strong>N</strong>.</p>
+<p style="text-align: justify;"><strong>Note</strong>: <strong>do-release-upgrade</strong> is a part of <strong>update-manager-core package</strong>. If its not installed in your distribution, then install it through &#8211;</p>
+<pre>sudo apt install update-manager-core</pre>
+<p style="text-align: justify;">Also, if you want to go ahead with development release of Ubuntu then issue the following in terminal &#8211;</p>
+<pre>sudo do-release-upgrade -d</pre>
+<p style="text-align: justify;">where,</p>
+<p style="text-align: justify;"><strong>-d</strong> option is for development release.</p>
+<p style="text-align: justify;">We strongly recommend not to switch to development release unless you absolutely know what you are up to.</p>
+<h5 style="text-align: center;">Upgrade Ubuntu from 18.04 to 19.10</h5>
+<p style="text-align: justify;">To upgrade Ubuntu from 18.04 LTS to 19.10. We need to make following changes in<strong> /etc/update-manager/release-upgrades</strong> file. So, open the file in a text editor (we have used nano text-editor) &#8211;</p>
+<pre>sudo nano /etc/update-manager/release-upgrades</pre>
+<p style="text-align: justify;">and, either append (for lts to normal release)</p>
+<pre>Prompt = normal</pre>
+<p style="text-align: justify;">or, (for normal to lts release)</p>
+<pre>Prompt = lts</pre>
+<p style="text-align: justify;">Since, we are upgrading from Ubuntu 18.04 (LTS) to Ubuntu 19.10. Therefore, it should be <strong>Prompt = normal</strong>.</p>
+<p style="text-align: justify;">Then, issue the following in terminal &#8211;</p>
+<pre>sudo apt update
+sudo apt full-upgrade
+sudo do-release-upgrade</pre>
+<p style="text-align: justify;">and, follow on screen instructions as described in above section. It is worth mentioning here that, when we upgrade from one release to next. Our distribution upgrades to closest possible stable release first and then the next one and so on. So, for Ubuntu 18.04 it would be &#8211; 19.04 first and then 19.10.</p>
+<p style="text-align: justify;">In conclusion, we have discussed how to Upgrade Ubuntu from 18.04/19.04 to 19.10.</p>
+<p><strong>Additional Info</strong> &#8211;</p>
+<p style="text-align: justify;">If you get the following error after running the command &#8211;</p>
+<pre>sudo do-release-upgrade</pre>
+<p><strong>Checking for a new Ubuntu release</strong><br />
+<strong>No new release found.</strong></p>
+<p style="text-align: justify;">Then, you are already on the latest stable release of Ubuntu and can only switch to development release next.</p>
 		</div>
 
 		
@@ -1042,19 +1054,6 @@ code, kbd, samp, pre,
 				<ul data-columns="3">
 											
 						<li>
-							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/upgrade-ubuntu-from-18-04-19-04-to-19-10/"><img width="1" height="1" class="attachment-large size-large" alt="Upgrade Ubuntu from 18.04/19.04 to 19.10" data-lazy="https://techpiezo.com/wp-content/uploads/2019/10/Upgrade-Ubuntu-to-19-10.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/10/Upgrade-Ubuntu-to-19-10.svg" class="attachment-large size-large" alt="Upgrade Ubuntu from 18.04/19.04 to 19.10" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
-							<h3 class="related-entry-title">
-								<a href="https://techpiezo.com/linux/upgrade-ubuntu-from-18-04-19-04-to-19-10/">Upgrade Ubuntu from 18.04/19.04 to 19.10</a>
-							</h3>
-
-							<div class="related-entry-meta">
-								<span>
-									Oct 21, 2019								</span>
-
-															</div>
-						</li>
-											
-						<li>
 							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/install-vlc-media-player-in-ubuntu/"><img width="1" height="1" class="attachment-large size-large" alt="Install VLC Media Player in Ubuntu" data-lazy="https://techpiezo.com/wp-content/uploads/2019/10/Install-VLC-Media-Player-in-Ubuntu.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/10/Install-VLC-Media-Player-in-Ubuntu.svg" class="attachment-large size-large" alt="Install VLC Media Player in Ubuntu" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
 							<h3 class="related-entry-title">
 								<a href="https://techpiezo.com/linux/install-vlc-media-player-in-ubuntu/">Install VLC Media Player in Ubuntu distribution</a>
@@ -1076,6 +1075,19 @@ code, kbd, samp, pre,
 							<div class="related-entry-meta">
 								<span>
 									Oct 15, 2019								</span>
+
+															</div>
+						</li>
+											
+						<li>
+							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/configure-network-with-netplan-in-ubuntu/"><img width="1" height="1" class="attachment-large size-large" alt="Configure network with Netplan in Ubuntu" data-lazy="https://techpiezo.com/wp-content/uploads/2019/10/Configure-network-with-Netplan-in-Ubuntu.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/10/Configure-network-with-Netplan-in-Ubuntu.svg" class="attachment-large size-large" alt="Configure network with Netplan in Ubuntu" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<h3 class="related-entry-title">
+								<a href="https://techpiezo.com/linux/configure-network-with-netplan-in-ubuntu/">Configure network with Netplan in Ubuntu</a>
+							</h3>
+
+							<div class="related-entry-meta">
+								<span>
+									Oct 14, 2019								</span>
 
 															</div>
 						</li>

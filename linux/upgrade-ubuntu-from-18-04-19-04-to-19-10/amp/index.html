@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Configure network with Netplan in Ubuntu - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/linux/configure-network-with-netplan-in-ubuntu/" />
+		<title>Upgrade Ubuntu from 18.04/19.04 to 19.10 - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/linux/upgrade-ubuntu-from-18-04-19-04-to-19-10/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -409,7 +409,7 @@ amp-carousel > amp-img > img {
 	right: 16px;
 }
 		/* Inline stylesheets */
-:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7185e16{color:#36f}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cdd8ca0{text-align:center}	</style>
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cdd8ca0{text-align:center}	</style>
 </head>
 
 <body class="">
@@ -426,68 +426,60 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Configure network with Netplan in Ubuntu</h1>
+		<h1 class="amp-wp-title">Upgrade Ubuntu from 18.04/19.04 to 19.10</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-10-14T18:22:10+00:00">
-		1 week ago	</time>
+	<time datetime="2019-10-21T18:28:52+00:00">
+		2 hours ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179"><strong>Netplan</strong> has been the default network configuration tool ever since Ubuntu 17.10 was released. Earlier Ubuntu releases shipped with <strong>ifupdown</strong> as default tool for network configuration. In this article, we would discuss how to configure network with Netplan in Ubuntu. For users, who still prefer to use ifupdown tool are advised to read the related article – <span class="amp-wp-7185e16"><a href="https://techpiezo.com/linux/switch-back-to-ifupdown-etc-network-interfaces-in-ubuntu/" class="amp-wp-7185e16">Switch back to ifupdown – /etc/network/interfaces in Ubuntu</a> </span></p>
-<p class="amp-wp-7d27179">Netplan configuration tool utilizes <strong>YAML – YAML Ain’t Markup Language</strong>. It is a human-friendly data serialization language/standard. All we have to do is to provide YAML description for each of the network interfaces configuration. And, in turn the Netplan tool will generate the relevant configuration files. We would discuss couple of Netplans’ basic configurations next.</p>
-<p class="amp-wp-7d27179"><strong>Note</strong>: Following operations would require you to have superuser privileges. In case you don’t have one then contact your System Administrator for assistance.</p>
-<h5 class="amp-wp-cdd8ca0">Configure network with Netplan</h5>
-<p class="amp-wp-7d27179">We need to provide the configuration description in Netplans’ config file. The file can be located in folder <code>/etc/netplan/</code></p>
-<pre>cd /etc/netplan/</pre>
-<p class="amp-wp-7d27179">Here, you will find the config file – <strong>01-netcfg.yaml</strong></p>
-<p class="amp-wp-7d27179">Use a text-editor to make necessary changes. We have used <strong>nano</strong> text-editor. Also, before making any changes it is always better to backup the relevant data. So,</p>
-<pre>cp 01-netcfg.yaml 01-netcfg.yaml.bak</pre>
-<p class="amp-wp-7d27179">This will create a new file – <strong>01-netcfg.yaml.bak</strong>, which is the backup of our original file. Now, open the default config file with a text-editor –</p>
-<pre>sudo nano 01-netcfg.yaml</pre>
-<h5 class="amp-wp-7d27179">Basic configuration for connecting Wired Network</h5>
-<p class="amp-wp-7d27179">For connecting wired network (i.e. Ethernet) wherein you would want<strong> dhcp4</strong> to assign the IP addresses. And, make Netplan to override DNS settings as per your requirements. We would have to append the following entries in <strong>/etc/netplan/01-netcfg.yaml</strong> file –</p>
-<pre>network:
-       version: 2
-       renderer: networkd
-       ethernets:
-            enp0s3:
-                 dhcp4: yes
-                 dhcp4-overrides:
-                      use-dns: no
-                 nameservers:
-                      addresses: [8.8.8.8,8.8.4.4]</pre>
-<p class="amp-wp-7d27179">We can check the status of our DNS servers through the command –</p>
-<pre>resolvectl status enp0s3</pre>
-<p class="amp-wp-7d27179">where, enp0s3 is our <em><strong>Ethernet network peripheral</strong>. </em>This would be different for every network interface.</p>
-<h5>Basic configuration for connecting WPA Personal Wireless Network</h5>
-<p class="amp-wp-7d27179">Similarly, for wireless connections wherein we use dhcp4 and DNS servers as per our requirements.</p>
-<pre>network:
-          version: 2
-          renderer: networkd
-          wifis:
-               wlo1:
-                    dhcp4: yes
-                    dhcp4-overrides:
-                           use-dns: no
-                    nameservers:
-                           addresses: [8.8.8.8,8.8.4.4]
-                    access-points:
-                           "Network_SSID":
-                                    password: "****"</pre>
-<p class="amp-wp-7d27179">where, wlo1 is <strong>Wireless network interface</strong>.</p>
-<p class="amp-wp-7d27179">Next, check the status of our DNS servers through the command –</p>
-<pre>resolvectl status enp0s3</pre>
-<p class="amp-wp-7d27179">Once we are finished with either of the configurations, check whether the configuration supplied is as per defined standards.</p>
-<pre>sudo netplan try</pre>
-<p class="amp-wp-7d27179">If everything is in order, following message would get generated –</p>
-<pre>Configuration accepted.</pre>
-<p class="amp-wp-7d27179">Next, we would apply the configuration supplied for use.</p>
-<pre>sudo netplan apply</pre>
-<p class="amp-wp-7d27179"><strong>Note</strong>: The above code for configuration files is indentation-sensitive.</p>
-<p class="amp-wp-7d27179">In conclusion, we have discussed two of the most basic configurations to connect network with Netplan. We also specified how to override dns settings as per our requirements.</p>
+		<p class="amp-wp-7d27179">In this article, we would discuss a bit about what’s new is available in Ubuntu 19.10. Also, how to upgrade Ubuntu from 18.04/19.04 to 19.10. Ubuntu 19.10 (code name – <strong>Eoan Ermine</strong>) was released on October 17, 2019. It will be supported till July 2020. Next, stable Long Term Support release is Ubuntu 20.04 (code name – Focal Fossa) and is due for release in April 2020.</p>
+<p class="amp-wp-7d27179">i386 (32-bit) architecture isn’t supported in Ubuntu 19.10.</p>
+<p class="amp-wp-7d27179">For <strong>Desktop users</strong> – Ubuntu 19.10 now comes with Gnome v3.34 &amp; default Digital Living Network Alliance (DLNA) support. In addition to, Chromium browser is available only through SNAP, ZFS support is also being provided as experimental feature. Furthermore, various applications like Firefox, LibreOffice etc have been updated.</p>
+<p class="amp-wp-7d27179">Digital Living Network Alliance (DLNA) was founded in the year 2003, and is a standard for sharing audio/video to our smart TVs. Also, Chromium browser package is now available only as a transitional package for <strong>chromium snap</strong>. So, if you don’t have <strong>snapd</strong> package installed. Then, when you try to install Chromium browser it will ask you to install snapd package first. snapd service is used to manage snap packages.</p>
+<p class="amp-wp-7d27179">For <strong>Server users</strong> – Qemu v4.0, libvirt v5.6, MySQL v8.0 &amp; PHP v7.3 is now available among others.</p>
+<p class="amp-wp-7d27179">Apart from that, Linux kernel 5.3 is also being shipped with Eoan Ermine.</p>
+<p class="amp-wp-7d27179"><strong>Note</strong>: Following operations would require you to have superuser privileges. In case you don’t have one, then contact your System Administrator for assistance.</p>
+<h5 class="amp-wp-cdd8ca0">Upgrade Ubuntu from 19.04 to 19.10</h5>
+<p class="amp-wp-7d27179">To upgrade Ubuntu, open a terminal and issue –</p>
+<pre>sudo apt update</pre>
+<p class="amp-wp-7d27179">And, then upgrade all installed applications first. Otherwise, you would be asked to do the same later with message –</p>
+<pre>Checking for a new Ubuntu release
+Please install all available updates for your release before upgrading.</pre>
+<p class="amp-wp-7d27179">Hence, issue the following in terminal –</p>
+<pre>sudo apt full-upgrade</pre>
+<p class="amp-wp-7d27179">Thereafter, to upgrade Ubuntu to 19.10 –</p>
+<pre>sudo do-release-upgrade</pre>
+<p class="amp-wp-7d27179">It will ask us, whether we want to start with the upgrade. Press <strong>d</strong> to know the details for the packages to be newly installed/upgraded and Press<strong> q</strong> at the [END]. It would again ask whether we want to continue or not. Press <strong>y</strong> if we would want to upgrade else press <strong>N</strong>.</p>
+<p class="amp-wp-7d27179"><strong>Note</strong>: <strong>do-release-upgrade</strong> is a part of <strong>update-manager-core package</strong>. If its not installed in your distribution, then install it through –</p>
+<pre>sudo apt install update-manager-core</pre>
+<p class="amp-wp-7d27179">Also, if you want to go ahead with development release of Ubuntu then issue the following in terminal –</p>
+<pre>sudo do-release-upgrade -d</pre>
+<p class="amp-wp-7d27179">where,</p>
+<p class="amp-wp-7d27179"><strong>-d</strong> option is for development release.</p>
+<p class="amp-wp-7d27179">We strongly recommend not to switch to development release unless you absolutely know what you are up to.</p>
+<h5 class="amp-wp-cdd8ca0">Upgrade Ubuntu from 18.04 to 19.10</h5>
+<p class="amp-wp-7d27179">To upgrade Ubuntu from 18.04 LTS to 19.10. We need to make following changes in<strong> /etc/update-manager/release-upgrades</strong> file. So, open the file in a text editor (we have used nano text-editor) –</p>
+<pre>sudo nano /etc/update-manager/release-upgrades</pre>
+<p class="amp-wp-7d27179">and, either append (for lts to normal release)</p>
+<pre>Prompt = normal</pre>
+<p class="amp-wp-7d27179">or, (for normal to lts release)</p>
+<pre>Prompt = lts</pre>
+<p class="amp-wp-7d27179">Since, we are upgrading from Ubuntu 18.04 (LTS) to Ubuntu 19.10. Therefore, it should be <strong>Prompt = normal</strong>.</p>
+<p class="amp-wp-7d27179">Then, issue the following in terminal –</p>
+<pre>sudo apt update
+sudo apt full-upgrade
+sudo do-release-upgrade</pre>
+<p class="amp-wp-7d27179">and, follow on screen instructions as described in above section. It is worth mentioning here that, when we upgrade from one release to next. Our distribution upgrades to closest possible stable release first and then the next one and so on. So, for Ubuntu 18.04 it would be – 19.04 first and then 19.10.</p>
+<p class="amp-wp-7d27179">In conclusion, we have discussed how to Upgrade Ubuntu from 18.04/19.04 to 19.10.</p>
+<p><strong>Additional Info</strong> –</p>
+<p class="amp-wp-7d27179">If you get the following error after running the command –</p>
+<pre>sudo do-release-upgrade</pre>
+<p><strong>Checking for a new Ubuntu release</strong><br><strong>No new release found.</strong></p>
+<p class="amp-wp-7d27179">Then, you are already on the latest stable release of Ubuntu and can only switch to development release next.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
