@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Your first Python program - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/python/your-first-python-program/" />
+		<title>Connect Chromecast to VLC Media Player in Ubuntu - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/linux/connect-chromecast-to-vlc-media-player-in-ubuntu/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -409,7 +409,7 @@ amp-carousel > amp-img > img {
 	right: 16px;
 }
 		/* Inline stylesheets */
-:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7185e16{color:#36f}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cdd8ca0{text-align:center}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-719eeea{font-family:Consolas,Monaco,monospace}	</style>
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cdd8ca0{text-align:center}	</style>
 </head>
 
 <body class="">
@@ -426,84 +426,41 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Your first Python program</h1>
+		<h1 class="amp-wp-title">Connect Chromecast to VLC Media Player in Ubuntu</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-10-16T19:57:03+00:00">
-		6 days ago	</time>
+	<time datetime="2019-10-22T20:42:09+00:00">
+		18 mins ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">In this article, we would discuss how to write/execute your first Python program. First, we will discuss <strong>input()</strong> function which is used to get the input from the user. Later, <strong>modules</strong> will be imported for arithmetic operations. Lastly, <strong>print()</strong> function – to display the results.</p>
-<p class="amp-wp-7d27179">We have used<strong> Python v3.7.4</strong>. Ubuntu users get the latest stable version of Python installed by default. But for some reason, if its not there then you may want to check the article <span class="amp-wp-7185e16"><a href="https://techpiezo.com/python/install-python-3-7-4-in-ubuntu-19-04/" class="amp-wp-7185e16">here</a></span>.</p>
-<p class="amp-wp-7d27179">Also, to check the version of Python installed, open the terminal and issue –</p>
-<pre>python3 -V</pre>
-<h5 class="amp-wp-cdd8ca0">Your first Python program</h5>
-<pre>#This is your first Python program
-
-"""Three quotes
-are used for 
-multi-line 
-comments"""
-
-print("Hello World!")
-
-x=input("Enter number x: ")
-y=input("Enter number y: ")
-conc=x+y
-print("x &amp; y as string: ", conc)
-#It prints concatenated values
-print("\n")
-
-a=int(input("Enter number a: "))
-b=int(input("Enter number b: "))
-add=a+b
-print("a &amp; b as integers: ", a+b)
-#It prints the sum of two variables a and b
-print("\n")
-
-<span class="amp-wp-719eeea">from math import sqrt
-</span>p=int(input("Enter a number to get Square Root of: "))
-r=sqrt(p)
-print("The square root of the number provided: ", r)
-#sqrt() - square root function
-
-</pre>
-<p class="amp-wp-7d27179">We will explain our code next.</p>
-<p class="amp-wp-7d27179">Though it is not mandatory, but we must mention what our code is all about. Hence, we put comments in our code. Therefore, if its a single-line comment then put <strong>#</strong> in the beginning of the line. Otherwise, for multi-line comments – our comment must start and end with three quotes – <strong>“””</strong>.</p>
-<p><strong>print(“Hello World!”)</strong> – prints the message <strong>Hello World!</strong></p>
-<p class="amp-wp-7d27179">By default, <strong>input()</strong> function takes the values as string. So, we asked the user to input two values for variables<strong> x</strong> &amp; <strong>y</strong>. And, then stored the summation of values in variable <strong>conc</strong>. Since, <strong>input()</strong> function treats any value as string. Hence, it will print the concatenated values.</p>
-<p class="amp-wp-7d27179"><strong>print(“\n”) – </strong>to print the next line.</p>
-<p class="amp-wp-7d27179">Now, we will make the<strong> input()</strong> function to take integer values by preceding the function with <strong>int()</strong>. Enter the values of<strong> a</strong> and <strong>b</strong>. This time around, it will print the summation of values provided.</p>
-<p class="amp-wp-7d27179">Lastly, we imported<strong> sqrt()</strong> function from a <strong>module</strong> named – <strong>math</strong>. Thereafter, user enters a value to get its square root. Variable <strong>p </strong>stores the value of input number. And, the variable <strong>r</strong> stores the result from <strong>sqrt()</strong> function. Again, <strong>print()</strong> function prints the desired result.</p>
-<h5 class="amp-wp-cdd8ca0">Execute your Python program</h5>
-<p class="amp-wp-7d27179">Open a text editor and copy – paste the above code. Save the file as <strong>first-code.py</strong>. <strong>.py</strong> is a Python extension.</p>
-<p class="amp-wp-7d27179">Thereafter, open a terminal. And, use <strong>cd</strong> command to head to the directory where our file was saved.</p>
-<pre>cd /path/to/file</pre>
-<p class="amp-wp-7d27179">And, issue –</p>
-<pre>python3.7 first-code.py</pre>
-<p class="amp-wp-7d27179">User will be asked to enter values. Final outcome would resemble, although values would differ –</p>
-<pre>Hello World!
-Enter number x: 12
-Enter number y: 65
-x &amp; y as string: 1265
-
-
-Enter number a: 45
-Enter number b: 85
-a &amp; b as integers: 130
-
-
-Enter a number to get Square Root of: 49
-The square root of the number provided: 7.0</pre>
-<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have discussed how to write your first Python program.</p>
+		<p class="amp-wp-7d27179">In this article, we would discuss how to connect Chromecast to VLC Media Player in Ubuntu distribution. <strong>Chromecast devices</strong> have been developed and manufactured by Google. Through Chromecast devices, we can stream audio/video content available on supported applications to our TV. In addition to, we can mirror Google Chrome web browsers’ content too (which will be discussed in a separate article). 3rd Generation Chromecast devices now support resolutions up to 1080p.</p>
+<p class="amp-wp-7d27179">Make necessary connections first. Plug Chromecast to your TVs’ HDMI port and connect the device to a wireless network.</p>
+<p class="amp-wp-7d27179">We could stream content from <strong>VLC Media Player</strong> to our Chromecast device ever since release of VLC Media Player’s “Vetinari” branch. If not installed yet then, we need to first install VLC Media Player in our Ubuntu distribution.</p>
+<p class="amp-wp-7d27179"><strong>Note</strong>: Following operations would require you to have superuser privileges. In case you don’t have one, then contact your System Administrator for assistance.</p>
+<h5 class="amp-wp-cdd8ca0">Install VLC Media Player in Ubuntu</h5>
+<p class="amp-wp-7d27179">As package and related dependencies of VLC Media Player are already available in standard Ubuntu repositories. Therefore, we would update the repositories to get the latest version of the package available –</p>
+<pre>sudo apt update</pre>
+<p class="amp-wp-7d27179">And,<strong> install VLC Media Player</strong> through –</p>
+<pre>sudo apt install vlc</pre>
+<p class="amp-wp-7d27179">With VLC Media Player installed, we would connect Chromecast device to it next.</p>
+<h5 class="amp-wp-cdd8ca0">Connect Chromecast to VLC Media Player</h5>
+<p class="amp-wp-7d27179">Connect PC/Laptop to a Wi-Fi router. Also, our Chromecast device too have to be connected with the same router. For instance,</p>
+<p class="amp-wp-7d27179">SSID (Wireless Network) of our Wi-Fi router is “123”. Then, our PC/Laptop/Chromecast device all should connect to “123”. Thereafter, open VLC Media Player package from Main menu.</p>
+<p class="amp-wp-7d27179">Under <strong>Playback drop-down menu</strong>, hover to <strong>Renderer</strong>. You would notice two options –</p>
+<pre>&lt;local&gt;</pre>
+<p class="amp-wp-7d27179">and,</p>
+<pre>&lt;your-chromecast-device&gt;</pre>
+<p class="amp-wp-7d27179">Click on your Chromecast device. And, open a audio/video file to stream content next. If everything works well then, you should be able to see streamed content on your TV.</p>
+<p class="amp-wp-7d27179">It is worth mentioning beforehand, if for some reason you are unable to connect Chromecast device and in <strong>Renderer section</strong> (Under Playback drop-down menu) – instead of your Chromecast device name, its just display <strong>scanning</strong>. Then, try disabling firewall for few minutes to check if its blocking your connection to Chromecast device.</p>
+<p class="amp-wp-7d27179"><strong>In conclusion</strong>, VLC Media Player installation and thereafter how we could stream content from VLC Media Player to a Chromecast device was discussed.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
 			<div class="amp-wp-meta amp-wp-tax-category">
-		Categories: <a href="https://techpiezo.com/python/" rel="category tag">Python</a>	</div>
+		Categories: <a href="https://techpiezo.com/linux/" rel="category tag">Linux</a>, <a href="https://techpiezo.com/linux/linux-quick-fix/" rel="category tag">Quick Fix</a>	</div>
 
 	</footer>
 </article>
