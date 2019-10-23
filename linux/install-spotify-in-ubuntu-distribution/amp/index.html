@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Install Wine to run Windows applications in Ubuntu - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/linux/install-wine-to-run-windows-applications-in-ubuntu/" />
+		<title>Install Spotify in Ubuntu distribution - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/linux/install-spotify-in-ubuntu-distribution/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -426,37 +426,45 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Install Wine to run Windows applications in Ubuntu</h1>
+		<h1 class="amp-wp-title">Install Spotify in Ubuntu distribution</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-07-10T18:30:16+00:00">
-		4 months ago	</time>
+	<time datetime="2019-10-23T13:43:41+00:00">
+		5 hours ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">Wine was originally an acronym for “Wine is not an emulator”. Now, we simply call it Wine. It is an open-source windows compatibility layer through which we can run windows applications on Ubuntu or any other supported Linux distribution. It should never be considered as an alternative to Windows operating system. The development of Wine started in 1993. Windows applications, at the time had very few alternatives. With Linux based distributions still evolving, Wine took the center-stage. Therefore, those who couldn’t afford Windows operating system for variety of reasons, were able to run applications that were specifically developed for it. There are multiple methods to install Wine but, we will be doing it through Ubuntu’s standard repository.</p>
-<p class="amp-wp-7d27179">At the time of writing the article, there are 26,000-odd applications that are supported by Wine. And, considerable effort is being made every day to get support for far more number of applications.</p>
-<h4 class="amp-wp-cdd8ca0">Install Wine on Ubuntu</h4>
-<p class="amp-wp-7d27179"><strong>1.</strong> If you don’t have superuser privileges then, contact your system administrator for assistance.</p>
-<p class="amp-wp-7d27179"><strong>2.</strong> We will be installing Wine from Ubuntu’s standard repository. To update the Ubuntu standard repository –</p>
+		<p class="amp-wp-7d27179">The music streaming platform, <strong>Spotify</strong>, was launched on October 07, 2008. The services are being offered under a freemium business model i.e. Spotify Free and Spotify Premium. With Spotify Premium, we can listen to our favorite songs even without an internet connection. In addition to, we also get ad-free experience. Furthermore, as of now certain regions do get free on-demand access for mobile. In this article, we would discuss how to install Spotify in Ubuntu distribution. There are two methods available through which we can install Spotify –</p>
+<ol class="amp-wp-7d27179"><li>through <strong>snapd service</strong>, or</li>
+<li>by <strong>configuring the repository</strong>.</li>
+</ol><p class="amp-wp-7d27179"><strong>Note</strong>: Following operations would require you to have superuser privileges. In case you don’t have one, then contact your System Administrator for assistance.</p>
+<h5 class="amp-wp-cdd8ca0">Install Spotify through Snapd service</h5>
+<p class="amp-wp-7d27179">In case you don’t have snapd service installed, then issue the following in terminal to install –</p>
+<pre>sudo apt install snapd</pre>
+<p class="amp-wp-7d27179">Next, we need to update Snap repository so that latest version of the package gets installed.</p>
+<pre>sudo snap refresh</pre>
+<p class="amp-wp-7d27179">Now, to install Spotify –</p>
+<pre>sudo snap install spotify</pre>
+<p class="amp-wp-7d27179">This will install spotify in Ubuntu distribution. Alternately, we can also configure a repository to install the same.</p>
+<h5 class="amp-wp-cdd8ca0">Install Spotify by configuring the repository</h5>
+<p class="amp-wp-7d27179">Firstly, we have to add a GPG key needed to authenticate packages to be installed. Thereafter, we would add the necessary repository source location in <strong>/etc/apt/sources.list.d</strong> directory. And, then update the repository and install the required packages.</p>
+<p class="amp-wp-7d27179">We will start with GPG key addition first –</p>
+<pre>cd /dev/shm
+wget -q -O - https://download.spotify.com/debian/pubkey.gpg | sudo apt-key add -</pre>
+<p class="amp-wp-7d27179">where,</p>
+<p class="amp-wp-7d27179"><strong>apt-key</strong> command-line utility – used to manage keys. Those packages which have been authenticated through GPG keys are considered trusted.</p>
+<p class="amp-wp-7d27179">Then, we will create a file <strong>spotify.list</strong> in <strong>/etc/apt/sources.list.d/</strong> directory. Furthermore, we will also add repository source location in <strong>spotify.list</strong> file. So, issue the following in terminal –</p>
+<pre>echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list</pre>
+<p class="amp-wp-7d27179">where,</p>
+<p class="amp-wp-7d27179"><strong>| (pipe)</strong> redirects output of one command to the other.</p>
+<p class="amp-wp-7d27179"><strong>tee</strong> command – it will write the redirected input to the file as specified.</p>
+<p class="amp-wp-7d27179">Next, update the repository –</p>
 <pre>sudo apt update</pre>
-<p class="amp-wp-7d27179"><strong>3.</strong> To install Wine –</p>
-<pre>sudo apt install wine64</pre>
-<p class="amp-wp-7d27179">Lastly, to check the wine version installed, run the following in terminal –</p>
-<pre>wine --version</pre>
-<p><amp-img class="aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/07/wine-version.png" alt="wine version" width="410" height="48" layout="intrinsic"></amp-img></p>
-<p class="amp-wp-7d27179">Furthermore, if the installation gets completed without errors, then it should return with the installed version. However, the version installed may differ for different Ubuntu versions.</p>
-<p class="amp-wp-7d27179"><strong>5.</strong> Next, we will be installing a windows application through Wine –</p>
-<p class="amp-wp-7d27179">First download the<strong> .exe</strong> file of the Windows application that you want to run inside Ubuntu. In addition to, for the purpose of explanation we have chosen – <strong>Setup_PCEditor_1.2.59.1.exe</strong></p>
-<p class="amp-wp-7d27179">In the Ubuntu terminal –</p>
-<pre>wine &lt;.exe-file&gt;</pre>
-<p><amp-img class="alignnone size-full wp-image-795 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/07/wine-setup.png" alt="wine setup" width="627" height="30" layout="intrinsic"></amp-img></p>
-<p class="amp-wp-7d27179">This will take you to default installation procedure that you do just before installing any Windows application. Subsequently, finish the installation process. You would find the installed application in the application menu of your desktop environment. For example, for LXDE desktop environment it would be accessible through main menu.</p>
-<p><amp-img class="alignnone size-full wp-image-794 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/07/wine-application-menu.png" alt="wine application menu" width="741" height="222" layout="intrinsic"></amp-img></p>
-<p><strong>Conclusion</strong></p>
-<p class="amp-wp-7d27179">Thus, with emulator Wine we can install Windows applications that don’t have alternatives available for Linux distributions yet. Being open-source it brings all the associated benefits. With Wine, we can even remotely access Windows applications too.</p>
+<p class="amp-wp-7d27179">Thereafter, we would install the Spotify package –</p>
+<pre>sudo apt install spotify-client</pre>
+<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have discussed how to install Spotify in Ubuntu distribution.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
