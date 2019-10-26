@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Download and Install VirtualBox Guest Additions in Ubuntu - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/linux/download-and-install-virtualbox-guest-additions-in-ubuntu/" />
+		<title>Install TeamSpeak Client in Ubuntu distribution - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/linux/install-teamspeak-client-in-ubuntu-distribution/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -426,47 +426,32 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Download and Install VirtualBox Guest Additions in Ubuntu</h1>
+		<h1 class="amp-wp-title">Install TeamSpeak Client in Ubuntu distribution</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-10-12T12:34:23+00:00">
-		2 weeks ago	</time>
+	<time datetime="2019-10-26T09:58:52+00:00">
+		23 mins ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">In this article, we would discuss how to download and install <strong>VirtualBox Guest Additions</strong> in Ubuntu (Guest OS). We install VirtualBox Guest Additions inside our Virtual machine. Through Guest Additions we could <strong>share folders</strong> between Host OS and Guest OS. Furthermore, we could also <strong>share clipboards</strong>. It is both unidirectional as well as bidirectional. Apart from that, through Guest Additions we get <strong>better video support</strong>, <strong>integrated mouse pointer</strong> and <strong>synchronized time with Guest OS</strong> among others. With the help of <strong>Guest Control File Manager</strong> we could transfer files between Host OS and Guest OS too.</p>
-<p class="amp-wp-7d27179">Before proceeding with installation steps we need to first download the VirtualBox Guest Additions ISO. Thereafter, we would mount the ISO and later install it inside our Virtual Machine (Guest OS i.e. Ubuntu). We can proceed with other Guest Operating Systems too, but the installation steps for other OS would vary.</p>
-<h5 class="amp-wp-cdd8ca0">Download VirtualBox Guest Additions</h5>
-<p class="amp-wp-7d27179">First, check the version of VirtualBox installed on our Host Operating Systems. And, download VirtualBox Guest Additions through following link –</p>
-<pre>http://download.virtualbox.org/virtualbox/</pre>
-<p class="amp-wp-7d27179">Or, we could directly install VirtualBox from following link –</p>
-<pre>http://download.virtualbox.org/virtualbox/X.X.X/VBoxGuestAdditions_X.X.X.iso</pre>
-<p class="amp-wp-7d27179">Replace X.X.X with the VirtualBox’s version installed.</p>
-<p class="amp-wp-7d27179">Now with VirtualBox Guest Additions downloaded, next step is to mount the VirtualBox Guest Additions ISO image.</p>
-<p class="amp-wp-7d27179"><strong>Alternately</strong>, if we are on Ubuntu Host OS then VirtualBox Guest Additions could be installed directly from standard Ubuntu repositories.</p>
-<pre>sudo apt update
-sudo apt install virtualbox-guest-additions-iso</pre>
-<h5 class="amp-wp-cdd8ca0">Mount VirtualBox Guest Additions</h5>
-<p class="amp-wp-7d27179">Run the Virtual machine next, and click on <strong>Devices</strong> available on VirtualBox menu.</p>
-<p><amp-img class="size-full wp-image-2872 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/10/VirtualBox-Menu.png" alt="VirtualBox Menu" width="367" height="31" layout="intrinsic"></amp-img></p>
-<p class="amp-wp-7d27179">Now, either load the ISO through <strong>Optical Drives -&gt; Choose Disk Image</strong> option if we have download the ISO manually or else, go with <strong>Insert Guest Additions CD Image</strong> if we have downloaded Guest Additions ISO through OS repositories.</p>
-<p class="amp-wp-7d27179"><strong>Note</strong>: Following operations would require you to have superuser privileges. In case you don’t have one, then contact your System Administrator for assistance.</p>
-<h5 class="amp-wp-cdd8ca0">Install VirtualBox Guest Additions in Ubuntu</h5>
-<p class="amp-wp-7d27179">Next, install relevant packages available in ISO image. On Ubuntu, we would have to execute <strong><em>VBoxLinuxAdditions</em>.run</strong>. Use the following command to get to the location of the executable file –</p>
-<pre>cd /media/&lt;user-name&gt;/VBox_GAs_X.X.X/</pre>
-<p class="amp-wp-7d27179">where,</p>
-<p class="amp-wp-7d27179"><strong>X.X.X</strong> represents the version of VirtualBox Guest Additions to be installed.</p>
-<p class="amp-wp-7d27179">Now, execute the above mentioned script through command –</p>
-<pre>sudo sh VBoxLinuxAdditions.run</pre>
-<p class="amp-wp-7d27179">If we are installing VirtualBox Guest Additions for the first time in Ubuntu Virtual machine. Then, we may encounter the following error –</p>
-<p class="amp-wp-7d27179"><strong>This system is currently not set up to build kernel modules. </strong><br><strong>Please install the gcc make perl packages from your distribution.</strong></p>
-<p class="amp-wp-7d27179">To resolve, we would have to install the mentioned packages first and then proceed with required installation step.</p>
-<pre>sudo apt install gcc make perl</pre>
-<p class="amp-wp-7d27179">Now, try executing the file again –</p>
-<pre>sudo sh VBoxLinuxAdditions.run</pre>
-<p>In conclusion, we have discussed how to download and install VirtualBox Guest Additions in Ubuntu Virtual machine.</p>
+		<p class="amp-wp-7d27179">In this article, we would discuss how to install <strong>TeamSpeak Client</strong> in Ubuntu distribution. TeamSpeak is an VOIP application, targets towards gamers in particular. The application was first released in October 2001. At the time of writing the article, the latest stable release for TeamSpeak Client is <strong>3.3.2</strong>. Furthermore, the application is available for various platforms – Windows, MacOS, Linux, iOS &amp; Android. As of now, it supports both architectures for Linux – 32-bit as well as 64-bit. There are three modes – Free Server, Gamer and Commercial License under which users can subscribe to their services. Check the following link to know more about features the package offers –</p>
+<pre>https://www.teamspeak.com/en/features/overview/</pre>
+<h5 class="amp-wp-cdd8ca0">Install TeamSpeak Client in Ubuntu</h5>
+<p class="amp-wp-7d27179">First download the TeamSpeak Client package from the official website itself.</p>
+<pre>https://www.teamspeak.com/en/downloads/#client</pre>
+<p class="amp-wp-7d27179">Download the package supported by your Computer architecture – 32-bit or 64-bit. Since, we have already discussed at the time of writing the article – latest stable version for the package was 3.3.2. Hence, the downloaded file for 64-bit architecture will be –</p>
+<pre>TeamSpeak3-Client-linux_amd64-3.3.2.run</pre>
+<p class="amp-wp-7d27179">We would extract the file downloaded through <strong>sh</strong> (command interpreter for shell) command. Hence, open a terminal &amp; head over to the directory where file was downloaded through <strong>cd</strong> command.</p>
+<pre>cd /path/to/downloaded/package/
+sh TeamSpeak3-Client-linux_amd64-3.3.2.run</pre>
+<p class="amp-wp-7d27179">It would first ask you accept the license agreement. Read the complete agreement (Press Return/Enter) to ensure you would use the application as per the terms and conditions specified in the agreement. Use scroll keys to read the complete agreement. And, press <strong>q</strong> to exit if you have finished reading the mentioned terms &amp; conditions. Press <strong>y</strong>, if you accept terms and conditions specified or else, Press <strong>n</strong> to exit. If you accept, it would create a new directory (<strong>TeamSpeak3-Client-linux_amd64</strong>) in the current directory. Next, use <strong>cd</strong> command again to get inside the extracted directory –</p>
+<pre>cd TeamSpeak3-Client-linux_amd64/</pre>
+<p class="amp-wp-7d27179">and, issue the following in terminal –</p>
+<pre>bash ts3client_runscript.sh</pre>
+<p class="amp-wp-7d27179">This should open the application &amp; you would be taken to login screen.</p>
+<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have discussed how to install and run TeamSpeak Client in Ubuntu distribution.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
