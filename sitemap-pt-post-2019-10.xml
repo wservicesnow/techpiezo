@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="October 23, 2019 7:17 pm" -->
+<!-- generated-on="October 26, 2019 6:03 am" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
+		<loc>https://techpiezo.com/linux/install-discord-in-ubuntu-distribution/</loc>
+		<lastmod>2019-10-26T05:55:08+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
 		<loc>https://techpiezo.com/linux/install-spotify-in-ubuntu-distribution/</loc>
 		<lastmod>2019-10-23T18:43:13+00:00</lastmod>
 		<changefreq>monthly</changefreq>
@@ -78,4 +84,4 @@
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: 7e4183538d98cc452fdcc475dafa2bf3; Queries for sitemap: 13; Total queries: 24; Seconds: 0.01; Memory for sitemap: 0MB; Total memory: 2MB -->
+</urlset><!-- Request ID: 5dfb2fed518c6d98ab179ba20c3b3c4d; Queries for sitemap: 16; Total queries: 27; Seconds: 0.01; Memory for sitemap: 0MB; Total memory: 2MB -->
