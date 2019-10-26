@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Install TeamSpeak Client in Ubuntu distribution - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/linux/install-teamspeak-client-in-ubuntu-distribution/" />
+		<title>Load and Unload Linux Kernel Modules - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/linux/load-and-unload-linux-kernel-modules/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -426,32 +426,43 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Install TeamSpeak Client in Ubuntu distribution</h1>
+		<h1 class="amp-wp-title">Load and Unload Linux Kernel Modules</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-10-26T09:58:52+00:00">
-		12 hours ago	</time>
+	<time datetime="2019-10-26T19:22:26+00:00">
+		2 hours ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">In this article, we would discuss how to install <strong>TeamSpeak Client</strong> in Ubuntu distribution. TeamSpeak is an VOIP application, targets towards gamers in particular. The application was first released in October 2001. At the time of writing the article, the latest stable release for TeamSpeak Client is <strong>3.3.2</strong>. Furthermore, the application is available for various platforms – Windows, MacOS, Linux, iOS &amp; Android. As of now, it supports both architectures for Linux – 32-bit as well as 64-bit. There are three modes – Free Server, Gamer and Commercial License under which users can subscribe to their services. Check the following link to know more about features the package offers –</p>
-<pre>https://www.teamspeak.com/en/features/overview/</pre>
-<h5 class="amp-wp-cdd8ca0">Install TeamSpeak Client in Ubuntu</h5>
-<p class="amp-wp-7d27179">First download the TeamSpeak Client package from the official website itself.</p>
-<pre>https://www.teamspeak.com/en/downloads/#client</pre>
-<p class="amp-wp-7d27179">Download the package supported by your Computer architecture – 32-bit or 64-bit. Since, we have already discussed at the time of writing the article – latest stable version for the package was 3.3.2. Hence, the downloaded file for 64-bit architecture will be –</p>
-<pre>TeamSpeak3-Client-linux_amd64-3.3.2.run</pre>
-<p class="amp-wp-7d27179">We would extract the file downloaded through <strong>sh</strong> (command interpreter for shell) command. Hence, open a terminal &amp; head over to the directory where file was downloaded through <strong>cd</strong> command.</p>
-<pre>cd /path/to/downloaded/package/
-sh TeamSpeak3-Client-linux_amd64-3.3.2.run</pre>
-<p class="amp-wp-7d27179">It would first ask you accept the license agreement. Read the complete agreement (Press Return/Enter) to ensure you would use the application as per the terms and conditions specified in the agreement. Use scroll keys to read the complete agreement. And, press <strong>q</strong> to exit if you have finished reading the mentioned terms &amp; conditions. Press <strong>y</strong>, if you accept terms and conditions specified or else, Press <strong>n</strong> to exit. If you accept, it would create a new directory (<strong>TeamSpeak3-Client-linux_amd64</strong>) in the current directory. Next, use <strong>cd</strong> command again to get inside the extracted directory –</p>
-<pre>cd TeamSpeak3-Client-linux_amd64/</pre>
-<p class="amp-wp-7d27179">and, issue the following in terminal –</p>
-<pre>bash ts3client_runscript.sh</pre>
-<p class="amp-wp-7d27179">This should open the application &amp; you would be taken to login screen.</p>
-<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have discussed how to install and run TeamSpeak Client in Ubuntu distribution.</p>
+		<p class="amp-wp-7d27179">In this article, we would discuss how to load and unload <strong>Linux Kernel modules</strong>. But, before that we would discuss a bit about Linux Kernel Modules itself. A Linux Kernel <strong>acts as an interface</strong> between computer’s hardware and processes in Operating System. A Kernel can perform multiple operations – manage processes and memory efficiently, interpreter for devices etc. It wouldn’t be right for us to build large Kernel images, containing every possible functionality.</p>
+<p class="amp-wp-7d27179">Now, understand it with the help of an example. If certain drivers are not available in our Kernel image for the hardware we would want to connect. Under such a scenario, we have the option to load the relevant Kernel Module to make it work. Thus, helping us avoid the need to rebuild Kernel images. And, it also helps us in limiting the size of our Kernel image.</p>
+<p class="amp-wp-7d27179">Therefore, we have got two options – either to build Modules inside our Kernel image itself or load them later as and when required. Most of the Kernel modules could be loaded without having to reboot our system.</p>
+<p class="amp-wp-7d27179">Before moving ahead, we would like to clarify that you must take extreme care while performing below mentioned operations. Contact your System Administrator for assistance, in case you are not sure of what you are about to execute. Also, following operations would require you to have superuser privileges.</p>
+<h5 class="amp-wp-cdd8ca0">Load and Unload Linux Kernel Modules</h5>
+<p class="amp-wp-7d27179">Firstly, we would check for all the modules which have already been loaded in our system. Hence, open a terminal and issue the following –</p>
+<pre>lsmod</pre>
+<p class="amp-wp-7d27179">It provides us the list of loaded modules and their size by getting the information from <strong>/proc/modules</strong> file.</p>
+<p class="amp-wp-7d27179">Although there are two command-line tools – <strong>insmod</strong> (it inserts a module in Kernel) and <strong>rmmod</strong> (it removes a module from Kernel). But, we would choose to discuss <strong>modprobe</strong> command-line utility instead. It can handle module dependencies better.</p>
+<p class="amp-wp-7d27179">To get more information about a Kernel module use the following command –</p>
+<pre>modinfo &lt;module_name&gt;</pre>
+<p class="amp-wp-7d27179">For instance, if you would like to know more about <strong>zfs</strong> module –</p>
+<pre>modinfo zfs</pre>
+<p class="amp-wp-7d27179"><strong>To load a module</strong> –</p>
+<pre>sudo modprobe &lt;module_name&gt;</pre>
+<p class="amp-wp-7d27179">For instance, to load ZFS module –</p>
+<pre>sudo modprobe zfs</pre>
+<p class="amp-wp-7d27179">To check if your module has successfully been loaded in Kernel image –</p>
+<pre>lsmod | grep zfs</pre>
+<p class="amp-wp-7d27179"><strong>To unload a module</strong> –</p>
+<pre>sudo modprobe -r &lt;module_name&gt;</pre>
+<p class="amp-wp-7d27179">For instance, unload the same module – ZFS</p>
+<pre>sudo modprobe -r zfs</pre>
+<p class="amp-wp-7d27179">To check if your module has successfully been unloaded from Kernel image –</p>
+<pre>lsmod | grep zfs</pre>
+<p class="amp-wp-7d27179">This time around, it would return with a blank output.</p>
+<p><strong>In conclusion</strong>, we have discussed how to load and unload Linux Kernel modules. But, there is more to it. We will discuss more about Kernel modules in coming articles.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">

@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="October 26, 2019 10:22 am" -->
+<!-- generated-on="October 26, 2019 9:30 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
+		<loc>https://techpiezo.com/linux/load-and-unload-linux-kernel-modules/</loc>
+		<lastmod>2019-10-26T21:28:09+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
 		<loc>https://techpiezo.com/linux/install-teamspeak-client-in-ubuntu-distribution/</loc>
 		<lastmod>2019-10-26T10:20:21+00:00</lastmod>
 		<changefreq>monthly</changefreq>
@@ -90,4 +96,4 @@
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: b47e5acc336319633dbf594f7e3025a6; Queries for sitemap: 19; Total queries: 30; Seconds: 0.02; Memory for sitemap: 0MB; Total memory: 2MB -->
+</urlset><!-- Request ID: de0eef75687b7736ca381ff282574118; Queries for sitemap: 22; Total queries: 33; Seconds: 0.02; Memory for sitemap: 0MB; Total memory: 2MB -->

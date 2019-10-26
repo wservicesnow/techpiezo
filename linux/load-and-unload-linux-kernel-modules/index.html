@@ -6,11 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
-	<title>Quick Fix Archives - TechPiezo</title>
+	<title>Load and Unload Linux Kernel Modules - TechPiezo</title>
 
 <!-- This site is optimized with the Yoast SEO plugin v11.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
-<link rel="canonical" href="https://techpiezo.com/linux/linux-quick-fix/" />
-<link rel="next" href="https://techpiezo.com/linux/linux-quick-fix/page/2/" />
+<meta name="description" content="It help us avoid the need to rebuild Kernel image everytime we require new functionality. In this article, we discuss how to load and unload Kernel Modules."/>
+<link rel="canonical" href="https://techpiezo.com/linux/load-and-unload-linux-kernel-modules/" />
 <!-- / Yoast SEO plugin. -->
 
 <style id="ct-main-styles-inline-css" type="text/css">:root {
@@ -61,6 +61,7 @@
     --logoMaxHeight: 30px;
     --cardSpacing: 35px;
     --cardBackground: #ffffff;
+    --pageTitleFontHoverColor: var(--paletteColor1);
     --letterSpacing: 0em;
     --fontSize: 20px;
     --textTransform: none;
@@ -69,6 +70,7 @@
     --fontStyle: normal;
     --textDecoration: none;
     --lineHeight: 1.65;
+    --pageTitleFontInitialColor: var(--paletteColor4);
     --cardExcerptSize: 18px;
     --cardsGap: 35px;
     --transparentHeaderBackground: rgba(255, 255, 255, 0.1);
@@ -316,6 +318,16 @@ code, kbd, samp, pre {
     --backgroundColor: #f4f5f8;
 }
 
+.entry-header .page-title {
+    --lineHeight: 1.5;
+    --textDecoration: none;
+    --fontStyle: normal;
+    --fontWeight: 700;
+    --textTransform: none;
+    --fontSize: 34px;
+    --letterSpacing: 0em;
+}
+
 .entry-card .entry-title {
     --lineHeight: 1.3;
     --textDecoration: none;
@@ -327,7 +339,7 @@ code, kbd, samp, pre {
 }
 
 .entry-title {
-    --linkInitialColor: #2c3e50;
+    --linkInitialColor: var(--paletteColor4);
     --linkHoverColor: var(--paletteColor1);
 }
 
@@ -462,7 +474,7 @@ code, kbd, samp, pre {
     --headerHeight: 35px;
     --transparentLogoMaxHeight: 50px;
     --cardSpacing: 35px;
-    --cardExcerptSize: 19px;
+    --cardExcerptSize: 18px;
     --lineHeight: 1.65;
     --fontSize: 20px;
     --letterSpacing: 0em;
@@ -559,6 +571,12 @@ h6 {
     --letterSpacing: 0em;
 }
 
+.entry-header .page-title {
+    --lineHeight: 1.5;
+    --fontSize: 30px;
+    --letterSpacing: 0em;
+}
+
 .entry-card .entry-title {
     --lineHeight: 1.3;
     --fontSize: 26px;
@@ -566,7 +584,7 @@ h6 {
 }
 
 .entry-card {
-    --metaFontSize: 13px;
+    --metaFontSize: 16px;
 }
 
 code, kbd, samp, pre,
@@ -600,7 +618,7 @@ code, kbd, samp, pre,
     --headerHeight: 35px;
     --transparentLogoMaxHeight: 50px;
     --cardSpacing: 25px;
-    --cardExcerptSize: 19px;
+    --cardExcerptSize: 18px;
     --lineHeight: 1.65;
     --fontSize: 20px;
     --letterSpacing: 0em;
@@ -709,6 +727,12 @@ h6 {
     --letterSpacing: 0em;
 }
 
+.entry-header .page-title {
+    --lineHeight: 1.5;
+    --fontSize: 25px;
+    --letterSpacing: 0em;
+}
+
 .entry-card .entry-title {
     --lineHeight: 1.3;
     --fontSize: 24px;
@@ -716,7 +740,7 @@ h6 {
 }
 
 .entry-card {
-    --metaFontSize: 13px;
+    --metaFontSize: 16px;
 }
 
 code, kbd, samp, pre,
@@ -734,7 +758,7 @@ code, kbd, samp, pre,
 <link rel='stylesheet' id='ct-style-css'  href='https://techpiezo.com/wp-content/themes/blocksy/style.css' type='text/css' media='all' />
 <link rel='stylesheet' id='ct-main-styles-css'  href='https://techpiezo.com/wp-content/themes/blocksy/static/bundle/main.css' type='text/css' media='all' />
 
-<link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" sizes="32x32" />
+<link rel="amphtml" href="https://techpiezo.com/linux/load-and-unload-linux-kernel-modules/amp/"><link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" sizes="32x32" />
 <link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" sizes="192x192" />
 <link rel="apple-touch-icon-precomposed" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" />
 <meta name="msapplication-TileImage" content="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" />
@@ -764,7 +788,7 @@ code, kbd, samp, pre,
 
 </head>
 
-<body class="archive category category-linux-quick-fix category-9 wp-custom-logo ct-loading ct-no-js ct-modern-forms ct-offcanvas header-type-1" >
+<body class="post-template-default single single-post postid-3179 single-format-standard wp-custom-logo ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
 <div id="main-container">
 
 	<header
@@ -797,9 +821,9 @@ code, kbd, samp, pre,
 				>
 
 		<ul id="primary-menu" class="primary-menu menu"><li id="menu-item-70" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-70"><a href="https://techpiezo.com">Home</a></li>
-<li id="menu-item-41" class="menu-item menu-item-type-taxonomy menu-item-object-category current-category-ancestor current-menu-ancestor current-menu-parent current-category-parent menu-item-has-children menu-item-41"><a href="https://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
+<li id="menu-item-41" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-41"><a href="https://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
 <ul class="sub-menu">
-	<li id="menu-item-350" class="menu-item menu-item-type-taxonomy menu-item-object-category current-menu-item menu-item-350"><a href="https://techpiezo.com/linux/linux-quick-fix/" aria-current="page">Quick Fix</a></li>
+	<li id="menu-item-350" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-350"><a href="https://techpiezo.com/linux/linux-quick-fix/">Quick Fix</a></li>
 	<li id="menu-item-349" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-349"><a href="https://techpiezo.com/linux/linux-recent/">What&#8217;s New</a></li>
 </ul>
 </li>
@@ -881,307 +905,179 @@ code, kbd, samp, pre,
 
 		
 
-<section id="primary" class="content-area">
-	<div class="ct-container" >
-
-		<section>
-							
-									<div class="entries"
-						data-layout="enhanced-grid"
-						data-cards="boxed"																		>
-				
-<article
-	id="post-3179" class="entry-card post-3179 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"	>
-
-	<a class="ct-image-container boundless-image ct-lazy" href="https://techpiezo.com/linux/load-and-unload-linux-kernel-modules/" ><img width="1" height="1" class="attachment-medium_large size-medium_large" alt="Load and Unload Linux Kernel Modules" data-lazy="https://techpiezo.com/wp-content/uploads/2019/10/Load-and-Unload-Linux-Kernel-Modules.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/10/Load-and-Unload-Linux-Kernel-Modules.svg" class="attachment-medium_large size-medium_large" alt="Load and Unload Linux Kernel Modules" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></a>
-	<h2 class="entry-title">
-		<a href="https://techpiezo.com/linux/load-and-unload-linux-kernel-modules/">
-			Load and Unload Linux Kernel Modules		</a>
-	</h2>
-
 	
-	<div class="entry-excerpt">
-		In this article, we would discuss how to load and unload Linux Kernel modules. But, before that we would discuss…	</div>
+	<div id="primary" class="content-area">
 
-	<div class="ct-ghost"></div>
-				<div class="entry-meta"  data-type="simple">
+		<div class="ct-container" data-sidebar="right">
+
+			<section>
+				
+	<article
+		id="post-3179"
+		class="post-3179 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"		data-content="boxed"				>
+
+		
+		<section class="hero-section" data-type="type-1" data-alignment="left">
+			<header class="entry-header">
+				<h1 class="page-title">Load and Unload Linux Kernel Modules</h1>
+				<div class="entry-meta has-avatar" data-label data-type="simple">
 		
 
 			<ul >
 				
+							<li class="ct-meta-author" >
+
+					
+											<span class="ct-meta-label">
+							By						</span>
+					
+					<span class="ct-meta-element" >
+						<a href="https://techpiezo.com/author/editorialteam/" title="Posts by Editorial Team" rel="author">Editorial Team</a>					</span>
+				</li>
+			
+							<li
+					class="ct-meta-date"
+					>
+
+					
+											<span class="ct-meta-label">
+							On						</span>
+					
+					<span
+						class="ct-meta-element"
+						>
+						Oct 26, 2019					</span>
+				</li>
 			
 			
-			
-			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-element"><a href="https://techpiezo.com/linux/" rel="tag">Linux</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/linux-quick-fix/" rel="tag">Quick Fix</a></span></li>					</ul>
+			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-label">In </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/" rel="tag">Linux</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/linux-quick-fix/" rel="tag">Quick Fix</a></span></li>					</ul>
 				</div>
 		
+					</header>
+		</section>
+
+		<figure class="ct-featured-image ct-hidden-sm" ><div class="ct-image-container ct-lazy" ><img class="attachment-full size-full" alt="Load and Unload Linux Kernel Modules" data-lazy="https://techpiezo.com/wp-content/uploads/2019/10/Load-and-Unload-Linux-Kernel-Modules.svg" data-object-fit="~" /><noscript><img src="https://techpiezo.com/wp-content/uploads/2019/10/Load-and-Unload-Linux-Kernel-Modules.svg" class="attachment-full size-full" alt="Load and Unload Linux Kernel Modules" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
 		
-</article>
+		<div class="entry-content">
+			<p style="text-align: justify;">In this article, we would discuss how to load and unload <strong>Linux Kernel modules</strong>. But, before that we would discuss a bit about Linux Kernel Modules itself. A Linux Kernel <strong>acts as an interface</strong> between computer&#8217;s hardware and processes in Operating System. A Kernel can perform multiple operations &#8211; manage processes and memory efficiently, interpreter for devices etc. It wouldn&#8217;t be right for us to build large Kernel images, containing every possible functionality.</p>
+<p style="text-align: justify;">Now, understand it with the help of an example. If certain drivers are not available in our Kernel image for the hardware we would want to connect. Under such a scenario, we have the option to load the relevant Kernel Module to make it work. Thus, helping us avoid the need to rebuild Kernel images. And, it also helps us in limiting the size of our Kernel image.</p>
+<p style="text-align: justify;">Therefore, we have got two options &#8211; either to build Modules inside our Kernel image itself or load them later as and when required. Most of the Kernel modules could be loaded without having to reboot our system.</p>
+<p style="text-align: justify;">Before moving ahead, we would like to clarify that you must take extreme care while performing below mentioned operations. Contact your System Administrator for assistance, in case you are not sure of what you are about to execute. Also, following operations would require you to have superuser privileges.</p>
+<h5 style="text-align: center;">Load and Unload Linux Kernel Modules</h5>
+<p style="text-align: justify;">Firstly, we would check for all the modules which have already been loaded in our system. Hence, open a terminal and issue the following &#8211;</p>
+<pre>lsmod</pre>
+<p style="text-align: justify;">It provides us the list of loaded modules and their size by getting the information from <strong>/proc/modules</strong> file.</p>
+<p style="text-align: justify;">Although there are two command-line tools &#8211; <strong>insmod</strong> (it inserts a module in Kernel) and <strong>rmmod</strong> (it removes a module from Kernel). But, we would choose to discuss <strong>modprobe</strong> command-line utility instead. It can handle module dependencies better.</p>
+<p style="text-align: justify;">To get more information about a Kernel module use the following command &#8211;</p>
+<pre>modinfo &lt;module_name&gt;</pre>
+<p style="text-align: justify;">For instance, if you would like to know more about <strong>zfs</strong> module &#8211;</p>
+<pre>modinfo zfs</pre>
+<p style="text-align: justify;"><strong>To load a module</strong> &#8211;</p>
+<pre>sudo modprobe &lt;module_name&gt;</pre>
+<p style="text-align: justify;">For instance, to load ZFS module &#8211;</p>
+<pre>sudo modprobe zfs</pre>
+<p style="text-align: justify;">To check if your module has successfully been loaded in Kernel image &#8211;</p>
+<pre>lsmod | grep zfs</pre>
+<p style="text-align: justify;"><strong>To unload a module</strong> &#8211;</p>
+<pre>sudo modprobe -r &lt;module_name&gt;</pre>
+<p style="text-align: justify;">For instance, unload the same module &#8211; ZFS</p>
+<pre>sudo modprobe -r zfs</pre>
+<p style="text-align: justify;">To check if your module has successfully been unloaded from Kernel image &#8211;</p>
+<pre>lsmod | grep zfs</pre>
+<p style="text-align: justify;">This time around, it would return with a blank output.</p>
+<p><strong>In conclusion</strong>, we have discussed how to load and unload Linux Kernel modules. But, there is more to it. We will discuss more about Kernel modules in coming articles.</p>
+		</div>
 
-<article
-	id="post-3157" class="entry-card post-3157 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"	>
+		
+		
+		
+	</article>
 
-	<a class="ct-image-container boundless-image ct-lazy" href="https://techpiezo.com/linux/install-teamspeak-client-in-ubuntu-distribution/" ><img width="1" height="1" class="attachment-medium_large size-medium_large" alt="Install TeamSpeak Client in Ubuntu distribution" data-lazy="https://techpiezo.com/wp-content/uploads/2019/10/Install-TeamSpeak-Client-in-Ubuntu-distribution.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/10/Install-TeamSpeak-Client-in-Ubuntu-distribution.svg" class="attachment-medium_large size-medium_large" alt="Install TeamSpeak Client in Ubuntu distribution" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></a>
-	<h2 class="entry-title">
-		<a href="https://techpiezo.com/linux/install-teamspeak-client-in-ubuntu-distribution/">
-			Install TeamSpeak Client in Ubuntu distribution		</a>
-	</h2>
+				</section>
+
+			
+<aside
+	class="ct-hidden-sm ct-hidden-md"    data-type="type-2"
+	>
+
+    <div
+		class="ct-sidebar" data-sticky		data-widgets="separated">
+				<div class="ct-widget widget_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
+											<li>
+					<a href="https://techpiezo.com/linux/load-and-unload-linux-kernel-modules/">Load and Unload Linux Kernel Modules</a>
+									</li>
+											<li>
+					<a href="https://techpiezo.com/linux/install-teamspeak-client-in-ubuntu-distribution/">Install TeamSpeak Client in Ubuntu distribution</a>
+									</li>
+											<li>
+					<a href="https://techpiezo.com/linux/install-discord-in-ubuntu-distribution/">Install Discord in Ubuntu distribution</a>
+									</li>
+											<li>
+					<a href="https://techpiezo.com/linux/install-spotify-in-ubuntu-distribution/">Install Spotify in Ubuntu distribution</a>
+									</li>
+											<li>
+					<a href="https://techpiezo.com/linux/connect-chromecast-to-vlc-media-player-in-ubuntu/">Connect Chromecast to VLC Media Player in Ubuntu</a>
+									</li>
+					</ul>
+		</div>	</div>
+</aside>
+
+
+		</div>
+
+	</div>
 
 	
-	<div class="entry-excerpt">
-		In this article, we would discuss how to install TeamSpeak Client in Ubuntu distribution. TeamSpeak is an VOIP application, targets…	</div>
+		<div class="ct-related-posts ct-hidden-sm">
+			<div class="ct-container">
+				<h4 class="ct-related-posts-label">
+					Related Posts				</h4>
 
-	<div class="ct-ghost"></div>
-				<div class="entry-meta"  data-type="simple">
-		
+				<ul data-columns="3">
+											
+						<li>
+							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/install-teamspeak-client-in-ubuntu-distribution/"><img width="1" height="1" class="attachment-large size-large" alt="Install TeamSpeak Client in Ubuntu distribution" data-lazy="https://techpiezo.com/wp-content/uploads/2019/10/Install-TeamSpeak-Client-in-Ubuntu-distribution.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/10/Install-TeamSpeak-Client-in-Ubuntu-distribution.svg" class="attachment-large size-large" alt="Install TeamSpeak Client in Ubuntu distribution" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<h3 class="related-entry-title">
+								<a href="https://techpiezo.com/linux/install-teamspeak-client-in-ubuntu-distribution/">Install TeamSpeak Client in Ubuntu distribution</a>
+							</h3>
 
-			<ul >
-				
-			
-			
-			
-			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-element"><a href="https://techpiezo.com/linux/" rel="tag">Linux</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/linux-quick-fix/" rel="tag">Quick Fix</a></span></li>					</ul>
-				</div>
-		
-		
-</article>
+							<div class="related-entry-meta">
+								<span>
+									Oct 26, 2019								</span>
 
-<article
-	id="post-3140" class="entry-card post-3140 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"	>
+															</div>
+						</li>
+											
+						<li>
+							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/install-discord-in-ubuntu-distribution/"><img width="1" height="1" class="attachment-large size-large" alt="Install Discord in Ubuntu distribution" data-lazy="https://techpiezo.com/wp-content/uploads/2019/10/Install-Discord-in-Ubuntu-distribution.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/10/Install-Discord-in-Ubuntu-distribution.svg" class="attachment-large size-large" alt="Install Discord in Ubuntu distribution" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<h3 class="related-entry-title">
+								<a href="https://techpiezo.com/linux/install-discord-in-ubuntu-distribution/">Install Discord in Ubuntu distribution</a>
+							</h3>
 
-	<a class="ct-image-container boundless-image ct-lazy" href="https://techpiezo.com/linux/install-discord-in-ubuntu-distribution/" ><img width="1" height="1" class="attachment-medium_large size-medium_large" alt="Install Discord in Ubuntu distribution" data-lazy="https://techpiezo.com/wp-content/uploads/2019/10/Install-Discord-in-Ubuntu-distribution.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/10/Install-Discord-in-Ubuntu-distribution.svg" class="attachment-medium_large size-medium_large" alt="Install Discord in Ubuntu distribution" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></a>
-	<h2 class="entry-title">
-		<a href="https://techpiezo.com/linux/install-discord-in-ubuntu-distribution/">
-			Install Discord in Ubuntu distribution		</a>
-	</h2>
+							<div class="related-entry-meta">
+								<span>
+									Oct 26, 2019								</span>
 
-	
-	<div class="entry-excerpt">
-		In this article, we would discuss how to install Discord in Ubuntu distribution. Its a proprietary package available as freeware,…	</div>
+															</div>
+						</li>
+											
+						<li>
+							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/install-spotify-in-ubuntu-distribution/"><img width="1" height="1" class="attachment-large size-large" alt="Install Spotify in Ubuntu" data-lazy="https://techpiezo.com/wp-content/uploads/2019/10/Install-Spotify-in-Ubuntu.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/10/Install-Spotify-in-Ubuntu.svg" class="attachment-large size-large" alt="Install Spotify in Ubuntu" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<h3 class="related-entry-title">
+								<a href="https://techpiezo.com/linux/install-spotify-in-ubuntu-distribution/">Install Spotify in Ubuntu distribution</a>
+							</h3>
 
-	<div class="ct-ghost"></div>
-				<div class="entry-meta"  data-type="simple">
-		
+							<div class="related-entry-meta">
+								<span>
+									Oct 23, 2019								</span>
 
-			<ul >
-				
-			
-			
-			
-			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-element"><a href="https://techpiezo.com/linux/" rel="tag">Linux</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/linux-quick-fix/" rel="tag">Quick Fix</a></span></li>					</ul>
-				</div>
-		
-		
-</article>
-
-<article
-	id="post-3109" class="entry-card post-3109 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"	>
-
-	<a class="ct-image-container boundless-image ct-lazy" href="https://techpiezo.com/linux/install-spotify-in-ubuntu-distribution/" ><img width="1" height="1" class="attachment-medium_large size-medium_large" alt="Install Spotify in Ubuntu" data-lazy="https://techpiezo.com/wp-content/uploads/2019/10/Install-Spotify-in-Ubuntu.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/10/Install-Spotify-in-Ubuntu.svg" class="attachment-medium_large size-medium_large" alt="Install Spotify in Ubuntu" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></a>
-	<h2 class="entry-title">
-		<a href="https://techpiezo.com/linux/install-spotify-in-ubuntu-distribution/">
-			Install Spotify in Ubuntu distribution		</a>
-	</h2>
-
-	
-	<div class="entry-excerpt">
-		The music streaming platform, Spotify, was launched on October 07, 2008. The services are being offered under a freemium business…	</div>
-
-	<div class="ct-ghost"></div>
-				<div class="entry-meta"  data-type="simple">
-		
-
-			<ul >
-				
-			
-			
-			
-			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-element"><a href="https://techpiezo.com/linux/" rel="tag">Linux</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/linux-quick-fix/" rel="tag">Quick Fix</a></span></li>					</ul>
-				</div>
-		
-		
-</article>
-
-<article
-	id="post-3088" class="entry-card post-3088 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"	>
-
-	<a class="ct-image-container boundless-image ct-lazy" href="https://techpiezo.com/linux/connect-chromecast-to-vlc-media-player-in-ubuntu/" ><img width="1" height="1" class="attachment-medium_large size-medium_large" alt="Connect Chromecast to VLC Media Player in Ubuntu" data-lazy="https://techpiezo.com/wp-content/uploads/2019/10/Connect-Chromecast-to-VLC-Media-Player-in-Ubuntu.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/10/Connect-Chromecast-to-VLC-Media-Player-in-Ubuntu.svg" class="attachment-medium_large size-medium_large" alt="Connect Chromecast to VLC Media Player in Ubuntu" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></a>
-	<h2 class="entry-title">
-		<a href="https://techpiezo.com/linux/connect-chromecast-to-vlc-media-player-in-ubuntu/">
-			Connect Chromecast to VLC Media Player in Ubuntu		</a>
-	</h2>
-
-	
-	<div class="entry-excerpt">
-		In this article, we would discuss how to connect Chromecast to VLC Media Player in Ubuntu distribution. Chromecast devices have…	</div>
-
-	<div class="ct-ghost"></div>
-				<div class="entry-meta"  data-type="simple">
-		
-
-			<ul >
-				
-			
-			
-			
-			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-element"><a href="https://techpiezo.com/linux/" rel="tag">Linux</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/linux-quick-fix/" rel="tag">Quick Fix</a></span></li>					</ul>
-				</div>
-		
-		
-</article>
-
-<article
-	id="post-3066" class="entry-card post-3066 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"	>
-
-	<a class="ct-image-container boundless-image ct-lazy" href="https://techpiezo.com/linux/upgrade-ubuntu-from-18-04-19-04-to-19-10/" ><img width="1" height="1" class="attachment-medium_large size-medium_large" alt="Upgrade Ubuntu from 18.04/19.04 to 19.10" data-lazy="https://techpiezo.com/wp-content/uploads/2019/10/Upgrade-Ubuntu-to-19-10.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/10/Upgrade-Ubuntu-to-19-10.svg" class="attachment-medium_large size-medium_large" alt="Upgrade Ubuntu from 18.04/19.04 to 19.10" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></a>
-	<h2 class="entry-title">
-		<a href="https://techpiezo.com/linux/upgrade-ubuntu-from-18-04-19-04-to-19-10/">
-			Upgrade Ubuntu from 18.04/19.04 to 19.10		</a>
-	</h2>
-
-	
-	<div class="entry-excerpt">
-		In this article, we would discuss a bit about what&#8217;s new is available in Ubuntu 19.10. Also, how to upgrade…	</div>
-
-	<div class="ct-ghost"></div>
-				<div class="entry-meta"  data-type="simple">
-		
-
-			<ul >
-				
-			
-			
-			
-			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-element"><a href="https://techpiezo.com/linux/" rel="tag">Linux</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/linux-quick-fix/" rel="tag">Quick Fix</a></span></li>					</ul>
-				</div>
-		
-		
-</article>
-
-<article
-	id="post-2973" class="entry-card post-2973 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"	>
-
-	<a class="ct-image-container boundless-image ct-lazy" href="https://techpiezo.com/linux/install-vlc-media-player-in-ubuntu/" ><img width="1" height="1" class="attachment-medium_large size-medium_large" alt="Install VLC Media Player in Ubuntu" data-lazy="https://techpiezo.com/wp-content/uploads/2019/10/Install-VLC-Media-Player-in-Ubuntu.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/10/Install-VLC-Media-Player-in-Ubuntu.svg" class="attachment-medium_large size-medium_large" alt="Install VLC Media Player in Ubuntu" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></a>
-	<h2 class="entry-title">
-		<a href="https://techpiezo.com/linux/install-vlc-media-player-in-ubuntu/">
-			Install VLC Media Player in Ubuntu distribution		</a>
-	</h2>
-
-	
-	<div class="entry-excerpt">
-		VLC Media Player has been developed by VideoLAN. The package was first released on February 01, 2001. Furthermore, at the…	</div>
-
-	<div class="ct-ghost"></div>
-				<div class="entry-meta"  data-type="simple">
-		
-
-			<ul >
-				
-			
-			
-			
-			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-element"><a href="https://techpiezo.com/linux/" rel="tag">Linux</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/linux-quick-fix/" rel="tag">Quick Fix</a></span></li>					</ul>
-				</div>
-		
-		
-</article>
-
-<article
-	id="post-2937" class="entry-card post-2937 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"	>
-
-	<a class="ct-image-container boundless-image ct-lazy" href="https://techpiezo.com/linux/install-skype-in-ubuntu-distribution/" ><img width="1" height="1" class="attachment-medium_large size-medium_large" alt="Install Skype in Ubuntu" data-lazy="https://techpiezo.com/wp-content/uploads/2019/10/Install-Skype-in-Ubuntu.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/10/Install-Skype-in-Ubuntu.svg" class="attachment-medium_large size-medium_large" alt="Install Skype in Ubuntu" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></a>
-	<h2 class="entry-title">
-		<a href="https://techpiezo.com/linux/install-skype-in-ubuntu-distribution/">
-			Install Skype in Ubuntu distribution		</a>
-	</h2>
-
-	
-	<div class="entry-excerpt">
-		Skype is a VoIP (Voice over Internet Protocol) service, which is used for sending instant messages and making audio/video calls…	</div>
-
-	<div class="ct-ghost"></div>
-				<div class="entry-meta"  data-type="simple">
-		
-
-			<ul >
-				
-			
-			
-			
-			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-element"><a href="https://techpiezo.com/linux/" rel="tag">Linux</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/linux-quick-fix/" rel="tag">Quick Fix</a></span></li>					</ul>
-				</div>
-		
-		
-</article>
-
-<article
-	id="post-2910" class="entry-card post-2910 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"	>
-
-	<a class="ct-image-container boundless-image ct-lazy" href="https://techpiezo.com/linux/configure-network-with-netplan-in-ubuntu/" ><img width="1" height="1" class="attachment-medium_large size-medium_large" alt="Configure network with Netplan in Ubuntu" data-lazy="https://techpiezo.com/wp-content/uploads/2019/10/Configure-network-with-Netplan-in-Ubuntu.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/10/Configure-network-with-Netplan-in-Ubuntu.svg" class="attachment-medium_large size-medium_large" alt="Configure network with Netplan in Ubuntu" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></a>
-	<h2 class="entry-title">
-		<a href="https://techpiezo.com/linux/configure-network-with-netplan-in-ubuntu/">
-			Configure network with Netplan in Ubuntu		</a>
-	</h2>
-
-	
-	<div class="entry-excerpt">
-		Netplan has been the default network configuration tool ever since Ubuntu 17.10 was released. Earlier Ubuntu releases shipped with ifupdown…	</div>
-
-	<div class="ct-ghost"></div>
-				<div class="entry-meta"  data-type="simple">
-		
-
-			<ul >
-				
-			
-			
-			
-			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-element"><a href="https://techpiezo.com/linux/" rel="tag">Linux</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/linux-quick-fix/" rel="tag">Quick Fix</a></span></li>					</ul>
-				</div>
-		
-		
-</article>
-
-<article
-	id="post-2869" class="entry-card post-2869 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"	>
-
-	<a class="ct-image-container boundless-image ct-lazy" href="https://techpiezo.com/linux/download-and-install-virtualbox-guest-additions-in-ubuntu/" ><img width="1" height="1" class="attachment-medium_large size-medium_large" alt="Download and Install VirtualBox Guest Additions in Ubuntu" data-lazy="https://techpiezo.com/wp-content/uploads/2019/10/Download-and-Install-VirtualBox-Guest-Additions-in-Ubuntu.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/10/Download-and-Install-VirtualBox-Guest-Additions-in-Ubuntu.svg" class="attachment-medium_large size-medium_large" alt="Download and Install VirtualBox Guest Additions in Ubuntu" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></a>
-	<h2 class="entry-title">
-		<a href="https://techpiezo.com/linux/download-and-install-virtualbox-guest-additions-in-ubuntu/">
-			Download and Install VirtualBox Guest Additions in Ubuntu		</a>
-	</h2>
-
-	
-	<div class="entry-excerpt">
-		In this article, we would discuss how to download and install VirtualBox Guest Additions in Ubuntu (Guest OS). We install…	</div>
-
-	<div class="ct-ghost"></div>
-				<div class="entry-meta"  data-type="simple">
-		
-
-			<ul >
-				
-			
-			
-			
-			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-element"><a href="https://techpiezo.com/linux/" rel="tag">Linux</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/linux-quick-fix/" rel="tag">Quick Fix</a></span></li>					</ul>
-				</div>
-		
-		
-</article>
-
-									</div>
-				
-		<div class="ct-pagination" role="navigation" data-type="simple" >
-			<nav><span aria-current='page' class='page-numbers current'>1</span>
-<span class="page-numbers dots">&hellip;</span>
-<a class='page-numbers' href='https://techpiezo.com/linux/linux-quick-fix/page/6/'>6</a>
-<a class="next page-numbers" href="https://techpiezo.com/linux/linux-quick-fix/page/2/"><svg width="10px" height="10px" viewBox="0 0 15 15"><path class="st0" d="M4.1,15c0.2,0,0.4-0.1,0.6-0.2L11.4,8c0.3-0.3,0.3-0.8,0-1.1L4.8,0.2C4.5-0.1,4-0.1,3.7,0.2C3.4,0.5,3.4,1,3.7,1.3l6.1,6.1l-6.2,6.2c-0.3,0.3-0.3,0.8,0,1.1C3.7,14.9,3.9,15,4.1,15z"/></svg></a></nav>
-			
-		</div>		</section>
-
+															</div>
+						</li>
+									</ul>
 			</div>
-</section>
+		</div>
+
+		
 
 
 	</main>
@@ -1277,9 +1173,9 @@ code, kbd, samp, pre,
 			<div class="ct-bag-content" >
 				
 				<ul id="primary-menu" class="mobile-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-70"><a href="https://techpiezo.com">Home</a></li>
-<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-category-ancestor current-menu-ancestor current-menu-parent current-category-parent menu-item-has-children menu-item-41"><a href="https://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-41"><a href="https://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
 <ul class="sub-menu">
-	<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-menu-item menu-item-350"><a href="https://techpiezo.com/linux/linux-quick-fix/" aria-current="page">Quick Fix</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-350"><a href="https://techpiezo.com/linux/linux-quick-fix/">Quick Fix</a></li>
 	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-349"><a href="https://techpiezo.com/linux/linux-recent/">What&#8217;s New</a></li>
 </ul>
 </li>
