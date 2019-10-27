@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="October 26, 2019 9:30 pm" -->
+<!-- generated-on="October 27, 2019 11:58 am" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
+		<loc>https://techpiezo.com/linux/install-and-use-snap-in-ubuntu-distribution/</loc>
+		<lastmod>2019-10-27T11:57:28+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
 		<loc>https://techpiezo.com/linux/load-and-unload-linux-kernel-modules/</loc>
 		<lastmod>2019-10-26T21:28:09+00:00</lastmod>
 		<changefreq>monthly</changefreq>
@@ -20,7 +26,7 @@
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/install-spotify-in-ubuntu-distribution/</loc>
-		<lastmod>2019-10-23T18:43:13+00:00</lastmod>
+		<lastmod>2019-10-27T11:17:46+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
@@ -62,7 +68,7 @@
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/install-skype-in-ubuntu-distribution/</loc>
-		<lastmod>2019-10-26T09:32:10+00:00</lastmod>
+		<lastmod>2019-10-27T11:20:17+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
@@ -96,4 +102,4 @@
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: de0eef75687b7736ca381ff282574118; Queries for sitemap: 22; Total queries: 33; Seconds: 0.02; Memory for sitemap: 0MB; Total memory: 2MB -->
+</urlset><!-- Request ID: edfe911fe8738228f28992ffede8d4aa; Queries for sitemap: 25; Total queries: 36; Seconds: 0.02; Memory for sitemap: 0MB; Total memory: 2MB -->

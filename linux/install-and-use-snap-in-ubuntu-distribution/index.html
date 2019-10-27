@@ -6,11 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
-	<title>Create a bootable Live USB in Ubuntu through Command Line - TechPiezo</title>
+	<title>Install and Use Snap in Ubuntu distribution - TechPiezo</title>
 
 <!-- This site is optimized with the Yoast SEO plugin v11.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
-<meta name="description" content="Create a bootable live USB stick through command line interface. This is applicable only for making other Linux distributions bootable."/>
-<link rel="canonical" href="https://techpiezo.com/linux/create-a-bootable-live-usb-in-ubuntu-through-command-line/" />
+<meta name="description" content="It allows apps to be bundled - which is self contained, cross platform and free of any dependency. We would dicuss how to install and use Snap in Ubuntu."/>
+<link rel="canonical" href="https://techpiezo.com/linux/install-and-use-snap-in-ubuntu-distribution/" />
 <!-- / Yoast SEO plugin. -->
 
 <style id="ct-main-styles-inline-css" type="text/css">:root {
@@ -758,7 +758,7 @@ code, kbd, samp, pre,
 <link rel='stylesheet' id='ct-style-css'  href='https://techpiezo.com/wp-content/themes/blocksy/style.css' type='text/css' media='all' />
 <link rel='stylesheet' id='ct-main-styles-css'  href='https://techpiezo.com/wp-content/themes/blocksy/static/bundle/main.css' type='text/css' media='all' />
 
-<link rel="amphtml" href="https://techpiezo.com/linux/create-a-bootable-live-usb-in-ubuntu-through-command-line/amp/"><link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" sizes="32x32" />
+<link rel="amphtml" href="https://techpiezo.com/linux/install-and-use-snap-in-ubuntu-distribution/amp/"><link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" sizes="32x32" />
 <link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" sizes="192x192" />
 <link rel="apple-touch-icon-precomposed" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" />
 <meta name="msapplication-TileImage" content="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" />
@@ -788,7 +788,7 @@ code, kbd, samp, pre,
 
 </head>
 
-<body class="post-template-default single single-post postid-1317 single-format-standard wp-custom-logo ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
+<body class="post-template-default single single-post postid-3199 single-format-standard wp-custom-logo ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
 <div id="main-container">
 
 	<header
@@ -913,13 +913,13 @@ code, kbd, samp, pre,
 			<section>
 				
 	<article
-		id="post-1317"
-		class="post-1317 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"		data-content="boxed"				>
+		id="post-3199"
+		class="post-3199 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"		data-content="boxed"				>
 
 		
 		<section class="hero-section" data-type="type-1" data-alignment="left">
 			<header class="entry-header">
-				<h1 class="page-title">Create a bootable Live USB in Ubuntu through Command Line</h1>
+				<h1 class="page-title">Install and Use Snap in Ubuntu distribution</h1>
 				<div class="entry-meta has-avatar" data-label data-type="simple">
 		
 
@@ -946,7 +946,7 @@ code, kbd, samp, pre,
 					<span
 						class="ct-meta-element"
 						>
-						Jul 31, 2019					</span>
+						Oct 27, 2019					</span>
 				</li>
 			
 			
@@ -956,29 +956,41 @@ code, kbd, samp, pre,
 					</header>
 		</section>
 
-		<figure class="ct-featured-image ct-hidden-sm" ><div class="ct-image-container ct-lazy" ><img class="attachment-full size-full" alt="Create Bootable Live USB in Ubuntu" data-lazy="https://techpiezo.com/wp-content/uploads/2019/07/Create-Bootable-USB-in-Ubuntu.svg" data-object-fit="~" /><noscript><img src="https://techpiezo.com/wp-content/uploads/2019/07/Create-Bootable-USB-in-Ubuntu.svg" class="attachment-full size-full" alt="Create Bootable Live USB in Ubuntu" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
+		<figure class="ct-featured-image ct-hidden-sm" ><div class="ct-image-container ct-lazy" ><img class="attachment-full size-full" alt="Install and Use Snap in Ubuntu distribution" data-lazy="https://techpiezo.com/wp-content/uploads/2019/10/Install-and-Use-Snap-in-Ubuntu-distribution.svg" data-object-fit="~" /><noscript><img src="https://techpiezo.com/wp-content/uploads/2019/10/Install-and-Use-Snap-in-Ubuntu-distribution.svg" class="attachment-full size-full" alt="Install and Use Snap in Ubuntu distribution" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
 		
 		<div class="entry-content">
-			<p style="text-align: justify;">A Live USB stick is the one which contains a bootable Operating System. In this article, we would create a bootable Live USB for a Linux distribution through command-line interface. Before making any changes it is advisable to take a backup of all the data present on our USB stick. The moment we start performing relevant operations, all your data already present on USB stick will be lost. Also, you need to have superuser privileges to make any modifications to the disk. If you don&#8217;t have one, please contact your system administrator for assistance.</p>
-<h5>Identify USB stick through lsblk command</h5>
-<p style="text-align: justify;">To print the path of available block devices run the following in terminal,</p>
-<pre>lsblk -p</pre>
-<p style="text-align: justify;">Output should resemble &#8211;</p>
-<pre>/dev/sda 8:0 0 465.8G 0 disk 
-├─/dev/sda1 8:1 0 512M 0 part /boot/efi
-├─/dev/sda2 8:2 0 4.7G 0 part 
-└─/dev/sda3 8:5 0 414.6G 0 part /
-/dev/sdc 8:32 1 7.2G 0 disk /media/&lt;username&gt;/UUID-Device
-/dev/sr0 11:0 1 1024M 0 rom</pre>
-<p style="text-align: justify;">From the output, we can identify the USB stick (<strong>/dev/sdc</strong>) of size 7.2G mounted on <strong>/media/&lt;username&gt;/UUID-Device</strong>.</p>
-<h5>Umount device and make USB stick bootable</h5>
-<p style="text-align: justify;">Firstly, we will have to unmount our USB stick with the help of <strong>umount</strong> command. The naming scheme for disk devices is <strong>/dev/sdX</strong>, where <strong>X</strong> can be a,b,c, etc. It is order in which our disk device was found. In our case, <strong>/dev/sdX is /dev/sdc</strong> &#8211; identify one for your system. And, run the following command in terminal &#8211;</p>
-<pre>sudo umount /dev/sdc</pre>
-<p style="text-align: justify;">Locate the directory where you have saved your <strong>.iso</strong> file and use <strong>cp</strong> command to copy the file to<strong> /dev/sdc</strong>. For instance &#8211;</p>
-<pre>sudo cp /path/to/iso/file.iso /dev/sdc</pre>
-<p style="text-align: justify;">Wait for a few minutes before the file gets copied to your USB stick. Merely copying the <strong>.iso</strong> file will make your USB stick bootable as the <strong>.iso</strong> file itself contains all the relevant files needed.</p>
-<p style="text-align: justify;">So far, we have identified our device through<strong> lsblk</strong> command, unmounted it and made it bootable by using the<strong> cp</strong> command. Things have been pretty easy till now but, in case we would want the USB stick to act as storage device again. For this purpose, we will have to use the <strong>fdisk</strong> command which will be discussed next.</p>
-<p style="text-align: justify;">In conclusion, we have made our USB stick bootable. This could be done for any of the Linux distributions, provided we have <strong>.iso</strong> file available.</p>
+			<p style="text-align: justify;">In this article, we would focus on how to <strong>install and use Snap in Ubuntu</strong> distribution. Present day Package management system offered in Linux operating systems has been evolving continuously. The shift comes from traditional package managers like pacman, apt, portage, dnf or zypper to modern ones such as Snappy, Flatpak or AppImage. This continuous development has paved way for availability of latest security upgrades and existence of multiple versions of applications. Also, we no longer have to manage dependencies for each of the applications manually. Modern package managers take care of application related dependencies on their own.</p>
+<p style="text-align: justify;"><strong>Snap packaging</strong> allows apps or programs to be bundled in a way, which is self contained, cross platform and free of any dependency. In addition to, it also provides multiple channel versions and the ability to revert to previous versions of application as a fail safe feature.</p>
+<p style="text-align: justify;">Snaps are isolated from each other as well as from the base system. Dependencies and libraries are packaged with Snap itself, which allows multiple versions of an application to be installed side by side. Snaps are available through snap store.</p>
+<p style="text-align: justify;">As of now, it supports multiple Operating Systems such as Arch Linux, CentOS, Debian, elementary OS, Fedora, Linux Mint, Manjaro Linux, openSUSE, Raspbian, Red Hat Enterprise Linux (RHEL), Solus, and Ubuntu among others. It is capable of running on any Linux distribution with <strong>systemd</strong> installed. Snap uses systemd to manage snap communication through socket and mount snap&#8217;s squashfs files.</p>
+<p style="text-align: justify;"><strong>Note</strong>: Following operations would require you to have superuser privileges. In case you don&#8217;t have one, then contact your System Administrator for assistance.</p>
+<h5 style="text-align: center;">Install Snap in Ubuntu</h5>
+<p style="text-align: justify;">Snap comes pre-installed on Ubuntu 16.04 LTS (Xenial Xerus) and later. To check whether you already have the Snap package installed by default or not, issue the following in terminal &#8211;</p>
+<pre>snap version</pre>
+<p style="text-align: justify;">The output may resemble, if its already installed &#8211;</p>
+<pre>snap 2.41+19.10.1
+snapd 2.41+19.10.1
+series 16
+ubuntu 19.10
+kernel 5.3.0-10-generic</pre>
+<p style="text-align: justify;">Otherwise, you would get the following &#8211;</p>
+<pre>Command 'snap' not found, but can be installed with:
+
+apt install snapd</pre>
+<p style="text-align: justify;">Under such a scenario, we would have to install Snap package manually. However, the package is already available in standard Ubuntu repositories. First, we need to update the Ubuntu repositories to make the latest version of the package available. Hence, issue the following in terminal &#8211;</p>
+<pre>sudo apt update</pre>
+<p style="text-align: justify;">Then, we would install the relevant package through the command &#8211;</p>
+<pre>sudo apt install snapd</pre>
+<p style="text-align: justify;">Once installed, restart system or log out and log back in again. To verify snap installation check with &#8211;</p>
+<pre>snap version</pre>
+<p style="text-align: justify;">You should get the desired output as mentioned above. Now, we will install a snap package &#8211; <strong>hello-world</strong>.</p>
+<pre>sudo snap install hello-world</pre>
+<p style="text-align: justify;">After its installed, use hello-world application in terminal &#8211;</p>
+<pre>hello-world</pre>
+<p style="text-align: justify;">It would return the output &#8211;</p>
+<pre>Hello World!</pre>
+<p style="text-align: justify;">Now, simply find the apps you want to install and start using them.</p>
+<p style="text-align: justify;"><strong>In conclusion</strong>, we have discussed how to install and use Snap package in Ubuntu distribution.</p>
 		</div>
 
 		
@@ -1029,19 +1041,6 @@ code, kbd, samp, pre,
 				<ul data-columns="3">
 											
 						<li>
-							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/install-and-use-snap-in-ubuntu-distribution/"><img width="1" height="1" class="attachment-large size-large" alt="Install and Use Snap in Ubuntu distribution" data-lazy="https://techpiezo.com/wp-content/uploads/2019/10/Install-and-Use-Snap-in-Ubuntu-distribution.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/10/Install-and-Use-Snap-in-Ubuntu-distribution.svg" class="attachment-large size-large" alt="Install and Use Snap in Ubuntu distribution" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
-							<h3 class="related-entry-title">
-								<a href="https://techpiezo.com/linux/install-and-use-snap-in-ubuntu-distribution/">Install and Use Snap in Ubuntu distribution</a>
-							</h3>
-
-							<div class="related-entry-meta">
-								<span>
-									Oct 27, 2019								</span>
-
-															</div>
-						</li>
-											
-						<li>
 							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/load-and-unload-linux-kernel-modules/"><img width="1" height="1" class="attachment-large size-large" alt="Load and Unload Linux Kernel Modules" data-lazy="https://techpiezo.com/wp-content/uploads/2019/10/Load-and-Unload-Linux-Kernel-Modules.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/10/Load-and-Unload-Linux-Kernel-Modules.svg" class="attachment-large size-large" alt="Load and Unload Linux Kernel Modules" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
 							<h3 class="related-entry-title">
 								<a href="https://techpiezo.com/linux/load-and-unload-linux-kernel-modules/">Load and Unload Linux Kernel Modules</a>
@@ -1058,6 +1057,19 @@ code, kbd, samp, pre,
 							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/install-teamspeak-client-in-ubuntu-distribution/"><img width="1" height="1" class="attachment-large size-large" alt="Install TeamSpeak Client in Ubuntu distribution" data-lazy="https://techpiezo.com/wp-content/uploads/2019/10/Install-TeamSpeak-Client-in-Ubuntu-distribution.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/10/Install-TeamSpeak-Client-in-Ubuntu-distribution.svg" class="attachment-large size-large" alt="Install TeamSpeak Client in Ubuntu distribution" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
 							<h3 class="related-entry-title">
 								<a href="https://techpiezo.com/linux/install-teamspeak-client-in-ubuntu-distribution/">Install TeamSpeak Client in Ubuntu distribution</a>
+							</h3>
+
+							<div class="related-entry-meta">
+								<span>
+									Oct 26, 2019								</span>
+
+															</div>
+						</li>
+											
+						<li>
+							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/install-discord-in-ubuntu-distribution/"><img width="1" height="1" class="attachment-large size-large" alt="Install Discord in Ubuntu distribution" data-lazy="https://techpiezo.com/wp-content/uploads/2019/10/Install-Discord-in-Ubuntu-distribution.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/10/Install-Discord-in-Ubuntu-distribution.svg" class="attachment-large size-large" alt="Install Discord in Ubuntu distribution" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<h3 class="related-entry-title">
+								<a href="https://techpiezo.com/linux/install-discord-in-ubuntu-distribution/">Install Discord in Ubuntu distribution</a>
 							</h3>
 
 							<div class="related-entry-meta">
