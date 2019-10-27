@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Install Discord in Ubuntu distribution - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/linux/install-discord-in-ubuntu-distribution/" />
+		<title>Schedule tasks in Ubuntu using Crontab - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/linux/schedule-tasks-in-ubuntu-using-crontab/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -426,38 +426,81 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Install Discord in Ubuntu distribution</h1>
+		<h1 class="amp-wp-title">Schedule tasks in Ubuntu using Crontab</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-10-26T04:10:49+00:00">
-		2 days ago	</time>
+	<time datetime="2019-10-27T12:10:47+00:00">
+		11 hours ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">In this article, we would discuss how to install <strong>Discord</strong> in Ubuntu distribution. Its a proprietary package available as freeware, mainly developed for gaming community. The notion behind developing the application was to provide <strong>free voice and text chat services</strong> to the gaming community. At the time of writing the article – the latest stable version, 0.0.9, was released on April 01, 2019. Furthermore, the application currently is available in 27 languages. It is available for Linux, iOS, macOS &amp; Windows. In addition to, the application platform can also be accessed from a web browser.</p>
-<p class="amp-wp-7d27179"><strong>Note</strong>: Following operations would require you to have superuser privileges. In case you don’t have one, then contact your System Administrator for assistance.</p>
-<h5 class="amp-wp-cdd8ca0">Install Discord in Ubuntu distribution</h5>
-<p class="amp-wp-7d27179">We would first download the relevant package from the official website itself. Thereafter, with the help of <strong>dpkg</strong> – debian package manager we would install the downloaded <strong>.deb</strong> package.</p>
-<p class="amp-wp-7d27179">Hence, visit the following link –</p>
-<pre>https://discordapp.com/download</pre>
-<p class="amp-wp-7d27179">and, select <strong>deb</strong> from the drop-down menu and click on <strong>Download Now</strong> button. The file size is of around 42.4 MBs.</p>
-<p class="amp-wp-7d27179">Since, we have already mentioned at the time of writing the article – the latest stable version is 0.0.9. So, the file we downloaded was – <strong>discord-0.0.9.deb</strong>.</p>
-<p class="amp-wp-7d27179">Now, open a terminal and issue the following –</p>
-<pre>sudo dpkg -i discord-0.0.9.deb</pre>
-<p class="amp-wp-7d27179">You may encounter following errors –</p>
-<pre>discord depends on libappindicator1; however:
-Package libappindicator1 is not installed.
-discord depends on libc++1; however:
-Package libc++1 is not installed.</pre>
-<p class="amp-wp-7d27179">At this point in time, run the following command in terminal to install related dependencies in one go –</p>
-<pre>sudo apt install -f</pre>
-<p>We can now open Discord application through Main menu. It may download and install relevant updates and then you will be presented the Login screen next.</p>
-<p>In conclusion, we have discussed how to install Discord application in Ubuntu distribution.</p>
-<p class="amp-wp-7d27179"><strong>Additional Info</strong> –</p>
-<p class="amp-wp-7d27179"><strong>dpkg</strong> – Debian package manager. We have used <strong>-i</strong> option, which has been used to install the required application. If, for some reason, you may decide to uninstall Discord package. Then, you would have to issue the following in terminal –</p>
-<pre>dpkg -r discord</pre>
+		<p class="amp-wp-7d27179">In this article, we would discuss how to schedule tasks in Ubuntu distribution using <strong>Crontab</strong>. Tasks can be scheduled in Ubuntu through three tools – <strong>at</strong>, <strong>batch</strong> and <strong>cron daemon</strong>. The at and batch tools can’t be utilized for tasks which are required to be executed frequently. But, <strong>with cron daemon</strong> we can schedule tasks to be executed on a hourly, daily, weekly, monthly basis or we can setup schedules as per our requirements. There are mainly four directories –</p>
+<pre>/etc/cron.daily
+/etc/cron.hourly
+/etc/cron.monthly
+/etc/cron.weekly</pre>
+<p class="amp-wp-7d27179">So, if we place our scripts inside any of the four directories. Then, our script will be executed as per the defined schedule for the specific directory. For instance, we could list directory<strong> /etc/cron.daily/</strong> through the command –</p>
+<pre>ls -l /etc/cron.daily/</pre>
+<p class="amp-wp-7d27179">It would list all the scripts which are executed, through <strong>run-parts</strong> tool, once in our distribution on a daily basis. We can place our scripts in any of the above mentioned directories.</p>
+<p class="amp-wp-7d27179">Apart from that, there are mainly two types of tasks which can be scheduled and executed – System jobs and User jobs. <strong>System jobs</strong> can only be scheduled through <strong>/etc/crontab</strong> file whereas <strong>User jobs</strong> can be <strong>scheduled by the specific user</strong>. System jobs are executed through <strong>/etc/crontab file</strong>. And, user jobs can be executed through <strong>/var/spool/cron/crontabs/&lt;user-name&gt;</strong> file.</p>
+<h5 class="amp-wp-cdd8ca0">Schedule User jobs in Ubuntu using Crontab</h5>
+<p class="amp-wp-7d27179">First, we would discuss how to schedule and execute user jobs.</p>
+<p class="amp-wp-7d27179">To list the current crontab, issue the following in terminal –</p>
+<pre>crontab -l</pre>
+<p class="amp-wp-7d27179">The crontab file contains the list of tasks which are to be executed at designated times. It is recommended that we provide the complete path of the command when we edit through tool crontab. To know the pathnames, we use <strong>which</strong> command-line tool. For instance, if we want to know the pathname of <strong>ls</strong> command then –</p>
+<pre>which ls</pre>
+<p class="amp-wp-7d27179">It would return with the output –</p>
+<pre>/usr/bin/ls</pre>
+<p class="amp-wp-7d27179">The format of entries for crontab file would be –</p>
+<pre>0-59    0-23    1-31    1-12    0-7    command to be executed</pre>
+<p class="amp-wp-7d27179">where,</p>
+<p><strong>0-59</strong> is the minutes field,</p>
+<p><strong>0-23</strong> is hours</p>
+<p><strong>1-31</strong> is day</p>
+<p><strong>1-12</strong> is month</p>
+<p><strong>0-7</strong> is day of week</p>
+<p class="amp-wp-7d27179">Now, understand the format with the help of an example. To schedule and execute <strong>ls</strong> command every 5th minute the hour and send the output to a file crontab.log. Then, we append the crontab with –</p>
+<pre>5 * * * * /usr/bin/ls &gt;/home/&lt;user-name&gt;/Desktop/crontab.log</pre>
+<p class="amp-wp-7d27179">We can also provide a range of values as illustrated above or we can separate them with comma(,).</p>
+<p class="amp-wp-7d27179">For instance, to execute tasks at 4 AM, 5 AM and 6 AM we would write –</p>
+<pre>* 4-6 * * * /usr/bin/ls &gt;/home/&lt;user-name&gt;/Desktop/crontab.log</pre>
+<p class="amp-wp-7d27179">or,</p>
+<pre>* 4,5,6 * * * /usr/bin/ls &gt;/home/&lt;user-name&gt;/Desktop/crontab.log</pre>
+<p class="amp-wp-7d27179">Now, we will schedule tasks to be executed as discussed above. Issue the following in terminal –</p>
+<pre>crontab -e</pre>
+<p class="amp-wp-7d27179">If the above command gets executed for the first time, then it would ask us to choose the default text editor.</p>
+<pre>no crontab for &lt;user-name&gt; - using an empty one
+
+Select an editor. To change later, run 'select-editor'.
+1. /bin/nano &lt;---- easiest
+2. /usr/bin/vim.tiny
+3. /bin/ed
+
+Choose 1-3 [1]:</pre>
+<p class="amp-wp-7d27179">Choose one accordingly. Or, we can switch to a different one later through command –</p>
+<pre>select-editor</pre>
+<p class="amp-wp-7d27179">Afterwards, a crontab file would get opened. Append the file with following entries as discussed above –</p>
+<pre>5 * * * * /usr/bin/ls &gt;/home/&lt;user-name&gt;/Desktop/crontab.log</pre>
+<p class="amp-wp-7d27179">replace &lt;user-name&gt; with appropriate value. When we save and quit from the file, it should return the output –</p>
+<pre>crontab: installing new crontab</pre>
+<p class="amp-wp-7d27179">To list the current crontab –</p>
+<pre>crontab -l</pre>
+<p class="amp-wp-7d27179">and, to confirm if necessary changes have been made –</p>
+<pre>sudo ls -l /var/spool/cron/crontabs/&lt;user-name&gt;</pre>
+<pre>sudo cat /var/spool/cron/crontabs/&lt;user-name&gt;</pre>
+<h5 class="amp-wp-cdd8ca0">Schedule System jobs in Ubuntu using Crontab</h5>
+<p class="amp-wp-7d27179">Systems jobs can be scheduled and executed only through <strong>/etc/crontab</strong> file. The format of the entries remains almost the same, with exception to provide <strong>&lt;user-name&gt;</strong>.</p>
+<pre>0-59    0-23    1-31    1-12    0-7    user-name    command to be executed</pre>
+<p class="amp-wp-7d27179">It is not recommended to make changes to /etc/crontab file unless we absolutely know what we’re up to.</p>
+<p>Lastly, <strong>to remove a crontab for a user</strong> –</p>
+<pre>crontab -r</pre>
+<p class="amp-wp-7d27179">We can confirm if its gone or not –</p>
+<pre>sudo ls -l /var/spool/cron/crontabs/&lt;user-name&gt;</pre>
+<p class="amp-wp-7d27179">it would return with the ouput –</p>
+<pre>ls: cannot access '/var/spool/cron/crontabs/&lt;user-name&gt;': No such file or directory</pre>
+<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have discussed how to schedule tasks in Ubuntu using Crontab tool.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">

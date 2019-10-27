@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="October 27, 2019 11:58 am" -->
+<!-- generated-on="October 27, 2019 10:51 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
+		<loc>https://techpiezo.com/linux/schedule-tasks-in-ubuntu-using-crontab/</loc>
+		<lastmod>2019-10-27T22:49:24+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
 		<loc>https://techpiezo.com/linux/install-and-use-snap-in-ubuntu-distribution/</loc>
 		<lastmod>2019-10-27T11:57:28+00:00</lastmod>
 		<changefreq>monthly</changefreq>
@@ -102,4 +108,4 @@
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: edfe911fe8738228f28992ffede8d4aa; Queries for sitemap: 25; Total queries: 36; Seconds: 0.02; Memory for sitemap: 0MB; Total memory: 2MB -->
+</urlset><!-- Request ID: 0bd53b81429a96a339facfddc73b27ef; Queries for sitemap: 28; Total queries: 39; Seconds: 0.02; Memory for sitemap: 0MB; Total memory: 2MB -->

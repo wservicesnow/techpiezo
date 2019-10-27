@@ -6,11 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
-	<title>Use Jupyter Notebook for writing Python programs - TechPiezo</title>
+	<title>Schedule tasks in Ubuntu using Crontab - TechPiezo</title>
 
 <!-- This site is optimized with the Yoast SEO plugin v11.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
-<meta name="description" content="We would discuss how to use Jupyter Notebook - open a notebook, write the code, keyboard shortcuts &amp; file formats for export - for writing Python programs."/>
-<link rel="canonical" href="https://techpiezo.com/python/use-jupyter-notebook-for-writing-python-programs/" />
+<meta name="description" content="Tasks can be scheduled in Ubuntu through three tools - at, batch &amp; cron daemon. We would discuss how to schedule tasks in Ubuntu distribution using Crontab."/>
+<link rel="canonical" href="https://techpiezo.com/linux/schedule-tasks-in-ubuntu-using-crontab/" />
 <!-- / Yoast SEO plugin. -->
 
 <style id="ct-main-styles-inline-css" type="text/css">:root {
@@ -758,7 +758,7 @@ code, kbd, samp, pre,
 <link rel='stylesheet' id='ct-style-css'  href='https://techpiezo.com/wp-content/themes/blocksy/style.css' type='text/css' media='all' />
 <link rel='stylesheet' id='ct-main-styles-css'  href='https://techpiezo.com/wp-content/themes/blocksy/static/bundle/main.css' type='text/css' media='all' />
 
-<link rel="amphtml" href="https://techpiezo.com/python/use-jupyter-notebook-for-writing-python-programs/amp/"><link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" sizes="32x32" />
+<link rel="amphtml" href="https://techpiezo.com/linux/schedule-tasks-in-ubuntu-using-crontab/amp/"><link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" sizes="32x32" />
 <link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" sizes="192x192" />
 <link rel="apple-touch-icon-precomposed" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" />
 <meta name="msapplication-TileImage" content="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" />
@@ -788,7 +788,7 @@ code, kbd, samp, pre,
 
 </head>
 
-<body class="post-template-default single single-post postid-3042 single-format-standard wp-custom-logo ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
+<body class="post-template-default single single-post postid-3216 single-format-standard wp-custom-logo ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
 <div id="main-container">
 
 	<header
@@ -821,9 +821,9 @@ code, kbd, samp, pre,
 				>
 
 		<ul id="primary-menu" class="primary-menu menu"><li id="menu-item-70" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-70"><a href="https://techpiezo.com">Home</a></li>
-<li id="menu-item-41" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-41"><a href="https://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
+<li id="menu-item-41" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-41"><a href="https://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
 <ul class="sub-menu">
-	<li id="menu-item-350" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-350"><a href="https://techpiezo.com/linux/linux-quick-fix/">Quick Fix</a></li>
+	<li id="menu-item-350" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-350"><a href="https://techpiezo.com/linux/linux-quick-fix/">Quick Fix</a></li>
 	<li id="menu-item-349" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-349"><a href="https://techpiezo.com/linux/linux-recent/">What&#8217;s New</a></li>
 </ul>
 </li>
@@ -831,7 +831,7 @@ code, kbd, samp, pre,
 <ul class="sub-menu">
 	<li id="menu-item-1824" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1824"><a href="https://techpiezo.com/java/">Java</a></li>
 	<li id="menu-item-348" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-348"><a href="https://techpiezo.com/kotlin/">Kotlin</a></li>
-	<li id="menu-item-2743" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-2743"><a href="https://techpiezo.com/python/">Python</a></li>
+	<li id="menu-item-2743" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2743"><a href="https://techpiezo.com/python/">Python</a></li>
 </ul>
 </li>
 <li id="menu-item-43" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-43"><a href="https://techpiezo.com/android/">Android<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
@@ -913,13 +913,13 @@ code, kbd, samp, pre,
 			<section>
 				
 	<article
-		id="post-3042"
-		class="post-3042 post type-post status-publish format-standard has-post-thumbnail hentry category-python"		data-content="boxed"				>
+		id="post-3216"
+		class="post-3216 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"		data-content="boxed"				>
 
 		
 		<section class="hero-section" data-type="type-1" data-alignment="left">
 			<header class="entry-header">
-				<h1 class="page-title">Use Jupyter Notebook for writing Python programs</h1>
+				<h1 class="page-title">Schedule tasks in Ubuntu using Crontab</h1>
 				<div class="entry-meta has-avatar" data-label data-type="simple">
 		
 
@@ -946,44 +946,84 @@ code, kbd, samp, pre,
 					<span
 						class="ct-meta-element"
 						>
-						Oct 20, 2019					</span>
+						Oct 27, 2019					</span>
 				</li>
 			
 			
-			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-label">In </span><span class="ct-meta-element"><a href="https://techpiezo.com/python/" rel="tag">Python</a></span></li>					</ul>
+			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-label">In </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/" rel="tag">Linux</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/linux-quick-fix/" rel="tag">Quick Fix</a></span></li>					</ul>
 				</div>
 		
 					</header>
 		</section>
 
-		<figure class="ct-featured-image ct-hidden-sm" ><div class="ct-image-container ct-lazy" ><img class="attachment-full size-full" alt="Use Jupyter Notebook for writing Python programs" data-lazy="https://techpiezo.com/wp-content/uploads/2019/10/Use-Jupyter-Notebook-for-writing-Python-programs.svg" data-object-fit="~" /><noscript><img src="https://techpiezo.com/wp-content/uploads/2019/10/Use-Jupyter-Notebook-for-writing-Python-programs.svg" class="attachment-full size-full" alt="Use Jupyter Notebook for writing Python programs" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
+		<figure class="ct-featured-image ct-hidden-sm" ><div class="ct-image-container ct-lazy" ><img class="attachment-full size-full" alt="Schedule Tasks in Ubuntu using Crontab" data-lazy="https://techpiezo.com/wp-content/uploads/2019/10/Schedule-Tasks-in-Ubuntu-using-Crontab.svg" data-object-fit="~" /><noscript><img src="https://techpiezo.com/wp-content/uploads/2019/10/Schedule-Tasks-in-Ubuntu-using-Crontab.svg" class="attachment-full size-full" alt="Schedule Tasks in Ubuntu using Crontab" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
 		
 		<div class="entry-content">
-			<p style="text-align: justify;">In this article, we would focus on how to use<strong> Jupyter Notebook for writing Python programs</strong>. Jupyter Notebook provides us a REPL (read-evaluate-print-loop) shell. The shell opens inside a web browser. Furthermore, it supports numerous programming languages. Notebook server is one of three main components of Jupyter Notebook. The other two are &#8211; browser and kernel. We can edit, save and load notebook files with the help of Notebook server. If you want to read about how to install and setup Jupyter Notebook for Python in Ubuntu, then read the article <span style="color: #3366ff;"><a style="color: #3366ff;" href="https://techpiezo.com/python/install-and-setup-jupyter-notebook-for-python/">here</a></span>.</p>
-<h5 style="text-align: center;">Use Jupyter Notebook for writing Python programs</h5>
-<p style="text-align: justify;"><strong>To run Jupyter Notebook &#8211;</strong></p>
-<p style="text-align: justify;"><strong>Either</strong> open a terminal and issue the following,</p>
-<pre>jupyter notebook</pre>
-<p style="text-align: justify;"><strong>or</strong>, you can open a web browser and visit the following link</p>
-<pre>http://localhost:8888</pre>
-<p style="text-align: justify;">To list all the running notebook files, click on <strong>Running</strong> tab &#8211;</p>
-<p><img class="size-full wp-image-3050 aligncenter" src="https://techpiezo.com/wp-content/uploads/2019/10/notebook-running.png" alt="notebook running" width="1153" height="251" /></p>
-<p style="text-align: justify;">Click on <strong>Shutdown</strong> to close the running notebooks.</p>
-<p style="text-align: justify;">In the right-hand corner, you would see a drop-down button <strong>New</strong>. Click on <strong>New</strong> and then select <strong>Python 3</strong>. It will open a new notebook tab with title &#8211; <strong>untitled.ipynb</strong>.</p>
-<p><img class="size-full wp-image-3047 aligncenter" src="https://techpiezo.com/wp-content/uploads/2019/10/new-python-jupyter-notebook.png" alt="new-python-jupyter-notebook" width="169" height="195" /></p>
-<p style="text-align: justify;">In new tab, save the notebook file by clicking <strong>File menu</strong> and then choose <strong>Save As </strong>&#8211; &lt;file-name&gt;.</p>
-<h5 style="text-align: center;">Working with Jupyter notebook</h5>
-<p style="text-align: justify;"><strong>In [ ]</strong> represents an empty cell.<strong> In</strong> is short for Input.</p>
-<p><img class="size-full wp-image-3051 aligncenter" src="https://techpiezo.com/wp-content/uploads/2019/10/cell-jupyter-notebook.png" alt="empty cell jupyter notebook" width="1150" height="88" /></p>
-<p style="text-align: justify;">We write code in cells of notebook. Click <strong>Run</strong> button (or, Shift+Enter) to get the output of the written code.</p>
-<p><img class="size-full wp-image-3052 aligncenter" src="https://techpiezo.com/wp-content/uploads/2019/10/jupyter-notebook-code-in-cell.png" alt="jupyter notebook code in cell" width="1148" height="149" /></p>
-<p style="text-align: justify;">Furthermore, for all the keyboard shortcuts available &#8211; click <strong>Help</strong> &#8211;&gt; <strong>Keyboard Shortcuts.</strong></p>
-<p style="text-align: justify;">Next, we can save/export our notebook in different file formats &#8211; click <strong>File</strong> &#8211;&gt; <strong>Download as</strong></p>
-<p><img class="size-full wp-image-3053 aligncenter" src="https://techpiezo.com/wp-content/uploads/2019/10/notebook-export-file-formats.png" alt="notebook export file formats" width="213" height="233" /></p>
-<p style="text-align: justify;">A notebook file can be saved in file formats of &#8211; AsciiDoc, HTML, LaTex, Markdown, Notebook, PDF, reST, Python &amp; Reveal .js slides.</p>
-<p style="text-align: justify;"><strong>Note</strong>: If you try to open a file that&#8217;s not available in current working directory then, you would move to the directory where file is stored. Also, current working directory is the directory where all your work is stored. You could<strong> navigate between directory structure</strong> from the Jupyter Notebooks&#8217; dashboard itself. For instance, all the files are saved in /home/&lt;user-name&gt; directory. If you would want to save/load files to/from Downloads directory then click on Downloads. Alternately, you can also Upload files through Upload button. But, uploading a file in will make a copy of the file in current working directory.</p>
-<p><img class="size-full wp-image-3054 aligncenter" src="https://techpiezo.com/wp-content/uploads/2019/10/pwd-for-jupyter-notebook.png" alt="pwd for jupyter notebook" width="1153" height="362" /></p>
-<p style="text-align: justify;"><strong>In conclusion</strong>, we have discussed how to work with Jupyter Notebook for writing Python programs.</p>
+			<p style="text-align: justify;">In this article, we would discuss how to schedule tasks in Ubuntu distribution using <strong>Crontab</strong>. Tasks can be scheduled in Ubuntu through three tools &#8211; <strong>at</strong>, <strong>batch</strong> and <strong>cron daemon</strong>. The at and batch tools can&#8217;t be utilized for tasks which are required to be executed frequently. But, <strong>with cron daemon</strong> we can schedule tasks to be executed on a hourly, daily, weekly, monthly basis or we can setup schedules as per our requirements. There are mainly four directories &#8211;</p>
+<pre>/etc/cron.daily
+/etc/cron.hourly
+/etc/cron.monthly
+/etc/cron.weekly</pre>
+<p style="text-align: justify;">So, if we place our scripts inside any of the four directories. Then, our script will be executed as per the defined schedule for the specific directory. For instance, we could list directory<strong> /etc/cron.daily/</strong> through the command &#8211;</p>
+<pre>ls -l /etc/cron.daily/</pre>
+<p style="text-align: justify;">It would list all the scripts which are executed, through <strong>run-parts</strong> tool, once in our distribution on a daily basis. We can place our scripts in any of the above mentioned directories.</p>
+<p style="text-align: justify;">Apart from that, there are mainly two types of tasks which can be scheduled and executed &#8211; System jobs and User jobs. <strong>System jobs</strong> can only be scheduled through <strong>/etc/crontab</strong> file whereas <strong>User jobs</strong> can be <strong>scheduled by the specific user</strong>. System jobs are executed through <strong>/etc/crontab file</strong>. And, user jobs can be executed through <strong>/var/spool/cron/crontabs/&lt;user-name&gt;</strong> file.</p>
+<h5 style="text-align: center;">Schedule User jobs in Ubuntu using Crontab</h5>
+<p style="text-align: justify;">First, we would discuss how to schedule and execute user jobs.</p>
+<p style="text-align: justify;">To list the current crontab, issue the following in terminal &#8211;</p>
+<pre>crontab -l</pre>
+<p style="text-align: justify;">The crontab file contains the list of tasks which are to be executed at designated times. It is recommended that we provide the complete path of the command when we edit through tool crontab. To know the pathnames, we use <strong>which</strong> command-line tool. For instance, if we want to know the pathname of <strong>ls</strong> command then &#8211;</p>
+<pre>which ls</pre>
+<p style="text-align: justify;">It would return with the output &#8211;</p>
+<pre>/usr/bin/ls</pre>
+<p style="text-align: justify;">The format of entries for crontab file would be &#8211;</p>
+<pre>0-59    0-23    1-31    1-12    0-7    command to be executed</pre>
+<p style="text-align: justify;">where,</p>
+<p><strong>0-59</strong> is the minutes field,</p>
+<p><strong>0-23</strong> is hours</p>
+<p><strong>1-31</strong> is day</p>
+<p><strong>1-12</strong> is month</p>
+<p><strong>0-7</strong> is day of week</p>
+<p style="text-align: justify;">Now, understand the format with the help of an example. To schedule and execute <strong>ls</strong> command every 5th minute the hour and send the output to a file crontab.log. Then, we append the crontab with &#8211;</p>
+<pre>5 * * * * /usr/bin/ls &gt;/home/&lt;user-name&gt;/Desktop/crontab.log</pre>
+<p style="text-align: justify;">We can also provide a range of values as illustrated above or we can separate them with comma(,).</p>
+<p style="text-align: justify;">For instance, to execute tasks at 4 AM, 5 AM and 6 AM we would write &#8211;</p>
+<pre>* 4-6 * * * /usr/bin/ls &gt;/home/&lt;user-name&gt;/Desktop/crontab.log</pre>
+<p style="text-align: justify;">or,</p>
+<pre>* 4,5,6 * * * /usr/bin/ls &gt;/home/&lt;user-name&gt;/Desktop/crontab.log</pre>
+<p style="text-align: justify;">Now, we will schedule tasks to be executed as discussed above. Issue the following in terminal &#8211;</p>
+<pre>crontab -e</pre>
+<p style="text-align: justify;">If the above command gets executed for the first time, then it would ask us to choose the default text editor.</p>
+<pre>no crontab for &lt;user-name&gt; - using an empty one
+
+Select an editor. To change later, run 'select-editor'.
+1. /bin/nano &lt;---- easiest
+2. /usr/bin/vim.tiny
+3. /bin/ed
+
+Choose 1-3 [1]:</pre>
+<p style="text-align: justify;">Choose one accordingly. Or, we can switch to a different one later through command &#8211;</p>
+<pre>select-editor</pre>
+<p style="text-align: justify;">Afterwards, a crontab file would get opened. Append the file with following entries as discussed above &#8211;</p>
+<pre>5 * * * * /usr/bin/ls &gt;/home/&lt;user-name&gt;/Desktop/crontab.log</pre>
+<p style="text-align: justify;">replace &lt;user-name&gt; with appropriate value. When we save and quit from the file, it should return the output &#8211;</p>
+<pre>crontab: installing new crontab</pre>
+<p style="text-align: justify;">To list the current crontab &#8211;</p>
+<pre>crontab -l</pre>
+<p style="text-align: justify;">and, to confirm if necessary changes have been made &#8211;</p>
+<pre>sudo ls -l /var/spool/cron/crontabs/&lt;user-name&gt;</pre>
+<pre>sudo cat /var/spool/cron/crontabs/&lt;user-name&gt;</pre>
+<h5 style="text-align: center;">Schedule System jobs in Ubuntu using Crontab</h5>
+<p style="text-align: justify;">Systems jobs can be scheduled and executed only through <strong>/etc/crontab</strong> file. The format of the entries remains almost the same, with exception to provide <strong>&lt;user-name&gt;</strong>.</p>
+<pre>0-59    0-23    1-31    1-12    0-7    user-name    command to be executed</pre>
+<p style="text-align: justify;">It is not recommended to make changes to /etc/crontab file unless we absolutely know what we&#8217;re up to.</p>
+<p>Lastly, <strong>to remove a crontab for a user</strong> &#8211;</p>
+<pre>crontab -r</pre>
+<p style="text-align: justify;">We can confirm if its gone or not &#8211;</p>
+<pre>sudo ls -l /var/spool/cron/crontabs/&lt;user-name&gt;</pre>
+<p style="text-align: justify;">it would return with the ouput &#8211;</p>
+<pre>ls: cannot access '/var/spool/cron/crontabs/&lt;user-name&gt;': No such file or directory</pre>
+<p style="text-align: justify;"><strong>In conclusion</strong>, we have discussed how to schedule tasks in Ubuntu using Crontab tool.</p>
 		</div>
 
 		
@@ -1034,40 +1074,40 @@ code, kbd, samp, pre,
 				<ul data-columns="3">
 											
 						<li>
-							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/python/install-and-setup-jupyter-notebook-for-python/"><img width="1" height="1" class="attachment-large size-large" alt="Install and Setup Jupyter Notebook for Python" data-lazy="https://techpiezo.com/wp-content/uploads/2019/10/Install-and-Setup-Jupyter-Notebook-for-Python.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/10/Install-and-Setup-Jupyter-Notebook-for-Python.svg" class="attachment-large size-large" alt="Install and Setup Jupyter Notebook for Python" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/install-and-use-snap-in-ubuntu-distribution/"><img width="1" height="1" class="attachment-large size-large" alt="Install and Use Snap in Ubuntu distribution" data-lazy="https://techpiezo.com/wp-content/uploads/2019/10/Install-and-Use-Snap-in-Ubuntu-distribution.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/10/Install-and-Use-Snap-in-Ubuntu-distribution.svg" class="attachment-large size-large" alt="Install and Use Snap in Ubuntu distribution" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
 							<h3 class="related-entry-title">
-								<a href="https://techpiezo.com/python/install-and-setup-jupyter-notebook-for-python/">Install and Setup Jupyter Notebook for Python in Ubuntu</a>
+								<a href="https://techpiezo.com/linux/install-and-use-snap-in-ubuntu-distribution/">Install and Use Snap in Ubuntu distribution</a>
 							</h3>
 
 							<div class="related-entry-meta">
 								<span>
-									Oct 19, 2019								</span>
+									Oct 27, 2019								</span>
 
 															</div>
 						</li>
 											
 						<li>
-							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/python/your-first-python-program/"><img width="1" height="1" class="attachment-large size-large" alt="Your first Python program" data-lazy="https://techpiezo.com/wp-content/uploads/2019/10/Your-first-Python-program.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/10/Your-first-Python-program.svg" class="attachment-large size-large" alt="Your first Python program" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/load-and-unload-linux-kernel-modules/"><img width="1" height="1" class="attachment-large size-large" alt="Load and Unload Linux Kernel Modules" data-lazy="https://techpiezo.com/wp-content/uploads/2019/10/Load-and-Unload-Linux-Kernel-Modules.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/10/Load-and-Unload-Linux-Kernel-Modules.svg" class="attachment-large size-large" alt="Load and Unload Linux Kernel Modules" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
 							<h3 class="related-entry-title">
-								<a href="https://techpiezo.com/python/your-first-python-program/">Your first Python program</a>
+								<a href="https://techpiezo.com/linux/load-and-unload-linux-kernel-modules/">Load and Unload Linux Kernel Modules</a>
 							</h3>
 
 							<div class="related-entry-meta">
 								<span>
-									Oct 16, 2019								</span>
+									Oct 26, 2019								</span>
 
 															</div>
 						</li>
 											
 						<li>
-							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/python/install-python-packages-using-pip-in-ubuntu/"><img width="1" height="1" class="attachment-large size-large" alt="Install Python packages using PIP in Ubuntu" data-lazy="https://techpiezo.com/wp-content/uploads/2019/10/Install-Python-packages-using-PIP-in-Ubuntu.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/10/Install-Python-packages-using-PIP-in-Ubuntu.svg" class="attachment-large size-large" alt="Install Python packages using PIP in Ubuntu" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/install-teamspeak-client-in-ubuntu-distribution/"><img width="1" height="1" class="attachment-large size-large" alt="Install TeamSpeak Client in Ubuntu distribution" data-lazy="https://techpiezo.com/wp-content/uploads/2019/10/Install-TeamSpeak-Client-in-Ubuntu-distribution.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/10/Install-TeamSpeak-Client-in-Ubuntu-distribution.svg" class="attachment-large size-large" alt="Install TeamSpeak Client in Ubuntu distribution" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
 							<h3 class="related-entry-title">
-								<a href="https://techpiezo.com/python/install-python-packages-using-pip-in-ubuntu/">Install Python packages using PIP in Ubuntu</a>
+								<a href="https://techpiezo.com/linux/install-teamspeak-client-in-ubuntu-distribution/">Install TeamSpeak Client in Ubuntu distribution</a>
 							</h3>
 
 							<div class="related-entry-meta">
 								<span>
-									Oct 1, 2019								</span>
+									Oct 26, 2019								</span>
 
 															</div>
 						</li>
@@ -1171,9 +1211,9 @@ code, kbd, samp, pre,
 			<div class="ct-bag-content" >
 				
 				<ul id="primary-menu" class="mobile-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-70"><a href="https://techpiezo.com">Home</a></li>
-<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-41"><a href="https://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-41"><a href="https://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
 <ul class="sub-menu">
-	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-350"><a href="https://techpiezo.com/linux/linux-quick-fix/">Quick Fix</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-350"><a href="https://techpiezo.com/linux/linux-quick-fix/">Quick Fix</a></li>
 	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-349"><a href="https://techpiezo.com/linux/linux-recent/">What&#8217;s New</a></li>
 </ul>
 </li>
@@ -1181,7 +1221,7 @@ code, kbd, samp, pre,
 <ul class="sub-menu">
 	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1824"><a href="https://techpiezo.com/java/">Java</a></li>
 	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-348"><a href="https://techpiezo.com/kotlin/">Kotlin</a></li>
-	<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-2743"><a href="https://techpiezo.com/python/">Python</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2743"><a href="https://techpiezo.com/python/">Python</a></li>
 </ul>
 </li>
 <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-43"><a href="https://techpiezo.com/android/">Android<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
