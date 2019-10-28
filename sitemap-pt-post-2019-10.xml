@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="October 27, 2019 10:51 pm" -->
+<!-- generated-on="October 28, 2019 9:33 am" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
+		<loc>https://techpiezo.com/linux/install-synaptic-package-manager-in-ubuntu/</loc>
+		<lastmod>2019-10-28T05:42:22+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>https://techpiezo.com/python/install-python-3-7-8-in-ubuntu-19-10/</loc>
+		<lastmod>2019-10-28T05:11:26+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
 		<loc>https://techpiezo.com/linux/schedule-tasks-in-ubuntu-using-crontab/</loc>
 		<lastmod>2019-10-27T22:49:24+00:00</lastmod>
 		<changefreq>monthly</changefreq>
@@ -108,4 +120,4 @@
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: 0bd53b81429a96a339facfddc73b27ef; Queries for sitemap: 28; Total queries: 39; Seconds: 0.02; Memory for sitemap: 0MB; Total memory: 2MB -->
+</urlset><!-- Request ID: fed2944b677558be36bbead5856dbf5e; Queries for sitemap: 34; Total queries: 45; Seconds: 0.02; Memory for sitemap: 0MB; Total memory: 2MB -->
