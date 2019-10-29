@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Install Discord in Ubuntu distribution - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/linux/install-discord-in-ubuntu-distribution/" />
+		<title>Install Python 3.8.0 in Ubuntu 19.10 - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/python/install-python-3-8-0-in-ubuntu-19-10/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -426,43 +426,51 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Install Discord in Ubuntu distribution</h1>
+		<h1 class="amp-wp-title">Install Python 3.8.0 in Ubuntu 19.10</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-10-26T04:10:49+00:00">
-		4 days ago	</time>
+	<time datetime="2019-10-28T05:01:33+00:00">
+		2 days ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">In this article, we would discuss how to install <strong>Discord</strong> in Ubuntu distribution. Its a proprietary package available as freeware, mainly developed for gaming community. The notion behind developing the application was to provide <strong>free voice and text chat services</strong> to the gaming community. At the time of writing the article – the latest stable version, 0.0.9, was released on April 01, 2019. Furthermore, the application currently is available in 27 languages. It is available for Linux, iOS, macOS &amp; Windows. In addition to, the application platform can also be accessed from a web browser.</p>
+		<p class="amp-wp-7d27179">We would discuss how to install <strong>Python 3.8.0</strong> in Ubuntu 19.10 release. On October 14, 2019 – Python got its latest stable release i.e. v3.8.0. Few of new features include – <strong>typed_ast</strong> is now merged to CPython, to improve performance – Protocol 4 is used by <strong>pickle</strong> by default, <strong>continue</strong> is now supported in finally: block and compiled bytecode gets <strong>parallel filesystem</strong> among others. In addition to, <strong>LOAD_GLOBAL</strong> is now 40% faster than before. To know more about all the new features introduced in detail, visit the following link –</p>
+<pre>https://docs.python.org/3/whatsnew/3.8.html</pre>
+<p class="amp-wp-7d27179">Although Python package comes installed in Ubuntu distribution by default. But, the version installed may vary for different Ubuntu releases. In this article, we would install a version of Python alongside the Python package already installed by default.</p>
 <p class="amp-wp-7d27179"><strong>Note</strong>: Following operations would require you to have superuser privileges. In case you don’t have one, then contact your System Administrator for assistance.</p>
-<h5 class="amp-wp-cdd8ca0">Install Discord in Ubuntu distribution</h5>
-<p class="amp-wp-7d27179">We would first download the relevant package from the official website itself. Thereafter, with the help of <strong>dpkg</strong> – debian package manager we would install the downloaded <strong>.deb</strong> package.</p>
-<p class="amp-wp-7d27179">Hence, visit the following link –</p>
-<pre>https://discordapp.com/download</pre>
-<p class="amp-wp-7d27179">and, select <strong>deb</strong> from the drop-down menu and click on <strong>Download Now</strong> button. The file size is of around 42.4 MBs.</p>
-<p class="amp-wp-7d27179">Since, we have already mentioned at the time of writing the article – the latest stable version is 0.0.9. So, the file we downloaded was – <strong>discord-0.0.9.deb</strong>.</p>
-<p class="amp-wp-7d27179">Now, open a terminal and issue the following –</p>
-<pre>sudo dpkg -i discord-0.0.9.deb</pre>
-<p class="amp-wp-7d27179">You may encounter following errors –</p>
-<pre>discord depends on libappindicator1; however:
-Package libappindicator1 is not installed.
-discord depends on libc++1; however:
-Package libc++1 is not installed.</pre>
-<p class="amp-wp-7d27179">At this point in time, run the following command in terminal to install related dependencies in one go –</p>
-<pre>sudo apt install -f</pre>
-<p>We can now open Discord application through Main menu. It may download and install relevant updates and then you will be presented the Login screen next.</p>
-<p>In conclusion, we have discussed how to install Discord application in Ubuntu distribution.</p>
-<p class="amp-wp-7d27179"><strong>Additional Info</strong> –</p>
-<p class="amp-wp-7d27179"><strong>dpkg</strong> – Debian package manager. We have used <strong>-i</strong> option, which has been used to install the required application. If, for some reason, you may decide to uninstall Discord package. Then, you would have to issue the following in terminal –</p>
-<pre>dpkg -r discord</pre>
+<h5 class="amp-wp-cdd8ca0">Install Python 3.8.0 in Ubuntu 19.10</h5>
+<p class="amp-wp-7d27179">First, we would download the relevant package from the official website itself. Thereafter, extract the downloaded package and perform operations as mentioned below.</p>
+<p class="amp-wp-7d27179">Visit the following link –</p>
+<pre>https://www.python.org/downloads/release/python-380/</pre>
+<p class="amp-wp-7d27179">Scroll down the page, and download the file version – <strong>Gzipped source tarball</strong>. The file so downloaded – <strong>Python-3.8.0.tgz</strong> is of around 23 MBs in size. Now, open a terminal and extract <strong>Python-3.8.0.tgz</strong> file through <strong>tar</strong> command-line utility –</p>
+<pre>cd /Path/to/Python-3.8.0.tgz
+tar -xvf Python-3.8.0.tgz</pre>
+<p class="amp-wp-7d27179">This creates a folder – <strong>Python-3.8.0</strong> in current directory.</p>
+<pre>cd Python-3.8.0/</pre>
+<p class="amp-wp-7d27179">And, issue the following three commands –</p>
+<pre>./configure
+make
+make test</pre>
+<p class="amp-wp-7d27179">Now, to keep the default installed Python version and install Python v3.8.0 alongside the installed version. Therefore, run the following command –</p>
+<pre>sudo make altinstall</pre>
+<p>When the command finishes installing the package, it will return with the following output –</p>
+<pre>Collecting setuptools
+Collecting pip
+Installing collected packages: setuptools, pip
+Successfully installed pip-19.2.3 setuptools-41.2.0</pre>
+<p class="amp-wp-7d27179">Lastly, open a new terminal and issue –</p>
+<pre>python3.8 -V</pre>
+<p class="amp-wp-7d27179">It will show the Python version (i.e. <strong>Python 3.8.0</strong>) installed.</p>
+<p class="amp-wp-7d27179">To open <strong>REPL</strong> (Read-Evaluate-Print-Loop) Shell, run the following in terminal –</p>
+<pre>python3.8</pre>
+<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have a discussed bit about whats all new in latest stable release of Python. And, then we discussed the installation steps required to install Python 3.8.0 in Ubuntu 19.10 release.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
 			<div class="amp-wp-meta amp-wp-tax-category">
-		Categories: <a href="https://techpiezo.com/linux/" rel="category tag">Linux</a>, <a href="https://techpiezo.com/linux/linux-quick-fix/" rel="category tag">Quick Fix</a>	</div>
+		Categories: <a href="https://techpiezo.com/linux/" rel="category tag">Linux</a>, <a href="https://techpiezo.com/python/" rel="category tag">Python</a>	</div>
 
 	</footer>
 </article>

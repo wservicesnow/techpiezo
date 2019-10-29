@@ -408,7 +408,8 @@ amp-carousel > amp-img > img {
 	position: absolute;
 	right: 16px;
 }
-			</style>
+		/* Inline stylesheets */
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cdd8ca0{text-align:center}	</style>
 </head>
 
 <body class="">
@@ -428,13 +429,42 @@ amp-carousel > amp-img > img {
 		<h1 class="amp-wp-title">Install Synaptic Package Manager in Ubuntu</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
 	<time datetime="2019-10-28T05:42:22+00:00">
-		4 hours ago	</time>
+		1 day ago	</time>
 </div>
 	</header>
 
 	
+
 	<div class="amp-wp-article-content">
-		<p>In this article, we would discuss how to install Synaptic Package Manager in Ubuntu distribution.</p>
+		<p class="amp-wp-7d27179">In this article, we would discuss how to install <strong>Synaptic Package Manager</strong> in Ubuntu distribution. Synaptic Package Manager is the <strong>graphical front-end</strong> of Advanced Package Tool (apt). It is mainly designed for users who are not comfortable managing packages through command-line interface. With Synaptic, we can install, remove &amp; upgrade packages. Furthermore, we can search for the package available through repositories. Also, we can make relevant modifications in repositories itself.</p>
+<p class="amp-wp-7d27179">For Ubuntu 11.10 release and later, we would have to install Synaptic Package Manager manually. At the time of writing the article, Ubuntu distributions don’t get the Synaptic Package Manager installed by default.</p>
+<p class="amp-wp-7d27179"><strong>Note</strong>: Following operations would require you to have superuser privileges. In case you don’t have one, then contact System Administrator for assistance.</p>
+<h5 class="amp-wp-cdd8ca0">Install Synaptic Package Manager in Ubuntu</h5>
+<p class="amp-wp-7d27179">Synaptic Package Manager is available through standard Ubuntu repositories. Therefore, we will update the repositories first. So, open a terminal and issue the following –</p>
+<pre>sudo apt update</pre>
+<p class="amp-wp-7d27179">This is to ensure we get the latest version of package available through repositories.</p>
+<p class="amp-wp-7d27179">Then, to install Synaptic Pacakge Manager –</p>
+<pre>sudo apt install synaptic</pre>
+<p class="amp-wp-7d27179">Now, open Synaptic Package Manger through Main menu of your Operating System. It will authenticate you first – to ensure whether you have access to superuser privileges or not.</p>
+<h5 class="amp-wp-cdd8ca0">Synaptic Package Manger doesn’t launch/start</h5>
+<p class="amp-wp-7d27179">If, for some reason, nothing happens and the Synaptic Package Manager doesn’t respond. And, you are not even asked to authenticate. Then, it could be possible you may be missing <strong>PolicyKit</strong> package for your desktop environment.</p>
+<p class="amp-wp-7d27179">If you are using LXDE (Lightweight X11 Desktop Environment), the package you can install is lxpolkit.</p>
+<pre>sudo apt install lxpolkit</pre>
+<p class="amp-wp-7d27179">Similarly, for Mate Desktop Environment –</p>
+<pre>sudo apt install mate-polkit</pre>
+<p class="amp-wp-7d27179">In Cinnamon, XFCE and Unity Desktop Environment –</p>
+<pre>sudo apt install policykit-1-gnome</pre>
+<p class="amp-wp-7d27179">For LXQt –</p>
+<pre>sudo apt install lxqt-policykit</pre>
+<p class="amp-wp-7d27179"><strong>Additional Info</strong> –</p>
+<p class="amp-wp-7d27179">As already discussed, Synaptic Package Manager is the front-end for Advanced Package Tool (apt). Therefore, we don’t have to select package related dependencies individually. Algorithms defined for Advanced Package Tool (apt) choose dependencies for installation. Also, all the package files (<strong>.deb</strong>) which have been downloaded/installed are saved in directory –</p>
+<pre>/var/cache/apt/archives</pre>
+<p class="amp-wp-7d27179">So, in case you would want to take a backup –</p>
+<pre>cp /var/cache/apt/archives/*.deb /path/to/save/</pre>
+<p class="amp-wp-7d27179">where,</p>
+<p class="amp-wp-7d27179"><strong>cp</strong> is a command-line tool – to copy files/directories.</p>
+<p class="amp-wp-7d27179">In addition to, with <strong>Synaptic Package Manager’s search option –</strong> it becomes easy for us to find and install the relevant package. For instance, if we are looking for a mail client. Then, click on search (top-righ corner) – and enter the keyword “mail client” and look in “<strong>Description and Name</strong>“. This will provide us a list of all mail clients and related packages available through repositories. All we need to do now is, read the description of packages and install accordingly.</p>
+<p><amp-img class="size-full wp-image-3258 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/10/synaptic-search.png" alt="synaptic search" width="309" height="140" layout="intrinsic"></amp-img></p>
 	</div>
 
 	<footer class="amp-wp-article-footer">

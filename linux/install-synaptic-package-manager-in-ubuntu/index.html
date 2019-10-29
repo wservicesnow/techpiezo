@@ -9,6 +9,7 @@
 	<title>Install Synaptic Package Manager in Ubuntu - TechPiezo</title>
 
 <!-- This site is optimized with the Yoast SEO plugin v11.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Synaptic Package Manager is a graphical front-end of Advanced Package Tool (apt). Here, we would discuss how to install Synaptic Package Manager in Ubuntu."/>
 <link rel="canonical" href="https://techpiezo.com/linux/install-synaptic-package-manager-in-ubuntu/" />
 <!-- / Yoast SEO plugin. -->
 
@@ -913,7 +914,7 @@ code, kbd, samp, pre,
 				
 	<article
 		id="post-3247"
-		class="post-3247 post type-post status-publish format-standard hentry category-linux category-linux-quick-fix"		data-content="boxed"				>
+		class="post-3247 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"		data-content="boxed"				>
 
 		
 		<section class="hero-section" data-type="type-1" data-alignment="left">
@@ -931,7 +932,7 @@ code, kbd, samp, pre,
 							By						</span>
 					
 					<span class="ct-meta-element" >
-						<a href="https://techpiezo.com/author/user_tech/" title="Posts by user_tech" rel="author">user_tech</a>					</span>
+						<a href="https://techpiezo.com/author/editorialteam/" title="Posts by Editorial Team" rel="author">Editorial Team</a>					</span>
 				</li>
 			
 							<li
@@ -955,10 +956,38 @@ code, kbd, samp, pre,
 					</header>
 		</section>
 
-		
+		<figure class="ct-featured-image ct-hidden-sm" ><div class="ct-image-container ct-lazy" ><img class="attachment-full size-full" alt="Install Synaptic Package Manager in Ubuntu" data-lazy="https://techpiezo.com/wp-content/uploads/2019/10/Install-Synaptic-Package-Manager-in-Ubuntu.svg" data-object-fit="~" /><noscript><img src="https://techpiezo.com/wp-content/uploads/2019/10/Install-Synaptic-Package-Manager-in-Ubuntu.svg" class="attachment-full size-full" alt="Install Synaptic Package Manager in Ubuntu" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
 		
 		<div class="entry-content">
-			<p>In this article, we would discuss how to install Synaptic Package Manager in Ubuntu distribution.</p>
+			<p style="text-align: justify;">In this article, we would discuss how to install <strong>Synaptic Package Manager</strong> in Ubuntu distribution. Synaptic Package Manager is the <strong>graphical front-end</strong> of Advanced Package Tool (apt). It is mainly designed for users who are not comfortable managing packages through command-line interface. With Synaptic, we can install, remove &amp; upgrade packages. Furthermore, we can search for the package available through repositories. Also, we can make relevant modifications in repositories itself.</p>
+<p style="text-align: justify;">For Ubuntu 11.10 release and later, we would have to install Synaptic Package Manager manually. At the time of writing the article, Ubuntu distributions don&#8217;t get the Synaptic Package Manager installed by default.</p>
+<p style="text-align: justify;"><strong>Note</strong>: Following operations would require you to have superuser privileges. In case you don&#8217;t have one, then contact System Administrator for assistance.</p>
+<h5 style="text-align: center;">Install Synaptic Package Manager in Ubuntu</h5>
+<p style="text-align: justify;">Synaptic Package Manager is available through standard Ubuntu repositories. Therefore, we will update the repositories first. So, open a terminal and issue the following &#8211;</p>
+<pre>sudo apt update</pre>
+<p style="text-align: justify;">This is to ensure we get the latest version of package available through repositories.</p>
+<p style="text-align: justify;">Then, to install Synaptic Pacakge Manager &#8211;</p>
+<pre>sudo apt install synaptic</pre>
+<p style="text-align: justify;">Now, open Synaptic Package Manger through Main menu of your Operating System. It will authenticate you first &#8211; to ensure whether you have access to superuser privileges or not.</p>
+<h5 style="text-align: center;">Synaptic Package Manger doesn&#8217;t launch/start</h5>
+<p style="text-align: justify;">If, for some reason, nothing happens and the Synaptic Package Manager doesn&#8217;t respond. And, you are not even asked to authenticate. Then, it could be possible you may be missing <strong>PolicyKit</strong> package for your desktop environment.</p>
+<p style="text-align: justify;">If you are using LXDE (Lightweight X11 Desktop Environment), the package you can install is lxpolkit.</p>
+<pre>sudo apt install lxpolkit</pre>
+<p style="text-align: justify;">Similarly, for Mate Desktop Environment &#8211;</p>
+<pre>sudo apt install mate-polkit</pre>
+<p style="text-align: justify;">In Cinnamon, XFCE and Unity Desktop Environment &#8211;</p>
+<pre>sudo apt install policykit-1-gnome</pre>
+<p style="text-align: justify;">For LXQt &#8211;</p>
+<pre>sudo apt install lxqt-policykit</pre>
+<p style="text-align: justify;"><strong>Additional Info</strong> &#8211;</p>
+<p style="text-align: justify;">As already discussed, Synaptic Package Manager is the front-end for Advanced Package Tool (apt). Therefore, we don&#8217;t have to select package related dependencies individually. Algorithms defined for Advanced Package Tool (apt) choose dependencies for installation. Also, all the package files (<strong>.deb</strong>) which have been downloaded/installed are saved in directory &#8211;</p>
+<pre>/var/cache/apt/archives</pre>
+<p style="text-align: justify;">So, in case you would want to take a backup &#8211;</p>
+<pre>cp /var/cache/apt/archives/*.deb /path/to/save/</pre>
+<p style="text-align: justify;">where,</p>
+<p style="text-align: justify;"><strong>cp</strong> is a command-line tool &#8211; to copy files/directories.</p>
+<p style="text-align: justify;">In addition to, with <strong>Synaptic Package Manager&#8217;s search option &#8211;</strong> it becomes easy for us to find and install the relevant package. For instance, if we are looking for a mail client. Then, click on search (top-righ corner) &#8211; and enter the keyword &#8220;mail client&#8221; and look in &#8220;<strong>Description and Name</strong>&#8220;. This will provide us a list of all mail clients and related packages available through repositories. All we need to do now is, read the description of packages and install accordingly.</p>
+<p><img class="size-full wp-image-3258 aligncenter" src="https://techpiezo.com/wp-content/uploads/2019/10/synaptic-search.png" alt="synaptic search" width="309" height="140" /></p>
 		</div>
 
 		
@@ -980,7 +1009,7 @@ code, kbd, samp, pre,
 					<a href="https://techpiezo.com/linux/install-synaptic-package-manager-in-ubuntu/">Install Synaptic Package Manager in Ubuntu</a>
 									</li>
 											<li>
-					<a href="https://techpiezo.com/python/install-python-3-7-8-in-ubuntu-19-10/">Install Python 3.7.8 in Ubuntu 19.10</a>
+					<a href="https://techpiezo.com/python/install-python-3-8-0-in-ubuntu-19-10/">Install Python 3.8.0 in Ubuntu 19.10</a>
 									</li>
 											<li>
 					<a href="https://techpiezo.com/linux/schedule-tasks-in-ubuntu-using-crontab/">Schedule tasks in Ubuntu using Crontab</a>
@@ -1009,9 +1038,9 @@ code, kbd, samp, pre,
 				<ul data-columns="3">
 											
 						<li>
-							<a class="ct-image-container ct-no-image" href="https://techpiezo.com/python/install-python-3-7-8-in-ubuntu-19-10/"><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/python/install-python-3-8-0-in-ubuntu-19-10/"><img width="1" height="1" class="attachment-large size-large" alt="Install Python 3.8.0 in Ubuntu 19.10" data-lazy="https://techpiezo.com/wp-content/uploads/2019/10/Install-Python-3-8-0-in-Ubuntu-19-10.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/10/Install-Python-3-8-0-in-Ubuntu-19-10.svg" class="attachment-large size-large" alt="Install Python 3.8.0 in Ubuntu 19.10" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
 							<h3 class="related-entry-title">
-								<a href="https://techpiezo.com/python/install-python-3-7-8-in-ubuntu-19-10/">Install Python 3.7.8 in Ubuntu 19.10</a>
+								<a href="https://techpiezo.com/python/install-python-3-8-0-in-ubuntu-19-10/">Install Python 3.8.0 in Ubuntu 19.10</a>
 							</h3>
 
 							<div class="related-entry-meta">
