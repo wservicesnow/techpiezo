@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="October 29, 2019 5:41 pm" -->
+<!-- generated-on="October 29, 2019 8:23 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>https://techpiezo.com/android/</loc>
 		<lastmod>2019-07-29T11:31:04+00:00</lastmod>
@@ -72,4 +72,4 @@
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
-</urlset><!-- Request ID: cf20ee8b54eb3985d66d4ebda31dc86c; Queries for sitemap: 4; Total queries: 15; Seconds: 0.01; Memory for sitemap: 0MB; Total memory: 2MB -->
+</urlset><!-- Request ID: 6dd244935599e97d6909e77a7214d870; Queries for sitemap: 4; Total queries: 15; Seconds: 0; Memory for sitemap: 0MB; Total memory: 2MB -->
