@@ -6,13 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
-	<title>TechPiezo - Page 8 of 11 - Future is here!</title>
+	<title>Install VirtualBox Extension Pack in Ubuntu - TechPiezo</title>
 
 <!-- This site is optimized with the Yoast SEO plugin v11.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
-<meta name="description" content="TechPiezo - Stay ahead of the curve in Digital Space."/>
-<link rel="canonical" href="https://techpiezo.com/page/8/" />
-<link rel="prev" href="https://techpiezo.com/page/7/" />
-<link rel="next" href="https://techpiezo.com/page/9/" />
+<meta name="description" content="It provides us the extended functionality like support for USB devices. In this article, we would discuss how to install VirtualBox Extension Pack in Ubuntu"/>
+<link rel="canonical" href="https://techpiezo.com/linux/install-virtualbox-extension-pack-in-ubuntu/" />
 <!-- / Yoast SEO plugin. -->
 
 <style id="ct-main-styles-inline-css" type="text/css">:root {
@@ -63,6 +61,7 @@
     --logoMaxHeight: 30px;
     --cardSpacing: 35px;
     --cardBackground: #ffffff;
+    --pageTitleFontHoverColor: var(--paletteColor1);
     --letterSpacing: 0em;
     --fontSize: 20px;
     --textTransform: none;
@@ -71,6 +70,7 @@
     --fontStyle: normal;
     --textDecoration: none;
     --lineHeight: 1.65;
+    --pageTitleFontInitialColor: var(--paletteColor4);
     --cardExcerptSize: 18px;
     --cardsGap: 35px;
     --transparentHeaderBackground: rgba(255, 255, 255, 0.1);
@@ -318,6 +318,16 @@ code, kbd, samp, pre {
     --backgroundColor: #f4f5f8;
 }
 
+.entry-header .page-title {
+    --lineHeight: 1.5;
+    --textDecoration: none;
+    --fontStyle: normal;
+    --fontWeight: 700;
+    --textTransform: none;
+    --fontSize: 34px;
+    --letterSpacing: 0em;
+}
+
 .entry-card .entry-title {
     --lineHeight: 1.3;
     --textDecoration: none;
@@ -561,6 +571,12 @@ h6 {
     --letterSpacing: 0em;
 }
 
+.entry-header .page-title {
+    --lineHeight: 1.5;
+    --fontSize: 30px;
+    --letterSpacing: 0em;
+}
+
 .entry-card .entry-title {
     --lineHeight: 1.3;
     --fontSize: 26px;
@@ -711,6 +727,12 @@ h6 {
     --letterSpacing: 0em;
 }
 
+.entry-header .page-title {
+    --lineHeight: 1.5;
+    --fontSize: 25px;
+    --letterSpacing: 0em;
+}
+
 .entry-card .entry-title {
     --lineHeight: 1.3;
     --fontSize: 24px;
@@ -736,7 +758,7 @@ code, kbd, samp, pre,
 <link rel='stylesheet' id='ct-style-css'  href='https://techpiezo.com/wp-content/themes/blocksy/style.css' type='text/css' media='all' />
 <link rel='stylesheet' id='ct-main-styles-css'  href='https://techpiezo.com/wp-content/themes/blocksy/static/bundle/main.css' type='text/css' media='all' />
 
-<link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" sizes="32x32" />
+<link rel="amphtml" href="https://techpiezo.com/linux/install-virtualbox-extension-pack-in-ubuntu/amp/"><link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" sizes="32x32" />
 <link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" sizes="192x192" />
 <link rel="apple-touch-icon-precomposed" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" />
 <meta name="msapplication-TileImage" content="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" />
@@ -766,7 +788,7 @@ code, kbd, samp, pre,
 
 </head>
 
-<body class="home blog paged wp-custom-logo paged-8 ct-loading ct-no-js ct-modern-forms ct-offcanvas header-type-1" >
+<body class="post-template-default single single-post postid-3307 single-format-standard wp-custom-logo ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
 <div id="main-container">
 
 	<header
@@ -798,10 +820,10 @@ code, kbd, samp, pre,
 		data-dropdown-animation="type-3"
 				>
 
-		<ul id="primary-menu" class="primary-menu menu"><li id="menu-item-70" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-home menu-item-70"><a href="https://techpiezo.com">Home</a></li>
-<li id="menu-item-41" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-41"><a href="https://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
+		<ul id="primary-menu" class="primary-menu menu"><li id="menu-item-70" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-70"><a href="https://techpiezo.com">Home</a></li>
+<li id="menu-item-41" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-41"><a href="https://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
 <ul class="sub-menu">
-	<li id="menu-item-350" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-350"><a href="https://techpiezo.com/linux/linux-quick-fix/">Quick Fix</a></li>
+	<li id="menu-item-350" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-350"><a href="https://techpiezo.com/linux/linux-quick-fix/">Quick Fix</a></li>
 	<li id="menu-item-349" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-349"><a href="https://techpiezo.com/linux/linux-recent/">What&#8217;s New</a></li>
 </ul>
 </li>
@@ -884,310 +906,169 @@ code, kbd, samp, pre,
 
 		
 
-<section id="primary" class="content-area">
-	<div class="ct-container" >
-
-		<section>
-							
-									<div class="entries"
-						data-layout="enhanced-grid"
-						data-cards="boxed"																		>
-				
-<article
-	id="post-442" class="entry-card post-442 post type-post status-publish format-standard has-post-thumbnail hentry category-tech-insights"	>
-
-	<a class="ct-image-container boundless-image ct-lazy" href="https://techpiezo.com/tech-insights/raw-vs-qcow2-disk-images-in-qemu-kvm/" ><img width="1" height="1" class="attachment-medium_large size-medium_large" alt="Raw vs Qcow2" data-lazy="https://techpiezo.com/wp-content/uploads/2019/06/Raw-vs-Qcow2.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/06/Raw-vs-Qcow2.svg" class="attachment-medium_large size-medium_large" alt="Raw vs Qcow2" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></a>
-	<h2 class="entry-title">
-		<a href="https://techpiezo.com/tech-insights/raw-vs-qcow2-disk-images-in-qemu-kvm/">
-			Raw vs Qcow2 Disk Images in QEMU/KVM		</a>
-	</h2>
-
 	
-	<div class="entry-excerpt">
-		One of the important part of virtualization is storage. Storage allows virtualized environment to read and write data over variety…	</div>
+	<div id="primary" class="content-area">
 
-	<div class="ct-ghost"></div>
-				<div class="entry-meta" data-label data-type="simple">
+		<div class="ct-container" data-sidebar="right">
+
+			<section>
+				
+	<article
+		id="post-3307"
+		class="post-3307 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"		data-content="boxed"				>
+
+		
+		<section class="hero-section" data-type="type-1" data-alignment="left">
+			<header class="entry-header">
+				<h1 class="page-title">Install VirtualBox Extension Pack in Ubuntu</h1>
+				<div class="entry-meta has-avatar" data-label data-type="simple">
 		
 
 			<ul >
 				
+							<li class="ct-meta-author" >
+
+					
+											<span class="ct-meta-label">
+							By						</span>
+					
+					<span class="ct-meta-element" >
+						<a href="https://techpiezo.com/author/editorialteam/" title="Posts by Editorial Team" rel="author">Editorial Team</a>					</span>
+				</li>
 			
-			
-			
-			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-label">In </span><span class="ct-meta-element"><a href="https://techpiezo.com/tech-insights/" rel="tag">Insights</a></span></li>					</ul>
-				</div>
-		
-		
-</article>
+							<li
+					class="ct-meta-date"
+					>
 
-<article
-	id="post-440" class="entry-card post-440 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"	>
-
-	<a class="ct-image-container boundless-image ct-lazy" href="https://techpiezo.com/linux/install-virtualbox-in-debian-stretch/" ><img width="1" height="1" class="attachment-medium_large size-medium_large" alt="Install VirtualBox in Debian Stretch" data-lazy="https://techpiezo.com/wp-content/uploads/2019/06/Install-VirtualBox-in-Debian-Stretch.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/06/Install-VirtualBox-in-Debian-Stretch.svg" class="attachment-medium_large size-medium_large" alt="Install VirtualBox in Debian Stretch" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></a>
-	<h2 class="entry-title">
-		<a href="https://techpiezo.com/linux/install-virtualbox-in-debian-stretch/">
-			Install VirtualBox in Debian Stretch		</a>
-	</h2>
-
-	
-	<div class="entry-excerpt">
-		VirtualBox is a free and open-source virtualization product developed by Oracle Corporation. It was first released on January 17, 2007.…	</div>
-
-	<div class="ct-ghost"></div>
-				<div class="entry-meta" data-label data-type="simple">
-		
-
-			<ul >
-				
-			
+					
+											<span class="ct-meta-label">
+							On						</span>
+					
+					<span
+						class="ct-meta-element"
+						>
+						Nov 2, 2019					</span>
+				</li>
 			
 			
 			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-label">In </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/" rel="tag">Linux</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/linux-quick-fix/" rel="tag">Quick Fix</a></span></li>					</ul>
 				</div>
 		
+					</header>
+		</section>
+
+		<figure class="ct-featured-image ct-hidden-sm" ><div class="ct-image-container ct-lazy" ><img class="attachment-full size-full" alt="Install VirtualBox Extension Pack in Ubuntu" data-lazy="https://techpiezo.com/wp-content/uploads/2019/11/Install-VirtualBox-Extension-Pack-in-Ubuntu.svg" data-object-fit="~" /><noscript><img src="https://techpiezo.com/wp-content/uploads/2019/11/Install-VirtualBox-Extension-Pack-in-Ubuntu.svg" class="attachment-full size-full" alt="Install VirtualBox Extension Pack in Ubuntu" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
 		
-</article>
+		<div class="entry-content">
+			<p style="text-align: justify;">In this article, we would discuss how to <strong>install VirtualBox Extension Pack in Ubuntu</strong>. But, before that a bit about VirtualBox Extension Pack itself.</p>
+<p style="text-align: justify;">VirtualBox Extension Pack provides us the extended functionality like support for USB devices, Remote Desktop Protocol, Host webcam passthrough, PCI Passthrough on Linux hosts and Intel PXE boot ROM among others. To install VirtualBox Extension Pack we need to first download the package from the official website. The version of VirtualBox Extension Pack must match with the version of VirtualBox installed.</p>
+<p style="text-align: justify;">We have already discussed installation steps required for VirtualBox in Ubuntu 19.10 <span style="color: #ff0000;"><a style="color: #ff0000;" href="https://techpiezo.com/linux/install-virtualbox-in-ubuntu-19-10/">here</a></span>. And, for VirtualBox Guest Additions <span style="color: #ff0000;"><a style="color: #ff0000;" href="https://techpiezo.com/linux/download-and-install-virtualbox-guest-additions-in-ubuntu/">here</a></span>.</p>
+<p style="text-align: justify;"><strong>Note</strong>: Following operations would require you to have superuser privileges. In case you don&#8217;t have one, then contact your System Administrator for assistance.</p>
+<h5 style="text-align: center;">Install VirtualBox Extension Pack in Ubuntu</h5>
+<p style="text-align: justify;">To download VirtualBox Extension Pack, visit the following link &#8211;</p>
+<pre>http://download.virtualbox.org/virtualbox/</pre>
+<p style="text-align: justify;">For instance, if you have VirtualBox version 6.0.14 installed. Then, click on <strong>6.0.14</strong> and download the file &#8211; <strong>Oracle_VM_VirtualBox_Extension_Pack-6.0.14.vbox-extpack</strong>. We once again remind you of installing the version of VirtualBox Extension Pack which matches with the VirtualBox version installed.</p>
+<p style="text-align: justify;">Now, open VirtualBox application from the main menu. And, click on <strong>File &#8211;&gt; Preferences</strong>. Then, click on <strong>Extensions</strong> and <strong>Adds new package</strong> symbol. Head to the path where you have saved the file &#8211; <strong>Oracle_VM_VirtualBox_Extension_Pack-6.0.14.vbox-extpack</strong>. And, install the package &#8211; it will ask you for the superusers&#8217; password.</p>
+<p style="text-align: justify;">Still, the installation part isn&#8217;t finished. We can enable USB devices through Virtual Machine&#8217;s <strong>Settings &#8211;&gt; USB &#8211;&gt; Add new USB filter</strong> option. But, if you will try to add a USB device inside the Virtual Machine, then it will throw an error &#8211;</p>
+<pre>&lt;no devices available&gt;</pre>
+<p style="text-align: justify;">Therefore, we need to issue the following in terminal &#8211;</p>
+<pre>sudo adduser $USER vboxusers</pre>
+<p style="text-align: justify;">where,</p>
+<p style="text-align: justify;"><strong>adduser</strong> &#8211; adds the <strong>$USER</strong> to the Group <strong>vboxusers</strong>.</p>
+<p style="text-align: justify;">And, then reboot or logout to reflect the necessary changes.</p>
+<p style="text-align: justify;"><strong>In conclusion</strong>, we have discussed how to install VirtualBox Extension Pack in Ubuntu distribution.</p>
+		</div>
 
-<article
-	id="post-437" class="entry-card post-437 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"	>
+		
+		
+		
+	</article>
 
-	<a class="ct-image-container boundless-image ct-lazy" href="https://techpiezo.com/linux/update-upgrade-your-debian-distribution/" ><img width="1" height="1" class="attachment-medium_large size-medium_large" alt="Upgrade Update Debian Distribution" data-lazy="https://techpiezo.com/wp-content/uploads/2019/06/Upgrade-Update-Debian-Distribution.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/06/Upgrade-Update-Debian-Distribution.svg" class="attachment-medium_large size-medium_large" alt="Upgrade Update Debian Distribution" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></a>
-	<h2 class="entry-title">
-		<a href="https://techpiezo.com/linux/update-upgrade-your-debian-distribution/">
-			Update/Upgrade your Debian distribution		</a>
-	</h2>
+				</section>
+
+			
+<aside
+	class="ct-hidden-sm ct-hidden-md"    data-type="type-2"
+	>
+
+    <div
+		class="ct-sidebar" data-sticky		data-widgets="separated">
+				<div class="ct-widget widget_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
+											<li>
+					<a href="https://techpiezo.com/linux/install-virtualbox-extension-pack-in-ubuntu/">Install VirtualBox Extension Pack in Ubuntu</a>
+									</li>
+											<li>
+					<a href="https://techpiezo.com/c/compile-c-program-in-ubuntu/">Compile C Program in Ubuntu</a>
+									</li>
+											<li>
+					<a href="https://techpiezo.com/linux/install-synaptic-package-manager-in-ubuntu/">Install Synaptic Package Manager in Ubuntu</a>
+									</li>
+											<li>
+					<a href="https://techpiezo.com/python/install-python-3-8-0-in-ubuntu-19-10/">Install Python 3.8.0 in Ubuntu 19.10</a>
+									</li>
+											<li>
+					<a href="https://techpiezo.com/linux/schedule-tasks-in-ubuntu-using-crontab/">Schedule tasks in Ubuntu using Crontab</a>
+									</li>
+					</ul>
+		</div>	</div>
+</aside>
+
+
+		</div>
+
+	</div>
 
 	
-	<div class="entry-excerpt">
-		For users who have recently installed a Debian distribution, might have been looking ways to update their systems. In this…	</div>
+		<div class="ct-related-posts ct-hidden-sm">
+			<div class="ct-container">
+				<h4 class="ct-related-posts-label">
+					Related Posts				</h4>
 
-	<div class="ct-ghost"></div>
-				<div class="entry-meta" data-label data-type="simple">
-		
+				<ul data-columns="3">
+											
+						<li>
+							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/c/compile-c-program-in-ubuntu/"><img width="1" height="1" class="attachment-large size-large" alt="Compile C Program in Ubuntu" data-lazy="https://techpiezo.com/wp-content/uploads/2019/11/Compile-C-Program-in-Ubuntu.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/11/Compile-C-Program-in-Ubuntu.svg" class="attachment-large size-large" alt="Compile C Program in Ubuntu" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<h3 class="related-entry-title">
+								<a href="https://techpiezo.com/c/compile-c-program-in-ubuntu/">Compile C Program in Ubuntu</a>
+							</h3>
 
-			<ul >
-				
-			
-			
-			
-			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-label">In </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/" rel="tag">Linux</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/linux-quick-fix/" rel="tag">Quick Fix</a></span></li>					</ul>
-				</div>
-		
-		
-</article>
+							<div class="related-entry-meta">
+								<span>
+									Nov 1, 2019								</span>
 
-<article
-	id="post-428" class="entry-card post-428 post type-post status-publish format-standard has-post-thumbnail hentry category-tech-insights"	>
+															</div>
+						</li>
+											
+						<li>
+							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/install-synaptic-package-manager-in-ubuntu/"><img width="1" height="1" class="attachment-large size-large" alt="Install Synaptic Package Manager in Ubuntu" data-lazy="https://techpiezo.com/wp-content/uploads/2019/10/Install-Synaptic-Package-Manager-in-Ubuntu.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/10/Install-Synaptic-Package-Manager-in-Ubuntu.svg" class="attachment-large size-large" alt="Install Synaptic Package Manager in Ubuntu" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<h3 class="related-entry-title">
+								<a href="https://techpiezo.com/linux/install-synaptic-package-manager-in-ubuntu/">Install Synaptic Package Manager in Ubuntu</a>
+							</h3>
 
-	<a class="ct-image-container boundless-image ct-lazy" href="https://techpiezo.com/tech-insights/command-line-calendar-on-debian/" ><img width="1" height="1" class="attachment-medium_large size-medium_large" alt="Command Line Calendar Utilities Debian" data-lazy="https://techpiezo.com/wp-content/uploads/2019/06/Command-Line-Calendar-Utilities-Debian.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/06/Command-Line-Calendar-Utilities-Debian.svg" class="attachment-medium_large size-medium_large" alt="Command Line Calendar Utilities Debian" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></a>
-	<h2 class="entry-title">
-		<a href="https://techpiezo.com/tech-insights/command-line-calendar-on-debian/">
-			Command line Calendar utilities on Debian		</a>
-	</h2>
+							<div class="related-entry-meta">
+								<span>
+									Oct 28, 2019								</span>
 
-	
-	<div class="entry-excerpt">
-		Linux distributions provides simple and useful utilities through command line. Calendar in GNU/Linux might seem like novelty, however mastering the…	</div>
+															</div>
+						</li>
+											
+						<li>
+							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/python/install-python-3-8-0-in-ubuntu-19-10/"><img width="1" height="1" class="attachment-large size-large" alt="Install Python 3.8.0 in Ubuntu 19.10" data-lazy="https://techpiezo.com/wp-content/uploads/2019/10/Install-Python-3-8-0-in-Ubuntu-19-10.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/10/Install-Python-3-8-0-in-Ubuntu-19-10.svg" class="attachment-large size-large" alt="Install Python 3.8.0 in Ubuntu 19.10" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<h3 class="related-entry-title">
+								<a href="https://techpiezo.com/python/install-python-3-8-0-in-ubuntu-19-10/">Install Python 3.8.0 in Ubuntu 19.10</a>
+							</h3>
 
-	<div class="ct-ghost"></div>
-				<div class="entry-meta" data-label data-type="simple">
-		
+							<div class="related-entry-meta">
+								<span>
+									Oct 28, 2019								</span>
 
-			<ul >
-				
-			
-			
-			
-			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-label">In </span><span class="ct-meta-element"><a href="https://techpiezo.com/tech-insights/" rel="tag">Insights</a></span></li>					</ul>
-				</div>
-		
-		
-</article>
-
-<article
-	id="post-423" class="entry-card post-423 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"	>
-
-	<a class="ct-image-container boundless-image ct-lazy" href="https://techpiezo.com/linux/create-a-bootable-usb-in-ubuntu/" ><img width="1" height="1" class="attachment-medium_large size-medium_large" alt="Create a Bootable USB in Ubuntu" data-lazy="https://techpiezo.com/wp-content/uploads/2019/06/Create-a-Bootable-USB-in-Ubuntu.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/06/Create-a-Bootable-USB-in-Ubuntu.svg" class="attachment-medium_large size-medium_large" alt="Create a Bootable USB in Ubuntu" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></a>
-	<h2 class="entry-title">
-		<a href="https://techpiezo.com/linux/create-a-bootable-usb-in-ubuntu/">
-			Create a Bootable USB in Ubuntu		</a>
-	</h2>
-
-	
-	<div class="entry-excerpt">
-		In this article, we would discuss how to create a bootable USB with the help of Ubuntu&#8217;s Startup Disk Creator.…	</div>
-
-	<div class="ct-ghost"></div>
-				<div class="entry-meta" data-label data-type="simple">
-		
-
-			<ul >
-				
-			
-			
-			
-			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-label">In </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/" rel="tag">Linux</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/linux-quick-fix/" rel="tag">Quick Fix</a></span></li>					</ul>
-				</div>
-		
-		
-</article>
-
-<article
-	id="post-420" class="entry-card post-420 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"	>
-
-	<a class="ct-image-container boundless-image ct-lazy" href="https://techpiezo.com/linux/install-clamav-antivirus-in-ubuntu/" ><img width="1" height="1" class="attachment-medium_large size-medium_large" alt="Install ClamAV Antivirus in Ubuntu" data-lazy="https://techpiezo.com/wp-content/uploads/2019/06/Install-ClamAV-Antivirus-in-Ubuntu.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/06/Install-ClamAV-Antivirus-in-Ubuntu.svg" class="attachment-medium_large size-medium_large" alt="Install ClamAV Antivirus in Ubuntu" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></a>
-	<h2 class="entry-title">
-		<a href="https://techpiezo.com/linux/install-clamav-antivirus-in-ubuntu/">
-			Install ClamAV Antivirus in Ubuntu		</a>
-	</h2>
-
-	
-	<div class="entry-excerpt">
-		ClamAV is an open-source Antivirus tool available for Linux distributions. It is integrated with Mail servers to scan attachments received.…	</div>
-
-	<div class="ct-ghost"></div>
-				<div class="entry-meta" data-label data-type="simple">
-		
-
-			<ul >
-				
-			
-			
-			
-			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-label">In </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/" rel="tag">Linux</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/linux-quick-fix/" rel="tag">Quick Fix</a></span></li>					</ul>
-				</div>
-		
-		
-</article>
-
-<article
-	id="post-414" class="entry-card post-414 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"	>
-
-	<a class="ct-image-container boundless-image ct-lazy" href="https://techpiezo.com/linux/best-antivirus-tools-for-ubuntu-linux-distributions/" ><img width="1" height="1" class="attachment-medium_large size-medium_large" alt="Antivirus tools for Ubuntu-Linux" data-lazy="https://techpiezo.com/wp-content/uploads/2019/06/Antivirus-tools-for-Ubuntu-Linux.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/06/Antivirus-tools-for-Ubuntu-Linux.svg" class="attachment-medium_large size-medium_large" alt="Antivirus tools for Ubuntu-Linux" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></a>
-	<h2 class="entry-title">
-		<a href="https://techpiezo.com/linux/best-antivirus-tools-for-ubuntu-linux-distributions/">
-			Antivirus tools for Ubuntu/Linux		</a>
-	</h2>
-
-	
-	<div class="entry-excerpt">
-		Whether you require an Antivirus or not entirely depends on what you are going to do with your Operating System.…	</div>
-
-	<div class="ct-ghost"></div>
-				<div class="entry-meta" data-label data-type="simple">
-		
-
-			<ul >
-				
-			
-			
-			
-			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-label">In </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/" rel="tag">Linux</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/linux-quick-fix/" rel="tag">Quick Fix</a></span></li>					</ul>
-				</div>
-		
-		
-</article>
-
-<article
-	id="post-411" class="entry-card post-411 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"	>
-
-	<a class="ct-image-container boundless-image ct-lazy" href="https://techpiezo.com/linux/is-ubuntu-relatively-secure-than-its-counterparts/" ><img width="1" height="1" class="attachment-medium_large size-medium_large" alt="Is Ubuntu/Linux relatively more Secure" data-lazy="https://techpiezo.com/wp-content/uploads/2019/06/Is-Ubuntu-Linux-more-secure.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/06/Is-Ubuntu-Linux-more-secure.svg" class="attachment-medium_large size-medium_large" alt="Is Ubuntu/Linux relatively more Secure" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></a>
-	<h2 class="entry-title">
-		<a href="https://techpiezo.com/linux/is-ubuntu-relatively-secure-than-its-counterparts/">
-			Is Ubuntu/Linux relatively more Secure		</a>
-	</h2>
-
-	
-	<div class="entry-excerpt">
-		Security is just an illusion. If you know what you are doing then perhaps you are safe. And, that is…	</div>
-
-	<div class="ct-ghost"></div>
-				<div class="entry-meta" data-label data-type="simple">
-		
-
-			<ul >
-				
-			
-			
-			
-			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-label">In </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/" rel="tag">Linux</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/linux-quick-fix/" rel="tag">Quick Fix</a></span></li>					</ul>
-				</div>
-		
-		
-</article>
-
-<article
-	id="post-406" class="entry-card post-406 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"	>
-
-	<a class="ct-image-container boundless-image ct-lazy" href="https://techpiezo.com/linux/antivirus-in-ubuntu-linux-distributions/" ><img width="1" height="1" class="attachment-medium_large size-medium_large" alt="Antivirus in Ubuntu/Linux Distributions" data-lazy="https://techpiezo.com/wp-content/uploads/2019/06/Antivirus-in-Ubuntu-Linux.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/06/Antivirus-in-Ubuntu-Linux.svg" class="attachment-medium_large size-medium_large" alt="Antivirus in Ubuntu/Linux Distributions" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></a>
-	<h2 class="entry-title">
-		<a href="https://techpiezo.com/linux/antivirus-in-ubuntu-linux-distributions/">
-			Antivirus in Ubuntu/Linux Distributions		</a>
-	</h2>
-
-	
-	<div class="entry-excerpt">
-		An Antivirus application is a program that detects and removes viruses. Thus, keeping our systems secure. With proliferation of threats…	</div>
-
-	<div class="ct-ghost"></div>
-				<div class="entry-meta" data-label data-type="simple">
-		
-
-			<ul >
-				
-			
-			
-			
-			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-label">In </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/" rel="tag">Linux</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/linux-quick-fix/" rel="tag">Quick Fix</a></span></li>					</ul>
-				</div>
-		
-		
-</article>
-
-<article
-	id="post-394" class="entry-card post-394 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"	>
-
-	<a class="ct-image-container boundless-image ct-lazy" href="https://techpiezo.com/linux/add-user-to-a-group-in-ubuntu-linux-mint/" ><img width="1" height="1" class="attachment-medium_large size-medium_large" alt="Add User to a Group in Ubuntu/Linux Mint" data-lazy="https://techpiezo.com/wp-content/uploads/2019/06/Add-User-to-a-Group-in-Ubuntu-Linux-Mint.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/06/Add-User-to-a-Group-in-Ubuntu-Linux-Mint.svg" class="attachment-medium_large size-medium_large" alt="Add User to a Group in Ubuntu/Linux Mint" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></a>
-	<h2 class="entry-title">
-		<a href="https://techpiezo.com/linux/add-user-to-a-group-in-ubuntu-linux-mint/">
-			Add user to a Group in Ubuntu/Linux Mint		</a>
-	</h2>
-
-	
-	<div class="entry-excerpt">
-		For someone who has ever been a system administrator knows how tough it is manage users individually. Sometimes, we need…	</div>
-
-	<div class="ct-ghost"></div>
-				<div class="entry-meta" data-label data-type="simple">
-		
-
-			<ul >
-				
-			
-			
-			
-			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-label">In </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/" rel="tag">Linux</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/linux-quick-fix/" rel="tag">Quick Fix</a></span></li>					</ul>
-				</div>
-		
-		
-</article>
-
-									</div>
-				
-		<div class="ct-pagination" role="navigation" data-type="simple" >
-			<nav><a class="prev page-numbers" href="https://techpiezo.com/page/7/"><svg width="10px" height="10px" viewBox="0 0 15 15"><path class="st0" d="M10.9,15c-0.2,0-0.4-0.1-0.6-0.2L3.6,8c-0.3-0.3-0.3-0.8,0-1.1l6.6-6.6c0.3-0.3,0.8-0.3,1.1,0c0.3,0.3,0.3,0.8,0,1.1L5.2,7.4l6.2,6.2c0.3,0.3,0.3,0.8,0,1.1C11.3,14.9,11.1,15,10.9,15z"/></svg></a>
-<a class='page-numbers' href='https://techpiezo.com/'>1</a>
-<span class="page-numbers dots">&hellip;</span>
-<span aria-current='page' class='page-numbers current'>8</span>
-<span class="page-numbers dots">&hellip;</span>
-<a class='page-numbers' href='https://techpiezo.com/page/11/'>11</a>
-<a class="next page-numbers" href="https://techpiezo.com/page/9/"><svg width="10px" height="10px" viewBox="0 0 15 15"><path class="st0" d="M4.1,15c0.2,0,0.4-0.1,0.6-0.2L11.4,8c0.3-0.3,0.3-0.8,0-1.1L4.8,0.2C4.5-0.1,4-0.1,3.7,0.2C3.4,0.5,3.4,1,3.7,1.3l6.1,6.1l-6.2,6.2c-0.3,0.3-0.3,0.8,0,1.1C3.7,14.9,3.9,15,4.1,15z"/></svg></a></nav>
-			
-		</div>		</section>
-
+															</div>
+						</li>
+									</ul>
 			</div>
-</section>
+		</div>
+
+		
 
 
 	</main>
@@ -1282,10 +1163,10 @@ code, kbd, samp, pre,
 
 			<div class="ct-bag-content" >
 				
-				<ul id="primary-menu" class="mobile-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-home menu-item-70"><a href="https://techpiezo.com">Home</a></li>
-<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-41"><a href="https://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
+				<ul id="primary-menu" class="mobile-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-70"><a href="https://techpiezo.com">Home</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-41"><a href="https://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
 <ul class="sub-menu">
-	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-350"><a href="https://techpiezo.com/linux/linux-quick-fix/">Quick Fix</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-350"><a href="https://techpiezo.com/linux/linux-quick-fix/">Quick Fix</a></li>
 	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-349"><a href="https://techpiezo.com/linux/linux-recent/">What&#8217;s New</a></li>
 </ul>
 </li>

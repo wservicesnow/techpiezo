@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Load and Unload Linux Kernel Modules - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/linux/load-and-unload-linux-kernel-modules/" />
+		<title>Install VirtualBox Extension Pack in Ubuntu - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/linux/install-virtualbox-extension-pack-in-ubuntu/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -409,7 +409,7 @@ amp-carousel > amp-img > img {
 	right: 16px;
 }
 		/* Inline stylesheets */
-:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cdd8ca0{text-align:center}	</style>
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cc68ddc{color:#f00}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cdd8ca0{text-align:center}	</style>
 </head>
 
 <body class="">
@@ -426,43 +426,33 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Load and Unload Linux Kernel Modules</h1>
+		<h1 class="amp-wp-title">Install VirtualBox Extension Pack in Ubuntu</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-10-26T19:22:26+00:00">
-		1 week ago	</time>
+	<time datetime="2019-11-02T22:01:42+00:00">
+		45 mins ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">In this article, we would discuss how to load and unload <strong>Linux Kernel modules</strong>. But, before that we would discuss a bit about Linux Kernel Modules itself. A Linux Kernel <strong>acts as an interface</strong> between computer’s hardware and processes in Operating System. A Kernel can perform multiple operations – manage processes and memory efficiently, interpreter for devices etc. It wouldn’t be right for us to build large Kernel images, containing every possible functionality.</p>
-<p class="amp-wp-7d27179">Now, understand it with the help of an example. If certain drivers are not available in our Kernel image for the hardware we would want to connect. Under such a scenario, we have the option to load the relevant Kernel Module to make it work. Thus, helping us avoid the need to rebuild Kernel images. And, it also helps us in limiting the size of our Kernel image.</p>
-<p class="amp-wp-7d27179">Therefore, we have got two options – either to build Modules inside our Kernel image itself or load them later as and when required. Most of the Kernel modules could be loaded without having to reboot our system.</p>
-<p class="amp-wp-7d27179">Before moving ahead, we would like to clarify that you must take extreme care while performing below mentioned operations. Contact your System Administrator for assistance, in case you are not sure of what you are about to execute. Also, following operations would require you to have superuser privileges.</p>
-<h5 class="amp-wp-cdd8ca0">Load and Unload Linux Kernel Modules</h5>
-<p class="amp-wp-7d27179">Firstly, we would check for all the modules which have already been loaded in our system. Hence, open a terminal and issue the following –</p>
-<pre>lsmod</pre>
-<p class="amp-wp-7d27179">It provides us the list of loaded modules and their size by getting the information from <strong>/proc/modules</strong> file.</p>
-<p class="amp-wp-7d27179">Although there are two command-line tools – <strong>insmod</strong> (it inserts a module in Kernel) and <strong>rmmod</strong> (it removes a module from Kernel). But, we would choose to discuss <strong>modprobe</strong> command-line utility instead. It can handle module dependencies better.</p>
-<p class="amp-wp-7d27179">To get more information about a Kernel module use the following command –</p>
-<pre>modinfo &lt;module_name&gt;</pre>
-<p class="amp-wp-7d27179">For instance, if you would like to know more about <strong>zfs</strong> module –</p>
-<pre>modinfo zfs</pre>
-<p class="amp-wp-7d27179"><strong>To load a module</strong> –</p>
-<pre>sudo modprobe &lt;module_name&gt;</pre>
-<p class="amp-wp-7d27179">For instance, to load ZFS module –</p>
-<pre>sudo modprobe zfs</pre>
-<p class="amp-wp-7d27179">To check if your module has successfully been loaded in Kernel image –</p>
-<pre>lsmod | grep zfs</pre>
-<p class="amp-wp-7d27179"><strong>To unload a module</strong> –</p>
-<pre>sudo modprobe -r &lt;module_name&gt;</pre>
-<p class="amp-wp-7d27179">For instance, unload the same module – ZFS</p>
-<pre>sudo modprobe -r zfs</pre>
-<p class="amp-wp-7d27179">To check if your module has successfully been unloaded from Kernel image –</p>
-<pre>lsmod | grep zfs</pre>
-<p class="amp-wp-7d27179">This time around, it would return with a blank output.</p>
-<p><strong>In conclusion</strong>, we have discussed how to load and unload Linux Kernel modules. But, there is more to it. We will discuss more about Kernel modules in coming articles.</p>
+		<p class="amp-wp-7d27179">In this article, we would discuss how to <strong>install VirtualBox Extension Pack in Ubuntu</strong>. But, before that a bit about VirtualBox Extension Pack itself.</p>
+<p class="amp-wp-7d27179">VirtualBox Extension Pack provides us the extended functionality like support for USB devices, Remote Desktop Protocol, Host webcam passthrough, PCI Passthrough on Linux hosts and Intel PXE boot ROM among others. To install VirtualBox Extension Pack we need to first download the package from the official website. The version of VirtualBox Extension Pack must match with the version of VirtualBox installed.</p>
+<p class="amp-wp-7d27179">We have already discussed installation steps required for VirtualBox in Ubuntu 19.10 <span class="amp-wp-cc68ddc"><a href="https://techpiezo.com/linux/install-virtualbox-in-ubuntu-19-10/" class="amp-wp-cc68ddc">here</a></span>. And, for VirtualBox Guest Additions <span class="amp-wp-cc68ddc"><a href="https://techpiezo.com/linux/download-and-install-virtualbox-guest-additions-in-ubuntu/" class="amp-wp-cc68ddc">here</a></span>.</p>
+<p class="amp-wp-7d27179"><strong>Note</strong>: Following operations would require you to have superuser privileges. In case you don’t have one, then contact your System Administrator for assistance.</p>
+<h5 class="amp-wp-cdd8ca0">Install VirtualBox Extension Pack in Ubuntu</h5>
+<p class="amp-wp-7d27179">To download VirtualBox Extension Pack, visit the following link –</p>
+<pre>http://download.virtualbox.org/virtualbox/</pre>
+<p class="amp-wp-7d27179">For instance, if you have VirtualBox version 6.0.14 installed. Then, click on <strong>6.0.14</strong> and download the file – <strong>Oracle_VM_VirtualBox_Extension_Pack-6.0.14.vbox-extpack</strong>. We once again remind you of installing the version of VirtualBox Extension Pack which matches with the VirtualBox version installed.</p>
+<p class="amp-wp-7d27179">Now, open VirtualBox application from the main menu. And, click on <strong>File –&gt; Preferences</strong>. Then, click on <strong>Extensions</strong> and <strong>Adds new package</strong> symbol. Head to the path where you have saved the file – <strong>Oracle_VM_VirtualBox_Extension_Pack-6.0.14.vbox-extpack</strong>. And, install the package – it will ask you for the superusers’ password.</p>
+<p class="amp-wp-7d27179">Still, the installation part isn’t finished. We can enable USB devices through Virtual Machine’s <strong>Settings –&gt; USB –&gt; Add new USB filter</strong> option. But, if you will try to add a USB device inside the Virtual Machine, then it will throw an error –</p>
+<pre>&lt;no devices available&gt;</pre>
+<p class="amp-wp-7d27179">Therefore, we need to issue the following in terminal –</p>
+<pre>sudo adduser $USER vboxusers</pre>
+<p class="amp-wp-7d27179">where,</p>
+<p class="amp-wp-7d27179"><strong>adduser</strong> – adds the <strong>$USER</strong> to the Group <strong>vboxusers</strong>.</p>
+<p class="amp-wp-7d27179">And, then reboot or logout to reflect the necessary changes.</p>
+<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have discussed how to install VirtualBox Extension Pack in Ubuntu distribution.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
