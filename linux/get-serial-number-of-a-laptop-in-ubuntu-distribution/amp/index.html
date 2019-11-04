@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Install Synaptic Package Manager in Ubuntu - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/linux/install-synaptic-package-manager-in-ubuntu/" />
+		<title>Get Serial Number of a Laptop in Ubuntu distribution - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/linux/get-serial-number-of-a-laptop-in-ubuntu-distribution/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -426,45 +426,36 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Install Synaptic Package Manager in Ubuntu</h1>
+		<h1 class="amp-wp-title">Get Serial Number of a Laptop in Ubuntu distribution</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-10-28T05:42:22+00:00">
-		1 week ago	</time>
+	<time datetime="2019-11-04T18:42:54+00:00">
+		1 hour ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">In this article, we would discuss how to install <strong>Synaptic Package Manager</strong> in Ubuntu distribution. Synaptic Package Manager is the <strong>graphical front-end</strong> of Advanced Package Tool (apt). It is mainly designed for users who are not comfortable managing packages through command-line interface. With Synaptic, we can install, remove &amp; upgrade packages. Furthermore, we can search for the package available through repositories. Also, we can make relevant modifications in repositories itself.</p>
-<p class="amp-wp-7d27179">For Ubuntu 11.10 release and later, we would have to install Synaptic Package Manager manually. At the time of writing the article, Ubuntu distributions don’t get the Synaptic Package Manager installed by default.</p>
-<p class="amp-wp-7d27179"><strong>Note</strong>: Following operations would require you to have superuser privileges. In case you don’t have one, then contact System Administrator for assistance.</p>
-<h5 class="amp-wp-cdd8ca0">Install Synaptic Package Manager in Ubuntu</h5>
-<p class="amp-wp-7d27179">Synaptic Package Manager is available through standard Ubuntu repositories. Therefore, we will update the repositories first. So, open a terminal and issue the following –</p>
-<pre>sudo apt update</pre>
-<p class="amp-wp-7d27179">This is to ensure we get the latest version of package available through repositories.</p>
-<p class="amp-wp-7d27179">Then, to install Synaptic Pacakge Manager –</p>
-<pre>sudo apt install synaptic</pre>
-<p class="amp-wp-7d27179">Now, open Synaptic Package Manger through Main menu of your Operating System. It will authenticate you first – to ensure whether you have access to superuser privileges or not.</p>
-<h5 class="amp-wp-cdd8ca0">Synaptic Package Manger doesn’t launch/start</h5>
-<p class="amp-wp-7d27179">If, for some reason, nothing happens and the Synaptic Package Manager doesn’t respond. And, you are not even asked to authenticate. Then, it could be possible you may be missing <strong>PolicyKit</strong> package for your desktop environment.</p>
-<p class="amp-wp-7d27179">If you are using LXDE (Lightweight X11 Desktop Environment), the package you can install is lxpolkit.</p>
-<pre>sudo apt install lxpolkit</pre>
-<p class="amp-wp-7d27179">Similarly, for Mate Desktop Environment –</p>
-<pre>sudo apt install mate-polkit</pre>
-<p class="amp-wp-7d27179">In Cinnamon, XFCE and Unity Desktop Environment –</p>
-<pre>sudo apt install policykit-1-gnome</pre>
-<p class="amp-wp-7d27179">For LXQt –</p>
-<pre>sudo apt install lxqt-policykit</pre>
-<p class="amp-wp-7d27179"><strong>Additional Info</strong> –</p>
-<p class="amp-wp-7d27179">As already discussed, Synaptic Package Manager is the front-end for Advanced Package Tool (apt). Therefore, we don’t have to select package related dependencies individually. Algorithms defined for Advanced Package Tool (apt) choose dependencies for installation. Also, all the package files (<strong>.deb</strong>) which have been downloaded/installed are saved in directory –</p>
-<pre>/var/cache/apt/archives</pre>
-<p class="amp-wp-7d27179">So, in case you would want to take a backup –</p>
-<pre>cp /var/cache/apt/archives/*.deb /path/to/save/</pre>
+		<p class="amp-wp-7d27179">A <strong>serial number</strong> uniquely identifies your device. There are various ways to get a laptop’s serial number. If you flip your laptop then, you will see it on a sticker. Or, if your laptop has a removable battery then it is present on a sticker inside the battery compartment. In addition to, we can get it from the BIOS itself. In this article, we would focus on how to <strong>get Serial Number of a Laptop in Ubuntu</strong> distribution.</p>
+<p class="amp-wp-7d27179">Apart from uniquely identifying your device, a serial number acts as a deterrent against theft.</p>
+<p class="amp-wp-7d27179"><strong>Note</strong>: Following operations would require you to have superuser privileges. In case you don’t have one, then contact your System Administrator for assistance.</p>
+<h5 class="amp-wp-cdd8ca0">Get Serial Number of a Laptop in Ubuntu</h5>
+<p class="amp-wp-7d27179">We can get our laptop’s Serial Number through command-line utility – <strong>dmidecode</strong>. Now, open a terminal and issue the following –</p>
+<pre>sudo dmidecode -t 1 | grep -i serial</pre>
+<p class="amp-wp-7d27179">It would ask for the password and on successful authentication, displays the serial number.</p>
+<pre>Serial Number: XXXXXXXXXXX</pre>
 <p class="amp-wp-7d27179">where,</p>
-<p class="amp-wp-7d27179"><strong>cp</strong> is a command-line tool – to copy files/directories.</p>
-<p class="amp-wp-7d27179">In addition to, with <strong>Synaptic Package Manager’s search option –</strong> it becomes easy for us to find and install the relevant package. For instance, if we are looking for a mail client. Then, click on search (top-righ corner) – and enter the keyword “mail client” and look in “<strong>Description and Name</strong>“. This will provide us a list of all mail clients and related packages available through repositories. All we need to do now is, read the description of packages and install accordingly.</p>
-<p><amp-img class="size-full wp-image-3258 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/10/synaptic-search.png" alt="synaptic search" width="309" height="140" layout="intrinsic"></amp-img></p>
+<p class="amp-wp-7d27179"><strong>dmidecode</strong> – it decodes Desktop Management Interface (DMI) table and displays the output in a human-readable format. A Desktop Management Interface provides us a framework to manage our Laptop’s components.</p>
+<p class="amp-wp-7d27179"><strong>-t</strong> option is for DMI types;</p>
+<ol><li class="amp-wp-7d27179">for System;</li>
+<li class="amp-wp-7d27179">Baseboard;</li>
+<li class="amp-wp-7d27179">Chassis;</li>
+<li class="amp-wp-7d27179">Processor etc.</li>
+</ol><p>We will explain each of the available DMI types in a separate article in detail.</p>
+<p class="amp-wp-7d27179"><strong>| </strong> pipe is used to redirect output of one command to the input of other. If we only issue the command – <code>sudo dmidecode -t 1</code>, then it will print other System information also – <strong>Manufacturer, Product Name, UUID</strong> etc. Since, for the purpose of this article we limit ourselves to extract the serial number. Therefore, we use <strong>grep</strong> command to get the desired information.</p>
+<p class="amp-wp-7d27179"><strong>grep</strong> – it searches and prints the specific pattern in a line.</p>
+<p class="amp-wp-7d27179"><strong>-i</strong> option is used to ignore case.</p>
+<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have discussed how to get laptop’s serial number through <strong>dmidecode</strong> &amp; <strong>grep</strong> command-line utility.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
