@@ -6,11 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
-	<title>Install PIP in Ubuntu 19.10 - TechPiezo</title>
+	<title>Install Apache OpenOffice in Ubuntu 19.10 - TechPiezo</title>
 
 <!-- This site is optimized with the Yoast SEO plugin v11.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
-<meta name="description" content="With PIP we can install Python packages available on PyPI. To install PIP in Ubuntu 19.10, we need to install the package python-pip or python3-pip."/>
-<link rel="canonical" href="https://techpiezo.com/python/install-pip-in-ubuntu-19-10/" />
+<meta name="description" content="Apache OpenOffice is an open-source office suite. Here, we would discuss how to install Apache OpenOffice in Ubuntu 19.10 through dpkg command-line utility."/>
+<link rel="canonical" href="https://techpiezo.com/linux/install-apache-openoffice-in-ubuntu-19-10/" />
 <!-- / Yoast SEO plugin. -->
 
 <style id="ct-main-styles-inline-css" type="text/css">:root {
@@ -758,7 +758,7 @@ code, kbd, samp, pre,
 <link rel='stylesheet' id='ct-style-css'  href='https://techpiezo.com/wp-content/themes/blocksy/style.css' type='text/css' media='all' />
 <link rel='stylesheet' id='ct-main-styles-css'  href='https://techpiezo.com/wp-content/themes/blocksy/static/bundle/main.css' type='text/css' media='all' />
 
-<link rel="amphtml" href="https://techpiezo.com/python/install-pip-in-ubuntu-19-10/amp/"><link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" sizes="32x32" />
+<link rel="amphtml" href="https://techpiezo.com/linux/install-apache-openoffice-in-ubuntu-19-10/amp/"><link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" sizes="32x32" />
 <link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" sizes="192x192" />
 <link rel="apple-touch-icon-precomposed" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" />
 <meta name="msapplication-TileImage" content="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" />
@@ -788,7 +788,7 @@ code, kbd, samp, pre,
 
 </head>
 
-<body class="post-template-default single single-post postid-2765 single-format-standard wp-custom-logo ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
+<body class="post-template-default single single-post postid-3359 single-format-standard wp-custom-logo ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
 <div id="main-container">
 
 	<header
@@ -821,9 +821,9 @@ code, kbd, samp, pre,
 				>
 
 		<ul id="primary-menu" class="primary-menu menu"><li id="menu-item-70" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-70"><a href="https://techpiezo.com">Home</a></li>
-<li id="menu-item-41" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-41"><a href="https://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
+<li id="menu-item-41" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-41"><a href="https://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
 <ul class="sub-menu">
-	<li id="menu-item-350" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-350"><a href="https://techpiezo.com/linux/linux-quick-fix/">Quick Fix</a></li>
+	<li id="menu-item-350" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-350"><a href="https://techpiezo.com/linux/linux-quick-fix/">Quick Fix</a></li>
 	<li id="menu-item-349" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-349"><a href="https://techpiezo.com/linux/linux-recent/">What&#8217;s New</a></li>
 </ul>
 </li>
@@ -831,7 +831,7 @@ code, kbd, samp, pre,
 <ul class="sub-menu">
 	<li id="menu-item-1824" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1824"><a href="https://techpiezo.com/java/">Java</a></li>
 	<li id="menu-item-348" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-348"><a href="https://techpiezo.com/kotlin/">Kotlin</a></li>
-	<li id="menu-item-2743" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-2743"><a href="https://techpiezo.com/python/">Python</a></li>
+	<li id="menu-item-2743" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2743"><a href="https://techpiezo.com/python/">Python</a></li>
 	<li id="menu-item-3290" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3290"><a href="https://techpiezo.com/c/">C</a></li>
 </ul>
 </li>
@@ -914,13 +914,13 @@ code, kbd, samp, pre,
 			<section>
 				
 	<article
-		id="post-2765"
-		class="post-2765 post type-post status-publish format-standard has-post-thumbnail hentry category-python"		data-content="boxed"				>
+		id="post-3359"
+		class="post-3359 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"		data-content="boxed"				>
 
 		
 		<section class="hero-section" data-type="type-1" data-alignment="left">
 			<header class="entry-header">
-				<h1 class="page-title">Install PIP in Ubuntu 19.10</h1>
+				<h1 class="page-title">Install Apache OpenOffice in Ubuntu 19.10</h1>
 				<div class="entry-meta has-avatar" data-label data-type="simple">
 		
 
@@ -947,51 +947,45 @@ code, kbd, samp, pre,
 					<span
 						class="ct-meta-element"
 						>
-						Sep 29, 2019					</span>
+						Nov 5, 2019					</span>
 				</li>
 			
 			
-			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-label">In </span><span class="ct-meta-element"><a href="https://techpiezo.com/python/" rel="tag">Python</a></span></li>					</ul>
+			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-label">In </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/" rel="tag">Linux</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/linux-quick-fix/" rel="tag">Quick Fix</a></span></li>					</ul>
 				</div>
 		
 					</header>
 		</section>
 
-		<figure class="ct-featured-image ct-hidden-sm" ><div class="ct-image-container ct-lazy" ><img class="attachment-full size-full" alt="Install PIP in Ubuntu 19.04" data-lazy="https://techpiezo.com/wp-content/uploads/2019/09/Install-PIP-in-Ubuntu.svg" data-object-fit="~" /><noscript><img src="https://techpiezo.com/wp-content/uploads/2019/09/Install-PIP-in-Ubuntu.svg" class="attachment-full size-full" alt="Install PIP in Ubuntu 19.04" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
+		<figure class="ct-featured-image ct-hidden-sm" ><div class="ct-image-container ct-lazy" ><img class="attachment-full size-full" alt="Install Apache OpenOffice in Ubuntu 19.10" data-lazy="https://techpiezo.com/wp-content/uploads/2019/11/Install-Apache-OpenOffice-in-Ubuntu.svg" data-object-fit="~" /><noscript><img src="https://techpiezo.com/wp-content/uploads/2019/11/Install-Apache-OpenOffice-in-Ubuntu.svg" class="attachment-full size-full" alt="Install Apache OpenOffice in Ubuntu 19.10" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
 		
 		<div class="entry-content">
-			<p style="text-align: justify;">PIP is basically a Python package installer. Python packages are available either in standard library or they could be fetched from PyPI (Python Package Index). When we install Python through its one of binary installers, we do get PIP with it. For users, who prefer to use the version of Python already available in standard Ubuntu repository need to install PIP on their own. This article focuses on installation steps required to get PIP in Ubuntu 19.10.</p>
+			<p style="text-align: justify;">Apache OpenOffice is an open-source office suite. It was first released on May 08, 2012. At the time of writing the article, the latest stable release available is 4.1.7. In this article, we would discuss how to install <strong>Apache OpenOffice</strong> in Ubuntu 19.10 release.</p>
+<p style="text-align: justify;">Although, Apache OpenOffice can be installed without Java. But, we should install Java in our Ubuntu distribution to make the suite fully functional. To install OpenJDK JDK/JRE, follow the article <span style="color: #ff0000;"><a style="color: #ff0000;" href="https://techpiezo.com/java/install-openjdk-jre-jdk-in-ubuntu-19-04/">here</a></span>. Or, in case you would like to <span style="color: #ff0000;"><a style="color: #ff0000;" href="https://techpiezo.com/java/install-oracle-java-se-development-kit-12-in-ubuntu/">install</a><a style="color: #ff0000;" href="https://techpiezo.com/java/install-oracle-java-se-development-kit-12-in-ubuntu/"> Oracle Java SE Development Kit 12</a></span>.</p>
+<p style="text-align: justify;">Apache OpenOffice has following components &#8211; Writer, Calc, Impress, Draw, Math and Base. All of these are bundled in a single package, which can be downloaded from Apache OpenOffice&#8217;s website. Therefore, we need to first download the package from the official website of Apache OpenOffice. Thereafter, we would install the relevant packages through Debian Package Manager.</p>
 <p style="text-align: justify;"><strong>Note</strong>: Following operations would require you to have superuser privileges. In case you don&#8217;t have one, then contact your System Administrator for assistance.</p>
-<h5 style="text-align: center;">Install PIP in Ubuntu 19.10</h5>
-<p style="text-align: justify;">The installation process is pretty straight-forward. We need to first identify the version of PIP we would like to install as per our requirements. This would depend largely on the version of Python you would use. Therefore, to use <strong>PIP/PIP2</strong> install <strong>python-pip</strong> package. Otherwise, install <strong>python3-pip</strong> package for <strong>PIP3</strong>.</p>
-<p style="text-align: justify;">But, before that we need to update the repository.</p>
-<pre>sudo apt update</pre>
-<p style="text-align: justify;">To install PIP/PIP2 &#8211;</p>
-<pre>sudo apt install python-pip</pre>
-<p style="text-align: justify;">To install PIP3 &#8211;</p>
-<pre>sudo apt install python3-pip</pre>
-<p style="text-align: justify;">Confirm the version installed with &#8211;</p>
-<pre>pip -V</pre>
-<p style="text-align: justify;">or,</p>
-<pre>pip3 -V</pre>
-<p style="text-align: justify;">In Conclusion, we have discussed how to install PIP/PIP2/PIP3 in Ubuntu 19.10</p>
-<p style="text-align: justify;"><strong>Additional Info</strong> &#8211;</p>
-<p style="text-align: justify;">There are three ways to install Python packages &#8211;</p>
-<ol style="text-align: justify;">
-<li>Through Python package installer &#8211; PIP</li>
-<li>easy_install</li>
-<li>manually</li>
-</ol>
-<p style="text-align: justify;">Now, we will discuss a bit on how to install a Python package with the help of an example.</p>
-<p style="text-align: justify;">To install Python packages, we issue the command in terminal &#8211;</p>
-<pre>pip install package_name</pre>
-<p style="text-align: justify;">Consider installing <strong>beautifulsoup4</strong>, if you want to scrape data from web pages &#8211; HTML or XML. Therefore, to install the package for <strong>beautifulsoup4</strong> we need to issue the following in terminal &#8211;</p>
-<pre>pip install beautifulsoup4</pre>
-<p style="text-align: justify;">Furthermore, if you want to uninstall a package then run the following in terminal &#8211;</p>
-<pre>pip uninstall package_name</pre>
-<p style="text-align: justify;">for instance, if you want to remove the installed package <strong>beautifulsoup4</strong>. Then, issue the following in terminal &#8211;</p>
-<pre>pip uninstall beautifulsoup4</pre>
-<p style="text-align: justify;">We would discuss more about PIP/PIP2/PIP3 in coming articles.</p>
+<h5 style="text-align: center;">Install Apache OpenOffice 4.1.7 in Ubuntu 19.10 release</h5>
+<p style="text-align: justify;">First, download the package available on official website itself &#8211;</p>
+<pre>https://www.openoffice.org/download/index.html</pre>
+<p style="text-align: justify;">Choose,<strong> Linux 64-bit (x86-64) (DEB)</strong> from the dropdown menu, choose <strong>a language</strong> and version<strong> 4.1.7</strong> (which is the latest stable release at the time of writing the article). Then, click on button &#8211; <strong>Download full installation</strong>. The download size is approximately 141 MBs.</p>
+<p style="text-align: justify;">A file &#8211;<strong> Apache_OpenOffice_4.1.7_Linux_x86-64_install-deb_en-US.tar.gz</strong> gets downloaded.</p>
+<p style="text-align: justify;">Now, open a terminal and move to the path where file was downloaded.</p>
+<pre>cd /path/to/my/package</pre>
+<p style="text-align: justify;">and, extract the downloaded package through command-line utility &#8211; <strong>tar</strong>.</p>
+<pre>tar -xvf Apache_OpenOffice_4.1.7_Linux_x86-64_install-deb_en-US.tar.gz</pre>
+<p style="text-align: justify;">It will create a directory <strong>en-US</strong>. The directory name may be different for you. It will depend on the language you chose at the time of downloading the package. Then,</p>
+<pre>cd en-US/DEBS/</pre>
+<p style="text-align: justify;">We will install the <strong>.deb</strong> files available in <strong>DEBS/</strong> directory through <strong>dpkg</strong> (Debian Package Manager).</p>
+<pre>sudo dpkg -i *.deb</pre>
+<p style="text-align: justify;">where,</p>
+<p style="text-align: justify;"><strong>-i</strong> option installs the package files.</p>
+<p style="text-align: justify;">Lastly, we need to make menu entries for the installed packages. Again, use <strong>cd</strong> command to enter the relevant directory.</p>
+<pre>cd desktop-integration/</pre>
+<p style="text-align: justify;">and,</p>
+<pre>sudo dpkg -i *.deb</pre>
+<p style="text-align: justify;">Now, Apache OpenOffice is available from System&#8217;s main menu. Alternately, you can open it from the terminal also &#8211;</p>
+<pre>openoffice4</pre>
+<p style="text-align: justify;"><strong>In conclusion</strong>, we have discussed how to install Apache OpenOffice 4.1.7 in Ubuntu 19.10 release.</p>
 		</div>
 
 		
@@ -1042,40 +1036,40 @@ code, kbd, samp, pre,
 				<ul data-columns="3">
 											
 						<li>
-							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/python/install-python-3-8-0-in-ubuntu-19-10/"><img width="1" height="1" class="attachment-large size-large" alt="Install Python 3.8.0 in Ubuntu 19.10" data-lazy="https://techpiezo.com/wp-content/uploads/2019/10/Install-Python-3-8-0-in-Ubuntu-19-10.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/10/Install-Python-3-8-0-in-Ubuntu-19-10.svg" class="attachment-large size-large" alt="Install Python 3.8.0 in Ubuntu 19.10" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/get-serial-number-of-a-laptop-in-ubuntu-distribution/"><img width="1" height="1" class="attachment-large size-large" alt="Get Serial Number of a Laptop in Ubuntu distribution" data-lazy="https://techpiezo.com/wp-content/uploads/2019/11/Get-Laptops-Serial-Number-in-Ubuntu.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/11/Get-Laptops-Serial-Number-in-Ubuntu.svg" class="attachment-large size-large" alt="Get Serial Number of a Laptop in Ubuntu distribution" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
 							<h3 class="related-entry-title">
-								<a href="https://techpiezo.com/python/install-python-3-8-0-in-ubuntu-19-10/">Install Python 3.8.0 in Ubuntu 19.10</a>
+								<a href="https://techpiezo.com/linux/get-serial-number-of-a-laptop-in-ubuntu-distribution/">Get Serial Number of a Laptop in Ubuntu distribution</a>
 							</h3>
 
 							<div class="related-entry-meta">
 								<span>
-									Oct 28, 2019								</span>
+									Nov 4, 2019								</span>
 
 															</div>
 						</li>
 											
 						<li>
-							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/python/use-jupyter-notebook-for-writing-python-programs/"><img width="1" height="1" class="attachment-large size-large" alt="Use Jupyter Notebook for writing Python programs" data-lazy="https://techpiezo.com/wp-content/uploads/2019/10/Use-Jupyter-Notebook-for-writing-Python-programs.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/10/Use-Jupyter-Notebook-for-writing-Python-programs.svg" class="attachment-large size-large" alt="Use Jupyter Notebook for writing Python programs" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/install-virtualbox-extension-pack-in-ubuntu/"><img width="1" height="1" class="attachment-large size-large" alt="Install VirtualBox Extension Pack in Ubuntu" data-lazy="https://techpiezo.com/wp-content/uploads/2019/11/Install-VirtualBox-Extension-Pack-in-Ubuntu.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/11/Install-VirtualBox-Extension-Pack-in-Ubuntu.svg" class="attachment-large size-large" alt="Install VirtualBox Extension Pack in Ubuntu" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
 							<h3 class="related-entry-title">
-								<a href="https://techpiezo.com/python/use-jupyter-notebook-for-writing-python-programs/">Use Jupyter Notebook for writing Python programs</a>
+								<a href="https://techpiezo.com/linux/install-virtualbox-extension-pack-in-ubuntu/">Install VirtualBox Extension Pack in Ubuntu</a>
 							</h3>
 
 							<div class="related-entry-meta">
 								<span>
-									Oct 20, 2019								</span>
+									Nov 2, 2019								</span>
 
 															</div>
 						</li>
 											
 						<li>
-							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/python/install-and-setup-jupyter-notebook-for-python/"><img width="1" height="1" class="attachment-large size-large" alt="Install and Setup Jupyter Notebook for Python" data-lazy="https://techpiezo.com/wp-content/uploads/2019/10/Install-and-Setup-Jupyter-Notebook-for-Python.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/10/Install-and-Setup-Jupyter-Notebook-for-Python.svg" class="attachment-large size-large" alt="Install and Setup Jupyter Notebook for Python" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/c/compile-c-program-in-ubuntu/"><img width="1" height="1" class="attachment-large size-large" alt="Compile C Program in Ubuntu" data-lazy="https://techpiezo.com/wp-content/uploads/2019/11/Compile-C-Program-in-Ubuntu.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/11/Compile-C-Program-in-Ubuntu.svg" class="attachment-large size-large" alt="Compile C Program in Ubuntu" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
 							<h3 class="related-entry-title">
-								<a href="https://techpiezo.com/python/install-and-setup-jupyter-notebook-for-python/">Install and Setup Jupyter Notebook for Python in Ubuntu</a>
+								<a href="https://techpiezo.com/c/compile-c-program-in-ubuntu/">Compile C Program in Ubuntu</a>
 							</h3>
 
 							<div class="related-entry-meta">
 								<span>
-									Oct 19, 2019								</span>
+									Nov 1, 2019								</span>
 
 															</div>
 						</li>
@@ -1179,9 +1173,9 @@ code, kbd, samp, pre,
 			<div class="ct-bag-content" >
 				
 				<ul id="primary-menu" class="mobile-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-70"><a href="https://techpiezo.com">Home</a></li>
-<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-41"><a href="https://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-41"><a href="https://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
 <ul class="sub-menu">
-	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-350"><a href="https://techpiezo.com/linux/linux-quick-fix/">Quick Fix</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-350"><a href="https://techpiezo.com/linux/linux-quick-fix/">Quick Fix</a></li>
 	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-349"><a href="https://techpiezo.com/linux/linux-recent/">What&#8217;s New</a></li>
 </ul>
 </li>
@@ -1189,7 +1183,7 @@ code, kbd, samp, pre,
 <ul class="sub-menu">
 	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1824"><a href="https://techpiezo.com/java/">Java</a></li>
 	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-348"><a href="https://techpiezo.com/kotlin/">Kotlin</a></li>
-	<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-2743"><a href="https://techpiezo.com/python/">Python</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2743"><a href="https://techpiezo.com/python/">Python</a></li>
 	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3290"><a href="https://techpiezo.com/c/">C</a></li>
 </ul>
 </li>

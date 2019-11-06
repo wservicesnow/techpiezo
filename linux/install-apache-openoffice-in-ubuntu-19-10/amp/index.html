@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Extract files from zip archive in Ubuntu - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/linux/extract-files-from-zip-archive-in-ubuntu/" />
+		<title>Install Apache OpenOffice in Ubuntu 19.10 - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/linux/install-apache-openoffice-in-ubuntu-19-10/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -409,7 +409,7 @@ amp-carousel > amp-img > img {
 	right: 16px;
 }
 		/* Inline stylesheets */
-:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}	</style>
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cc68ddc{color:#f00}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cdd8ca0{text-align:center}	</style>
 </head>
 
 <body class="">
@@ -426,42 +426,42 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Extract files from zip archive in Ubuntu</h1>
+		<h1 class="amp-wp-title">Install Apache OpenOffice in Ubuntu 19.10</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-09-22T16:09:33+00:00">
-		2 months ago	</time>
+	<time datetime="2019-11-05T16:48:37+00:00">
+		24 hours ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">Zip is an archive file format. A zip file may consist of any number of compressed files and folders. It was developed by Phillip Walter Katz and the file format was first released in the year 1989. At the time of writing the article, the latest version available for the file format is 6.3.5. In this article, we would discuss how to extract files from zip archive in Ubuntu.</p>
-<p class="amp-wp-7d27179">To extract files from a zip archive, we would use the command-line utility <strong>unzip</strong>. Also, following few operations would require to have superuser privileges. In case you don’t have one then contact your System Administrator for assistance.</p>
-<h5 class="amp-wp-7d27179">Install unzip command-line utility in Ubuntu</h5>
-<p class="amp-wp-7d27179">Although the package comes installed with the default Ubuntu distribution. This is being mentioned just in case you don’t have the package installed. To install <strong>unzip</strong> command-line utility, run the following in terminal –</p>
-<pre>sudo apt install unzip</pre>
-<h5 class="amp-wp-7d27179">Extract files from zip archive</h5>
-<p class="amp-wp-7d27179">The extensions used by zip archive is <strong>.zip or .ZIP</strong>. Also, to identify whether a file is zip archive or not we can use command-line utility <strong>file</strong>. To do so, run the following in terminal –</p>
-<pre>file &lt;file-name.zip&gt;</pre>
-<p class="amp-wp-7d27179">The output should resemble-</p>
-<pre>&lt;file-name.zip&gt;: Zip archive data, at least v2.0 to extract</pre>
-<p class="amp-wp-7d27179">Also, we can list all files available in a zip archive. To list the files present in zip archive, run the following in terminal –</p>
-<pre>unzip -l &lt;file-name.zip&gt;</pre>
-<p class="amp-wp-7d27179">Thereafter, to extract a valid zip archive in the current directory. Run the following in terminal –</p>
-<pre>unzip &lt;file-name.zip&gt;</pre>
-<p class="amp-wp-7d27179">This would extract all the files present in zip archive. But, to extract a specific file from zip archive, first we would get the path of file through –</p>
-<pre>unzip -l &lt;file-name.zip&gt;</pre>
-<p class="amp-wp-7d27179">For instance, path of file to be extracted is <strong>path/to/file.png</strong>. Now, run the following in terminal –</p>
-<pre>unzip -j &lt;file-name.zip&gt; path/to/file.png</pre>
-<p class="amp-wp-7d27179">Furthermore, we could extract a zip archive to a specific location. <strong>-d option</strong> is to be used along with the location where our archive is to be extracted.</p>
-<pre>unzip &lt;file-name.zip&gt; -d /path/to/directory</pre>
-<p class="amp-wp-7d27179">For instance, we would want to extract <strong>firefox-71.0a1.en-US.win32.zip to Downloads</strong> directory. Then, run the following in terminal –</p>
-<pre>unzip firefox-71.0a1.en-US.win32.zip -d /home/&lt;user-name&gt;/Downloads</pre>
-<p class="amp-wp-7d27179">If we would like to hide the messages specifying what all files are being extracted in command prompt, then we can use -q option.</p>
-<pre>unzip -q &lt;file-name.zip&gt; -d /path/to/directory</pre>
-<p class="amp-wp-7d27179">By default, <strong>unzip</strong> utility would ask you what to do in case the extracted file already exists. You could choose any of following options accordingly – [<strong>y</strong>]es, [<strong>n</strong>]o, [<strong>A</strong>]ll, [<strong>N</strong>]one, [<strong>r</strong>]ename.</p>
-<p class="amp-wp-7d27179">In conclusion, we have discussed few of the options available to extract files from a zip archive.</p>
+		<p class="amp-wp-7d27179">Apache OpenOffice is an open-source office suite. It was first released on May 08, 2012. At the time of writing the article, the latest stable release available is 4.1.7. In this article, we would discuss how to install <strong>Apache OpenOffice</strong> in Ubuntu 19.10 release.</p>
+<p class="amp-wp-7d27179">Although, Apache OpenOffice can be installed without Java. But, we should install Java in our Ubuntu distribution to make the suite fully functional. To install OpenJDK JDK/JRE, follow the article <span class="amp-wp-cc68ddc"><a href="https://techpiezo.com/java/install-openjdk-jre-jdk-in-ubuntu-19-04/" class="amp-wp-cc68ddc">here</a></span>. Or, in case you would like to <span class="amp-wp-cc68ddc"><a href="https://techpiezo.com/java/install-oracle-java-se-development-kit-12-in-ubuntu/" class="amp-wp-cc68ddc">install</a><a href="https://techpiezo.com/java/install-oracle-java-se-development-kit-12-in-ubuntu/" class="amp-wp-cc68ddc"> Oracle Java SE Development Kit 12</a></span>.</p>
+<p class="amp-wp-7d27179">Apache OpenOffice has following components – Writer, Calc, Impress, Draw, Math and Base. All of these are bundled in a single package, which can be downloaded from Apache OpenOffice’s website. Therefore, we need to first download the package from the official website of Apache OpenOffice. Thereafter, we would install the relevant packages through Debian Package Manager.</p>
+<p class="amp-wp-7d27179"><strong>Note</strong>: Following operations would require you to have superuser privileges. In case you don’t have one, then contact your System Administrator for assistance.</p>
+<h5 class="amp-wp-cdd8ca0">Install Apache OpenOffice 4.1.7 in Ubuntu 19.10 release</h5>
+<p class="amp-wp-7d27179">First, download the package available on official website itself –</p>
+<pre>https://www.openoffice.org/download/index.html</pre>
+<p class="amp-wp-7d27179">Choose,<strong> Linux 64-bit (x86-64) (DEB)</strong> from the dropdown menu, choose <strong>a language</strong> and version<strong> 4.1.7</strong> (which is the latest stable release at the time of writing the article). Then, click on button – <strong>Download full installation</strong>. The download size is approximately 141 MBs.</p>
+<p class="amp-wp-7d27179">A file –<strong> Apache_OpenOffice_4.1.7_Linux_x86-64_install-deb_en-US.tar.gz</strong> gets downloaded.</p>
+<p class="amp-wp-7d27179">Now, open a terminal and move to the path where file was downloaded.</p>
+<pre>cd /path/to/my/package</pre>
+<p class="amp-wp-7d27179">and, extract the downloaded package through command-line utility – <strong>tar</strong>.</p>
+<pre>tar -xvf Apache_OpenOffice_4.1.7_Linux_x86-64_install-deb_en-US.tar.gz</pre>
+<p class="amp-wp-7d27179">It will create a directory <strong>en-US</strong>. The directory name may be different for you. It will depend on the language you chose at the time of downloading the package. Then,</p>
+<pre>cd en-US/DEBS/</pre>
+<p class="amp-wp-7d27179">We will install the <strong>.deb</strong> files available in <strong>DEBS/</strong> directory through <strong>dpkg</strong> (Debian Package Manager).</p>
+<pre>sudo dpkg -i *.deb</pre>
+<p class="amp-wp-7d27179">where,</p>
+<p class="amp-wp-7d27179"><strong>-i</strong> option installs the package files.</p>
+<p class="amp-wp-7d27179">Lastly, we need to make menu entries for the installed packages. Again, use <strong>cd</strong> command to enter the relevant directory.</p>
+<pre>cd desktop-integration/</pre>
+<p class="amp-wp-7d27179">and,</p>
+<pre>sudo dpkg -i *.deb</pre>
+<p class="amp-wp-7d27179">Now, Apache OpenOffice is available from System’s main menu. Alternately, you can open it from the terminal also –</p>
+<pre>openoffice4</pre>
+<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have discussed how to install Apache OpenOffice 4.1.7 in Ubuntu 19.10 release.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
