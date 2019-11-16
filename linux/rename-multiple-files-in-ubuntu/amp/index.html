@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Install VirtualBox Extension Pack in Ubuntu - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/linux/install-virtualbox-extension-pack-in-ubuntu/" />
+		<title>Rename multiple Files in Ubuntu - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/linux/rename-multiple-files-in-ubuntu/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -409,7 +409,7 @@ amp-carousel > amp-img > img {
 	right: 16px;
 }
 		/* Inline stylesheets */
-:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cc68ddc{color:#f00}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cdd8ca0{text-align:center}	</style>
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cdd8ca0{text-align:center}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-57b7fc0{color:#008000}	</style>
 </head>
 
 <body class="">
@@ -426,33 +426,155 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Install VirtualBox Extension Pack in Ubuntu</h1>
+		<h1 class="amp-wp-title">Rename multiple Files in Ubuntu</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-11-02T22:01:42+00:00">
-		2 weeks ago	</time>
+	<time datetime="2019-11-14T18:00:41+00:00">
+		2 days ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">In this article, we would discuss how to <strong>install VirtualBox Extension Pack in Ubuntu</strong>. But, before that a bit about VirtualBox Extension Pack itself.</p>
-<p class="amp-wp-7d27179">VirtualBox Extension Pack provides us the extended functionality like support for USB devices, Remote Desktop Protocol, Host webcam passthrough, PCI Passthrough on Linux hosts and Intel PXE boot ROM among others. To install VirtualBox Extension Pack we need to first download the package from the official website. The version of VirtualBox Extension Pack must match with the version of VirtualBox installed.</p>
-<p class="amp-wp-7d27179">We have already discussed installation steps required for VirtualBox in Ubuntu 19.10 <span class="amp-wp-cc68ddc"><a href="https://techpiezo.com/linux/install-virtualbox-in-ubuntu-19-10/" class="amp-wp-cc68ddc">here</a></span>. And, for VirtualBox Guest Additions <span class="amp-wp-cc68ddc"><a href="https://techpiezo.com/linux/download-and-install-virtualbox-guest-additions-in-ubuntu/" class="amp-wp-cc68ddc">here</a></span>.</p>
+		<p class="amp-wp-7d27179">In this article, we would focus on how to <strong>rename multiple files </strong>in Ubuntu. Prior to that, its pretty straightforward if you intend to rename a file in Ubuntu. It can be done through both graphical user interface as well as command-line interface. For instance,</p>
+<p class="amp-wp-7d27179">Lets say we have a file –<strong> 1.html</strong>. And, we want to rename it to<strong> 2.html</strong>.</p>
+<p class="amp-wp-7d27179"><strong>Through graphical user interface</strong> (GUI), <strong>either</strong> select the file and Press F2 <strong>or</strong> right-click on the file and click Rename. Thereafter, a dialog box would appear and type 2.html.</p>
+<p class="amp-wp-7d27179"><strong>Using command-line interface</strong> (CLI), open a terminal and issue the following –</p>
+<pre>mv 1.html 2.html</pre>
+<p class="amp-wp-7d27179">But, things get a bit different when it comes to renaming multiple files or directories, which will be discussed next.</p>
+<p class="amp-wp-7d27179">We have divided below article in two separate sections –</p>
+<ol><li class="amp-wp-7d27179"><strong>mv</strong> command-line utility,</li>
+<li class="amp-wp-7d27179"><strong>rename</strong> command-line utility.</li>
+</ol><p class="amp-wp-7d27179"><strong>Note:</strong> We advise you to take a backup before making any changes. Also, certain operations mentioned below would require you to have superuser privileges. In case you don’t have one, then contact your System Administrator for assistance.</p>
+<h5 class="amp-wp-cdd8ca0">Rename multiple Files through mv command-line utility</h5>
+<p class="amp-wp-7d27179">First, we will discuss getting things done through <strong>mv</strong> command-line utility with relevant examples.</p>
+<p class="amp-wp-7d27179">We will utilize <strong>for loop</strong> in bash &amp; <strong>mv</strong> command.</p>
+<h5 class="amp-wp-7d27179"><span class="amp-wp-57b7fc0">I. Change file name –</span></h5>
+<p class="amp-wp-7d27179">Input files –</p>
+<pre>ABC.txt
+XYZ.txt
+QWE.txt
+RTY.txt</pre>
+<p class="amp-wp-7d27179">So, open the directory where files are saved in terminal and issue the following –</p>
+<pre>i=1;
+for f in *.txt;
+do
+    echo "$f --&gt; $i.txt";
+    mv $f $i.txt;
+    i=$(($i+1));
+done</pre>
+<p class="amp-wp-7d27179">All our <strong>files will be renamed</strong> to –</p>
+<pre>ABC.txt --&gt; 1.txt
+QWE.txt --&gt; 2.txt
+RTY.txt --&gt; 3.txt
+XYZ.txt --&gt; 4.txt</pre>
+<h5 class="amp-wp-7d27179"><span class="amp-wp-57b7fc0">II. Also, in case we want to <strong>make changes to file extensions</strong>. Then,</span></h5>
+<p class="amp-wp-7d27179">For instance, if you would want to change file extensions from <strong>html to php</strong> –</p>
+<p class="amp-wp-7d27179">Input files –</p>
+<pre>ABC.html
+XYZ.html
+QWE.html
+RTY.html</pre>
+<p class="amp-wp-7d27179">So, issue the following in terminal –</p>
+<pre>i=1;
+for f in *.html;
+do
+    echo "$f --&gt; ${f%.html}.php";
+    mv "$f" "${f%.html}.php";
+    i=$(($i+1));
+done</pre>
+<p class="amp-wp-7d27179">This <strong>changes file extensions – html to php</strong> –</p>
+<pre>ABC.html --&gt; ABC.php
+QWE.html --&gt; QWE.php
+RTY.html --&gt; RTY.php
+XYZ.html --&gt; XYZ.php</pre>
+<p class="amp-wp-7d27179"><strong>Word of caution</strong> – although its easy to change file extensions this way. But, this doesn’t mean we have changed the format of the related files. For instance, you can’t convert a spreadsheet to document merely by changing the file extension.</p>
+<h5 class="amp-wp-7d27179"><span class="amp-wp-57b7fc0">III. Similarly, if we want to prefix a word for each of the filenames then –</span></h5>
+<p class="amp-wp-7d27179">Prefix – <strong>file</strong>. Input files –</p>
+<pre>ABC.php
+QWE.php
+RTY.php
+XYZ.php</pre>
+<p class="amp-wp-7d27179">So, open the terminal and issue the following –</p>
+<pre>i=1;
+for f in *.php;
+do
+    echo "$f --&gt; file$f";
+    mv $f file$f;
+    i=$(($i+1));
+done</pre>
+<p class="amp-wp-7d27179">This would get us –</p>
+<pre>ABC.php --&gt; fileABC.php
+QWE.php --&gt; fileQWE.php
+RTY.php --&gt; fileRTY.php
+XYZ.php --&gt; fileXYZ.php</pre>
+<h5 class="amp-wp-cdd8ca0">Rename multiple Files through rename command-line utility</h5>
+<p class="amp-wp-7d27179"><strong>rename</strong> command-line utility isn’t installed by default in Ubuntu distribution. Therefore, we would have install it first.</p>
 <p class="amp-wp-7d27179"><strong>Note</strong>: Following operations would require you to have superuser privileges. In case you don’t have one, then contact your System Administrator for assistance.</p>
-<h5 class="amp-wp-cdd8ca0">Install VirtualBox Extension Pack in Ubuntu</h5>
-<p class="amp-wp-7d27179">To download VirtualBox Extension Pack, visit the following link –</p>
-<pre>http://download.virtualbox.org/virtualbox/</pre>
-<p class="amp-wp-7d27179">For instance, if you have VirtualBox version 6.0.14 installed. Then, click on <strong>6.0.14</strong> and download the file – <strong>Oracle_VM_VirtualBox_Extension_Pack-6.0.14.vbox-extpack</strong>. We once again remind you of installing the version of VirtualBox Extension Pack which matches with the VirtualBox version installed.</p>
-<p class="amp-wp-7d27179">Now, open VirtualBox application from the main menu. And, click on <strong>File –&gt; Preferences</strong>. Then, click on <strong>Extensions</strong> and <strong>Adds new package</strong> symbol. Head to the path where you have saved the file – <strong>Oracle_VM_VirtualBox_Extension_Pack-6.0.14.vbox-extpack</strong>. And, install the package – it will ask you for the superusers’ password.</p>
-<p class="amp-wp-7d27179">Still, the installation part isn’t finished. We can enable USB devices through Virtual Machine’s <strong>Settings –&gt; USB –&gt; Add new USB filter</strong> option. But, if you will try to add a USB device inside the Virtual Machine, then it will throw an error –</p>
-<pre>&lt;no devices available&gt;</pre>
-<p class="amp-wp-7d27179">Therefore, we need to issue the following in terminal –</p>
-<pre>sudo adduser $USER vboxusers</pre>
+<p class="amp-wp-7d27179">Then, open a terminal and issue the following –</p>
+<pre>sudo apt update</pre>
+<p class="amp-wp-7d27179">This is being done to update Ubuntu repositories to make the latest version of the package available. Then,</p>
+<pre>sudo apt install rename</pre>
+<p class="amp-wp-7d27179">It installs the relevant package and related dependencies (if any).</p>
+<p class="amp-wp-7d27179">Now, lets say we <strong>have a file 1.html and we would want to rename it to ABC.html</strong>. Then,</p>
+<pre>rename 's/1/ABC/' 1.html</pre>
+<p class="amp-wp-7d27179">Similarly, to rename <strong>1.html to ABC.php</strong> –</p>
+<pre>rename 's/1\.html/ABC\.php/' 1.html</pre>
+<p class="amp-wp-7d27179">To <strong>convert uppercase to lower or vice versa</strong> –</p>
+<pre>rename 'y/A-Z/a-z/' ABC.php
+
+rename 'y/a-z/A-Z/' abc.php</pre>
+<p class="amp-wp-7d27179">But, when it comes to <strong>multiple files</strong> –</p>
+<pre>ABC.html
+XYZ.html
+IOP.html
+TYU.html</pre>
+<h5 class="amp-wp-7d27179"><span class="amp-wp-57b7fc0">I. To change file extension from .html to .php –</span></h5>
+<pre>rename 's/\.html$/\.php/' *.html</pre>
 <p class="amp-wp-7d27179">where,</p>
-<p class="amp-wp-7d27179"><strong>adduser</strong> – adds the <strong>$USER</strong> to the Group <strong>vboxusers</strong>.</p>
-<p class="amp-wp-7d27179">And, then reboot or logout to reflect the necessary changes.</p>
-<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have discussed how to install VirtualBox Extension Pack in Ubuntu distribution.</p>
+<p class="amp-wp-7d27179"><strong>$</strong> – only make changes to a file which ends with .html extension.</p>
+<h5 class="amp-wp-7d27179"><span class="amp-wp-57b7fc0">II. To convert uppercase to lowercase or vice versa –</span></h5>
+<pre>rename 'y/A-Z/a-z/' *.html</pre>
+<p class="amp-wp-7d27179">or,</p>
+<pre>rename 'y/a-z/A-Z/' *.html</pre>
+<h5 class="amp-wp-7d27179"><span class="amp-wp-57b7fc0">III. To rename file names</span></h5>
+<pre>ABC.html
+XYZ.html
+IOP.html
+TYU.html</pre>
+<p class="amp-wp-7d27179">Issue the following –</p>
+<pre>i=1;
+for f in *.html;
+do
+    echo "$f --&gt; $i.html";
+    rename "s/$f/$i.html/g" $f
+    i=$(($i+1));
+done</pre>
+<p class="amp-wp-7d27179">This would result in –</p>
+<pre>ABC.html --&gt; 1.html
+XYZ.html --&gt; 2.html
+IOP.html --&gt; 3.html
+TYU.html --&gt; 4.html</pre>
+<h5 class="amp-wp-7d27179"><span class="amp-wp-57b7fc0">IV. Add a prefix to multiple file names –</span></h5>
+<p class="amp-wp-7d27179">Input files –</p>
+<pre>ABC.html
+XYZ.html
+IOP.html
+TYU.html</pre>
+<p class="amp-wp-7d27179">To add a prefix – <strong>file</strong></p>
+<pre>i=1;
+for f in *.html;
+do
+    echo "$f --&gt; file$f";
+    rename "s/$f/file$f/g" $f
+    i=$(($i+1));
+done</pre>
+<p class="amp-wp-7d27179">Output –</p>
+<pre>ABC.html --&gt; fileABC.html
+XYZ.html --&gt; fileXYZ.html
+IOP.html --&gt; fileIOP.html
+TYU.html --&gt; fileTYU.html</pre>
+<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have discussed how to rename multiple files in Ubuntu through <strong>mv</strong> and <strong>rename</strong> command-line utility.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
