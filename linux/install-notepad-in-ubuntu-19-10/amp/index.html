@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>wget - force ipv4/ipv6 connection - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/linux/wget-force-ipv4-ipv6-connection/" />
+		<title>Install Notepad++ in Ubuntu 19.10 - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/linux/install-notepad-in-ubuntu-19-10/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -426,38 +426,45 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">wget &#8211; force ipv4/ipv6 connection</h1>
+		<h1 class="amp-wp-title">Install Notepad++ in Ubuntu 19.10</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-11-16T16:21:57+00:00">
-		1 day ago	</time>
+	<time datetime="2019-11-17T13:00:57+00:00">
+		4 hours ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">In this article, we would discuss how to <strong>force ipv4/ipv6 connection for wget</strong>. Wget is command-line network utility which is used to retrieve/download files from web. It supports recursive downloads. It was first released in January 1996. And, at the time of writing the article, the latest stable release for wget is 1.20.3.</p>
-<p class="amp-wp-7d27179">With wget, we can retrieve files through following protocols –</p>
-<ol class="amp-wp-7d27179"><li>HTTPS</li>
-<li>HTTP</li>
-<li>FTP</li>
-</ol><p class="amp-wp-7d27179">In addition to, we can retrieve content through HTTP proxies also.</p>
-<h5 class="amp-wp-cdd8ca0">wget – force ipv4/ipv6 connection</h5>
-<p class="amp-wp-7d27179">There could be numerous reasons which would make us switch between ipv4 and ipv6 connections for wget downloads. When you face such a scenario, wherein you have to choose either of them. Else, it will leave you stuck. Then, issue following options with wget.</p>
-<p class="amp-wp-7d27179">So, if you choose to go ahead with ipv4 then use <code>--inet4-only</code> or <code>-4</code> option with wget. This forces wget to connect to ipv4 addresses. Only A records (for ipv4) are used in DNS, thus ignoring AAAA records. Thereby, it refuses to connect to ipv6 addresses.</p>
-<pre>wget <strong>-4</strong> https://&lt;domain-name&gt;/&lt;file-name&gt;</pre>
-<p class="amp-wp-7d27179">or,</p>
-<pre>wget <strong>--inet4-only</strong> https://&lt;domain-name&gt;/&lt;file-name&gt;</pre>
-<p class="amp-wp-7d27179">Similarly, use following options to connect wget to ipv6 addresses <code>--inet6-only</code> or <code>-6</code> . This makes wget to use AAAA records in DNS thereby ignoring A records, which are mainly used to map ipv4 domain name.</p>
-<pre>wget <strong>-6</strong> https://&lt;domain-name&gt;/&lt;file-name&gt;</pre>
-<p class="amp-wp-7d27179">or,</p>
-<pre>wget <strong>--inet6-only</strong> https://&lt;domain-name&gt;/&lt;file-name&gt;</pre>
-<p class="amp-wp-7d27179">It is worth mentioning here that, both options shouldn’t be used at the same time.</p>
-<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have discussed how to force wget to connect to ipv4/ipv6 addresses.</p>
-<p class="amp-wp-7d27179"><strong>Additional Info –</strong></p>
-<p class="amp-wp-7d27179">By default, wget connects as per configuration specified in host’s DNS record. But, what if host’s DNS record supports both ipv4/ipv6 connections. Then, how wget will prioritize between the two connections.</p>
-<p class="amp-wp-7d27179">Under such a scenario, unless we specify which one to prefer – wget will always connect as per the address order returned by the DNS.</p>
-<p class="amp-wp-7d27179">We can make wget to prefer either of the two connections i.e. ipv4 or ipv6 through option <code>--prefer-family=none/IPv4/IPv6</code>. This is only useful in cases where configuration in host’s DNS record supports both ipv4 and ipv6 connections.</p>
+		<p class="amp-wp-7d27179"><strong>Notepad++</strong> is a free source code editor, which is available under license GPLv2. It was first released on November 24, 2003. Moreover, at the time of writing the article the latest stable release is 7.8.1. In this article, we would discuss how to install Notepad++ in Ubuntu 19.10.</p>
+<p class="amp-wp-7d27179">There are two ways through which we could install Notepad++</p>
+<ol class="amp-wp-7d27179"><li>wine,</li>
+<li>snap.</li>
+</ol><p class="amp-wp-7d27179"><strong>Note</strong>: Following operations would require you to have superuser privileges. In case you don’t have one, then contact System Administrator for assistance.</p>
+<h5 class="amp-wp-cdd8ca0">I. Install Notepad++ in Ubuntu 19.10 through wine</h5>
+<p class="amp-wp-7d27179">Wine package is already available in standard Ubuntu repository. Therefore, we need to update the repository first to make the latest version of the package available. Open a terminal and issue the following –</p>
+<pre>sudo apt update</pre>
+<p class="amp-wp-7d27179">Then, to install Wine –</p>
+<pre>sudo apt install wine64</pre>
+<p class="amp-wp-7d27179">To verify the version of wine package installed.</p>
+<pre>wine --version</pre>
+<p class="amp-wp-7d27179">Next, we will download the relevant package from the official website –</p>
+<pre>https://notepad-plus-plus.org/downloads/</pre>
+<p class="amp-wp-7d27179">Click on the latest stable release. As already discussed, the latest stable release at the time of writing the article is <strong>7.8.1</strong>. Then, download the installer package (32-bit or 64-bit) – <strong>npp.7.8.1.Installer.x64.exe</strong>. And, move to the directory where you downloaded the file.</p>
+<pre>cd /path/to/package/</pre>
+<p class="amp-wp-7d27179">and, issue the following in terminal –</p>
+<pre>wine npp.7.8.1.Installer.x64.exe</pre>
+<p class="amp-wp-7d27179">It will ask you the setup language. Follow on-screen instructions to complete the installation process. Notepad++ shortcut would now be available in your System’s main menu.</p>
+<h5 class="amp-wp-cdd8ca0">II. Install Notepad++ in Ubuntu 19.10 through snap</h5>
+<p class="amp-wp-7d27179">Alternately, we can install Notepad++ through snap also. Although, snap package is installed in Ubuntu distribution by default. But, if for some reason its not there. Then, open a terminal and issue the following –</p>
+<pre>sudo apt update</pre>
+<p class="amp-wp-7d27179">This will make the latest version of the package available in Ubuntu repositories. To install snap package –</p>
+<pre>sudo apt install snapd</pre>
+<p class="amp-wp-7d27179">Now, to install Notepad++</p>
+<pre>sudo snap install notepad-plus-plus</pre>
+<p class="amp-wp-7d27179">Once the package gets installed. Issue the following in terminal to launch the application –</p>
+<pre>notepad-plus-plus</pre>
+<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have discussed how to install Notepad++ in Ubuntu 19.10 release.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
