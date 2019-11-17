@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Copy hidden files and folders in Ubuntu - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/linux/copy-hidden-files-and-folders-in-ubuntu/" />
+		<title>Install Blender in Ubuntu 19.10 - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/linux/install-blender-in-ubuntu-19-10/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -426,98 +426,50 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Copy hidden files and folders in Ubuntu</h1>
+		<h1 class="amp-wp-title">Install Blender in Ubuntu 19.10</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-11-12T17:31:45+00:00">
-		5 days ago	</time>
+	<time datetime="2019-11-16T20:16:28+00:00">
+		11 hours ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">We can copy hidden files and folders in Ubuntu distribution through <strong>cp</strong> command-line utility. In addition to, other <strong>cp</strong> command-line utility options would also be discussed. It is worth mentioning here that, cp command only copies files (not folders) by default.</p>
-<p class="amp-wp-7d27179">Furthermore, we would explain different combinations with the help of examples. Lets say we have source directory <strong>Source_DIR</strong> and Destination directory as <strong>Dest_DIR</strong>. Destination directory contains a random directory and file. Whereas, source directory contains a hidden file and directory. It also contains a normal file and directory. Observe, hidden file or directory names begin with <strong>. (a dot)</strong> sign.</p>
-<pre>.
-├── <strong>Dest_DIR</strong>
--     ├── Random_DIR
--     └── Random_File
-└── <strong>Source_DIR</strong>
--     ├── Directory_1
--     ├── File_1
--     ├── .Hidden_DIR
--     └── .Hidden_file</pre>
-<h5 class="amp-wp-cdd8ca0">I. To copy all the contents (hidden or otherwise) of a directory to other directory</h5>
-<pre>cp -r /path/to/Source_DIR/. /path/to/Dest_DIR/</pre>
-<p class="amp-wp-7d27179">This would copy all the contents inside Source_DIR to Dest_DIR and get us the outcome –</p>
-<pre>.
-├── Dest_DIR
--     ├── Directory_1
--     ├── File_1
--     ├── .Hidden_DIR
--     ├── .Hidden_file
--     ├── <strong>Random_DIR</strong>
--     └── <strong>Random_File</strong>
-└── Source_DIR
--     ├── <strong>Directory_1</strong>
--     ├── <strong>File_1</strong>
--     ├── <strong>.Hidden_DIR</strong>
--     └── <strong>.Hidden_file</strong></pre>
-<p class="amp-wp-7d27179">where,</p>
-<p class="amp-wp-7d27179"><strong>-r</strong> is used to copy directories recursively.</p>
-<h5 class="amp-wp-cdd8ca0">II. To copy Source directory inside Destination directory</h5>
-<pre>cp -r /path/to/Source_DIR/ /path/to/Dest_DIR/</pre>
-<p class="amp-wp-7d27179">This would copy Source_DIR and its contents inside Dest_DIR.</p>
-<pre>.
-├── Dest_DIR
--     ├── <strong>Random_DIR</strong>
--     ├── <strong>Random_File</strong>
--     └── Source_DIR
--          ├── Directory_1
--          ├── File_1
--          ├── .Hidden_DIR
--          └── .Hidden_file
-└── Source_DIR
--     ├── <strong>Directory_1</strong>
--     ├── <strong>File_1</strong>
--     ├── <strong>.Hidden_DIR</strong>
--     └── <strong>.Hidden_file</strong></pre>
-<h5 class="amp-wp-cdd8ca0">III. To copy without creating Source directory inside Destination directory</h5>
-<p class="amp-wp-7d27179">In II, we copied entire Source directory to Destination directory. But, in case we don’t want Source_DIR to be created inside Dest_DIR. Then, issue the following in terminal –</p>
-<pre>cp -rT /path/to/Source_DIR/ /path/to/Dest_DIR/</pre>
-<p class="amp-wp-7d27179">where,</p>
-<p class="amp-wp-7d27179"><strong>-T</strong> is for no target directory.</p>
-<pre>.
-├── Dest_DIR
--     ├── Directory_1
--     ├── File_1
--     ├── .Hidden_DIR
--     ├── .Hidden_file
--     ├── <strong>Random_DIR</strong>
--     └── <strong>Random_File</strong>
-└── Source_DIR
--     ├── <strong>Directory_1</strong>
--     ├── <strong>File_1</strong>
--     ├── <strong>.Hidden_DIR</strong>
--     └── <strong>.Hidden_file</strong></pre>
-<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have discussed how to copy hidden files and folders in Ubuntu distribution with the help of an example.</p>
-<p class="amp-wp-7d27179"><strong>Additional Info</strong> –</p>
-<p class="amp-wp-7d27179">We have used the command-line utility <strong>tree</strong> to get the contents of directories. With tree, we don’t have to get into each of directories to check for the relevant changes made. Since, the package isn’t installed by default for Ubuntu distribution. Therefore –</p>
-<p class="amp-wp-7d27179"><strong>Note</strong>: Following operations would require you to have superuser privileges. In case you don’t have one, then contact your System Administrator for assistance.</p>
-<p class="amp-wp-7d27179">To install tree command-line utility, issue the following in terminal –</p>
-<pre>sudo apt update
-sudo apt install tree</pre>
-<p class="amp-wp-7d27179">Now, to check for a specific directory –</p>
-<pre>tree /path/to/list/</pre>
-<p class="amp-wp-7d27179">For instance,</p>
-<pre>tree /home/</pre>
-<p class="amp-wp-7d27179">By default, tree command-line utility doesn’t list hidden files or directories. Therefore, to list even those hidden files/directories –</p>
-<pre>tree -a /path/to/list</pre>
-<p class="amp-wp-7d27179">where,</p>
-<p class="amp-wp-7d27179"><strong>-a</strong> to print all files/directories.</p>
-<p class="amp-wp-7d27179">For instance,</p>
-<pre>tree -a /home/</pre>
-<p class="amp-wp-7d27179">We would discuss more about <strong>tree</strong> in subsequent articles.</p>
+		<p class="amp-wp-7d27179"><strong>Blender</strong> is free and open-source 3D software, which is being offered under GPL license. Furthermore, you can access the package from Windows, macOS, Linux and Steam. It was first released on January 02, 1998. And at the time of writing the article, the latest stable release is 2.80. In this article, we would focus on how to install Blender in Ubuntu 19.10 release.</p>
+<p class="amp-wp-7d27179">We can install the package through two methods –</p>
+<ol class="amp-wp-7d27179"><li>Ubuntu repository,</li>
+<li>Package available on official website.</li>
+</ol><p class="amp-wp-7d27179"><strong>Note</strong>: Following operations would require you to have superuser privileges. In case you don’t have one, then contact your System Administrator for assistance.</p>
+<h5 class="amp-wp-cdd8ca0">I. Install Blender through Ubuntu repository</h5>
+<p class="amp-wp-7d27179">Blender package is already available through standard Ubuntu repository. Therefore, we need to update the Ubuntu repository first. So, open a terminal and issue the following –</p>
+<pre>sudo apt update</pre>
+<p class="amp-wp-7d27179">It is issued to make the latest version of package available. Next, we need to install the package.</p>
+<pre>sudo apt install blender</pre>
+<p class="amp-wp-7d27179">This installs the package and related dependencies (if any). Now, access the package through your System’s main menu. Alternately, open a terminal and run –</p>
+<pre>blender</pre>
+<h5 class="amp-wp-cdd8ca0">II. Install Blender through package available on official website</h5>
+<p class="amp-wp-7d27179">Even though the package is already available standard Ubuntu repository. We can still download and install the package, which is available from the official website itself. Hence, visit the following link –</p>
+<pre>https://www.blender.org/download/</pre>
+<p class="amp-wp-7d27179">We need to download the package for Linux (32-bit or 64-bit). Once the package gets downloaded, open the current directory for downloaded package in terminal.</p>
+<pre>cd /path/to/package/</pre>
+<p class="amp-wp-7d27179">We assume you have downloaded the package for 64-bit architecture – <strong>blender-2.80-linux-glibc217-x86_64.tar.bz2</strong>. Now, we would extract the compressed archive through <strong>tar</strong> command-line utility.</p>
+<pre>tar -xvf blender-2.80-linux-glibc217-x86_64.tar.bz2</pre>
+<p class="amp-wp-7d27179">This would create a new directory <strong>blender-2.80-linux-glibc217-x86_64/ </strong></p>
+<p class="amp-wp-7d27179">Now, we have got <strong>two ways to access the package</strong> –</p>
+<p class="amp-wp-7d27179"><strong>A.</strong> Issue the following in terminal –</p>
+<pre>cd blender-2.80-linux-glibc217-x86_64/</pre>
+<p class="amp-wp-7d27179">and,</p>
+<pre>./blender</pre>
+<p class="amp-wp-7d27179">But, this needs to be done every time you access the package. Conversely,</p>
+<p class="amp-wp-7d27179"><strong>B.</strong> Open the file<strong> ~/.bashrc</strong> in a text editor,</p>
+<pre>nano ~/.bashrc</pre>
+<p class="amp-wp-7d27179">and, append the following –</p>
+<pre>export PATH=/path/to/package/blender-2.80-linux-glibc217-x86_64:$PATH</pre>
+<p class="amp-wp-7d27179">Save and exit.</p>
+<p class="amp-wp-7d27179">Since, we have already specified where our executable is located through <strong>environment variable – PATH</strong>. Therefore, open a terminal from any directory and issue the following –</p>
+<pre>blender</pre>
+<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have discussed how to install Blender in Ubuntu 19.10 release.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
