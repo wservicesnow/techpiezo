@@ -6,11 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
-	<title>Switch back to ifupdown - /etc/network/interfaces in Ubuntu - TechPiezo</title>
+	<title>Setup Virtual Machine using QEMU in Ubuntu - TechPiezo</title>
 
 <!-- This site is optimized with the Yoast SEO plugin v11.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
-<meta name="description" content="There are still many users who prefer ifupdown package over netplan. Ifupdown is a tool which is used to configure network interfaces."/>
-<link rel="canonical" href="https://techpiezo.com/linux/switch-back-to-ifupdown-etc-network-interfaces-in-ubuntu/" />
+<meta name="description" content="QEMU (Quick EMUlator) is a type - 2/hosted hypervisor. In this article, we would discuss how to setup Virtual Machine using QEMU in Ubuntu distribution."/>
+<link rel="canonical" href="https://techpiezo.com/linux/setup-virtual-machine-using-qemu-in-ubuntu/" />
 <!-- / Yoast SEO plugin. -->
 
 <style id="ct-main-styles-inline-css" type="text/css">:root {
@@ -758,7 +758,7 @@ code, kbd, samp, pre,
 <link rel='stylesheet' id='ct-style-css'  href='https://techpiezo.com/wp-content/themes/blocksy/style.css' type='text/css' media='all' />
 <link rel='stylesheet' id='ct-main-styles-css'  href='https://techpiezo.com/wp-content/themes/blocksy/static/bundle/main.css' type='text/css' media='all' />
 
-<link rel="amphtml" href="https://techpiezo.com/linux/switch-back-to-ifupdown-etc-network-interfaces-in-ubuntu/amp/"><link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" sizes="32x32" />
+<link rel="amphtml" href="https://techpiezo.com/linux/setup-virtual-machine-using-qemu-in-ubuntu/amp/"><link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" sizes="32x32" />
 <link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" sizes="192x192" />
 <link rel="apple-touch-icon-precomposed" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" />
 <meta name="msapplication-TileImage" content="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" />
@@ -788,7 +788,7 @@ code, kbd, samp, pre,
 
 </head>
 
-<body class="post-template-default single single-post postid-938 single-format-standard wp-custom-logo ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
+<body class="post-template-default single single-post postid-3557 single-format-standard wp-custom-logo ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
 <div id="main-container">
 
 	<header
@@ -915,13 +915,13 @@ code, kbd, samp, pre,
 			<section>
 				
 	<article
-		id="post-938"
-		class="post-938 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"		data-content="boxed"				>
+		id="post-3557"
+		class="post-3557 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"		data-content="boxed"				>
 
 		
 		<section class="hero-section" data-type="type-1" data-alignment="left">
 			<header class="entry-header">
-				<h1 class="page-title">Switch back to ifupdown &#8211; /etc/network/interfaces in Ubuntu</h1>
+				<h1 class="page-title">Setup Virtual Machine using QEMU in Ubuntu</h1>
 				<div class="entry-meta has-avatar" data-label data-type="simple">
 		
 
@@ -948,7 +948,7 @@ code, kbd, samp, pre,
 					<span
 						class="ct-meta-element"
 						>
-						Jul 25, 2019					</span>
+						Nov 19, 2019					</span>
 				</li>
 			
 			
@@ -958,53 +958,43 @@ code, kbd, samp, pre,
 					</header>
 		</section>
 
-		<figure class="ct-featured-image ct-hidden-sm" ><div class="ct-image-container ct-lazy" ><img class="attachment-full size-full" alt="Switch Back to ifupdown in Ubuntu" data-lazy="https://techpiezo.com/wp-content/uploads/2019/07/Switch-Back-to-ifupdown.svg" data-object-fit="~" /><noscript><img src="https://techpiezo.com/wp-content/uploads/2019/07/Switch-Back-to-ifupdown.svg" class="attachment-full size-full" alt="Switch Back to ifupdown in Ubuntu" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
+		<figure class="ct-featured-image ct-hidden-sm" ><div class="ct-image-container ct-lazy" ><img class="attachment-full size-full" alt="Setup Virtual Machine Using QEMU in Ubuntu" data-lazy="https://techpiezo.com/wp-content/uploads/2019/11/Setup-Virtual-Machine-Using-QEMU-in-Ubuntu.svg" data-object-fit="~" /><noscript><img src="https://techpiezo.com/wp-content/uploads/2019/11/Setup-Virtual-Machine-Using-QEMU-in-Ubuntu.svg" class="attachment-full size-full" alt="Setup Virtual Machine Using QEMU in Ubuntu" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
 		
 		<div class="entry-content">
-			<p style="text-align: justify;"><strong>Netplan</strong> is a network configuration tool which was introduced in the Ubuntu 17.10. Prior to that, Ubuntu had <strong>ifupdown</strong> package to configure and manage networks. There are still many users who would prefer <strong>ifupdown</strong> package for managing their networks for various reasons. In this article, we would discuss how desktop users can switch back to <strong>ifupdown</strong> package and manage their networks through <strong>/etc/network/interfaces</strong> configuration file. Furthermore, they can also use command-line utilities like nmcli, nmtui or GUI based network-manager-gnome to manage their networks.</p>
-<h4 style="text-align: justify;">Install ifupdown package</h4>
-<p style="text-align: justify;">Superuser privilege is a prerequisite before making any changes, if you don&#8217;t have one then contact your System Administrator for assistance.</p>
-<p style="text-align: justify;">You need to install<strong> ifupdown</strong> package. To do so, run the following &#8211;</p>
+			<p style="text-align: justify;"><strong>QEMU</strong> (Quick EMUlator) is a type &#8211; 2 or <strong>hosted hypervisor</strong>. Other examples of hosted hypervisors are VMware Player, Oracle VirtualBox &amp; Parallels Desktop for Mac. QEMU, released under GPLv2, supports both machine emulation as well as virtualization. Hence, it is capable to run different Operating Systems and Programs on supported architectures. It is written by <strong>Fabrice Bellard</strong>. At the time of writing the article, the latest stable release of QEMU is 4.1.0. In this article, we would discuss how to<strong> setup Virtual Machine</strong> using QEMU in Ubuntu distribution.</p>
+<p style="text-align: justify;">First, we will<strong> install QEMU</strong> and <strong>create a qcow2 disk</strong> image. Then, we would <strong>attach a CD-ROM</strong> (ISO Image) to the disk image to install an Operating System.</p>
+<p style="text-align: justify;"><strong>Note</strong>: Following operations would require you to have superuser privileges. In case you don&#8217;t have one, then contact your System Administrator for assistance.</p>
+<h5 style="text-align: center;">Install QEMU in Ubuntu</h5>
+<p style="text-align: justify;">Since, QEMU package is already available in standard Ubuntu repository. Therefore, we would update the Ubuntu repository first to make the latest version of the package available. Thereafter, we would install the package and related dependencies (if any). So, open a terminal and issue the following &#8211;</p>
 <pre>sudo apt update
-sudo apt install ifupdown</pre>
-<p style="text-align: justify;">Also, if you plan on to Install GUI version of Network Manager &#8211; various other tools like nmcli, nmtui are also included in it.</p>
-<pre>sudo apt install network-manager-gnome</pre>
-<h4 style="text-align: justify;">Remove Netplan package</h4>
-<p style="text-align: justify;">If you don&#8217;t want to keep configuration and other related files of <strong>Netplan</strong> package installed,</p>
-<pre>sudo apt purge netplan.io</pre>
-<p style="text-align: justify;">To remove associated folders &#8211;</p>
-<pre>sudo rm -rf /usr/share/netplan 
-sudo rm -rf /etc/netplan</pre>
-<p style="text-align: justify;">So far, we have installed ifupdown package and subsequently removed Netplan package. Now, we will be editing<strong> /etc/network/interfaces</strong> file.</p>
-<h4 style="text-align: justify;">Make necessary changes to /etc/network/interfaces</h4>
-<pre>sudo nano /etc/network/interfaces</pre>
-<p style="text-align: justify;">We have used nano text editor, you may choose one of your choice. In <strong>/etc/network/interfaces</strong> configuration file, make the following entries &#8211;</p>
-<pre>auto lo
-iface lo inet loopback</pre>
-<p style="text-align: justify;">Now, we are have got two options available with us. Either we configure<strong> /etc/network/interfaces</strong> file manually or, let any of the network-manager tools do that for us. We will discuss both the available options in brief next.</p>
-<p style="text-align: justify;"><span style="font-size: 14pt;"><strong>Option 1. Configure</strong><strong> /etc/network/interfaces</strong><strong> file.</strong></span></p>
-<p style="text-align: justify;">Use the following command to identify the network interfaces &#8211;</p>
-<pre>ip a</pre>
-<p style="text-align: justify;">For instance, one interface could be &#8211; <strong>enp2s0</strong> and the most basic IPv4 DHCP configuration may resemble &#8211;</p>
-<pre>auto lo
-iface lo inet loopback
-
-auto enp2s0
-iface enp2s0 inet dhcp</pre>
-<p style="text-align: justify;"><strong>Note:</strong> You need to identify the interface which you are trying to connect with. Also, the above code just resemble the most common configuration. For advanced configurations, you are advised to refer to man pages for network interface configuration of <strong>ifup </strong>and<strong> ifdown</strong> packages. These can be accessed by running the following command &#8211;</p>
-<pre>man 5 interfaces</pre>
-<p style="text-align: justify;">After making relevant changes mentioned in the <strong>man</strong> pages do,</p>
-<pre>sudo systemctl restart networking</pre>
-<p><span style="font-size: 14pt;"><strong>Option 2. Use</strong><strong> network-manager </strong><strong>tools.</strong></span></p>
-<p style="text-align: justify;">Edit the following configuration file &#8211;</p>
-<pre style="text-align: justify;">sudo nano /etc/NetworkManager/NetworkManager.conf</pre>
-<p style="text-align: justify;">In the configuration file, you need to edit &#8211; <strong>managed=false</strong> and update it with <strong>managed=true</strong></p>
-<p style="text-align: justify;">Also, we need to make an empty file by using the touch command.</p>
-<pre>sudo touch /etc/NetworkManager/conf.d/10-globally-managed-devices.conf</pre>
-<p style="text-align: justify;">The above steps are being advised to get rid of the error &#8211; &#8220;<strong>devices not managed</strong>&#8221; that comes up during network configuration.</p>
-<p style="text-align: justify;">Now, we have got three commonly used tools available to us &#8211; <strong>nmcli</strong>, <strong>nmtui</strong>, or graphical version: <strong>network-manager-gnome</strong>.</p>
-<p style="text-align: justify;">If you are an advanced user, go for<strong> nmcli</strong> else either run<strong> nmtui</strong> in terminal or use <strong>network-manager-gnome</strong>. The changes you make would be according to your requirements.</p>
-<p style="text-align: justify;">Conclusion, in this article we have discussed the ways to manage your network configuration if you are planning to switch back to <strong>ifupdown</strong> package.</p>
+sudo apt install qemu-kvm</pre>
+<h5 style="text-align: center;">Create a disk image for Virtual Machine using qemu-img</h5>
+<p style="text-align: justify;">Now, we will create a disk image using command-line utility <strong>qemu-img</strong>. With qemu-img, we can manage our disk images offline.</p>
+<pre>qemu-img create -f file_format &lt;image_name&gt; image_size</pre>
+<p style="text-align: justify;">where,</p>
+<p style="text-align: justify;"><strong>-f</strong> is used for file format (raw, qcow2 etc.)</p>
+<p style="text-align: justify;">For instance,</p>
+<pre>qemu-img create -f qcow2 test-img.qcow2 5G</pre>
+<p style="text-align: justify;">This would create a file <strong>test-img.qcow2</strong> of size <strong>5 GB</strong>.</p>
+<h5 style="text-align: center;">Install an Operating System in Disk image</h5>
+<p style="text-align: justify;">Next, we need to install an Operating System in the disk image. So, we will attach an installation media (ISO image) to the Virtual Machine. Hence, issue the following in terminal &#8211;</p>
+<pre>qemu-system-x86_64 -cdrom <strong>iso_image</strong> -cpu <strong>host -enable-kvm</strong> -m <strong>RAM_size</strong> -smp <strong>number_of_cores </strong>-drive file=<strong>disk_image</strong>,format=<strong>qcow2</strong></pre>
+<p style="text-align: justify;">where,</p>
+<p style="text-align: justify;"><strong>-cdrom</strong> is for iso_image,</p>
+<p style="text-align: justify;"><strong>-cpu host</strong> is to emulate the host processor. There is a list of supported architectures available &#8211; <code>qemu-system-x86_64 -cpu ?</code></p>
+<p style="text-align: justify;"><strong>-enable-kvm</strong> starts QEMU in KVM mode,</p>
+<p style="text-align: justify;"><strong>-m</strong> is for memory (RAM),</p>
+<p style="text-align: justify;"><strong>-smp</strong> is to specify the number of cores a VM could use.</p>
+<p style="text-align: justify;">For instance,</p>
+<pre>qemu-system-x86_64 -cdrom <strong>/path/to/iso_image</strong>  -cpu<strong> host</strong> -<strong>enable-kvm</strong> -m <strong>2048</strong> -smp <strong>2</strong> -drive file=<strong>/path/to/disk_image/test-img.qcow2</strong>,format=<strong>qcow2</strong></pre>
+<p style="text-align: justify;">Now, install an Operating System of your choice in disk image.</p>
+<h5 style="text-align: center;">Run Virtual Machine (disk_image) through QEMU</h5>
+<p style="text-align: justify;">To run a Virtual Machine, above code needs to be modified a bit. We would just remove the CD-ROM attached.</p>
+<pre>qemu-system-x86_64 -cpu <strong>host -enable-kvm</strong> -m <strong>RAM_size</strong> -smp <strong>number_of_cores</strong>  -drive file=<strong>disk_image</strong>,format=<strong>qcow2</strong></pre>
+<p style="text-align: justify;">For instance,</p>
+<pre>qemu-system-x86_64 -cpu<strong> host</strong> -<strong>enable-kvm</strong> -m <strong>2048</strong> -smp <strong>2</strong> -drive file=<strong>/path/to/disk_image/test-img.qcow2</strong>,format=<strong>qcow2</strong></pre>
+<p style="text-align: justify;"><strong>In conclusion</strong>, we have discussed how to setup Virtual Machine using QEMU in Ubuntu distribution.</p>
+<p style="text-align: justify;"><strong>Note:</strong> For i386 architecture, we can use <strong>qemu-system-i386</strong> command in place of <strong>qemu-system-x86_64</strong>.</p>
 		</div>
 
 		
@@ -1055,19 +1045,6 @@ iface enp2s0 inet dhcp</pre>
 				<ul data-columns="3">
 											
 						<li>
-							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/setup-virtual-machine-using-qemu-in-ubuntu/"><img width="1" height="1" class="attachment-large size-large" alt="Setup Virtual Machine Using QEMU in Ubuntu" data-lazy="https://techpiezo.com/wp-content/uploads/2019/11/Setup-Virtual-Machine-Using-QEMU-in-Ubuntu.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/11/Setup-Virtual-Machine-Using-QEMU-in-Ubuntu.svg" class="attachment-large size-large" alt="Setup Virtual Machine Using QEMU in Ubuntu" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
-							<h3 class="related-entry-title">
-								<a href="https://techpiezo.com/linux/setup-virtual-machine-using-qemu-in-ubuntu/">Setup Virtual Machine using QEMU in Ubuntu</a>
-							</h3>
-
-							<div class="related-entry-meta">
-								<span>
-									Nov 19, 2019								</span>
-
-															</div>
-						</li>
-											
-						<li>
 							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/install-notepad-in-ubuntu-19-10/"><img width="1" height="1" class="attachment-large size-large" alt="Install Notepad++ in Ubuntu 19.10" data-lazy="https://techpiezo.com/wp-content/uploads/2019/11/Install-Notepad-plus-plus-in-Ubuntu-19-10.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/11/Install-Notepad-plus-plus-in-Ubuntu-19-10.svg" class="attachment-large size-large" alt="Install Notepad++ in Ubuntu 19.10" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
 							<h3 class="related-entry-title">
 								<a href="https://techpiezo.com/linux/install-notepad-in-ubuntu-19-10/">Install Notepad++ in Ubuntu 19.10</a>
@@ -1084,6 +1061,19 @@ iface enp2s0 inet dhcp</pre>
 							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/install-blender-in-ubuntu-19-10/"><img width="1" height="1" class="attachment-large size-large" alt="Install Blender in Ubuntu 19.10" data-lazy="https://techpiezo.com/wp-content/uploads/2019/11/Install-Blender-in-Ubuntu-19-10.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/11/Install-Blender-in-Ubuntu-19-10.svg" class="attachment-large size-large" alt="Install Blender in Ubuntu 19.10" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
 							<h3 class="related-entry-title">
 								<a href="https://techpiezo.com/linux/install-blender-in-ubuntu-19-10/">Install Blender in Ubuntu 19.10</a>
+							</h3>
+
+							<div class="related-entry-meta">
+								<span>
+									Nov 16, 2019								</span>
+
+															</div>
+						</li>
+											
+						<li>
+							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/wget-force-ipv4-ipv6-connection/"><img width="1" height="1" class="attachment-large size-large" alt="wget - force ipv4/ipv6 connection" data-lazy="https://techpiezo.com/wp-content/uploads/2019/11/wget-force-ipv4-ipv6-connection.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/11/wget-force-ipv4-ipv6-connection.svg" class="attachment-large size-large" alt="wget - force ipv4/ipv6 connection" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<h3 class="related-entry-title">
+								<a href="https://techpiezo.com/linux/wget-force-ipv4-ipv6-connection/">wget &#8211; force ipv4/ipv6 connection</a>
 							</h3>
 
 							<div class="related-entry-meta">
