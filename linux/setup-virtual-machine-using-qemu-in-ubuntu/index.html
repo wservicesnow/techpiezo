@@ -990,11 +990,12 @@ sudo apt install qemu-kvm</pre>
 <p style="text-align: justify;">Now, install an Operating System of your choice in disk image.</p>
 <h5 style="text-align: center;">Run Virtual Machine (disk_image) through QEMU</h5>
 <p style="text-align: justify;">To run a Virtual Machine, above code needs to be modified a bit. We would just remove the CD-ROM attached.</p>
-<pre>qemu-system-x86_64 -cpu <strong>host -enable-kvm</strong> -m <strong>RAM_size</strong> -smp <strong>number_of_cores</strong>  -drive file=<strong>disk_image</strong>,format=<strong>qcow2</strong></pre>
+<pre>qemu-system-x86_64 -cpu <strong>host -enable-kvm</strong> -m <strong>RAM_size</strong> -smp <strong>number_of_cores</strong>  -drive file=<strong>/path/to/</strong><strong>disk_image</strong>,format=<strong>qcow2</strong></pre>
 <p style="text-align: justify;">For instance,</p>
 <pre>qemu-system-x86_64 -cpu<strong> host</strong> -<strong>enable-kvm</strong> -m <strong>2048</strong> -smp <strong>2</strong> -drive file=<strong>/path/to/disk_image/test-img.qcow2</strong>,format=<strong>qcow2</strong></pre>
 <p style="text-align: justify;"><strong>In conclusion</strong>, we have discussed how to setup Virtual Machine using QEMU in Ubuntu distribution.</p>
 <p style="text-align: justify;"><strong>Note:</strong> For i386 architecture, we can use <strong>qemu-system-i386</strong> command in place of <strong>qemu-system-x86_64</strong>.</p>
+<p style="text-align: justify;">To enable audio in QEMU Virtual Machine, follow the article <span style="color: #ff0000;"><a style="color: #ff0000;" href="https://techpiezo.com/linux/enable-audio-in-qemu-virtual-machine/">here</a></span>.</p>
 		</div>
 
 		
@@ -1013,6 +1014,9 @@ sudo apt install qemu-kvm</pre>
 		class="ct-sidebar" data-sticky		data-widgets="separated">
 				<div class="ct-widget widget_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
 											<li>
+					<a href="https://techpiezo.com/linux/enable-audio-in-qemu-virtual-machine/">Enable audio in QEMU Virtual Machine</a>
+									</li>
+											<li>
 					<a href="https://techpiezo.com/linux/setup-virtual-machine-using-qemu-in-ubuntu/">Setup Virtual Machine using QEMU in Ubuntu</a>
 									</li>
 											<li>
@@ -1023,9 +1027,6 @@ sudo apt install qemu-kvm</pre>
 									</li>
 											<li>
 					<a href="https://techpiezo.com/linux/wget-force-ipv4-ipv6-connection/">wget &#8211; force ipv4/ipv6 connection</a>
-									</li>
-											<li>
-					<a href="https://techpiezo.com/linux/rename-multiple-files-in-ubuntu/">Rename multiple Files in Ubuntu</a>
 									</li>
 					</ul>
 		</div>	</div>
@@ -1045,6 +1046,19 @@ sudo apt install qemu-kvm</pre>
 				<ul data-columns="3">
 											
 						<li>
+							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/enable-audio-in-qemu-virtual-machine/"><img width="1" height="1" class="attachment-large size-large" alt="Enable audio in QEMU Virtual Machine" data-lazy="https://techpiezo.com/wp-content/uploads/2019/11/Enable-audio-in-QEMU-Virtual-Machine.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/11/Enable-audio-in-QEMU-Virtual-Machine.svg" class="attachment-large size-large" alt="Enable audio in QEMU Virtual Machine" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<h3 class="related-entry-title">
+								<a href="https://techpiezo.com/linux/enable-audio-in-qemu-virtual-machine/">Enable audio in QEMU Virtual Machine</a>
+							</h3>
+
+							<div class="related-entry-meta">
+								<span>
+									Nov 20, 2019								</span>
+
+															</div>
+						</li>
+											
+						<li>
 							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/install-notepad-in-ubuntu-19-10/"><img width="1" height="1" class="attachment-large size-large" alt="Install Notepad++ in Ubuntu 19.10" data-lazy="https://techpiezo.com/wp-content/uploads/2019/11/Install-Notepad-plus-plus-in-Ubuntu-19-10.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/11/Install-Notepad-plus-plus-in-Ubuntu-19-10.svg" class="attachment-large size-large" alt="Install Notepad++ in Ubuntu 19.10" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
 							<h3 class="related-entry-title">
 								<a href="https://techpiezo.com/linux/install-notepad-in-ubuntu-19-10/">Install Notepad++ in Ubuntu 19.10</a>
@@ -1061,19 +1075,6 @@ sudo apt install qemu-kvm</pre>
 							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/install-blender-in-ubuntu-19-10/"><img width="1" height="1" class="attachment-large size-large" alt="Install Blender in Ubuntu 19.10" data-lazy="https://techpiezo.com/wp-content/uploads/2019/11/Install-Blender-in-Ubuntu-19-10.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/11/Install-Blender-in-Ubuntu-19-10.svg" class="attachment-large size-large" alt="Install Blender in Ubuntu 19.10" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
 							<h3 class="related-entry-title">
 								<a href="https://techpiezo.com/linux/install-blender-in-ubuntu-19-10/">Install Blender in Ubuntu 19.10</a>
-							</h3>
-
-							<div class="related-entry-meta">
-								<span>
-									Nov 16, 2019								</span>
-
-															</div>
-						</li>
-											
-						<li>
-							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/wget-force-ipv4-ipv6-connection/"><img width="1" height="1" class="attachment-large size-large" alt="wget - force ipv4/ipv6 connection" data-lazy="https://techpiezo.com/wp-content/uploads/2019/11/wget-force-ipv4-ipv6-connection.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/11/wget-force-ipv4-ipv6-connection.svg" class="attachment-large size-large" alt="wget - force ipv4/ipv6 connection" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
-							<h3 class="related-entry-title">
-								<a href="https://techpiezo.com/linux/wget-force-ipv4-ipv6-connection/">wget &#8211; force ipv4/ipv6 connection</a>
 							</h3>
 
 							<div class="related-entry-meta">

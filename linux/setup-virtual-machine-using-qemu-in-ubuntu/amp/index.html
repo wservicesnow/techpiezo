@@ -409,7 +409,7 @@ amp-carousel > amp-img > img {
 	right: 16px;
 }
 		/* Inline stylesheets */
-:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cdd8ca0{text-align:center}	</style>
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cdd8ca0{text-align:center}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cc68ddc{color:#f00}	</style>
 </head>
 
 <body class="">
@@ -429,7 +429,7 @@ amp-carousel > amp-img > img {
 		<h1 class="amp-wp-title">Setup Virtual Machine using QEMU in Ubuntu</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
 	<time datetime="2019-11-19T21:27:51+00:00">
-		23 mins ago	</time>
+		24 hours ago	</time>
 </div>
 	</header>
 
@@ -465,11 +465,12 @@ sudo apt install qemu-kvm</pre>
 <p class="amp-wp-7d27179">Now, install an Operating System of your choice in disk image.</p>
 <h5 class="amp-wp-cdd8ca0">Run Virtual Machine (disk_image) through QEMU</h5>
 <p class="amp-wp-7d27179">To run a Virtual Machine, above code needs to be modified a bit. We would just remove the CD-ROM attached.</p>
-<pre>qemu-system-x86_64 -cpu <strong>host -enable-kvm</strong> -m <strong>RAM_size</strong> -smp <strong>number_of_cores</strong>  -drive file=<strong>disk_image</strong>,format=<strong>qcow2</strong></pre>
+<pre>qemu-system-x86_64 -cpu <strong>host -enable-kvm</strong> -m <strong>RAM_size</strong> -smp <strong>number_of_cores</strong>  -drive file=<strong>/path/to/</strong><strong>disk_image</strong>,format=<strong>qcow2</strong></pre>
 <p class="amp-wp-7d27179">For instance,</p>
 <pre>qemu-system-x86_64 -cpu<strong> host</strong> -<strong>enable-kvm</strong> -m <strong>2048</strong> -smp <strong>2</strong> -drive file=<strong>/path/to/disk_image/test-img.qcow2</strong>,format=<strong>qcow2</strong></pre>
 <p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have discussed how to setup Virtual Machine using QEMU in Ubuntu distribution.</p>
 <p class="amp-wp-7d27179"><strong>Note:</strong> For i386 architecture, we can use <strong>qemu-system-i386</strong> command in place of <strong>qemu-system-x86_64</strong>.</p>
+<p class="amp-wp-7d27179">To enable audio in QEMU Virtual Machine, follow the article <span class="amp-wp-cc68ddc"><a href="https://techpiezo.com/linux/enable-audio-in-qemu-virtual-machine/" class="amp-wp-cc68ddc">here</a></span>.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
