@@ -6,11 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
-	<title>Write your first code in Kotlin - TechPiezo</title>
+	<title>Shared folder in QEMU Virtual Machine (Linux) - TechPiezo</title>
 
 <!-- This site is optimized with the Yoast SEO plugin v11.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
-<meta name="description" content="We have dicussed how to compile Kotin code through its command-line compiler. Kotlin is an open-source, statically typed programming language."/>
-<link rel="canonical" href="https://techpiezo.com/kotlin/write-your-first-code-in-kotlin/" />
+<meta name="description" content="We would utilize QEMU&#039;s built-in SMB server to get a shared folder in QEMU Virtual Machine. Our host OS - Ubuntu &amp; guest - Debian and CentOS."/>
+<link rel="canonical" href="https://techpiezo.com/linux/shared-folder-in-qemu-virtual-machine-linux/" />
 <!-- / Yoast SEO plugin. -->
 
 <style id="ct-main-styles-inline-css" type="text/css">:root {
@@ -758,7 +758,7 @@ code, kbd, samp, pre,
 <link rel='stylesheet' id='ct-style-css'  href='https://techpiezo.com/wp-content/themes/blocksy/style.css' type='text/css' media='all' />
 <link rel='stylesheet' id='ct-main-styles-css'  href='https://techpiezo.com/wp-content/themes/blocksy/static/bundle/main.css' type='text/css' media='all' />
 
-<link rel="amphtml" href="https://techpiezo.com/kotlin/write-your-first-code-in-kotlin/amp/"><link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" sizes="32x32" />
+<link rel="amphtml" href="https://techpiezo.com/linux/shared-folder-in-qemu-virtual-machine-linux/amp/"><link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" sizes="32x32" />
 <link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" sizes="192x192" />
 <link rel="apple-touch-icon-precomposed" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" />
 <meta name="msapplication-TileImage" content="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" />
@@ -788,7 +788,7 @@ code, kbd, samp, pre,
 
 </head>
 
-<body class="post-template-default single single-post postid-970 single-format-standard wp-custom-logo ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
+<body class="post-template-default single single-post postid-3591 single-format-standard wp-custom-logo ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
 <div id="main-container">
 
 	<header
@@ -821,16 +821,16 @@ code, kbd, samp, pre,
 				>
 
 		<ul id="primary-menu" class="primary-menu menu"><li id="menu-item-70" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-70"><a href="https://techpiezo.com">Home</a></li>
-<li id="menu-item-41" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-41"><a href="https://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
+<li id="menu-item-41" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-41"><a href="https://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
 <ul class="sub-menu">
-	<li id="menu-item-350" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-350"><a href="https://techpiezo.com/linux/linux-quick-fix/">Quick Fix</a></li>
+	<li id="menu-item-350" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-350"><a href="https://techpiezo.com/linux/linux-quick-fix/">Quick Fix</a></li>
 	<li id="menu-item-349" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-349"><a href="https://techpiezo.com/linux/linux-recent/">What&#8217;s New</a></li>
 </ul>
 </li>
-<li id="menu-item-1838" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-1838"><a href="https://techpiezo.com/programming/">Programming<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
+<li id="menu-item-1838" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1838"><a href="https://techpiezo.com/programming/">Programming<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
 <ul class="sub-menu">
 	<li id="menu-item-1824" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1824"><a href="https://techpiezo.com/java/">Java</a></li>
-	<li id="menu-item-348" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-348"><a href="https://techpiezo.com/kotlin/">Kotlin</a></li>
+	<li id="menu-item-348" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-348"><a href="https://techpiezo.com/kotlin/">Kotlin</a></li>
 	<li id="menu-item-2743" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2743"><a href="https://techpiezo.com/python/">Python</a></li>
 	<li id="menu-item-3290" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3290"><a href="https://techpiezo.com/c/">C</a></li>
 </ul>
@@ -915,13 +915,13 @@ code, kbd, samp, pre,
 			<section>
 				
 	<article
-		id="post-970"
-		class="post-970 post type-post status-publish format-standard has-post-thumbnail hentry category-kotlin category-programming"		data-content="boxed"				>
+		id="post-3591"
+		class="post-3591 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"		data-content="boxed"				>
 
 		
 		<section class="hero-section" data-type="type-1" data-alignment="left">
 			<header class="entry-header">
-				<h1 class="page-title">Write your first code in Kotlin</h1>
+				<h1 class="page-title">Shared folder in QEMU Virtual Machine (Linux)</h1>
 				<div class="entry-meta has-avatar" data-label data-type="simple">
 		
 
@@ -948,68 +948,71 @@ code, kbd, samp, pre,
 					<span
 						class="ct-meta-element"
 						>
-						Jul 27, 2019					</span>
+						Nov 23, 2019					</span>
 				</li>
 			
 			
-			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-label">In </span><span class="ct-meta-element"><a href="https://techpiezo.com/kotlin/" rel="tag">Kotlin</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/programming/" rel="tag">Programming</a></span></li>					</ul>
+			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-label">In </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/" rel="tag">Linux</a> </span><span class="ct-meta-element"><a href="https://techpiezo.com/linux/linux-quick-fix/" rel="tag">Quick Fix</a></span></li>					</ul>
 				</div>
 		
 					</header>
 		</section>
 
-		<figure class="ct-featured-image ct-hidden-sm" ><div class="ct-image-container ct-lazy" ><img class="attachment-full size-full" alt="Your First Code in Kotlin" data-lazy="https://techpiezo.com/wp-content/uploads/2019/07/Your-First-Code-in-Kotlin.svg" data-object-fit="~" /><noscript><img src="https://techpiezo.com/wp-content/uploads/2019/07/Your-First-Code-in-Kotlin.svg" class="attachment-full size-full" alt="Your First Code in Kotlin" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
+		<figure class="ct-featured-image ct-hidden-sm" ><div class="ct-image-container ct-lazy" ><img class="attachment-full size-full" alt="Shared folder in QEMU Virtual Machine (Linux)" data-lazy="https://techpiezo.com/wp-content/uploads/2019/11/Shared-folder-in-QEMU-Virtual-Machine-Linux.svg" data-object-fit="~" /><noscript><img src="https://techpiezo.com/wp-content/uploads/2019/11/Shared-folder-in-QEMU-Virtual-Machine-Linux.svg" class="attachment-full size-full" alt="Shared folder in QEMU Virtual Machine (Linux)" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
 		
 		<div class="entry-content">
-			<p style="text-align: justify;">Once you have installed the Kotlin Command-line Compiler, you may be wondering how to write your first code in Kotlin. In this article, we would also discuss how to create a<strong> .jar</strong> executable from it, which includes a class file as well as Kotlin run-time library.</p>
-<p style="text-align: justify;">The source code written in Kotlin is saved in a file with .kt extension.</p>
-<h4 style="text-align: justify;">Write your first &#8220;Hello World!&#8221; code in Kotlin</h4>
-<p style="text-align: justify;">Open a text-editor and save the file as HelloWorld.kt. We have used nano text-editor, choose one which you are comfortable with.</p>
-<pre>nano HelloWorld.kt</pre>
-<p style="text-align: justify;">Next, insert the following code &#8211;</p>
-<pre>fun main(args: Array&lt;String&gt;) {
-       println("Hello, World!")
-}</pre>
-<p>where,</p>
-<p style="text-align: justify;"><strong>fun</strong> &#8211; it means function, just to let compiler know that we are going to call a function.<br />
-<strong>main</strong> &#8211; its the function main() which is to be called.<br />
-<strong>args</strong> &#8211; is the name of our variable.<br />
-<strong>Array&lt;String&gt;</strong> &#8211; tells the compiler that variable args is an Array of type String.<br />
-<strong>println()</strong> &#8211; print line function.<br />
-<strong>&#8220;Hello, World!&#8221;</strong> &#8211; the message we would like to print.</p>
-<p style="text-align: justify;">Save the HelloWorld.kt and exit.</p>
-<p style="text-align: justify;">So far, we have created a file with<strong> .kt extension</strong> and then inserted our code understood by the Kotlin Compiler. Now, we will compile the code with the help of following command &#8211;</p>
-<pre>kotlinc HelloWorld.kt</pre>
-<p style="text-align: justify;">Notice that, it has created a file &#8211; HelloWorldKt.class and a folder META-INF with <strong>main.kotlin_module</strong>. Compiling the code puts the main function inside the HelloWorldKt.class file, which later could run inside a Java Virtual Machine (JVM).</p>
-<p style="text-align: justify;">If you would like to see byte-code inside the HelloWorldKt.class then you may have to use<strong> javap</strong> command. <strong>javap</strong> command is basically a command line utility which lets us see the code so generated inside the <strong>.class</strong> file.</p>
-<pre>javap -c HelloworldKt.class</pre>
-<p style="text-align: justify;">Output should resemble &#8211;</p>
-<pre>Compiled from "HelloWorld.kt"
-public final class HelloWorldKt {
-public static final void main(java.lang.String[]);
-Code:
-0: aload_0
-1: ldc #9 // String args
-3: invokestatic #15 // Method kotlin/jvm/internal/Intrinsics.checkParameterIsNotNull:(Ljava/lang/Object;Ljava/lang/String;)V
-6: ldc #17 // String Hello, World!
-8: astore_1
-9: iconst_0
-10: istore_2
-11: getstatic #23 // Field java/lang/System.out:Ljava/io/PrintStream;
-14: aload_1
-15: invokevirtual #29 // Method java/io/PrintStream.println:(Ljava/lang/Object;)V
-18: return
-}</pre>
-<h4 style="text-align: justify;">Make Kotlin Compiler produce a .jar executable</h4>
-<p style="text-align: justify;">The executable so produced will include Kotlin run-time library as well as HelloworldKt.class. Thus, eliminating the need to distribute Kotlin run-time along-with<strong> .jar</strong> executable. To make one, run the following in terminal &#8211;</p>
-<pre>kotlinc HelloWorld.kt -include-runtime -d HelloWorld.jar</pre>
-<p style="text-align: justify;">where,</p>
-<p style="text-align: justify;"><strong>-include-runtime</strong> &#8211; asks the compiler to include Kotlin run-time library to make .jar executable.<br />
-<strong>-d</strong> &#8211; for output compiled as .jar executable</p>
-<p style="text-align: justify;">Lastly, run the following to execute .jar file &#8211;</p>
-<pre>java -jar HelloWorld.jar</pre>
-<p style="text-align: justify;">This should get us expected output i.e. <strong>Hello, World!</strong></p>
-<p style="text-align: justify;">In conclusion, we have discussed how to write our first Kotlin code and then compile it to a <strong>.jar</strong> executable.</p>
+			<p style="text-align: justify;">In this article, we would discuss how to <strong>get a shared folder in QEMU Virtual Machine</strong>. We will consider two scenarios wherein we have to make a shared folder available between &#8211;</p>
+<ol style="text-align: justify;">
+<li><strong>Ubuntu</strong> host and <strong>Debian</strong> guest VM and,</li>
+<li><strong>Ubuntu</strong> host and <strong>CentOS</strong> guest VM.</li>
+</ol>
+<p style="text-align: justify;">Since we would utilize <strong>QEMU&#8217;s built-in SMB server</strong>. Therefore, we will install Samba in our host Operating System i.e. Ubuntu. Then, with the help of <strong>cifs-utils</strong> package &#8211; we could get a shared folder in Virtual Machine.</p>
+<p style="text-align: justify;">Although there are other network protocols like SSH, NFS, HTTP and FTP which could be utilized to share data between host and guest. But, for the purpose of this article, we would stick with Samba/CIFS.</p>
+<p style="text-align: justify;"><strong>Note</strong>: Following operations would require you to have superuser privileges. In case you don&#8217;t have one, then contact your System Administrator for assistance.</p>
+<h5 style="text-align: center;">Install Samba in Ubuntu host Operating System</h5>
+<p style="text-align: justify;">As the package is already available through standard Ubuntu repository. Therefore, open a terminal and issue the following &#8211;</p>
+<pre>sudo apt update
+sudo apt install samba</pre>
+<h5 style="text-align: center;">I. Shared folder between Ubuntu host and Debian guest VM</h5>
+<p style="text-align: justify;">We need to use following options with <strong>qemu-system-x86_64/qemu-system-i386</strong> command-line utility before running our guest Virtual machine &#8211;</p>
+<pre><strong>-net nic -net user,smb=shared_folder_path</strong></pre>
+<p style="text-align: justify;">So, issue &#8211;</p>
+<pre>qemu-system-x86_64 <strong>-net nic -net user,smb=&lt;shared_folder_path&gt;</strong> -smp &lt;number of cores&gt; -cpu host -enable-kvm -m &lt;memory_size&gt; -drive format=qcow2,file=/path/to/disk_image.qcow2</pre>
+<p style="text-align: justify;">For instance,</p>
+<pre>qemu-system-x86_64 <strong>-net nic -net user,smb=/dev/shm/</strong> -smp 2 -cpu host -enable-kvm -m 2048 -drive format=qcow2,file=/path/to/disk_image.qcow2</pre>
+<p style="text-align: justify;">Read our article, <span style="color: #ff0000;"><a style="color: #ff0000;" href="https://techpiezo.com/linux/setup-virtual-machine-using-qemu-in-ubuntu/">Setup Virtual Machine using QEMU in Ubuntu</a></span> to know more about the command-line options used. Next, we will have to install the package <strong>cifs-utils</strong> <strong>inside our guest Virtual Machine (Debian)</strong>. Open a terminal and login as superuser &#8211;</p>
+<pre>su -l</pre>
+<p style="text-align: justify;">Then, update the Debian repository and install the package <strong>cifs-utils</strong> &#8211;</p>
+<pre>apt update
+apt install cifs-utils</pre>
+<p style="text-align: justify;">We will have to mount <strong>shared_folder</strong> directory &#8211;</p>
+<pre>mount -t cifs //10.0.2.4/qemu/ mount_point</pre>
+<p style="text-align: justify;">For instance,</p>
+<pre>mount -t cifs //10.0.2.4/qemu/ /mnt/</pre>
+<p style="text-align: justify;">You will be asked to authenticate yourself. If you get the following error &#8211;</p>
+<pre>Unable to find suitable address.</pre>
+<p style="text-align: justify;">Then, your Virtual Machines&#8217; firewall may be refusing to connect. Make necessary changes and see if it lets you mount the<strong> &lt;shared_folder&gt;</strong>.</p>
+<p style="text-align: justify;">To <strong>unmount</strong> &#8211;</p>
+<pre>umount -a -t cifs -l</pre>
+<h5 style="text-align: center;">II. Shared folder between Ubuntu host and CentOS<span style="text-align: justify;"> guest VM</span></h5>
+<p style="text-align: justify;">Similarly, we would be have to provide following options with<strong> qemu-system-x86_64/qemu-system-i386</strong> command-line utility before running our guest Virtual machine &#8211;</p>
+<pre><strong>-net nic -net user,smb=shared_folder_path</strong></pre>
+<p style="text-align: justify;">Therefore, open a terminal and issue the following &#8211;</p>
+<pre>qemu-system-x86_64 <strong>-net nic -net user,smb=&lt;shared_folder_path&gt;</strong> -smp &lt;number of cores&gt; -cpu host -enable-kvm -m &lt;memory_size&gt; -drive format=qcow2,file=/path/to/disk_image.qcow2</pre>
+<p style="text-align: justify;">For instance,</p>
+<pre>qemu-system-x86_64 -net nic -net user,smb=/dev/shm/ -smp 2 -cpu host -enable-kvm -m 2048 -drive format=qcow2,file=/path/to/disk_image.qcow2</pre>
+<p style="text-align: justify;">Now, we will have to <strong>install cifs-utils package inside our guest Virtual Machine (CentOS). </strong>First, we will login as superuser &#8211;</p>
+<pre>su -l</pre>
+<p style="text-align: justify;">To install the package &#8211;</p>
+<pre>yum install cifs-utils</pre>
+<p style="text-align: justify;">and, follow on-screen instructions. Once the package is successfully installed, we could mount<strong> shared_folder</strong> by &#8211;</p>
+<pre>mount -t cifs //10.0.2.4/qemu/ mount_point</pre>
+<p style="text-align: justify;">For instance,</p>
+<pre>mount -t cifs //10.0.2.4/qemu/ /mnt/</pre>
+<p style="text-align: justify;">It will ask you to authenticate.</p>
+<p style="text-align: justify;">To <strong>unmount</strong> &#8211;</p>
+<pre>umount -a -t cifs -l</pre>
+<p style="text-align: justify;"><strong>In conclusion</strong>, we have discussed how to get a Shared folder in QEMU Virtual Machine for Debian and CentOS guest Virtual Machines.</p>
 		</div>
 
 		
@@ -1060,40 +1063,40 @@ Code:
 				<ul data-columns="3">
 											
 						<li>
-							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/c/your-first-c-program-in-ubuntu/"><img width="1" height="1" class="attachment-large size-large" alt="Your first C program" data-lazy="https://techpiezo.com/wp-content/uploads/2019/11/Your-first-C-program.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/11/Your-first-C-program.svg" class="attachment-large size-large" alt="Your first C program" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/convert-disk-images-to-various-formats-using-qemu-img/"><img width="1" height="1" class="attachment-large size-large" alt="Convert disk images to various formats using qemu-img" data-lazy="https://techpiezo.com/wp-content/uploads/2019/11/Convert-disk-images-to-various-formats-using-qemu-img.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/11/Convert-disk-images-to-various-formats-using-qemu-img.svg" class="attachment-large size-large" alt="Convert disk images to various formats using qemu-img" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
 							<h3 class="related-entry-title">
-								<a href="https://techpiezo.com/c/your-first-c-program-in-ubuntu/">Your first C program in Ubuntu</a>
+								<a href="https://techpiezo.com/linux/convert-disk-images-to-various-formats-using-qemu-img/">Convert disk images to various formats using qemu-img</a>
 							</h3>
 
 							<div class="related-entry-meta">
 								<span>
-									Nov 3, 2019								</span>
+									Nov 21, 2019								</span>
 
 															</div>
 						</li>
 											
 						<li>
-							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/c/compile-c-program-in-ubuntu/"><img width="1" height="1" class="attachment-large size-large" alt="Compile C Program in Ubuntu" data-lazy="https://techpiezo.com/wp-content/uploads/2019/11/Compile-C-Program-in-Ubuntu.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/11/Compile-C-Program-in-Ubuntu.svg" class="attachment-large size-large" alt="Compile C Program in Ubuntu" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/enable-audio-in-qemu-virtual-machine/"><img width="1" height="1" class="attachment-large size-large" alt="Enable audio in QEMU Virtual Machine" data-lazy="https://techpiezo.com/wp-content/uploads/2019/11/Enable-audio-in-QEMU-Virtual-Machine.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/11/Enable-audio-in-QEMU-Virtual-Machine.svg" class="attachment-large size-large" alt="Enable audio in QEMU Virtual Machine" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
 							<h3 class="related-entry-title">
-								<a href="https://techpiezo.com/c/compile-c-program-in-ubuntu/">Compile C Program in Ubuntu</a>
+								<a href="https://techpiezo.com/linux/enable-audio-in-qemu-virtual-machine/">Enable audio in QEMU Virtual Machine</a>
 							</h3>
 
 							<div class="related-entry-meta">
 								<span>
-									Nov 1, 2019								</span>
+									Nov 20, 2019								</span>
 
 															</div>
 						</li>
 											
 						<li>
-							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/python/use-jupyter-notebook-for-writing-python-programs/"><img width="1" height="1" class="attachment-large size-large" alt="Use Jupyter Notebook for writing Python programs" data-lazy="https://techpiezo.com/wp-content/uploads/2019/10/Use-Jupyter-Notebook-for-writing-Python-programs.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/10/Use-Jupyter-Notebook-for-writing-Python-programs.svg" class="attachment-large size-large" alt="Use Jupyter Notebook for writing Python programs" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/setup-virtual-machine-using-qemu-in-ubuntu/"><img width="1" height="1" class="attachment-large size-large" alt="Setup Virtual Machine Using QEMU in Ubuntu" data-lazy="https://techpiezo.com/wp-content/uploads/2019/11/Setup-Virtual-Machine-Using-QEMU-in-Ubuntu.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/11/Setup-Virtual-Machine-Using-QEMU-in-Ubuntu.svg" class="attachment-large size-large" alt="Setup Virtual Machine Using QEMU in Ubuntu" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
 							<h3 class="related-entry-title">
-								<a href="https://techpiezo.com/python/use-jupyter-notebook-for-writing-python-programs/">Use Jupyter Notebook for writing Python programs</a>
+								<a href="https://techpiezo.com/linux/setup-virtual-machine-using-qemu-in-ubuntu/">Setup Virtual Machine using QEMU in Ubuntu</a>
 							</h3>
 
 							<div class="related-entry-meta">
 								<span>
-									Oct 20, 2019								</span>
+									Nov 19, 2019								</span>
 
 															</div>
 						</li>
@@ -1197,16 +1200,16 @@ Code:
 			<div class="ct-bag-content" >
 				
 				<ul id="primary-menu" class="mobile-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-70"><a href="https://techpiezo.com">Home</a></li>
-<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-41"><a href="https://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-41"><a href="https://techpiezo.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
 <ul class="sub-menu">
-	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-350"><a href="https://techpiezo.com/linux/linux-quick-fix/">Quick Fix</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-350"><a href="https://techpiezo.com/linux/linux-quick-fix/">Quick Fix</a></li>
 	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-349"><a href="https://techpiezo.com/linux/linux-recent/">What&#8217;s New</a></li>
 </ul>
 </li>
-<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-1838"><a href="https://techpiezo.com/programming/">Programming<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1838"><a href="https://techpiezo.com/programming/">Programming<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
 <ul class="sub-menu">
 	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1824"><a href="https://techpiezo.com/java/">Java</a></li>
-	<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-348"><a href="https://techpiezo.com/kotlin/">Kotlin</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-348"><a href="https://techpiezo.com/kotlin/">Kotlin</a></li>
 	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2743"><a href="https://techpiezo.com/python/">Python</a></li>
 	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3290"><a href="https://techpiezo.com/c/">C</a></li>
 </ul>

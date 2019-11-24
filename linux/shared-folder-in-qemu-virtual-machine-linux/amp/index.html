@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Install Blender in Ubuntu 19.10 - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/linux/install-blender-in-ubuntu-19-10/" />
+		<title>Shared folder in QEMU Virtual Machine (Linux) - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/linux/shared-folder-in-qemu-virtual-machine-linux/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -409,7 +409,7 @@ amp-carousel > amp-img > img {
 	right: 16px;
 }
 		/* Inline stylesheets */
-:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cdd8ca0{text-align:center}	</style>
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cdd8ca0{text-align:center}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cc68ddc{color:#f00}	</style>
 </head>
 
 <body class="">
@@ -426,50 +426,66 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Install Blender in Ubuntu 19.10</h1>
+		<h1 class="amp-wp-title">Shared folder in QEMU Virtual Machine (Linux)</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-11-16T20:16:28+00:00">
-		1 week ago	</time>
+	<time datetime="2019-11-23T07:32:44+00:00">
+		21 hours ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179"><strong>Blender</strong> is free and open-source 3D software, which is being offered under GPL license. Furthermore, you can access the package from Windows, macOS, Linux and Steam. It was first released on January 02, 1998. And at the time of writing the article, the latest stable release is 2.80. In this article, we would focus on how to install Blender in Ubuntu 19.10 release.</p>
-<p class="amp-wp-7d27179">We can install the package through two methods –</p>
-<ol class="amp-wp-7d27179"><li>Ubuntu repository,</li>
-<li>Package available on official website.</li>
-</ol><p class="amp-wp-7d27179"><strong>Note</strong>: Following operations would require you to have superuser privileges. In case you don’t have one, then contact your System Administrator for assistance.</p>
-<h5 class="amp-wp-cdd8ca0">I. Install Blender through Ubuntu repository</h5>
-<p class="amp-wp-7d27179">Blender package is already available through standard Ubuntu repository. Therefore, we need to update the Ubuntu repository first. So, open a terminal and issue the following –</p>
-<pre>sudo apt update</pre>
-<p class="amp-wp-7d27179">It is issued to make the latest version of package available. Next, we need to install the package.</p>
-<pre>sudo apt install blender</pre>
-<p class="amp-wp-7d27179">This installs the package and related dependencies (if any). Now, access the package through your System’s main menu. Alternately, open a terminal and run –</p>
-<pre>blender</pre>
-<h5 class="amp-wp-cdd8ca0">II. Install Blender through package available on official website</h5>
-<p class="amp-wp-7d27179">Even though the package is already available standard Ubuntu repository. We can still download and install the package, which is available from the official website itself. Hence, visit the following link –</p>
-<pre>https://www.blender.org/download/</pre>
-<p class="amp-wp-7d27179">We need to download the package for Linux (32-bit or 64-bit). Once the package gets downloaded, open the current directory for downloaded package in terminal.</p>
-<pre>cd /path/to/package/</pre>
-<p class="amp-wp-7d27179">We assume you have downloaded the package for 64-bit architecture – <strong>blender-2.80-linux-glibc217-x86_64.tar.bz2</strong>. Now, we would extract the compressed archive through <strong>tar</strong> command-line utility.</p>
-<pre>tar -xvf blender-2.80-linux-glibc217-x86_64.tar.bz2</pre>
-<p class="amp-wp-7d27179">This would create a new directory <strong>blender-2.80-linux-glibc217-x86_64/ </strong></p>
-<p class="amp-wp-7d27179">Now, we have got <strong>two ways to access the package</strong> –</p>
-<p class="amp-wp-7d27179"><strong>A.</strong> Issue the following in terminal –</p>
-<pre>cd blender-2.80-linux-glibc217-x86_64/</pre>
-<p class="amp-wp-7d27179">and,</p>
-<pre>./blender</pre>
-<p class="amp-wp-7d27179">But, this needs to be done every time you access the package. Conversely,</p>
-<p class="amp-wp-7d27179"><strong>B.</strong> Open the file<strong> ~/.bashrc</strong> in a text editor,</p>
-<pre>nano ~/.bashrc</pre>
-<p class="amp-wp-7d27179">and, append the following –</p>
-<pre>export PATH=/path/to/package/blender-2.80-linux-glibc217-x86_64:$PATH</pre>
-<p class="amp-wp-7d27179">Save and exit.</p>
-<p class="amp-wp-7d27179">Since, we have already specified where our executable is located through <strong>environment variable – PATH</strong>. Therefore, open a terminal from any directory and issue the following –</p>
-<pre>blender</pre>
-<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have discussed how to install Blender in Ubuntu 19.10 release.</p>
+		<p class="amp-wp-7d27179">In this article, we would discuss how to <strong>get a shared folder in QEMU Virtual Machine</strong>. We will consider two scenarios wherein we have to make a shared folder available between –</p>
+<ol class="amp-wp-7d27179"><li><strong>Ubuntu</strong> host and <strong>Debian</strong> guest VM and,</li>
+<li><strong>Ubuntu</strong> host and <strong>CentOS</strong> guest VM.</li>
+</ol><p class="amp-wp-7d27179">Since we would utilize <strong>QEMU’s built-in SMB server</strong>. Therefore, we will install Samba in our host Operating System i.e. Ubuntu. Then, with the help of <strong>cifs-utils</strong> package – we could get a shared folder in Virtual Machine.</p>
+<p class="amp-wp-7d27179">Although there are other network protocols like SSH, NFS, HTTP and FTP which could be utilized to share data between host and guest. But, for the purpose of this article, we would stick with Samba/CIFS.</p>
+<p class="amp-wp-7d27179"><strong>Note</strong>: Following operations would require you to have superuser privileges. In case you don’t have one, then contact your System Administrator for assistance.</p>
+<h5 class="amp-wp-cdd8ca0">Install Samba in Ubuntu host Operating System</h5>
+<p class="amp-wp-7d27179">As the package is already available through standard Ubuntu repository. Therefore, open a terminal and issue the following –</p>
+<pre>sudo apt update
+sudo apt install samba</pre>
+<h5 class="amp-wp-cdd8ca0">I. Shared folder between Ubuntu host and Debian guest VM</h5>
+<p class="amp-wp-7d27179">We need to use following options with <strong>qemu-system-x86_64/qemu-system-i386</strong> command-line utility before running our guest Virtual machine –</p>
+<pre><strong>-net nic -net user,smb=shared_folder_path</strong></pre>
+<p class="amp-wp-7d27179">So, issue –</p>
+<pre>qemu-system-x86_64 <strong>-net nic -net user,smb=&lt;shared_folder_path&gt;</strong> -smp &lt;number of cores&gt; -cpu host -enable-kvm -m &lt;memory_size&gt; -drive format=qcow2,file=/path/to/disk_image.qcow2</pre>
+<p class="amp-wp-7d27179">For instance,</p>
+<pre>qemu-system-x86_64 <strong>-net nic -net user,smb=/dev/shm/</strong> -smp 2 -cpu host -enable-kvm -m 2048 -drive format=qcow2,file=/path/to/disk_image.qcow2</pre>
+<p class="amp-wp-7d27179">Read our article, <span class="amp-wp-cc68ddc"><a href="https://techpiezo.com/linux/setup-virtual-machine-using-qemu-in-ubuntu/" class="amp-wp-cc68ddc">Setup Virtual Machine using QEMU in Ubuntu</a></span> to know more about the command-line options used. Next, we will have to install the package <strong>cifs-utils</strong> <strong>inside our guest Virtual Machine (Debian)</strong>. Open a terminal and login as superuser –</p>
+<pre>su -l</pre>
+<p class="amp-wp-7d27179">Then, update the Debian repository and install the package <strong>cifs-utils</strong> –</p>
+<pre>apt update
+apt install cifs-utils</pre>
+<p class="amp-wp-7d27179">We will have to mount <strong>shared_folder</strong> directory –</p>
+<pre>mount -t cifs //10.0.2.4/qemu/ mount_point</pre>
+<p class="amp-wp-7d27179">For instance,</p>
+<pre>mount -t cifs //10.0.2.4/qemu/ /mnt/</pre>
+<p class="amp-wp-7d27179">You will be asked to authenticate yourself. If you get the following error –</p>
+<pre>Unable to find suitable address.</pre>
+<p class="amp-wp-7d27179">Then, your Virtual Machines’ firewall may be refusing to connect. Make necessary changes and see if it lets you mount the<strong> &lt;shared_folder&gt;</strong>.</p>
+<p class="amp-wp-7d27179">To <strong>unmount</strong> –</p>
+<pre>umount -a -t cifs -l</pre>
+<h5 class="amp-wp-cdd8ca0">II. Shared folder between Ubuntu host and CentOS<span class="amp-wp-7d27179"> guest VM</span></h5>
+<p class="amp-wp-7d27179">Similarly, we would be have to provide following options with<strong> qemu-system-x86_64/qemu-system-i386</strong> command-line utility before running our guest Virtual machine –</p>
+<pre><strong>-net nic -net user,smb=shared_folder_path</strong></pre>
+<p class="amp-wp-7d27179">Therefore, open a terminal and issue the following –</p>
+<pre>qemu-system-x86_64 <strong>-net nic -net user,smb=&lt;shared_folder_path&gt;</strong> -smp &lt;number of cores&gt; -cpu host -enable-kvm -m &lt;memory_size&gt; -drive format=qcow2,file=/path/to/disk_image.qcow2</pre>
+<p class="amp-wp-7d27179">For instance,</p>
+<pre>qemu-system-x86_64 -net nic -net user,smb=/dev/shm/ -smp 2 -cpu host -enable-kvm -m 2048 -drive format=qcow2,file=/path/to/disk_image.qcow2</pre>
+<p class="amp-wp-7d27179">Now, we will have to <strong>install cifs-utils package inside our guest Virtual Machine (CentOS). </strong>First, we will login as superuser –</p>
+<pre>su -l</pre>
+<p class="amp-wp-7d27179">To install the package –</p>
+<pre>yum install cifs-utils</pre>
+<p class="amp-wp-7d27179">and, follow on-screen instructions. Once the package is successfully installed, we could mount<strong> shared_folder</strong> by –</p>
+<pre>mount -t cifs //10.0.2.4/qemu/ mount_point</pre>
+<p class="amp-wp-7d27179">For instance,</p>
+<pre>mount -t cifs //10.0.2.4/qemu/ /mnt/</pre>
+<p class="amp-wp-7d27179">It will ask you to authenticate.</p>
+<p class="amp-wp-7d27179">To <strong>unmount</strong> –</p>
+<pre>umount -a -t cifs -l</pre>
+<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have discussed how to get a Shared folder in QEMU Virtual Machine for Debian and CentOS guest Virtual Machines.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
