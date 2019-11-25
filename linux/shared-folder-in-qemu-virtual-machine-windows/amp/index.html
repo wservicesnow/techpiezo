@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Setup Virtual Machine using QEMU in Ubuntu - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/linux/setup-virtual-machine-using-qemu-in-ubuntu/" />
+		<title>Shared folder in QEMU Virtual Machine (Windows) - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/linux/shared-folder-in-qemu-virtual-machine-windows/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -409,7 +409,7 @@ amp-carousel > amp-img > img {
 	right: 16px;
 }
 		/* Inline stylesheets */
-:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cdd8ca0{text-align:center}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cc68ddc{color:#f00}	</style>
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cdd8ca0{text-align:center}	</style>
 </head>
 
 <body class="">
@@ -426,51 +426,40 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Setup Virtual Machine using QEMU in Ubuntu</h1>
+		<h1 class="amp-wp-title">Shared folder in QEMU Virtual Machine (Windows)</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-11-19T21:27:51+00:00">
-		5 days ago	</time>
+	<time datetime="2019-11-25T02:04:37+00:00">
+		1 hour ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179"><strong>QEMU</strong> (Quick EMUlator) is a type – 2 or <strong>hosted hypervisor</strong>. Other examples of hosted hypervisors are VMware Player, Oracle VirtualBox &amp; Parallels Desktop for Mac. QEMU, released under GPLv2, supports both machine emulation as well as virtualization. Hence, it is capable to run different Operating Systems and Programs on supported architectures. It is written by <strong>Fabrice Bellard</strong>. At the time of writing the article, the latest stable release of QEMU is 4.1.0. In this article, we would discuss how to<strong> setup Virtual Machine</strong> using QEMU in Ubuntu distribution.</p>
-<p class="amp-wp-7d27179">First, we will<strong> install QEMU</strong> and <strong>create a qcow2 disk</strong> image. Then, we would <strong>attach a CD-ROM</strong> (ISO Image) to the disk image to install an Operating System.</p>
+		<p class="amp-wp-7d27179">In this article, we would focus on <strong>how to get a shared folder in QEMU Virtual Machine (Windows 10)</strong>. We would first install Samba on our <strong>host Operating System (i.e. Ubuntu)</strong>. Thereafter, we will configure network on our <strong>guest Operating System (i.e. Windows 10)</strong>. Samba is released under GNU General Public License​. It was first released in the year 1992.</p>
 <p class="amp-wp-7d27179"><strong>Note</strong>: Following operations would require you to have superuser privileges. In case you don’t have one, then contact your System Administrator for assistance.</p>
-<h5 class="amp-wp-cdd8ca0">Install QEMU in Ubuntu</h5>
-<p class="amp-wp-7d27179">Since, QEMU package is already available in standard Ubuntu repository. Therefore, we would update the Ubuntu repository first to make the latest version of the package available. Thereafter, we would install the package and related dependencies (if any). So, open a terminal and issue the following –</p>
-<pre>sudo apt update
-sudo apt install qemu-kvm</pre>
-<h5 class="amp-wp-cdd8ca0">Create a disk image for Virtual Machine using qemu-img</h5>
-<p class="amp-wp-7d27179">Now, we will create a disk image using command-line utility <strong>qemu-img</strong>. With qemu-img, we can manage our disk images offline.</p>
-<pre>qemu-img create -f file_format &lt;image_name&gt; image_size</pre>
-<p class="amp-wp-7d27179">where,</p>
-<p class="amp-wp-7d27179"><strong>-f</strong> is used for file format (raw, qcow2 etc.)</p>
+<h5 class="amp-wp-cdd8ca0">Install Samba on Ubuntu host Operating System</h5>
+<p class="amp-wp-7d27179">Since, the package <strong>samba</strong> in already available in standard Ubuntu repository. Therefore, we would first update the repository –</p>
+<pre>sudo apt update</pre>
+<p class="amp-wp-7d27179">This makes the latest version of package available. Now, to install <strong>samba</strong> package –</p>
+<pre>sudo apt install samba</pre>
+<h5 class="amp-wp-cdd8ca0">Configure Network on Windows 10 guest Operating System</h5>
+<p class="amp-wp-7d27179">We have to provide following options to utilize QEMU’s built-in SMB server –</p>
+<pre><strong>-net nic -net user,smb=shared_folder_path</strong></pre>
+<p class="amp-wp-7d27179">So, if you are running a Virtual Machine through command-line then –</p>
+<pre>qemu-system-x86_64 <strong>-net nic -net user,smb=&lt;shared_folder_path&gt;</strong> -smp &lt;number of cores&gt; -cpu host -enable-kvm -m &lt;memory_size&gt; -drive format=qcow2,file=/path/to/disk_image.qcow2</pre>
 <p class="amp-wp-7d27179">For instance,</p>
-<pre>qemu-img create -f qcow2 test-img.qcow2 5G</pre>
-<p class="amp-wp-7d27179">This would create a file <strong>test-img.qcow2</strong> of size <strong>5 GB</strong>.</p>
-<h5 class="amp-wp-cdd8ca0">Install an Operating System in Disk image</h5>
-<p class="amp-wp-7d27179">Next, we need to install an Operating System in the disk image. So, we will attach an installation media (ISO image) to the Virtual Machine. Hence, issue the following in terminal –</p>
-<pre>qemu-system-x86_64 -cdrom <strong>iso_image</strong> -cpu <strong>host -enable-kvm</strong> -m <strong>RAM_size</strong> -smp <strong>number_of_cores </strong>-drive file=<strong>disk_image</strong>,format=<strong>qcow2</strong></pre>
-<p class="amp-wp-7d27179">where,</p>
-<p class="amp-wp-7d27179"><strong>-cdrom</strong> is for iso_image,</p>
-<p class="amp-wp-7d27179"><strong>-cpu host</strong> is to emulate the host processor. There is a list of supported architectures available – <code>qemu-system-x86_64 -cpu ?</code></p>
-<p class="amp-wp-7d27179"><strong>-enable-kvm</strong> starts QEMU in KVM mode,</p>
-<p class="amp-wp-7d27179"><strong>-m</strong> is for memory (RAM),</p>
-<p class="amp-wp-7d27179"><strong>-smp</strong> is to specify the number of cores a VM could use.</p>
-<p class="amp-wp-7d27179">For instance,</p>
-<pre>qemu-system-x86_64 -cdrom <strong>/path/to/iso_image</strong>  -cpu<strong> host</strong> -<strong>enable-kvm</strong> -m <strong>2048</strong> -smp <strong>2</strong> -drive file=<strong>/path/to/disk_image/test-img.qcow2</strong>,format=<strong>qcow2</strong></pre>
-<p class="amp-wp-7d27179">Now, install an Operating System of your choice in disk image.</p>
-<h5 class="amp-wp-cdd8ca0">Run Virtual Machine (disk_image) through QEMU</h5>
-<p class="amp-wp-7d27179">To run a Virtual Machine, above code needs to be modified a bit. We would just remove the CD-ROM attached.</p>
-<pre>qemu-system-x86_64 -cpu <strong>host -enable-kvm</strong> -m <strong>RAM_size</strong> -smp <strong>number_of_cores</strong>  -drive file=<strong>/path/to/</strong><strong>disk_image</strong>,format=<strong>qcow2</strong></pre>
-<p class="amp-wp-7d27179">For instance,</p>
-<pre>qemu-system-x86_64 -cpu<strong> host</strong> -<strong>enable-kvm</strong> -m <strong>2048</strong> -smp <strong>2</strong> -drive file=<strong>/path/to/disk_image/test-img.qcow2</strong>,format=<strong>qcow2</strong></pre>
-<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have discussed how to setup Virtual Machine using QEMU in Ubuntu distribution.</p>
-<p class="amp-wp-7d27179"><strong>Note:</strong> For i386 architecture, we can use <strong>qemu-system-i386</strong> command in place of <strong>qemu-system-x86_64</strong>.</p>
-<p class="amp-wp-7d27179">To enable audio in QEMU Virtual Machine, follow the article <span class="amp-wp-cc68ddc"><a href="https://techpiezo.com/linux/enable-audio-in-qemu-virtual-machine/" class="amp-wp-cc68ddc">here</a></span>.</p>
+<pre>qemu-system-x86_64 <strong>-net nic -net user,smb=/dev/shm/</strong> -smp 2 -cpu host -enable-kvm -m 2048 -drive format=qcow2,file=/path/to/disk_image.qcow2</pre>
+<p class="amp-wp-7d27179">for i386 architecture, we can replace <strong>qemu-system-x86_64</strong> with <strong>qemu-system-i386</strong>.</p>
+<p class="amp-wp-7d27179">Now, inside our Windows guest Virtual Machine, we need to <strong>open File explorer</strong> and then<strong> right-click on This PC</strong>. And, click <strong>Add a Network Location</strong> option.</p>
+<p class="amp-wp-7d27179">It would get us a <strong>Add Location Wizard</strong>. Click <strong>Next</strong>.</p>
+<p class="amp-wp-7d27179">If in case we get a <strong>Connect to Internet</strong> prompt, then we can close it from the <strong>taskbar</strong> itself. Otherwise, it will close our <strong>Add Location Wizard</strong> too.</p>
+<p class="amp-wp-7d27179">Then, select – Choose a <strong>Custom Network Location</strong> and click<strong> Next</strong>.</p>
+<p class="amp-wp-7d27179">In <strong>Internet or Network Address</strong>, enter the following –</p>
+<pre>\\10.0.2.4\qemu\</pre>
+<p class="amp-wp-7d27179">Thereafter, either we can <strong>provide a name for the network location</strong> or continue with default values. Click <strong>Next and Finish</strong>.</p>
+<p class="amp-wp-7d27179">Afterwards, to access the shared folder – <strong>open File Explorer and click This PC</strong>. Under <strong>Network Location section</strong>, the shared folder is available.</p>
+<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have discussed how to get a shared folder access in QEMU Virtual Machine (Windows 10 guest Operating System).</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
