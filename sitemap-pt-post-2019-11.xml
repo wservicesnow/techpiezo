@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="November 25, 2019 3:29 am" -->
+<!-- generated-on="November 27, 2019 11:13 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
+		<loc>https://techpiezo.com/linux/create-a-bootable-usb-in-ubuntu-2/</loc>
+		<lastmod>2019-11-27T23:12:20+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>https://techpiezo.com/linux/install-ubuntu-server-18-04-3-lts/</loc>
+		<lastmod>2019-11-26T21:20:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
 		<loc>https://techpiezo.com/linux/shared-folder-in-qemu-virtual-machine-windows/</loc>
 		<lastmod>2019-11-25T03:28:45+00:00</lastmod>
 		<changefreq>monthly</changefreq>
@@ -102,4 +114,4 @@
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: d77a4f399728c887374e774aeae7129b; Queries for sitemap: 26; Total queries: 37; Seconds: 0.02; Memory for sitemap: 0MB; Total memory: 4MB -->
+</urlset><!-- Request ID: 96dca200230304e18e9818161211f8fd; Queries for sitemap: 32; Total queries: 43; Seconds: 0.02; Memory for sitemap: 0MB; Total memory: 4MB -->
