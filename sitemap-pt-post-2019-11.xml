@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="November 27, 2019 11:13 pm" -->
+<!-- generated-on="November 28, 2019 6:18 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
+		<loc>https://techpiezo.com/linux/install-atom-text-editor-in-ubuntu-19-10/</loc>
+		<lastmod>2019-11-28T18:17:41+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
 		<loc>https://techpiezo.com/linux/create-a-bootable-usb-in-ubuntu-2/</loc>
 		<lastmod>2019-11-27T23:12:20+00:00</lastmod>
 		<changefreq>monthly</changefreq>
@@ -114,4 +120,4 @@
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: 96dca200230304e18e9818161211f8fd; Queries for sitemap: 32; Total queries: 43; Seconds: 0.02; Memory for sitemap: 0MB; Total memory: 4MB -->
+</urlset><!-- Request ID: 891bc11a10de732642e65205d8f6cfbb; Queries for sitemap: 35; Total queries: 46; Seconds: 0.02; Memory for sitemap: 0MB; Total memory: 2MB -->
