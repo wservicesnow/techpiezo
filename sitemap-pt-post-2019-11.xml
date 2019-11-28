@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="November 28, 2019 6:18 pm" -->
+<!-- generated-on="November 28, 2019 9:04 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>https://techpiezo.com/linux/install-atom-text-editor-in-ubuntu-19-10/</loc>
-		<lastmod>2019-11-28T18:17:41+00:00</lastmod>
+		<lastmod>2019-11-28T21:03:20+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
@@ -120,4 +120,4 @@
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: 891bc11a10de732642e65205d8f6cfbb; Queries for sitemap: 35; Total queries: 46; Seconds: 0.02; Memory for sitemap: 0MB; Total memory: 2MB -->
+</urlset><!-- Request ID: de70088c14c743cce05fe9dd3c827694; Queries for sitemap: 35; Total queries: 46; Seconds: 0.02; Memory for sitemap: 0MB; Total memory: 2MB -->
