@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Enable or Disable Automatic Login in Ubuntu 20.04 - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/linux/enable-or-disable-automatic-login-in-ubuntu-20-04/" />
+		<title>Switch Display Manager in Ubuntu 20.04 - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/linux/switch-display-manager-in-ubuntu-20-04/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -426,69 +426,54 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Enable or Disable Automatic Login in Ubuntu 20.04</h1>
+		<h1 class="amp-wp-title">Switch Display Manager in Ubuntu 20.04</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-12-01T00:28:40+00:00">
-		1 day ago	</time>
+	<time datetime="2019-12-02T00:04:21+00:00">
+		1 hour ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">With <strong>Automatic login feature</strong> enabled, a user can log in without password at the end of boot process. Conversely, we can make a user to authenticate himself/herself by disabling the feature. In this article, we would focus on how to enable or disable automatic login in <strong>Ubuntu 20.04</strong> release.</p>
-<p class="amp-wp-7d27179">At the end of boot process, we are provided with either a default shell or a display manager. This depends on our Ubuntu configuration. This article basically deals with display manager, a GUI login manager.</p>
-<p class="amp-wp-7d27179">First, we need to identify the default display manager for our Ubuntu distribution. Thereafter, we would make necessary changes to get things done. We have discussed three display managers – <strong>LightDM</strong>, <strong>GDM</strong> and <strong>SDDM</strong>.</p>
+		<p class="amp-wp-7d27179">Once the boot process gets completed, we get a prompt to enter user and password to login. The type of login manager would depend on our Ubuntu configuration. If we intend to use CLI (Command-line interface), then we would get a default shell to login. Or else, <strong>a Display Manager in case of GUI (Graphical User Interface)</strong>. In this article, we would focus on how to <strong>switch between different Display Manager</strong> in Ubuntu 20.04 release.</p>
+<p class="amp-wp-7d27179">Although there are numerous Display Manager (both GUI and CLI) available, but we would focus on three prominent ones – <strong>GDM</strong>, <strong>LightDM</strong> and <strong>SDDM</strong>. In Ubuntu, GDM has been the default Display Manager in Ubuntu 16.10 and later. Many Ubuntu flavors still prefer to choose LightDM as default display manager.</p>
 <p class="amp-wp-7d27179"><strong>Note</strong>: Following operations would require you to have superuser privileges. In case you don’t have one, then contact your System Administrator for assistance.</p>
-<h5 class="amp-wp-cdd8ca0">Identify default display manager</h5>
-<p class="amp-wp-7d27179">We can identify our default display manager using two methods –</p>
-<ol><li class="amp-wp-7d27179">Open a terminal and issue the following –
+<p class="amp-wp-7d27179">First, we will discuss how to install each Display Manager mentioned above.</p>
+<h5 class="amp-wp-cdd8ca0">Install GDM in Ubuntu</h5>
+<p class="amp-wp-7d27179">To install GDM (GNOME Display Manager), open a terminal and issue the following –</p>
+<pre>sudo apt install gdm3</pre>
+<h5 class="amp-wp-cdd8ca0">Install LightDM in Ubuntu</h5>
+<p class="amp-wp-7d27179">To install LightDM, open a terminal and issue the following –</p>
+<pre>sudo apt install lightdm</pre>
+<h5 class="amp-wp-cdd8ca0">Install SDDM in Ubuntu</h5>
+<p class="amp-wp-7d27179">To install SDDM (Simple Desktop Display Manager), open a terminal and issue the following –</p>
+<pre>sudo apt install sddm</pre>
+<h5 class="amp-wp-cdd8ca0">Switch Display Manager in Ubuntu 20.04</h5>
+<p class="amp-wp-7d27179">Its not necessary to install all of the above mentioned Display Manager. Any two will suffice. First, we need to identify our default display manager. Therefore, issue the following in terminal –</p>
 <pre>cat /etc/X11/default-display-manager</pre>
-<p class="amp-wp-7d27179">This will return any of the three –</p>
-<p class="amp-wp-7d27179">If its <strong>LightDM</strong> –</p>
-<pre>/usr/sbin/lightdm</pre>
-<p class="amp-wp-7d27179"><strong>GDM3</strong> –</p>
+<p class="amp-wp-7d27179">This would return</p>
+<p class="amp-wp-7d27179">for <strong>GDM3</strong> –</p>
 <pre>/usr/sbin/gdm3</pre>
-<p class="amp-wp-7d27179">and, for <strong>SDDM –</strong></p>
+<p class="amp-wp-7d27179">for <strong>LightDM</strong> –</p>
+<pre>/usr/sbin/lightdm</pre>
+<p class="amp-wp-7d27179">and <strong>SDDM</strong> –</p>
 <pre>/usr/sbin/sddm</pre>
-</li>
-<li class="amp-wp-7d27179">Or, to know which display manager is active and running –
+<p class="amp-wp-7d27179">Or, you can simply issue to get the status of active Display Manager –</p>
 <pre>systemctl status display-manager</pre>
-</li>
-</ol><p class="amp-wp-7d27179">Once we have identified our default display manager, make changes to relevant configuration files accordingly.</p>
-<h5 class="amp-wp-cdd8ca0">Enable or Disable automatic login for LightDM</h5>
-<p class="amp-wp-7d27179">To enable automatic login – open a terminal and use any text editor for configuration file –<strong> lightdm.conf</strong></p>
-<p class="amp-wp-7d27179">We have used nano text editor. If the configuration file already exists then edit it. Otherwise, create a new configuration file – <strong>lightdm.conf</strong>.</p>
-<pre>sudo nano /etc/lightdm/lightdm.conf</pre>
-<p class="amp-wp-7d27179">and, append the file with –</p>
-<pre>[Seat:*]
-autologin-user=&lt;user_name&gt;
-autologin-user-timeout=0</pre>
-<p class="amp-wp-7d27179">To disable automatic login – find the above entries in the file and add <strong>#</strong> at the beginning</p>
-<pre>[Seat:*]
-#autologin-user=&lt;user_name&gt;
-#autologin-user-timeout=0</pre>
-<h5 class="amp-wp-cdd8ca0">Enable or Disable automatic login for GDM3</h5>
-<p class="amp-wp-7d27179">To enable automatic login – open a terminal and use any text editor for configuration file – <strong>custom.conf</strong></p>
-<p class="amp-wp-7d27179">We have used nano text editor. If the configuration file already exists then edit it. Otherwise, create a new configuration file – <strong>custom.conf</strong>.</p>
-<pre>sudo nano /etc/gdm3/custom.conf</pre>
-<p class="amp-wp-7d27179">and, append the file with –</p>
-<pre>AutomaticLoginEnable = true
-AutomaticLogin = &lt;user_name&gt;</pre>
-<p class="amp-wp-7d27179">To disable automatic login – find the above entries in the file and add <strong>#</strong> at the beginning</p>
-<pre># AutomaticLoginEnable = true
-# AutomaticLogin = &lt;user_name&gt;</pre>
-<h5 class="amp-wp-cdd8ca0">Enable or Disable automatic login for SDDM</h5>
-<p class="amp-wp-7d27179">To enable automatic login – open a terminal and use any text editor for configuration file – <strong>autologin.conf</strong></p>
-<p class="amp-wp-7d27179">We have used nano text editor. If the configuration file already exists then edit it. Otherwise, create a new configuration file – <strong>autologin.conf</strong>.</p>
-<pre>sudo nano /etc/sddm.conf.d/autologin.conf</pre>
-<p class="amp-wp-7d27179">and, append the file with –</p>
-<pre>[Autologin]
-User=&lt;user_name&gt;</pre>
-<p class="amp-wp-7d27179">To disable automatic login – find the above entries in the file and add <strong>#</strong> at the beginning</p>
-<pre>#[Autologin]
-#User=&lt;user_name&gt;</pre>
-<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have discussed how to enable or disable automatic login in Ubuntu 20.04 release.</p>
+<p class="amp-wp-7d27179">Now, to switch between them – run the following command with active (or default) Display Manager –</p>
+<pre>dpkg-reconfigure &lt;Default_Display_Manager&gt;</pre>
+<p class="amp-wp-7d27179">for instance,</p>
+<pre>dpkg-reconfigure gdm3
+dpkg-reconfigure lightdm
+dpkg-reconfigure sddm</pre>
+<p class="amp-wp-7d27179">And, press <strong>OK</strong>. Next, you will be asked to select your default Display Manager.</p>
+<p><amp-img class="size-full wp-image-3739 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/12/select-display-manager.png" alt="select display manager" width="342" height="221" layout="intrinsic"></amp-img></p>
+<p class="amp-wp-7d27179">On running – <strong>dpkg-reconfigure gdm3</strong>, you may get following error –</p>
+<pre>gdm.service is not active, cannot reload.
+invoke-rc.d: initscript gdm3, action "reload" failed.</pre>
+<p class="amp-wp-7d27179">In our case, we just needed to reboot our System. And, everything worked as it should.</p>
+<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have discussed how to switch Display Manager in Ubuntu 20.04 release.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">

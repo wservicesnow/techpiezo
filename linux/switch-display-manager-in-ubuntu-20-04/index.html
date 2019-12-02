@@ -6,11 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
-	<title>Install/Remove .deb package in Ubuntu/Debian - TechPiezo</title>
+	<title>Switch Display Manager in Ubuntu 20.04 - TechPiezo</title>
 
 <!-- This site is optimized with the Yoast SEO plugin v11.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
-<meta name="description" content="Ubuntu/Debian Linux distributions contains huge list of packages in their software repositories. Still, we may require to install or remove .deb packages."/>
-<link rel="canonical" href="https://techpiezo.com/linux/install-remove-deb-package-in-ubuntu-debian/" />
+<meta name="description" content="The type of login manager would depend on our Ubuntu configuration. In this article, we would focus on how to switch Display Manager in Ubuntu 20.04."/>
+<link rel="canonical" href="https://techpiezo.com/linux/switch-display-manager-in-ubuntu-20-04/" />
 <!-- / Yoast SEO plugin. -->
 
 <style id="ct-main-styles-inline-css" type="text/css">:root {
@@ -758,7 +758,7 @@ code, kbd, samp, pre,
 <link rel='stylesheet' id='ct-style-css'  href='https://techpiezo.com/wp-content/themes/blocksy/style.css' type='text/css' media='all' />
 <link rel='stylesheet' id='ct-main-styles-css'  href='https://techpiezo.com/wp-content/themes/blocksy/static/bundle/main.css' type='text/css' media='all' />
 
-<link rel="amphtml" href="https://techpiezo.com/linux/install-remove-deb-package-in-ubuntu-debian/amp/"><link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" sizes="32x32" />
+<link rel="amphtml" href="https://techpiezo.com/linux/switch-display-manager-in-ubuntu-20-04/amp/"><link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" sizes="32x32" />
 <link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" sizes="192x192" />
 <link rel="apple-touch-icon-precomposed" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" />
 <meta name="msapplication-TileImage" content="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" />
@@ -788,7 +788,7 @@ code, kbd, samp, pre,
 
 </head>
 
-<body class="post-template-default single single-post postid-454 single-format-standard wp-custom-logo ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
+<body class="post-template-default single single-post postid-3734 single-format-standard wp-custom-logo ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
 <div id="main-container">
 
 	<header
@@ -915,13 +915,13 @@ code, kbd, samp, pre,
 			<section>
 				
 	<article
-		id="post-454"
-		class="post-454 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"		data-content="boxed"				>
+		id="post-3734"
+		class="post-3734 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"		data-content="boxed"				>
 
 		
 		<section class="hero-section" data-type="type-1" data-alignment="left">
 			<header class="entry-header">
-				<h1 class="page-title">Install/Remove .deb package in Ubuntu/Debian</h1>
+				<h1 class="page-title">Switch Display Manager in Ubuntu 20.04</h1>
 				<div class="entry-meta has-avatar" data-label data-type="simple">
 		
 
@@ -948,7 +948,7 @@ code, kbd, samp, pre,
 					<span
 						class="ct-meta-element"
 						>
-						Jul 4, 2019					</span>
+						Dec 2, 2019					</span>
 				</li>
 			
 			
@@ -958,35 +958,47 @@ code, kbd, samp, pre,
 					</header>
 		</section>
 
-		<figure class="ct-featured-image ct-hidden-sm" ><div class="ct-image-container ct-lazy" ><img class="attachment-full size-full" alt="Install-Remove Deb Packages" data-lazy="https://techpiezo.com/wp-content/uploads/2019/07/Install-Remove-Deb-Packages.svg" data-object-fit="~" /><noscript><img src="https://techpiezo.com/wp-content/uploads/2019/07/Install-Remove-Deb-Packages.svg" class="attachment-full size-full" alt="Install-Remove Deb Packages" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
+		<figure class="ct-featured-image ct-hidden-sm" ><div class="ct-image-container ct-lazy" ><img class="attachment-full size-full" alt="Switch Display Manager in Ubuntu 20.04" data-lazy="https://techpiezo.com/wp-content/uploads/2019/12/Switch-Display-Manager-in-Ubuntu-20-04.svg" data-object-fit="~" /><noscript><img src="https://techpiezo.com/wp-content/uploads/2019/12/Switch-Display-Manager-in-Ubuntu-20-04.svg" class="attachment-full size-full" alt="Switch Display Manager in Ubuntu 20.04" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
 		
 		<div class="entry-content">
-			<p style="text-align: justify;">Ubuntu/Debian Linux distributions contains huge list of packages in their software repositories. Still, we may need to install other packages due to various reasons like dependency issues, third party packages etc. There are two options available to us for installing these other packages. These are &#8211; either we add them to repository or we download the <strong>.deb</strong> package file. In this article, we would discuss the ways to install and remove <strong>.deb</strong> package file manually.</p>
-<p style="text-align: justify;">Before downloading the <strong>.deb</strong> package file, we need to first check the processor architecture for our system. It would help us save a great deal of time, if we already know which package would be supported by our processor&#8217;s architecture. To do that, run the following command in terminal &#8211;</p>
-<pre>lscpu</pre>
-<p style="text-align: justify;">It would return with two results, which are self-explanatory.</p>
-<p style="text-align: justify;">CPU op-mode(s): 32-bit, 64-bit – then its 64-bit Processor architecture. If its just – CPU op-mode(s): 32-bit – then its a 32-bit Processor architecture.</p>
-<p style="text-align: justify;">To know more, about i386 and amd64 architectures follow the <span style="color: #0000ff;"><a style="color: #0000ff;" href="https://techpiezo.com/linux/i386-or-amd64-ubuntu-distribution/" target="_blank" rel="noopener noreferrer">link</a>.</span></p>
-<h4 style="text-align: center;">Install using dpkg command</h4>
-<p style="text-align: justify;">Then, download and save the supported package to a directory. Open terminal again, you need to have a super user access. If you don&#8217;t have one then contact your system administrator for assistance.</p>
-<p style="text-align: justify;">Move to the directory where you downloaded the package by using the change directory <strong>cd</strong> command.</p>
-<pre>cd /path/to/package</pre>
-<p style="text-align: justify;">Then, we will make use of <strong>dpkg</strong> command to install the package. <strong>DPKG</strong> is an acronym for Debian Package Manager.</p>
-<pre>dpkg -i /path/to/package.deb</pre>
-<p style="text-align: justify;">Next, there will be packages that may require additional packages to be installed. These additional packages are the dependencies without which our source package may/may not work. So, if it is required then we may need to pass the following command to the terminal.</p>
-<pre>apt install -f</pre>
-<p style="text-align: justify;">If there was any error during package installation, that could be due to dependencies, then we need use the above command to fix the broken system.</p>
-<h4 style="text-align: center;">Remove using dpkg command</h4>
-<p style="text-align: justify;">For some reason, we may want to remove the package installed. We can do that with the help of <strong>dpkg</strong> command. But, first we need to know if the package which we are about to remove is installed on our system or not. To check, run the following command.</p>
-<pre>dpkg -l | grep &lt;package-name&gt;</pre>
-<p style="text-align: justify;">There are two options available to us for removing a package &#8211; either we keep or remove configuration files of the packages already installed.</p>
-<p style="text-align: justify;">To keep configuration files, run the following. <strong>-r</strong> option is for removing the package.</p>
-<pre>dpkg -r &lt;package-name&gt;</pre>
-<p style="text-align: justify;">Or, to remove the configuration files too, run the following in terminal. <strong>-P</strong> option is for purging the package.</p>
-<pre>dpkg -P &lt;package-name&gt;</pre>
-<p style="text-align: justify;">Just to confirm if your package has been successfully removed, again run.</p>
-<pre>dpkg -l | grep &lt;package-name&gt;</pre>
-<p style="text-align: justify;">In conclusion, we have discussed the ways to install and remove the <strong>.deb</strong> package files.</p>
+			<p style="text-align: justify;">Once the boot process gets completed, we get a prompt to enter user and password to login. The type of login manager would depend on our Ubuntu configuration. If we intend to use CLI (Command-line interface), then we would get a default shell to login. Or else, <strong>a Display Manager in case of GUI (Graphical User Interface)</strong>. In this article, we would focus on how to <strong>switch between different Display Manager</strong> in Ubuntu 20.04 release.</p>
+<p style="text-align: justify;">Although there are numerous Display Manager (both GUI and CLI) available, but we would focus on three prominent ones &#8211; <strong>GDM</strong>, <strong>LightDM</strong> and <strong>SDDM</strong>. In Ubuntu, GDM has been the default Display Manager in Ubuntu 16.10 and later. Many Ubuntu flavors still prefer to choose LightDM as default display manager.</p>
+<p style="text-align: justify;"><strong>Note</strong>: Following operations would require you to have superuser privileges. In case you don&#8217;t have one, then contact your System Administrator for assistance.</p>
+<p style="text-align: justify;">First, we will discuss how to install each Display Manager mentioned above.</p>
+<h5 style="text-align: center;">Install GDM in Ubuntu</h5>
+<p style="text-align: justify;">To install GDM (GNOME Display Manager), open a terminal and issue the following &#8211;</p>
+<pre>sudo apt install gdm3</pre>
+<h5 style="text-align: center;">Install LightDM in Ubuntu</h5>
+<p style="text-align: justify;">To install LightDM, open a terminal and issue the following &#8211;</p>
+<pre>sudo apt install lightdm</pre>
+<h5 style="text-align: center;">Install SDDM in Ubuntu</h5>
+<p style="text-align: justify;">To install SDDM (Simple Desktop Display Manager), open a terminal and issue the following &#8211;</p>
+<pre>sudo apt install sddm</pre>
+<h5 style="text-align: center;">Switch Display Manager in Ubuntu 20.04</h5>
+<p style="text-align: justify;">Its not necessary to install all of the above mentioned Display Manager. Any two will suffice. First, we need to identify our default display manager. Therefore, issue the following in terminal &#8211;</p>
+<pre>cat /etc/X11/default-display-manager</pre>
+<p style="text-align: justify;">This would return</p>
+<p style="text-align: justify;">for <strong>GDM3</strong> &#8211;</p>
+<pre>/usr/sbin/gdm3</pre>
+<p style="text-align: justify;">for <strong>LightDM</strong> &#8211;</p>
+<pre>/usr/sbin/lightdm</pre>
+<p style="text-align: justify;">and <strong>SDDM</strong> &#8211;</p>
+<pre>/usr/sbin/sddm</pre>
+<p style="text-align: justify;">Or, you can simply issue to get the status of active Display Manager &#8211;</p>
+<pre>systemctl status display-manager</pre>
+<p style="text-align: justify;">Now, to switch between them &#8211; run the following command with active (or default) Display Manager &#8211;</p>
+<pre>dpkg-reconfigure &lt;Default_Display_Manager&gt;</pre>
+<p style="text-align: justify;">for instance,</p>
+<pre>dpkg-reconfigure gdm3
+dpkg-reconfigure lightdm
+dpkg-reconfigure sddm</pre>
+<p style="text-align: justify;">And, press <strong>OK</strong>. Next, you will be asked to select your default Display Manager.</p>
+<p><img class="size-full wp-image-3739 aligncenter" src="https://techpiezo.com/wp-content/uploads/2019/12/select-display-manager.png" alt="select display manager" width="342" height="221" /></p>
+<p style="text-align: justify;">On running &#8211; <strong>dpkg-reconfigure gdm3</strong>, you may get following error &#8211;</p>
+<pre>gdm.service is not active, cannot reload.
+invoke-rc.d: initscript gdm3, action "reload" failed.</pre>
+<p style="text-align: justify;">In our case, we just needed to reboot our System. And, everything worked as it should.</p>
+<p style="text-align: justify;"><strong>In conclusion</strong>, we have discussed how to switch Display Manager in Ubuntu 20.04 release.</p>
 		</div>
 
 		
@@ -1035,19 +1047,6 @@ code, kbd, samp, pre,
 					Related Posts				</h4>
 
 				<ul data-columns="3">
-											
-						<li>
-							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/switch-display-manager-in-ubuntu-20-04/"><img width="1" height="1" class="attachment-large size-large" alt="Switch Display Manager in Ubuntu 20.04" data-lazy="https://techpiezo.com/wp-content/uploads/2019/12/Switch-Display-Manager-in-Ubuntu-20-04.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/12/Switch-Display-Manager-in-Ubuntu-20-04.svg" class="attachment-large size-large" alt="Switch Display Manager in Ubuntu 20.04" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
-							<h3 class="related-entry-title">
-								<a href="https://techpiezo.com/linux/switch-display-manager-in-ubuntu-20-04/">Switch Display Manager in Ubuntu 20.04</a>
-							</h3>
-
-							<div class="related-entry-meta">
-								<span>
-									Dec 2, 2019								</span>
-
-															</div>
-						</li>
 											
 						<li>
 							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/enable-or-disable-automatic-login-in-ubuntu-20-04/"><img width="1" height="1" class="attachment-large size-large" alt="Enable or Disable Automatic Login in Ubuntu 20.04" data-lazy="https://techpiezo.com/wp-content/uploads/2019/12/Enable-or-Disable-Automatic-Login-in-Ubuntu-20-04.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/12/Enable-or-Disable-Automatic-Login-in-Ubuntu-20-04.svg" class="attachment-large size-large" alt="Enable or Disable Automatic Login in Ubuntu 20.04" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
@@ -1110,6 +1109,19 @@ code, kbd, samp, pre,
 							<div class="related-entry-meta">
 								<span>
 									Nov 25, 2019								</span>
+
+															</div>
+						</li>
+											
+						<li>
+							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/shared-folder-in-qemu-virtual-machine-linux/"><img width="1" height="1" class="attachment-large size-large" alt="Shared folder in QEMU Virtual Machine (Linux)" data-lazy="https://techpiezo.com/wp-content/uploads/2019/11/Shared-folder-in-QEMU-Virtual-Machine-Linux.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/11/Shared-folder-in-QEMU-Virtual-Machine-Linux.svg" class="attachment-large size-large" alt="Shared folder in QEMU Virtual Machine (Linux)" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<h3 class="related-entry-title">
+								<a href="https://techpiezo.com/linux/shared-folder-in-qemu-virtual-machine-linux/">Shared folder in QEMU Virtual Machine (Linux)</a>
+							</h3>
+
+							<div class="related-entry-meta">
+								<span>
+									Nov 23, 2019								</span>
 
 															</div>
 						</li>
