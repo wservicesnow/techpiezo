@@ -963,18 +963,17 @@ code, kbd, samp, pre,
 		<div class="entry-content">
 			<p style="text-align: justify;">Google Chrome today commands considerable market share when it comes to web browsers. It was first released on September 02, 2008. In this article, we would focus on how to resume Google Chrome downloads in Ubuntu. Although we can pause and resume our downloads on Google Chrome but, there are times when we can&#8217;t resume a download due to variety of reasons including network error. For this purpose, we would use the command-line utility <strong>wget</strong>. It is worth mentioning here that we don&#8217;t have to install any package to get the wget command-line utility. Its already there with default OS installation but if its not there for some reason, then run the following in terminal with superuser privileges &#8211;</p>
 <pre>sudo apt install wget</pre>
-<h5 style="text-align: justify;">Resume Google Chrome downloads in Ubuntu</h5>
-<p style="text-align: justify;">We will discuss it with the help of an example. Lets say, we were downloading the latest stable release of Ubuntu distribution available on &#8211;</p>
-<pre>https://ubuntu.com/download/desktop</pre>
-<p style="text-align: justify;">If 100% downloaded, then the file (ubuntu-18.04.3-desktop-amd64.iso) would have saved to ~/Downloads directory. Now, for some reason the file download gets interrupted. A part of file which gets downloaded is saved with <strong>.crdownload extension</strong> in our ~/Downloads directory. Hence, instead of ubuntu-18.04.3-desktop-amd64.iso it will be now <strong>ubuntu-18.04.3-desktop-amd64.iso.crdownload</strong>.</p>
-<p style="text-align: justify;">All we have to do is rename ubuntu-18.04.3-desktop-amd64.iso.crdownload as ubuntu-18.04.3-desktop-amd64.iso. Hence, run the following in the terminal &#8211;</p>
-<pre>mv ubuntu-18.04.3-desktop-amd64.iso.crdownload ubuntu-18.04.3-desktop-amd64.iso</pre>
+<h5 style="text-align: center;">Resume Google Chrome downloads in Ubuntu</h5>
+<p style="text-align: justify;">We will discuss it with the help of an example. Lets say, we were downloading the latest stable release of XYZ distribution available on &#8211;</p>
+<pre>https://&lt;domain-name&gt;/download/desktop</pre>
+<p style="text-align: justify;">If 100% downloaded, then the file (xyz-desktop-amd64.iso) would have saved to ~/Downloads directory. Now, for some reason the file download gets interrupted. A part of file which gets downloaded is saved with <strong>.crdownload extension</strong> in our ~/Downloads directory. Hence, instead of xyz-desktop-amd64.iso it will be now <strong>xyz-desktop-amd64.iso.crdownload</strong>.</p>
+<p style="text-align: justify;">All we have to do is rename xyz-desktop-amd64.iso.crdownload as xyz-desktop-amd64.iso. Hence, run the following in the terminal &#8211;</p>
+<pre>mv xyz-desktop-amd64.iso.crdownload xyz-desktop-amd64.iso</pre>
 <p style="text-align: justify;">Thereafter, we need to get the download link from where our file was getting downloaded. It can be different from the web page from where you were downloading the file due to redirects. Therefore, head over to the Downloads section of Google Chrome by using the shortcut key <strong>Ctrl+J</strong>.</p>
-<p><img class="size-full wp-image-2448 aligncenter" src="https://techpiezo.com/wp-content/uploads/2019/09/Resume-Downloads-Google-Chrome.png" alt="Resume Downloads Google Chrome" width="624" height="73" /></p>
 <p style="text-align: justify;">Notice, the link just below our file name in Download section. Copy the link and run the following in terminal &#8211;</p>
-<pre>wget -c 'http://ubuntu-releases.mirrors.estointernet.in/18.04.3/ubuntu-18.04.3-desktop-amd64.iso'</pre>
+<pre>wget -c 'http://&lt;domain-name&gt;/&lt;component1&gt;/xyz-desktop-amd64.iso'</pre>
 <p style="text-align: justify;">This will resume our download. We have used <strong>wget</strong> command-line utility with<strong> -c option</strong>. <strong>-c or &#8211;continue option</strong> is for receiving the partially-downloaded file. <strong>Remember</strong>, if -c option is not used with wget then all progress would be lost and the file download would start from scratch.</p>
-<p style="text-align: justify;">In conclusion, we have discussed how to resume interrupted file downloads in Google Chrome web browser using <strong>command-line utility wget</strong>.</p>
+<p style="text-align: justify;"><strong>In conclusion</strong>, we have discussed how to resume interrupted file downloads in Google Chrome web browser using <strong>command-line utility wget</strong>.</p>
 		</div>
 
 		
@@ -986,11 +985,11 @@ code, kbd, samp, pre,
 
 			
 <aside
-	class="ct-hidden-sm ct-hidden-md"    data-type="type-2"
+	    data-type="type-2"
 	>
 
     <div
-		class="ct-sidebar" data-sticky		data-widgets="separated">
+		class="ct-sidebar" 		data-widgets="separated">
 				<div class="ct-widget widget_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
 											<li>
 					<a href="https://techpiezo.com/linux/switch-display-manager-in-ubuntu-20-04/">Switch Display Manager in Ubuntu 20.04</a>

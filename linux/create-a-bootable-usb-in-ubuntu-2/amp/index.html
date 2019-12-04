@@ -429,7 +429,7 @@ amp-carousel > amp-img > img {
 		<h1 class="amp-wp-title">Create a Bootable USB in Ubuntu</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
 	<time datetime="2019-11-26T20:51:43+00:00">
-		5 days ago	</time>
+		1 week ago	</time>
 </div>
 	</header>
 
@@ -441,8 +441,7 @@ amp-carousel > amp-img > img {
 <p class="amp-wp-7d27179">Later, we will also discuss how to format (revert it back to usual state) USB disk using <strong>GParted </strong>once we have made it bootable.</p>
 <p class="amp-wp-7d27179"><strong>Note</strong>: Following operations would require you to have superuser privileges. In case you don’t have one, then contact your System Administrator for assistance. Once you make a USB disk bootable, all stored data will be lost. Hence, we advise you to take a backup of your USB disk beforehand.</p>
 <h5 class="amp-wp-cdd8ca0">Download a Bootable ISO Image</h5>
-<p class="amp-wp-7d27179">We can download any supported Linux distribution ISO image. For the purpose of this article, we chose to download Ubuntu Server 18.04.3 LTS ISO image (<strong>bionic-server-amd64.iso</strong>) from the following link –</p>
-<pre>http://cdimage.ubuntu.com/ubuntu-server/bionic/daily/current/</pre>
+<p class="amp-wp-7d27179">We can download any supported Linux distribution ISO image. For the purpose of this article, we downloaded Ubuntu Server 18.04.3 LTS ISO image (<strong>bionic-server-amd64.iso</strong>) from Ubuntu Server download page.</p>
 <h5 class="amp-wp-cdd8ca0">Identify USB disk through lsblk or fdisk</h5>
 <p class="amp-wp-7d27179">Mount your USB disk –</p>
 <ol><li class="amp-wp-7d27179"><strong>Identify USB disk through lsblk</strong> – Open a terminal and issue the following –
@@ -492,7 +491,6 @@ Device Boot Start End Sectors Size Id Type
 <pre>sudo apt update
 sudo apt install gparted</pre>
 <p class="amp-wp-7d27179">Now, open GParted from Systems’ main menu. It will ask you to authenticate. And, select your device from the drop down menu at top right corner.</p>
-<p><amp-img class="size-full wp-image-3704 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/11/gparted-select-device.png" alt="gparted select device" width="252" height="62" layout="intrinsic"></amp-img></p>
 <p class="amp-wp-7d27179">If mounted, then we need to unmount our USB disk. Select the USB disk and in <strong>Menu</strong> bar, click <strong>Partition</strong> and <strong>Unmount</strong>.</p>
 <p class="amp-wp-7d27179">Then, to format USB disk<strong> –&gt;</strong> Click Partition in <strong>Menu</strong> bar – <strong>Format to</strong> – choose file system type.</p>
 <p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have discussed how to create a Bootable USB in Ubuntu. We also discussed how to restore our bootable USB disk to its original state using graphical tool GParted.</p>

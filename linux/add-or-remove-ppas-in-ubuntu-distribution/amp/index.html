@@ -440,13 +440,13 @@ amp-carousel > amp-img > img {
 <p class="amp-wp-7d27179">When compared to the packages available in standard Ubuntu repository, users have to settle with less security when they install packages through unverified PPAs. This, moreover, implies that these packages have not gone through the Ubuntu package validation checks. But, it should also not be construed as if the PPA developer would behave mischievously. Whether to go with installation of the package is left to users’ discretion.</p>
 <p class="amp-wp-7d27179">Furthermore, when users add packages through PPAs they allow the package developers to update their packages just like any other package available in standard Ubuntu repository.</p>
 <p class="amp-wp-7d27179">Also, the operations discussed below would require you to have superuser privileges. Contact your System Administrator for assistance in case you don’t have one.</p>
-<p>Through <strong>add-apt-repository</strong> command we are adding the repository to<strong> /etc/apt/sources.list</strong> file.</p>
+<p class="amp-wp-7d27179">Through <strong>add-apt-repository</strong> command we are adding the repository to<strong> /etc/apt/sources.list</strong> file.</p>
 <h5 class="amp-wp-7d27179">Add PPAs in Ubuntu</h5>
 <p class="amp-wp-7d27179">There are two methods available to us for adding PPAs in our distribution. Besides, location of PPA is a prerequisite to its addition and removal.</p>
 <p class="amp-wp-7d27179">First, through <strong>uri</strong>. Run the following in terminal –</p>
 <pre>sudo add-apt-repository 'deb uri distribution [component] [..]'<span id="line-7" class="anchor"></span><span id="line-8" class="anchor"></span></pre>
 <p class="amp-wp-7d27179">For instance,</p>
-<pre>sudo add-apt-repository 'deb http://deb.debian.org/debian/ stable main contrib non-free'</pre>
+<pre>sudo add-apt-repository 'deb http://&lt;domain-name&gt;/&lt;distribution&gt;/ component1 component2'</pre>
 <p class="amp-wp-7d27179">Second, through PPA name –</p>
 <pre>sudo add-apt-repository ppa:&lt;ppa_name&gt;</pre>
 <p class="amp-wp-7d27179">To reflect the changes we just made, source list file needs to be updated. Hence, don’t forget to run the following in terminal –</p>
@@ -457,7 +457,7 @@ amp-carousel > amp-img > img {
 <pre>sudo add-apt-repository --remove 'deb uri distribution [component] [..]'</pre>
 <pre>sudo add-apt-repository --remove ppa:&lt;ppa_name&gt;</pre>
 <p class="amp-wp-7d27179">For instance,</p>
-<pre>sudo add-apt-repository --remove 'deb http://deb.debian.org/debian/ stable main contrib non-free'</pre>
+<pre>sudo add-apt-repository --remove 'deb http://&lt;domain-name&gt;/&lt;distribution&gt;/ component1 component2'</pre>
 <p class="amp-wp-7d27179">Thereafter, update the source list through the command –</p>
 <pre>sudo apt-update</pre>
 <p class="amp-wp-7d27179"><strong>Note:</strong> Merely removing a repository would not remove the packages which were installed through repository.</p>

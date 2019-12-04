@@ -971,13 +971,9 @@ code, kbd, samp, pre,
 <p style="text-align: justify;">We would discuss each of these in coming articles. For the purpose of this article, we would focus only on how to reset root password of our Ubuntu distribution. Also, what we are about to do may damage our system so it is advisable to keep backup beforehand.</p>
 <h5>Reset root password in Ubuntu distribution</h5>
 <p style="text-align: justify;">First, we need to reboot our system. And, just when its about to boot long press <strong>SHIFT key</strong> to get <strong>GRUB Menu</strong>.</p>
-<p><img class="aligncenter wp-image-2621 size-full" src="https://techpiezo.com/wp-content/uploads/2019/09/grub-menu.png" alt="grub menu" width="831" height="547" /></p>
 <p style="text-align: justify;">Next, we need to <strong>press &#8216;e&#8217;</strong> to edit the first entry &#8216;<strong>Ubuntu</strong>&#8216;.</p>
-<p><img class="aligncenter wp-image-2623 size-full" src="https://techpiezo.com/wp-content/uploads/2019/09/gnu-grub.png" alt="gnu-grub" width="782" height="567" /></p>
 <p style="text-align: justify;">We need to scroll down to the line starting with <strong>linux /boot/vmlinuz</strong>&#8230; and append the line with &#8211;</p>
 <pre>init=/bin/bash</pre>
-<p style="text-align: justify;">To illustrate &#8211;</p>
-<p><img class="size-full wp-image-2624 aligncenter" src="https://techpiezo.com/wp-content/uploads/2019/09/init-bin-bash.png" alt="init bin bash" width="780" height="580" /></p>
 <p style="text-align: justify;">Now, we need to press<strong> Ctrl+x</strong> or <strong>F10</strong> to boot our system. It will take us to command-line prompt &#8211;</p>
 <p style="text-align: justify;"><strong>root@(none):/#</strong></p>
 <p style="text-align: justify;">Next, we will have to <strong>remount / in read/write</strong> mode. So, at the prompt run the following &#8211;</p>
@@ -1007,11 +1003,11 @@ passwd: password unchanged</pre>
 
 			
 <aside
-	class="ct-hidden-sm ct-hidden-md"    data-type="type-2"
+	    data-type="type-2"
 	>
 
     <div
-		class="ct-sidebar" data-sticky		data-widgets="separated">
+		class="ct-sidebar" 		data-widgets="separated">
 				<div class="ct-widget widget_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
 											<li>
 					<a href="https://techpiezo.com/linux/switch-display-manager-in-ubuntu-20-04/">Switch Display Manager in Ubuntu 20.04</a>

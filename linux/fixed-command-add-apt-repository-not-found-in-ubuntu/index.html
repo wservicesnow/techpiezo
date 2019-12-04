@@ -968,21 +968,21 @@ code, kbd, samp, pre,
 <li>through add-apt-repository command.</li>
 </ol>
 <p style="text-align: justify;">In this article, we would discuss how to install the relevant package in our Ubuntu distribution. Don&#8217;t miss the additional info, if you want to get an idea of how to add the repository in our Ubuntu distribution. For detailed information, check the link as mentioned below in Additional info section. We would also like to add that following operations would require you to have superuser privileges. If you don&#8217;t have access to one, then contact your System Administrator for assistance.</p>
-<h5>Install software-properties-common package in Ubuntu distribution</h5>
+<h5 style="text-align: center;">Install software-properties-common package in Ubuntu distribution</h5>
 <p style="text-align: justify;">To the fix the error we need to install the package <strong>software-properties-common</strong>. Its installation would require you to run the following in terminal &#8211;</p>
 <pre>sudo apt install software-properties-common</pre>
 <p style="text-align: justify;">This will install the command-line utility <strong>add-apt-repository </strong>as provided with the package and will fix the error as well.</p>
 <p style="text-align: justify;"><strong>Additional info &#8211;</strong></p>
 <p style="text-align: justify;">As discussed above there are two methods with which we could add the relevant PPAs/repository.</p>
-<p style="text-align: justify;">First, by editing source list file manually. All we have to do is open the file<strong> /etc/apt/sources.list</strong> with a text editor and append the file with relevant entries. For example, append the file to add a debian repository with &#8211;</p>
-<pre>deb http://deb.debian.org/debian/ stable main contrib non-free</pre>
+<p style="text-align: justify;">First, by editing source list file manually. All we have to do is open the file<strong> /etc/apt/sources.list</strong> with a text editor and append the file with relevant entries. For example, append the file to add any Linux distribution repository with &#8211;</p>
+<pre>deb http://&lt;domain-name&gt;/&lt;distribution&gt;/ component1 component2</pre>
 <p style="text-align: justify;">Second, through the command-line utility <strong>add-apt-repository &#8211;</strong></p>
 <pre>sudo add-apt-repository 'deb uri distribution [component] [..]'
 sudo add-apt-repository ppa:&lt;ppa_name&gt;</pre>
 <p style="text-align: justify;">For instance,</p>
-<pre>sudo add-apt-repository 'deb http://deb.debian.org/debian/ stable main contrib non-free'</pre>
+<pre>sudo add-apt-repository 'deb http://&lt;domain-name&gt;/&lt;distribution&gt;/ component1 component2'</pre>
 <p style="text-align: justify;">Either of the methods discussed could be used to add a repository. Choose one which you comfortable with the most. For more about addition and removal of repositories in Ubuntu distribution, read the article <span style="color: #ff0000;"><a style="color: #ff0000;" href="https://techpiezo.com/linux/add-or-remove-ppas-in-ubuntu-distribution/">here</a></span>.</p>
-<p style="text-align: justify;">In conclusion, we have discussed how to fix the error &#8211; Command &#8216;add-apt-repository&#8217; not found in Ubuntu distribution.</p>
+<p style="text-align: justify;"><strong>In conclusion</strong>, we have discussed how to fix the error &#8211; Command &#8216;add-apt-repository&#8217; not found in Ubuntu distribution.</p>
 		</div>
 
 		
@@ -994,11 +994,11 @@ sudo add-apt-repository ppa:&lt;ppa_name&gt;</pre>
 
 			
 <aside
-	class="ct-hidden-sm ct-hidden-md"    data-type="type-2"
+	    data-type="type-2"
 	>
 
     <div
-		class="ct-sidebar" data-sticky		data-widgets="separated">
+		class="ct-sidebar" 		data-widgets="separated">
 				<div class="ct-widget widget_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
 											<li>
 					<a href="https://techpiezo.com/linux/switch-display-manager-in-ubuntu-20-04/">Switch Display Manager in Ubuntu 20.04</a>

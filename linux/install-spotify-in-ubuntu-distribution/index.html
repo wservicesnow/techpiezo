@@ -961,35 +961,21 @@ code, kbd, samp, pre,
 		<figure class="ct-featured-image ct-hidden-sm" ><div class="ct-image-container ct-lazy" ><img class="attachment-full size-full" alt="Install Spotify in Ubuntu" data-lazy="https://techpiezo.com/wp-content/uploads/2019/10/Install-Spotify-in-Ubuntu.svg" data-object-fit="~" /><noscript><img src="https://techpiezo.com/wp-content/uploads/2019/10/Install-Spotify-in-Ubuntu.svg" class="attachment-full size-full" alt="Install Spotify in Ubuntu" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
 		
 		<div class="entry-content">
-			<p style="text-align: justify;">The music streaming platform, <strong>Spotify</strong>, was launched on October 07, 2008. The services are being offered under a freemium business model i.e. Spotify Free and Spotify Premium. With Spotify Premium, we can listen to our favorite songs even without an internet connection. In addition to, we also get ad-free experience. Furthermore, as of now certain regions do get free on-demand access for mobile. In this article, we would discuss how to install Spotify in Ubuntu distribution. There are two methods available through which we can install Spotify &#8211;</p>
-<ol style="text-align: justify;">
-<li>through <strong>snapd service</strong>, or</li>
-<li>by <strong>configuring the repository</strong>.</li>
-</ol>
+			<p style="text-align: justify;"><strong>Spotify</strong> is a music streaming platform. It was first launched on October 07, 2008. The services are offered under a freemium business model i.e. Spotify Free and Spotify Premium. With Spotify Premium, we can listen to our favorite songs even without an internet connection. In addition to, we also get ad-free experience. Furthermore, as of now certain regions do get free on-demand access for mobile. In this article, we would discuss how to install Spotify in Ubuntu distribution.</p>
 <p style="text-align: justify;"><strong>Note</strong>: Following operations would require you to have superuser privileges. In case you don&#8217;t have one, then contact your System Administrator for assistance.</p>
 <h5 style="text-align: center;">Install Spotify through Snapd service</h5>
 <p style="text-align: justify;">In case you don&#8217;t have snapd service installed, then issue the following in terminal to install &#8211;</p>
 <pre>sudo apt install snapd</pre>
 <p style="text-align: justify;">Now, to install Spotify &#8211;</p>
 <pre>sudo snap install spotify</pre>
-<p style="text-align: justify;">This will install spotify in Ubuntu distribution. Alternately, we can also configure a repository to install the same.</p>
-<h5 style="text-align: center;">Install Spotify by configuring the repository</h5>
-<p style="text-align: justify;">Firstly, we have to add a GPG key needed to authenticate packages to be installed. Thereafter, we would add the necessary repository source location in <strong>/etc/apt/sources.list.d</strong> directory. And, then update the repository and install the required packages.</p>
-<p style="text-align: justify;">We will start with GPG key addition first &#8211;</p>
-<pre>cd /dev/shm
-wget -q -O - https://download.spotify.com/debian/pubkey.gpg | sudo apt-key add -</pre>
-<p style="text-align: justify;">where,</p>
-<p style="text-align: justify;"><strong>apt-key</strong> command-line utility &#8211; used to manage keys. Those packages which have been authenticated through GPG keys are considered trusted.</p>
-<p style="text-align: justify;">Then, we will create a file <strong>spotify.list</strong> in <strong>/etc/apt/sources.list.d/</strong> directory. Furthermore, we will also add repository source location in <strong>spotify.list</strong> file. So, issue the following in terminal &#8211;</p>
-<pre>echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list</pre>
-<p style="text-align: justify;">where,</p>
-<p style="text-align: justify;"><strong>| (pipe)</strong> redirects output of one command to the other.</p>
-<p style="text-align: justify;"><strong>tee</strong> command &#8211; it will write the redirected input to the file as specified.</p>
-<p style="text-align: justify;">Next, update the repository &#8211;</p>
-<pre>sudo apt update</pre>
-<p style="text-align: justify;">Thereafter, we would install the Spotify package &#8211;</p>
-<pre>sudo apt install spotify-client</pre>
-<p style="text-align: justify;"><strong>In conclusion</strong>, we have discussed how to install Spotify in Ubuntu distribution.</p>
+<p style="text-align: justify;">This will install Spotify in Ubuntu distribution.</p>
+<p style="text-align: justify;">If, for some reason, we decide to remove the package Spotify. Then, open a terminal and issue the following &#8211;</p>
+<pre>sudo snap remove spotify</pre>
+<p style="text-align: justify;"><strong>In conclusion</strong>, we have discussed installation steps required for Spotify in Ubuntu distribution.</p>
+<p style="text-align: justify;"><strong>Additional Info &#8211;</strong></p>
+<p style="text-align: justify;">Snap is a package manager. With daemon snapd, we can manage our Snap packages.</p>
+<p style="text-align: justify;">To update our Snaps manually &#8211;</p>
+<pre>sudo snap refresh</pre>
 		</div>
 
 		
@@ -1001,11 +987,11 @@ wget -q -O - https://download.spotify.com/debian/pubkey.gpg | sudo apt-key add -
 
 			
 <aside
-	class="ct-hidden-sm ct-hidden-md"    data-type="type-2"
+	    data-type="type-2"
 	>
 
     <div
-		class="ct-sidebar" data-sticky		data-widgets="separated">
+		class="ct-sidebar" 		data-widgets="separated">
 				<div class="ct-widget widget_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
 											<li>
 					<a href="https://techpiezo.com/linux/switch-display-manager-in-ubuntu-20-04/">Switch Display Manager in Ubuntu 20.04</a>

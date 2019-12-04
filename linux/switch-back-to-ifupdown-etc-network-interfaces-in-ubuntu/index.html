@@ -962,21 +962,21 @@ code, kbd, samp, pre,
 		
 		<div class="entry-content">
 			<p style="text-align: justify;"><strong>Netplan</strong> is a network configuration tool which was introduced in the Ubuntu 17.10. Prior to that, Ubuntu had <strong>ifupdown</strong> package to configure and manage networks. There are still many users who would prefer <strong>ifupdown</strong> package for managing their networks for various reasons. In this article, we would discuss how desktop users can switch back to <strong>ifupdown</strong> package and manage their networks through <strong>/etc/network/interfaces</strong> configuration file. Furthermore, they can also use command-line utilities like nmcli, nmtui or GUI based network-manager-gnome to manage their networks.</p>
-<h4 style="text-align: justify;">Install ifupdown package</h4>
+<h4 style="text-align: center;">Install ifupdown package</h4>
 <p style="text-align: justify;">Superuser privilege is a prerequisite before making any changes, if you don&#8217;t have one then contact your System Administrator for assistance.</p>
 <p style="text-align: justify;">You need to install<strong> ifupdown</strong> package. To do so, run the following &#8211;</p>
 <pre>sudo apt update
 sudo apt install ifupdown</pre>
 <p style="text-align: justify;">Also, if you plan on to Install GUI version of Network Manager &#8211; various other tools like nmcli, nmtui are also included in it.</p>
 <pre>sudo apt install network-manager-gnome</pre>
-<h4 style="text-align: justify;">Remove Netplan package</h4>
+<h4 style="text-align: center;">Remove Netplan package</h4>
 <p style="text-align: justify;">If you don&#8217;t want to keep configuration and other related files of <strong>Netplan</strong> package installed,</p>
 <pre>sudo apt purge netplan.io</pre>
 <p style="text-align: justify;">To remove associated folders &#8211;</p>
 <pre>sudo rm -rf /usr/share/netplan 
 sudo rm -rf /etc/netplan</pre>
 <p style="text-align: justify;">So far, we have installed ifupdown package and subsequently removed Netplan package. Now, we will be editing<strong> /etc/network/interfaces</strong> file.</p>
-<h4 style="text-align: justify;">Make necessary changes to /etc/network/interfaces</h4>
+<h4 style="text-align: center;">Make necessary changes to /etc/network/interfaces</h4>
 <pre>sudo nano /etc/network/interfaces</pre>
 <p style="text-align: justify;">We have used nano text editor, you may choose one of your choice. In <strong>/etc/network/interfaces</strong> configuration file, make the following entries &#8211;</p>
 <pre>auto lo
@@ -1016,11 +1016,11 @@ iface enp2s0 inet dhcp</pre>
 
 			
 <aside
-	class="ct-hidden-sm ct-hidden-md"    data-type="type-2"
+	    data-type="type-2"
 	>
 
     <div
-		class="ct-sidebar" data-sticky		data-widgets="separated">
+		class="ct-sidebar" 		data-widgets="separated">
 				<div class="ct-widget widget_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
 											<li>
 					<a href="https://techpiezo.com/linux/switch-display-manager-in-ubuntu-20-04/">Switch Display Manager in Ubuntu 20.04</a>

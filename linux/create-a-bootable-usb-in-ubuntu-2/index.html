@@ -966,8 +966,7 @@ code, kbd, samp, pre,
 <p style="text-align: justify;">Later, we will also discuss how to format (revert it back to usual state) USB disk using <strong>GParted </strong>once we have made it bootable.</p>
 <p style="text-align: justify;"><strong>Note</strong>: Following operations would require you to have superuser privileges. In case you don&#8217;t have one, then contact your System Administrator for assistance. Once you make a USB disk bootable, all stored data will be lost. Hence, we advise you to take a backup of your USB disk beforehand.</p>
 <h5 style="text-align: center;">Download a Bootable ISO Image</h5>
-<p style="text-align: justify;">We can download any supported Linux distribution ISO image. For the purpose of this article, we chose to download Ubuntu Server 18.04.3 LTS ISO image (<strong>bionic-server-amd64.iso</strong>) from the following link –</p>
-<pre>http://cdimage.ubuntu.com/ubuntu-server/bionic/daily/current/</pre>
+<p style="text-align: justify;">We can download any supported Linux distribution ISO image. For the purpose of this article, we downloaded Ubuntu Server 18.04.3 LTS ISO image (<strong>bionic-server-amd64.iso</strong>) from Ubuntu Server download page.</p>
 <h5 style="text-align: center;">Identify USB disk through lsblk or fdisk</h5>
 <p style="text-align: justify;">Mount your USB disk &#8211;</p>
 <ol>
@@ -1019,7 +1018,6 @@ Device Boot Start End Sectors Size Id Type
 <pre>sudo apt update
 sudo apt install gparted</pre>
 <p style="text-align: justify;">Now, open GParted from Systems&#8217; main menu. It will ask you to authenticate. And, select your device from the drop down menu at top right corner.</p>
-<p><img class="size-full wp-image-3704 aligncenter" src="https://techpiezo.com/wp-content/uploads/2019/11/gparted-select-device.png" alt="gparted select device" width="252" height="62" /></p>
 <p style="text-align: justify;">If mounted, then we need to unmount our USB disk. Select the USB disk and in <strong>Menu</strong> bar, click <strong>Partition</strong> and <strong>Unmount</strong>.</p>
 <p style="text-align: justify;">Then, to format USB disk<strong> &#8211;&gt;</strong> Click Partition in <strong>Menu</strong> bar &#8211; <strong>Format to</strong> &#8211; choose file system type.</p>
 <p style="text-align: justify;"><strong>In conclusion</strong>, we have discussed how to create a Bootable USB in Ubuntu. We also discussed how to restore our bootable USB disk to its original state using graphical tool GParted.</p>
@@ -1034,11 +1032,11 @@ sudo apt install gparted</pre>
 
 			
 <aside
-	class="ct-hidden-sm ct-hidden-md"    data-type="type-2"
+	    data-type="type-2"
 	>
 
     <div
-		class="ct-sidebar" data-sticky		data-widgets="separated">
+		class="ct-sidebar" 		data-widgets="separated">
 				<div class="ct-widget widget_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
 											<li>
 					<a href="https://techpiezo.com/linux/switch-display-manager-in-ubuntu-20-04/">Switch Display Manager in Ubuntu 20.04</a>

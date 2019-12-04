@@ -409,7 +409,7 @@ amp-carousel > amp-img > img {
 	right: 16px;
 }
 		/* Inline stylesheets */
-:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}	</style>
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cdd8ca0{text-align:center}	</style>
 </head>
 
 <body class="">
@@ -437,20 +437,15 @@ amp-carousel > amp-img > img {
 
 	<div class="amp-wp-article-content">
 		<p class="amp-wp-7d27179">HP Linux Printing and Imaging System (HPLIP) is a package available in standard Ubuntu repository. The HPLIP package make Linux distributions access HP’s printing and scanning devices. In this article, we will cover <strong>HPLIP v3.19.1</strong> installation process in Ubuntu 19.04. Few of the operations mentioned below may require superuser privileges, if you don’t have one then contact your System Administrator for assistance.</p>
-<h5>Install HPLIP 3.19.1 in Ubuntu 19.04</h5>
+<h5 class="amp-wp-cdd8ca0">Install HPLIP 3.19.1 in Ubuntu 19.04</h5>
 <p class="amp-wp-7d27179">We need to update Ubuntu’s standard repository for latest version of packages –</p>
 <pre>sudo apt update</pre>
 <p class="amp-wp-7d27179">Thereafter, install the relevant packages through the command <strong>apt install</strong> –</p>
 <pre>sudo apt install hplip hplip-data hplip-gui</pre>
 <p class="amp-wp-7d27179">It will also install all the associated dependencies. Meanwhile, connect your printing devices to – USB, Network or Parallel-port for device discovery. Once the installation process is completed, we will setup our printing device.</p>
-<h5>hp-setup in Ubuntu 19.04</h5>
+<h5 class="amp-wp-cdd8ca0">hp-setup in Ubuntu 19.04</h5>
 <p class="amp-wp-7d27179">Prerequisites –</p>
-<p class="amp-wp-7d27179">We will have to download both the plugin as well its associated digital signature manually. Even if we try to download the plugin through hp-setup command line utility directly, it may throw a file checksum error. So, download the required files from the links provided below –</p>
-<p class="amp-wp-7d27179">For hplip plugin</p>
-<pre>cd /home/</pre>
-<pre>wget -c 'http://www.openprinting.org/download/printdriver/auxfiles/HP/plugins/hplip-3.19.1-plugin.run'</pre>
-<p class="amp-wp-7d27179">For hplip plugin’s digital signature</p>
-<pre>wget -c 'http://www.openprinting.org/download/printdriver/auxfiles/HP/plugins/hplip-3.19.1-plugin.run.asc'</pre>
+<p class="amp-wp-7d27179">We will have to download both the plugin as well its associated digital signature manually. Even if we try to download the plugin through hp-setup command line utility directly, it may throw a file checksum error. So, download the required files from the OpenPrinting website itself. The two files, we should have are – <strong>hplip-3.19.1-plugin.run</strong> &amp; <strong>hplip-3.19.1-plugin.run.asc</strong>.</p>
 <p class="amp-wp-7d27179">Note: Make sure both the downloaded files are kept in same directory.</p>
 <p class="amp-wp-7d27179">Run <strong>hp-plugin</strong> utility in the terminal –</p>
 <pre>hp-plugin</pre>
@@ -471,7 +466,7 @@ amp-carousel > amp-img > img {
 sudo ln -s /usr/lib64/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu
 sudo ln -s /usr/lib64/sane /usr/lib64/x86_64-linux-gnu/sane</pre>
 <p class="amp-wp-7d27179">Now, you will have to run the hp-setup command line utility again in the terminal. And, follow the same steps as mentioned in the article above.</p>
-<p class="amp-wp-7d27179">In conclusion, we have installed hplip package version 3.19.1 and its associated plug-in with digital signatures in Ubuntu 19.04.</p>
+<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have installed hplip package version 3.19.1 and its associated plug-in with digital signatures in Ubuntu 19.04.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">

@@ -961,7 +961,7 @@ code, kbd, samp, pre,
 		<figure class="ct-featured-image ct-hidden-sm" ><div class="ct-image-container ct-lazy" ><img class="attachment-full size-full" alt="Install VirtualBox in Debian Stretch" data-lazy="https://techpiezo.com/wp-content/uploads/2019/06/Install-VirtualBox-in-Debian-Stretch.svg" data-object-fit="~" /><noscript><img src="https://techpiezo.com/wp-content/uploads/2019/06/Install-VirtualBox-in-Debian-Stretch.svg" class="attachment-full size-full" alt="Install VirtualBox in Debian Stretch" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
 		
 		<div class="entry-content">
-			<p style="text-align: justify;">VirtualBox is a free and open-source virtualization product developed by Oracle Corporation. It was first released on January 17, 2007. Through VirtualBox we can create Virtual Machines, which could be run in our host operating systems. Apart from that, we can use VirtualBox extension packs for extra functionality like for USB devices, Remote desktop protocol support, Webcam support, PXE boot ROM etc. To improve user experience and other related features VirtualBox Guest Additions are provided as well.</p>
+			<p style="text-align: justify;"><strong>VirtualBox</strong> is a free and open-source virtualization product developed by Oracle Corporation. It was first released on January 17, 2007. With VirtualBox, we can create Virtual Machines. These Virtual Machines can then run on our host operating systems. Apart from that, we can use VirtualBox extension packs for extra functionality like for USB devices, Remote desktop protocol support, Webcam support, PXE boot ROM etc. VirtualBox Guest Additions are also available. In this article, we would discuss how to install VirtualBox in Debian Stretch.</p>
 <h4 style="text-align: center;">Benefits of using a Virtual Machine</h4>
 <ol>
 <li style="text-align: justify;"><strong>For testing purposes</strong>: If we are testing a product on our main Operating system. And, if something goes wrong then we could get a broken Operating system. There are two options available to us then, either we fix or reinstall it. To save the effort, we can use Virtual Machines. In that scenario, only our Virtual Machines are affected and that too could be fixed in few seconds if we have already taken its screenshots.</li>
@@ -969,22 +969,23 @@ code, kbd, samp, pre,
 <li style="text-align: justify;"><strong>Reduces costs on Infrastructure</strong>: We do not have to purchase separate hardware for running multiple operating systems. We could do tasks using operating systems installed on Virtual Machines and that in turn would help us reduce costs in infrastructure expenses.</li>
 </ol>
 <h4 style="text-align: center;">Install VirtualBox in Debian Stretch</h4>
-<p style="text-align: justify;"><strong>1.</strong> First of all, open terminal and login as root/superuser by:</p>
+<p style="text-align: justify;">First, open terminal and login as root/superuser by:</p>
 <pre>su -l</pre>
 <p style="text-align: justify;">if you don&#8217;t have the privileges then contact your system administrator.</p>
-<p style="text-align: justify;"><strong>2.</strong> Next, add VirtualBox repository to the file <strong>/etc/apt/sources.list</strong> by using a text editor:</p>
-<pre>nano /etc/apt/sources.list</pre>
-<p style="text-align: justify;">Add the following entry in the file &#8211;</p>
-<pre>deb http://download.virtualbox.org/virtualbox/debian stretch contrib</pre>
-<p style="text-align: justify;"><strong>3.</strong> Then, we will have to add the VirtualBox public key:</p>
-<pre>cd /dev/shm
-wget https://www.virtualbox.org/download/oracle_vbox_2016.asc
-apt-key add oracle_vbox_2016.asc</pre>
-<p style="text-align: justify;"><strong>4.</strong> Once, done update the repositories by issuing the following command:</p>
-<pre>apt update</pre>
-<p style="text-align: justify;"><strong>5.</strong> Lastly, install VirtualBox:</p>
-<pre>apt install virtualbox-6.0</pre>
-<p style="text-align: justify;">Hence, we have discussed how to install VirtualBox in Debian stretch, which is the latest stable release at the time of writing the article.</p>
+<p style="text-align: justify;">Now, download the <strong>.deb package (virtualbox-6.0_6.0.14-133895~Debian~stretch_amd64.deb)</strong> from the official website of VirtualBox. This is the latest stable release available at the time of writing the article.</p>
+<p style="text-align: justify;">We would now install the package through <strong>dpkg</strong> (Debian Package Manager). Once the package gets downloaded, head to the directory where it is saved through <strong>cd</strong> command-line utility.</p>
+<pre>cd /path/to/package/
+dpkg -i virtualbox-6.0_6.0.14-133895~Debian~stretch_amd64.deb</pre>
+<p style="text-align: justify;">We may encounter following error –</p>
+<pre>The distribution packages containing the headers are probably:
+linux-headers-amd64 linux-headers-X.XX.X-X-amd64</pre>
+<p style="text-align: justify;">Under such a scenario, we need to install relevant packages –</p>
+<pre>apt install linux-headers-amd64 linux-headers-X.XX.X-X-amd64</pre>
+<p style="text-align: justify;">where,</p>
+<p style="text-align: justify;"><strong>X</strong> – replace it with applicable version number.</p>
+<p style="text-align: justify;">Now, again we need to issue the following to complete the installation process (if you didn’t get the error, then this step isn’t required) –</p>
+<pre>dpkg -i virtualbox-6.0_6.0.14-133895~Debian~stretch_amd64.deb</pre>
+<p style="text-align: justify;"><strong>In conclusion</strong>, we have discussed how to install VirtualBox in Debian stretch, which is the latest stable release at the time of writing the article.</p>
 		</div>
 
 		
@@ -996,11 +997,11 @@ apt-key add oracle_vbox_2016.asc</pre>
 
 			
 <aside
-	class="ct-hidden-sm ct-hidden-md"    data-type="type-2"
+	    data-type="type-2"
 	>
 
     <div
-		class="ct-sidebar" data-sticky		data-widgets="separated">
+		class="ct-sidebar" 		data-widgets="separated">
 				<div class="ct-widget widget_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
 											<li>
 					<a href="https://techpiezo.com/linux/switch-display-manager-in-ubuntu-20-04/">Switch Display Manager in Ubuntu 20.04</a>

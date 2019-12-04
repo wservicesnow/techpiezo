@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="December 2, 2019 1:27 am" -->
+<!-- generated-on="December 4, 2019 9:37 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>https://techpiezo.com/linux/install-synaptic-package-manager-in-ubuntu/</loc>
-		<lastmod>2019-10-29T13:54:56+00:00</lastmod>
+		<lastmod>2019-12-03T17:02:20+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/python/install-python-3-8-0-in-ubuntu-19-10/</loc>
-		<lastmod>2019-10-29T17:40:12+00:00</lastmod>
+		<lastmod>2019-12-03T17:07:34+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
@@ -32,19 +32,19 @@
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/install-teamspeak-client-in-ubuntu-distribution/</loc>
-		<lastmod>2019-11-17T06:23:40+00:00</lastmod>
+		<lastmod>2019-12-03T17:11:52+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/install-discord-in-ubuntu-distribution/</loc>
-		<lastmod>2019-10-26T10:12:50+00:00</lastmod>
+		<lastmod>2019-12-03T17:22:32+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/install-spotify-in-ubuntu-distribution/</loc>
-		<lastmod>2019-10-27T11:17:46+00:00</lastmod>
+		<lastmod>2019-12-03T17:52:09+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
@@ -62,7 +62,7 @@
 	</url>
 	<url>
 		<loc>https://techpiezo.com/python/use-jupyter-notebook-for-writing-python-programs/</loc>
-		<lastmod>2019-11-03T18:53:39+00:00</lastmod>
+		<lastmod>2019-12-03T18:00:25+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
@@ -74,7 +74,7 @@
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/install-vlc-media-player-in-ubuntu/</loc>
-		<lastmod>2019-10-18T17:05:00+00:00</lastmod>
+		<lastmod>2019-12-03T18:03:07+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
@@ -86,7 +86,7 @@
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/install-skype-in-ubuntu-distribution/</loc>
-		<lastmod>2019-10-27T11:20:17+00:00</lastmod>
+		<lastmod>2019-12-03T20:21:57+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
@@ -98,7 +98,7 @@
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/download-and-install-virtualbox-guest-additions-in-ubuntu/</loc>
-		<lastmod>2019-10-26T09:34:32+00:00</lastmod>
+		<lastmod>2019-12-03T20:30:38+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
@@ -110,7 +110,7 @@
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/upgrade-a-specific-package-in-ubuntu/</loc>
-		<lastmod>2019-10-02T07:09:59+00:00</lastmod>
+		<lastmod>2019-12-03T20:29:34+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
@@ -120,4 +120,4 @@
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: dfdee0a3dc1186ebef73588c542d1479; Queries for sitemap: 65; Total queries: 76; Seconds: 0.04; Memory for sitemap: 0MB; Total memory: 2MB -->
+</urlset><!-- Request ID: 24a4a2d534a7f787d1c252d424e9fc7b; Queries for sitemap: 65; Total queries: 76; Seconds: 0.04; Memory for sitemap: 0MB; Total memory: 2MB -->

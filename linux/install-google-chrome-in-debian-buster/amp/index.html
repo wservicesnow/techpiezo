@@ -409,7 +409,7 @@ amp-carousel > amp-img > img {
 	right: 16px;
 }
 		/* Inline stylesheets */
-:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}	</style>
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cdd8ca0{text-align:center}	</style>
 </head>
 
 <body class="">
@@ -436,32 +436,31 @@ amp-carousel > amp-img > img {
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">Google Chrome is a web browser developed by Google LLC. The first stable version of Google Chrome was released on December 11, 2008. Ever since, Google Chrome has held a considerable web browser’s market share. At the time of writing the article, the latest Stable release of Google Chrome was 76.0.3809.87-1. The other supported releases for Google Chrome is Dev (for developers) and a beta version. In this article, we would discuss installation of Stable version of Google Chrome in Debian Buster.</p>
+		<p class="amp-wp-7d27179">Google Chrome, a web browser developed by Google LLC. On December 11, 2008 – its first stable version was released. Ever since, Google Chrome has held a considerable web browser’s market share. At the time of writing the article, the latest Stable release of Google Chrome was 76.0.3809.87-1. The other supported releases for Google Chrome is Dev (for developers) and a beta version. In this article, we would discuss how to install stable version of Google Chrome in Debian Buster.</p>
 <p class="amp-wp-7d27179">To install the package, you must have superuser privileges. If you don’t have one then contact your System Administrator. Thereafter, run the following in terminal –</p>
 <pre>su -l</pre>
 <p class="amp-wp-7d27179">and provide the password.</p>
-<h5>Install Google Chrome in Debian Buster</h5>
-<p class="amp-wp-7d27179">Since, package of Google Chrome is not available in standard Debian repository. Therefore, we need to download the relevant <strong>.deb</strong> package file from the Google’s website. The package for Google Chrome is available at –</p>
-<pre>https://www.google.com/chrome/</pre>
+<h5 class="amp-wp-cdd8ca0">Install Google Chrome in Debian Buster</h5>
+<p class="amp-wp-7d27179">Since, package of Google Chrome is not available in standard Debian repository. Therefore, we need to download the relevant <strong>.deb</strong> package file. The package i.e. <strong>google-chrome-stable_current_amd64.deb</strong> for Google Chrome is available at Google Chrome’s official website.</p>
 <p class="amp-wp-7d27179">After visiting the website, you need to click the “<strong>Download Chrome</strong>” button. In the dialog box so opened, select 64-bit version for Debian and Accept the terms and conditions to download the <strong>.deb</strong> package.</p>
-<p class="amp-wp-7d27179">Move to the directory wherein the package downloaded was saved in the terminal by <strong>cd</strong> command. The <strong>cd</strong> command is used to change directories in the terminal. In case it was downloaded in Downloads folder. Run the following in terminal –</p>
-<pre>cd ~/Downloads</pre>
-<p class="amp-wp-7d27179">The file so downloaded should be –</p>
+<p class="amp-wp-7d27179">Use <strong>cd</strong> command-line utility to get inside the relevant directory. Therefore, run the following in terminal –</p>
+<pre>cd /path/to/package</pre>
+<p class="amp-wp-7d27179">The file downloaded  –</p>
 <pre>google-chrome-stable_current_amd64.deb</pre>
-<p class="amp-wp-7d27179">Next, we will use the <strong>dpkg</strong> command line utility to install Google Chrome. <strong>dpkg</strong> is a package manager, through which we can install, remove, purge and many other package related operations on our Debian operating system. For the purpose of this article, we would limit ourselves to the installation process.</p>
+<p class="amp-wp-7d27179">Now, we will use the <strong>dpkg</strong> command line utility to install Google Chrome. <strong>dpkg</strong> is a package manager, through which we can install, remove, purge and many other package related operations on our Debian operating system. For the purpose of this article, we would limit ourselves to the installation process.</p>
 <pre>dpkg -i google-chrome-stable_current_amd64.deb</pre>
-<p class="amp-wp-7d27179">where,<br><strong>-i</strong> option is used to install the package file.</p>
+<p class="amp-wp-7d27179">where,<br><strong>-i</strong> option – installs the package file.</p>
 <p class="amp-wp-7d27179">This will install stable version of Google Chrome in Debian.</p>
-<h5>Errors were encountered while processing: google-chrome-stable</h5>
-<p class="amp-wp-7d27179">But, there are times when relevant dependencies are not installed and most users encounter the error as mentioned –</p>
+<h5 class="amp-wp-cdd8ca0">Errors were encountered while processing: google-chrome-stable</h5>
+<p class="amp-wp-7d27179">Few users may get an error due to dependency issues –</p>
 <pre>dpkg: dependency problems prevent configuration of google-chrome-stable:
 dpkg: error processing google-chrome-stable (--install):
 Errors were encountered while processing:
 google-chrome-stable</pre>
 <p class="amp-wp-7d27179">If you too have encountered one, then not to worry. All we need is to run the command that installs all the required dependencies.</p>
 <pre>apt install -f</pre>
-<p class="amp-wp-7d27179">The above command is used to fix the broken packages. Once you run the above command, stable version of Google Chrome will be installed. You can access Google Chrome from your desktop environment’s Main menu.</p>
-<p class="amp-wp-7d27179">In conclusion, we have discussed Google Chrome installation on Debian through <strong>dpkg</strong> command line utility. We have also provided a quick fix in case we encounter a dependency error.</p>
+<p class="amp-wp-7d27179">where<strong> -f</strong> option fixes broken packages. Once you run the above command, stable version of Google Chrome will be installed. You can access Google Chrome from your desktop environment’s Main menu.</p>
+<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have discussed how to install Google Chrome in Debian Buster through <strong>dpkg</strong> command line utility. We have also provided a quick fix in case we encounter a dependency error.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">

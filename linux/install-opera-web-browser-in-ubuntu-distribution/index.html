@@ -961,37 +961,28 @@ code, kbd, samp, pre,
 		<figure class="ct-featured-image ct-hidden-sm" ><div class="ct-image-container ct-lazy" ><img class="attachment-full size-full" alt="Install Opera web browser in Ubuntu" data-lazy="https://techpiezo.com/wp-content/uploads/2019/09/Install-Opera-in-Ubuntu.svg" data-object-fit="~" /><noscript><img src="https://techpiezo.com/wp-content/uploads/2019/09/Install-Opera-in-Ubuntu.svg" class="attachment-full size-full" alt="Install Opera web browser in Ubuntu" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
 		
 		<div class="entry-content">
-			<p style="text-align: justify;">Opera is a Chromium-based browser which was first released on April 10, 1995. The latest stable version for Opera at the time of writing the article is 63.0.3368.94. There are three features available with the browser which make it standout amongst its peers. These are built-in Ad Blocker, VPN and a Battery saver. Since, built-in Ad Blocker is already provided with the browser therefore we don&#8217;t have to install an additional add-on. Also, unlimited free VPN along with a battery saver specifically built for laptop users is provided. In this article, we would discuss how to install Opera web browser in Ubuntu distribution.</p>
+			<p style="text-align: justify;"><strong>Opera</strong> is a Chromium-based browser which was first released on April 10, 1995. The <strong>latest stable version</strong> for Opera at the time of writing the article is<strong> 65.0.3467.48</strong>. There are three features available with the browser which make it standout amongst its peers. These are built-in Ad Blocker, VPN and a Battery saver. Since, built-in Ad Blocker is already provided with the browser therefore we don&#8217;t have to install an additional add-on. Also, unlimited free VPN along with a battery saver specifically built for laptop users is provided. In this article, we would discuss how to install Opera web browser in Ubuntu distribution.</p>
 <p style="text-align: justify;">Furthermore, operations discussed below would require you to have superuser privileges. In case you don&#8217;t have one then contact your System Administrator for assistance.</p>
-<p style="text-align: justify;">There are two methods available to us for installing Opera web browser.</p>
-<h5 style="text-align: justify;">Install Opera web browser through .deb package</h5>
-<p style="text-align: justify;">First, we need to download the <strong>.deb</strong> package from official Opera download directory. Visit the following link &#8211;</p>
-<pre>https://get.geo.opera.com/pub/opera/desktop/</pre>
-<p style="text-align: justify;">Scroll down to the bottom of the page and click the latest version available for linux. And, choose opera-stable_&lt;version&gt;_amd64.deb</p>
-<p style="text-align: justify;">For instance,</p>
-<pre>https://get.geo.opera.com/pub/opera/desktop/63.0.3368.94/linux/</pre>
-<p style="text-align: justify;">and, download the .deb package</p>
-<pre>opera-stable_63.0.3368.94_amd64.deb</pre>
-<p style="text-align: justify;">Once the package gets downloaded, move to the directory where its downloaded through cd command.</p>
+<p style="text-align: justify;">We would use <strong>dpkg</strong> (Debian Package Manager) to install the downloaded package.</p>
+<h5 style="text-align: center;">Install Opera web browser through .deb package</h5>
+<p style="text-align: justify;">First, we need to download the <strong>.deb</strong> package from Opera&#8217;s official website. On the Homepage itself, you need to click Download Now button. If you are already on a Ubuntu distribution, it will select .deb package for you. Otherwise, you need to select accordingly. The downloaded package would be &#8211;</p>
+<pre>opera-stable_65.0.3467.48_amd64</pre>
+<p style="text-align: justify;">Once the package gets downloaded, move to the directory where its downloaded through <strong>cd</strong> command.</p>
+<pre>cd /path/to/opera_package</pre>
 <p style="text-align: justify;">And, run the following &#8211;</p>
 <pre>sudo dpkg -i opera-stable_&lt;version&gt;_amd64.deb</pre>
+<p style="text-align: justify;">For instance, if we have downloaded the opera-stable_63.0.3368.94_amd64.deb then we need to issue the following in terminal &#8211;</p>
+<pre>sudo dpkg -i opera-stable_65.0.3467.48_amd64.deb</pre>
 <p style="text-align: justify;">At this point you would get the error &#8211;</p>
 <pre>Errors were encountered while processing:
 opera-stable</pre>
 <p style="text-align: justify;">All you have to do now is fix the broken packages. This could be done through &#8211;</p>
 <pre>sudo apt update
 sudo apt install -f</pre>
-<p style="text-align: justify;">It will install relevant dependencies. Press &lt;Yes&gt; when it asks you &#8211; <strong>Do you want to update Opera together with the rest of the system? </strong>This completes the installation of Opera web browser.</p>
-<h5>Install Opera web browser through its repository</h5>
-<p style="text-align: justify;">There is also an alternative method available. We could add the official Opera repository through <strong>add-apt-repository</strong> command. Next, run the following in terminal &#8211;</p>
-<pre>sudo add-apt-repository 'deb https://deb.opera.com/opera-stable/ <strong>stable</strong> non-free'
-
-wget -qO- https://deb.opera.com/archive.key | sudo apt-key add -</pre>
-<p style="text-align: justify;">Now, update the repository &#8211;</p>
-<pre>sudo apt update</pre>
-<p style="text-align: justify;">Thereafter, to install opera-stable package &#8211;</p>
-<pre>sudo apt install opera-stable</pre>
-<p style="text-align: justify;">In conclusion, we have discuss how to install Opera web browser in Ubuntu distribution.</p>
+<p style="text-align: justify;">where,</p>
+<p style="text-align: justify;"><strong>-f</strong> option is used to fix broken packages.</p>
+<p style="text-align: justify;">It will install all related dependencies. Press &lt;Yes&gt; when it asks you &#8211; <strong>Do you want to update Opera together with the rest of the system? </strong>This completes the installation of Opera web browser.</p>
+<p style="text-align: justify;">In conclusion, we have discussed how to install Opera web browser in Ubuntu distribution.</p>
 		</div>
 
 		
@@ -1003,11 +994,11 @@ wget -qO- https://deb.opera.com/archive.key | sudo apt-key add -</pre>
 
 			
 <aside
-	class="ct-hidden-sm ct-hidden-md"    data-type="type-2"
+	    data-type="type-2"
 	>
 
     <div
-		class="ct-sidebar" data-sticky		data-widgets="separated">
+		class="ct-sidebar" 		data-widgets="separated">
 				<div class="ct-widget widget_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
 											<li>
 					<a href="https://techpiezo.com/linux/switch-display-manager-in-ubuntu-20-04/">Switch Display Manager in Ubuntu 20.04</a>

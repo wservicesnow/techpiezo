@@ -9,7 +9,7 @@
 	<title>Install Anbox and run Android Apps in Ubuntu - TechPiezo</title>
 
 <!-- This site is optimized with the Yoast SEO plugin v11.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
-<meta name="description" content="Anbox - Android in a Box, utilitzes a container-based approach which enables us to use Android apps in Ubuntu. So, install Anbox and run Android Apps."/>
+<meta name="description" content="Anbox - utilitzes a container-based approach which enables us to use Android apps in Ubuntu. So, install Anbox in Ubuntu to run Android apps."/>
 <link rel="canonical" href="https://techpiezo.com/android/install-anbox-and-run-android-apps-in-ubuntu/" />
 <!-- / Yoast SEO plugin. -->
 
@@ -961,18 +961,16 @@ code, kbd, samp, pre,
 		<figure class="ct-featured-image ct-hidden-sm" ><div class="ct-image-container ct-lazy" ><img class="attachment-full size-full" alt="Install Anbox to run Android Apps in Ubuntu" data-lazy="https://techpiezo.com/wp-content/uploads/2019/07/Install-Anbox-to-Run-Android-Apps-in-Ubuntu.svg" data-object-fit="~" /><noscript><img src="https://techpiezo.com/wp-content/uploads/2019/07/Install-Anbox-to-Run-Android-Apps-in-Ubuntu.svg" class="attachment-full size-full" alt="Install Anbox to run Android Apps in Ubuntu" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
 		
 		<div class="entry-content">
-			<p style="text-align: justify;">Anbox package utilizes a LXC container-based approach to run Android Applications in Ubuntu or any other Linux distribution. With LXC containers, we could run multiple instances of Linux environment on host Linux Kernel. There are two options available to run Android Apps on Ubuntu &#8211;</p>
+			<p style="text-align: justify;">Anbox package utilizes a LXC container-based approach to run Android Applications in Ubuntu or any other Linux distribution. With LXC containers, we could run multiple instances of Linux environment on host Linux Kernel. In this article, we would discuss how to install Anbox in Ubuntu. There are two options available to run Android Apps on Ubuntu &#8211;</p>
 <p style="text-align: justify;">1. Container-based Anbox and,<br />
 2. Android-x86 on VirtualBox.</p>
-<p style="text-align: justify;">In this article, we would discuss how to install Anbox and run Android apps in it.</p>
-<h4>Install Anbox in Ubuntu</h4>
+<h4 style="text-align: center;">Install Anbox in Ubuntu</h4>
 <p style="text-align: justify;">Firstly, you need superuser privileges to complete installation process. If you don&#8217;t have one then contact your system administrator for assistance.</p>
 <p style="text-align: justify;">We would start by installing Anbox from standard Ubuntu repository &#8211;</p>
 <pre>sudo apt update
 sudo apt install anbox</pre>
-<p style="text-align: justify;">This would install anbox and related dependencies. Next, we would have to download a pre-build Android image for Anbox. You can download one from the link &#8211;</p>
-<pre>https://build.anbox.io/android-images/</pre>
-<p style="text-align: justify;">Now, move the <strong>.img</strong> file to the folder &#8211;<strong> /var/lib/anbox/android.img</strong>. Note: It is important to rename the file <strong>android_amd64.img to android.img</strong>.</p>
+<p style="text-align: justify;">This would install anbox and related dependencies. Next, we would have to download a pre-build Android image for Anbox from its official website.</p>
+<p style="text-align: justify;">Now, move the downloaded <strong>.img</strong> file to the folder &#8211;<strong> /var/lib/anbox/android.img</strong>. Note: It is important to rename the file <strong>android_amd64.img to android.img</strong>.</p>
 <p style="text-align: justify;">Next, download and install two kernel modules &#8211; <strong>Binder</strong> and <strong>Ashmem</strong>. These two kernel-based modules are already available since Debian kernel 4.17. So, skip installation of these modules for Debian. For Ubuntu, the kernel modules can be installed through PPAs (Personal Package Archives) &#8211;</p>
 <pre>sudo add-apt-repository ppa:morphis/anbox-support
 sudo apt update
@@ -987,8 +985,8 @@ sudo modprobe binder_linux</pre>
 sudo systemctl start anbox-session-manager.service
 sudo systemctl start anbox-session-manager.service</pre>
 <p style="text-align: justify;">Lastly, Anbox could be started from your desktop&#8217;s menu.</p>
-<h4 style="text-align: justify;">Install Android apps in Anbox</h4>
-<p style="text-align: justify;">So far, we have discussed how to install Anbox in Ubuntu. But, merely installing Anbox would not solve the purpose of running Android apps. Therefore, we have to install Android apps in Anbox. This could be achieved with the help of <strong>adb</strong> command line utility. Hence, we have to install <strong>adb</strong>(Android Debug Bridge) utility by running the following command in terminal.</p>
+<h4 style="text-align: center;">Install Android apps in Anbox</h4>
+<p style="text-align: justify;">So far, we have discussed how to install Anbox in Ubuntu. But, merely installing Anbox would not solve the purpose of running Android apps. Therefore, we have to install Android apps in Anbox. This could be achieved with the help of <strong>adb</strong> command line utility. Hence, we have to install <strong>adb </strong>(Android Debug Bridge) utility by running the following command in terminal.</p>
 <pre>sudo apt update
 sudo apt install adb</pre>
 <p style="text-align: justify;">If you have <strong>.apk</strong> extension file available then, run the following command in terminal to install Android app in Anbox.</p>
@@ -1006,11 +1004,11 @@ sudo apt install adb</pre>
 
 			
 <aside
-	class="ct-hidden-sm ct-hidden-md"    data-type="type-2"
+	    data-type="type-2"
 	>
 
     <div
-		class="ct-sidebar" data-sticky		data-widgets="separated">
+		class="ct-sidebar" 		data-widgets="separated">
 				<div class="ct-widget widget_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
 											<li>
 					<a href="https://techpiezo.com/linux/switch-display-manager-in-ubuntu-20-04/">Switch Display Manager in Ubuntu 20.04</a>

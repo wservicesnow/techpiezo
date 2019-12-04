@@ -964,18 +964,14 @@ code, kbd, samp, pre,
 			<p style="text-align: justify;">In this article, we would discuss how to download and install <strong>VirtualBox Guest Additions</strong> in Ubuntu (Guest OS). We install VirtualBox Guest Additions inside our Virtual machine. Through Guest Additions we could <strong>share folders</strong> between Host OS and Guest OS. Furthermore, we could also <strong>share clipboards</strong>. It is both unidirectional as well as bidirectional. Apart from that, through Guest Additions we get <strong>better video support</strong>, <strong>integrated mouse pointer</strong> and <strong>synchronized time with Guest OS</strong> among others. With the help of <strong>Guest Control File Manager</strong> we could transfer files between Host OS and Guest OS too.</p>
 <p style="text-align: justify;">Before proceeding with installation steps we need to first download the VirtualBox Guest Additions ISO. Thereafter, we would mount the ISO and later install it inside our Virtual Machine (Guest OS i.e. Ubuntu). We can proceed with other Guest Operating Systems too, but the installation steps for other OS would vary.</p>
 <h5 style="text-align: center;">Download VirtualBox Guest Additions</h5>
-<p style="text-align: justify;">First, check the version of VirtualBox installed on our Host Operating Systems. And, download VirtualBox Guest Additions through following link &#8211;</p>
-<pre>http://download.virtualbox.org/virtualbox/</pre>
-<p style="text-align: justify;">Or, we could directly install VirtualBox from following link &#8211;</p>
-<pre>http://download.virtualbox.org/virtualbox/X.X.X/VBoxGuestAdditions_X.X.X.iso</pre>
-<p style="text-align: justify;">Replace X.X.X with the VirtualBox&#8217;s version installed.</p>
+<p style="text-align: justify;">First, check the version of VirtualBox installed on our Host Operating Systems. And, download VirtualBox Guest Additions from official website of VirtualBox. Make sure the version of both VirtualBox and its Guest Additions match. Otherwise, there will be compatibility issues. The file to be download is &#8211; <strong>VBoxGuestAdditions_X.X.X.iso</strong></p>
+<p style="text-align: justify;">where,<strong> X.X.X</strong> should match with the VirtualBox&#8217;s version installed.</p>
 <p style="text-align: justify;">Now with VirtualBox Guest Additions downloaded, next step is to mount the VirtualBox Guest Additions ISO image.</p>
 <p style="text-align: justify;"><strong>Alternately</strong>, if we are on Ubuntu Host OS then VirtualBox Guest Additions could be installed directly from standard Ubuntu repositories.</p>
 <pre>sudo apt update
 sudo apt install virtualbox-guest-additions-iso</pre>
 <h5 style="text-align: center;">Mount VirtualBox Guest Additions</h5>
 <p style="text-align: justify;">Run the Virtual machine next, and click on <strong>Devices</strong> available on VirtualBox menu.</p>
-<p><img class="size-full wp-image-2872 aligncenter" src="https://techpiezo.com/wp-content/uploads/2019/10/VirtualBox-Menu.png" alt="VirtualBox Menu" width="367" height="31" /></p>
 <p style="text-align: justify;">Now, either load the ISO through <strong>Optical Drives -&gt; Choose Disk Image</strong> option if we have download the ISO manually or else, go with <strong>Insert Guest Additions CD Image</strong> if we have downloaded Guest Additions ISO through OS repositories.</p>
 <p style="text-align: justify;"><strong>Note</strong>: Following operations would require you to have superuser privileges. In case you don&#8217;t have one, then contact your System Administrator for assistance.</p>
 <h5 style="text-align: center;">Install VirtualBox Guest Additions in Ubuntu</h5>
@@ -1004,11 +1000,11 @@ sudo apt install virtualbox-guest-additions-iso</pre>
 
 			
 <aside
-	class="ct-hidden-sm ct-hidden-md"    data-type="type-2"
+	    data-type="type-2"
 	>
 
     <div
-		class="ct-sidebar" data-sticky		data-widgets="separated">
+		class="ct-sidebar" 		data-widgets="separated">
 				<div class="ct-widget widget_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
 											<li>
 					<a href="https://techpiezo.com/linux/switch-display-manager-in-ubuntu-20-04/">Switch Display Manager in Ubuntu 20.04</a>

@@ -436,26 +436,26 @@ amp-carousel > amp-img > img {
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">Developed by Oracle Corporation, VirtualBox is a free and open-source virtualization product. It facilitates us in running multiple operating systems on our existing computer. These multiple operating systems run inside Virtual Machines. By using Virtual Machines, we reduce costs incurred on infrastructure. Also, we can do a lot of testing without breaking our host operating system. We can make use of VirtualBox extension packs or VirtualBox Guest Additions for extended functionality like support for USB devices, better user experience, remote desktop protocol support etc. The product was first released on January 17, 2007.</p>
+		<p class="amp-wp-7d27179">Developed by Oracle Corporation, <strong>VirtualBox</strong> is a free and open-source virtualization product. It facilitates us in running multiple operating systems on our existing computer. These multiple operating systems run inside Virtual Machines. By using Virtual Machines, we reduce costs incurred on infrastructure. Also, we can do a lot of testing without breaking our host operating system. We can make use of VirtualBox extension packs or VirtualBox Guest Additions for extended functionality like support for USB devices, better user experience, remote desktop protocol support etc. The product was first released on January 17, 2007. In this article, we would discuss how to install VirtualBox in Debian Buster.</p>
 <p class="amp-wp-7d27179">Debian Buster has finally released on July 06, 2019. But, those who have been using VirtualBox all along could be in for a surprise as the application gets removed after the update. Previous repository entry for the Debian Stretch wouldn’t come to the rescue.</p>
 <p class="amp-wp-7d27179">So, if you would like continue using the application even in Debian Buster then you will have to make couple of changes.</p>
 <h4 class="amp-wp-cdd8ca0">Install VirtualBox in Debian Buster</h4>
-<p class="amp-wp-7d27179">Login as superuser/root to start with the installation process. If you don’t have the privileges then, it is best to contact your system administrator. To login as superuser, run the following in terminal and provide password –</p>
+<p class="amp-wp-7d27179">Login as superuser/root to start with the installation process. If you don’t have the privileges then, it is best to contact your system administrator for assistance. To login as superuser, run the following in terminal and authenticate yourself –</p>
 <pre>su -l</pre>
-<p class="amp-wp-7d27179">Next, we will have to edit/update entries in <strong>/etc/apt/sources.list</strong> file. We will be using the text-editor – <strong>nano</strong>. You can choose any other text-editor which you are comfortable with.</p>
-<pre>nano /etc/apt/sources.list</pre>
-<p class="amp-wp-7d27179">Add the following entry in the <strong>/etc/apt/sources.list</strong> file.</p>
-<pre>deb http://download.virtualbox.org/virtualbox/debian buster contrib</pre>
-<p class="amp-wp-7d27179">Save and exit.</p>
-<p class="amp-wp-7d27179">Then, we will have to add the VirtualBox public key –</p>
-<pre>cd /dev/shm
-wget https://www.virtualbox.org/download/oracle_vbox_2016.asc
-apt-key add oracle_vbox_2016.asc</pre>
-<p class="amp-wp-7d27179">After adding the public keys we need to update the repositories. So, run the following command –</p>
-<pre>apt update</pre>
-<p class="amp-wp-7d27179">Lastly, install VirtualBox –</p>
-<pre>apt install virtualbox-6.0</pre>
-<p class="amp-wp-7d27179">Hence, we have learnt how to install VirtualBox in Debian Buster. If you are looking to install VirtualBox on Debian Stretch then follow the <a href="https://techpiezo.com/linux/install-virtualbox-in-debian-stretch/">link</a>.</p>
+<p class="amp-wp-7d27179">First, we have to download the <strong>.deb package (virtualbox-6.0_6.0.14-133895~Debian~buster_amd64.deb)</strong> from the official website of VirtualBox. This is the latest stable release available at the time of writing the article.</p>
+<p class="amp-wp-7d27179">We would now install the package through <strong>dpkg</strong> (Debian Package Manager). Once the package gets downloaded, head to the directory where it is saved through <strong>cd</strong> command-line utility.</p>
+<pre>cd /path/to/package/
+dpkg -i virtualbox-6.0_6.0.14-133895~Debian~buster_amd64.deb</pre>
+<p class="amp-wp-7d27179">We may encounter following error –</p>
+<pre>The distribution packages containing the headers are probably:
+linux-headers-amd64 linux-headers-X.XX.X-X-amd64</pre>
+<p class="amp-wp-7d27179">Under such a scenario, we need to install relevant packages –</p>
+<pre>apt install linux-headers-amd64 linux-headers-X.XX.X-X-amd64</pre>
+<p class="amp-wp-7d27179">where,</p>
+<p class="amp-wp-7d27179"><strong>X</strong> – replace it with applicable version number.</p>
+<p class="amp-wp-7d27179">Now, again we need to issue the following to complete the installation process (if you didn’t get the error, then this step isn’t required) –</p>
+<pre>dpkg -i virtualbox-6.0_6.0.14-133895~Debian~buster_amd64.deb</pre>
+<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have learnt how to install VirtualBox in Debian Buster. If you are looking to install VirtualBox on Debian Stretch then follow the <a href="https://techpiezo.com/linux/install-virtualbox-in-debian-stretch/">link</a>.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">

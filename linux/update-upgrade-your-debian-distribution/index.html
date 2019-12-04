@@ -980,12 +980,13 @@ code, kbd, samp, pre,
 <pre>apt autoclean</pre>
 <p style="text-align: justify;">So, next time you want to install the same version of the packages that you previously installed. Then, you have to download that package again as it would no longer be available in archives. If you are not worried about disk space then, perhaps its a good notion to leave the archives directory untouched.</p>
 <h4 style="text-align: center;">Upgrading your Debian distribution to newer Release</h4>
-<p style="text-align: justify;">Till now, we have discussed how to update your Debian distribution. When it comes to upgrade, it means moving from one Debian release to another i.e. from Stretch to Buster. For that, we must first read release notes provided by Debian on:</p>
-<pre>www.debian.org/releases/stable/releasenotes</pre>
+<p style="text-align: justify;">Till now, we have discussed how to update your Debian distribution. When it comes to upgrade, it means moving from one Debian release to another i.e. from Stretch to Buster.</p>
 <p style="text-align: justify;">We need to first update the file to move from one stable version of release to another:</p>
 <pre>nano /etc/apt/sources.list</pre>
 <p style="text-align: justify;">with the following entries:</p>
-<pre>http://ftp.us.debian.org/debian stable main contrib</pre>
+<pre>http://&lt;domain-name&gt;/debian stable main contrib</pre>
+<p style="text-align: justify;">where,</p>
+<p style="text-align: justify;">replace &lt;domain-name&gt; as per present SourcesList configuration.</p>
 <p style="text-align: justify;">Then, save and exit. Run the following command:</p>
 <pre>apt update</pre>
 <p style="text-align: justify;">Updating the entries in sources.list file would help us to move to next stable distribution.</p>
@@ -1005,11 +1006,11 @@ code, kbd, samp, pre,
 
 			
 <aside
-	class="ct-hidden-sm ct-hidden-md"    data-type="type-2"
+	    data-type="type-2"
 	>
 
     <div
-		class="ct-sidebar" data-sticky		data-widgets="separated">
+		class="ct-sidebar" 		data-widgets="separated">
 				<div class="ct-widget widget_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
 											<li>
 					<a href="https://techpiezo.com/linux/switch-display-manager-in-ubuntu-20-04/">Switch Display Manager in Ubuntu 20.04</a>

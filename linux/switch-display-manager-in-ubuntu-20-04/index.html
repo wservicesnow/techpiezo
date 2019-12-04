@@ -988,12 +988,11 @@ code, kbd, samp, pre,
 <pre>systemctl status display-manager</pre>
 <p style="text-align: justify;">Now, to switch between them &#8211; run the following command with active (or default) Display Manager &#8211;</p>
 <pre>dpkg-reconfigure &lt;Default_Display_Manager&gt;</pre>
-<p style="text-align: justify;">for instance,</p>
+<p style="text-align: justify;">for instance (opt any one of three as per your System&#8217;s configuration),</p>
 <pre>dpkg-reconfigure gdm3
 dpkg-reconfigure lightdm
 dpkg-reconfigure sddm</pre>
-<p style="text-align: justify;">And, press <strong>OK</strong>. Next, you will be asked to select your default Display Manager.</p>
-<p><img class="size-full wp-image-3739 aligncenter" src="https://techpiezo.com/wp-content/uploads/2019/12/select-display-manager.png" alt="select display manager" width="342" height="221" /></p>
+<p style="text-align: justify;">And, press <strong>OK</strong>. Next, you will be asked to select your default Display Manager (gdm3, lightdm or sddm).</p>
 <p style="text-align: justify;">On running &#8211; <strong>dpkg-reconfigure gdm3</strong>, you may get following error &#8211;</p>
 <pre>gdm.service is not active, cannot reload.
 invoke-rc.d: initscript gdm3, action "reload" failed.</pre>
@@ -1010,11 +1009,11 @@ invoke-rc.d: initscript gdm3, action "reload" failed.</pre>
 
 			
 <aside
-	class="ct-hidden-sm ct-hidden-md"    data-type="type-2"
+	    data-type="type-2"
 	>
 
     <div
-		class="ct-sidebar" data-sticky		data-widgets="separated">
+		class="ct-sidebar" 		data-widgets="separated">
 				<div class="ct-widget widget_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
 											<li>
 					<a href="https://techpiezo.com/linux/switch-display-manager-in-ubuntu-20-04/">Switch Display Manager in Ubuntu 20.04</a>

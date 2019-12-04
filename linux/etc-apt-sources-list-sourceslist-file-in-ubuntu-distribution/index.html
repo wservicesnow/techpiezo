@@ -970,16 +970,13 @@ code, kbd, samp, pre,
 <p style="text-align: justify;">Note: Editing a <strong>/etc/apt/sources.list</strong> file would require you to have superuser privileges. You can&#8217;t edit the SourcesList through normal user. Otherwise, you may get the following error &#8211;</p>
 <pre>/etc/apt/sources.list permission denied</pre>
 <h5>SourcesList file in Ubuntu distribution</h5>
-<p style="text-align: justify;">Any <strong>/etc/apt/sources.list</strong> file would contain entries which may resemble &#8211;</p>
-<pre>deb http://us.archive.ubuntu.com/ubuntu/ disco main restricted
-deb-src http://us.archive.ubuntu.com/ubuntu/ disco main restricted</pre>
-<p style="text-align: justify;">The syntax for the above two entries is &#8211;</p>
-<pre>deb http://example.com/ubuntu/ distribution component1 component2 component3
-deb-src http://example.com/ubuntu/ distribution component1 component2 component3</pre>
+<p style="text-align: justify;">Any <strong>/etc/apt/sources.list</strong> file would contain syntax similar to &#8211;</p>
+<pre>deb http://&lt;domain-name&gt;/ubuntu/ distribution component1 component2 component3
+deb-src http://&lt;domain-name&gt;/ubuntu/ distribution component1 component2 component3</pre>
 <p style="text-align: justify;">where,</p>
 <p style="text-align: justify;"><strong>deb</strong> tells us that the repository contains binary packages</p>
 <p style="text-align: justify;"><strong>deb-src</strong> for source code of packages</p>
-<p style="text-align: justify;"><strong>http://example.com/ubuntu/</strong> &#8211; is the URI (Uniform Resource Identifier)</p>
+<p style="text-align: justify;"><strong>http://&lt;domain-name&gt;/ubuntu/</strong> &#8211; is the URI (Uniform Resource Identifier)</p>
 <p style="text-align: justify;"><strong>distribution</strong> &#8211; release of the Ubuntu package, for instance disco</p>
 <p style="text-align: justify;"><strong>component</strong> &#8211; these could be free/non-free as per the packages available in repository</p>
 <p style="text-align: justify;">For Ubuntu distribution, we have four components of repositories &#8211;</p>
@@ -1007,11 +1004,11 @@ deb-src http://example.com/ubuntu/ distribution component1 component2 component3
 
 			
 <aside
-	class="ct-hidden-sm ct-hidden-md"    data-type="type-2"
+	    data-type="type-2"
 	>
 
     <div
-		class="ct-sidebar" data-sticky		data-widgets="separated">
+		class="ct-sidebar" 		data-widgets="separated">
 				<div class="ct-widget widget_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
 											<li>
 					<a href="https://techpiezo.com/linux/switch-display-manager-in-ubuntu-20-04/">Switch Display Manager in Ubuntu 20.04</a>

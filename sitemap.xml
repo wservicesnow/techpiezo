@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="December 2, 2019 1:27 am" -->
+<!-- generated-on="December 4, 2019 9:37 pm" -->
 <sitemapindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/siteindex.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<sitemap>
 		<loc>https://techpiezo.com/sitemap-misc.xml</loc>
-		<lastmod>2019-12-02T01:26:22+00:00</lastmod>
+		<lastmod>2019-12-04T21:35:12+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://techpiezo.com/sitemap-tax-category.xml</loc>
-		<lastmod>2019-12-02T01:26:22+00:00</lastmod>
+		<lastmod>2019-12-04T21:35:12+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://techpiezo.com/sitemap-pt-post-2019-12.xml</loc>
-		<lastmod>2019-12-02T01:26:22+00:00</lastmod>
+		<lastmod>2019-12-04T21:02:49+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://techpiezo.com/sitemap-pt-post-2019-11.xml</loc>
-		<lastmod>2019-11-28T21:03:20+00:00</lastmod>
+		<lastmod>2019-12-04T21:06:04+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://techpiezo.com/sitemap-pt-post-2019-10.xml</loc>
-		<lastmod>2019-11-17T06:23:40+00:00</lastmod>
+		<lastmod>2019-12-03T20:30:38+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://techpiezo.com/sitemap-pt-post-2019-09.xml</loc>
-		<lastmod>2019-11-16T22:08:28+00:00</lastmod>
+		<lastmod>2019-12-04T21:09:48+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://techpiezo.com/sitemap-pt-post-2019-08.xml</loc>
-		<lastmod>2019-08-28T21:23:35+00:00</lastmod>
+		<lastmod>2019-12-04T21:24:25+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://techpiezo.com/sitemap-pt-post-2019-07.xml</loc>
-		<lastmod>2019-10-21T12:50:31+00:00</lastmod>
+		<lastmod>2019-12-04T21:35:12+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://techpiezo.com/sitemap-pt-post-2019-06.xml</loc>
-		<lastmod>2019-11-16T22:04:50+00:00</lastmod>
+		<lastmod>2019-12-04T21:33:38+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://techpiezo.com/sitemap-pt-post-2019-05.xml</loc>
@@ -44,4 +44,4 @@
 		<loc>https://techpiezo.com/sitemap-pt-page-2019-05.xml</loc>
 		<lastmod>2019-11-30T23:27:35+00:00</lastmod>
 	</sitemap>
-</sitemapindex><!-- Request ID: d0619b802deb9cc8ab0efc6d5281c4c6; Queries for sitemap: 6; Total queries: 17; Seconds: 0.01; Memory for sitemap: 0MB; Total memory: 2MB -->
+</sitemapindex><!-- Request ID: 538b29b5fefaff7321d1535ab7623ff9; Queries for sitemap: 6; Total queries: 17; Seconds: 0.01; Memory for sitemap: 0MB; Total memory: 2MB -->

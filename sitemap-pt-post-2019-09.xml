@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="December 2, 2019 1:27 am" -->
+<!-- generated-on="December 4, 2019 9:37 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>https://techpiezo.com/linux/remove-a-package-without-removing-its-dependencies-in-ubuntu/</loc>
-		<lastmod>2019-09-30T20:19:02+00:00</lastmod>
+		<lastmod>2019-12-04T21:09:48+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
@@ -14,7 +14,7 @@
 	</url>
 	<url>
 		<loc>https://techpiezo.com/python/install-python-3-7-4-in-ubuntu-19-04/</loc>
-		<lastmod>2019-09-29T09:01:17+00:00</lastmod>
+		<lastmod>2019-12-03T20:33:01+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
@@ -26,7 +26,7 @@
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/etc-apt-sources-list-sourceslist-file-in-ubuntu-distribution/</loc>
-		<lastmod>2019-09-27T12:42:18+00:00</lastmod>
+		<lastmod>2019-12-03T20:37:15+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
@@ -38,7 +38,7 @@
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/install-opera-web-browser-in-ubuntu-distribution/</loc>
-		<lastmod>2019-09-23T14:09:19+00:00</lastmod>
+		<lastmod>2019-12-03T20:50:58+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
@@ -56,62 +56,62 @@
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/reset-root-password-in-ubuntu-distribution/</loc>
-		<lastmod>2019-09-21T04:58:34+00:00</lastmod>
+		<lastmod>2019-12-03T20:53:37+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/fixed-command-add-apt-repository-not-found-in-ubuntu/</loc>
-		<lastmod>2019-09-15T08:00:21+00:00</lastmod>
+		<lastmod>2019-12-03T21:02:56+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/add-or-remove-ppas-in-ubuntu-distribution/</loc>
-		<lastmod>2019-09-15T07:52:03+00:00</lastmod>
+		<lastmod>2019-12-03T21:04:21+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/download-a-file-in-parts-with-curl-in-ubuntu/</loc>
-		<lastmod>2019-09-12T21:55:01+00:00</lastmod>
+		<lastmod>2019-12-03T21:08:47+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/install-steam-in-ubuntu-19-04/</loc>
-		<lastmod>2019-11-16T22:08:28+00:00</lastmod>
+		<lastmod>2019-12-03T21:10:56+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/use-ibus-change-keyboard-input-language-in-ubuntu/</loc>
-		<lastmod>2019-09-10T05:43:06+00:00</lastmod>
+		<lastmod>2019-12-03T21:24:53+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/install-redshift-in-ubuntu-distribution/</loc>
-		<lastmod>2019-09-04T18:11:56+00:00</lastmod>
+		<lastmod>2019-12-03T21:29:20+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/tech-insights/screentest-to-test-quality-of-screens-in-ubuntu/</loc>
-		<lastmod>2019-09-03T17:27:53+00:00</lastmod>
+		<lastmod>2019-12-03T21:30:09+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/resume-google-chrome-downloads-in-ubuntu/</loc>
-		<lastmod>2019-09-03T16:38:40+00:00</lastmod>
+		<lastmod>2019-12-03T21:33:29+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/create-a-favicon-ico-with-ubuntu-distribution/</loc>
-		<lastmod>2019-09-03T15:22:33+00:00</lastmod>
+		<lastmod>2019-12-03T21:38:28+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: 11056e594d251f970b5f9380f43e290f; Queries for sitemap: 62; Total queries: 73; Seconds: 0.03; Memory for sitemap: 0MB; Total memory: 2MB -->
+</urlset><!-- Request ID: 77b807b43950a4750be8a14cb0b9fb7f; Queries for sitemap: 62; Total queries: 73; Seconds: 0.03; Memory for sitemap: 0MB; Total memory: 2MB -->

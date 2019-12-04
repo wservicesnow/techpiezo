@@ -962,12 +962,12 @@ code, kbd, samp, pre,
 		
 		<div class="entry-content">
 			<p style="text-align: justify;">There could be multiple reasons why one would want to download a larger file in parts. One of the most common reason affecting users is limited bandwidth available. In this article, we would discuss how to download a file in parts with curl in Ubuntu. <strong>curl</strong> &#8211; a command-line utility is used to transfer data from/to a server. Although curl offers numerous features but for the purpose of this article we would only discuss its <strong>-range</strong> option.</p>
-<h5>Install curl in Ubuntu</h5>
+<h5 style="text-align: center;">Install curl in Ubuntu</h5>
 <p style="text-align: justify;">The following operations would require you to have superuser privileges. In case, you don&#8217;t have one then contact your System Administrator for assistance. <strong>curl</strong> package is already available in standard Ubuntu repository. We need to update the repository to get the latest version available first thereafter, we will install the package. Run the following in terminal &#8211;</p>
 <pre>sudo apt update
 sudo apt install curl</pre>
-<h5>Download a file in parts with curl</h5>
-<p style="text-align: justify;">We would discuss the steps involved with the help of an example. Lets say we are about to download <strong>ubuntu-19.04-desktop-amd64.iso</strong>. The download size is of about 2.0GB. For some reason, we can download the file only in parts of 500MBs. Therefore, we would use <strong>curl</strong> command-line utility with <strong>-range option</strong> defining the size of download for each of the parts.</p>
+<h5 style="text-align: center;">Download a file in parts with curl</h5>
+<p style="text-align: justify;">We would discuss the steps involved with the help of an example. Lets say we are about to download <strong>xyz</strong><strong>-desktop-amd64.iso</strong>. The download size is of about 2.0GB. For some reason, we can download the file only in parts of 500MBs. Therefore, we would use <strong>curl</strong> command-line utility with <strong>-range option</strong> defining the size of download for each of the parts.</p>
 <p style="text-align: justify;">First, we will discuss the syntax for the command &#8211;</p>
 <pre>curl --range start-stop -o file-name.partn &lt;url&gt;</pre>
 <p style="text-align: justify;">where,</p>
@@ -978,12 +978,12 @@ sudo apt install curl</pre>
 <strong>file-name-n.part</strong> is the output for part file downloaded, and<br />
 <strong>&lt;url&gt;</strong> from where the file gets downloaded.</p>
 <p style="text-align: justify;">So, it may look like &#8211;</p>
-<pre>curl --range 0-499999999 -o ubuntu.part1 http://releases.ubuntu.com/19.04/ubuntu-19.04-desktop-amd64.iso</pre>
+<pre>curl --range 0-499999999 -o xyz.part1 http://&lt;domain-name&gt;/xyz-desktop-amd64.iso</pre>
 <p style="text-align: justify;">This downloads the file size of approximately 475 MBs. We have not chosen the exact file size of 500MBs to make it less tedious.</p>
 <p style="text-align: justify;">Similarly for subsequent parts &#8211;</p>
-<pre>curl --range 500000000-999999999 -o ubuntu.part2 http://releases.ubuntu.com/19.04/ubuntu-19.04-desktop-amd64.iso</pre>
-<pre>curl --range 1000000000-1499999999 -o ubuntu.part3 http://releases.ubuntu.com/19.04/ubuntu-19.04-desktop-amd64.iso</pre>
-<pre>curl --range 1500000000- -o ubuntu.part4 http://releases.ubuntu.com/19.04/ubuntu-19.04-desktop-amd64.iso</pre>
+<pre>curl --range 500000000-999999999 -o xyz.part2 http://&lt;domain-name&gt;/xyz-desktop-amd64.iso</pre>
+<pre>curl --range 1000000000-1499999999 -o xyz.part3 http://&lt;domain-name&gt;/xyz-desktop-amd64.iso</pre>
+<pre>curl --range 1500000000- -o xyz.part4 http://&lt;domain-name&gt;/xyz-desktop-amd64.iso</pre>
 <p style="text-align: justify;">In the last instruction we have not specified any stop range. It will download the remaining part of the file itself.</p>
 <p style="text-align: justify;">Lastly, we need to combine different parts of the downloaded file. To get the desired outcome, we would use <strong>cat</strong> command.</p>
 <h5>Join downloaded parts of our file</h5>
@@ -994,7 +994,7 @@ sudo apt install curl</pre>
 <strong>download-file.part</strong> are parts which we have just downloaded, and<br />
 <strong>file-name.original</strong> the original name of our file.</p>
 <p style="text-align: justify;">We will continue with above example to make things more clear.</p>
-<pre>cat ubuntu.part* &gt; ubuntu-19.04-desktop-amd64.iso</pre>
+<pre>cat xyz.part* &gt; xyz-desktop-amd64.iso</pre>
 <p style="text-align: justify;"><strong>In conclusion</strong>, we have discussed how to download parts of a file with curl and subsequently join them to get the desired output.</p>
 		</div>
 
@@ -1007,11 +1007,11 @@ sudo apt install curl</pre>
 
 			
 <aside
-	class="ct-hidden-sm ct-hidden-md"    data-type="type-2"
+	    data-type="type-2"
 	>
 
     <div
-		class="ct-sidebar" data-sticky		data-widgets="separated">
+		class="ct-sidebar" 		data-widgets="separated">
 				<div class="ct-widget widget_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
 											<li>
 					<a href="https://techpiezo.com/linux/switch-display-manager-in-ubuntu-20-04/">Switch Display Manager in Ubuntu 20.04</a>

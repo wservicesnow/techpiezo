@@ -965,13 +965,13 @@ code, kbd, samp, pre,
 <p style="text-align: justify;">When compared to the packages available in standard Ubuntu repository, users have to settle with less security when they install packages through unverified PPAs. This, moreover, implies that these packages have not gone through the Ubuntu package validation checks. But, it should also not be construed as if the PPA developer would behave mischievously. Whether to go with installation of the package is left to users&#8217; discretion.</p>
 <p style="text-align: justify;">Furthermore, when users add packages through PPAs they allow the package developers to update their packages just like any other package available in standard Ubuntu repository.</p>
 <p style="text-align: justify;">Also, the operations discussed below would require you to have superuser privileges. Contact your System Administrator for assistance in case you don&#8217;t have one.</p>
-<p>Through <strong>add-apt-repository</strong> command we are adding the repository to<strong> /etc/apt/sources.list</strong> file.</p>
+<p style="text-align: justify;">Through <strong>add-apt-repository</strong> command we are adding the repository to<strong> /etc/apt/sources.list</strong> file.</p>
 <h5 style="text-align: justify;">Add PPAs in Ubuntu</h5>
 <p style="text-align: justify;">There are two methods available to us for adding PPAs in our distribution. Besides, location of PPA is a prerequisite to its addition and removal.</p>
 <p style="text-align: justify;">First, through <strong>uri</strong>. Run the following in terminal &#8211;</p>
 <pre>sudo add-apt-repository 'deb uri distribution [component] [..]'<span id="line-7" class="anchor"></span><span id="line-8" class="anchor"></span></pre>
 <p style="text-align: justify;">For instance,</p>
-<pre>sudo add-apt-repository 'deb http://deb.debian.org/debian/ stable main contrib non-free'</pre>
+<pre>sudo add-apt-repository 'deb http://&lt;domain-name&gt;/&lt;distribution&gt;/ component1 component2'</pre>
 <p style="text-align: justify;">Second, through PPA name &#8211;</p>
 <pre>sudo add-apt-repository ppa:&lt;ppa_name&gt;</pre>
 <p style="text-align: justify;">To reflect the changes we just made, source list file needs to be updated. Hence, don&#8217;t forget to run the following in terminal &#8211;</p>
@@ -982,7 +982,7 @@ code, kbd, samp, pre,
 <pre>sudo add-apt-repository --remove 'deb uri distribution [component] [..]'</pre>
 <pre>sudo add-apt-repository --remove ppa:&lt;ppa_name&gt;</pre>
 <p style="text-align: justify;">For instance,</p>
-<pre>sudo add-apt-repository --remove 'deb http://deb.debian.org/debian/ stable main contrib non-free'</pre>
+<pre>sudo add-apt-repository --remove 'deb http://&lt;domain-name&gt;/&lt;distribution&gt;/ component1 component2'</pre>
 <p style="text-align: justify;">Thereafter, update the source list through the command &#8211;</p>
 <pre>sudo apt-update</pre>
 <p style="text-align: justify;"><strong>Note:</strong> Merely removing a repository would not remove the packages which were installed through repository.</p>
@@ -998,11 +998,11 @@ code, kbd, samp, pre,
 
 			
 <aside
-	class="ct-hidden-sm ct-hidden-md"    data-type="type-2"
+	    data-type="type-2"
 	>
 
     <div
-		class="ct-sidebar" data-sticky		data-widgets="separated">
+		class="ct-sidebar" 		data-widgets="separated">
 				<div class="ct-widget widget_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
 											<li>
 					<a href="https://techpiezo.com/linux/switch-display-manager-in-ubuntu-20-04/">Switch Display Manager in Ubuntu 20.04</a>

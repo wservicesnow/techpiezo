@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="December 2, 2019 1:27 am" -->
+<!-- generated-on="December 4, 2019 9:37 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>https://techpiezo.com/java/install-oracle-java-se-development-kit-12-in-ubuntu/</loc>
-		<lastmod>2019-08-28T21:23:35+00:00</lastmod>
+		<lastmod>2019-12-03T21:40:10+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/optimize-compress-jpeg-files-in-ubuntu/</loc>
-		<lastmod>2019-08-27T20:48:48+00:00</lastmod>
+		<lastmod>2019-12-03T21:40:51+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/key-bindings-in-openbox/</loc>
-		<lastmod>2019-08-25T15:07:45+00:00</lastmod>
+		<lastmod>2019-12-03T21:42:03+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/change-default-terminal-emulator-in-ubuntu/</loc>
-		<lastmod>2019-08-24T20:30:46+00:00</lastmod>
+		<lastmod>2019-12-03T21:43:27+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/wordpress/menu-item-without-link-to-url-in-wordpress/</loc>
-		<lastmod>2019-08-22T18:33:35+00:00</lastmod>
+		<lastmod>2019-12-03T21:49:09+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/wordpress/change-default-highlight-text-selection-color-in-wordpress/</loc>
-		<lastmod>2019-08-22T18:51:50+00:00</lastmod>
+		<lastmod>2019-12-03T21:50:58+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
@@ -44,25 +44,25 @@
 	</url>
 	<url>
 		<loc>https://techpiezo.com/java/install-openjdk-jre-jdk-in-ubuntu-19-04/</loc>
-		<lastmod>2019-08-20T16:25:54+00:00</lastmod>
+		<lastmod>2019-12-04T21:11:54+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/fixed-install-hplip-3-19-1-in-ubuntu-19-04/</loc>
-		<lastmod>2019-08-20T16:27:53+00:00</lastmod>
+		<lastmod>2019-12-03T21:56:56+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/linux/install-google-chrome-in-debian-buster/</loc>
-		<lastmod>2019-08-20T16:29:57+00:00</lastmod>
+		<lastmod>2019-12-04T21:22:51+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>https://techpiezo.com/kotlin/declare-variables-var-and-val-in-kotlin/</loc>
-		<lastmod>2019-08-20T16:33:18+00:00</lastmod>
+		<lastmod>2019-12-04T21:24:25+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
@@ -72,4 +72,4 @@
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: 86873ede28584c7a0b37abbdbb0ce322; Queries for sitemap: 43; Total queries: 54; Seconds: 0.03; Memory for sitemap: 0MB; Total memory: 2MB -->
+</urlset><!-- Request ID: 8499413237221cdd7d9e98df24315113; Queries for sitemap: 43; Total queries: 54; Seconds: 0.02; Memory for sitemap: 0MB; Total memory: 2MB -->

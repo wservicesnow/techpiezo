@@ -409,7 +409,7 @@ amp-carousel > amp-img > img {
 	right: 16px;
 }
 		/* Inline stylesheets */
-:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}	</style>
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cdd8ca0{text-align:center}	</style>
 </head>
 
 <body class="">
@@ -436,13 +436,14 @@ amp-carousel > amp-img > img {
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">With Redshift, we can set color temperatures as per our requirements. The package is available in Ubuntu’s repository. Before proceeding with its installation process and its use, we discuss a bit about color temperatures. In 1848, William Kelvin heated a block of carbon while doing a research and observed the color changes at different levels of temperature. At lower temperatures, red color was detected which later progressed to yellow and blue as the temperature increased. Ultimately, white color was detected at the highest temperatures. <strong>Warmer colors</strong> – red and yellow are in the range of 2000K to 3000K whereas <strong>Cooler colors</strong> – blue and white are in the range of 5500K to 6500K.</p>
-<h5>Install Redshift in Ubuntu Distribution</h5>
-<p class="amp-wp-7d27179">Redshift package is already available in default Ubuntu repository. You must have access to superuser privileges, in case you don’t have one then contact your System Administrator for assistance. Thereafter, run the following in terminal –</p>
+		<p class="amp-wp-7d27179">With Redshift, we can set color temperatures as per our requirements. The package is available in Ubuntu’s repository. Before proceeding with its installation process and its use, we discuss a bit about color temperatures. In 1848, William Kelvin heated a block of carbon while doing a research and observed the color changes at different levels of temperature. At lower temperatures, red color was detected which later progressed to yellow and blue as the temperature increased. Ultimately, white color was detected at the highest temperatures. <strong>Warmer colors</strong> – red and yellow are in the range of 2000K to 3000K whereas <strong>Cooler colors</strong> – blue and white are in the range of 5500K to 6500K. In this article, we would discuss how to install Redshift in Ubuntu distribution.</p>
+<p>Note: Following operations would require you to have superuser privileges. In case you don’t have one, then contact your System Administrator for assistance.</p>
+<h5 class="amp-wp-cdd8ca0">Install Redshift in Ubuntu Distribution</h5>
+<p class="amp-wp-7d27179">Redshift package is already available in default Ubuntu repository. Hence, open a terminal and issue the following –</p>
 <pre>sudo apt update
 sudo apt install redshift redshift-gtk</pre>
-<p class="amp-wp-7d27179">This will install Redshift package. Next, we will discuss how to set up its configuration.</p>
-<h5>Configure Redshift</h5>
+<p class="amp-wp-7d27179">It installs Redshift package. Next, we will discuss how to set up its configuration.</p>
+<h5 class="amp-wp-cdd8ca0">Configure Redshift</h5>
 <p class="amp-wp-7d27179">With Redshift package, we can set color temperature depending on whether its day or night. During early morning or in twilight hours, the package enters a transition phase wherein gradual changes occur in color temperatures. Thereby, making the user adapt to changes with minimal discomfort.</p>
 <p class="amp-wp-7d27179"> The default temperature value during daytime is 6500K and at night its 4500K. To set the color temperature as per our requirements, look for its configuration file –</p>
 <pre>~/.config/redshift.conf</pre>
@@ -472,7 +473,7 @@ dawn-time = HH:MM</pre>
 <p class="amp-wp-7d27179">To adjust Gamma only for night –</p>
 <pre>gamma-night = R:G:B</pre>
 <p class="amp-wp-7d27179">Apart from the command-line utility for redshift, you would also notice that we have installed the package redshift-gtk. The package provides us the GUI for Redshift, a notification icon. Although we can enable/disable, suspend, autostart and get information about our configuration from the icon itself. But, we can do more by editing configuration file rather than solely relying on its graphical user interface.</p>
-<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have discuss how to adjust color temperatures using the package redshift in Ubuntu distribution.</p>
+<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have discussed how to adjust color temperatures using the package redshift in Ubuntu distribution.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">

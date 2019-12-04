@@ -436,33 +436,21 @@ amp-carousel > amp-img > img {
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">The music streaming platform, <strong>Spotify</strong>, was launched on October 07, 2008. The services are being offered under a freemium business model i.e. Spotify Free and Spotify Premium. With Spotify Premium, we can listen to our favorite songs even without an internet connection. In addition to, we also get ad-free experience. Furthermore, as of now certain regions do get free on-demand access for mobile. In this article, we would discuss how to install Spotify in Ubuntu distribution. There are two methods available through which we can install Spotify –</p>
-<ol class="amp-wp-7d27179"><li>through <strong>snapd service</strong>, or</li>
-<li>by <strong>configuring the repository</strong>.</li>
-</ol><p class="amp-wp-7d27179"><strong>Note</strong>: Following operations would require you to have superuser privileges. In case you don’t have one, then contact your System Administrator for assistance.</p>
+		<p class="amp-wp-7d27179"><strong>Spotify</strong> is a music streaming platform. It was first launched on October 07, 2008. The services are offered under a freemium business model i.e. Spotify Free and Spotify Premium. With Spotify Premium, we can listen to our favorite songs even without an internet connection. In addition to, we also get ad-free experience. Furthermore, as of now certain regions do get free on-demand access for mobile. In this article, we would discuss how to install Spotify in Ubuntu distribution.</p>
+<p class="amp-wp-7d27179"><strong>Note</strong>: Following operations would require you to have superuser privileges. In case you don’t have one, then contact your System Administrator for assistance.</p>
 <h5 class="amp-wp-cdd8ca0">Install Spotify through Snapd service</h5>
 <p class="amp-wp-7d27179">In case you don’t have snapd service installed, then issue the following in terminal to install –</p>
 <pre>sudo apt install snapd</pre>
 <p class="amp-wp-7d27179">Now, to install Spotify –</p>
 <pre>sudo snap install spotify</pre>
-<p class="amp-wp-7d27179">This will install spotify in Ubuntu distribution. Alternately, we can also configure a repository to install the same.</p>
-<h5 class="amp-wp-cdd8ca0">Install Spotify by configuring the repository</h5>
-<p class="amp-wp-7d27179">Firstly, we have to add a GPG key needed to authenticate packages to be installed. Thereafter, we would add the necessary repository source location in <strong>/etc/apt/sources.list.d</strong> directory. And, then update the repository and install the required packages.</p>
-<p class="amp-wp-7d27179">We will start with GPG key addition first –</p>
-<pre>cd /dev/shm
-wget -q -O - https://download.spotify.com/debian/pubkey.gpg | sudo apt-key add -</pre>
-<p class="amp-wp-7d27179">where,</p>
-<p class="amp-wp-7d27179"><strong>apt-key</strong> command-line utility – used to manage keys. Those packages which have been authenticated through GPG keys are considered trusted.</p>
-<p class="amp-wp-7d27179">Then, we will create a file <strong>spotify.list</strong> in <strong>/etc/apt/sources.list.d/</strong> directory. Furthermore, we will also add repository source location in <strong>spotify.list</strong> file. So, issue the following in terminal –</p>
-<pre>echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list</pre>
-<p class="amp-wp-7d27179">where,</p>
-<p class="amp-wp-7d27179"><strong>| (pipe)</strong> redirects output of one command to the other.</p>
-<p class="amp-wp-7d27179"><strong>tee</strong> command – it will write the redirected input to the file as specified.</p>
-<p class="amp-wp-7d27179">Next, update the repository –</p>
-<pre>sudo apt update</pre>
-<p class="amp-wp-7d27179">Thereafter, we would install the Spotify package –</p>
-<pre>sudo apt install spotify-client</pre>
-<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have discussed how to install Spotify in Ubuntu distribution.</p>
+<p class="amp-wp-7d27179">This will install Spotify in Ubuntu distribution.</p>
+<p class="amp-wp-7d27179">If, for some reason, we decide to remove the package Spotify. Then, open a terminal and issue the following –</p>
+<pre>sudo snap remove spotify</pre>
+<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have discussed installation steps required for Spotify in Ubuntu distribution.</p>
+<p class="amp-wp-7d27179"><strong>Additional Info –</strong></p>
+<p class="amp-wp-7d27179">Snap is a package manager. With daemon snapd, we can manage our Snap packages.</p>
+<p class="amp-wp-7d27179">To update our Snaps manually –</p>
+<pre>sudo snap refresh</pre>
 	</div>
 
 	<footer class="amp-wp-article-footer">

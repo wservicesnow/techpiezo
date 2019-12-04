@@ -409,7 +409,7 @@ amp-carousel > amp-img > img {
 	right: 16px;
 }
 		/* Inline stylesheets */
-:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cc68ddc{color:#f00}	</style>
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cdd8ca0{text-align:center}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cc68ddc{color:#f00}	</style>
 </head>
 
 <body class="">
@@ -441,21 +441,21 @@ amp-carousel > amp-img > img {
 <ol class="amp-wp-7d27179"><li>Edit /etc/apt/sources.list file manually, or</li>
 <li>through add-apt-repository command.</li>
 </ol><p class="amp-wp-7d27179">In this article, we would discuss how to install the relevant package in our Ubuntu distribution. Don’t miss the additional info, if you want to get an idea of how to add the repository in our Ubuntu distribution. For detailed information, check the link as mentioned below in Additional info section. We would also like to add that following operations would require you to have superuser privileges. If you don’t have access to one, then contact your System Administrator for assistance.</p>
-<h5>Install software-properties-common package in Ubuntu distribution</h5>
+<h5 class="amp-wp-cdd8ca0">Install software-properties-common package in Ubuntu distribution</h5>
 <p class="amp-wp-7d27179">To the fix the error we need to install the package <strong>software-properties-common</strong>. Its installation would require you to run the following in terminal –</p>
 <pre>sudo apt install software-properties-common</pre>
 <p class="amp-wp-7d27179">This will install the command-line utility <strong>add-apt-repository </strong>as provided with the package and will fix the error as well.</p>
 <p class="amp-wp-7d27179"><strong>Additional info –</strong></p>
 <p class="amp-wp-7d27179">As discussed above there are two methods with which we could add the relevant PPAs/repository.</p>
-<p class="amp-wp-7d27179">First, by editing source list file manually. All we have to do is open the file<strong> /etc/apt/sources.list</strong> with a text editor and append the file with relevant entries. For example, append the file to add a debian repository with –</p>
-<pre>deb http://deb.debian.org/debian/ stable main contrib non-free</pre>
+<p class="amp-wp-7d27179">First, by editing source list file manually. All we have to do is open the file<strong> /etc/apt/sources.list</strong> with a text editor and append the file with relevant entries. For example, append the file to add any Linux distribution repository with –</p>
+<pre>deb http://&lt;domain-name&gt;/&lt;distribution&gt;/ component1 component2</pre>
 <p class="amp-wp-7d27179">Second, through the command-line utility <strong>add-apt-repository –</strong></p>
 <pre>sudo add-apt-repository 'deb uri distribution [component] [..]'
 sudo add-apt-repository ppa:&lt;ppa_name&gt;</pre>
 <p class="amp-wp-7d27179">For instance,</p>
-<pre>sudo add-apt-repository 'deb http://deb.debian.org/debian/ stable main contrib non-free'</pre>
+<pre>sudo add-apt-repository 'deb http://&lt;domain-name&gt;/&lt;distribution&gt;/ component1 component2'</pre>
 <p class="amp-wp-7d27179">Either of the methods discussed could be used to add a repository. Choose one which you comfortable with the most. For more about addition and removal of repositories in Ubuntu distribution, read the article <span class="amp-wp-cc68ddc"><a href="https://techpiezo.com/linux/add-or-remove-ppas-in-ubuntu-distribution/" class="amp-wp-cc68ddc">here</a></span>.</p>
-<p class="amp-wp-7d27179">In conclusion, we have discussed how to fix the error – Command ‘add-apt-repository’ not found in Ubuntu distribution.</p>
+<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have discussed how to fix the error – Command ‘add-apt-repository’ not found in Ubuntu distribution.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">

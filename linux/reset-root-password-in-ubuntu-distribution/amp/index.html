@@ -429,7 +429,7 @@ amp-carousel > amp-img > img {
 		<h1 class="amp-wp-title">Reset root password in Ubuntu distribution</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
 	<time datetime="2019-09-20T18:12:22+00:00">
-		2 months ago	</time>
+		3 months ago	</time>
 </div>
 	</header>
 
@@ -444,13 +444,9 @@ amp-carousel > amp-img > img {
 </ol><p class="amp-wp-7d27179">We would discuss each of these in coming articles. For the purpose of this article, we would focus only on how to reset root password of our Ubuntu distribution. Also, what we are about to do may damage our system so it is advisable to keep backup beforehand.</p>
 <h5>Reset root password in Ubuntu distribution</h5>
 <p class="amp-wp-7d27179">First, we need to reboot our system. And, just when its about to boot long press <strong>SHIFT key</strong> to get <strong>GRUB Menu</strong>.</p>
-<p><amp-img class="aligncenter wp-image-2621 size-full amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/09/grub-menu.png" alt="grub menu" width="831" height="547" layout="intrinsic"></amp-img></p>
 <p class="amp-wp-7d27179">Next, we need to <strong>press ‘e’</strong> to edit the first entry ‘<strong>Ubuntu</strong>‘.</p>
-<p><amp-img class="aligncenter wp-image-2623 size-full amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/09/gnu-grub.png" alt="gnu-grub" width="782" height="567" layout="intrinsic"></amp-img></p>
 <p class="amp-wp-7d27179">We need to scroll down to the line starting with <strong>linux /boot/vmlinuz</strong>… and append the line with –</p>
 <pre>init=/bin/bash</pre>
-<p class="amp-wp-7d27179">To illustrate –</p>
-<p><amp-img class="size-full wp-image-2624 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/09/init-bin-bash.png" alt="init bin bash" width="780" height="580" layout="intrinsic"></amp-img></p>
 <p class="amp-wp-7d27179">Now, we need to press<strong> Ctrl+x</strong> or <strong>F10</strong> to boot our system. It will take us to command-line prompt –</p>
 <p class="amp-wp-7d27179"><strong>root@(none):/#</strong></p>
 <p class="amp-wp-7d27179">Next, we will have to <strong>remount / in read/write</strong> mode. So, at the prompt run the following –</p>

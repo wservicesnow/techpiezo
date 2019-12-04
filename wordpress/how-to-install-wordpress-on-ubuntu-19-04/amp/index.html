@@ -479,10 +479,8 @@ quit</pre>
 <p class="amp-wp-7d27179">It should return with the output Syntax OK.</p>
 <p class="amp-wp-7d27179">Lastly, run</p>
 <pre>sudo systemctl restart apache2</pre>
-<p class="amp-wp-7d27179"><span class="amp-wp-ca1de63"><strong>STEP – 5:</strong></span> Download WordPress in <strong>/tmp</strong> directory with the help of <strong>wget</strong> command –</p>
-<pre>cd /tmp
-wget "https://wordpress.org/latest.tar.gz"
-tar xzvf latest.tar.gz</pre>
+<p class="amp-wp-7d27179"><span class="amp-wp-ca1de63"><strong>STEP – 5:</strong></span> Download WordPress from the official website. The file downloaded will be – <strong>latest.tar.gz</strong> and save it in directory <strong>/tmp/</strong>. Issue the following in terminal –</p>
+<pre>tar xzvf latest.tar.gz</pre>
 <p class="amp-wp-7d27179">tar command extracts the downloaded file. Now, we have to copy the <strong>wp-config-sample.php</strong> file as <strong>wp-config.php</strong> in the same folder by typing the following command.</p>
 <pre>cp /tmp/wordpress/wp-config-sample.php /tmp/wordpress/wp-config.php</pre>
 <p class="amp-wp-7d27179">Once done, copy the entire WordPress directory to <strong>/var/www/html/</strong> directory.</p>

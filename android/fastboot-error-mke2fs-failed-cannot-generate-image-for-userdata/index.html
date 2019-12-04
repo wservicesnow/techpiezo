@@ -961,7 +961,7 @@ code, kbd, samp, pre,
 		<figure class="ct-featured-image ct-hidden-sm" ><div class="ct-image-container ct-lazy" ><img class="attachment-full size-full" alt="Fastboot Error mke2fs Failed" data-lazy="https://techpiezo.com/wp-content/uploads/2019/07/Fastboot-error-mke2fs-failed-Fixed.svg" data-object-fit="~" /><noscript><img src="https://techpiezo.com/wp-content/uploads/2019/07/Fastboot-error-mke2fs-failed-Fixed.svg" class="attachment-full size-full" alt="Fastboot Error mke2fs Failed" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
 		
 		<div class="entry-content">
-			<p style="text-align: justify;">While flashing the factory images of our Nexus devices, we get the Fastboot error &#8211; Cannot generate image for userdata. Or, in detail &#8211;</p>
+			<p style="text-align: justify;">While flashing the factory images of our Nexus devices, we get the Fastboot error: mke2fs failed, Cannot generate image for userdata. Or, in detail &#8211;</p>
 <pre>Couldn't parse erase-block-size '0x'.
 Couldn't parse logical-block-size '0x'.
 mke2fs 1.44.6 (5-Mar-2019)
@@ -969,7 +969,7 @@ mke2fs 1.44.6 (5-Mar-2019)
 /usr/lib/android-sdk/platform-tools/mke2fs failed with status 1
 mke2fs failed: 1
 error: Cannot generate image for userdata</pre>
-<h4 style="text-align: justify;">Remove &#8220;-w&#8221; from the fastboot update command</h4>
+<h4 style="text-align: center;">Remove &#8220;-w&#8221; from the fastboot update command</h4>
 <p style="text-align: justify;">In <strong>flash-all.sh</strong> script file, you must have noticed few line of code resembling &#8211;</p>
 <pre>fastboot oem unlock
 fastboot erase boot
@@ -1000,11 +1000,11 @@ fastboot -w update image-nakasi-ktu84p.zip</pre>
 
 			
 <aside
-	class="ct-hidden-sm ct-hidden-md"    data-type="type-2"
+	    data-type="type-2"
 	>
 
     <div
-		class="ct-sidebar" data-sticky		data-widgets="separated">
+		class="ct-sidebar" 		data-widgets="separated">
 				<div class="ct-widget widget_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
 											<li>
 					<a href="https://techpiezo.com/linux/switch-display-manager-in-ubuntu-20-04/">Switch Display Manager in Ubuntu 20.04</a>

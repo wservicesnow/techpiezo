@@ -409,7 +409,7 @@ amp-carousel > amp-img > img {
 	right: 16px;
 }
 		/* Inline stylesheets */
-:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}	</style>
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cdd8ca0{text-align:center}	</style>
 </head>
 
 <body class="">
@@ -436,13 +436,13 @@ amp-carousel > amp-img > img {
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">Openbox is a Window manager through which we can manage our program windows. Whenever a program is opened, a program box also gets opened with it. The box remains same for all the programs, which runs inside this box. With the help of a Window manager like Openbox we can close, minimize, resize &amp; perform other related operations on our program windows. Furthermore, a desktop environment is not a prerequisite to installing a Window Manager.</p>
-<h5 class="amp-wp-7d27179">Configuration file in Openbox</h5>
+		<p class="amp-wp-7d27179">Openbox is a Window manager through which we can manage our program windows. Whenever a program is opened, a program box also gets opened with it. The box remains same for all the programs, which runs inside this box. With the help of a Window manager like Openbox we can close, minimize, resize &amp; perform other related operations on our program windows. Furthermore, a desktop environment is not a prerequisite to installing a Window Manager. In this article, we would discuss key bindings in Openbox.</p>
+<h5 class="amp-wp-cdd8ca0">Configuration file in Openbox</h5>
 <p class="amp-wp-7d27179">Key bindings in Openbox could be created by editing the configuration file <strong>~/.config/openbox/rc.xml</strong>. In case you don’t have one in the folder <strong>~/.config/openbox/</strong> then you need to copy it from <strong>/etc/xdg/openbox/rc.xml</strong>.</p>
 <p class="amp-wp-7d27179">Thereafter, all the changes would be made in <strong>~/.config/openbox/rc.xml</strong> config file.</p>
 <p class="amp-wp-7d27179">In the <strong>rc.xml</strong> config file, look for <strong>&lt;keyboard&gt;</strong> section. Changes must be made within <strong>&lt;keyboard&gt; </strong>section, any changes outside of the section will be ineffective.</p>
 <p class="amp-wp-7d27179">Now, before making any changes to our config file we will discuss how key-combinations are formed.</p>
-<h5 class="amp-wp-7d27179">Key combinations for config file</h5>
+<h5 class="amp-wp-cdd8ca0">Key combinations for config file</h5>
 <p class="amp-wp-7d27179">Key combinations can be of the form <strong>Modifiers-Modifiers-Key, </strong>here modifiers are our <strong>shift</strong> key, <strong>control</strong> key, <strong>super</strong> key, <strong>alt</strong> key, <strong>hyper</strong> key and <strong>meta</strong> key. We can use the following keys to denote the modifiers –</p>
 <p><amp-img class="aligncenter wp-image-2358 amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/08/Modifier-keys.png" alt="Modifier keys" width="400" height="343" layout="intrinsic"></amp-img></p>
 <p class="amp-wp-7d27179">It is worth mentioning here that, we don’t have to provide modifiers key with every key combination. In other words, we can choose to skip modifiers. Also, there are many keys on keyboard which will be difficult to identify. So, in such a scenario it is best to use the <strong>xev</strong> command. Run the following in terminal –</p>
@@ -475,7 +475,7 @@ XFilterEvent returns: False</pre>
 <p class="amp-wp-7d27179">So, we could write key combination as</p>
 <pre>C-A-0x1c</pre>
 <p class="amp-wp-7d27179">Till now, we have understood how to form key combinations.</p>
-<h5 class="amp-wp-7d27179">Edit entries in <strong>~/.config/openbox/rc.xml</strong> config file</h5>
+<h5 class="amp-wp-cdd8ca0">Edit entries in <strong>~/.config/openbox/rc.xml</strong> config file</h5>
 <p class="amp-wp-7d27179">As already discussed, we can only make changes to <strong>&lt;keyboard&gt;</strong> section of our config file for the purpose of key bindings. Hence, following entries need to be added just before the<strong> &lt;/keyboard&gt;</strong> end tag. You can add anywhere in-between just make sure not to add anything in between <strong>&lt;keybind&gt;…&lt;/keybind&gt;</strong> already existing tags.</p>
 <pre>&lt;keybind key="C-A-0x1c"&gt;
 &lt;action name="Execute"&gt;
@@ -488,7 +488,6 @@ XFilterEvent returns: False</pre>
 <p class="amp-wp-7d27179"><strong>&lt;action&gt;</strong> – to run the program. There are other operations we can perform through &lt;action&gt; tag like SendToDesktop, Maximize, ToggleFullscreen etc. We will discuss all other actions in a separate article. Here, focus of our article is on how to execute a program through key bindings.</p>
 <p><strong>&lt;command&gt;</strong> – to execute the command</p>
 <p class="amp-wp-7d27179">In conclusion, we have discussed how to bind a key in Openbox by editing the  <strong>~/.config/openbox/rc.xml</strong> configuration file.</p>
-<p> </p>
 	</div>
 
 	<footer class="amp-wp-article-footer">

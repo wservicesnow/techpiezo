@@ -443,16 +443,13 @@ amp-carousel > amp-img > img {
 <p class="amp-wp-7d27179">Note: Editing a <strong>/etc/apt/sources.list</strong> file would require you to have superuser privileges. You can’t edit the SourcesList through normal user. Otherwise, you may get the following error –</p>
 <pre>/etc/apt/sources.list permission denied</pre>
 <h5>SourcesList file in Ubuntu distribution</h5>
-<p class="amp-wp-7d27179">Any <strong>/etc/apt/sources.list</strong> file would contain entries which may resemble –</p>
-<pre>deb http://us.archive.ubuntu.com/ubuntu/ disco main restricted
-deb-src http://us.archive.ubuntu.com/ubuntu/ disco main restricted</pre>
-<p class="amp-wp-7d27179">The syntax for the above two entries is –</p>
-<pre>deb http://example.com/ubuntu/ distribution component1 component2 component3
-deb-src http://example.com/ubuntu/ distribution component1 component2 component3</pre>
+<p class="amp-wp-7d27179">Any <strong>/etc/apt/sources.list</strong> file would contain syntax similar to –</p>
+<pre>deb http://&lt;domain-name&gt;/ubuntu/ distribution component1 component2 component3
+deb-src http://&lt;domain-name&gt;/ubuntu/ distribution component1 component2 component3</pre>
 <p class="amp-wp-7d27179">where,</p>
 <p class="amp-wp-7d27179"><strong>deb</strong> tells us that the repository contains binary packages</p>
 <p class="amp-wp-7d27179"><strong>deb-src</strong> for source code of packages</p>
-<p class="amp-wp-7d27179"><strong>http://example.com/ubuntu/</strong> – is the URI (Uniform Resource Identifier)</p>
+<p class="amp-wp-7d27179"><strong>http://&lt;domain-name&gt;/ubuntu/</strong> – is the URI (Uniform Resource Identifier)</p>
 <p class="amp-wp-7d27179"><strong>distribution</strong> – release of the Ubuntu package, for instance disco</p>
 <p class="amp-wp-7d27179"><strong>component</strong> – these could be free/non-free as per the packages available in repository</p>
 <p class="amp-wp-7d27179">For Ubuntu distribution, we have four components of repositories –</p>

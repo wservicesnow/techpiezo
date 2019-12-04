@@ -455,12 +455,13 @@ amp-carousel > amp-img > img {
 <pre>apt autoclean</pre>
 <p class="amp-wp-7d27179">So, next time you want to install the same version of the packages that you previously installed. Then, you have to download that package again as it would no longer be available in archives. If you are not worried about disk space then, perhaps its a good notion to leave the archives directory untouched.</p>
 <h4 class="amp-wp-cdd8ca0">Upgrading your Debian distribution to newer Release</h4>
-<p class="amp-wp-7d27179">Till now, we have discussed how to update your Debian distribution. When it comes to upgrade, it means moving from one Debian release to another i.e. from Stretch to Buster. For that, we must first read release notes provided by Debian on:</p>
-<pre>www.debian.org/releases/stable/releasenotes</pre>
+<p class="amp-wp-7d27179">Till now, we have discussed how to update your Debian distribution. When it comes to upgrade, it means moving from one Debian release to another i.e. from Stretch to Buster.</p>
 <p class="amp-wp-7d27179">We need to first update the file to move from one stable version of release to another:</p>
 <pre>nano /etc/apt/sources.list</pre>
 <p class="amp-wp-7d27179">with the following entries:</p>
-<pre>http://ftp.us.debian.org/debian stable main contrib</pre>
+<pre>http://&lt;domain-name&gt;/debian stable main contrib</pre>
+<p class="amp-wp-7d27179">where,</p>
+<p class="amp-wp-7d27179">replace &lt;domain-name&gt; as per present SourcesList configuration.</p>
 <p class="amp-wp-7d27179">Then, save and exit. Run the following command:</p>
 <pre>apt update</pre>
 <p class="amp-wp-7d27179">Updating the entries in sources.list file would help us to move to next stable distribution.</p>

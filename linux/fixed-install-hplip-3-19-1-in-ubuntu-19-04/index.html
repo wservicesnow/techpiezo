@@ -962,20 +962,15 @@ code, kbd, samp, pre,
 		
 		<div class="entry-content">
 			<p style="text-align: justify;">HP Linux Printing and Imaging System (HPLIP) is a package available in standard Ubuntu repository. The HPLIP package make Linux distributions access HP&#8217;s printing and scanning devices. In this article, we will cover <strong>HPLIP v3.19.1</strong> installation process in Ubuntu 19.04. Few of the operations mentioned below may require superuser privileges, if you don&#8217;t have one then contact your System Administrator for assistance.</p>
-<h5>Install HPLIP 3.19.1 in Ubuntu 19.04</h5>
+<h5 style="text-align: center;">Install HPLIP 3.19.1 in Ubuntu 19.04</h5>
 <p style="text-align: justify;">We need to update Ubuntu&#8217;s standard repository for latest version of packages &#8211;</p>
 <pre>sudo apt update</pre>
 <p style="text-align: justify;">Thereafter, install the relevant packages through the command <strong>apt install</strong> &#8211;</p>
 <pre>sudo apt install hplip hplip-data hplip-gui</pre>
 <p style="text-align: justify;">It will also install all the associated dependencies. Meanwhile, connect your printing devices to &#8211; USB, Network or Parallel-port for device discovery. Once the installation process is completed, we will setup our printing device.</p>
-<h5>hp-setup in Ubuntu 19.04</h5>
+<h5 style="text-align: center;">hp-setup in Ubuntu 19.04</h5>
 <p style="text-align: justify;">Prerequisites &#8211;</p>
-<p style="text-align: justify;">We will have to download both the plugin as well its associated digital signature manually. Even if we try to download the plugin through hp-setup command line utility directly, it may throw a file checksum error. So, download the required files from the links provided below &#8211;</p>
-<p style="text-align: justify;">For hplip plugin</p>
-<pre>cd /home/</pre>
-<pre>wget -c 'http://www.openprinting.org/download/printdriver/auxfiles/HP/plugins/hplip-3.19.1-plugin.run'</pre>
-<p style="text-align: justify;">For hplip plugin&#8217;s digital signature</p>
-<pre>wget -c 'http://www.openprinting.org/download/printdriver/auxfiles/HP/plugins/hplip-3.19.1-plugin.run.asc'</pre>
+<p style="text-align: justify;">We will have to download both the plugin as well its associated digital signature manually. Even if we try to download the plugin through hp-setup command line utility directly, it may throw a file checksum error. So, download the required files from the OpenPrinting website itself. The two files, we should have are &#8211; <strong>hplip-3.19.1-plugin.run</strong> &amp; <strong>hplip-3.19.1-plugin.run.asc</strong>.</p>
 <p style="text-align: justify;">Note: Make sure both the downloaded files are kept in same directory.</p>
 <p style="text-align: justify;">Run <strong>hp-plugin</strong> utility in the terminal &#8211;</p>
 <pre>hp-plugin</pre>
@@ -996,7 +991,7 @@ code, kbd, samp, pre,
 sudo ln -s /usr/lib64/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu
 sudo ln -s /usr/lib64/sane /usr/lib64/x86_64-linux-gnu/sane</pre>
 <p style="text-align: justify;">Now, you will have to run the hp-setup command line utility again in the terminal. And, follow the same steps as mentioned in the article above.</p>
-<p style="text-align: justify;">In conclusion, we have installed hplip package version 3.19.1 and its associated plug-in with digital signatures in Ubuntu 19.04.</p>
+<p style="text-align: justify;"><strong>In conclusion</strong>, we have installed hplip package version 3.19.1 and its associated plug-in with digital signatures in Ubuntu 19.04.</p>
 		</div>
 
 		
@@ -1008,11 +1003,11 @@ sudo ln -s /usr/lib64/sane /usr/lib64/x86_64-linux-gnu/sane</pre>
 
 			
 <aside
-	class="ct-hidden-sm ct-hidden-md"    data-type="type-2"
+	    data-type="type-2"
 	>
 
     <div
-		class="ct-sidebar" data-sticky		data-widgets="separated">
+		class="ct-sidebar" 		data-widgets="separated">
 				<div class="ct-widget widget_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
 											<li>
 					<a href="https://techpiezo.com/linux/switch-display-manager-in-ubuntu-20-04/">Switch Display Manager in Ubuntu 20.04</a>

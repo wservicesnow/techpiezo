@@ -429,7 +429,7 @@ amp-carousel > amp-img > img {
 		<h1 class="amp-wp-title">Switch Display Manager in Ubuntu 20.04</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
 	<time datetime="2019-12-02T00:04:21+00:00">
-		1 hour ago	</time>
+		3 days ago	</time>
 </div>
 	</header>
 
@@ -463,12 +463,11 @@ amp-carousel > amp-img > img {
 <pre>systemctl status display-manager</pre>
 <p class="amp-wp-7d27179">Now, to switch between them – run the following command with active (or default) Display Manager –</p>
 <pre>dpkg-reconfigure &lt;Default_Display_Manager&gt;</pre>
-<p class="amp-wp-7d27179">for instance,</p>
+<p class="amp-wp-7d27179">for instance (opt any one of three as per your System’s configuration),</p>
 <pre>dpkg-reconfigure gdm3
 dpkg-reconfigure lightdm
 dpkg-reconfigure sddm</pre>
-<p class="amp-wp-7d27179">And, press <strong>OK</strong>. Next, you will be asked to select your default Display Manager.</p>
-<p><amp-img class="size-full wp-image-3739 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/12/select-display-manager.png" alt="select display manager" width="342" height="221" layout="intrinsic"></amp-img></p>
+<p class="amp-wp-7d27179">And, press <strong>OK</strong>. Next, you will be asked to select your default Display Manager (gdm3, lightdm or sddm).</p>
 <p class="amp-wp-7d27179">On running – <strong>dpkg-reconfigure gdm3</strong>, you may get following error –</p>
 <pre>gdm.service is not active, cannot reload.
 invoke-rc.d: initscript gdm3, action "reload" failed.</pre>

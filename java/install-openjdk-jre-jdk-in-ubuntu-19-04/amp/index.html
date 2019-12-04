@@ -409,7 +409,7 @@ amp-carousel > amp-img > img {
 	right: 16px;
 }
 		/* Inline stylesheets */
-:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}	</style>
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cdd8ca0{text-align:center}	</style>
 </head>
 
 <body class="">
@@ -436,7 +436,8 @@ amp-carousel > amp-img > img {
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">In this article, we would discuss installation steps for both JRE as well as JDK. Here, JRE is an acronym for Java runtime and JDK is an acronym for Java Development Kit. For those who just want to run Java applications / programs can install Java runtime. On the other hand, to develop Java applications you need to install Java Development Kit. In case, if you plan on to install JDK, then you wouldn’t have to install JRE separately. JRE package itself comes bundled with JDK. Both the packages are available in standard Ubuntu repository. Also, you need to first check whether you have JDK/JRE already installed. Therefore, run the following in terminal –</p>
+		<p class="amp-wp-7d27179">In this article, we would discuss how to install both OpenJDK <strong>Java runtime (JRE)</strong> &amp; <strong>Development Kit (JDK)</strong> in Ubuntu 19.04 release. Here, JRE is an acronym for Java runtime and JDK is an acronym for Java Development Kit.</p>
+<p class="amp-wp-7d27179">For those who just want to run Java applications / programs can install Java runtime. On the other hand, to develop Java applications you need to install Java Development Kit. In case, if you plan on to install JDK, then you wouldn’t have to install JRE separately. JRE package itself comes bundled with JDK. Both the packages are available in standard Ubuntu repository. Also, you need to first check whether you have JDK/JRE already installed. Therefore, run the following in terminal –</p>
 <pre>java -version</pre>
 <p class="amp-wp-7d27179">If Java is not installed, then it will return with the following output. We have been using Ubuntu 19.04, if you are on a different release of Ubuntu then you may see different versions in the output.</p>
 <pre>Command 'java' not found, but can be installed with:
@@ -447,7 +448,7 @@ sudo apt install openjdk-8-jre-headless              # version 8u212-b03-
 sudo apt install openjdk-12-jre-headless             # version 12.0.1+12-1
 sudo apt install openjdk-13-jre-headless             # version 13~13-0ubunt1</pre>
 <p class="amp-wp-7d27179">The following operations would require superuser privileges. In case, if you don’t one then contact your system administrator for assistance.</p>
-<h5>Install OpenJDK Java Runtime Environment (JRE)</h5>
+<h5 class="amp-wp-cdd8ca0">Install OpenJDK Java Runtime Environment (JRE)</h5>
 <p class="amp-wp-7d27179">Firstly, we would install Java Runtime Environment (JRE) to run Java written applications / programs. To do so, run the following in the terminal –</p>
 <pre>sudo apt install openjdk-11-jre</pre>
 <p class="amp-wp-7d27179">Why did we choose to install <strong>openjdk-11-jre</strong> not other packages like openjdk-12-jre? The answer to the question is pretty easy, <strong>openjdk-11-jre</strong> is currently the package supported by Ubuntu distribution. If you intend to install other package versions then you may opt one. But remember, those packages may not be supported by the Ubuntu distribution. It may take few minutes to install the packages depending on your speed of your network connection.</p>
@@ -467,7 +468,7 @@ OpenJDK 64-Bit Server VM (build 11.0.4+11-post-Ubuntu-1ubuntu219.04, mixed mode,
 <pre>openjdk version "11.0.4" 2019-07-16
 OpenJDK Runtime Environment (build 11.0.4+11-post-Ubuntu-1ubuntu219.04)
 OpenJDK 64-Bit Server VM (build 11.0.4+11-post-Ubuntu-1ubuntu219.04, mixed mode, sharing)</pre>
-<p class="amp-wp-7d27179">In conclusion, both JDK as well as JRE could be installed depending on our requirements. JDK for development purposes and JRE for simply running Java applications.</p>
+<p class="amp-wp-7d27179"><strong>In conclusion</strong>, both JDK as well as JRE could be installed depending on our requirements. JDK for development purposes and JRE for simply running Java applications.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">

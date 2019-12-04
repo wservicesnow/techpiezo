@@ -409,7 +409,7 @@ amp-carousel > amp-img > img {
 	right: 16px;
 }
 		/* Inline stylesheets */
-:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-ca1de63{font-size:14pt}	</style>
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cdd8ca0{text-align:center}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-ca1de63{font-size:14pt}	</style>
 </head>
 
 <body class="">
@@ -437,21 +437,21 @@ amp-carousel > amp-img > img {
 
 	<div class="amp-wp-article-content">
 		<p class="amp-wp-7d27179"><strong>Netplan</strong> is a network configuration tool which was introduced in the Ubuntu 17.10. Prior to that, Ubuntu had <strong>ifupdown</strong> package to configure and manage networks. There are still many users who would prefer <strong>ifupdown</strong> package for managing their networks for various reasons. In this article, we would discuss how desktop users can switch back to <strong>ifupdown</strong> package and manage their networks through <strong>/etc/network/interfaces</strong> configuration file. Furthermore, they can also use command-line utilities like nmcli, nmtui or GUI based network-manager-gnome to manage their networks.</p>
-<h4 class="amp-wp-7d27179">Install ifupdown package</h4>
+<h4 class="amp-wp-cdd8ca0">Install ifupdown package</h4>
 <p class="amp-wp-7d27179">Superuser privilege is a prerequisite before making any changes, if you don’t have one then contact your System Administrator for assistance.</p>
 <p class="amp-wp-7d27179">You need to install<strong> ifupdown</strong> package. To do so, run the following –</p>
 <pre>sudo apt update
 sudo apt install ifupdown</pre>
 <p class="amp-wp-7d27179">Also, if you plan on to Install GUI version of Network Manager – various other tools like nmcli, nmtui are also included in it.</p>
 <pre>sudo apt install network-manager-gnome</pre>
-<h4 class="amp-wp-7d27179">Remove Netplan package</h4>
+<h4 class="amp-wp-cdd8ca0">Remove Netplan package</h4>
 <p class="amp-wp-7d27179">If you don’t want to keep configuration and other related files of <strong>Netplan</strong> package installed,</p>
 <pre>sudo apt purge netplan.io</pre>
 <p class="amp-wp-7d27179">To remove associated folders –</p>
 <pre>sudo rm -rf /usr/share/netplan 
 sudo rm -rf /etc/netplan</pre>
 <p class="amp-wp-7d27179">So far, we have installed ifupdown package and subsequently removed Netplan package. Now, we will be editing<strong> /etc/network/interfaces</strong> file.</p>
-<h4 class="amp-wp-7d27179">Make necessary changes to /etc/network/interfaces</h4>
+<h4 class="amp-wp-cdd8ca0">Make necessary changes to /etc/network/interfaces</h4>
 <pre>sudo nano /etc/network/interfaces</pre>
 <p class="amp-wp-7d27179">We have used nano text editor, you may choose one of your choice. In <strong>/etc/network/interfaces</strong> configuration file, make the following entries –</p>
 <pre>auto lo

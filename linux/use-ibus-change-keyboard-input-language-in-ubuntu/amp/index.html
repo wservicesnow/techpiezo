@@ -409,7 +409,7 @@ amp-carousel > amp-img > img {
 	right: 16px;
 }
 		/* Inline stylesheets */
-:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}	</style>
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cdd8ca0{text-align:center}	</style>
 </head>
 
 <body class="">
@@ -436,29 +436,21 @@ amp-carousel > amp-img > img {
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">IBus is an acronym for Intelligent Input Bus. It is an input method for multiple languages in Linux distributions. Furthermore, we need to install an IM engine along with IBus. An IM engine provides the required support for multiple languages. In this article, we would discuss how to install and configure IBus to change our Keyboard’s input language in Ubuntu distribution.</p>
-<h5>Install IBus and related packages</h5>
+		<p class="amp-wp-7d27179">IBus is an acronym for Intelligent Input Bus. It is an input method for multiple languages in Linux distributions. Furthermore, we need to install an IM engine along with IBus. An IM engine provides the required support for multiple languages. In this article, we would discuss how to install and configure IBus to change our Keyboard input language in Ubuntu distribution.</p>
+<h5 class="amp-wp-cdd8ca0">Install IBus and related packages</h5>
 <p class="amp-wp-7d27179">The following operations would require superuser privileges, in case you don’t have one then contact your System Administrator for assistance. As we have already discussed, we need to install IBus along with an IM engine. Therefore, run the following in terminal –</p>
 <pre>sudo apt install ibus-m17n</pre>
-<p class="amp-wp-7d27179">Observe, we are only installing <strong>ibus-m17n</strong> package. All other relevant packages would get installed through <strong>ibus-m17n</strong> package itself.</p>
-<h5>Configure IBus</h5>
-<p class="amp-wp-7d27179">Once installation gets completed, we will have to configure the package Ibus. This could be achieved through <strong>IBus Preferences</strong> option available in our Main menu. After clicking the IBus Preferences, it will open a dialog box –</p>
-<p><amp-img class="size-full wp-image-2478 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/09/IBus-Daemon-not-running.png" alt="IBus Daemon not running" width="733" height="139" layout="intrinsic"></amp-img></p>
-<p class="amp-wp-7d27179">It informs us that IBus Daemon is not running. To start it we need to click <strong>Yes</strong>.</p>
-<p class="amp-wp-7d27179">This will start the IBus Daemon successfully, thereafter you will be presented with another dialog box specifying the current status for IBus Daemon – Click <strong>OK</strong>.</p>
-<p><amp-img class="size-full wp-image-2480 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/09/IBus-Started.png" alt="IBus Started" width="764" height="141" layout="intrinsic"></amp-img></p>
-<p class="amp-wp-7d27179">Incase, you are unable to start IBus Daemon then change the <strong>Keyboard input method system to IBus in Language support</strong> package. Remember, you need to log out of the system after making the changes. Otherwise, it will not allow you to switch between input methods.</p>
-<p class="amp-wp-7d27179">Thereafter, select the Input method tab in IBus Preferences –</p>
-<p><amp-img class="size-full wp-image-2481 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/09/IBus-Preferences.png" alt="IBus Preferences" width="814" height="474" layout="intrinsic"></amp-img></p>
-<p class="amp-wp-7d27179">To Add an Input method, click <strong>Add.</strong></p>
-<p class="amp-wp-7d27179">Next, select the input method which you would like to use, we have selected <strong>German</strong> –</p>
-<p><amp-img class="size-full wp-image-2482 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/09/select-input-method.png" alt="select input method" width="314" height="358" layout="intrinsic"></amp-img></p>
-<p class="amp-wp-7d27179">After you click on <strong>Add</strong> button, the input language will be added to your input method.</p>
-<p><amp-img class="size-full wp-image-2483 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/09/input-method-added.png" alt="input method added" width="817" height="468" layout="intrinsic"></amp-img></p>
-<p class="amp-wp-7d27179">Lastly, you could switch between input method through Keyboard shortcut keys or clicking the IBus panel icon. Keyboard shortcut keys can be changed in General tab. Here, by default keyboard shortcut key for switching between input methods is <strong>&lt;Super&gt;space</strong>.</p>
-<p><amp-img class="size-full wp-image-2484 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/09/keyboard-shortcut-input-method.png" alt="keyboard shortcut input method" width="812" height="470" layout="intrinsic"></amp-img></p>
-<p class="amp-wp-7d27179">Open any text editor like gedit, featherpad to check if you can successfully switch between input methods.</p>
-<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have discuss how to install and configure IBus to change keyboard input languages in this article.</p>
+<p class="amp-wp-7d27179">Observe, we are only installing <strong>ibus-m17n</strong> package. <strong>Apt</strong> will automatically select and install other related packages.</p>
+<h5 class="amp-wp-cdd8ca0">Configure IBus</h5>
+<p class="amp-wp-7d27179">Once installation gets completed, we will have to configure the package Ibus. Hence, open <strong>IBus Preferences</strong> option available in our Main menu. After clicking the IBus Preferences, it will open a dialog box. It informs us that IBus Daemon is not running. To start it we need to click <strong>Yes</strong>.</p>
+<p class="amp-wp-7d27179">Now, IBus Daemon has successfully started. It presents us another dialog box which specifies the current status for IBus Daemon – Click <strong>OK</strong>.</p>
+<p class="amp-wp-7d27179">In case, we are unable to start IBus Daemon then change the <strong>Keyboard input method system to IBus in Language support</strong> package. Remember, we need to log out of the system after making the changes. Otherwise, it will not allow us to switch between input methods.</p>
+<p class="amp-wp-7d27179">Thereafter, select the Input method tab in IBus Preferences and to Add an Input method, click <strong>Add.</strong></p>
+<p class="amp-wp-7d27179">Next, select the input method which we would like to use e.g. <strong>German.</strong></p>
+<p class="amp-wp-7d27179">Clicking the <strong>Add</strong> button adds the input language to our input method.</p>
+<p class="amp-wp-7d27179">Lastly, we could switch between input method through Keyboard shortcut keys or clicking the IBus panel icon. We can change Keyboard shortcut keys through General tab. Here, by default keyboard shortcut key for switching between input methods is <strong>&lt;Super&gt;space</strong>.</p>
+<p class="amp-wp-7d27179">Open any text editor like gedit, featherpad to check if we can successfully switch between input methods.</p>
+<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have discussed how to install and configure IBus to change keyboard input languages in this article.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">

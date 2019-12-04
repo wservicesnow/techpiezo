@@ -409,7 +409,7 @@ amp-carousel > amp-img > img {
 	right: 16px;
 }
 		/* Inline stylesheets */
-:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}	</style>
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cdd8ca0{text-align:center}	</style>
 </head>
 
 <body class="">
@@ -436,7 +436,7 @@ amp-carousel > amp-img > img {
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">While flashing the factory images of our Nexus devices, we get the Fastboot error – Cannot generate image for userdata. Or, in detail –</p>
+		<p class="amp-wp-7d27179">While flashing the factory images of our Nexus devices, we get the Fastboot error: mke2fs failed, Cannot generate image for userdata. Or, in detail –</p>
 <pre>Couldn't parse erase-block-size '0x'.
 Couldn't parse logical-block-size '0x'.
 mke2fs 1.44.6 (5-Mar-2019)
@@ -444,7 +444,7 @@ mke2fs 1.44.6 (5-Mar-2019)
 /usr/lib/android-sdk/platform-tools/mke2fs failed with status 1
 mke2fs failed: 1
 error: Cannot generate image for userdata</pre>
-<h4 class="amp-wp-7d27179">Remove “-w” from the fastboot update command</h4>
+<h4 class="amp-wp-cdd8ca0">Remove “-w” from the fastboot update command</h4>
 <p class="amp-wp-7d27179">In <strong>flash-all.sh</strong> script file, you must have noticed few line of code resembling –</p>
 <pre>fastboot oem unlock
 fastboot erase boot
