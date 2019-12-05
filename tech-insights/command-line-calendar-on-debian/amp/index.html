@@ -409,7 +409,7 @@ amp-carousel > amp-img > img {
 	right: 16px;
 }
 		/* Inline stylesheets */
-:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}	</style>
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cdd8ca0{text-align:center}	</style>
 </head>
 
 <body class="">
@@ -436,50 +436,55 @@ amp-carousel > amp-img > img {
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">Linux distributions provides simple and useful utilities through command line. Calendar in GNU/Linux might seem like novelty, however mastering the tool may be helpful.</p>
-<p class="amp-wp-7d27179">There are many command line interface (CLI) utilities for calendar.</p>
-<p class="amp-wp-7d27179">First CLI utility is cal command, cal command is available in most distributions. cal command displays current month by default with highlight on present day. It is included with <strong>bsdmainutils</strong> package which can be installed by using the command –</p>
-<pre>apt-get install bsdmainutils</pre>
-<p class="amp-wp-7d27179">The simple cal command gives output of present month calendar with highlighted day.</p>
+		<p class="amp-wp-7d27179">Linux distributions provides simple and useful utilities through command line. Calendar in GNU/Linux might seem like novelty, however mastering the tool may be helpful. In this article, we would discuss command line Calendar utilities on Debian distribution.</p>
+<p class="amp-wp-7d27179">There are many command line interface (CLI) utilities for calendar available.</p>
+<p class="amp-wp-7d27179">First CLI utility is <strong>cal</strong> command, available in most distributions. <strong>cal</strong> command displays current month by default and highlights the present day by default.</p>
+<p class="amp-wp-7d27179"><strong>Note</strong>: Following operations would require you to have super user privileges. In case you don’t have one, then contact your System Administrator for assistance.</p>
+<p class="amp-wp-7d27179"><strong>bsdmainutils</strong> package contains the utility cal. Therefore, we can install the relevant package through –</p>
+<pre>su-l
+apt-get install bsdmainutils</pre>
+<p class="amp-wp-7d27179">Logout from root/superuser. And, issue the following in terminal –</p>
 <p class="amp-wp-7d27179"><code>$ cal</code></p>
 <p><amp-img class="size-full wp-image-430 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/06/cal-command.png" alt="cal-command" width="233" height="186" layout="intrinsic"></amp-img></p>
-<p class="amp-wp-7d27179">There is also a command ncal, which is is included as well but offers an alternative layout.</p>
+<p class="amp-wp-7d27179">The cal command returns present month calendar with highlighted day as the output.</p>
+<p class="amp-wp-7d27179">Moreover, there is a command <strong>ncal</strong>, which is included in the <strong>bsdmainutils</strong> package as well but offers an alternative layout.</p>
 <p><code>$ ncal</code></p>
 <p><amp-img class="size-full wp-image-431 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/06/ncal-command.png" alt="ncal-command" width="227" height="185" layout="intrinsic"></amp-img></p>
-<p class="amp-wp-7d27179">What is the difference between cal and ncal ?</p>
-<p class="amp-wp-7d27179">While cal presents a week horizontally and ncal display a week in calendar as vertical, there is much more to it as well. cal command was present in AT&amp;T UNIX and ncal was used in FreeBSD. To keep compatibility with older Unix’s cal command, it would output 8 lines, as cal command was used in many CGI scripts.</p>
-<p class="amp-wp-7d27179">Lets see some examples :</p>
+<h5 class="amp-wp-cdd8ca0">What is the difference between cal and ncal ?</h5>
+<p class="amp-wp-7d27179">While cal presents a week horizontally and ncal display a week in calendar as vertical. cal command was present in AT&amp;T UNIX and ncal was used in FreeBSD. To keep compatibility with older Unix’s cal command, it would output 8 lines, as cal command was used in many CGI scripts.</p>
+<p class="amp-wp-7d27179">Now, lets see some examples :</p>
 <p class="amp-wp-7d27179">To Print for particular month and year<br>
 cal (month) (year)</p>
 <p class="amp-wp-7d27179"><code>$ cal 6 2019</code></p>
-<p class="amp-wp-7d27179">To Print the previous, current and next month surrounding today</p>
+<p class="amp-wp-7d27179">Print the previous, current and next month surrounding today</p>
 <p class="amp-wp-7d27179"><code>$ cal -3</code></p>
-<p class="amp-wp-7d27179">To Print for a specific month<br>
+<p class="amp-wp-7d27179">And, print for a specific month<br>
 cal -m (month)</p>
 <p class="amp-wp-7d27179"><code>$ cal -m 2</code></p>
-<p class="amp-wp-7d27179">Remember :</p>
-<p>An unnoticed behaviour by user may lead to altering result in cal command, how you may ask?</p>
-<p class="amp-wp-7d27179">If you were to display a calendar of month June of 2018, you may enter</p>
+<p class="amp-wp-7d27179">Remember:</p>
+<p>An unnoticed behaviour by user may lead to altering result in cal command, how?</p>
+<p class="amp-wp-7d27179">In case, if you were to display a calendar of month June of 2018, you may enter</p>
 <p class="amp-wp-7d27179"><code>cal 6 2019</code></p>
 <p><amp-img class="size-full wp-image-430 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/06/cal-command.png" alt="cal-command" width="233" height="186" layout="intrinsic"></amp-img></p>
-<p>which is correct, however if you type,</p>
+<p>which is correct, however if you type –</p>
 <p><code>cal 6 19</code></p>
 <p><amp-img class="size-full wp-image-432 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/06/cal-command-1.png" alt="cal-command-1" width="228" height="165" layout="intrinsic"></amp-img></p>
 <p>it will display June from year 19 AD, so remember to READ THE MANUAL.</p>
 <p>Try <code>cal 9 1752</code>, Skipped 11 Days in calendar?</p>
 <p><amp-img class="size-full wp-image-433 aligncenter amp-wp-enforced-sizes" src="https://techpiezo.com/wp-content/uploads/2019/06/cal-9-1972.png" alt="cal-9-1972" width="231" height="114" layout="intrinsic"></amp-img></p>
 <p>yes, that is due to Gregorian Reformation.</p>
-<p>Now lets try different utility, <code>gcal</code></p>
-<p>It can be install with –</p>
+<p>Now, try different utility – <code>gcal</code></p>
+<p>It can be installed through –</p>
 <pre>apt-get install gcal</pre>
-<p>gcal is GNU utility, it can calculate astronomical data, displays eternal holiday lists for countries around the world, fixed date lists for reminders and many more.</p>
+<p><strong>gcal</strong> is GNU utility, it can calculate astronomical data, displays eternal holiday lists for countries around the world, fixed date lists for reminders and much more.</p>
 <p>To print current month of year</p>
 <pre>gcal</pre>
-<p>To print previous, current and next month surrounding today</p>
+<p>Print previous, current and next month surrounding today</p>
 <pre>gcal .</pre>
-<p>To print month of year</p>
+<p>And, print month of year</p>
 <p>gcal (month) (year)</p>
 <pre>gcal 6 2019</pre>
+<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have discussed various command line Calendar utilities on Debian.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">

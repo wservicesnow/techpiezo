@@ -436,17 +436,17 @@ amp-carousel > amp-img > img {
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">WordPress is one of the most popular Content Management Systems available. It is being used for building websites. To install it in a Ubuntu 19.04 distribution, we have two options available.</p>
-<p class="amp-wp-7d27179">A. Prepare a list of packages to be installed and act accordingly.<br>
+		<p class="amp-wp-7d27179"><strong>WordPress</strong> is one of the most popular Content Management Systems available. It is being used for building websites. To install WordPress on Ubuntu 19.04 distribution, we have two options available.</p>
+<p class="amp-wp-7d27179">A. We need to prepare a list of packages to install.<br>
 B. Install packages as a group with the help of package tool <strong><em>tasksel</em></strong>.</p>
 <p class="amp-wp-7d27179">Installing packages with the help of package tasksel is usually preferred. Therefore, we are going discuss steps involved in installing Lamp-Server through tasksel.</p>
 <p class="amp-wp-7d27179">The whole installation process is easy to execute and mainly involves five steps that are mentioned below:</p>
-<p class="amp-wp-7d27179">STEP – 1: Get super user privileges.<br>
-STEP – 2: Install Lamp-Server.<br>
-STEP – 3: Create database user and grant privileges.<br>
-STEP – 4: Install relevant PHP packages and edit few config files.<br>
-STEP – 5: Install WordPress.</p>
-<h4 class="amp-wp-cdd8ca0">How to Install WordPress on Ubuntu 19.04?</h4>
+<p class="amp-wp-7d27179">1: Get super user privileges.<br>
+2: Install Lamp-Server.<br>
+3: Create database user and grant privileges.<br>
+4: Install relevant PHP packages and edit few config files.<br>
+5: Install WordPress.</p>
+<h4 class="amp-wp-cdd8ca0">Setup LAMP on Ubuntu 19.04</h4>
 <p class="amp-wp-7d27179"><span class="amp-wp-ca1de63"><strong>STEP – 1:</strong></span> Login with superuser privileges, if you don’t have one then contact System Administrator for assistance.</p>
 <p class="amp-wp-7d27179"><span class="amp-wp-ca1de63"><strong>STEP – 2:</strong></span> If you don’t have the <strong>package tasksel</strong> installed, then install it by issuing following command.</p>
 <pre>sudo apt install tasksel</pre>
@@ -479,9 +479,11 @@ quit</pre>
 <p class="amp-wp-7d27179">It should return with the output Syntax OK.</p>
 <p class="amp-wp-7d27179">Lastly, run</p>
 <pre>sudo systemctl restart apache2</pre>
-<p class="amp-wp-7d27179"><span class="amp-wp-ca1de63"><strong>STEP – 5:</strong></span> Download WordPress from the official website. The file downloaded will be – <strong>latest.tar.gz</strong> and save it in directory <strong>/tmp/</strong>. Issue the following in terminal –</p>
+<h5 class="amp-wp-cdd8ca0">Install WordPress on Ubuntu 19.04</h5>
+<p class="amp-wp-7d27179"><span class="amp-wp-ca1de63"><strong>STEP – 5:</strong></span> Download WordPress from the official website. The file downloaded will be – <strong>latest.tar.gz</strong> and save it in directory <strong>/tmp/</strong>. Then, issue the following in terminal –</p>
 <pre>tar xzvf latest.tar.gz</pre>
-<p class="amp-wp-7d27179">tar command extracts the downloaded file. Now, we have to copy the <strong>wp-config-sample.php</strong> file as <strong>wp-config.php</strong> in the same folder by typing the following command.</p>
+<p class="amp-wp-7d27179"><strong>tar</strong> command extracts the downloaded file.</p>
+<p class="amp-wp-7d27179">Now, we have to copy the <strong>wp-config-sample.php</strong> file as <strong>wp-config.php</strong> in the same folder by typing the following command.</p>
 <pre>cp /tmp/wordpress/wp-config-sample.php /tmp/wordpress/wp-config.php</pre>
 <p class="amp-wp-7d27179">Once done, copy the entire WordPress directory to <strong>/var/www/html/</strong> directory.</p>
 <pre>sudo cp -a /tmp/wordpress/. /var/www/html/</pre>
@@ -500,7 +502,7 @@ define( 'DB_PASSWORD', 'password' );</pre>
 <p class="amp-wp-7d27179">and, provide relevant details including your username and password for WordPress login. Once, successfully done you will taken to WordPress login prompt.</p>
 <p class="amp-wp-7d27179">For some reason, if you are still unable to edit themes and plugins then you need to append <strong>/var/www/html/wp-config.php</strong> file with the following –</p>
 <pre>define( 'FS_Method', 'direct' );</pre>
-<p>In conclusion, we have discussed how to install WordPress on Ubuntu 19.04. In the following articles, we would discuss how to install WordPress on Windows 10 using XAMPP.</p>
+<p><strong>In conclusion</strong>, we have discussed how to install WordPress on Ubuntu 19.04.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">

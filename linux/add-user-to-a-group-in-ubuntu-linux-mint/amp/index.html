@@ -436,7 +436,8 @@ amp-carousel > amp-img > img {
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">For someone who has ever been a system administrator knows how tough it is manage users individually. Sometimes, we need to limit the user’s access as per our team’s requirements. So, to put limits on each of the user can be a time-consuming task. Hence, we manage it efficiently with the help of group feature provided with Ubuntu or related distributions.</p>
+		<p class="amp-wp-7d27179">For someone who has ever been a system administrator knows how tough it is manage users individually. Sometimes, we need to limit the user’s access as per our team’s requirements. So, to put limits on each of the user can be a time-consuming task. Hence, we manage it efficiently with the help of group feature provided with Ubuntu or related distributions. In this article, we would discuss how to add user to a Group in Ubuntu or Linux Mint.</p>
+<h5 class="amp-wp-cdd8ca0">A bit about Users and Groups</h5>
 <p class="amp-wp-7d27179">We create groups and add users to it. That means, each of user in the group is allowed to perform certain common tasks. But, they belong to different teams. So, instead of providing unlimited access to all the teams, we pick one user from each team and add them to a group. Then, we assign permissions to each group. Eventually, we are imposing restrictions to other users of team that are not part of a particular group.</p>
 <p class="amp-wp-7d27179">This approach provides us the efficient outcome. Hence, we can allocate our limited precious resources to other tasks.</p>
 <p class="amp-wp-7d27179">Ubuntu and other related Linux distributions for this approach have User Private Groups. When we create a user then, a new group is also created. The name of our new group is the same as that our of newly created user. Therefore, new user belongs to the same group. For instance, if a new user XYZ is created then, at the same time a new group with XYZ will also be created. And, user XYZ will be allotted the group XYZ.</p>
@@ -456,9 +457,9 @@ amp-carousel > amp-img > img {
 sudo groupadd groupsecondary</pre>
 <p class="amp-wp-7d27179"><strong>STEP – III:</strong> Now, with the help of a <strong>usermod</strong> command, we would change primary and secondary group of our user –</p>
 <pre>sudo usermod -g groupprimary -G groupsecondary username</pre>
-<p class="amp-wp-7d27179"><strong>-g</strong> is used for the user’s primary group and <strong>-G</strong> for its secondary group. Then, we will verify it with command –</p>
+<p class="amp-wp-7d27179"><strong>-g</strong>, the user’s primary group and <strong>-G</strong> for its secondary group. Then, we will verify it with command –</p>
 <pre>groups username</pre>
-<p class="amp-wp-7d27179">In conclusion, we have discussed the command line tools available to add user to a group, then learnt how to shuffle its primary and secondary groups.</p>
+<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have discussed the command line tools available to add user to a group in Ubuntu or Linux Mint. Then, we learnt how to shuffle its primary and secondary groups.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">

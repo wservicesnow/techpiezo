@@ -9,7 +9,7 @@
 	<title>Managing Users and Groups in Ubuntu - TechPiezo</title>
 
 <!-- This site is optimized with the Yoast SEO plugin v11.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
-<meta name="description" content="Users and their associated groups need to be managed efficiently. That not only help save us valuable resources but also a lot of time."/>
+<meta name="description" content="In this article, we would discuss how we can use various command-line utilities in managing users and groups in Ubuntu distribution."/>
 <link rel="canonical" href="https://techpiezo.com/linux/managing-users-and-groups-in-ubuntu/" />
 <!-- / Yoast SEO plugin. -->
 
@@ -961,7 +961,7 @@ code, kbd, samp, pre,
 		<figure class="ct-featured-image ct-hidden-sm" ><div class="ct-image-container ct-lazy" ><img class="attachment-full size-full" alt="Manage Users and Groups in Ubuntu" data-lazy="https://techpiezo.com/wp-content/uploads/2019/07/Manage-Users-and-Groups-in-Ubuntu.svg" data-object-fit="~" /><noscript><img src="https://techpiezo.com/wp-content/uploads/2019/07/Manage-Users-and-Groups-in-Ubuntu.svg" class="attachment-full size-full" alt="Manage Users and Groups in Ubuntu" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
 		
 		<div class="entry-content">
-			<p style="text-align: justify;">While working as a System-Administrator of Ubuntu-based Servers, you will have to manage users and associated groups frequently. Few of the reasons could be &#8211; new employees joining or leaving the organization. Therefore, you need to know how to add new users, manage passwords and permissions to access valuable resources etc. Before making any changes you need to have superuser privileges otherwise contact your System Administrator for assistance.</p>
+			<p style="text-align: justify;">While working as a System-Administrator of Ubuntu-based Servers, you will have to manage users and associated groups frequently. Few of the reasons could be &#8211; new employees joining or leaving the organization. Therefore, you need to know how to add new users, manage passwords and permissions to access valuable resources etc. Before making any changes you need to have superuser privileges otherwise contact your System Administrator for assistance. In this article, we would discuss how we use various utilities in managing <strong>users and groups</strong> in Ubuntu distribution.</p>
 <h4 style="text-align: center;"><strong>Create a User</strong></h4>
 <p style="text-align: justify;"><strong>useradd</strong> and <strong>adduser</strong> are the two commands that help us create users. Although, both the commands getting us the similar results still they are somewhat different. First we will discuss the <strong>useradd</strong> command.</p>
 <p>So, in terminal type:</p>
@@ -999,8 +999,7 @@ code, kbd, samp, pre,
 <pre>sudo usermod -g &lt;groupname&gt; &lt;username&gt;</pre>
 <p style="text-align: justify;">We can also remove a user from a group by <strong>gpasswd</strong> command with<strong> -d</strong> option,</p>
 <pre>sudo gpasswd -d &lt;username&gt; &lt;groupname&gt;</pre>
-<p style="text-align: justify;">In conclusion, we have discussed how to manage users and their groups to efficiently manage our valuable resources.</p>
-<p style="text-align: justify;">
+<p style="text-align: justify;"><strong>In conclusion</strong>, we have discussed how we can use various command-line utilities in managing users and groups in Ubuntu distribution.</p>
 		</div>
 
 		

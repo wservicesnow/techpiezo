@@ -961,17 +961,17 @@ code, kbd, samp, pre,
 		<figure class="ct-featured-image ct-hidden-sm" ><div class="ct-image-container ct-lazy" ><img class="attachment-full size-full" alt="Install WordPress on Ubuntu" data-lazy="https://techpiezo.com/wp-content/uploads/2019/06/Install-WordPress-on-Ubuntu.svg" data-object-fit="~" /><noscript><img src="https://techpiezo.com/wp-content/uploads/2019/06/Install-WordPress-on-Ubuntu.svg" class="attachment-full size-full" alt="Install WordPress on Ubuntu" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
 		
 		<div class="entry-content">
-			<p style="text-align: justify;">WordPress is one of the most popular Content Management Systems available. It is being used for building websites. To install it in a Ubuntu 19.04 distribution, we have two options available.</p>
-<p style="text-align: justify;">A. Prepare a list of packages to be installed and act accordingly.<br />
+			<p style="text-align: justify;"><strong>WordPress</strong> is one of the most popular Content Management Systems available. It is being used for building websites. To install WordPress on Ubuntu 19.04 distribution, we have two options available.</p>
+<p style="text-align: justify;">A. We need to prepare a list of packages to install.<br />
 B. Install packages as a group with the help of package tool <strong><em>tasksel</em></strong>.</p>
 <p style="text-align: justify;">Installing packages with the help of package tasksel is usually preferred. Therefore, we are going discuss steps involved in installing Lamp-Server through tasksel.</p>
 <p style="text-align: justify;">The whole installation process is easy to execute and mainly involves five steps that are mentioned below:</p>
-<p style="text-align: justify;">STEP &#8211; 1: Get super user privileges.<br />
-STEP &#8211; 2: Install Lamp-Server.<br />
-STEP &#8211; 3: Create database user and grant privileges.<br />
-STEP &#8211; 4: Install relevant PHP packages and edit few config files.<br />
-STEP &#8211; 5: Install WordPress.</p>
-<h4 style="text-align: center;">How to Install WordPress on Ubuntu 19.04?</h4>
+<p style="text-align: justify;">1: Get super user privileges.<br />
+2: Install Lamp-Server.<br />
+3: Create database user and grant privileges.<br />
+4: Install relevant PHP packages and edit few config files.<br />
+5: Install WordPress.</p>
+<h4 style="text-align: center;">Setup LAMP on Ubuntu 19.04</h4>
 <p style="text-align: justify;"><span style="font-size: 14pt;"><strong>STEP &#8211; 1:</strong></span> Login with superuser privileges, if you don&#8217;t have one then contact System Administrator for assistance.</p>
 <p style="text-align: justify;"><span style="font-size: 14pt;"><strong>STEP &#8211; 2:</strong></span> If you don&#8217;t have the <strong>package tasksel</strong> installed, then install it by issuing following command.</p>
 <pre>sudo apt install tasksel</pre>
@@ -1004,9 +1004,11 @@ quit</pre>
 <p style="text-align: justify;">It should return with the output Syntax OK.</p>
 <p style="text-align: justify;">Lastly, run</p>
 <pre>sudo systemctl restart apache2</pre>
-<p style="text-align: justify;"><span style="font-size: 14pt;"><strong>STEP &#8211; 5:</strong></span> Download WordPress from the official website. The file downloaded will be &#8211; <strong>latest.tar.gz</strong> and save it in directory <strong>/tmp/</strong>. Issue the following in terminal &#8211;</p>
+<h5 style="text-align: center;">Install WordPress on Ubuntu 19.04</h5>
+<p style="text-align: justify;"><span style="font-size: 14pt;"><strong>STEP &#8211; 5:</strong></span> Download WordPress from the official website. The file downloaded will be &#8211; <strong>latest.tar.gz</strong> and save it in directory <strong>/tmp/</strong>. Then, issue the following in terminal &#8211;</p>
 <pre>tar xzvf latest.tar.gz</pre>
-<p style="text-align: justify;">tar command extracts the downloaded file. Now, we have to copy the <strong>wp-config-sample.php</strong> file as <strong>wp-config.php</strong> in the same folder by typing the following command.</p>
+<p style="text-align: justify;"><strong>tar</strong> command extracts the downloaded file.</p>
+<p style="text-align: justify;">Now, we have to copy the <strong>wp-config-sample.php</strong> file as <strong>wp-config.php</strong> in the same folder by typing the following command.</p>
 <pre>cp /tmp/wordpress/wp-config-sample.php /tmp/wordpress/wp-config.php</pre>
 <p style="text-align: justify;">Once done, copy the entire WordPress directory to <strong>/var/www/html/</strong> directory.</p>
 <pre>sudo cp -a /tmp/wordpress/. /var/www/html/</pre>
@@ -1025,7 +1027,7 @@ define( 'DB_PASSWORD', 'password' );</pre>
 <p style="text-align: justify;">and, provide relevant details including your username and password for WordPress login. Once, successfully done you will taken to WordPress login prompt.</p>
 <p style="text-align: justify;">For some reason, if you are still unable to edit themes and plugins then you need to append <strong>/var/www/html/wp-config.php</strong> file with the following &#8211;</p>
 <pre>define( 'FS_Method', 'direct' );</pre>
-<p>In conclusion, we have discussed how to install WordPress on Ubuntu 19.04. In the following articles, we would discuss how to install WordPress on Windows 10 using XAMPP.</p>
+<p><strong>In conclusion</strong>, we have discussed how to install WordPress on Ubuntu 19.04.</p>
 		</div>
 
 		

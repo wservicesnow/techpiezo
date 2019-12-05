@@ -6,10 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
-	<title>/etc/skel/ directory in Linux - TechPiezo</title>
+	<title>/etc/skel directory in Linux - TechPiezo</title>
 
 <!-- This site is optimized with the Yoast SEO plugin v11.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
-<meta name="description" content="The /etc/skel/ contains all the files and directories that are automatically copied to the newly created user&#039;s home directory."/>
+<meta name="description" content="The /etc/skel/ in Linux contains all the files and directories that are automatically copied to the newly created user&#039;s home directory."/>
 <link rel="canonical" href="https://techpiezo.com/linux/etc-skel-directory-in-linux/" />
 <!-- / Yoast SEO plugin. -->
 
@@ -921,7 +921,7 @@ code, kbd, samp, pre,
 		
 		<section class="hero-section" data-type="type-1" data-alignment="left">
 			<header class="entry-header">
-				<h1 class="page-title">/etc/skel/ directory in Linux</h1>
+				<h1 class="page-title">/etc/skel directory in Linux</h1>
 				<div class="entry-meta has-avatar" data-label data-type="simple">
 		
 
@@ -958,20 +958,22 @@ code, kbd, samp, pre,
 					</header>
 		</section>
 
-		<figure class="ct-featured-image ct-hidden-sm" ><div class="ct-image-container ct-lazy" ><img class="attachment-full size-full" alt="etc skel directory" data-lazy="https://techpiezo.com/wp-content/uploads/2019/07/etc-skel-directory.svg" data-object-fit="~" /><noscript><img src="https://techpiezo.com/wp-content/uploads/2019/07/etc-skel-directory.svg" class="attachment-full size-full" alt="etc skel directory" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
+		<figure class="ct-featured-image ct-hidden-sm" ><div class="ct-image-container ct-lazy" ><img class="attachment-full size-full" alt="/etc/skel directory in Linux" data-lazy="https://techpiezo.com/wp-content/uploads/2019/07/etc-skel-directory.svg" data-object-fit="~" /><noscript><img src="https://techpiezo.com/wp-content/uploads/2019/07/etc-skel-directory.svg" class="attachment-full size-full" alt="/etc/skel directory in Linux" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
 		
 		<div class="entry-content">
-			<p style="text-align: justify;">The <strong>/etc/skel/</strong> contains all the files and directories that are automatically copied to the newly created user&#8217;s home directory. In an organization, a System Administrator has to manage large pool of users. It wouldn&#8217;t be feasible for the System Administrator to make similar changes for each user who joins the organization. For example, If the System Administrator wants to provide a specific file to all the newly created users. Then, he/she has to copy that file for each user. Or, the System Administrator may copy the file in the <strong>/etc/skel/</strong> directory and whenever a new user is created, the file gets copied too. Thus, the System Administrator can save himself/herself valuable chunks of time every time a new user is created.</p>
+			<p style="text-align: justify;">In this article, we would discuss /etc/skel directory in Linux distributions. The <strong>/etc/skel/</strong> contains all the files and directories which are automatically copied to the newly created user&#8217;s home directory.</p>
+<p style="text-align: justify;">In an organization, a System Administrator has to manage large pool of users. It wouldn&#8217;t be feasible for the System Administrator to make similar changes for each user who joins the organization. For example, If the System Administrator wants to provide a specific file to all the newly created users. Then, he/she has to copy that file for each user. Or, the System Administrator may copy the file in the <strong>/etc/skel/</strong> directory. And, it copies the file on its own whenever System Administrator creates a new user. Thus, the System Administrator can save himself/herself valuable chunks of time.</p>
+<h5 style="text-align: center;">/etc/skel directory in Linux</h5>
 <p style="text-align: justify;">To know the contents of your system&#8217;s <strong>/etc/skel/</strong> directory run the following command in terminal &#8211;</p>
 <pre>ls -al /etc/skel/</pre>
 <p style="text-align: justify;">here,</p>
-<p style="text-align: justify;"><strong>-a</strong> option is used to list hidden files in the directory, and</p>
+<p style="text-align: justify;"><strong>-a</strong> option &#8211; to list hidden files in the directory, and</p>
 <p style="text-align: justify;"><strong>-l</strong> is for long list format.</p>
 <p style="text-align: justify;">The output would correspond with &#8211;</p>
 <p><img class="size-full wp-image-716 aligncenter" src="https://techpiezo.com/wp-content/uploads/2019/07/etc-skel.png" alt="etc skel" width="622" height="118" /></p>
-<p style="text-align: justify;">As visible from the output, the root has the ownership of all files and directories in <strong>/etc/skel/</strong> directory. But, you don&#8217;t have to worry about ownership of contents as appropriate permissions will be set upon running the <strong>useradd</strong> command, wherein these files and directories would be automatically copied to the new users&#8217; home directory.</p>
-<p style="text-align: justify;">Although not advisable, if you wish to change the default <strong>/etc/skel/</strong> directory then you can do so by editing the <strong>/etc/default/useradd</strong> file. Open the file as superuser and move to the entry that mentions <strong>SKEL=/etc/skel</strong>. Thereafter, you have to enter the directory&#8217;s address of your choice in place of <strong>/etc/skel/</strong>. There are few other changes you can make by editing <strong>/etc/default/useradd</strong> file. But, you should avoid it unless absolutely required.</p>
-<p style="text-align: justify;">In conclusion, <strong>/etc/skel/</strong> &#8211; is a skeleton directory which contains the default files that would automatically get copied to newly created users&#8217; HOME directory.</p>
+<p style="text-align: justify;">As visible from the output, the root has the ownership of all files and directories in <strong>/etc/skel/</strong> directory. When adding a user through <strong>useradd</strong> command, we don&#8217;t have to worry about ownership of contents as appropriate permissions are automatically set.</p>
+<p style="text-align: justify;">Although not advisable, if we wish to change the default <strong>/etc/skel/</strong> directory then we can do so by editing the <strong>/etc/default/useradd</strong> file. Open the file as superuser and move to the entry that mentions <strong>SKEL=/etc/skel</strong>. Thereafter, we have to enter the directory&#8217;s address of our choice in place of <strong>/etc/skel/</strong>. There are few other changes we can make by editing <strong>/etc/default/useradd</strong> file. But, we should avoid it unless absolutely required.</p>
+<p style="text-align: justify;">In conclusion, <strong>/etc/skel/</strong> directory in Linux- is a skeleton directory which contains the default files that would automatically get copied to newly created users&#8217; HOME directory.</p>
 		</div>
 
 		

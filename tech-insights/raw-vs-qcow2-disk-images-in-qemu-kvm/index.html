@@ -9,7 +9,7 @@
 	<title>Raw vs Qcow2 Disk Images in QEMU/KVM - TechPiezo</title>
 
 <!-- This site is optimized with the Yoast SEO plugin v11.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
-<meta name="description" content="Qemu/KVM provides support for different image formats. The two major disk image formats that are widely recommended and used are raw and qcow2."/>
+<meta name="description" content="Raw vs Qcow2: Qemu/KVM provides support for various image formats. The two major disk image formats, widely recommended and used are raw and qcow2."/>
 <link rel="canonical" href="https://techpiezo.com/tech-insights/raw-vs-qcow2-disk-images-in-qemu-kvm/" />
 <!-- / Yoast SEO plugin. -->
 
@@ -961,44 +961,44 @@ code, kbd, samp, pre,
 		<figure class="ct-featured-image ct-hidden-sm" ><div class="ct-image-container ct-lazy" ><img class="attachment-full size-full" alt="Raw vs Qcow2" data-lazy="https://techpiezo.com/wp-content/uploads/2019/06/Raw-vs-Qcow2.svg" data-object-fit="~" /><noscript><img src="https://techpiezo.com/wp-content/uploads/2019/06/Raw-vs-Qcow2.svg" class="attachment-full size-full" alt="Raw vs Qcow2" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
 		
 		<div class="entry-content">
-			<p style="text-align: justify;">One of the important part of virtualization is storage. Storage allows virtualized environment to read and write data over variety of different methods. Disk Image is widely popular method of storage in virtualization.</p>
-<p style="text-align: justify;">A disk image in virtualization represents a block of data on hard disk, however for a virtualized environment, it will be a virtual disk. This method of storage is known as File-based storage.</p>
-<p style="text-align: justify;">Qemu/KVM provides support for different image formats. The two major disk image formats that are widely recommended and used are raw and qcow2. Lets understand what they are and their differences.</p>
-<h4 style="text-align: justify;">RAW Disk Images</h4>
+			<p style="text-align: justify;"><strong>Raw vs Qcow2</strong>: Qemu/KVM provides support for various image formats. The two major disk image formats, widely recommended and used are raw and qcow2. Thus, lets understand what they are and their differences.</p>
+<p style="text-align: justify;">To begin with, one of the important part of virtualization is storage. Storage allows virtualized environment to read and write data over variety of different methods. Furthermore, disk Image is widely popular method of storage in virtualization.</p>
+<p style="text-align: justify;">A disk image in virtualization represents a block of data on hard disk. Moreover, it will be a virtual disk for a virtualized environment. Hence, this method of storage is a File-based storage.</p>
+<h5 style="text-align: center;">RAW Disk Images</h5>
 <p style="text-align: justify;">Raw disk image format is default format in Qemu.</p>
 <p style="text-align: justify;"><strong>Pros of using RAW Disk Images:</strong></p>
 <ol style="text-align: justify;">
-<li style="text-align: justify;">Simple and can be easily portable to any other machine.</li>
+<li style="text-align: justify;">It is simple and portable to any other machine.</li>
 <li style="text-align: justify;">It represents default binary format of a hard disk.</li>
-<li style="text-align: justify;">Nearly raw performance then other formats, as it has very little overhead and no metadata.</li>
+<li style="text-align: justify;">Nearly raw performance then other formats, as it has very little overhead and no metadata and at last,</li>
 <li style="text-align: justify;">Only data written will occupy space, rest of space will be filled with zeros, as it is a sparse file.</li>
 </ol>
 <p style="text-align: justify;"><strong>Cons of using RAW Disk Images:</strong></p>
 <ol style="text-align: justify;">
 <li style="text-align: justify;">Does not have other features like compression, AES encryption and snapshot.</li>
-<li style="text-align: justify;">Backup requires full disk-up, as no incremental back-up.</li>
+<li style="text-align: justify;">Backup requires full disk-up, as no incremental back-upand at last,</li>
 <li style="text-align: justify;">Deleted files still occupy space and have to be removed.</li>
 </ol>
 <p style="text-align: justify;"><strong>Implementation</strong></p>
 <pre>qemu-img create -f raw /var/lib/libvirt/images/sample1.img 5G</pre>
 <p style="text-align: justify;"><strong>For Preallocating size</strong></p>
 <pre>qemu-img create -f raw -o preallocation=full /var/lib/libvirt/images/sample1.img 5G</pre>
-<p style="text-align: justify;"><strong>To verify</strong></p>
+<p style="text-align: justify;"><strong>Lastly, to verify</strong></p>
 <pre>qemu-img info /var/lib/libvirt/images/sample1.img</pre>
-<h4 style="text-align: justify;">qcow2 Disk Images</h4>
-<p style="text-align: justify;">qcow2 is copy on write image disk, where file is composed of constant size units called clusters. A cluster holds both data as well as image metadata.</p>
+<h5 style="text-align: center;">qcow2 Disk Images</h5>
+<p style="text-align: justify;">qcow2 is copy on write image disk, where constant size units called clusters compose a file. A cluster holds both data as well as image metadata.</p>
 <p style="text-align: justify;"><strong>Pros of using qcow2 Disk Images:</strong></p>
 <ol style="text-align: justify;">
 <li style="text-align: justify;">Smaller images are produced, as no sparse file.</li>
 <li style="text-align: justify;">It provides zlib based compression.</li>
 <li style="text-align: justify;">For data security, AES encryption can be used to protect disk image.</li>
 <li style="text-align: justify;">Multiple Virtual Machine snapshots are offered, as incremental back-up.</li>
-<li style="text-align: justify;">Small Cluster Size improve image file size, and larger can be used for better performance.</li>
+<li style="text-align: justify;">Small Cluster Size improve image file size, and larger can be used for better performance and at last,</li>
 <li style="text-align: justify;">Larger Preallocation increases performance as image size increases to grow.</li>
 </ol>
 <p style="text-align: justify;"><strong>Cons of using qcow2 Disk Images:</strong>:</p>
 <ol style="text-align: justify;">
-<li style="text-align: justify;">Very slight performance loss in comparison to raw disk image, due to metadata, compression and encryption.</li>
+<li style="text-align: justify;">Very slight performance loss in comparison to raw disk image, due to metadata, compression and encryption and,</li>
 <li style="text-align: justify;">One needs to use fstrim to trim image file, as deleted files does increases image size.</li>
 </ol>
 <p style="text-align: justify;"><strong>Implementation</strong></p>
@@ -1008,9 +1008,9 @@ code, kbd, samp, pre,
 </pre>
 <p style="text-align: justify;"><strong>For Preallocated size</strong></p>
 <pre>qemu-img create -f qcow2 -o preallocation=full /var/lib/libvirt/images/sample1.qcow2 5G</pre>
-<p style="text-align: justify;"><strong>To verify</strong></p>
+<p style="text-align: justify;"><strong>Lastly, to verify</strong></p>
 <pre>qemu-img info /var/lib/libvirt/images/sample1.qcow2</pre>
-<p style="text-align: justify;">In Conclusion, Raw and Qcow2 have both advantages and disadvantages, while raw offers pure performance but qcow2 offers practical and useful features, in the end use of image format comes down to use case scenario.</p>
+<p style="text-align: justify;"><strong>In conclusion</strong>, Raw vs Qcow2: both have their pros and cons, while raw offers pure performance whereas qcow2 offers practical and useful features. In the end, use of image format comes down to use case scenario.</p>
 		</div>
 
 		
