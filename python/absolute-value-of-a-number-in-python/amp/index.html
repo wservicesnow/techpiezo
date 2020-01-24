@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Extract 7z using p7zip in Ubuntu - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/linux/extract-7z-using-p7zip-in-ubuntu/" />
+		<title>Absolute value of a number in Python - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/python/absolute-value-of-a-number-in-python/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -426,69 +426,47 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Extract 7z using p7zip in Ubuntu</h1>
+		<h1 class="amp-wp-title">Absolute value of a number in Python</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-12-17T03:33:54+00:00">
-		1 month ago	</time>
+	<time datetime="2020-01-24T16:54:50+00:00">
+		2 hours ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179"><strong>7z</strong> is an archive file format, this article focuses on archive files which end with <strong>.7z</strong> extension. We would discuss how to <strong>compress and extract 7z</strong> using <strong>p7zip</strong> in Ubuntu distribution.</p>
-<p class="amp-wp-7d27179">There could be numerous reasons which would make us use Archive files. An archive file may contain files having similar/different file formats.</p>
-<p class="amp-wp-7d27179">Lets say we want to store/mail ‘n’ files of different file formats. Then, it would easier for us to handle just one file rather than ‘n’ different files. That’s where idea of<strong> archive files</strong> kick-in. We can compress those ‘n’ files in one &amp; act accordingly. Furthermore, it also takes less storage space. In addition to, we can also choose various compression formats of our choice.</p>
-<p class="amp-wp-7d27179"><strong>Note</strong>: Following operations would require you to have superuser privileges. In case you don’t have one, then contact your System Administrator for assistance.</p>
-<p class="amp-wp-7d27179">We would first discuss installation steps required for <strong>p7zip</strong> in Ubuntu.</p>
-<h5 class="amp-wp-cdd8ca0">Install p7zip in Ubuntu</h5>
-<p class="amp-wp-7d27179">Since, p7zip package is already available in standard Ubuntu repository. Hence, issue the following in terminal –</p>
-<pre>sudo apt update
-sudo apt install p7zip-full</pre>
-<h5 class="amp-wp-cdd8ca0">Compress and Extract 7z using p7zip</h5>
-<p class="amp-wp-7d27179">We could use p7zip command-line utility to compress a file, for instance –</p>
-<pre>1.txt</pre>
-<p class="amp-wp-7d27179">To compress it, issue the following in terminal –</p>
-<pre>p7zip 1.txt</pre>
-<p class="amp-wp-7d27179">It would give us the outcome – <strong>1.txt.7z</strong></p>
-<p class="amp-wp-7d27179">Now, to decompress (or, extract) it (i.e. 1.txt.7z)</p>
-<pre>p7zip -d -k 1.txt.7z</pre>
-<p class="amp-wp-7d27179">where,</p>
-<p class="amp-wp-7d27179"><strong>-d</strong> to Decompress file,<br><strong>-k</strong> to keep the input file, else it gets deleted.</p>
-<p class="amp-wp-7d27179">If we have multiple files to deal with, then we can use<strong> 7z command-line utility</strong>. It comes packaged with <strong>p7zip-full</strong>.</p>
-<p class="amp-wp-7d27179">Consider an example where we have three text files –</p>
-<pre>1.txt
-2.txt
-3.txt</pre>
-<p class="amp-wp-7d27179"><strong>To compress</strong> –</p>
-<pre>7z a &lt;ouput_file.7z&gt; &lt;input_file1&gt; &lt;input_file2&gt; &lt;input_file3&gt; ...  &lt;input_fileN&gt;</pre>
-<p class="amp-wp-7d27179">where,</p>
-<p class="amp-wp-7d27179"><strong>a</strong> – add files to the archive</p>
-<p class="amp-wp-7d27179">so,</p>
-<pre>7z a compressed.7z 1.txt 2.txt 3.txt</pre>
-<p class="amp-wp-7d27179">This would get us the compressed file – <strong>compressed.7z</strong></p>
-<p class="amp-wp-7d27179">If we want to <strong>list the compressed file</strong> contents –</p>
-<pre>7z l &lt;input_file.7z&gt;</pre>
-<p class="amp-wp-7d27179">where,</p>
-<p class="amp-wp-7d27179"><strong>l</strong> – list contents of our archive</p>
-<pre class="amp-wp-7d27179">7z l compressed.7z</pre>
-<p class="amp-wp-7d27179">Lastly, <strong>to extract</strong> its contents –</p>
-<pre>7z x &lt;input_file.7z&gt;</pre>
-<p class="amp-wp-7d27179">where,</p>
-<p class="amp-wp-7d27179"><strong>x</strong> – to extract files</p>
-<p class="amp-wp-7d27179">Hence,</p>
-<pre>7z x compressed.7z</pre>
-<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have discussed the most basic usage of <strong>p7zip</strong> command-line utility.</p>
-<p class="amp-wp-7d27179"><strong>Additional info –</strong></p>
-<p class="amp-wp-7d27179">If we want to identify whether our file is a valid 7-zip archive. Then, we can use <strong>file</strong> command-line utility –</p>
-<pre>file &lt;file_name&gt;</pre>
-<p class="amp-wp-7d27179">If its a valid 7-zip archive, then it would return –</p>
-<pre>&lt;file_name&gt;: 7-zip archive data, version X.X</pre>
+		<p class="amp-wp-7d27179">We can get the absolute value of a number in Python using <strong>fabs()</strong> function. The function is provided by <strong>math</strong> module. In addition to, <strong>abs()</strong> function can also be used. But, before that a bit about absolute value of a number itself.</p>
+<p class="amp-wp-7d27179">Absolute value of number ‘x’ would be –</p>
+<p class="amp-wp-7d27179">x if x&gt;0 and,</p>
+<p class="amp-wp-7d27179">x if x&lt;0</p>
+<p class="amp-wp-7d27179">This implies, if value of x is greater than zero then, absolute value of x is x itself. But, if value of x is less than zero i.e. negative real number then, absolute value of -x would be x. Also, this applies only for real numbers. Things get different in case of complex numbers.</p>
+<h5 class="amp-wp-cdd8ca0">Absolute value of a number using fabs() in Python</h5>
+<p class="amp-wp-7d27179">We would first get the numerical input from the user. Thereafter, <strong>fabs() function</strong> provided by <strong>math</strong> module is used to get the desired outcome.</p>
+<pre>#Ask the user to input a number
+x=float(input("Enter a number: "))
+
+import math
+absolute=math.fabs(x)
+print("The absolute value of ",x," is", absolute)</pre>
+<p class="amp-wp-7d27179">Here, we are using <strong>float</strong> data type to get the input from the user. This is for floating point numbers i.e. to include those containing decimal fractions. The input is stored in variable ‘<strong>x</strong>‘.</p>
+<p class="amp-wp-7d27179">Then, <strong>math</strong> module is imported. <strong>math.fabs(x)</strong> gets us the absolute value of input stored in variable ‘<strong>x</strong>‘ and the result is stored in variable ‘<strong>absolute</strong>‘.</p>
+<p class="amp-wp-7d27179">Lastly, we can get the desired outcome using <strong>print()</strong> function.</p>
+<h5 class="amp-wp-cdd8ca0">Absolute value of a number using abs() in Python</h5>
+<p class="amp-wp-7d27179"><strong>Alternately</strong>, we can also get the absolute value of a number using<strong> abs()</strong> function.</p>
+<pre>#Ask the user to input a number
+x=float(input("Enter a number: "))
+
+print("The absolute value of ",x," is", abs(x))</pre>
+<p class="amp-wp-7d27179">Variable ‘<strong>x</strong>‘ stores the input from the user. Then, we get the desired outcome by using <strong>abs()</strong> function inside the <strong>print()</strong> function directly.</p>
+<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have discussed how to get the absolute value of a number in Python using <strong>fabs()</strong> and <strong>abs()</strong> functions.</p>
+<p class="amp-wp-7d27179"><strong>Additional Info –</strong></p>
+<p class="amp-wp-7d27179">In this article, we have discussed how to get the absolute value of real numbers. We can also get the absolute value of complex number too. Complex numbers are expressed as <strong>x+y<em>i</em></strong>, where x and y are real numbers. We will be discussing that in coming articles.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
 			<div class="amp-wp-meta amp-wp-tax-category">
-		Categories: <a href="https://techpiezo.com/linux/" rel="category tag">Linux</a>, <a href="https://techpiezo.com/linux/linux-quick-fix/" rel="category tag">Quick Fix</a>	</div>
+		Categories: <a href="https://techpiezo.com/python/" rel="category tag">Python</a>	</div>
 
 	</footer>
 </article>
