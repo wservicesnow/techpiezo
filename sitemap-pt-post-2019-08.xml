@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="February 3, 2020 4:48 pm" -->
+<!-- generated-on="February 4, 2020 3:33 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>https://techpiezo.com/java/install-oracle-java-se-development-kit-12-in-ubuntu/</loc>
 		<lastmod>2019-12-03T21:40:10+00:00</lastmod>
@@ -72,4 +72,4 @@
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: 2b41bc52cd3987e20df0c577f19ea353; Queries for sitemap: 43; Total queries: 54; Seconds: 0.02; Memory for sitemap: 0MB; Total memory: 2MB -->
+</urlset><!-- Request ID: d9363ddcb2f16582b663b11f1c5f9a67; Queries for sitemap: 43; Total queries: 54; Seconds: 0.02; Memory for sitemap: 0MB; Total memory: 2MB -->
