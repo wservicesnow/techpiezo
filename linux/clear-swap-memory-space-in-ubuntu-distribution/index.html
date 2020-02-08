@@ -6,11 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
-	<title>Configure network with Netplan in Ubuntu - TechPiezo</title>
+	<title>Clear swap memory space in Ubuntu distribution - TechPiezo</title>
 
 <!-- This site is optimized with the Yoast SEO plugin v11.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
-<meta name="description" content="Netplan has official been a default network configuration tool since Ubuntu 17.10. In this article, we would discuss how to configure network with Netplan."/>
-<link rel="canonical" href="https://techpiezo.com/linux/configure-network-with-netplan-in-ubuntu/" />
+<meta name="description" content="There are times when we need to clear swap space for various reasons. We would discuss how to clear Swap memory space in Ubuntu distribution here."/>
+<link rel="canonical" href="https://techpiezo.com/linux/clear-swap-memory-space-in-ubuntu-distribution/" />
 <!-- / Yoast SEO plugin. -->
 
 <style id="ct-main-styles-inline-css" type="text/css">:root {
@@ -758,7 +758,7 @@ code, kbd, samp, pre,
 <link rel='stylesheet' id='ct-style-css'  href='https://techpiezo.com/wp-content/themes/blocksy/style.css' type='text/css' media='all' />
 <link rel='stylesheet' id='ct-main-styles-css'  href='https://techpiezo.com/wp-content/themes/blocksy/static/bundle/main.css' type='text/css' media='all' />
 
-<link rel="amphtml" href="https://techpiezo.com/linux/configure-network-with-netplan-in-ubuntu/amp/"><link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" sizes="32x32" />
+<link rel="amphtml" href="https://techpiezo.com/linux/clear-swap-memory-space-in-ubuntu-distribution/amp/"><link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" sizes="32x32" />
 <link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" sizes="192x192" />
 <link rel="apple-touch-icon-precomposed" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" />
 <meta name="msapplication-TileImage" content="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" />
@@ -788,7 +788,7 @@ code, kbd, samp, pre,
 
 </head>
 
-<body class="post-template-default single single-post postid-2910 single-format-standard wp-custom-logo ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
+<body class="post-template-default single single-post postid-4071 single-format-standard wp-custom-logo ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
 <div id="main-container">
 
 	<header
@@ -915,13 +915,13 @@ code, kbd, samp, pre,
 			<section>
 				
 	<article
-		id="post-2910"
-		class="post-2910 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"		data-content="boxed"				>
+		id="post-4071"
+		class="post-4071 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"		data-content="boxed"				>
 
 		
 		<section class="hero-section" data-type="type-1" data-alignment="left">
 			<header class="entry-header">
-				<h1 class="page-title">Configure network with Netplan in Ubuntu</h1>
+				<h1 class="page-title">Clear swap memory space in Ubuntu distribution</h1>
 				<div class="entry-meta has-avatar" data-label data-type="simple">
 		
 
@@ -948,7 +948,7 @@ code, kbd, samp, pre,
 					<span
 						class="ct-meta-element"
 						>
-						Oct 14, 2019					</span>
+						Feb 4, 2020					</span>
 				</li>
 			
 			
@@ -958,61 +958,32 @@ code, kbd, samp, pre,
 					</header>
 		</section>
 
-		<figure class="ct-featured-image ct-hidden-sm" ><div class="ct-image-container ct-lazy" ><img class="attachment-full size-full" alt="Configure network with Netplan in Ubuntu" data-lazy="https://techpiezo.com/wp-content/uploads/2019/10/Configure-network-with-Netplan-in-Ubuntu.svg" data-object-fit="~" /><noscript><img src="https://techpiezo.com/wp-content/uploads/2019/10/Configure-network-with-Netplan-in-Ubuntu.svg" class="attachment-full size-full" alt="Configure network with Netplan in Ubuntu" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
+		<figure class="ct-featured-image ct-hidden-sm" ><div class="ct-image-container ct-lazy" ><img class="attachment-full size-full" alt="Clear swap memory space in Ubuntu distribution" data-lazy="https://techpiezo.com/wp-content/uploads/2020/02/Clear-swap-memory-space-in-Ubuntu-distribution.svg" data-object-fit="~" /><noscript><img src="https://techpiezo.com/wp-content/uploads/2020/02/Clear-swap-memory-space-in-Ubuntu-distribution.svg" class="attachment-full size-full" alt="Clear swap memory space in Ubuntu distribution" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
 		
 		<div class="entry-content">
-			<p style="text-align: justify;"><strong>Netplan</strong> has been the default network configuration tool ever since Ubuntu 17.10 was released. Earlier Ubuntu releases shipped with <strong>ifupdown</strong> as default tool for network configuration. In this article, we would discuss how to configure network with Netplan in Ubuntu. For users, who still prefer to use ifupdown tool are advised to read the related article &#8211; <span style="color: #3366ff;"><a style="color: #3366ff;" href="https://techpiezo.com/linux/switch-back-to-ifupdown-etc-network-interfaces-in-ubuntu/">Switch back to ifupdown – /etc/network/interfaces in Ubuntu</a> </span></p>
-<p style="text-align: justify;">Netplan configuration tool utilizes <strong>YAML &#8211; YAML Ain&#8217;t Markup Language</strong>. It is a human-friendly data serialization language/standard. All we have to do is to provide YAML description for each of the network interfaces configuration. And, in turn the Netplan tool will generate the relevant configuration files. We would discuss couple of Netplans&#8217; basic configurations next.</p>
-<p style="text-align: justify;"><strong>Note</strong>: Following operations would require you to have superuser privileges. In case you don&#8217;t have one then contact your System Administrator for assistance.</p>
-<h5 style="text-align: center;">Configure network with Netplan</h5>
-<p style="text-align: justify;">We need to provide the configuration description in Netplans&#8217; config file. The file can be located in folder <code>/etc/netplan/</code></p>
-<pre>cd /etc/netplan/</pre>
-<p style="text-align: justify;">Here, you will find the config file &#8211; <strong>01-netcfg.yaml</strong></p>
-<p style="text-align: justify;">Use a text-editor to make necessary changes. We have used <strong>nano</strong> text-editor. Also, before making any changes it is always better to backup the relevant data. So,</p>
-<pre>cp 01-netcfg.yaml 01-netcfg.yaml.bak</pre>
-<p style="text-align: justify;">This will create a new file &#8211; <strong>01-netcfg.yaml.bak</strong>, which is the backup of our original file. Now, open the default config file with a text-editor &#8211;</p>
-<pre>sudo nano 01-netcfg.yaml</pre>
-<h5 style="text-align: justify;">Basic configuration for connecting Wired Network</h5>
-<p style="text-align: justify;">For connecting wired network (i.e. Ethernet) wherein you would want<strong> dhcp4</strong> to assign the IP addresses. And, make Netplan to override DNS settings as per your requirements. We would have to append the following entries in <strong>/etc/netplan/01-netcfg.yaml</strong> file &#8211;</p>
-<pre>network:
-       version: 2
-       renderer: networkd
-       ethernets:
-            enp0s3:
-                 dhcp4: yes
-                 dhcp4-overrides:
-                      use-dns: no
-                 nameservers:
-                      addresses: [8.8.8.8,8.8.4.4]</pre>
-<p style="text-align: justify;">We can check the status of our DNS servers through the command &#8211;</p>
-<pre>resolvectl status enp0s3</pre>
-<p style="text-align: justify;">where, enp0s3 is our <em><strong>Ethernet network peripheral</strong>. </em>This would be different for every network interface.</p>
-<h5>Basic configuration for connecting WPA Personal Wireless Network</h5>
-<p style="text-align: justify;">Similarly, for wireless connections wherein we use dhcp4 and DNS servers as per our requirements.</p>
-<pre>network:
-          version: 2
-          renderer: networkd
-          wifis:
-               wlo1:
-                    dhcp4: yes
-                    dhcp4-overrides:
-                           use-dns: no
-                    nameservers:
-                           addresses: [8.8.8.8,8.8.4.4]
-                    access-points:
-                           "Network_SSID":
-                                    password: "****"</pre>
-<p style="text-align: justify;">where, wlo1 is <strong>Wireless network interface</strong>.</p>
-<p style="text-align: justify;">Next, check the status of our DNS servers through the command &#8211;</p>
-<pre>resolvectl status enp0s3</pre>
-<p style="text-align: justify;">Once we are finished with either of the configurations, check whether the configuration supplied is as per defined standards.</p>
-<pre>sudo netplan try</pre>
-<p style="text-align: justify;">If everything is in order, following message would get generated &#8211;</p>
-<pre>Configuration accepted.</pre>
-<p style="text-align: justify;">Next, we would apply the configuration supplied for use.</p>
-<pre>sudo netplan apply</pre>
-<p style="text-align: justify;"><strong>Note</strong>: The above code for configuration files is indentation-sensitive.</p>
-<p style="text-align: justify;">In conclusion, we have discussed two of the most basic configurations to connect network with Netplan. We also specified how to override dns settings as per our requirements.</p>
+			<p style="text-align: justify;">We would discuss how to <strong>clear Swap memory space</strong> in Ubuntu distribution here. Every application we run on our system takes up some space on RAM. And, amount of space its going to occupy depends on various factors.</p>
+<p style="text-align: justify;">Now, consider a scenario wherein you run &#8216;<strong>n</strong>&#8216; number of applications. Everything would work fine as long as you have free space available on RAM. But, once these applications clogs up RAM then our system would start to slow down. And, this would continue till we free RAM space by closing applications which aren&#8217;t required.</p>
+<p style="text-align: justify;">In Ubuntu distribution, we have a <strong>substitute to RAM</strong> space. We call it <strong>Swap</strong> space. When our RAM gets clogged up, then kernel automatically detects which applications have not been in use or lying idle. Therefore, it shifts those applications to swap space thereby freeing up RAM. It also automatically shift applications back from swap to RAM as and when needed.</p>
+<p style="text-align: justify;">The swap space can be<strong> in</strong> <strong>form of a partition or a file</strong>. We will discuss it in detail in coming articles.</p>
+<p style="text-align: justify;">There are times when we need to clear swap space for various reasons. Swap can be disabled or enabled by using command-line utilities <strong>swapoff</strong> and <strong>swapon</strong> respectively. We assume here that you already have swap file/partition present on your distribution.</p>
+<p style="text-align: justify;"><strong>Note:</strong> Following operations would require you to have superuser privileges. In case you don&#8217;t have one, then contact your System Administrator for assistance.</p>
+<h5 style="text-align: center;">Clear swap memory space in Ubuntu distribution</h5>
+<p style="text-align: justify;">Although kernel does it on its own. Still, if we want we can use swapoff &amp; swapon command-line utilities to disable and enable swap space briefly.</p>
+<p style="text-align: justify;">So, to disable swap, issue the following in terminal &#8211;</p>
+<pre>sudo swapoff -a</pre>
+<p style="text-align: justify;">where,</p>
+<p style="text-align: justify;"><strong>-a</strong> option is used to disable swap space on all known swap devices i.e. partition or files likewise.</p>
+<p style="text-align: justify;">This would make swap space unavailable in our system. In turn, it clears up the swap space.</p>
+<p style="text-align: justify;">Now, we need to enable it back. Hence, issue the following command in terminal &#8211;</p>
+<pre>sudo swapon -a</pre>
+<p style="text-align: justify;">where,</p>
+<p style="text-align: justify;"><strong>-a</strong> option is used to enable swap space on all know swap devices i.e. partition or files likewise.</p>
+<p style="text-align: justify;"><strong>In conclusion</strong>, we have discussed how to clear swap memory space in Ubuntu distribution.</p>
+<p><strong>Additional info</strong> &#8211;</p>
+<p style="text-align: justify;">To display whether everything has worked as intended we can issue the following command &#8211;</p>
+<pre>swapon --show</pre>
+<p style="text-align: justify;"><strong><code>--show</code></strong> option provides us the relevant details.</p>
+<p style="text-align: justify;">If it returns with nothing then swap space isn&#8217;t available.</p>
 		</div>
 
 		
@@ -1061,19 +1032,6 @@ code, kbd, samp, pre,
 					Related Posts				</h4>
 
 				<ul data-columns="3">
-											
-						<li>
-							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/clear-swap-memory-space-in-ubuntu-distribution/"><img width="1" height="1" class="attachment-large size-large" alt="Clear swap memory space in Ubuntu distribution" data-lazy="https://techpiezo.com/wp-content/uploads/2020/02/Clear-swap-memory-space-in-Ubuntu-distribution.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2020/02/Clear-swap-memory-space-in-Ubuntu-distribution.svg" class="attachment-large size-large" alt="Clear swap memory space in Ubuntu distribution" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
-							<h3 class="related-entry-title">
-								<a href="https://techpiezo.com/linux/clear-swap-memory-space-in-ubuntu-distribution/">Clear swap memory space in Ubuntu distribution</a>
-							</h3>
-
-							<div class="related-entry-meta">
-								<span>
-									Feb 4, 2020								</span>
-
-															</div>
-						</li>
 											
 						<li>
 							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/convert-xml-to-flat-format-in-ubuntu-distribution/"><img width="1" height="1" class="attachment-large size-large" alt="Convert xml to flat format in Ubuntu" data-lazy="https://techpiezo.com/wp-content/uploads/2020/02/Convert-xml-to-flat-format-in-Ubuntu.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2020/02/Convert-xml-to-flat-format-in-Ubuntu.svg" class="attachment-large size-large" alt="Convert xml to flat format in Ubuntu" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
@@ -1136,6 +1094,19 @@ code, kbd, samp, pre,
 							<div class="related-entry-meta">
 								<span>
 									Dec 2, 2019								</span>
+
+															</div>
+						</li>
+											
+						<li>
+							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/enable-or-disable-automatic-login-in-ubuntu-20-04/"><img width="1" height="1" class="attachment-large size-large" alt="Enable or Disable Automatic Login in Ubuntu 20.04" data-lazy="https://techpiezo.com/wp-content/uploads/2019/12/Enable-or-Disable-Automatic-Login-in-Ubuntu-20-04.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2019/12/Enable-or-Disable-Automatic-Login-in-Ubuntu-20-04.svg" class="attachment-large size-large" alt="Enable or Disable Automatic Login in Ubuntu 20.04" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<h3 class="related-entry-title">
+								<a href="https://techpiezo.com/linux/enable-or-disable-automatic-login-in-ubuntu-20-04/">Enable or Disable Automatic Login in Ubuntu 20.04</a>
+							</h3>
+
+							<div class="related-entry-meta">
+								<span>
+									Dec 1, 2019								</span>
 
 															</div>
 						</li>
