@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="February 9, 2020 10:55 am" -->
+<!-- generated-on="February 13, 2020 6:08 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
+		<loc>https://techpiezo.com/linux/install-krita-in-ubuntu-20-04/</loc>
+		<lastmod>2020-02-13T18:04:57+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
 		<loc>https://techpiezo.com/linux/install-unity-hub-in-ubuntu-20-04/</loc>
 		<lastmod>2020-02-09T10:54:21+00:00</lastmod>
 		<changefreq>monthly</changefreq>
@@ -24,4 +30,4 @@
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: 499c7601d0d9cd02f9ceb26aa2769d1d; Queries for sitemap: 2; Total queries: 13; Seconds: 0; Memory for sitemap: 0MB; Total memory: 4MB -->
+</urlset><!-- Request ID: d55c0d78422ab63c78f8f1e35dcbaa37; Queries for sitemap: 2; Total queries: 13; Seconds: 0; Memory for sitemap: 0MB; Total memory: 2MB -->
