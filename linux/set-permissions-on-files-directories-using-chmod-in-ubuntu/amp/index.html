@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Enable or Disable Automatic Login in Ubuntu 20.04 - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/linux/enable-or-disable-automatic-login-in-ubuntu-20-04/" />
+		<title>Set permissions on files &amp; directories using chmod in Ubuntu - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/linux/set-permissions-on-files-directories-using-chmod-in-ubuntu/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -426,69 +426,70 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Enable or Disable Automatic Login in Ubuntu 20.04</h1>
+		<h1 class="amp-wp-title">Set permissions on files &#038; directories using chmod in Ubuntu</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-12-01T00:28:40+00:00">
-		3 months ago	</time>
+	<time datetime="2020-02-14T04:45:35+00:00">
+		1 day ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">With <strong>Automatic login feature</strong> enabled, a user can log in without password at the end of boot process. Conversely, we can make a user to authenticate himself/herself by disabling the feature. In this article, we would focus on how to enable or disable automatic login in <strong>Ubuntu 20.04</strong> release.</p>
-<p class="amp-wp-7d27179">At the end of boot process, we are provided with either a default shell or a display manager. This depends on our Ubuntu configuration. This article basically deals with display manager, a GUI login manager.</p>
-<p class="amp-wp-7d27179">First, we need to identify the default display manager for our Ubuntu distribution. Thereafter, we would make necessary changes to get things done. We have discussed three display managers – <strong>LightDM</strong>, <strong>GDM</strong> and <strong>SDDM</strong>.</p>
-<p class="amp-wp-7d27179"><strong>Note</strong>: Following operations would require you to have superuser privileges. In case you don’t have one, then contact your System Administrator for assistance.</p>
-<h5 class="amp-wp-cdd8ca0">Identify default display manager</h5>
-<p class="amp-wp-7d27179">We can identify our default display manager using two methods –</p>
-<ol><li class="amp-wp-7d27179">Open a terminal and issue the following –
-<pre>cat /etc/X11/default-display-manager</pre>
-<p class="amp-wp-7d27179">This will return any of the three –</p>
-<p class="amp-wp-7d27179">If its <strong>LightDM</strong> –</p>
-<pre>/usr/sbin/lightdm</pre>
-<p class="amp-wp-7d27179"><strong>GDM3</strong> –</p>
-<pre>/usr/sbin/gdm3</pre>
-<p class="amp-wp-7d27179">and, for <strong>SDDM –</strong></p>
-<pre>/usr/sbin/sddm</pre>
-</li>
-<li class="amp-wp-7d27179">Or, to know which display manager is active and running –
-<pre>systemctl status display-manager</pre>
-</li>
-</ol><p class="amp-wp-7d27179">Once we have identified our default display manager, make changes to relevant configuration files accordingly.</p>
-<h5 class="amp-wp-cdd8ca0">Enable or Disable automatic login for LightDM</h5>
-<p class="amp-wp-7d27179">To enable automatic login – open a terminal and use any text editor for configuration file –<strong> lightdm.conf</strong></p>
-<p class="amp-wp-7d27179">We have used nano text editor. If the configuration file already exists then edit it. Otherwise, create a new configuration file – <strong>lightdm.conf</strong>.</p>
-<pre>sudo nano /etc/lightdm/lightdm.conf</pre>
-<p class="amp-wp-7d27179">and, append the file with –</p>
-<pre>[Seat:*]
-autologin-user=&lt;user_name&gt;
-autologin-user-timeout=0</pre>
-<p class="amp-wp-7d27179">To disable automatic login – find the above entries in the file and add <strong>#</strong> at the beginning</p>
-<pre>[Seat:*]
-#autologin-user=&lt;user_name&gt;
-#autologin-user-timeout=0</pre>
-<h5 class="amp-wp-cdd8ca0">Enable or Disable automatic login for GDM3</h5>
-<p class="amp-wp-7d27179">To enable automatic login – open a terminal and use any text editor for configuration file – <strong>custom.conf</strong></p>
-<p class="amp-wp-7d27179">We have used nano text editor. If the configuration file already exists then edit it. Otherwise, create a new configuration file – <strong>custom.conf</strong>.</p>
-<pre>sudo nano /etc/gdm3/custom.conf</pre>
-<p class="amp-wp-7d27179">and, append the file with –</p>
-<pre>AutomaticLoginEnable = true
-AutomaticLogin = &lt;user_name&gt;</pre>
-<p class="amp-wp-7d27179">To disable automatic login – find the above entries in the file and add <strong>#</strong> at the beginning</p>
-<pre># AutomaticLoginEnable = true
-# AutomaticLogin = &lt;user_name&gt;</pre>
-<h5 class="amp-wp-cdd8ca0">Enable or Disable automatic login for SDDM</h5>
-<p class="amp-wp-7d27179">To enable automatic login – open a terminal and use any text editor for configuration file – <strong>autologin.conf</strong></p>
-<p class="amp-wp-7d27179">We have used nano text editor. If the configuration file already exists then edit it. Otherwise, create a new configuration file – <strong>autologin.conf</strong>.</p>
-<pre>sudo nano /etc/sddm.conf.d/autologin.conf</pre>
-<p class="amp-wp-7d27179">and, append the file with –</p>
-<pre>[Autologin]
-User=&lt;user_name&gt;</pre>
-<p class="amp-wp-7d27179">To disable automatic login – find the above entries in the file and add <strong>#</strong> at the beginning</p>
-<pre>#[Autologin]
-#User=&lt;user_name&gt;</pre>
-<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have discussed how to enable or disable automatic login in Ubuntu 20.04 release.</p>
+		<p class="amp-wp-7d27179">In this article, we would discuss how to set permissions on files &amp; directories using <strong>chmod</strong> in Ubuntu distribution. <strong>chmod</strong> is a command-line utility, which is used to change file mode bits.</p>
+<p class="amp-wp-7d27179">But, first we need to discuss a bit about file &amp; directory permissions itself.</p>
+<p class="amp-wp-7d27179">We can long list the contents of a file &amp; directory using <strong>ls</strong> command with <strong>-l</strong> option. For instance, lets say we have a file <strong>ABC.txt</strong> then – issue the following in terminal –</p>
+<pre>ls -l ABC.txt</pre>
+<p class="amp-wp-7d27179">It would return us the output –</p>
+<pre>-rw-rw-r-- 1 user group 6 Feb 14 00:00 ABC.txt</pre>
+<p class="amp-wp-7d27179">With<strong> ls -l</strong> command, we can view the permissions of an object.</p>
+<p class="amp-wp-7d27179">where,</p>
+<p><strong><code>-rw-rw-r--</code></strong> these are the permissions of the object<br><strong>1</strong> represent the link count i.e. total number of hard-links an object has<br><strong>user</strong> – who owns the object<br><strong>group</strong> – group owner of object<br><strong>6 Feb 14 00:00</strong> – last modification date<br><strong>ABC.txt</strong> – object name itself</p>
+<p class="amp-wp-7d27179">Now, zeroing down on permission set itself. We define permissions for three set of users namely – user, group and rest others. So, in <code><strong>rw-rw-r--</strong></code></p>
+<p><strong><code>rw-</code></strong> first three characters – read &amp; write permissions for user</p>
+<p><strong><code>rw-</code></strong> next three characters – read &amp; write permissions for group</p>
+<p><strong><code>r--</code></strong> last three characters – only read permissions for others</p>
+<p>here, <strong>r</strong> stands for read, <strong>w</strong> for write and <strong>x</strong> for execute</p>
+<h5 class="amp-wp-cdd8ca0">Set permissions on files &amp; directories using chmod in Ubuntu</h5>
+<p class="amp-wp-7d27179">First, we will discuss user related permissions – this will make modifications to first three characters aforementioned.</p>
+<p class="amp-wp-7d27179">To <strong>add permissions for a user</strong>, we can use following combinations –</p>
+<pre>chmod u+r ABC.txt
+chmod u+w ABC.txt
+chmod u+x ABC.txt</pre>
+<p class="amp-wp-7d27179">where,</p>
+<p class="amp-wp-7d27179"><strong>u+r</strong> is to allow a user to read the contents of the object<br><strong>u+w</strong> is to allow a user to make modifications to the object<br><strong>u+x</strong> lets the users to execute the object</p>
+<p class="amp-wp-7d27179">To<strong> remove permissions for a user, </strong></p>
+<pre>chmod u-r ABC.txt
+chmod u-w ABC.txt
+chmod u-x ABC.txt</pre>
+<p class="amp-wp-7d27179">where,</p>
+<p class="amp-wp-7d27179"><strong>u-r</strong> is to disallow a user to read the contents of the object<br><strong>u-w</strong> is to disallow a user to make modifications to the object<br><strong>u-x</strong> disallows a user to execute the object</p>
+<p class="amp-wp-7d27179">Similarly, to <strong>add permission for a group</strong> –</p>
+<pre>chmod g+r ABC.txt
+chmod g+w ABC.txt
+chmod g+x ABC.txt</pre>
+<p class="amp-wp-7d27179">Next, to <strong>remove permissions for a group</strong> –</p>
+<pre>chmod g-r ABC.txt
+chmod g-w ABC.txt
+chmod g-x ABC.txt</pre>
+<p class="amp-wp-7d27179">Lastly, for <strong>all others – add permissions</strong> –</p>
+<pre>chmod o+r ABC.txt
+chmod o+w ABC.txt
+chmod o+x ABC.txt</pre>
+<p class="amp-wp-7d27179"><strong>Remove permissions for all others</strong> –</p>
+<pre>chmod o-r ABC.txt
+chmod o-w ABC.txt
+chmod o-x ABC.txt</pre>
+<p class="amp-wp-7d27179">It is worth mentioning here that, we can use combinations to add permissions to a user and group. For instance,</p>
+<pre>chmod ug+r ABC.txt
+chmod u+rw ABC.txt
+chmod ug-r ABC.txt
+chmod u-rw ABC.txt</pre>
+<p class="amp-wp-7d27179">Similarly, for others also –</p>
+<pre>chmod o+rw ABC.txt
+chmod o-rx ABC.txt</pre>
+<p class="amp-wp-7d27179">In the same way, we can perform aforementioned operations on directory also. Just replace <strong>file_name</strong> with <strong>directory_name</strong>.</p>
+<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have discussed how to set permissions on files &amp; directories using <strong>chmod</strong> in Ubuntu distribution.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
