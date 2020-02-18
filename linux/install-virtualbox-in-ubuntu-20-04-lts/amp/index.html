@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Install VirtualBox in Debian Buster - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/linux/install-virtualbox-in-debian-buster/" />
+		<title>Install VirtualBox in Ubuntu 20.04 LTS - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/linux/install-virtualbox-in-ubuntu-20-04-lts/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -426,36 +426,35 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Install VirtualBox in Debian Buster</h1>
+		<h1 class="amp-wp-title">Install VirtualBox in Ubuntu 20.04 LTS</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-07-07T16:44:16+00:00">
-		8 months ago	</time>
+	<time datetime="2020-02-18T16:47:42+00:00">
+		2 hours ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">Developed by Oracle Corporation, <strong>VirtualBox</strong> is a free and open-source virtualization product. It facilitates us in running multiple operating systems on our existing computer. These multiple operating systems run inside Virtual Machines. By using Virtual Machines, we reduce costs incurred on infrastructure. Also, we can do a lot of testing without breaking our host operating system. We can make use of VirtualBox extension packs or VirtualBox Guest Additions for extended functionality like support for USB devices, better user experience, remote desktop protocol support etc. The product was first released on January 17, 2007. In this article, we would discuss how to install VirtualBox in Debian Buster.</p>
-<p class="amp-wp-7d27179">Debian Buster has finally released on July 06, 2019. But, those who have been using VirtualBox all along could be in for a surprise as the application gets removed after the update. Previous repository entry for the Debian Stretch wouldn’t come to the rescue.</p>
-<p class="amp-wp-7d27179">So, if you would like continue using the application even in Debian Buster then you will have to make couple of changes.</p>
-<h4 class="amp-wp-cdd8ca0">Install VirtualBox in Debian Buster</h4>
-<p class="amp-wp-7d27179">Login as superuser/root to start with the installation process. If you don’t have the privileges then, it is best to contact your system administrator for assistance. To login as superuser, run the following in terminal and authenticate yourself –</p>
-<pre>su -l</pre>
-<p class="amp-wp-7d27179">First, we have to download the <strong>.deb package (virtualbox-6.0_6.0.14-133895~Debian~buster_amd64.deb)</strong> from the official website of VirtualBox. This is the latest stable release available at the time of writing the article.</p>
-<p class="amp-wp-7d27179">We would now install the package through <strong>dpkg</strong> (Debian Package Manager). Once the package gets downloaded, head to the directory where it is saved through <strong>cd</strong> command-line utility.</p>
-<pre>cd /path/to/package/
-dpkg -i virtualbox-6.0_6.0.14-133895~Debian~buster_amd64.deb</pre>
-<p class="amp-wp-7d27179">We may encounter following error –</p>
-<pre>The distribution packages containing the headers are probably:
-linux-headers-amd64 linux-headers-X.XX.X-X-amd64</pre>
-<p class="amp-wp-7d27179">Under such a scenario, we need to install relevant packages –</p>
-<pre>apt install linux-headers-amd64 linux-headers-X.XX.X-X-amd64</pre>
-<p class="amp-wp-7d27179">where,</p>
-<p class="amp-wp-7d27179"><strong>X</strong> – replace it with applicable version number.</p>
-<p class="amp-wp-7d27179">Now, again we need to issue the following to complete the installation process (if you didn’t get the error, then this step isn’t required) –</p>
-<pre>dpkg -i virtualbox-6.0_6.0.14-133895~Debian~buster_amd64.deb</pre>
-<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have learnt how to install VirtualBox in Debian Buster. If you are looking to install VirtualBox on Debian Stretch then follow the <a href="https://techpiezo.com/linux/install-virtualbox-in-debian-stretch/">link</a>.</p>
+		<p class="amp-wp-7d27179">First, we would discuss a bit about virtualization. Then, we would discuss how to<strong> install VirtualBox in Ubuntu 20.04</strong> LTS release.</p>
+<p class="amp-wp-7d27179">Developed by <strong>Oracle Corporation</strong>, VirtualBox was first released on January 17, 2007. It is available for many platforms like Windows, macOS, Linux and Solaris thereby making it a cross-platform application. Also, it is a free and open source hypervisor written in C, C++ and x86 Assembly. At the time of writing the article, the <strong>latest stable release</strong> available is 6.1.2.</p>
+<p class="amp-wp-7d27179">With the help of an Hypervisor, we can manage i.e. create and run our Virtual Machines. There are mainly two types of Hypervisor – Type 1 (bare-metal) and Type 2 (hosted). Type 1 hypervisor runs on hosts’ hardware and doesn’t need an operating system installed as a prerequisite.</p>
+<p class="amp-wp-7d27179">On the other hand, it is necessary to have an operating system installed to run <strong>VirtualBox</strong> application. Therefore, we can say it’s a <strong>Type 2 Hypervisor</strong>.</p>
+<p class="amp-wp-7d27179">For improved performance and better support we can also install VirtualBox guest additions and VirtualBox extension pack.</p>
+<p class="amp-wp-7d27179"><strong>Note:</strong> Following operation may require you to have superuser privileges. In case you don’t have one, then contact your System Administrator for assistance.</p>
+<h6 class="amp-wp-cdd8ca0">Install VirtualBox in Ubuntu 20.04</h6>
+<p class="amp-wp-7d27179">Since, VirtualBox is already available through standard Ubuntu repository. Therefore, we need to update the repository first to make the latest version of package available. Hence, issue the following in terminal –</p>
+<pre>sudo apt update</pre>
+<p class="amp-wp-7d27179">Now, to install VirtualBox –</p>
+<pre>sudo apt install virtualbox</pre>
+<p class="amp-wp-7d27179">This will download the relevant application and its related dependencies.</p>
+<p class="amp-wp-7d27179">In addition to, we can also install VirtualBox Guest Additions and VirtualBox extension pack. We have discussed only the installation part here.</p>
+<p class="amp-wp-7d27179">To install VirtualBox Guest Additions –</p>
+<pre>sudo apt install virtualbox-guest-additions-iso</pre>
+<p class="amp-wp-7d27179">and, to install VirtualBox extension pack –</p>
+<pre>sudo apt install virtualbox-ext-pack</pre>
+<p class="amp-wp-7d27179">We will discuss how to use VirtualBox Guest Additions ISO and VirtualBox Extension packs in coming articles.</p>
+<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have discussed how to install VirtualBox in Ubuntu 20.04 LTS release.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">

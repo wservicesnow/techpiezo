@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="February 15, 2020 1:24 pm" -->
+<!-- generated-on="February 18, 2020 6:53 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
+		<loc>https://techpiezo.com/linux/install-virtualbox-in-ubuntu-20-04-lts/</loc>
+		<lastmod>2020-02-18T18:52:22+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
 		<loc>https://techpiezo.com/linux/set-permissions-on-files-directories-using-chmod-in-ubuntu/</loc>
 		<lastmod>2020-02-15T13:23:05+00:00</lastmod>
 		<changefreq>monthly</changefreq>
@@ -36,4 +42,4 @@
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: 1e2329467387b2ae24010daadca18d67; Queries for sitemap: 2; Total queries: 13; Seconds: 0; Memory for sitemap: 0MB; Total memory: 2MB -->
+</urlset><!-- Request ID: 4811c0f0f240a7afa48db1b2def9b161; Queries for sitemap: 2; Total queries: 13; Seconds: 0.01; Memory for sitemap: 0MB; Total memory: 2MB -->
