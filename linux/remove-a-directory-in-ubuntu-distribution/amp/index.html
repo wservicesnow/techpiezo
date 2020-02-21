@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Introduction to Ubuntu - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/linux/introduction-to-ubuntu/" />
+		<title>Remove a directory in Ubuntu distribution - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/linux/remove-a-directory-in-ubuntu-distribution/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -426,31 +426,44 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Introduction to Ubuntu</h1>
+		<h1 class="amp-wp-title">Remove a directory in Ubuntu distribution</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2019-06-11T11:54:11+00:00">
-		9 months ago	</time>
+	<time datetime="2020-02-21T11:01:06+00:00">
+		1 hour ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">Ubuntu is a free and open source Linux distribution, that gets released every six months. There is also a long-term support (LTS) version available. The latest Ubuntu release is Ubuntu 19.04 (“Disco Dingo”). The distribution is largely based on Debian Linux. Ubuntu Linux distribution was first released on October 20, 2004. It is built on Debian’s architecture. The package of Ubuntu are based on unstable version of Debian.</p>
-<h4 class="amp-wp-cdd8ca0">Meaning of Ubuntu?</h4>
-<p class="amp-wp-7d27179">Xhosa, Zulu, Swati, Lala are few of the Nguni languages that are spoken by the Nguni People of South Africa. Moreover, the languages are a part of Bantu languages group. The term “Ubuntu” means humanity and has its origins in Nguni Bantu language family. It represents a South African philosophy which believes in sharing and that helps in connecting all the humanity.</p>
-<h4 class="amp-wp-cdd8ca0">Ubuntu distribution</h4>
-<p class="amp-wp-7d27179">An Ubuntu distribution is a collection of software applications from various sources that are packaged together. Therefore, make it easy for users to access GNU/Linux. Back in time, using a GNU/Linux and then installing various softwares was a time consuming task. As a result, it wasn’t easy for ordinary users to access GNU/Linux. So, majority kept themselves away from the distribution. The biggest challenge was to make the GNU/Linux distributions accessible to the masses. Eventually, various organizations/communities started distributing GNU/Linux with software packages. The basic configuration was done to assist those who were not so technologically proficient.</p>
-<p class="amp-wp-7d27179">RedHat, Debian, Ubuntu, Gentoo, SUSE are few of the popular Linux distributions. Most of the Linux distributions are supplied with similar packages. They only differ when it comes to support, the steps involved in installing and upgrading the software. Like, Debian and other related distribution support <strong>.deb</strong> extension while, RedHat Linux supports <strong>.rpm</strong> extension.</p>
-<h4 class="amp-wp-cdd8ca0"><strong>Symbiotic relationship between Debian and Ubuntu</strong></h4>
-<p class="amp-wp-7d27179">There is a symbiotic relationship that exists between Debian and Ubuntu. That is because, Ubuntu tries to incorporate the best of Debian and then modifies it to provide best-in-class experience to its users.</p>
-<h4 class="amp-wp-cdd8ca0">Flavors of Ubuntu</h4>
-<p class="amp-wp-7d27179">There are seven existing flavors of Ubuntu – Kubuntu, Xubuntu, Ubuntu Studio, Lubuntu, Ubuntu Kylin, Ubuntu Mate and Ubuntu Budgie. Each of these flavors differ in their desktop environments. Apart from that, the basic underlying Linux distribution is the same. For instance, Lubuntu comes with LXDE desktop environment installed, whereas Xubuntu has XFCE dekstop environment. So, for people who are still using Hardware that don’t support modern operating systems. Reasons could be less RAM available, slow processing speed etc. For them, Lubuntu is the best choice available. It is specifically tailored to consume less resources. So, each of the above Ubuntu flavors have distinct identity.</p>
-<h4 class="amp-wp-cdd8ca0">Variants of Ubuntu</h4>
-<p class="amp-wp-7d27179">The Ubuntu GNU/Linux distribution and operating system comes in three variants – Desktop, Server and Core.</p>
-<p class="amp-wp-7d27179">The Desktop edition is aimed at ordinary users who would use Ubuntu distribution on a PC or Laptop. On the other hand, Server edition is for those who deploy Ubuntu for server management and other related activities. Lastly, Ubuntu Core is being deployed on Internet of Things (IOTs). Supported platforms for Ubuntu Core are Raspberry Pi, Intel NUC, Intel IEI Tank, Qualcomm Dragonboard 410C, Samsung Artic etc.</p>
-<h4 class="amp-wp-7d27179">Conclusion</h4>
-<p class="amp-wp-7d27179">Ubuntu 19.04, which was released on April 18, 2019, is the latest of versions available. GNOME desktop environment was supplied as its default desktop environment. Furthermore, we can install other desktop environments of our choice like LXDE, XFCE, MATE, Cinnamon, LXQt, KDE Plasma etc.</p>
+		<p class="amp-wp-7d27179">In this article, we would discuss how to <strong>remove a directory</strong> in Ubuntu distribution. We can delete a directory in Ubuntu through Graphical User Interface and Command-line Interface. Although deleting a directory is pretty straight-forward when done through Graphical User Interface. However, things can become a bit tricky when it comes to Command-line Interface.</p>
+<p class="amp-wp-7d27179"><strong>Word of Caution</strong> – Deleting a directory through Graphical User Interface may or may not delete the object permanently. It largely depends on user settings wherein we have the option to send the deleted directory to trash. On the contrary, when we delete it through <strong>Command-line interface</strong> – it deletes the object <strong>instantly</strong>. That is, it <strong>doesn’t go to Trash</strong> folder.</p>
+<p class="amp-wp-7d27179">Also, make sure you understand what operations you are trying to execute. If you don’t understand what you are up to then it is best to contact your System Administrator for assistance.</p>
+<h6 class="amp-wp-cdd8ca0">Remove a directory in Ubuntu distribution</h6>
+<p class="amp-wp-7d27179">We can remove a directory using <strong>rmdir</strong> and <strong>rm</strong> command-line utilities. We will discuss each of these in detail with the help of relevant examples next –</p>
+<p class="amp-wp-7d27179"><strong>I. rmdir command</strong> –</p>
+<p class="amp-wp-7d27179"><strong>rmdir</strong> command-line utility can be used to delete empty directories. For instance, we have an empty directory – ABC. So, to delete the empty directory issue the following in terminal –</p>
+<pre>rmdir /path/to/ABC</pre>
+<p class="amp-wp-7d27179">To <strong>remove</strong> <strong>multiple empty directories</strong> then –</p>
+<pre>rmdir /path/to/ABC /path/to/ABC_1  /path/to/ABC_2 ... /path/to/ABC_n/</pre>
+<p class="amp-wp-7d27179">To <strong>remove</strong> <strong>multiple nested empty directories –</strong></p>
+<pre>rmdir -p /path/to/ABC /path/to/ABC_1  /path/to/ABC_2 ... /path/to/ABC_n/</pre>
+<p class="amp-wp-7d27179">where,</p>
+<p class="amp-wp-7d27179"><strong>-p</strong> option (i.e. parents) remove an empty directory along-with its ancestors.</p>
+<p class="amp-wp-7d27179">If ABC directory contains some other objects, then we would get the error –</p>
+<pre>rmdir: failed to remove 'ABC': Directory not empty</pre>
+<p class="amp-wp-7d27179">Under such a scenario, we would have to enter the directory and then delete every object inside it. But, this would itself be a tedious task when we already know the whole directory and its contents are no longer needed.</p>
+<p class="amp-wp-7d27179">This issue can be resolved through <strong>rm</strong> command-line utility which is discussed next.</p>
+<p><strong>II. rm command</strong> –</p>
+<p class="amp-wp-7d27179">The <strong>rm</strong> command-line utility is used to delete both files as well as directories. In addition to, rm command-line utility deletes both empty as well as non-empty directories too.</p>
+<p class="amp-wp-7d27179">To remove a non-empty directory, lets say ABC, issue the following in terminal –</p>
+<pre>rm -rf /path/to/ABC/</pre>
+<p class="amp-wp-7d27179">where,</p>
+<p class="amp-wp-7d27179"><strong>-r option</strong> –&gt; to delete the directory recursively</p>
+<p class="amp-wp-7d27179"><strong>-f option</strong> –&gt; force, which means it ignores non-existent objects</p>
+<p class="amp-wp-7d27179">Also, to <strong>remove</strong> <strong>multiple empty/non-empty directories</strong> –</p>
+<pre>rm -rf /path/to/ABC/ /path/to/ABC_1/ ... /path/to/ABC_n/</pre>
+<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have discussed how to remove a directory in Ubuntu distribution through <strong>rmdir</strong> and <strong>rm</strong> command-line utilities.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
