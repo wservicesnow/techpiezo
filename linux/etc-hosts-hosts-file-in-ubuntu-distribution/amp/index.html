@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>Identify your Ubuntu distribution version - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/linux/identify-your-ubuntu-distribution-version/" />
+		<title>/etc/hosts - hosts file in Ubuntu distribution - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/linux/etc-hosts-hosts-file-in-ubuntu-distribution/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -426,62 +426,46 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Identify your Ubuntu distribution version</h1>
+		<h1 class="amp-wp-title">/etc/hosts &#8211; hosts file in Ubuntu distribution</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2020-02-21T09:34:06+00:00">
-		1 day ago	</time>
+	<time datetime="2020-02-22T11:12:03+00:00">
+		46 mins ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">Developed by Canonical Ltd., <strong>Ubuntu is a free and open-source</strong> Linux distribution. It is based on Debian. In this article, we would help you <strong>identify your Ubuntu distribution version</strong>.</p>
-<p class="amp-wp-7d27179">We can identify an Ubuntu release through its version number. Besides, the version number contains the <strong>year and month</strong> in which that particular version of Ubuntu was released. For instance, Ubuntu 16.04 tells us that the particular version was released in April, 2016. Similarly, we can identify the year and month for other Ubuntu releases also.</p>
-<p class="amp-wp-7d27179">Furthermore, it is always better to identify which version of Ubuntu we have been working on. Certainly this helps us identify and fix issues, if any. On other hand, it acts as a <strong>catalyst</strong> which may push us to upgrade an outdated version.</p>
-<p class="amp-wp-7d27179">This article solely focus on how to identify Ubuntu’s distribution version through Command-line interface.</p>
-<h6 class="amp-wp-cdd8ca0">Identify your Ubuntu distribution version</h6>
-<p class="amp-wp-7d27179">There are four methods we are going to discuss –</p>
-<p class="amp-wp-7d27179"><strong>Method I</strong>. Through command-line utility <strong>lsb_release</strong>. Here, <strong>lsb</strong> stands for Linux Standard Base.</p>
-<p class="amp-wp-7d27179"><strong>lsb_release</strong> command-line utility helps us get the distribution related information. So, issue the following in terminal –</p>
-<pre>lsb_release -a</pre>
-<p class="amp-wp-7d27179">where,</p>
-<p class="amp-wp-7d27179"><strong>-a</strong> option is used to print all the distribution related information available.</p>
-<p class="amp-wp-7d27179">The output may resemble –</p>
-<pre>No LSB modules are available.
-Distributor ID: Ubuntu
-Description: Ubuntu Focal Fossa (development branch)
-Release: 20.04
-Codename: focal</pre>
-<p class="amp-wp-7d27179"><strong>Method II</strong>. Through <strong>/etc/os-release</strong> file.</p>
-<p class="amp-wp-7d27179">We could use <strong>cat</strong> command-line utility. It will help us read and display the contents of <strong>os-release</strong> file. So,</p>
-<pre>cat /etc/os-release</pre>
-<p class="amp-wp-7d27179">This may result in the output similar to –</p>
-<pre>NAME="Ubuntu"
-VERSION="20.04 LTS (Focal Fossa)"
-ID=ubuntu
-ID_LIKE=debian
-PRETTY_NAME="Ubuntu Focal Fossa (development branch)"
-VERSION_ID="20.04"</pre>
-<p class="amp-wp-7d27179"><strong>Method III</strong>. Through <strong>/etc/issue</strong> file. Again, we would use <strong>cat</strong> command-line utility.</p>
-<pre>cat /etc/issue</pre>
-<p class="amp-wp-7d27179">Output may resemble –</p>
-<pre>Ubuntu Focal Fossa (development branch) \n \l</pre>
-<p class="amp-wp-7d27179">Lastly, <strong>Method IV</strong>. Through command-line utility <strong>hostnamectl</strong>. Issue the following in terminal –</p>
-<pre>hostnamectl</pre>
-<p class="amp-wp-7d27179">Output may resemble –</p>
-<pre>Static hostname: techpiezo-pc
-Icon name: computer-desktop
-Chassis: desktop
-Machine ID: XXXXXXXXXXXXXXXXXXXXXXXXXX
-Boot ID: XXXXXXXXXXXXXXXXXXXXXXXXXX
-Operating System: Ubuntu Focal Fossa (development branch)
-Kernel: Linux 5.4.0-14-generic
-Architecture: x86-64</pre>
-<p class="amp-wp-7d27179">Although Methods III &amp; IV help us only get the Operating System related information and not the direct release number. Still, we can get an idea which Ubuntu distribution we are working on.</p>
-<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have discussed how you can identify your Ubuntu distribution version.</p>
-<p class="amp-wp-7d27179"><strong>Additional Info –</strong></p>
-<p class="amp-wp-7d27179">Next Long Term Support (LTS) Ubuntu release will be released on April 23, 2020. It has been code-named Focal Fossa and will be supported till April 2025.</p>
+		<p class="amp-wp-7d27179"><strong>/etc/hosts</strong> – is a hosts file in Ubuntu distribution. The file contains a list of IP addresses and associated hostnames. Each line in hosts file will correspond to one IP address entry followed by associated canonical hostname.</p>
+<p class="amp-wp-7d27179">So, every entry would resemble –</p>
+<pre>IP_addresses canonical_hostname</pre>
+<p class="amp-wp-7d27179">Here, <strong>IP addresses and canonical hostnames</strong> should be separated by at least one blank space. And, if we put <strong>#</strong> at the beginning of every entry then that particular line would be ignored.</p>
+<p class="amp-wp-7d27179">One of the key benefits in keeping important entries in hosts file – it is quite useful in case our DNS servers are not reachable for some reason. In addition to, almost all <strong>applications check /etc/hosts</strong> file before asking for relevant entries from a DNS server. Therefore, we can utilize this property to our advantage as and when required.</p>
+<p class="amp-wp-7d27179"><strong>Note:</strong> Following operations would require you to have superuser privileges. In case you don’t have one, then contact your System Administrator for assistance.</p>
+<h6 class="amp-wp-cdd8ca0">/etc/hosts – hosts file in Ubuntu</h6>
+<p class="amp-wp-7d27179">A normal user can only read the contents of a /etc/hosts file. We need to have administrative account i.e. root privileges to make necessary changes, if required.</p>
+<p class="amp-wp-7d27179">To view the contents of /etc/hosts file using <strong>cat</strong> command-line utility, issue the following in terminal –</p>
+<pre>cat /etc/hosts</pre>
+<p class="amp-wp-7d27179">It would return with the following –</p>
+<pre>127.0.0.1 localhost
+127.0.1.1 techpiezo-pc
+::1 localhost ip6-localhost ip6-loopback
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters</pre>
+<p class="amp-wp-7d27179">here,</p>
+<p class="amp-wp-7d27179">127.0.0.1 is for our localhost (needed for IPv4 capable hosts),</p>
+<p class="amp-wp-7d27179">127.0.1.1 is a fully qualified domain name (FQDN) of the machine we are working on, and</p>
+<pre>::1 localhost ip6-localhost ip6-loopback
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters</pre>
+<p class="amp-wp-7d27179">it is also for our localhost (needed for IPv6 capable hosts).</p>
+<p class="amp-wp-7d27179">Now, to edit the /etc/hosts file – issue the following in terminal –</p>
+<pre>sudo nano /etc/hosts</pre>
+<p class="amp-wp-7d27179">replace <strong>nano</strong> with a text-editor of your own choice.</p>
+<p class="amp-wp-7d27179">Append the file and provide the IPv4 address for associated canonical hostname. For instance,</p>
+<pre>XXX.XXX.XXX.XXX &lt;canonical_hostname&gt;</pre>
+<p class="amp-wp-7d27179">Similarly, replace IPv4 addresses with IPv6 addresses to get desired outcome.</p>
+<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have discussed /etc/hosts – hosts file in Ubuntu distribution.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">

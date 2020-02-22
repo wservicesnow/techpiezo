@@ -6,11 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
-	<title>Convert disk images to various formats using qemu-img - TechPiezo</title>
+	<title>/etc/hosts - hosts file in Ubuntu distribution - TechPiezo</title>
 
 <!-- This site is optimized with the Yoast SEO plugin v11.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
-<meta name="description" content="In this article, we would focus on how to convert disk images like qcow2, raw, vdi &amp; vmdk to various formats using command-line utility qemu-img in Ubuntu."/>
-<link rel="canonical" href="https://techpiezo.com/linux/convert-disk-images-to-various-formats-using-qemu-img/" />
+<meta name="description" content="Each line in hosts file will contain just one IP address entry followed by associated canonical hostname. /etc/hosts - is a hosts file in Ubuntu."/>
+<link rel="canonical" href="https://techpiezo.com/linux/etc-hosts-hosts-file-in-ubuntu-distribution/" />
 <!-- / Yoast SEO plugin. -->
 
 <style id="ct-main-styles-inline-css" type="text/css">:root {
@@ -758,7 +758,7 @@ code, kbd, samp, pre,
 <link rel='stylesheet' id='ct-style-css'  href='https://techpiezo.com/wp-content/themes/blocksy/style.css' type='text/css' media='all' />
 <link rel='stylesheet' id='ct-main-styles-css'  href='https://techpiezo.com/wp-content/themes/blocksy/static/bundle/main.css' type='text/css' media='all' />
 
-<link rel="amphtml" href="https://techpiezo.com/linux/convert-disk-images-to-various-formats-using-qemu-img/amp/"><link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" sizes="32x32" />
+<link rel="amphtml" href="https://techpiezo.com/linux/etc-hosts-hosts-file-in-ubuntu-distribution/amp/"><link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" sizes="32x32" />
 <link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" sizes="192x192" />
 <link rel="apple-touch-icon-precomposed" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" />
 <meta name="msapplication-TileImage" content="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" />
@@ -788,7 +788,7 @@ code, kbd, samp, pre,
 
 </head>
 
-<body class="post-template-default single single-post postid-3584 single-format-standard wp-custom-logo ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
+<body class="post-template-default single single-post postid-4223 single-format-standard wp-custom-logo ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
 <div id="main-container">
 
 	<header
@@ -915,13 +915,13 @@ code, kbd, samp, pre,
 			<section>
 				
 	<article
-		id="post-3584"
-		class="post-3584 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"		data-content="boxed"				>
+		id="post-4223"
+		class="post-4223 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"		data-content="boxed"				>
 
 		
 		<section class="hero-section" data-type="type-1" data-alignment="left">
 			<header class="entry-header">
-				<h1 class="page-title">Convert disk images to various formats using qemu-img</h1>
+				<h1 class="page-title">/etc/hosts &#8211; hosts file in Ubuntu distribution</h1>
 				<div class="entry-meta has-avatar" data-label data-type="simple">
 		
 
@@ -948,7 +948,7 @@ code, kbd, samp, pre,
 					<span
 						class="ct-meta-element"
 						>
-						Nov 21, 2019					</span>
+						Feb 22, 2020					</span>
 				</li>
 			
 			
@@ -958,63 +958,39 @@ code, kbd, samp, pre,
 					</header>
 		</section>
 
-		<figure class="ct-featured-image ct-hidden-sm" ><div class="ct-image-container ct-lazy" ><img class="attachment-full size-full" alt="Convert disk images to various formats using qemu-img" data-lazy="https://techpiezo.com/wp-content/uploads/2019/11/Convert-disk-images-to-various-formats-using-qemu-img.svg" data-object-fit="~" /><noscript><img src="https://techpiezo.com/wp-content/uploads/2019/11/Convert-disk-images-to-various-formats-using-qemu-img.svg" class="attachment-full size-full" alt="Convert disk images to various formats using qemu-img" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
+		<figure class="ct-featured-image ct-hidden-sm" ><div class="ct-image-container ct-lazy" ><img class="attachment-full size-full" alt="hosts file in Ubuntu distribution" data-lazy="https://techpiezo.com/wp-content/uploads/2020/02/hosts-file-in-Ubuntu-distribution.svg" data-object-fit="~" /><noscript><img src="https://techpiezo.com/wp-content/uploads/2020/02/hosts-file-in-Ubuntu-distribution.svg" class="attachment-full size-full" alt="hosts file in Ubuntu distribution" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
 		
 		<div class="entry-content">
-			<p style="text-align: justify;">In this article, we would focus on how to <strong>convert disk images to various formats</strong> using command-line utility <strong>qemu-img </strong>in Ubuntu distribution. Disk images are virtual hard disks which are used with virtual machines. These disk images are used to emulate disk storage devices. Furthermore depending on virtualization used, different disk images are utilized by different applications like QEMU/KVM, VirtualBox etc.</p>
-<p style="text-align: justify;">First we would discuss how to get command-line utility <strong>qemu-img (Qemu disk image utility)</strong>.</p>
-<p style="text-align: justify;"><strong>Note</strong>: Following operations would require you to have superuser privileges. In case you don&#8217;t have one, then contact your System Administrator for assistance.</p>
-<h5 style="text-align: center;">Install qemu-img in Ubuntu distribution</h5>
-<p style="text-align: justify;">The required package is already available in standard Ubuntu repository. Therefore, we need to first update the repository. So, issue the following in terminal &#8211;</p>
-<pre>sudo apt update</pre>
-<p style="text-align: justify;">Now, <strong>qemu-img</strong> command-line utility is packaged with <strong>qemu-utils</strong>. Hence &#8211;</p>
-<pre>sudo apt install qemu-utils</pre>
-<h5 style="text-align: center;">Convert RAW image to Qcow2, VDI, VMDK &amp; VHD</h5>
-<p style="text-align: justify;"><strong>I.</strong> Convert Raw image to Qcow2:</p>
-<pre>qemu-img convert -f raw image.raw -O qcow2 image.qcow2</pre>
-<p style="text-align: justify;"><strong>II.</strong> Convert Raw image to VDI:</p>
-<pre>qemu-img convert -f raw image.raw -O vdi image.vdi</pre>
-<p style="text-align: justify;"><strong>III.</strong> Convert Raw image to VMDK:</p>
-<pre>qemu-img convert -f raw image.raw -O vmdk image.vmdk</pre>
-<p style="text-align: justify;"><strong>IV.</strong> Convert Raw image to VHD:</p>
-<pre>qemu-img convert -f raw image.raw -O vpc image.vhd</pre>
-<h5 style="text-align: center;">Convert Qcow2 image to RAW, VDI, VMDK &amp; VHD</h5>
-<p style="text-align: justify;"><strong>I.</strong> Convert Qcow2 image to RAW:</p>
-<pre>qemu-img convert -f qcow2 image.qcow2 -O raw image.raw</pre>
-<p style="text-align: justify;"><strong>II.</strong> Convert Qcow2 image to VDI:</p>
-<pre>qemu-img convert -f qcow2 image.qcow2 -O vdi image.vdi</pre>
-<p style="text-align: justify;"><strong>III.</strong> Convert Qcow2 image to VMDK:</p>
-<pre>qemu-img convert -f qcow2 image.qcow2 -O vmdk image.vmdk</pre>
-<p style="text-align: justify;"><strong>IV.</strong> Convert Qcow2 image to VHD:</p>
-<pre>qemu-img convert -f qcow2 image.qcow2 -O vpc image.vhd</pre>
-<h5 style="text-align: center;">Convert VDI image to RAW, Qcow2, VMDK &amp; VHD</h5>
-<p style="text-align: justify;"><strong>I.</strong> Convert VDI image to RAW:</p>
-<pre>qemu-img convert -f vdi image.vdi -O raw image.raw</pre>
-<p style="text-align: justify;"><strong>II.</strong> Convert VDI image to Qcow2:</p>
-<pre>qemu-img convert -f vdi image.vdi -O qcow2 image.qcow2</pre>
-<p style="text-align: justify;"><strong>III.</strong> Convert VDI image to VMDK:</p>
-<pre>qemu-img convert -f vdi image.vdi -O vmdk image.vmdk</pre>
-<p style="text-align: justify;"><strong>IV.</strong> Convert VDI image to VHD:</p>
-<pre>qemu-img convert -f vdi image.vdi -O vpc image.vhd</pre>
-<h5 style="text-align: center;">Convert VMDK image to RAW, Qcow2, VDI &amp; VHD</h5>
-<p style="text-align: justify;"><strong>I.</strong> Convert VMDK image to RAW:</p>
-<pre>qemu-img convert -f vmdk image.vmdk -O raw image.raw</pre>
-<p style="text-align: justify;"><strong>II.</strong> Convert VMDK image to Qcow2:</p>
-<pre>qemu-img convert -f vmdk image.vmdk -O qcow2 image.qcow2</pre>
-<p style="text-align: justify;"><strong>III.</strong> Convert VMDK image to VDI:</p>
-<pre>qemu-img convert -f vmdk image.vmdk -O vdi image.vdi</pre>
-<p style="text-align: justify;"><strong>IV.</strong> Convert VMDK image to VHD:</p>
-<pre>qemu-img convert -f vmdk image.vmdk -O vpc image.vhd</pre>
-<h5 style="text-align: center;">Convert VHD image to RAW, Qcow2, VDI &amp; VMDK</h5>
-<p style="text-align: justify;"><strong>I.</strong> Convert VHD image to RAW:</p>
-<pre>qemu-img convert -f vpc image.vhd -O raw image.raw</pre>
-<p style="text-align: justify;"><strong>II.</strong> Convert VHD image to Qcow2:</p>
-<pre>qemu-img convert -f vpc image.vhd -O qcow2 image.qcow2</pre>
-<p style="text-align: justify;"><strong>III.</strong> Convert VHD image to VDI:</p>
-<pre>qemu-img convert -f vhd image.vhd -O vdi image.vdi</pre>
-<p style="text-align: justify;"><strong>IV.</strong> Convert VHD image to VMDK:</p>
-<pre>qemu-img convert -f vpc image.vhd -O vmdk image.vmdk</pre>
-<p style="text-align: justify;"><strong>In conclusion</strong>, we have discussed how to convert disk images to various formats using qemu-img in Ubuntu.</p>
+			<p style="text-align: justify;"><strong>/etc/hosts</strong> &#8211; is a hosts file in Ubuntu distribution. The file contains a list of IP addresses and associated hostnames. Each line in hosts file will correspond to one IP address entry followed by associated canonical hostname.</p>
+<p style="text-align: justify;">So, every entry would resemble &#8211;</p>
+<pre>IP_addresses canonical_hostname</pre>
+<p style="text-align: justify;">Here, <strong>IP addresses and canonical hostnames</strong> should be separated by at least one blank space. And, if we put <strong>#</strong> at the beginning of every entry then that particular line would be ignored.</p>
+<p style="text-align: justify;">One of the key benefits in keeping important entries in hosts file &#8211; it is quite useful in case our DNS servers are not reachable for some reason. In addition to, almost all <strong>applications check /etc/hosts</strong> file before asking for relevant entries from a DNS server. Therefore, we can utilize this property to our advantage as and when required.</p>
+<p style="text-align: justify;"><strong>Note:</strong> Following operations would require you to have superuser privileges. In case you don&#8217;t have one, then contact your System Administrator for assistance.</p>
+<h6 style="text-align: center;">/etc/hosts &#8211; hosts file in Ubuntu</h6>
+<p style="text-align: justify;">A normal user can only read the contents of a /etc/hosts file. We need to have administrative account i.e. root privileges to make necessary changes, if required.</p>
+<p style="text-align: justify;">To view the contents of /etc/hosts file using <strong>cat</strong> command-line utility, issue the following in terminal &#8211;</p>
+<pre>cat /etc/hosts</pre>
+<p style="text-align: justify;">It would return with the following &#8211;</p>
+<pre>127.0.0.1 localhost
+127.0.1.1 techpiezo-pc
+::1 localhost ip6-localhost ip6-loopback
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters</pre>
+<p style="text-align: justify;">here,</p>
+<p style="text-align: justify;">127.0.0.1 is for our localhost (needed for IPv4 capable hosts),</p>
+<p style="text-align: justify;">127.0.1.1 is a fully qualified domain name (FQDN) of the machine we are working on, and</p>
+<pre>::1 localhost ip6-localhost ip6-loopback
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters</pre>
+<p style="text-align: justify;">it is also for our localhost (needed for IPv6 capable hosts).</p>
+<p style="text-align: justify;">Now, to edit the /etc/hosts file &#8211; issue the following in terminal &#8211;</p>
+<pre>sudo nano /etc/hosts</pre>
+<p style="text-align: justify;">replace <strong>nano</strong> with a text-editor of your own choice.</p>
+<p style="text-align: justify;">Append the file and provide the IPv4 address for associated canonical hostname. For instance,</p>
+<pre>XXX.XXX.XXX.XXX &lt;canonical_hostname&gt;</pre>
+<p style="text-align: justify;">Similarly, replace IPv4 addresses with IPv6 addresses to get desired outcome.</p>
+<p style="text-align: justify;"><strong>In conclusion</strong>, we have discussed /etc/hosts &#8211; hosts file in Ubuntu distribution.</p>
 		</div>
 
 		
@@ -1063,19 +1039,6 @@ code, kbd, samp, pre,
 					Related Posts				</h4>
 
 				<ul data-columns="3">
-											
-						<li>
-							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/etc-hosts-hosts-file-in-ubuntu-distribution/"><img width="1" height="1" class="attachment-large size-large" alt="hosts file in Ubuntu distribution" data-lazy="https://techpiezo.com/wp-content/uploads/2020/02/hosts-file-in-Ubuntu-distribution.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2020/02/hosts-file-in-Ubuntu-distribution.svg" class="attachment-large size-large" alt="hosts file in Ubuntu distribution" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
-							<h3 class="related-entry-title">
-								<a href="https://techpiezo.com/linux/etc-hosts-hosts-file-in-ubuntu-distribution/">/etc/hosts &#8211; hosts file in Ubuntu distribution</a>
-							</h3>
-
-							<div class="related-entry-meta">
-								<span>
-									Feb 22, 2020								</span>
-
-															</div>
-						</li>
 											
 						<li>
 							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/install-mpv-media-player-in-ubuntu/"><img width="1" height="1" class="attachment-large size-large" alt="Install mpv media player in Ubuntu" data-lazy="https://techpiezo.com/wp-content/uploads/2020/02/Install-mpv-media-player-in-Ubuntu.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2020/02/Install-mpv-media-player-in-Ubuntu.svg" class="attachment-large size-large" alt="Install mpv media player in Ubuntu" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
@@ -1138,6 +1101,19 @@ code, kbd, samp, pre,
 							<div class="related-entry-meta">
 								<span>
 									Feb 18, 2020								</span>
+
+															</div>
+						</li>
+											
+						<li>
+							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/set-permissions-on-files-directories-using-chmod-in-ubuntu/"><img width="1" height="1" class="attachment-large size-large" alt="Set permissions on files &amp; directories using chmod in Ubuntu" data-lazy="https://techpiezo.com/wp-content/uploads/2020/02/Set-permissions-on-files-directories-using-chmod-in-Ubuntu.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2020/02/Set-permissions-on-files-directories-using-chmod-in-Ubuntu.svg" class="attachment-large size-large" alt="Set permissions on files &amp; directories using chmod in Ubuntu" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<h3 class="related-entry-title">
+								<a href="https://techpiezo.com/linux/set-permissions-on-files-directories-using-chmod-in-ubuntu/">Set permissions on files &#038; directories using chmod in Ubuntu</a>
+							</h3>
+
+							<div class="related-entry-meta">
+								<span>
+									Feb 14, 2020								</span>
 
 															</div>
 						</li>
