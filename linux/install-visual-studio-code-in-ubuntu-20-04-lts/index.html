@@ -966,14 +966,15 @@ code, kbd, samp, pre,
 <p style="text-align: justify;">There are two methods through which we can install Visual Studio Code or VSCode &#8211;</p>
 <ol style="text-align: justify;">
 <li><strong>.deb</strong> package and,</li>
-<li><strong>snap</strong></li>
+<li><strong>snap store.</strong></li>
 </ol>
 <p style="text-align: justify;">We would discuss each of these next.</p>
 <p style="text-align: justify;"><strong>Note:</strong> Following operations require you to have superuser privileges. In case you don&#8217;t have one, then contact your System Administrator for assistance.</p>
 <h6 style="text-align: center;">Install Visual Studio Code in Ubuntu 20.04 LTS</h6>
 <p style="text-align: justify;"><strong>Method I.</strong> Visit <strong>Download page</strong> on official Visual Studio Code website. Therein, click on 64-bit mentioned against .deb. It will download the required package &#8211; <strong>code_1.42.1-1581432938_amd64.deb</strong>. It is of approximately 55 MBs in size.</p>
 <p style="text-align: justify;">Now, we will install the downloaded package through dpkg (debians&#8217; package manager). Therefore, issue the following in terminal &#8211;</p>
-<pre>sudo dpkg -i code_1.42.1-1581432938_amd64.deb</pre>
+<pre>cd /path/to/package/
+sudo dpkg -i code_1.42.1-1581432938_amd64.deb</pre>
 <p style="text-align: justify;">where,</p>
 <p style="text-align: justify;"><strong>-i</strong> &#8211;&gt; installs the package file</p>
 <p style="text-align: justify;">Consequently, we can access the package through our Systems&#8217; main menu.</p>
@@ -987,6 +988,13 @@ code, kbd, samp, pre,
 <pre>sudo snap install --classic code</pre>
 <p style="text-align: justify;">This will download &amp; install the package and related dependencies, if any.</p>
 <p style="text-align: justify;"><strong>In conclusion</strong>, we have discussed how to install Visual Studio Code in Ubuntu 20.04 LTS release through .deb package and snap.</p>
+<p style="text-align: justify;"><strong>Additional Info &#8211;</strong></p>
+<p style="text-align: justify;">If you get dependency related issues while installing the package through dpkg. Then, update standard repository of Ubuntu first &#8211;</p>
+<pre>sudo apt update</pre>
+<p style="text-align: justify;">Thereafter, make apt install the missing/related dependencies &#8211;</p>
+<pre style="text-align: justify;">sudo apt install -f</pre>
+<p style="text-align: justify;">where,</p>
+<p style="text-align: justify;"><strong>-f</strong> &#8211;&gt; to fix broken dependencies related issues.</p>
 		</div>
 
 		
@@ -1005,6 +1013,9 @@ code, kbd, samp, pre,
 		class="ct-sidebar" 		data-widgets="separated">
 				<div class="ct-widget widget_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
 											<li>
+					<a href="https://techpiezo.com/linux/install-slack-in-ubuntu-20-04-lts-release/">Install Slack in Ubuntu 20.04 LTS release</a>
+									</li>
+											<li>
 					<a href="https://techpiezo.com/linux/install-microsoft-teams-in-ubuntu-20-04-lts/">Install Microsoft Teams in Ubuntu 20.04 LTS</a>
 									</li>
 											<li>
@@ -1015,9 +1026,6 @@ code, kbd, samp, pre,
 									</li>
 											<li>
 					<a href="https://techpiezo.com/linux/install-mpv-media-player-in-ubuntu/">Install mpv media player in Ubuntu distribution</a>
-									</li>
-											<li>
-					<a href="https://techpiezo.com/linux/create-and-delete-a-user-in-ubuntu/">Create and delete a user in Ubuntu</a>
 									</li>
 					</ul>
 		</div>	</div>
@@ -1035,6 +1043,19 @@ code, kbd, samp, pre,
 					Related Posts				</h4>
 
 				<ul data-columns="3">
+											
+						<li>
+							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/install-slack-in-ubuntu-20-04-lts-release/"><img width="1" height="1" class="attachment-large size-large" alt="Install Slack in Ubuntu 20.04" data-lazy="https://techpiezo.com/wp-content/uploads/2020/02/Install-Slack-in-Ubuntu-20-04.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2020/02/Install-Slack-in-Ubuntu-20-04.svg" class="attachment-large size-large" alt="Install Slack in Ubuntu 20.04" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<h3 class="related-entry-title">
+								<a href="https://techpiezo.com/linux/install-slack-in-ubuntu-20-04-lts-release/">Install Slack in Ubuntu 20.04 LTS release</a>
+							</h3>
+
+							<div class="related-entry-meta">
+								<span>
+									Feb 23, 2020								</span>
+
+															</div>
+						</li>
 											
 						<li>
 							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/install-microsoft-teams-in-ubuntu-20-04-lts/"><img width="1" height="1" class="attachment-large size-large" alt="Install Microsoft Teams in Ubuntu 20.04 LTS" data-lazy="https://techpiezo.com/wp-content/uploads/2020/02/Install-Microsoft-Teams-in-Ubuntu-20-04-LTS.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2020/02/Install-Microsoft-Teams-in-Ubuntu-20-04-LTS.svg" class="attachment-large size-large" alt="Install Microsoft Teams in Ubuntu 20.04 LTS" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
@@ -1092,19 +1113,6 @@ code, kbd, samp, pre,
 							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/remove-a-directory-in-ubuntu-distribution/"><img width="1" height="1" class="attachment-large size-large" alt="Remove a Directory in Ubuntu distribution" data-lazy="https://techpiezo.com/wp-content/uploads/2020/02/Remove-a-Directory-in-Ubuntu-distribution.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2020/02/Remove-a-Directory-in-Ubuntu-distribution.svg" class="attachment-large size-large" alt="Remove a Directory in Ubuntu distribution" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
 							<h3 class="related-entry-title">
 								<a href="https://techpiezo.com/linux/remove-a-directory-in-ubuntu-distribution/">Remove a directory in Ubuntu distribution</a>
-							</h3>
-
-							<div class="related-entry-meta">
-								<span>
-									Feb 21, 2020								</span>
-
-															</div>
-						</li>
-											
-						<li>
-							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/identify-your-ubuntu-distribution-version/"><img width="1" height="1" class="attachment-large size-large" alt="Identify your Ubuntu distribution version" data-lazy="https://techpiezo.com/wp-content/uploads/2020/02/Identify-your-Ubuntu-distribution-version.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2020/02/Identify-your-Ubuntu-distribution-version.svg" class="attachment-large size-large" alt="Identify your Ubuntu distribution version" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
-							<h3 class="related-entry-title">
-								<a href="https://techpiezo.com/linux/identify-your-ubuntu-distribution-version/">Identify your Ubuntu distribution version</a>
 							</h3>
 
 							<div class="related-entry-meta">

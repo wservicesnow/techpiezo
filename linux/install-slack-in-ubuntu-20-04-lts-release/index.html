@@ -6,11 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
-	<title>Install/Remove .deb package in Ubuntu/Debian - TechPiezo</title>
+	<title>Install Slack in Ubuntu 20.04 LTS release - TechPiezo</title>
 
 <!-- This site is optimized with the Yoast SEO plugin v11.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
-<meta name="description" content="Ubuntu/Debian Linux distributions contains huge list of packages in their software repositories. Still, we may require to install/remove .deb package."/>
-<link rel="canonical" href="https://techpiezo.com/linux/install-remove-deb-package-in-ubuntu-debian/" />
+<meta name="description" content="It improves communication between members of a team/group. In this article, we would discuss how to install Slack in Ubuntu 20.04 LTS release."/>
+<link rel="canonical" href="https://techpiezo.com/linux/install-slack-in-ubuntu-20-04-lts-release/" />
 <!-- / Yoast SEO plugin. -->
 
 <style id="ct-main-styles-inline-css" type="text/css">:root {
@@ -758,7 +758,7 @@ code, kbd, samp, pre,
 <link rel='stylesheet' id='ct-style-css'  href='https://techpiezo.com/wp-content/themes/blocksy/style.css' type='text/css' media='all' />
 <link rel='stylesheet' id='ct-main-styles-css'  href='https://techpiezo.com/wp-content/themes/blocksy/static/bundle/main.css' type='text/css' media='all' />
 
-<link rel="amphtml" href="https://techpiezo.com/linux/install-remove-deb-package-in-ubuntu-debian/amp/"><link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" sizes="32x32" />
+<link rel="amphtml" href="https://techpiezo.com/linux/install-slack-in-ubuntu-20-04-lts-release/amp/"><link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" sizes="32x32" />
 <link rel="icon" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" sizes="192x192" />
 <link rel="apple-touch-icon-precomposed" href="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" />
 <meta name="msapplication-TileImage" content="https://techpiezo.com/wp-content/uploads/2019/08/favicon.ico" />
@@ -788,7 +788,7 @@ code, kbd, samp, pre,
 
 </head>
 
-<body class="post-template-default single single-post postid-454 single-format-standard wp-custom-logo ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
+<body class="post-template-default single single-post postid-4261 single-format-standard wp-custom-logo ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
 <div id="main-container">
 
 	<header
@@ -915,13 +915,13 @@ code, kbd, samp, pre,
 			<section>
 				
 	<article
-		id="post-454"
-		class="post-454 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"		data-content="boxed"				>
+		id="post-4261"
+		class="post-4261 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-linux-quick-fix"		data-content="boxed"				>
 
 		
 		<section class="hero-section" data-type="type-1" data-alignment="left">
 			<header class="entry-header">
-				<h1 class="page-title">Install/Remove .deb package in Ubuntu/Debian</h1>
+				<h1 class="page-title">Install Slack in Ubuntu 20.04 LTS release</h1>
 				<div class="entry-meta has-avatar" data-label data-type="simple">
 		
 
@@ -948,7 +948,7 @@ code, kbd, samp, pre,
 					<span
 						class="ct-meta-element"
 						>
-						Jul 4, 2019					</span>
+						Feb 23, 2020					</span>
 				</li>
 			
 			
@@ -958,35 +958,40 @@ code, kbd, samp, pre,
 					</header>
 		</section>
 
-		<figure class="ct-featured-image ct-hidden-sm" ><div class="ct-image-container ct-lazy" ><img class="attachment-full size-full" alt="Install/Remove .deb Package" data-lazy="https://techpiezo.com/wp-content/uploads/2019/07/Install-Remove-Deb-Packages.svg" data-object-fit="~" /><noscript><img src="https://techpiezo.com/wp-content/uploads/2019/07/Install-Remove-Deb-Packages.svg" class="attachment-full size-full" alt="Install/Remove .deb Package" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
+		<figure class="ct-featured-image ct-hidden-sm" ><div class="ct-image-container ct-lazy" ><img class="attachment-full size-full" alt="Install Slack in Ubuntu 20.04" data-lazy="https://techpiezo.com/wp-content/uploads/2020/02/Install-Slack-in-Ubuntu-20-04.svg" data-object-fit="~" /><noscript><img src="https://techpiezo.com/wp-content/uploads/2020/02/Install-Slack-in-Ubuntu-20-04.svg" class="attachment-full size-full" alt="Install Slack in Ubuntu 20.04" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
 		
 		<div class="entry-content">
-			<p style="text-align: justify;">Ubuntu/Debian Linux distributions contains huge list of packages in their software repositories. Still, we may need to install other packages due to various reasons like dependency issues, third party packages etc. There are two options available to us for installing these other packages. These are &#8211; either we add them to repository or we download the <strong>.deb</strong> package file. In this article, we would discuss the ways to install and remove <strong>.deb</strong> package file manually.</p>
-<p style="text-align: justify;">Before downloading the <strong>.deb</strong> package file, we need to first check the processor architecture for our system. It would help us save a great deal of time, if we already know which package would be supported by our processor&#8217;s architecture. To do that, run the following command in terminal &#8211;</p>
-<pre>lscpu</pre>
-<p style="text-align: justify;">It would return with two results, which are self-explanatory.</p>
-<p style="text-align: justify;">CPU op-mode(s): 32-bit, 64-bit – then its 64-bit Processor architecture. If its just – CPU op-mode(s): 32-bit – then its a 32-bit Processor architecture.</p>
-<p style="text-align: justify;">To know more, about i386 and amd64 architectures follow the <span style="color: #0000ff;"><a style="color: #0000ff;" href="https://techpiezo.com/linux/i386-or-amd64-ubuntu-distribution/" target="_blank" rel="noopener noreferrer">link</a>.</span></p>
-<h4 style="text-align: center;">Install using dpkg command</h4>
-<p style="text-align: justify;">Then, download and save the supported package to a directory. Open terminal again, you need to have a super user access. If you don&#8217;t have one then contact your system administrator for assistance.</p>
-<p style="text-align: justify;">Move to the directory where you downloaded the package by using the change directory <strong>cd</strong> command.</p>
-<pre>cd /path/to/package</pre>
-<p style="text-align: justify;">Then, we will make use of <strong>dpkg</strong> command to install the package. <strong>DPKG</strong> is an acronym for Debian Package Manager.</p>
-<pre>dpkg -i /path/to/package.deb</pre>
-<p style="text-align: justify;">Next, there will be packages that may require additional packages to be installed. These additional packages are the dependencies without which our source package may/may not work. So, if it is required then we may need to pass the following command to the terminal.</p>
-<pre>apt install -f</pre>
-<p style="text-align: justify;">If there was any error during package installation, that could be due to dependencies, then we need use the above command to fix the broken system.</p>
-<h4 style="text-align: center;">Remove using dpkg command</h4>
-<p style="text-align: justify;">For some reason, we may want to remove the package installed. We can do that with the help of <strong>dpkg</strong> command. But, first we need to know if the package which we are about to remove is installed on our system or not. To check, run the following command.</p>
-<pre>dpkg -l | grep &lt;package-name&gt;</pre>
-<p style="text-align: justify;">There are two options available to us for removing a package &#8211; either we keep or remove configuration files of the packages already installed.</p>
-<p style="text-align: justify;">To keep configuration files, run the following. <strong>-r</strong> option is for removing the package.</p>
-<pre>dpkg -r &lt;package-name&gt;</pre>
-<p style="text-align: justify;">Or, to remove the configuration files too, run the following in terminal. <strong>-P</strong> option is for purging the package.</p>
-<pre>dpkg -P &lt;package-name&gt;</pre>
-<p style="text-align: justify;">Just to confirm if your package has been successfully removed, again run.</p>
-<pre>dpkg -l | grep &lt;package-name&gt;</pre>
-<p style="text-align: justify;"><strong>In conclusion</strong>, we have discussed the ways to install or remove <strong>.deb</strong> package.</p>
+			<p style="text-align: justify;"><strong>Slack</strong> is a type of collaborative application. It improves communication between members of a team/group. This in turn leads to <strong>improvement in team&#8217;s productivity</strong>. Besides, it is developed by Slack Technologies. The application was first released in August 2013. Furthermore, at the time of writing the article, <strong>beta version &#8211; 4.3.2</strong> of Slack is available for Ubuntu. The application is available for various platforms like &#8211; Microsoft Windows, Linux, macOS, Android, iOS etc. In this article, we would discuss how to <strong>install Slack in Ubuntu 20.04</strong> LTS release.</p>
+<p style="text-align: justify;">We would install Slack through two methods &#8211;</p>
+<ol style="text-align: justify;">
+<li style="text-align: justify;"><strong>deb</strong> package available from official website and,</li>
+<li style="text-align: justify;"><strong>snap store</strong>.</li>
+</ol>
+<p>We can choose any of the aforementioned methods to install Slack application.</p>
+<p style="text-align: justify;"><strong>Note:</strong> Following operations would require you to have superuser privileges. In case you don&#8217;t have one, then contact your System Administrator for assistance.</p>
+<h6 style="text-align: center;">Install Slack in Ubuntu 20.04 LTS release</h6>
+<p style="text-align: justify;">First, we would download deb package available on official website of Slack. So, visit <strong>Homepage</strong> of <strong>Slacks&#8217; website</strong>. A drop-down menu will open for <strong>Resources</strong> tab. Therein, click on <strong>Download</strong>.</p>
+<p style="text-align: justify;">On the <strong>Download</strong> page, click on <strong>Download .deb (64-bit)</strong> button. It will start downloading the package &#8211;<strong> slack-desktop-4.3.2-amd64.deb</strong></p>
+<p style="text-align: justify;"><strong>Method I.</strong> Now, we can install the downloaded package either through dpkg or apt. Choose one which you are comfortable with.</p>
+<pre>cd /path/to/package/
+sudo dpkg -i slack-desktop-4.3.2-amd64.deb</pre>
+<p style="text-align: justify;">or,</p>
+<pre>cd /path/to/package/
+sudo apt install ./slack-desktop-4.3.2-amd64.deb</pre>
+<p style="text-align: justify;">where,</p>
+<p style="text-align: justify;">apt is Advanced Package Tool and,</p>
+<p style="text-align: justify;">dpkg is Package Manager for Debian and <strong>-i</strong> &#8211;&gt; option installs the package file.</p>
+<p style="text-align: justify;">If, in case, some dependency related issues arise. Then, issue the following in terminal &#8211;</p>
+<pre>sudo apt install -f</pre>
+<p style="text-align: justify;">where,</p>
+<p style="text-align: justify;"><strong>-f</strong> &#8211;&gt; fixes any broken dependency issues.</p>
+<p style="text-align: justify;"><strong>Alternately</strong>, we can install the package through snap also.</p>
+<p style="text-align: justify;"><strong>Method II.</strong> Usually snap is installed as default in Ubuntu distribution. But, if for some reason its not there then &#8211;</p>
+<pre>sudo apt install snapd</pre>
+<p style="text-align: justify;">It would install the snap package for us.</p>
+<p style="text-align: justify;">Thereafter, to install Slack &#8211;</p>
+<pre>sudo snap install --classic slack</pre>
+<p style="text-align: justify;"><strong>In conclusion</strong>, we have discussed how to install Slack in Ubuntu 20.04 release through downloaded deb package &amp; snap store.</p>
 		</div>
 
 		
@@ -1035,19 +1040,6 @@ code, kbd, samp, pre,
 					Related Posts				</h4>
 
 				<ul data-columns="3">
-											
-						<li>
-							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/install-slack-in-ubuntu-20-04-lts-release/"><img width="1" height="1" class="attachment-large size-large" alt="Install Slack in Ubuntu 20.04" data-lazy="https://techpiezo.com/wp-content/uploads/2020/02/Install-Slack-in-Ubuntu-20-04.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2020/02/Install-Slack-in-Ubuntu-20-04.svg" class="attachment-large size-large" alt="Install Slack in Ubuntu 20.04" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
-							<h3 class="related-entry-title">
-								<a href="https://techpiezo.com/linux/install-slack-in-ubuntu-20-04-lts-release/">Install Slack in Ubuntu 20.04 LTS release</a>
-							</h3>
-
-							<div class="related-entry-meta">
-								<span>
-									Feb 23, 2020								</span>
-
-															</div>
-						</li>
 											
 						<li>
 							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/install-microsoft-teams-in-ubuntu-20-04-lts/"><img width="1" height="1" class="attachment-large size-large" alt="Install Microsoft Teams in Ubuntu 20.04 LTS" data-lazy="https://techpiezo.com/wp-content/uploads/2020/02/Install-Microsoft-Teams-in-Ubuntu-20-04-LTS.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2020/02/Install-Microsoft-Teams-in-Ubuntu-20-04-LTS.svg" class="attachment-large size-large" alt="Install Microsoft Teams in Ubuntu 20.04 LTS" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
@@ -1105,6 +1097,19 @@ code, kbd, samp, pre,
 							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/create-and-delete-a-user-in-ubuntu/"><img width="1" height="1" class="attachment-large size-large" alt="Create and Delete a user in Ubuntu" data-lazy="https://techpiezo.com/wp-content/uploads/2020/02/Create-and-Delete-a-user-in-Ubuntu.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2020/02/Create-and-Delete-a-user-in-Ubuntu.svg" class="attachment-large size-large" alt="Create and Delete a user in Ubuntu" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
 							<h3 class="related-entry-title">
 								<a href="https://techpiezo.com/linux/create-and-delete-a-user-in-ubuntu/">Create and delete a user in Ubuntu</a>
+							</h3>
+
+							<div class="related-entry-meta">
+								<span>
+									Feb 21, 2020								</span>
+
+															</div>
+						</li>
+											
+						<li>
+							<a class="ct-image-container ct-lazy" href="https://techpiezo.com/linux/remove-a-directory-in-ubuntu-distribution/"><img width="1" height="1" class="attachment-large size-large" alt="Remove a Directory in Ubuntu distribution" data-lazy="https://techpiezo.com/wp-content/uploads/2020/02/Remove-a-Directory-in-Ubuntu-distribution.svg" data-object-fit="~" /><noscript><img width="1" height="1" src="https://techpiezo.com/wp-content/uploads/2020/02/Remove-a-Directory-in-Ubuntu-distribution.svg" class="attachment-large size-large" alt="Remove a Directory in Ubuntu distribution" /></noscript><div class="ct-ratio" style="padding-bottom: 75%"></div></a>
+							<h3 class="related-entry-title">
+								<a href="https://techpiezo.com/linux/remove-a-directory-in-ubuntu-distribution/">Remove a directory in Ubuntu distribution</a>
 							</h3>
 
 							<div class="related-entry-meta">

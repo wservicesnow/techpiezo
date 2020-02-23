@@ -429,7 +429,7 @@ amp-carousel > amp-img > img {
 		<h1 class="amp-wp-title">Install Microsoft Teams in Ubuntu 20.04 LTS</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
 	<time datetime="2020-02-23T07:05:44+00:00">
-		3 hours ago	</time>
+		4 hours ago	</time>
 </div>
 	</header>
 
@@ -442,11 +442,13 @@ amp-carousel > amp-img > img {
 <p class="amp-wp-7d27179">We need to first visit the <strong>Download page</strong> on official website of Microsoft Teams. Scroll Down the page and click on Linux DEB 64-bit link. This would download the package – <strong>teams_1.3.00.958_amd64.deb</strong>.</p>
 <p class="amp-wp-7d27179">Now, we would use apt or dpkg to install the package.</p>
 <p class="amp-wp-7d27179"><strong>Method I.</strong> Through apt, issue the following in terminal –</p>
-<pre>sudo apt install ./teams_1.3.00.958_amd64.deb</pre>
+<pre>cd /path/to/package/
+sudo apt install ./teams_1.3.00.958_amd64.deb</pre>
 <p class="amp-wp-7d27179">This would install Microsoft Teams and package can now be accessed from our Systems’ main menu.</p>
 <p class="amp-wp-7d27179">Here, apt is an Advance Package Tool that handles package installation and removal.</p>
 <p class="amp-wp-7d27179"><strong>Method II.</strong> Through dpkg, issue the following in terminal –</p>
-<pre>sudo dpkg -i teams_1.3.00.958_amd64.deb</pre>
+<pre>cd /path/to/package/
+sudo dpkg -i teams_1.3.00.958_amd64.deb</pre>
 <p class="amp-wp-7d27179">where,</p>
 <p class="amp-wp-7d27179"><strong>-i</strong> –&gt; installs the package.</p>
 <p class="amp-wp-7d27179">Also, dpkg is package manager for Debian.</p>
@@ -462,6 +464,13 @@ amp-carousel > amp-img > img {
 <p class="amp-wp-7d27179"><strong>-r</strong> –&gt; removes the package.</p>
 <p class="amp-wp-7d27179">Any of the aforementioned instructions would work in case of removal of the package.</p>
 <p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have discussed how to install and remove Microsoft Teams in Ubuntu 20.04 LTS release.</p>
+<p class="amp-wp-7d27179"><strong>Additional Info –</strong></p>
+<p class="amp-wp-7d27179">If you encounter dependency related issues, while installing the package through dpkg (package manager for Debian). Then, first update the Ubuntu’s standard repository –</p>
+<pre>sudo apt update</pre>
+<p class="amp-wp-7d27179">Thereafter, make apt install the missing/related dependencies through the following –</p>
+<pre class="amp-wp-7d27179">sudo apt install -f</pre>
+<p class="amp-wp-7d27179">where,</p>
+<p class="amp-wp-7d27179"><strong>-f</strong> –&gt; is to fix broken dependencies related issues.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
