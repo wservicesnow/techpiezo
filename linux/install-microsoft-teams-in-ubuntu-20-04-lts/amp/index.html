@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>/etc/hosts - hosts file in Ubuntu distribution - TechPiezo</title>
-		<link rel="canonical" href="https://techpiezo.com/linux/etc-hosts-hosts-file-in-ubuntu-distribution/" />
+		<title>Install Microsoft Teams in Ubuntu 20.04 LTS - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/linux/install-microsoft-teams-in-ubuntu-20-04-lts/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -426,46 +426,42 @@ amp-carousel > amp-img > img {
 
 <article class="amp-wp-article">
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">/etc/hosts &#8211; hosts file in Ubuntu distribution</h1>
+		<h1 class="amp-wp-title">Install Microsoft Teams in Ubuntu 20.04 LTS</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
-	<time datetime="2020-02-22T11:12:03+00:00">
-		22 hours ago	</time>
+	<time datetime="2020-02-23T07:05:44+00:00">
+		3 hours ago	</time>
 </div>
 	</header>
 
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179"><strong>/etc/hosts</strong> – is a hosts file in Ubuntu distribution. The file contains a list of IP addresses and associated hostnames. Each line in hosts file will correspond to one IP address entry followed by associated canonical hostname.</p>
-<p class="amp-wp-7d27179">So, every entry would resemble –</p>
-<pre>IP_addresses canonical_hostname</pre>
-<p class="amp-wp-7d27179">Here, <strong>IP addresses and canonical hostnames</strong> should be separated by at least one blank space. And, if we put <strong>#</strong> at the beginning of every entry then that particular line would be ignored.</p>
-<p class="amp-wp-7d27179">One of the key benefits in keeping important entries in hosts file – it is quite useful in case our DNS servers are not reachable for some reason. In addition to, almost all <strong>applications check /etc/hosts</strong> file before asking for relevant entries from a DNS server. Therefore, we can utilize this property to our advantage as and when required.</p>
+		<p class="amp-wp-7d27179"><strong>Microsoft Teams</strong> is a collaborative application, used to simplify group tasks. With the help of Microsoft teams we can communicate within our team effectively. In this article, we would discuss how to <strong>install Microsoft Teams in Ubuntu 20.04 LTS</strong> release.</p>
 <p class="amp-wp-7d27179"><strong>Note:</strong> Following operations would require you to have superuser privileges. In case you don’t have one, then contact your System Administrator for assistance.</p>
-<h6 class="amp-wp-cdd8ca0">/etc/hosts – hosts file in Ubuntu</h6>
-<p class="amp-wp-7d27179">A normal user can only read the contents of a /etc/hosts file. We need to have administrative account i.e. root privileges to make necessary changes, if required.</p>
-<p class="amp-wp-7d27179">To view the contents of /etc/hosts file using <strong>cat</strong> command-line utility, issue the following in terminal –</p>
-<pre>cat /etc/hosts</pre>
-<p class="amp-wp-7d27179">It would return with the following –</p>
-<pre>127.0.0.1 localhost
-127.0.1.1 techpiezo-pc
-::1 localhost ip6-localhost ip6-loopback
-ff02::1 ip6-allnodes
-ff02::2 ip6-allrouters</pre>
-<p class="amp-wp-7d27179">here,</p>
-<p class="amp-wp-7d27179">127.0.0.1 is for our localhost (needed for IPv4 capable hosts),</p>
-<p class="amp-wp-7d27179">127.0.1.1 is a fully qualified domain name (FQDN) of the machine we are working on, and</p>
-<pre>::1 localhost ip6-localhost ip6-loopback
-ff02::1 ip6-allnodes
-ff02::2 ip6-allrouters</pre>
-<p class="amp-wp-7d27179">it is also for our localhost (needed for IPv6 capable hosts).</p>
-<p class="amp-wp-7d27179">Now, to edit the /etc/hosts file – issue the following in terminal –</p>
-<pre>sudo nano /etc/hosts</pre>
-<p class="amp-wp-7d27179">replace <strong>nano</strong> with a text-editor of your own choice.</p>
-<p class="amp-wp-7d27179">Append the file and provide the IPv4 address for associated canonical hostname. For instance,</p>
-<pre>XXX.XXX.XXX.XXX &lt;canonical_hostname&gt;</pre>
-<p class="amp-wp-7d27179">Similarly, replace IPv4 addresses with IPv6 addresses to get desired outcome.</p>
-<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have discussed /etc/hosts – hosts file in Ubuntu distribution.</p>
+<h6 class="amp-wp-cdd8ca0">Install Microsoft Teams in Ubuntu 20.04 LTS</h6>
+<p class="amp-wp-7d27179">We need to first visit the <strong>Download page</strong> on official website of Microsoft Teams. Scroll Down the page and click on Linux DEB 64-bit link. This would download the package – <strong>teams_1.3.00.958_amd64.deb</strong>.</p>
+<p class="amp-wp-7d27179">Now, we would use apt or dpkg to install the package.</p>
+<p class="amp-wp-7d27179"><strong>Method I.</strong> Through apt, issue the following in terminal –</p>
+<pre>sudo apt install ./teams_1.3.00.958_amd64.deb</pre>
+<p class="amp-wp-7d27179">This would install Microsoft Teams and package can now be accessed from our Systems’ main menu.</p>
+<p class="amp-wp-7d27179">Here, apt is an Advance Package Tool that handles package installation and removal.</p>
+<p class="amp-wp-7d27179"><strong>Method II.</strong> Through dpkg, issue the following in terminal –</p>
+<pre>sudo dpkg -i teams_1.3.00.958_amd64.deb</pre>
+<p class="amp-wp-7d27179">where,</p>
+<p class="amp-wp-7d27179"><strong>-i</strong> –&gt; installs the package.</p>
+<p class="amp-wp-7d27179">Also, dpkg is package manager for Debian.</p>
+<p class="amp-wp-7d27179">Consequently, package is installed and can be accessed from our Systems’ main menu.</p>
+<p class="amp-wp-7d27179">We can use either of above two methods to install Microsoft Teams.</p>
+<h6 class="amp-wp-cdd8ca0">Remove Microsoft Teams in Ubuntu 20.04 LTS</h6>
+<p class="amp-wp-7d27179">However, if for some reason you chose to remove Microsoft Teams. Then –</p>
+<p>through apt –</p>
+<pre>sudo apt remove teams</pre>
+<p class="amp-wp-7d27179">or, through dpkg –</p>
+<pre>sudo dpkg -r teams</pre>
+<p class="amp-wp-7d27179">where,</p>
+<p class="amp-wp-7d27179"><strong>-r</strong> –&gt; removes the package.</p>
+<p class="amp-wp-7d27179">Any of the aforementioned instructions would work in case of removal of the package.</p>
+<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have discussed how to install and remove Microsoft Teams in Ubuntu 20.04 LTS release.</p>
 	</div>
 
 	<footer class="amp-wp-article-footer">
