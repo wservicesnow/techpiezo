@@ -437,9 +437,11 @@ amp-carousel > amp-img > img {
 
 	<div class="amp-wp-article-content">
 		<p class="amp-wp-7d27179">In this article, we would discuss how to <strong>get a shared folder in QEMU Virtual Machine</strong>. We will consider two scenarios wherein we have to make a shared folder available between –</p>
-<ol class="amp-wp-7d27179"><li><strong>Ubuntu</strong> host and <strong>Debian</strong> guest VM and,</li>
+<ol class="amp-wp-7d27179">
+<li><strong>Ubuntu</strong> host and <strong>Debian</strong> guest VM and,</li>
 <li><strong>Ubuntu</strong> host and <strong>CentOS</strong> guest VM.</li>
-</ol><p class="amp-wp-7d27179">Since we would utilize <strong>QEMU’s built-in SMB server</strong>. Therefore, we will install Samba in our host Operating System i.e. Ubuntu. Then, with the help of <strong>cifs-utils</strong> package – we could get a shared folder in Virtual Machine.</p>
+</ol>
+<p class="amp-wp-7d27179">Since we would utilize <strong>QEMU’s built-in SMB server</strong>. Therefore, we will install Samba in our host Operating System i.e. Ubuntu. Then, with the help of <strong>cifs-utils</strong> package – we could get a shared folder in Virtual Machine.</p>
 <p class="amp-wp-7d27179">Although there are other network protocols like SSH, NFS, HTTP and FTP which could be utilized to share data between host and guest. But, for the purpose of this article, we would stick with Samba/CIFS.</p>
 <p class="amp-wp-7d27179"><strong>Note</strong>: Following operations would require you to have superuser privileges. In case you don’t have one, then contact your System Administrator for assistance.</p>
 <h5 class="amp-wp-cdd8ca0">Install Samba in Ubuntu host Operating System</h5>

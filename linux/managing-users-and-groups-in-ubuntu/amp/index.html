@@ -468,7 +468,8 @@ amp-carousel > amp-img > img {
 <p class="amp-wp-7d27179">We will now be adding a user to a particular group. We can also decide if want that group for the user to be primary or secondary during the process.</p>
 <p class="amp-wp-7d27179">For a user to be a member of other groups in addition to the group he/she is already a part of, we can do that with the help of secondary groups option.</p>
 <pre>sudo usermod -aG &lt;groupname&gt; &lt;username&gt;</pre>
-<p class="amp-wp-7d27179"><strong>-a</strong> is used to append, so that primary group details remain intact<br><strong>-G</strong> is used for secondary group membership</p>
+<p class="amp-wp-7d27179"><strong>-a</strong> is used to append, so that primary group details remain intact<br>
+<strong>-G</strong> is used for secondary group membership</p>
 <p class="amp-wp-7d27179">At times, it is feasible for us to change the primary group of the user itself. To do so, use the following command:</p>
 <pre>sudo usermod -g &lt;groupname&gt; &lt;username&gt;</pre>
 <p class="amp-wp-7d27179">We can also remove a user from a group by <strong>gpasswd</strong> command with<strong> -d</strong> option,</p>

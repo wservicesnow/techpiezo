@@ -429,7 +429,7 @@ amp-carousel > amp-img > img {
 		<h1 class="amp-wp-title">Set permissions on files &#038; directories using chmod in Ubuntu</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
 	<time datetime="2020-02-14T04:45:35+00:00">
-		2 weeks ago	</time>
+		3 weeks ago	</time>
 </div>
 	</header>
 
@@ -444,7 +444,12 @@ amp-carousel > amp-img > img {
 <pre>-rw-rw-r-- 1 user group 6 Feb 14 00:00 ABC.txt</pre>
 <p class="amp-wp-7d27179">With<strong> ls -l</strong> command, we can view the permissions of an object.</p>
 <p class="amp-wp-7d27179">where,</p>
-<p><strong><code>-rw-rw-r--</code></strong> these are the permissions of the object<br><strong>1</strong> represent the link count i.e. total number of hard-links an object has<br><strong>user</strong> – who owns the object<br><strong>group</strong> – group owner of object<br><strong>6 Feb 14 00:00</strong> – last modification date<br><strong>ABC.txt</strong> – object name itself</p>
+<p><strong><code>-rw-rw-r--</code></strong> these are the permissions of the object<br>
+<strong>1</strong> represent the link count i.e. total number of hard-links an object has<br>
+<strong>user</strong> – who owns the object<br>
+<strong>group</strong> – group owner of object<br>
+<strong>6 Feb 14 00:00</strong> – last modification date<br>
+<strong>ABC.txt</strong> – object name itself</p>
 <p class="amp-wp-7d27179">Now, zeroing down on permission set itself. We define permissions for three set of users namely – user, group and rest others. So, in <code><strong>rw-rw-r--</strong></code></p>
 <p><strong><code>rw-</code></strong> first three characters – read &amp; write permissions for user</p>
 <p><strong><code>rw-</code></strong> next three characters – read &amp; write permissions for group</p>
@@ -457,13 +462,17 @@ amp-carousel > amp-img > img {
 chmod u+w ABC.txt
 chmod u+x ABC.txt</pre>
 <p class="amp-wp-7d27179">where,</p>
-<p class="amp-wp-7d27179"><strong>u+r</strong> is to allow a user to read the contents of the object<br><strong>u+w</strong> is to allow a user to make modifications to the object<br><strong>u+x</strong> lets the users to execute the object</p>
+<p class="amp-wp-7d27179"><strong>u+r</strong> is to allow a user to read the contents of the object<br>
+<strong>u+w</strong> is to allow a user to make modifications to the object<br>
+<strong>u+x</strong> lets the users to execute the object</p>
 <p class="amp-wp-7d27179">To<strong> remove permissions for a user, </strong></p>
 <pre>chmod u-r ABC.txt
 chmod u-w ABC.txt
 chmod u-x ABC.txt</pre>
 <p class="amp-wp-7d27179">where,</p>
-<p class="amp-wp-7d27179"><strong>u-r</strong> is to disallow a user to read the contents of the object<br><strong>u-w</strong> is to disallow a user to make modifications to the object<br><strong>u-x</strong> disallows a user to execute the object</p>
+<p class="amp-wp-7d27179"><strong>u-r</strong> is to disallow a user to read the contents of the object<br>
+<strong>u-w</strong> is to disallow a user to make modifications to the object<br>
+<strong>u-x</strong> disallows a user to execute the object</p>
 <p class="amp-wp-7d27179">Similarly, to <strong>add permission for a group</strong> –</p>
 <pre>chmod g+r ABC.txt
 chmod g+w ABC.txt

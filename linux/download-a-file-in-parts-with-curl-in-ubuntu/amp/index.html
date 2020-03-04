@@ -446,7 +446,12 @@ sudo apt install curl</pre>
 <p class="amp-wp-7d27179">First, we will discuss the syntax for the command –</p>
 <pre>curl --range start-stop -o file-name.partn &lt;url&gt;</pre>
 <p class="amp-wp-7d27179">where,</p>
-<p class="amp-wp-7d27179"><strong>curl</strong> is the command-line utility,<br><strong>– – range</strong> specifies the range of the file to be downloaded,<br><strong>start-stop</strong> to define the start and stop byte range,<br><strong>-o</strong> is for output,<br><strong>file-name-n.part</strong> is the output for part file downloaded, and<br><strong>&lt;url&gt;</strong> from where the file gets downloaded.</p>
+<p class="amp-wp-7d27179"><strong>curl</strong> is the command-line utility,<br>
+<strong>– – range</strong> specifies the range of the file to be downloaded,<br>
+<strong>start-stop</strong> to define the start and stop byte range,<br>
+<strong>-o</strong> is for output,<br>
+<strong>file-name-n.part</strong> is the output for part file downloaded, and<br>
+<strong>&lt;url&gt;</strong> from where the file gets downloaded.</p>
 <p class="amp-wp-7d27179">So, it may look like –</p>
 <pre>curl --range 0-499999999 -o xyz.part1 http://&lt;domain-name&gt;/xyz-desktop-amd64.iso</pre>
 <p class="amp-wp-7d27179">This downloads the file size of approximately 475 MBs. We have not chosen the exact file size of 500MBs to make it less tedious.</p>
@@ -460,7 +465,9 @@ sudo apt install curl</pre>
 <p class="amp-wp-7d27179">First, we will discuss the syntax of the command.</p>
 <pre>cat download-file.part &gt; file-name.original</pre>
 <p class="amp-wp-7d27179">where,</p>
-<p class="amp-wp-7d27179"><strong>cat</strong> is the command-line utility used to join files,<br><strong>download-file.part</strong> are parts which we have just downloaded, and<br><strong>file-name.original</strong> the original name of our file.</p>
+<p class="amp-wp-7d27179"><strong>cat</strong> is the command-line utility used to join files,<br>
+<strong>download-file.part</strong> are parts which we have just downloaded, and<br>
+<strong>file-name.original</strong> the original name of our file.</p>
 <p class="amp-wp-7d27179">We will continue with above example to make things more clear.</p>
 <pre>cat xyz.part* &gt; xyz-desktop-amd64.iso</pre>
 <p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have discussed how to download parts of a file with curl and subsequently join them to get the desired output.</p>

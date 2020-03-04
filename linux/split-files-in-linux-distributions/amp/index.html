@@ -440,7 +440,11 @@ amp-carousel > amp-img > img {
 <h4>How to Split larger files</h4>
 <p class="amp-wp-7d27179">Let’s say you have a file <strong>xyz-amd64-DVD-1.iso</strong> of size 3.6 GB and you want to split the<strong> iso</strong> file in smaller pieces of size 500M. To do so, you need to run the following command in terminal,</p>
 <pre>split --bytes=500M xyz-amd64-DVD-1.iso split-file-</pre>
-<p class="amp-wp-7d27179">where,<br><strong>split</strong> – command line utility,<br><strong>–bytes=size</strong> – we define the size of smaller pieces here,<br><strong>xyz-amd64-DVD-1.iso</strong> – is the file that will be split and,<br><strong>split-file-</strong> – prefix for smaller pieces, in case you don’t mention any prefix – default prefix ‘<strong>x</strong>‘ will be used.</p>
+<p class="amp-wp-7d27179">where,<br>
+<strong>split</strong> – command line utility,<br>
+<strong>–bytes=size</strong> – we define the size of smaller pieces here,<br>
+<strong>xyz-amd64-DVD-1.iso</strong> – is the file that will be split and,<br>
+<strong>split-file-</strong> – prefix for smaller pieces, in case you don’t mention any prefix – default prefix ‘<strong>x</strong>‘ will be used.</p>
 <p class="amp-wp-7d27179">The default syntax for the command is,</p>
 <pre>split --bytes=size &lt;file-to-be-split&gt; &lt;prefix-smaller-pieces&gt;</pre>
 <p class="amp-wp-7d27179">When we run the above command, our 3.6 GB file would be split to 8 pieces. Seven of those pieces would of 500M in size and last one would be of just 100M size. The name of files so generated would be split-file-aa, split-file-ab, split-file-ac … split-file-ag.</p>

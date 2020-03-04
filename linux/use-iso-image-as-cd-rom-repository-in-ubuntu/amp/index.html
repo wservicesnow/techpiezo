@@ -438,9 +438,11 @@ amp-carousel > amp-img > img {
 	<div class="amp-wp-article-content">
 		<p class="amp-wp-7d27179">In this article, we would discuss how to add ISO image as CD-ROM repository in Ubuntu distribution. The bootable ISO image of Ubuntu distribution contains hundreds of packages. These packages can be installed either during Ubuntu installation or later. It makes sense not to install all the packages available on CD/DVD beforehand. We can install required packages as and when required.</p>
 <p class="amp-wp-7d27179">To install the required packages; we have two options available –</p>
-<ol class="amp-wp-7d27179"><li>Download packages over internet, or</li>
+<ol class="amp-wp-7d27179">
+<li>Download packages over internet, or</li>
 <li>Fetch them through ISO image.</li>
-</ol><p class="amp-wp-7d27179">Downloading a package over internet is pretty straight-forward. All we need to do is update the repository and then install the relevant packages. For instance, if we want to install Firefox web browser then issue the following in terminal –</p>
+</ol>
+<p class="amp-wp-7d27179">Downloading a package over internet is pretty straight-forward. All we need to do is update the repository and then install the relevant packages. For instance, if we want to install Firefox web browser then issue the following in terminal –</p>
 <pre>sudo apt update
 sudo apt install firefox</pre>
 <p class="amp-wp-7d27179">But, installing a package from CD-ROM requires you to add the repository in <strong>/etc/apt/sources.list</strong> first. Thereafter, we can mount the ISO and fetch the relevant packages. Now, we will discuss each of these operations step-by-step and explain it with examples wherever necessary.</p>

@@ -444,7 +444,8 @@ amp-carousel > amp-img > img {
 <p class="amp-wp-7d27179">We can download any supported Linux distribution ISO image. For the purpose of this article, we downloaded Ubuntu Server 18.04.3 LTS ISO image (<strong>bionic-server-amd64.iso</strong>) from Ubuntu Server download page.</p>
 <h5 class="amp-wp-cdd8ca0">Identify USB disk through lsblk or fdisk</h5>
 <p class="amp-wp-7d27179">Mount your USB disk –</p>
-<ol><li class="amp-wp-7d27179"><strong>Identify USB disk through lsblk</strong> – Open a terminal and issue the following –
+<ol>
+<li class="amp-wp-7d27179"><strong>Identify USB disk through lsblk</strong> – Open a terminal and issue the following –
 <pre>lsblk</pre>
 <p class="amp-wp-7d27179">This would get us the output similar to –</p>
 <pre>NAME   MAJ:MIN RM   SIZE   RO  TYPE   MOUNTPOINT
@@ -476,7 +477,8 @@ Device Boot Start End Sectors Size Id Type
 <p class="amp-wp-7d27179">where,</p>
 <p class="amp-wp-7d27179"><strong>X</strong> – would be a,b,c etc. It would vary for different drives connected and wouldn’t be same all the time.</p>
 </li>
-</ol><h5 class="amp-wp-cdd8ca0">Copy bootable ISO image to the USB disk</h5>
+</ol>
+<h5 class="amp-wp-cdd8ca0">Copy bootable ISO image to the USB disk</h5>
 <p class="amp-wp-7d27179"><strong>Word of caution</strong> – Proceed below only if you have clearly identified your USB disk.</p>
 <p class="amp-wp-7d27179">Now, we will copy our bootable ISO image to USB disk. Hence, head to the directory where our bootable ISO is stored –</p>
 <pre>cd /path/to/ISO/Image/</pre>

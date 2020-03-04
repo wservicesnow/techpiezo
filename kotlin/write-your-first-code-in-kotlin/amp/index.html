@@ -446,7 +446,12 @@ amp-carousel > amp-img > img {
        println("Hello, World!")
 }</pre>
 <p>where,</p>
-<p class="amp-wp-7d27179"><strong>fun</strong> – it means function, just to let compiler know that we are going to call a function.<br><strong>main</strong> – its the function main() which is to be called.<br><strong>args</strong> – is the name of our variable.<br><strong>Array&lt;String&gt;</strong> – tells the compiler that variable args is an Array of type String.<br><strong>println()</strong> – print line function.<br><strong>“Hello, World!”</strong> – the message we would like to print.</p>
+<p class="amp-wp-7d27179"><strong>fun</strong> – it means function, just to let compiler know that we are going to call a function.<br>
+<strong>main</strong> – its the function main() which is to be called.<br>
+<strong>args</strong> – is the name of our variable.<br>
+<strong>Array&lt;String&gt;</strong> – tells the compiler that variable args is an Array of type String.<br>
+<strong>println()</strong> – print line function.<br>
+<strong>“Hello, World!”</strong> – the message we would like to print.</p>
 <p class="amp-wp-7d27179">Save the HelloWorld.kt and exit.</p>
 <p class="amp-wp-7d27179">So far, we have created a file with<strong> .kt extension</strong> and then inserted our code understood by the Kotlin Compiler. Now, we will compile the code with the help of following command –</p>
 <pre>kotlinc HelloWorld.kt</pre>
@@ -474,7 +479,8 @@ Code:
 <p class="amp-wp-7d27179">The executable so produced will include Kotlin run-time library as well as HelloworldKt.class. Thus, eliminating the need to distribute Kotlin run-time along-with<strong> .jar</strong> executable. To make one, run the following in terminal –</p>
 <pre>kotlinc HelloWorld.kt -include-runtime -d HelloWorld.jar</pre>
 <p class="amp-wp-7d27179">where,</p>
-<p class="amp-wp-7d27179"><strong>-include-runtime</strong> – asks the compiler to include Kotlin run-time library to make .jar executable.<br><strong>-d</strong> – for output compiled as .jar executable</p>
+<p class="amp-wp-7d27179"><strong>-include-runtime</strong> – asks the compiler to include Kotlin run-time library to make .jar executable.<br>
+<strong>-d</strong> – for output compiled as .jar executable</p>
 <p class="amp-wp-7d27179">Lastly, run the following to execute .jar file –</p>
 <pre>java -jar HelloWorld.jar</pre>
 <p class="amp-wp-7d27179">This should get us expected output i.e. <strong>Hello, World!</strong></p>

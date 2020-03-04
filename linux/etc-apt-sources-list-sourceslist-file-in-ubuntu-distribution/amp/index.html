@@ -437,9 +437,11 @@ amp-carousel > amp-img > img {
 
 	<div class="amp-wp-article-content">
 		<p class="amp-wp-7d27179">In this article, we would discuss a bit about SourcesList file i.e. <strong>/etc/apt/sources.list</strong> in Ubuntu distribution. There are two components, which are responsible for download and installation of various packages.</p>
-<ol><li class="amp-wp-7d27179"><strong>APT</strong> or <strong>Advanced Package Tool</strong> basically fetches packages available through repositories. Thereafter, the downloaded packages are installed on our system.</li>
+<ol>
+<li class="amp-wp-7d27179"><strong>APT</strong> or <strong>Advanced Package Tool</strong> basically fetches packages available through repositories. Thereafter, the downloaded packages are installed on our system.</li>
 <li class="amp-wp-7d27179"><strong>A repository</strong> – It could be a network server. We can also provide path of Directories/CD/DVD as repository. In a repository, we have organized set of binary and sources packages. The repositories also contains files which have all the information about available packages. So, we could get list of packages available and their versions, information about their maintainers etc. Hence, we could decide what all packages need to be installed on our system.</li>
-</ol><p class="amp-wp-7d27179">Before downloading a package available in a repository, we need to provide the repository location to the Advanced Package Tool. This could be done through <strong>/etc/apt/sources.list</strong> file. It contains the path of all the repositories. Although, we could add a repository through <strong>add-apt-repository</strong> command-line utility which is already explained <span class="amp-wp-cc68ddc"><a href="https://techpiezo.com/linux/add-or-remove-ppas-in-ubuntu-distribution/" class="amp-wp-cc68ddc">here</a></span>. But, for the purpose of this article we would limit ourselves to the editing of <strong>/etc/apt/sources.list</strong> file through a text-editor.</p>
+</ol>
+<p class="amp-wp-7d27179">Before downloading a package available in a repository, we need to provide the repository location to the Advanced Package Tool. This could be done through <strong>/etc/apt/sources.list</strong> file. It contains the path of all the repositories. Although, we could add a repository through <strong>add-apt-repository</strong> command-line utility which is already explained <span class="amp-wp-cc68ddc"><a href="https://techpiezo.com/linux/add-or-remove-ppas-in-ubuntu-distribution/" class="amp-wp-cc68ddc">here</a></span>. But, for the purpose of this article we would limit ourselves to the editing of <strong>/etc/apt/sources.list</strong> file through a text-editor.</p>
 <p class="amp-wp-7d27179">Note: Editing a <strong>/etc/apt/sources.list</strong> file would require you to have superuser privileges. You can’t edit the SourcesList through normal user. Otherwise, you may get the following error –</p>
 <pre>/etc/apt/sources.list permission denied</pre>
 <h5>SourcesList file in Ubuntu distribution</h5>
@@ -453,11 +455,13 @@ deb-src http://&lt;domain-name&gt;/ubuntu/ distribution component1 component2 co
 <p class="amp-wp-7d27179"><strong>distribution</strong> – release of the Ubuntu package, for instance disco</p>
 <p class="amp-wp-7d27179"><strong>component</strong> – these could be free/non-free as per the packages available in repository</p>
 <p class="amp-wp-7d27179">For Ubuntu distribution, we have four components of repositories –</p>
-<ol class="amp-wp-7d27179"><li><strong>Main</strong> – Packages are free/open-source and supported by Canonical.</li>
+<ol class="amp-wp-7d27179">
+<li><strong>Main</strong> – Packages are free/open-source and supported by Canonical.</li>
 <li><strong>Universe</strong> – Package are free/open-source and maintained by community.</li>
 <li><strong>Restricted</strong> – These contain proprietary drivers for various devices.</li>
 <li><strong>Multiverse</strong> – These package are restricted due to legal/copyright issues.</li>
-</ol><p class="amp-wp-7d27179">You could add any or all of the above components in Ubuntu distribution as per your requirements.</p>
+</ol>
+<p class="amp-wp-7d27179">You could add any or all of the above components in Ubuntu distribution as per your requirements.</p>
 <p class="amp-wp-7d27179">Once you make changes to the <strong>/etc/apt/sources.list</strong> file, don’t forget to update the repository. This ensures that information about the packages are updated and you always get the latest version of packages. To update the repository, issue the following in terminal –</p>
 <pre>sudo apt update</pre>
 <p class="amp-wp-7d27179">In conclusion, we have discussed <strong>/etc/apt/sources.list</strong> (SourcesList) file in Ubuntu distribution.</p>

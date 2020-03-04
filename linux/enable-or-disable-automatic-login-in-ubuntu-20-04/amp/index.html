@@ -442,7 +442,8 @@ amp-carousel > amp-img > img {
 <p class="amp-wp-7d27179"><strong>Note</strong>: Following operations would require you to have superuser privileges. In case you don’t have one, then contact your System Administrator for assistance.</p>
 <h5 class="amp-wp-cdd8ca0">Identify default display manager</h5>
 <p class="amp-wp-7d27179">We can identify our default display manager using two methods –</p>
-<ol><li class="amp-wp-7d27179">Open a terminal and issue the following –
+<ol>
+<li class="amp-wp-7d27179">Open a terminal and issue the following –
 <pre>cat /etc/X11/default-display-manager</pre>
 <p class="amp-wp-7d27179">This will return any of the three –</p>
 <p class="amp-wp-7d27179">If its <strong>LightDM</strong> –</p>
@@ -455,7 +456,8 @@ amp-carousel > amp-img > img {
 <li class="amp-wp-7d27179">Or, to know which display manager is active and running –
 <pre>systemctl status display-manager</pre>
 </li>
-</ol><p class="amp-wp-7d27179">Once we have identified our default display manager, make changes to relevant configuration files accordingly.</p>
+</ol>
+<p class="amp-wp-7d27179">Once we have identified our default display manager, make changes to relevant configuration files accordingly.</p>
 <h5 class="amp-wp-cdd8ca0">Enable or Disable automatic login for LightDM</h5>
 <p class="amp-wp-7d27179">To enable automatic login – open a terminal and use any text editor for configuration file –<strong> lightdm.conf</strong></p>
 <p class="amp-wp-7d27179">We have used nano text editor. If the configuration file already exists then edit it. Otherwise, create a new configuration file – <strong>lightdm.conf</strong>.</p>

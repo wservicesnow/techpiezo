@@ -429,7 +429,7 @@ amp-carousel > amp-img > img {
 		<h1 class="amp-wp-title">Raw vs Qcow2 Disk Images in QEMU/KVM</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
 	<time datetime="2019-06-19T18:00:50+00:00">
-		8 months ago	</time>
+		9 months ago	</time>
 </div>
 	</header>
 
@@ -442,15 +442,19 @@ amp-carousel > amp-img > img {
 <h5 class="amp-wp-cdd8ca0">RAW Disk Images</h5>
 <p class="amp-wp-7d27179">Raw disk image format is default format in Qemu.</p>
 <p class="amp-wp-7d27179"><strong>Pros of using RAW Disk Images:</strong></p>
-<ol class="amp-wp-7d27179"><li class="amp-wp-7d27179">It is simple and portable to any other machine.</li>
+<ol class="amp-wp-7d27179">
+<li class="amp-wp-7d27179">It is simple and portable to any other machine.</li>
 <li class="amp-wp-7d27179">It represents default binary format of a hard disk.</li>
 <li class="amp-wp-7d27179">Nearly raw performance then other formats, as it has very little overhead and no metadata and at last,</li>
 <li class="amp-wp-7d27179">Only data written will occupy space, rest of space will be filled with zeros, as it is a sparse file.</li>
-</ol><p class="amp-wp-7d27179"><strong>Cons of using RAW Disk Images:</strong></p>
-<ol class="amp-wp-7d27179"><li class="amp-wp-7d27179">Does not have other features like compression, AES encryption and snapshot.</li>
+</ol>
+<p class="amp-wp-7d27179"><strong>Cons of using RAW Disk Images:</strong></p>
+<ol class="amp-wp-7d27179">
+<li class="amp-wp-7d27179">Does not have other features like compression, AES encryption and snapshot.</li>
 <li class="amp-wp-7d27179">Backup requires full disk-up, as no incremental back-upand at last,</li>
 <li class="amp-wp-7d27179">Deleted files still occupy space and have to be removed.</li>
-</ol><p class="amp-wp-7d27179"><strong>Implementation</strong></p>
+</ol>
+<p class="amp-wp-7d27179"><strong>Implementation</strong></p>
 <pre>qemu-img create -f raw /var/lib/libvirt/images/sample1.img 5G</pre>
 <p class="amp-wp-7d27179"><strong>For Preallocating size</strong></p>
 <pre>qemu-img create -f raw -o preallocation=full /var/lib/libvirt/images/sample1.img 5G</pre>
@@ -459,16 +463,20 @@ amp-carousel > amp-img > img {
 <h5 class="amp-wp-cdd8ca0">qcow2 Disk Images</h5>
 <p class="amp-wp-7d27179">qcow2 is copy on write image disk, where constant size units called clusters compose a file. A cluster holds both data as well as image metadata.</p>
 <p class="amp-wp-7d27179"><strong>Pros of using qcow2 Disk Images:</strong></p>
-<ol class="amp-wp-7d27179"><li class="amp-wp-7d27179">Smaller images are produced, as no sparse file.</li>
+<ol class="amp-wp-7d27179">
+<li class="amp-wp-7d27179">Smaller images are produced, as no sparse file.</li>
 <li class="amp-wp-7d27179">It provides zlib based compression.</li>
 <li class="amp-wp-7d27179">For data security, AES encryption can be used to protect disk image.</li>
 <li class="amp-wp-7d27179">Multiple Virtual Machine snapshots are offered, as incremental back-up.</li>
 <li class="amp-wp-7d27179">Small Cluster Size improve image file size, and larger can be used for better performance and at last,</li>
 <li class="amp-wp-7d27179">Larger Preallocation increases performance as image size increases to grow.</li>
-</ol><p class="amp-wp-7d27179"><strong>Cons of using qcow2 Disk Images:</strong>:</p>
-<ol class="amp-wp-7d27179"><li class="amp-wp-7d27179">Very slight performance loss in comparison to raw disk image, due to metadata, compression and encryption and,</li>
+</ol>
+<p class="amp-wp-7d27179"><strong>Cons of using qcow2 Disk Images:</strong>:</p>
+<ol class="amp-wp-7d27179">
+<li class="amp-wp-7d27179">Very slight performance loss in comparison to raw disk image, due to metadata, compression and encryption and,</li>
 <li class="amp-wp-7d27179">One needs to use fstrim to trim image file, as deleted files does increases image size.</li>
-</ol><p class="amp-wp-7d27179"><strong>Implementation</strong></p>
+</ol>
+<p class="amp-wp-7d27179"><strong>Implementation</strong></p>
 <pre>qemu-img create -f qcow2 /var/lib/libvirt/images/sample1.qcow2 5G</pre>
 <p class="amp-wp-7d27179"><strong>For Cluster size image of 2M</strong></p>
 <pre>qemu-img create -f qcow2 -o cluster_size=2M /var/lib/libvirt/images/sample1.qcow2 5G

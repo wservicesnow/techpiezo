@@ -447,11 +447,13 @@ amp-carousel > amp-img > img {
 <p class="amp-wp-7d27179">where,</p>
 <p class="amp-wp-7d27179"><strong>dmidecode</strong> – it decodes Desktop Management Interface (DMI) table and displays the output in a human-readable format. A Desktop Management Interface provides us a framework to manage our Laptop’s components.</p>
 <p class="amp-wp-7d27179"><strong>-t</strong> option is for DMI types;</p>
-<ol><li class="amp-wp-7d27179">for System;</li>
+<ol>
+<li class="amp-wp-7d27179">for System;</li>
 <li class="amp-wp-7d27179">Baseboard;</li>
 <li class="amp-wp-7d27179">Chassis;</li>
 <li class="amp-wp-7d27179">Processor etc.</li>
-</ol><p>We will explain each of the available DMI types in a separate article in detail.</p>
+</ol>
+<p>We will explain each of the available DMI types in a separate article in detail.</p>
 <p class="amp-wp-7d27179"><strong>| </strong> pipe is used to redirect output of one command to the input of other. If we only issue the command – <code>sudo dmidecode -t 1</code>, then it will print other System information also – <strong>Manufacturer, Product Name, UUID</strong> etc. Since, for the purpose of this article we limit ourselves to extract the serial number. Therefore, we use <strong>grep</strong> command to get the desired information.</p>
 <p class="amp-wp-7d27179"><strong>grep</strong> – it searches and prints the specific pattern in a line.</p>
 <p class="amp-wp-7d27179"><strong>-i</strong> option is used to ignore case.</p>

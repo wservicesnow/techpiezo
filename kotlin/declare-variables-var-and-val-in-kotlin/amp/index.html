@@ -445,9 +445,11 @@ amp-carousel > amp-img > img {
 a=6                  //initialize the variable later</pre>
 <p class="amp-wp-7d27179">If we choose to skip variable declaration and just initialize it. The compiler even then is capable to identify the variable type on its own. We call this mechanism <strong>type inference</strong>.</p>
 <p class="amp-wp-7d27179">Furthermore, there are two references available to us for declaring variables. These are –</p>
-<ol class="amp-wp-7d27179"><li>Immutable References (val keyword) and,</li>
+<ol class="amp-wp-7d27179">
+<li>Immutable References (val keyword) and,</li>
 <li>Mutable References (var keyword).</li>
-</ol><p class="amp-wp-7d27179">For Immutable references (val keyword), the value stored in the variable is considered as read-only. Thus, it is not possible to reference the variable to some other value. In other words, once variable declaration and initialization is done we are not allowed to make further modifications to it. For instance –</p>
+</ol>
+<p class="amp-wp-7d27179">For Immutable references (val keyword), the value stored in the variable is considered as read-only. Thus, it is not possible to reference the variable to some other value. In other words, once variable declaration and initialization is done we are not allowed to make further modifications to it. For instance –</p>
 <pre>val x="Hello"
 val y: Int
 y=24
