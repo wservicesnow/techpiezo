@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="March 4, 2020 7:00 pm" -->
+<!-- generated-on="March 9, 2020 9:05 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>https://techpiezo.com/linux/run-appimage-in-ubuntu-distribution/</loc>
 		<lastmod>2020-02-26T21:17:08+00:00</lastmod>
@@ -102,4 +102,4 @@
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: d15aca21e4026465f8f1ca56e897f109; Queries for sitemap: 28; Total queries: 39; Seconds: 0.01; Memory for sitemap: 0MB; Total memory: 2MB -->
+</urlset><!-- Request ID: 6529236bd22768f03ff4e3f2c45a4d51; Queries for sitemap: 31; Total queries: 42; Seconds: 0.01; Memory for sitemap: 0MB; Total memory: 2MB -->
