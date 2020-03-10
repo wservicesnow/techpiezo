@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="March 10, 2020 10:46 am" -->
+<!-- generated-on="March 10, 2020 7:08 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>https://techpiezo.com/linux/remove-a-package-without-removing-its-dependencies-in-ubuntu/</loc>
 		<lastmod>2019-12-04T21:09:48+00:00</lastmod>
@@ -114,4 +114,4 @@
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: b88a600c1e7212f7302d09020be93918; Queries for sitemap: 62; Total queries: 73; Seconds: 0.04; Memory for sitemap: 0MB; Total memory: 2MB -->
+</urlset><!-- Request ID: d3dd36154d5dbf435d79966aaba26fdd; Queries for sitemap: 62; Total queries: 73; Seconds: 0.03; Memory for sitemap: 2MB; Total memory: 4MB -->
