@@ -429,7 +429,7 @@ amp-carousel > amp-img > img {
 		<h1 class="amp-wp-title">Install LibreOffice in Ubuntu 20.04 LTS</h1>
 		<div class="amp-wp-meta amp-wp-posted-on">
 	<time datetime="2020-03-21T21:17:50+00:00">
-		6 days ago	</time>
+		1 month ago	</time>
 </div>
 	</header>
 
@@ -459,17 +459,17 @@ amp-carousel > amp-img > img {
 <p class="amp-wp-7d27179">Finally, we can access LibreOffice from our Systems’ main menu.</p>
 <p class="amp-wp-7d27179">On the contrary, for other methods discussed below we need to download relevant packages from official website of LibreOffice.</p>
 <p class="amp-wp-7d27179"><strong>Method II.</strong> Through deb packages –</p>
-<p class="amp-wp-7d27179">At first, visit Home page of LibreOffice website. Under <strong>Download</strong> drop-down menu- Click <strong>Download LibreOffice</strong>. Thereafter, choose a version you would like to install and select <strong>Linux (64-bit) (deb)</strong> to download the package. In our case, we downloaded package – <strong>LibreOffice_6.4.2_Linux_x86-64_deb.tar.gz</strong></p>
+<p class="amp-wp-7d27179">At first, visit Home page of LibreOffice website. Under <strong>Download</strong> drop-down menu- Click <strong>Download LibreOffice</strong>. Thereafter, choose a version you would like to install and select <strong>Linux (64-bit) (deb)</strong> to download the package. In our case, we downloaded package – <strong>LibreOffice_6.3.5_Linux_x86-64_deb.tar.gz</strong></p>
 <p class="amp-wp-7d27179">Next, we need to extract the package which can be done through <strong>tar</strong> command-line utility.</p>
 <pre>cd /path/to/package
-tar -xvf LibreOffice_6.4.2_Linux_x86-64_deb.tar.gz</pre>
-<p class="amp-wp-7d27179">This would create a folder <strong>LibreOffice_6.4.2.2_Linux_x86-64_deb/</strong> in current directory.</p>
-<pre>cd LibreOffice_6.4.2.2_Linux_x86-64_deb/DEBS/</pre>
+tar -xvf LibreOffice_6.3.5_Linux_x86-64_deb.tar.gz</pre>
+<p class="amp-wp-7d27179">This would create a folder <strong>LibreOffice_6.3.5.2_Linux_x86-64_deb/</strong> in current directory.</p>
+<pre>cd LibreOffice_6.3.5.2_Linux_x86-64_deb/DEBS/</pre>
 <p class="amp-wp-7d27179">Lastly, to install the packages we will use <strong>dpkg</strong> command-line utility –</p>
 <pre>sudo dpkg - i *.deb</pre>
 <p class="amp-wp-7d27179">We can now access LibreOffice from our Systems’ main menu.</p>
 <p class="amp-wp-7d27179"><strong>Method III.</strong> Through AppImage –</p>
-<p class="amp-wp-7d27179">Visit Home page of LibreOffice website. Under <strong>Download</strong> drop-down menu- Click <strong>LibreOffice as AppImage</strong>. Choose a version which you would like to install. We can download <strong>basic/fresh</strong> version. The package file thus downloaded – <strong>LibreOffice-fresh.basic-x86_64.AppImage</strong></p>
+<p class="amp-wp-7d27179">Visit Home page of LibreOffice website. Under <strong>Download</strong> drop-down menu- Click <strong>LibreOffice as AppImage</strong>. Choose a version which you would like to install. We can download <strong>basic/fresh</strong> version. We can also choose between standard and full version if support for more languages are required apart from English (US). The package file thus downloaded – <strong>LibreOffice-fresh.basic-x86_64.AppImage</strong></p>
 <p class="amp-wp-7d27179">First, we would make the AppImage executable through <strong>chmod</strong> command-line utility. Open a terminal and issue the following –</p>
 <pre>cd /path/to/AppImage
 chmod a+x LibreOffice-fresh.basic-x86_64.AppImage</pre>
