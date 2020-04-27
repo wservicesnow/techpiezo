@@ -454,10 +454,11 @@ amp-carousel > amp-img > img {
 <p class="amp-wp-7d27179">Its of around 13.4 MBs in size. The downloaded file includes NPM version 6.12.0.</p>
 <p class="amp-wp-7d27179">Next, extract the file through <strong>tar</strong> command-line utility.</p>
 <pre>tar -xvf node-v12.13.0-linux-x64.tar.xz</pre>
-<p class="amp-wp-7d27179">It would create a directory <strong>node-v12.13.0-linux-x64</strong> in the current folder.</p>
-<p class="amp-wp-7d27179">Now, we need to the append the following in <strong>~/.bashrc</strong> file –</p>
-<pre>nano ~/.bashrc
-export PATH=/path/to/node-v12.13.0-linux-x64/bin:$PATH</pre>
+<p class="amp-wp-7d27179">It would create a directory <strong>node-v12.13.0-linux-x64/</strong> in the current folder.</p>
+<p class="amp-wp-7d27179">Now, open <strong>~/.bashrc</strong> file using a text editor like nano –</p>
+<pre>nano ~/.bashrc</pre>
+<p>and, append the file with the following –</p>
+<pre>export PATH=/path/to/node-v12.13.0-linux-x64/bin:$PATH</pre>
 <p class="amp-wp-7d27179">where,<strong> /path/to/</strong> should be replaced.</p>
 <p class="amp-wp-7d27179">Lastly, issue the following in terminal to verify –</p>
 <pre>npm -v</pre>
