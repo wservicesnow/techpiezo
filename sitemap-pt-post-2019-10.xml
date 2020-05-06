@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="April 27, 2020 7:55 pm" -->
+<!-- generated-on="May 6, 2020 10:10 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>https://techpiezo.com/linux/install-synaptic-package-manager-in-ubuntu/</loc>
 		<lastmod>2019-12-03T17:02:20+00:00</lastmod>
@@ -120,4 +120,4 @@
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: 4d27843681d6e0e4ab61d27105545b1d; Queries for sitemap: 65; Total queries: 76; Seconds: 0.02; Memory for sitemap: 0MB; Total memory: 2MB -->
+</urlset><!-- Request ID: 6387b69700b0d7adde091bfb022a8579; Queries for sitemap: 65; Total queries: 76; Seconds: 0.02; Memory for sitemap: 0MB; Total memory: 2MB -->
