@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="May 7, 2020 6:48 pm" -->
+<!-- generated-on="May 8, 2020 10:22 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
+		<loc>https://techpiezo.com/java/install-openjdk-jre-jdk-in-ubuntu-20-04-lts/</loc>
+		<lastmod>2020-05-08T22:15:16+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>https://techpiezo.com/linux/install-steam-in-ubuntu-20-04-lts/</loc>
+		<lastmod>2020-05-08T18:13:56+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
 		<loc>https://techpiezo.com/wordpress/install-wordpress-in-ubuntu-20-04-lts/</loc>
 		<lastmod>2020-05-07T18:46:57+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: 368ef719f8ad1298b0c46abf218229a9; Queries for sitemap: 2; Total queries: 13; Seconds: 0; Memory for sitemap: 0MB; Total memory: 4MB -->
+</urlset><!-- Request ID: 7a552d16620f50de19adc0588364ebe2; Queries for sitemap: 2; Total queries: 13; Seconds: 0; Memory for sitemap: 0MB; Total memory: 2MB -->
