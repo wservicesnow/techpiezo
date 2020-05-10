@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="May 9, 2020 10:43 pm" -->
+<!-- generated-on="May 10, 2020 8:01 am" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
+		<loc>https://techpiezo.com/python/install-python-3-8-3-in-ubuntu-20-04-lts/</loc>
+		<lastmod>2020-05-10T07:57:41+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
 		<loc>https://techpiezo.com/linux/install-smplayer-in-ubuntu-20-04-lts/</loc>
 		<lastmod>2020-05-09T22:42:45+00:00</lastmod>
 		<changefreq>monthly</changefreq>
@@ -30,4 +36,4 @@
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: a3e744a31bf0d3de288f8610335f6a0a; Queries for sitemap: 2; Total queries: 13; Seconds: 0; Memory for sitemap: 0MB; Total memory: 2MB -->
+</urlset><!-- Request ID: fff15758d96f6eb238debd7308036c72; Queries for sitemap: 2; Total queries: 13; Seconds: 0.01; Memory for sitemap: 0MB; Total memory: 2MB -->
