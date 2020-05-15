@@ -961,21 +961,21 @@ code, kbd, samp, pre,
 		<figure class="ct-featured-image ct-hidden-sm" ><div class="ct-image-container ct-lazy" ><img class="attachment-full size-full" alt="Install Python 3.8.3 in Ubuntu 20.04 LTS" data-lazy="https://techpiezo.com/wp-content/uploads/2020/05/Install-Python-3-8-3-in-Ubuntu-20-04-LTS.svg" data-object-fit="~" /><noscript><img src="https://techpiezo.com/wp-content/uploads/2020/05/Install-Python-3-8-3-in-Ubuntu-20-04-LTS.svg" class="attachment-full size-full" alt="Install Python 3.8.3 in Ubuntu 20.04 LTS" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
 		
 		<div class="entry-content">
-			<p style="text-align: justify;">Python is an object-oriented, high-level, interpreted programming language. Guido van Rossum is the creator of Python programming language. Now, Python Software Foundation oversee its development. In this article, we would discuss how to install Python 3.8.3 rc1 in Ubuntu 20.04 LTS release.</p>
-<p style="text-align: justify;">It was year 1990, when Python first appeared. At the time of writing, the latest stable release is 3.8.2. However, we do have a release candidate of v3.8.3. Stable maintenance release &#8211; v3.8.3 would be out in few days from now. Next stable maintenance version of Python i.e. v3.8.4 will be available on July 13, 2020.</p>
+			<p style="text-align: justify;">Python is an object-oriented, high-level, interpreted programming language. Guido van Rossum is the creator of Python programming language. Now, Python Software Foundation oversee its development. In this article, we would discuss how to install Python 3.8.3 in Ubuntu 20.04 LTS release.</p>
+<p style="text-align: justify;">It was year 1990, when Python first appeared. At the time of writing, the latest stable release is 3.8.3. Next stable maintenance version of Python i.e. v3.8.4 will be available on July 13, 2020.</p>
 <p style="text-align: justify;">As of now, we already have Python 3.8.2 available in standard Ubuntu repository. To verify for the Python version installed, issue the following in terminal &#8211;</p>
 <pre>python3 -V</pre>
 <p style="text-align: justify;">It would return with &#8211;</p>
 <pre>Python 3.8.2</pre>
 <p style="text-align: justify;"><strong>Note:</strong> Following operations would require you to have superuser privileges. In case you don&#8217;t have one, then contact your System Administrator for assistance.</p>
 <h5 style="text-align: center;">Install Python 3.8.3 in Ubuntu 20.04 LTS</h5>
-<p style="text-align: justify;">First, we need to download the package from the official website of Python. So, on the <strong>Homepage</strong> of <strong>Python&#8217;s website</strong> &#8211;&gt; <strong>Downloads</strong> section &#8211;&gt; Click <strong>All releases</strong>. And, look for <strong>Python 3.8.3rc1</strong> and Click <strong>Download</strong> link against it. <strong>Scroll down the page</strong> and look for <strong>Files</strong> section &#8211; click on link that mentions  &#8211; <strong>Gzipped source tarball</strong>.</p>
-<p style="text-align: justify;">The package we downloaded was &#8211; <strong>Python-3.8.3rc1.tgz</strong> (approximately 23 MBs in size).</p>
+<p style="text-align: justify;">First, we need to download the package from the official website of Python. So, on the <strong>Homepage</strong> of <strong>Python&#8217;s website</strong> &#8211;&gt; <strong>Downloads</strong> drop down menu &#8211;&gt; Click <strong>All releases</strong>. And, look for <strong>Python 3.8.3</strong> and Click <strong>Download</strong> link against it. <strong>Scroll down the page</strong> and look for <strong>Files</strong> section &#8211; click on link that mentions  &#8211; <strong>Gzipped source tarball</strong>.</p>
+<p style="text-align: justify;">The package we downloaded was &#8211; <strong>Python-3.8.3.tgz</strong> (approximately 23 MBs in size).</p>
 <p style="text-align: justify;">Next, use the <strong>tar</strong> command-line utility to extract contents of the package &#8211;</p>
-<pre>tar -xvf Python-3.8.3rc1.tgz</pre>
-<p style="text-align: justify;">It will create <strong>Python-3.8.3rc1/</strong> in the current directory.</p>
+<pre>tar -xvf Python-3.8.3.tgz</pre>
+<p style="text-align: justify;">It will create <strong>Python-3.8.3/</strong> in the current directory.</p>
 <p style="text-align: justify;">Use <strong>cd</strong> command-line utility to get inside the directory &#8211;</p>
-<pre>cd Python-3.8.3rc1/</pre>
+<pre>cd Python-3.8.3/</pre>
 <p style="text-align: justify;">and, issue following commands &#8211;</p>
 <pre>./configure
 make
@@ -987,7 +987,7 @@ make test</pre>
 <p>To verify for the Python version installed &#8211;</p>
 <pre>python3 -V</pre>
 </li>
-<li style="text-align: justify;">Install Python v3.8.3rc1 <strong>alongside</strong> the Python v3.8.2
+<li style="text-align: justify;">Install Python v3.8.3 <strong>alongside</strong> the Python v3.8.2
 <pre>sudo make altinstall</pre>
 <p>To check for Python version &#8211;</p>
 <pre>python3 -V
@@ -998,7 +998,7 @@ python3.8 -V</pre>
 <pre>zipimport.ZipImportError: can't decompress data; zlib not available</pre>
 <p style="text-align: justify;">This was resolved by installing the package &#8211; <strong>zlib1g-dev</strong></p>
 <pre>sudo apt install zlib1g-dev</pre>
-<p style="text-align: justify;"><strong>In conclusion</strong>, we have discussed how to install Python v3.8.3rc1 in Ubuntu 20.04 LTS release.</p>
+<p style="text-align: justify;"><strong>In conclusion</strong>, we have discussed how to install Python v3.8.3 in Ubuntu 20.04 LTS release.</p>
 		</div>
 
 		
