@@ -375,7 +375,7 @@
   <path
      id="rect6108"
      d="M 0,0 H 444.5 V 277.8125 H 0 Z"
-     style="opacity:1;fill:url(#radialGradient969);fill-opacity:1;stroke:none;stroke-width:9.70262337;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke markers fill" />
+     style="opacity:1;fill:#0090e6;fill-opacity:1;stroke:none;stroke-width:9.70262337;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke markers fill" />
   <g
      id="flowRoot1110"
      style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
@@ -668,9 +668,7 @@
      id="flowRoot177"
      style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none"
      transform="matrix(0.82575119,0,0,1.2365015,-363.38967,-181.7782)"
-     aria-label="Install
-SageMath
-in Ubuntu 20.04">
+     aria-label="Install SageMath in Ubuntu 20.04">
     <path
        id="path189"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'EB Garamond';-inkscape-font-specification:'EB Garamond Bold';text-align:center;text-anchor:middle;fill:#ffffff"
