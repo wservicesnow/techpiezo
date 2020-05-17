@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="May 16, 2020 1:56 pm" -->
+<!-- generated-on="May 17, 2020 10:05 am" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>https://techpiezo.com/linux/change-time-zone-in-ubuntu-20-04-lts/</loc>
 		<lastmod>2020-05-16T07:35:28+00:00</lastmod>
@@ -60,4 +60,4 @@
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: 08cf68c98be0b6331616ee1a348e5c6b; Queries for sitemap: 2; Total queries: 13; Seconds: 0; Memory for sitemap: 0MB; Total memory: 2MB -->
+</urlset><!-- Request ID: ef91c3ea20b8e663ff08cf050622a8e9; Queries for sitemap: 2; Total queries: 13; Seconds: 0; Memory for sitemap: 0MB; Total memory: 2MB -->

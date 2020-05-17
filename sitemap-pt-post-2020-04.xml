@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="May 16, 2020 1:56 pm" -->
+<!-- generated-on="May 17, 2020 10:05 am" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>https://techpiezo.com/wordpress/install-wordpress-in-ubuntu-20-04-through-apt/</loc>
 		<lastmod>2020-05-07T16:24:31+00:00</lastmod>
@@ -36,4 +36,4 @@
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: c73d71aae387d6a31a8813d17ef49985; Queries for sitemap: 23; Total queries: 34; Seconds: 0.01; Memory for sitemap: 0MB; Total memory: 2MB -->
+</urlset><!-- Request ID: 4a89a0b650d5d72ef11093f68108dbf2; Queries for sitemap: 23; Total queries: 34; Seconds: 0.01; Memory for sitemap: 0MB; Total memory: 2MB -->
