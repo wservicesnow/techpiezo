@@ -409,7 +409,7 @@ amp-carousel > amp-img > img {
 	right: 16px;
 }
 		/* Inline stylesheets */
-:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cdd8ca0{text-align:center}	</style>
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cdd8ca0{text-align:center}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}	</style>
 </head>
 
 <body class="">
@@ -436,16 +436,17 @@ amp-carousel > amp-img > img {
 	
 
 	<div class="amp-wp-article-content">
-		<p class="amp-wp-7d27179">Anbox package utilizes a LXC container-based approach to run Android Applications in Ubuntu or any other Linux distribution. With LXC containers, we could run multiple instances of Linux environment on host Linux Kernel. In this article, we would discuss how to install Anbox in Ubuntu. There are two options available to run Android Apps on Ubuntu –</p>
+		<h5 class="amp-wp-cdd8ca0">Below article is applicable for those using Ubuntu version 14.04 to 19.04</h5>
+<p class="amp-wp-7d27179"><strong>Anbox</strong> package utilizes a LXC container-based approach to run Android Applications in Ubuntu or any other Linux distribution. With LXC containers, we could run multiple instances of Linux environment on host Linux Kernel. In this article, we would discuss how to install Anbox in Ubuntu. There are two options available to run Android Apps on Ubuntu –</p>
 <p class="amp-wp-7d27179">1. Container-based Anbox and,<br>
 2. Android-x86 on VirtualBox.</p>
+<p class="amp-wp-7d27179"><strong>Note:</strong> Following operations would require you to have superuser privileges. In case you don’t have one then contact your System Administrator for assistance.</p>
 <h4 class="amp-wp-cdd8ca0">Install Anbox in Ubuntu</h4>
-<p class="amp-wp-7d27179">Firstly, you need superuser privileges to complete installation process. If you don’t have one then contact your system administrator for assistance.</p>
-<p class="amp-wp-7d27179">We would start by installing Anbox from standard Ubuntu repository –</p>
+<p>We would start by installing Anbox from standard Ubuntu repository –</p>
 <pre>sudo apt update
 sudo apt install anbox</pre>
-<p class="amp-wp-7d27179">This would install anbox and related dependencies. Next, we would have to download a pre-build Android image for Anbox from its official website.</p>
-<p class="amp-wp-7d27179">Now, move the downloaded <strong>.img</strong> file to the folder –<strong> /var/lib/anbox/android.img</strong>. Note: It is important to rename the file <strong>android_amd64.img to android.img</strong>.</p>
+<p>This would install anbox and related dependencies. Next, we would have to download a pre-build Android image (Google search – <strong>build anbox io</strong>) for Anbox from its official website.</p>
+<p>Now, move the downloaded <strong>.img</strong> file to the folder –<strong> /var/lib/anbox/android.img</strong>. Note: It is important to rename the file <strong>android_amd64.img to android.img</strong>.</p>
 <p class="amp-wp-7d27179">Next, download and install two kernel modules – <strong>Binder</strong> and <strong>Ashmem</strong>. These two kernel-based modules are already available since Debian kernel 4.17. So, skip installation of these modules for Debian. For Ubuntu, the kernel modules can be installed through PPAs (Personal Package Archives) –</p>
 <pre>sudo add-apt-repository ppa:morphis/anbox-support
 sudo apt update

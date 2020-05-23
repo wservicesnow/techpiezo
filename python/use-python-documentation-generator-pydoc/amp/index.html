@@ -1,0 +1,497 @@
+<!doctype html>
+<html amp lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+		<title>Use Python documentation generator - pydoc - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/python/use-python-documentation-generator-pydoc/" />
+	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
+<script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+	<meta name="generator" content="AMP Plugin v1.1.1; mode=reader">
+	<style amp-custom>
+		/* Generic WP styling */
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
+.aligncenter {
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.amp-wp-enforced-sizes {
+	/** Our sizes fallback is 100vw, and we have a padding on the container; the max-width here prevents the element from overflowing. **/
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+
+/*
+ * Prevent cases of amp-img converted from img to appear with stretching by using object-fit to scale.
+ * See <https://github.com/ampproject/amphtml/issues/21371#issuecomment-475443219>.
+ * Also use object-fit:contain in worst case scenario when we can't figure out dimensions for an image.
+ */
+amp-img.amp-wp-enforced-sizes[layout=intrinsic] > img,
+.amp-wp-unknown-size > img {
+	object-fit: contain;
+}
+
+amp-fit-text blockquote,
+amp-fit-text h1,
+amp-fit-text h2,
+amp-fit-text h3,
+amp-fit-text h4,
+amp-fit-text h5,
+amp-fit-text h6 {
+	font-size: inherit;
+}
+
+/**
+ * Override a style rule in Twenty Sixteen and Twenty Seventeen.
+ * It set display:none for audio elements.
+ * This selector is the same, though it adds body and uses amp-audio instead of audio.
+ */
+body amp-audio:not([controls]) {
+	display: inline-block;
+	height: auto;
+}
+
+/* Template Styles */
+
+.amp-wp-content,
+.amp-wp-title-bar div {
+		margin: 0 auto;
+	max-width: 640px;
+	}
+
+html {
+	background: #191e23;
+}
+
+body {
+	background: #fff;
+	color: #353535;
+	font-family: Georgia, 'Times New Roman', Times, Serif;
+	font-weight: 300;
+	line-height: 1.75em;
+}
+
+p,
+ol,
+ul,
+figure {
+	margin: 0 0 1em;
+	padding: 0;
+}
+
+a,
+a:visited {
+	color: #191e23;
+}
+
+a:hover,
+a:active,
+a:focus {
+	color: #353535;
+}
+
+/* Quotes */
+
+blockquote {
+	color: #353535;
+	background: rgba(127,127,127,.125);
+	border-left: 2px solid #191e23;
+	margin: 8px 0 24px 0;
+	padding: 16px;
+}
+
+blockquote p:last-child {
+	margin-bottom: 0;
+}
+
+/* UI Fonts */
+
+.amp-wp-meta,
+.amp-wp-header div,
+.amp-wp-title,
+.wp-caption-text,
+.amp-wp-tax-category,
+.amp-wp-tax-tag,
+.amp-wp-comments-link,
+.amp-wp-footer p,
+.back-to-top {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+}
+
+/* Header */
+
+.amp-wp-header {
+	background-color: #191e23;
+}
+
+.amp-wp-header div {
+	color: #ffffff;
+	font-size: 1em;
+	font-weight: 400;
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: .875em 16px;
+	position: relative;
+}
+
+.amp-wp-header a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+
+.amp-wp-header .amp-wp-site-icon {
+	/** site icon is 32px **/
+	background-color: #ffffff;
+	border: 1px solid #ffffff;
+	border-radius: 50%;
+	position: absolute;
+	right: 18px;
+	top: 10px;
+}
+
+/* Article */
+
+.amp-wp-article {
+	color: #353535;
+	font-weight: 400;
+	margin: 1.5em auto;
+	max-width: 840px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+/* Article Header */
+
+.amp-wp-article-header {
+	align-items: center;
+	align-content: stretch;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 1.5em 16px 0;
+}
+
+.amp-wp-title {
+	color: #353535;
+	display: block;
+	flex: 1 0 100%;
+	font-weight: 900;
+	margin: 0 0 .625em;
+	width: 100%;
+}
+
+/* Article Meta */
+
+.amp-wp-meta {
+	color: #696969;
+	display: inline-block;
+	flex: 2 1 50%;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0 0 1.5em;
+	padding: 0;
+}
+
+.amp-wp-article-header .amp-wp-meta:last-of-type {
+	text-align: right;
+}
+
+.amp-wp-article-header .amp-wp-meta:first-of-type {
+	text-align: left;
+}
+
+.amp-wp-byline amp-img,
+.amp-wp-byline .amp-wp-author {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.amp-wp-byline amp-img {
+	border: 1px solid #191e23;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 6px;
+}
+
+.amp-wp-posted-on {
+	text-align: right;
+}
+
+/* Featured image */
+
+.amp-wp-article-featured-image {
+	margin: 0 0 1em;
+}
+.amp-wp-article-featured-image amp-img {
+	margin: 0 auto;
+}
+.amp-wp-article-featured-image.wp-caption .wp-caption-text {
+	margin: 0 18px;
+}
+
+/* Article Content */
+
+.amp-wp-article-content {
+	margin: 0 16px;
+}
+
+.amp-wp-article-content ul,
+.amp-wp-article-content ol {
+	margin-left: 1em;
+}
+
+.amp-wp-article-content .wp-caption {
+	max-width: 100%;
+}
+
+.amp-wp-article-content amp-img {
+	margin: 0 auto;
+}
+
+.amp-wp-article-content amp-img.alignright {
+	margin: 0 0 1em 16px;
+}
+
+.amp-wp-article-content amp-img.alignleft {
+	margin: 0 16px 1em 0;
+}
+
+/* Captions */
+
+.wp-caption {
+	padding: 0;
+}
+
+.wp-caption.alignleft {
+	margin-right: 16px;
+}
+
+.wp-caption.alignright {
+	margin-left: 16px;
+}
+
+.wp-caption .wp-caption-text {
+	border-bottom: 1px solid #c2c2c2;
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: .66em 10px .75em;
+}
+
+/* AMP Media */
+
+.alignwide,
+.alignfull {
+	clear: both;
+}
+
+amp-carousel {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+amp-iframe,
+amp-youtube,
+amp-instagram,
+amp-vine {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+
+.amp-wp-article-content amp-carousel amp-img {
+	border: none;
+}
+
+amp-carousel > amp-img > img {
+	object-fit: contain;
+}
+
+.amp-wp-iframe-placeholder {
+	background: #c2c2c2 url( https://techpiezo.com/wp-content/plugins/amp/assets/images/placeholder-icon.png ) no-repeat center 40%;
+	background-size: 48px 48px;
+	min-height: 48px;
+}
+
+/* Article Footer Meta */
+
+.amp-wp-article-footer .amp-wp-meta {
+	display: block;
+}
+
+.amp-wp-tax-category,
+.amp-wp-tax-tag {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 1.5em 16px;
+}
+
+.amp-wp-comments-link {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	text-align: center;
+	margin: 2.25em 0 1.5em;
+}
+
+.amp-wp-comments-link a {
+	border-style: solid;
+	border-color: #c2c2c2;
+	border-width: 1px 1px 2px;
+	border-radius: 4px;
+	background-color: transparent;
+	color: #191e23;
+	cursor: pointer;
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	margin: 0 auto;
+	max-width: 200px;
+	padding: 11px 16px;
+	text-decoration: none;
+	width: 50%;
+	-webkit-transition: background-color 0.2s ease;
+			transition: background-color 0.2s ease;
+}
+
+/* AMP Footer */
+
+.amp-wp-footer {
+	border-top: 1px solid #c2c2c2;
+	margin: calc(1.5em - 1px) 0 0;
+}
+
+.amp-wp-footer div {
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: 1.25em 16px 1.25em;
+	position: relative;
+}
+
+.amp-wp-footer h2 {
+	font-size: 1em;
+	line-height: 1.375em;
+	margin: 0 0 .5em;
+}
+
+.amp-wp-footer p {
+	color: #696969;
+	font-size: .8em;
+	line-height: 1.5em;
+	margin: 0 85px 0 0;
+}
+
+.amp-wp-footer a {
+	text-decoration: none;
+}
+
+.back-to-top {
+	bottom: 1.275em;
+	font-size: .8em;
+	font-weight: 600;
+	line-height: 2em;
+	position: absolute;
+	right: 16px;
+}
+		/* Inline stylesheets */
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cdd8ca0{text-align:center}	</style>
+</head>
+
+<body class="">
+
+<header id="top" class="amp-wp-header">
+	<div>
+		<a href="https://techpiezo.com/">
+												<span class="amp-site-title">
+				TechPiezo			</span>
+		</a>
+
+					</div>
+</header>
+
+<article class="amp-wp-article">
+	<header class="amp-wp-article-header">
+		<h1 class="amp-wp-title">Use Python documentation generator &#8211; pydoc</h1>
+		<div class="amp-wp-meta amp-wp-posted-on">
+	<time datetime="2020-05-23T02:50:00+00:00">
+		6 hours ago	</time>
+</div>
+	</header>
+
+	
+
+	<div class="amp-wp-article-content">
+		<p class="amp-wp-7d27179"><strong>pydoc</strong> is a Python documentation generator. The module basically generates documentation from other Python modules. We can run the module directly from terminal in Ubuntu. In this article, we would discuss how to <strong>use Python documentation generator</strong> – pydoc.</p>
+<p class="amp-wp-7d27179">The functionality of <strong>pydoc</strong> is pretty similar to the <strong>man</strong> command-line utility in Ubuntu. Even the built-in <strong>help()</strong> function in Python uses <strong>pydoc</strong> module to generate the documentation.</p>
+<p class="amp-wp-7d27179">Furthermore, it primarily derives documentation from various modules through <strong>docstring</strong> and (in case docstring isn’t present) <strong>block of comments line</strong> in source file.</p>
+<h5 class="amp-wp-cdd8ca0">Use pydoc – documentation generator</h5>
+<p class="amp-wp-7d27179">In this section, we would discuss various options available with <strong>pydoc3</strong> command-line utility.</p>
+<p class="amp-wp-7d27179"><strong>Firstly</strong>, we would start with writing out an <strong>html</strong> file for the module. Hence, issue the following in terminal –</p>
+<pre>pydoc3 -w &lt;module_name/package_name&gt;</pre>
+<p class="amp-wp-7d27179">For instance,</p>
+<pre>pydoc3 -w math</pre>
+<p class="amp-wp-7d27179">It would save <code>math.html</code> in current directory.</p>
+<p class="amp-wp-7d27179"><strong>Secondly</strong>, search for a particular keyword –</p>
+<pre>pydoc3 -k &lt;search_term&gt;</pre>
+<p class="amp-wp-7d27179">It will provide us a list of modules which contain the <strong>&lt;search_term&gt;</strong>. Herein, it will only look for synopsis lines of available modules.</p>
+<p class="amp-wp-7d27179">For instance,</p>
+<pre>pydoc3 -k math</pre>
+<p class="amp-wp-7d27179">The output in the terminal may resemble –</p>
+<pre>test.test_cmath 
+test.test_math 
+cmath 
+math</pre>
+<p class="amp-wp-7d27179"><strong>Thirdly</strong>, to make the documentation available of all the modules/package inside a web browser –</p>
+<pre>pydoc3 -b</pre>
+<p class="amp-wp-7d27179">Once you quit the web browser, it will display the following in terminal –</p>
+<pre>server&gt;</pre>
+<p class="amp-wp-7d27179">Press <strong>b</strong> to launch browser again, or <strong>q</strong> to quit.</p>
+<p class="amp-wp-7d27179"><strong>Fourthly</strong>, to start an HTTP server on a particular port –</p>
+<pre>pydoc3 -p &lt;port_number&gt;</pre>
+<p class="amp-wp-7d27179">It will start an HTTP server and ask us to launch a web browser. Press <strong>b</strong> to launch browser, or<strong> q</strong> to quit.</p>
+<p class="amp-wp-7d27179">Alternately, we can also access the documentation through the web browser directly after we have run the above command in terminal. Type the following in address bar of our web browser –</p>
+<pre>http://localhost:&lt;port_number&gt;</pre>
+<p class="amp-wp-7d27179">For instance,</p>
+<pre>pydoc3 -p 9999</pre>
+<p class="amp-wp-7d27179">and, in web browser –</p>
+<pre>http://localhost:9999/</pre>
+<p class="amp-wp-7d27179"><strong>Lastly</strong>, to generate the documentation in terminal itself of a particular module –</p>
+<pre>pydoc3 &lt;module_name&gt;</pre>
+<p class="amp-wp-7d27179">For instance,</p>
+<pre>pydoc3 math</pre>
+<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have discussed how to generate Python documentation using pydoc module.</p>
+	</div>
+
+	<footer class="amp-wp-article-footer">
+			<div class="amp-wp-meta amp-wp-tax-category">
+		Categories: <a href="https://techpiezo.com/python/" rel="category tag">Python</a>	</div>
+
+	</footer>
+</article>
+
+<footer class="amp-wp-footer">
+	<div>
+		<h2>TechPiezo</h2>
+		<a href="#top" class="back-to-top">Back to top</a>
+	</div>
+</footer>
+
+
+<amp-analytics id="cf19fba03007" type="ampanalytics"><script type="application/json">{"vars":{"gtag_id":"UA-135581354-3","config":{"UA-135581354-3":{"groups":"default"}}}}</script></amp-analytics>
+</body>
+</html>
