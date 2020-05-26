@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="May 23, 2020 2:38 pm" -->
+<!-- generated-on="May 26, 2020 1:53 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>https://techpiezo.com/</loc>
-		<lastmod>2020-05-23T14:36:26+00:00</lastmod>
+		<lastmod>2020-05-26T13:51:41+00:00</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>
-</urlset><!-- Request ID: 91e7a2c9b88f5fc87661375345de1481; Queries for sitemap: 3; Total queries: 14; Seconds: 0; Memory for sitemap: 0MB; Total memory: 4MB -->
+</urlset><!-- Request ID: c4456cb59072c817603eb43395df6116; Queries for sitemap: 3; Total queries: 14; Seconds: 0; Memory for sitemap: 0MB; Total memory: 2MB -->
