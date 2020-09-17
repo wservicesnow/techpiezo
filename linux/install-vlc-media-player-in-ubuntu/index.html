@@ -1005,7 +1005,8 @@ sudo apt-get --no-install-recommends build-dep vlc</pre>
 <pre>sudo apt-get --no-install-recommends build-dep vlc</pre>
 <p style="text-align: justify;">Then, you will asked to install the required library files. Hence, you will encounter following errors/warnings while configuring VLC Media Player &#8211;</p>
 <p style="text-align: justify;"><strong>Error 1:</strong></p>
-<pre>configure: error: Could not find lua. Lua is needed for some interfaces (rc, telnet, http) as well as many other custom scripts. Use --disable-lua to ignore this error.</pre>
+<pre>configure: error: Could not find lua. Lua is needed for some interfaces (rc, telnet, http) as well as many other custom scripts.</pre>
+<pre>Use --disable-lua to ignore this error.</pre>
 <p><strong>Solution 1:</strong></p>
 <pre>sudo apt install lua5.2 liblua5.2-dev</pre>
 <p style="text-align: justify;"><strong>Error 2:</strong></p>
@@ -1025,11 +1026,13 @@ sudo apt-get --no-install-recommends build-dep vlc</pre>
 <p style="text-align: justify;"><strong>Solution 5:</strong></p>
 <pre>sudo apt install libavformat-dev</pre>
 <p style="text-align: justify;"><strong>Error 6:</strong></p>
-<pre>configure: error: No package 'libswscale' found. Pass --disable-swscale to ignore this error. Proper software scaling and some video chroma conversion will be missing.</pre>
+<pre>configure: error: No package 'libswscale' found. Pass --disable-swscale to ignore this error.</pre>
+<pre>Proper software scaling and some video chroma conversion will be missing.</pre>
 <p style="text-align: justify;"><strong>Solution 6:</strong></p>
 <pre>sudo apt install libswscale-dev</pre>
 <p style="text-align: justify;"><strong>Error 7:</strong></p>
-<pre>configure: error: Could not find liba52 on your system: you may get it from <em>weblink</em>. Alternatively you can use --disable-a52 to disable the a52 plugin.</pre>
+<pre>configure: error: Could not find liba52 on your system: you may get it from <em>weblink</em>.</pre>
+<pre>Alternatively you can use --disable-a52 to disable the a52 plugin.</pre>
 <p style="text-align: justify;"><strong>Solution 7:</strong></p>
 <pre>sudo apt install liba52-0.7.4-dev</pre>
 <p style="text-align: justify;"><strong>Error 8:</strong></p>
