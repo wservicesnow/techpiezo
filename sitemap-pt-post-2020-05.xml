@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="September 17, 2020 2:43 am" -->
+<!-- generated-on="September 19, 2020 5:41 am" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>https://techpiezo.com/rust/install-rust-in-ubuntu-20-04-lts/</loc>
 		<lastmod>2020-05-26T13:51:41+00:00</lastmod>
@@ -78,4 +78,4 @@
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: af8c5793a6351e1d875c54e709dbeccc; Queries for sitemap: 17; Total queries: 28; Seconds: 0.01; Memory for sitemap: 0MB; Total memory: 2MB -->
+</urlset><!-- Request ID: 8c4e6134faf49d131c5025a23168ab95; Queries for sitemap: 17; Total queries: 28; Seconds: 0.01; Memory for sitemap: 0MB; Total memory: 2MB -->

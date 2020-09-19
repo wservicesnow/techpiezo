@@ -457,9 +457,13 @@ amp-carousel > amp-img > img {
 <pre>tar -xvf vlc-3.0.8.tar.xz</pre>
 <p class="amp-wp-7d27179">All the compressed files will be extracted in directory – <strong>vlc-3.0.8</strong></p>
 <p class="amp-wp-7d27179">Thereafter, install few related dependencies –</p>
-<pre>sudo apt-get install git build-essential pkg-config libtool automake autopoint gettext
+<pre>sudo apt-get install git build-essential 
+sudo apt-get install pkg-config libtool automake 
+sudo apt-get install autopoint gettext
 
-sudo apt-get install libxcb-shm0-dev libxcb-xv0-dev libxcb-keysyms1-dev libxcb-randr0-dev libxcb-composite0-dev
+sudo apt-get install libxcb-shm0-dev libxcb-xv0-dev 
+sudo apt-get install libxcb-keysyms1-dev libxcb-randr0-dev 
+sudo apt-get install libxcb-composite0-dev
 
 sudo apt-get --no-install-recommends build-dep vlc</pre>
 <p class="amp-wp-7d27179">Next, we will configure VLC –</p>
@@ -478,142 +482,107 @@ sudo apt-get --no-install-recommends build-dep vlc</pre>
 <pre>sudo apt-get --no-install-recommends build-dep vlc</pre>
 <p class="amp-wp-7d27179">Then, you will asked to install the required library files. Hence, you will encounter following errors/warnings while configuring VLC Media Player –</p>
 <p class="amp-wp-7d27179"><strong>Error 1:</strong></p>
-<pre>configure: error: Could not find lua. Lua is needed for some interfaces (rc, telnet, http) as well as many other custom scripts.</pre>
-<pre>Use --disable-lua to ignore this error.</pre>
+<p>configure: error: Could not find lua. Lua is needed for some interfaces (rc, telnet, http) as well as many other custom scripts.</p>
+<p>Use –disable-lua to ignore this error.</p>
 <p><strong>Solution 1:</strong></p>
 <pre>sudo apt install lua5.2 liblua5.2-dev</pre>
 <p class="amp-wp-7d27179"><strong>Error 2:</strong></p>
-<pre>configure: WARNING: Library libmpg123 needed for mpg123 was not found</pre>
+<p>configure: WARNING: Library libmpg123 needed for mpg123 was not found</p>
 <p class="amp-wp-7d27179"><strong>Solution 2:</strong></p>
 <pre>sudo apt install libmpg123-dev</pre>
 <p class="amp-wp-7d27179"><strong>Error 3:</strong></p>
-<pre>configure: WARNING: No package 'gstreamer-app-1.0' found. GStreamer modules will not be built.</pre>
+<p>configure: WARNING: No package ‘gstreamer-app-1.0’ found. GStreamer modules will not be built.</p>
 <p class="amp-wp-7d27179"><strong>Solution 3:</strong></p>
 <pre>sudo apt install libgstreamer-plugins-base1.0-dev</pre>
 <p class="amp-wp-7d27179"><strong>Error 4:</strong></p>
-<pre>configure: error: Missing libav or FFmpeg. Pass --disable-avcodec to ignore this error.</pre>
+<p>configure: error: Missing libav or FFmpeg. Pass –disable-avcodec to ignore this error.</p>
 <p class="amp-wp-7d27179"><strong>Solution 4:</strong></p>
 <pre>sudo apt install libavcodec-dev</pre>
 <p class="amp-wp-7d27179"><strong>Error 5:</strong></p>
-<pre>configure: error: No package 'libavformat' found. Pass --disable-avformat to ignore this error.</pre>
+<p>configure: error: No package ‘libavformat’ found. Pass –disable-avformat to ignore this error.</p>
 <p class="amp-wp-7d27179"><strong>Solution 5:</strong></p>
 <pre>sudo apt install libavformat-dev</pre>
 <p class="amp-wp-7d27179"><strong>Error 6:</strong></p>
-<pre>configure: error: No package 'libswscale' found. Pass --disable-swscale to ignore this error.</pre>
-<pre>Proper software scaling and some video chroma conversion will be missing.</pre>
+<p>configure: error: No package ‘libswscale’ found. Pass –disable-swscale to ignore this error.</p>
+<p>Proper software scaling and some video chroma conversion will be missing.</p>
 <p class="amp-wp-7d27179"><strong>Solution 6:</strong></p>
 <pre>sudo apt install libswscale-dev</pre>
 <p class="amp-wp-7d27179"><strong>Error 7:</strong></p>
-<pre>configure: error: Could not find liba52 on your system: you may get it from <em>weblink</em>.</pre>
-<pre>Alternatively you can use --disable-a52 to disable the a52 plugin.</pre>
+<p>configure: error: Could not find liba52 on your system: you may get it from <em>weblink</em>.</p>
+<p>Alternatively you can use –disable-a52 to disable the a52 plugin.</p>
 <p class="amp-wp-7d27179"><strong>Solution 7:</strong></p>
 <pre>sudo apt install liba52-0.7.4-dev</pre>
 <p class="amp-wp-7d27179"><strong>Error 8:</strong></p>
-<pre>configure: error: Package requirements (xcb-shm) were not met:
-
-No package 'xcb-shm' found
-
-Consider adjusting the PKG_CONFIG_PATH environment variable if you
-
-installed software in a non-standard prefix.
-
-Alternatively, you may set the environment variables XCB_SHM_CFLAGS
-
-and XCB_SHM_LIBS to avoid the need to call pkg-config.
-
-See the pkg-config man page for more details.</pre>
+<p>configure: error: Package requirements (xcb-shm) were not met: No package ‘xcb-shm’ found</p>
+<p>Consider adjusting the PKG_CONFIG_PATH environment variable if you installed software in a non-standard prefix.</p>
+<p>Alternatively, you may set the environment variables XCB_SHM_CFLAGS and XCB_SHM_LIBS to avoid the need to call pkg-config.</p>
+<p>See the pkg-config man page for more details.</p>
 <p class="amp-wp-7d27179"><strong>Solution 8:</strong></p>
 <pre>sudo apt install libxcb-shm0-dev</pre>
 <p class="amp-wp-7d27179"><strong>Error 9:</strong></p>
-<pre>configure: error: Package requirements (xcb-composite) were not met:
-
-No package 'xcb-composite' found
-
-Consider adjusting the PKG_CONFIG_PATH environment variable if you
-
-installed software in a non-standard prefix.
-
-Alternatively, you may set the environment variables XCB_COMPOSITE_CFLAGS
-
-and XCB_COMPOSITE_LIBS to avoid the need to call pkg-config.
-
-See the pkg-config man page for more details</pre>
+<p>configure: error: Package requirements (xcb-composite) were not met: No package ‘xcb-composite’ found</p>
+<p>Consider adjusting the PKG_CONFIG_PATH environment variable if you installed software in a non-standard prefix.</p>
+<p>Alternatively, you may set the environment variables XCB_COMPOSITE_CFLAGS and XCB_COMPOSITE_LIBS to avoid the need to call pkg-config.</p>
+<p>See the pkg-config man page for more details</p>
 <p><strong>Solution 9:</strong></p>
 <pre>sudo apt install libxcb-composite0-dev</pre>
 <p class="amp-wp-7d27179"><strong>Error 10:</strong></p>
-<pre>configure: error: Package requirements (xcb-xv &gt;= 1.1.90.1) were not met:
-
-No package 'xcb-xv' found
-
-Consider adjusting the PKG_CONFIG_PATH environment variable if you
-
-installed software in a non-standard prefix.
-
-Alternatively, you may set the environment variables XCB_XV_CFLAGS
-
-and XCB_XV_LIBS to avoid the need to call pkg-config.
-
-See the pkg-config man page for more details.</pre>
+<p>configure: error: Package requirements (xcb-xv &gt;= 1.1.90.1) were not met: No package ‘xcb-xv’ found</p>
+<p>Consider adjusting the PKG_CONFIG_PATH environment variable if you installed software in a non-standard prefix.</p>
+<p>Alternatively, you may set the environment variables XCB_XV_CFLAGS and XCB_XV_LIBS to avoid the need to call pkg-config.</p>
+<p>See the pkg-config man page for more details.</p>
 <p><strong>Solution 10:</strong></p>
 <pre>sudo apt install libxcb-xv0-dev</pre>
 <p class="amp-wp-7d27179"><strong>Error 11:</strong></p>
-<pre>configure: error: No package 'alsa' found. alsa-lib 1.0.24 or later required. Pass --disable-alsa to ignore this error.</pre>
+<p>configure: error: No package ‘alsa’ found. alsa-lib 1.0.24 or later required. Pass –disable-alsa to ignore this error.</p>
 <p class="amp-wp-7d27179"><strong>Solution 11:</strong></p>
 <pre>sudo apt install libasound2-dev</pre>
 <p class="amp-wp-7d27179"><strong>Error 12:</strong></p>
-<pre>vlc: error while loading shared libraries: libvlc.so.5: cannot open shared object file: No such file or directory</pre>
+<p>vlc: error while loading shared libraries: libvlc.so.5: cannot open shared object file: No such file or directory</p>
 <p class="amp-wp-7d27179"><strong>Solution 12:</strong></p>
 <pre>sudo apt install libvlc5</pre>
 <p class="amp-wp-7d27179"><strong>Error 13:</strong></p>
-<pre>xcb_window window error: X11 key press support not compiled-in</pre>
+<p>xcb_window window error: X11 key press support not compiled-in</p>
 <p class="amp-wp-7d27179"><strong>Solution 13:</strong></p>
 <pre>sudo apt install libxml2-dev</pre>
 <p class="amp-wp-7d27179"><strong>Error 14:</strong></p>
-<pre>configure: WARNING: Library libarchive &gt;= 3.1.0 needed for archive was not found</pre>
+<p>configure: WARNING: Library libarchive &gt;= 3.1.0 needed for archive was not found</p>
 <p class="amp-wp-7d27179"><strong>Solution 14:</strong></p>
 <pre>sudo apt install libarchive-dev</pre>
 <p class="amp-wp-7d27179"><strong>Error 15:</strong></p>
-<pre>configure: WARNING: No package 'live555' found.</pre>
+<p>configure: WARNING: No package ‘live555’ found.</p>
 <p class="amp-wp-7d27179"><strong>Solution 15:</strong></p>
 <pre>sudo apt install liblivemedia-dev</pre>
 <p class="amp-wp-7d27179"><strong>Error 16:</strong></p>
-<pre>configure: WARNING: Library libebml &gt;= 1.3.6 libmatroska needed for matroska was not found</pre>
+<p>configure: WARNING: Library libebml &gt;= 1.3.6 libmatroska needed for matroska was not found</p>
 <p><strong>Solution 16:</strong></p>
 <pre>sudo apt install libebml-dev libmatroska-dev</pre>
 <p class="amp-wp-7d27179"><strong>Error 17:</strong></p>
-<pre>configure: WARNING: No package 'libva' found.</pre>
+<p>configure: WARNING: No package ‘libva’ found.</p>
 <p><strong>Solution 17:</strong></p>
 <pre>sudo apt install libva-dev</pre>
 <p class="amp-wp-7d27179"><strong>Error 18:</strong></p>
-<pre>configure: WARNING: Library libchromaprint &gt;= 0.6.0 needed for chromaprint was not found</pre>
+<p>configure: WARNING: Library libchromaprint &gt;= 0.6.0 needed for chromaprint was not found</p>
 <p class="amp-wp-7d27179"><strong>Solution 18:</strong></p>
 <pre>sudo apt install libchromaprint-dev</pre>
 <p class="amp-wp-7d27179"><strong>Error 19:</strong></p>
-<pre>configure: WARNING: Library protobuf-lite &gt;= 2.5.0 needed for chromecast was not found</pre>
+<p>configure: WARNING: Library protobuf-lite &gt;= 2.5.0 needed for chromecast was not found</p>
 <p class="amp-wp-7d27179"><strong>Solution 19:</strong></p>
 <pre>sudo apt install libprotobuf-lite17</pre>
 <p class="amp-wp-7d27179"><strong>Error 20:</strong></p>
-<pre>configure: WARNING: No package 'Qt5Core' found
-
-No package 'Qt5Widgets' found
-
-No package 'Qt5Gui' found
-
-No package 'Qt5Svg' found.
-
-configure: WARNING: The skins2 module depends on the Qt interface, Qt is not built so skins2 is disabled.</pre>
+<p>configure: WARNING: No package ‘Qt5Core’ found</p>
+<p>No package ‘Qt5Widgets’ found No package ‘Qt5Gui’ found</p>
+<p>No package ‘Qt5Svg’ found. configure: WARNING: The skins2 module depends on the Qt interface, Qt is not built so skins2 is disabled.</p>
 <p><strong>Solution 20:</strong></p>
 <pre>sudo apt install qtbase5-dev</pre>
 <p class="amp-wp-7d27179"><strong>Error 21:</strong></p>
-<pre>libEGL warning: DRI2: failed to authenticate</pre>
+<p>libEGL warning: DRI2: failed to authenticate</p>
 <p class="amp-wp-7d27179"><strong>Solution 21:</strong></p>
 <pre>sudo apt install --reinstall libqt5svg5</pre>
 <p class="amp-wp-7d27179"><strong>Error 22:</strong></p>
-<pre>[0000558aa4a7cbf0] main xml reader error: XML reader not found
-
-[0000558aa4a6c620] main interface error: no suitable interface module
-
-[0000558aa49f5580] main libvlc error: interface "globalhotkeys,none" initialization failed</pre>
+<p>[0000558aa4a7cbf0] main xml reader error: XML reader not found</p>
+<p>[0000558aa4a6c620] main interface error: no suitable interface module</p>
+<p>[0000558aa49f5580] main libvlc error: interface “globalhotkeys,none” initialization failed</p>
 <p><strong>Solution 22:</strong></p>
 <pre>sudo apt install  qt4-default</pre>
 <p class="amp-wp-7d27179">Lastly, we could only install <strong>command-line utility of vlc</strong> even if we resolve all the above mentioned errors/warnings. And, it could only be launched by running command <strong>vlc</strong> in terminal. Therefore, it is advisable not to skip the following step –</p>
