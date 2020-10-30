@@ -1,0 +1,582 @@
+<!doctype html>
+<html amp lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+		<title>Numerical operators in Python - TechPiezo</title>
+		<link rel="canonical" href="https://techpiezo.com/python/numerical-operators-in-python/" />
+	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
+<script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+	<meta name="generator" content="AMP Plugin v1.1.1; mode=reader">
+	<style amp-custom>
+		/* Generic WP styling */
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
+.aligncenter {
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.amp-wp-enforced-sizes {
+	/** Our sizes fallback is 100vw, and we have a padding on the container; the max-width here prevents the element from overflowing. **/
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+
+/*
+ * Prevent cases of amp-img converted from img to appear with stretching by using object-fit to scale.
+ * See <https://github.com/ampproject/amphtml/issues/21371#issuecomment-475443219>.
+ * Also use object-fit:contain in worst case scenario when we can't figure out dimensions for an image.
+ */
+amp-img.amp-wp-enforced-sizes[layout=intrinsic] > img,
+.amp-wp-unknown-size > img {
+	object-fit: contain;
+}
+
+amp-fit-text blockquote,
+amp-fit-text h1,
+amp-fit-text h2,
+amp-fit-text h3,
+amp-fit-text h4,
+amp-fit-text h5,
+amp-fit-text h6 {
+	font-size: inherit;
+}
+
+/**
+ * Override a style rule in Twenty Sixteen and Twenty Seventeen.
+ * It set display:none for audio elements.
+ * This selector is the same, though it adds body and uses amp-audio instead of audio.
+ */
+body amp-audio:not([controls]) {
+	display: inline-block;
+	height: auto;
+}
+
+/* Template Styles */
+
+.amp-wp-content,
+.amp-wp-title-bar div {
+		margin: 0 auto;
+	max-width: 640px;
+	}
+
+html {
+	background: #191e23;
+}
+
+body {
+	background: #fff;
+	color: #353535;
+	font-family: Georgia, 'Times New Roman', Times, Serif;
+	font-weight: 300;
+	line-height: 1.75em;
+}
+
+p,
+ol,
+ul,
+figure {
+	margin: 0 0 1em;
+	padding: 0;
+}
+
+a,
+a:visited {
+	color: #191e23;
+}
+
+a:hover,
+a:active,
+a:focus {
+	color: #353535;
+}
+
+/* Quotes */
+
+blockquote {
+	color: #353535;
+	background: rgba(127,127,127,.125);
+	border-left: 2px solid #191e23;
+	margin: 8px 0 24px 0;
+	padding: 16px;
+}
+
+blockquote p:last-child {
+	margin-bottom: 0;
+}
+
+/* UI Fonts */
+
+.amp-wp-meta,
+.amp-wp-header div,
+.amp-wp-title,
+.wp-caption-text,
+.amp-wp-tax-category,
+.amp-wp-tax-tag,
+.amp-wp-comments-link,
+.amp-wp-footer p,
+.back-to-top {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+}
+
+/* Header */
+
+.amp-wp-header {
+	background-color: #191e23;
+}
+
+.amp-wp-header div {
+	color: #ffffff;
+	font-size: 1em;
+	font-weight: 400;
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: .875em 16px;
+	position: relative;
+}
+
+.amp-wp-header a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+
+.amp-wp-header .amp-wp-site-icon {
+	/** site icon is 32px **/
+	background-color: #ffffff;
+	border: 1px solid #ffffff;
+	border-radius: 50%;
+	position: absolute;
+	right: 18px;
+	top: 10px;
+}
+
+/* Article */
+
+.amp-wp-article {
+	color: #353535;
+	font-weight: 400;
+	margin: 1.5em auto;
+	max-width: 840px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+/* Article Header */
+
+.amp-wp-article-header {
+	align-items: center;
+	align-content: stretch;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 1.5em 16px 0;
+}
+
+.amp-wp-title {
+	color: #353535;
+	display: block;
+	flex: 1 0 100%;
+	font-weight: 900;
+	margin: 0 0 .625em;
+	width: 100%;
+}
+
+/* Article Meta */
+
+.amp-wp-meta {
+	color: #696969;
+	display: inline-block;
+	flex: 2 1 50%;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0 0 1.5em;
+	padding: 0;
+}
+
+.amp-wp-article-header .amp-wp-meta:last-of-type {
+	text-align: right;
+}
+
+.amp-wp-article-header .amp-wp-meta:first-of-type {
+	text-align: left;
+}
+
+.amp-wp-byline amp-img,
+.amp-wp-byline .amp-wp-author {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.amp-wp-byline amp-img {
+	border: 1px solid #191e23;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 6px;
+}
+
+.amp-wp-posted-on {
+	text-align: right;
+}
+
+/* Featured image */
+
+.amp-wp-article-featured-image {
+	margin: 0 0 1em;
+}
+.amp-wp-article-featured-image amp-img {
+	margin: 0 auto;
+}
+.amp-wp-article-featured-image.wp-caption .wp-caption-text {
+	margin: 0 18px;
+}
+
+/* Article Content */
+
+.amp-wp-article-content {
+	margin: 0 16px;
+}
+
+.amp-wp-article-content ul,
+.amp-wp-article-content ol {
+	margin-left: 1em;
+}
+
+.amp-wp-article-content .wp-caption {
+	max-width: 100%;
+}
+
+.amp-wp-article-content amp-img {
+	margin: 0 auto;
+}
+
+.amp-wp-article-content amp-img.alignright {
+	margin: 0 0 1em 16px;
+}
+
+.amp-wp-article-content amp-img.alignleft {
+	margin: 0 16px 1em 0;
+}
+
+/* Captions */
+
+.wp-caption {
+	padding: 0;
+}
+
+.wp-caption.alignleft {
+	margin-right: 16px;
+}
+
+.wp-caption.alignright {
+	margin-left: 16px;
+}
+
+.wp-caption .wp-caption-text {
+	border-bottom: 1px solid #c2c2c2;
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: .66em 10px .75em;
+}
+
+/* AMP Media */
+
+.alignwide,
+.alignfull {
+	clear: both;
+}
+
+amp-carousel {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+amp-iframe,
+amp-youtube,
+amp-instagram,
+amp-vine {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+
+.amp-wp-article-content amp-carousel amp-img {
+	border: none;
+}
+
+amp-carousel > amp-img > img {
+	object-fit: contain;
+}
+
+.amp-wp-iframe-placeholder {
+	background: #c2c2c2 url( https://techpiezo.com/wp-content/plugins/amp/assets/images/placeholder-icon.png ) no-repeat center 40%;
+	background-size: 48px 48px;
+	min-height: 48px;
+}
+
+/* Article Footer Meta */
+
+.amp-wp-article-footer .amp-wp-meta {
+	display: block;
+}
+
+.amp-wp-tax-category,
+.amp-wp-tax-tag {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 1.5em 16px;
+}
+
+.amp-wp-comments-link {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	text-align: center;
+	margin: 2.25em 0 1.5em;
+}
+
+.amp-wp-comments-link a {
+	border-style: solid;
+	border-color: #c2c2c2;
+	border-width: 1px 1px 2px;
+	border-radius: 4px;
+	background-color: transparent;
+	color: #191e23;
+	cursor: pointer;
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	margin: 0 auto;
+	max-width: 200px;
+	padding: 11px 16px;
+	text-decoration: none;
+	width: 50%;
+	-webkit-transition: background-color 0.2s ease;
+			transition: background-color 0.2s ease;
+}
+
+/* AMP Footer */
+
+.amp-wp-footer {
+	border-top: 1px solid #c2c2c2;
+	margin: calc(1.5em - 1px) 0 0;
+}
+
+.amp-wp-footer div {
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: 1.25em 16px 1.25em;
+	position: relative;
+}
+
+.amp-wp-footer h2 {
+	font-size: 1em;
+	line-height: 1.375em;
+	margin: 0 0 .5em;
+}
+
+.amp-wp-footer p {
+	color: #696969;
+	font-size: .8em;
+	line-height: 1.5em;
+	margin: 0 85px 0 0;
+}
+
+.amp-wp-footer a {
+	text-decoration: none;
+}
+
+.back-to-top {
+	bottom: 1.275em;
+	font-size: .8em;
+	font-weight: 600;
+	line-height: 2em;
+	position: absolute;
+	right: 16px;
+}
+		/* Inline stylesheets */
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-7d27179{text-align:justify}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cdd8ca0{text-align:center}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-e8a2147{border-collapse:collapse;width:100%;height:192px}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-77459f8{height:24px}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-a330317{width:50%;height:24px;text-align:center}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-85dfbc6{border-collapse:collapse;width:100%;height:168px}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-5fd6a69{width:33.3333%;height:24px;text-align:center}	</style>
+</head>
+
+<body class="">
+
+<header id="top" class="amp-wp-header">
+	<div>
+		<a href="https://techpiezo.com/">
+												<span class="amp-site-title">
+				TechPiezo			</span>
+		</a>
+
+					</div>
+</header>
+
+<article class="amp-wp-article">
+	<header class="amp-wp-article-header">
+		<h1 class="amp-wp-title">Numerical operators in Python</h1>
+		<div class="amp-wp-meta amp-wp-posted-on">
+	<time datetime="2020-10-30T16:30:45+00:00">
+		2 hours ago	</time>
+</div>
+	</header>
+
+	
+
+	<div class="amp-wp-article-content">
+		<p class="amp-wp-7d27179">In this article, we would discuss <strong>various numerical operators in Python v3.9</strong>. We use these operators on Python expressions. Python expressions consists of operands and operators. For instance,</p>
+<pre>a + b</pre>
+<p class="amp-wp-7d27179">where,</p>
+<p class="amp-wp-7d27179"><strong>a</strong> &amp; <strong>b</strong> are the operands,<br>
+<strong>+</strong> is the operator.</p>
+<p class="amp-wp-7d27179">There is an order of precedence in Python for operators as well. We will discuss it as well. Besides, in <strong>Additional Info</strong> section – we will see how numerical operators (* +) are different from string operators.</p>
+<h5 class="amp-wp-cdd8ca0">Numerical operators in Python</h5>
+<p class="amp-wp-7d27179">The numerical operators are:</p>
+<pre>** 
+* 
+/ 
+% 
+// 
++ 
+–</pre>
+<table class="amp-wp-e8a2147">
+<tbody>
+<tr class="amp-wp-77459f8">
+<td class="amp-wp-a330317"><strong>Operator</strong></td>
+<td class="amp-wp-a330317"><strong>Operation</strong></td>
+</tr>
+<tr class="amp-wp-77459f8">
+<td class="amp-wp-a330317">**</td>
+<td class="amp-wp-a330317">Power of</td>
+</tr>
+<tr class="amp-wp-77459f8">
+<td class="amp-wp-a330317">*</td>
+<td class="amp-wp-a330317">Multiplication</td>
+</tr>
+<tr class="amp-wp-77459f8">
+<td class="amp-wp-a330317">/</td>
+<td class="amp-wp-a330317">Division</td>
+</tr>
+<tr class="amp-wp-77459f8">
+<td class="amp-wp-a330317">%</td>
+<td class="amp-wp-a330317">Remainder</td>
+</tr>
+<tr class="amp-wp-77459f8">
+<td class="amp-wp-a330317">//</td>
+<td class="amp-wp-a330317">Integer division</td>
+</tr>
+<tr class="amp-wp-77459f8">
+<td class="amp-wp-a330317">+</td>
+<td class="amp-wp-a330317">Addition</td>
+</tr>
+<tr class="amp-wp-77459f8">
+<td class="amp-wp-a330317">–</td>
+<td class="amp-wp-a330317">Subtraction</td>
+</tr>
+</tbody>
+</table>
+<p class="amp-wp-7d27179">Now, lets discuss each of these operators with relevant examples having operands 9 &amp; 5.</p>
+<table class="amp-wp-85dfbc6">
+<tbody>
+<tr class="amp-wp-77459f8">
+<td class="amp-wp-5fd6a69"><strong>Operator</strong></td>
+<td class="amp-wp-5fd6a69"><strong>Expression</strong></td>
+<td class="amp-wp-5fd6a69"><strong>Outcome</strong></td>
+</tr>
+<tr class="amp-wp-77459f8">
+<td class="amp-wp-5fd6a69">**</td>
+<td class="amp-wp-5fd6a69">9**5</td>
+<td class="amp-wp-5fd6a69">59049</td>
+</tr>
+<tr class="amp-wp-77459f8">
+<td class="amp-wp-5fd6a69">*</td>
+<td class="amp-wp-5fd6a69">9*5</td>
+<td class="amp-wp-5fd6a69">45</td>
+</tr>
+<tr class="amp-wp-77459f8">
+<td class="amp-wp-5fd6a69">/</td>
+<td class="amp-wp-5fd6a69">9/5</td>
+<td class="amp-wp-5fd6a69">1.8</td>
+</tr>
+<tr class="amp-wp-77459f8">
+<td class="amp-wp-5fd6a69">%</td>
+<td class="amp-wp-5fd6a69">9%5</td>
+<td class="amp-wp-5fd6a69">4</td>
+</tr>
+<tr class="amp-wp-77459f8">
+<td class="amp-wp-5fd6a69">//</td>
+<td class="amp-wp-5fd6a69">9//5</td>
+<td class="amp-wp-5fd6a69">1</td>
+</tr>
+<tr class="amp-wp-77459f8">
+<td class="amp-wp-5fd6a69">+</td>
+<td class="amp-wp-5fd6a69">9+5</td>
+<td class="amp-wp-5fd6a69">14</td>
+</tr>
+<tr class="amp-wp-77459f8">
+<td class="amp-wp-5fd6a69">–</td>
+<td class="amp-wp-5fd6a69">9-5</td>
+<td class="amp-wp-5fd6a69">4</td>
+</tr>
+</tbody>
+</table>
+<p>Furthermore, as already hinted – there is an <strong>order of precedence</strong> for operators.</p>
+<p class="amp-wp-7d27179">Operands within<strong> Parenthesis</strong> are the first. Thereafter, <strong>**</strong> operator. Followed by <strong>* , / , // , and %</strong> operators. And, finally its the <strong>+</strong> and <strong>–</strong> operators which are at the last. This is for expressions evaluated left to right.</p>
+<p class="amp-wp-7d27179">Lastly, open a Python shell for expressions discussed below. It should help us make things clear –</p>
+<pre>&gt;&gt;&gt; 9**2+9//5-9*5</pre>
+<p class="amp-wp-7d27179">It would get us the output (81+1-45)</p>
+<pre>37</pre>
+<p class="amp-wp-7d27179">on the other hand, check for following –</p>
+<pre>&gt;&gt;&gt; 9*5+9**2-9//5</pre>
+<p class="amp-wp-7d27179">output (45+81-1)</p>
+<pre>125</pre>
+<p class="amp-wp-7d27179">As already explained, parenthesis would command the highest order. So,</p>
+<pre>&gt;&gt;&gt; 9*(5+9)**2-9//5</pre>
+<p class="amp-wp-7d27179">output (9*196-1)</p>
+<pre>1763</pre>
+<p class="amp-wp-7d27179"><strong>In conclusion</strong>, we have discussed various numerical operators. And, their order of precedence was also there.</p>
+<p class="amp-wp-7d27179"><strong>Additional Info</strong> –</p>
+<p class="amp-wp-7d27179">String operators are<strong> *</strong> and <strong>+</strong>. These two act as numerical operators as well. Since we have already seen their functioning as numerical operators. Therefore, in this section lets see how these two operators can be used on string literals.</p>
+<p class="amp-wp-7d27179"><strong>+</strong> operator on string literals concatenates the two. We assign values to two operands ‘<strong>a</strong>‘ and ‘<strong>b</strong>‘.</p>
+<pre>&gt;&gt;&gt; a='Tech'
+&gt;&gt;&gt; b='Piezo'
+&gt;&gt;&gt; a+b</pre>
+<p class="amp-wp-7d27179">Output –</p>
+<pre>'TechPiezo'</pre>
+<p class="amp-wp-7d27179"><strong>*</strong> operator repeats a string <strong>n </strong>number of times. Again –</p>
+<pre>&gt;&gt;&gt; a='Tech'
+&gt;&gt;&gt; 3*a</pre>
+<p class="amp-wp-7d27179">Output –</p>
+<pre>'TechTechTech'</pre>
+	</div>
+
+	<footer class="amp-wp-article-footer">
+			<div class="amp-wp-meta amp-wp-tax-category">
+		Categories: <a href="https://techpiezo.com/python/" rel="category tag">Python</a>	</div>
+
+	</footer>
+</article>
+
+<footer class="amp-wp-footer">
+	<div>
+		<h2>TechPiezo</h2>
+		<a href="#top" class="back-to-top">Back to top</a>
+	</div>
+</footer>
+
+
+<amp-analytics id="cf19fba03007" type="ampanalytics"><script type="application/json">{"vars":{"gtag_id":"UA-135581354-3","config":{"UA-135581354-3":{"groups":"default"}}}}</script></amp-analytics>
+</body>
+</html>
