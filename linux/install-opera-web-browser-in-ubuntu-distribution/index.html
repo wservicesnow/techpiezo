@@ -6,10 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
-	<title>Install Opera web browser in Ubuntu distribution - TechPiezo</title>
+	<title>Install Opera in Ubuntu 20.04 LTS - TechPiezo</title>
 
 <!-- This site is optimized with the Yoast SEO plugin v11.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
-<meta name="description" content="We have two methods available to install Opera web browser in Ubuntu distribution. It could be done either through .deb package or by adding its repository."/>
+<meta name="description" content="A Chromium-based browser which was first released on April 10, 1995. In this article, we would discuss how to install Opera web browser in Ubuntu 20.04 LTS."/>
 <link rel="canonical" href="https://techpiezo.com/linux/install-opera-web-browser-in-ubuntu-distribution/" />
 <!-- / Yoast SEO plugin. -->
 
@@ -923,7 +923,7 @@ code, kbd, samp, pre,
 		
 		<section class="hero-section" data-type="type-1" data-alignment="left">
 			<header class="entry-header">
-				<h1 class="page-title">Install Opera web browser in Ubuntu distribution</h1>
+				<h1 class="page-title">Install Opera in Ubuntu 20.04 LTS</h1>
 				<div class="entry-meta has-avatar" data-label data-type="simple">
 		
 
@@ -963,28 +963,36 @@ code, kbd, samp, pre,
 		<figure class="ct-featured-image ct-hidden-sm" ><div class="ct-image-container ct-lazy" ><img class="attachment-full size-full" alt="Install Opera web browser in Ubuntu" data-lazy="https://techpiezo.com/wp-content/uploads/2019/09/Install-Opera-in-Ubuntu.svg" data-object-fit="~" /><noscript><img src="https://techpiezo.com/wp-content/uploads/2019/09/Install-Opera-in-Ubuntu.svg" class="attachment-full size-full" alt="Install Opera web browser in Ubuntu" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
 		
 		<div class="entry-content">
-			<p style="text-align: justify;"><strong>Opera</strong> is a Chromium-based browser which was first released on April 10, 1995. The <strong>latest stable version</strong> for Opera at the time of writing the article is<strong> 65.0.3467.48</strong>. There are three features available with the browser which make it standout amongst its peers. These are built-in Ad Blocker, VPN and a Battery saver. Since, built-in Ad Blocker is already provided with the browser therefore we don&#8217;t have to install an additional add-on. Also, unlimited free VPN along with a battery saver specifically built for laptop users is provided. In this article, we would discuss how to install Opera web browser in Ubuntu distribution.</p>
-<p style="text-align: justify;">Furthermore, operations discussed below would require you to have superuser privileges. In case you don&#8217;t have one then contact your System Administrator for assistance.</p>
-<p style="text-align: justify;">We would use <strong>dpkg</strong> (Debian Package Manager) to install the downloaded package.</p>
-<h5 style="text-align: center;">Install Opera web browser through .deb package</h5>
-<p style="text-align: justify;">First, we need to download the <strong>.deb</strong> package from Opera&#8217;s official website. On the Homepage itself, you need to click Download Now button. If you are already on a Ubuntu distribution, it will select .deb package for you. Otherwise, you need to select accordingly. The downloaded package would be &#8211;</p>
-<pre>opera-stable_65.0.3467.48_amd64</pre>
-<p style="text-align: justify;">Once the package gets downloaded, move to the directory where its downloaded through <strong>cd</strong> command.</p>
+			<p style="text-align: justify;"><strong>Opera</strong> is a Chromium-based browser which was first released on April 10, 1995. The <strong>latest stable version</strong> for Opera at the time of writing the article is<strong> 72.0.3815.320</strong>. There are three features available with the browser which make it standout amongst its peers. These are built-in Ad Blocker, VPN and a Battery saver. Since, built-in Ad Blocker is already provided with the browser. Therefore, we don&#8217;t have to install an additional add-on. Also, we get unlimited free VPN along with a battery saver specifically built for laptop users. In this article, we would discuss how to <strong>install Opera web browser</strong> in Ubuntu 20.04 LTS release.</p>
+<p style="text-align: justify;">Furthermore, operations discussed below would require you to have superuser privileges. In case you don&#8217;t have one then it is best to contact your System Administrator for assistance.</p>
+<p style="text-align: justify;">We would use <strong>dpkg</strong> (Debian Package Manager) to install the package.</p>
+<h5 style="text-align: center;">Install Opera web browser in Ubuntu 20.04 LTS through .deb package</h5>
+<p style="text-align: justify;">First, we need to download the <strong>.deb</strong> package from Opera&#8217;s official website. On the <strong>Homepage</strong> itself, we need to hover mouse over <strong>Downloads</strong> drop down menu and click <strong>Download for Linux</strong>. It would download the deb package file. The downloaded package file is &#8211;</p>
+<pre>opera-stable_72.0.3815.320_amd64.deb</pre>
+<p style="text-align: justify;">Move to the directory where we have saved the package. Use <strong>cd</strong> command-line utility &#8211;</p>
 <pre>cd /path/to/opera_package</pre>
 <p style="text-align: justify;">And, run the following &#8211;</p>
-<pre>sudo dpkg -i opera-stable_&lt;version&gt;_amd64.deb</pre>
-<p style="text-align: justify;">For instance, if we have downloaded the opera-stable_63.0.3368.94_amd64.deb then we need to issue the following in terminal &#8211;</p>
-<pre>sudo dpkg -i opera-stable_65.0.3467.48_amd64.deb</pre>
-<p style="text-align: justify;">At this point you would get the error &#8211;</p>
+<pre>sudo dpkg -i opera-stable_&lt;version_number&gt;_amd64.deb</pre>
+<p style="text-align: justify;">For instance, if we have downloaded the opera-stable_72.0.3815.320_amd64.deb then issue the following in terminal &#8211;</p>
+<pre>sudo dpkg -i opera-stable_72.0.3815.320_amd64.deb</pre>
+<p style="text-align: justify;">Go ahead with <strong>&lt;Yes&gt;</strong> when it asks you &#8211; <strong>Do you want to update Opera together with the rest of the system?</strong></p>
+<p style="text-align: justify;">Issue the following in terminal <strong>to launch the application</strong> &#8211;</p>
+<pre>opera</pre>
+<p style="text-align: justify;">If, in case, you get the following error &#8211;</p>
 <pre>Errors were encountered while processing:
 opera-stable</pre>
-<p style="text-align: justify;">All you have to do now is fix the broken packages. This could be done through &#8211;</p>
+<p style="text-align: justify;">All you have to do now is fix the broken packages &#8211;</p>
 <pre>sudo apt update
 sudo apt install -f</pre>
 <p style="text-align: justify;">where,</p>
-<p style="text-align: justify;"><strong>-f</strong> option is used to fix broken packages.</p>
-<p style="text-align: justify;">It will install all related dependencies. Press &lt;Yes&gt; when it asks you &#8211; <strong>Do you want to update Opera together with the rest of the system? </strong>This completes the installation of Opera web browser.</p>
-<p style="text-align: justify;">In conclusion, we have discussed how to install Opera web browser in Ubuntu distribution.</p>
+<p style="text-align: justify;"><strong>-f</strong> option fixes the broken packages.</p>
+<p style="text-align: justify;">It will install all related dependencies. Go ahead with <strong>&lt;Yes&gt;</strong> when it asks you &#8211; <strong>Do you want to update Opera together with the rest of the system? </strong>This completes the installation of Opera web browser.</p>
+<p style="text-align: justify;"><strong>In conclusion</strong>, we have discussed how to install Opera web browser in Ubuntu 20.04 LTS release.</p>
+<p style="text-align: justify;"><strong>Additional Info &#8211;</strong></p>
+<p style="text-align: justify;">If, for some reason, we would want to remove Opera web browser. Then, issue the following terminal &#8211;</p>
+<pre>sudo dpkg -r opera-stable</pre>
+<p style="text-align: justify;">where,</p>
+<p style="text-align: justify;"><strong>-r</strong> option &#8211; removes the package</p>
 		</div>
 
 		
