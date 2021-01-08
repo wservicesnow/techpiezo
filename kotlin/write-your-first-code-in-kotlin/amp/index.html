@@ -461,19 +461,7 @@ amp-carousel > amp-img > img {
 <p class="amp-wp-7d27179">Output should resemble –</p>
 <pre>Compiled from "HelloWorld.kt"
 public final class HelloWorldKt {
-public static final void main(java.lang.String[]);
-Code:
-0: aload_0
-1: ldc #9 // String args
-3: invokestatic #15 // Method kotlin/jvm/internal/Intrinsics.checkParameterIsNotNull:(Ljava/lang/Object;Ljava/lang/String;)V
-6: ldc #17 // String Hello, World!
-8: astore_1
-9: iconst_0
-10: istore_2
-11: getstatic #23 // Field java/lang/System.out:Ljava/io/PrintStream;
-14: aload_1
-15: invokevirtual #29 // Method java/io/PrintStream.println:(Ljava/lang/Object;)V
-18: return
+....
 }</pre>
 <h4 class="amp-wp-7d27179">Make Kotlin Compiler produce a .jar executable</h4>
 <p class="amp-wp-7d27179">The executable so produced will include Kotlin run-time library as well as HelloworldKt.class. Thus, eliminating the need to distribute Kotlin run-time along-with<strong> .jar</strong> executable. To make one, run the following in terminal –</p>

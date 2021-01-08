@@ -9,7 +9,7 @@
 	<title>Write your first code in Kotlin - TechPiezo</title>
 
 <!-- This site is optimized with the Yoast SEO plugin v11.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
-<meta name="description" content="We have dicussed how to compile our first code in Kotlin through its command-line compiler. Kotlin is an open-source, statically typed programming language."/>
+<meta name="description" content="We have dicussed how to write our first code in Kotlin through its command-line compiler. Kotlin is an open-source, statically typed programming language."/>
 <link rel="canonical" href="https://techpiezo.com/kotlin/write-your-first-code-in-kotlin/" />
 <!-- / Yoast SEO plugin. -->
 
@@ -988,19 +988,7 @@ code, kbd, samp, pre,
 <p style="text-align: justify;">Output should resemble &#8211;</p>
 <pre>Compiled from "HelloWorld.kt"
 public final class HelloWorldKt {
-public static final void main(java.lang.String[]);
-Code:
-0: aload_0
-1: ldc #9 // String args
-3: invokestatic #15 // Method kotlin/jvm/internal/Intrinsics.checkParameterIsNotNull:(Ljava/lang/Object;Ljava/lang/String;)V
-6: ldc #17 // String Hello, World!
-8: astore_1
-9: iconst_0
-10: istore_2
-11: getstatic #23 // Field java/lang/System.out:Ljava/io/PrintStream;
-14: aload_1
-15: invokevirtual #29 // Method java/io/PrintStream.println:(Ljava/lang/Object;)V
-18: return
+....
 }</pre>
 <h4 style="text-align: justify;">Make Kotlin Compiler produce a .jar executable</h4>
 <p style="text-align: justify;">The executable so produced will include Kotlin run-time library as well as HelloworldKt.class. Thus, eliminating the need to distribute Kotlin run-time along-with<strong> .jar</strong> executable. To make one, run the following in terminal &#8211;</p>
