@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="July 10, 2021 11:25 am" -->
+<!-- generated-on="July 11, 2021 6:52 am" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>https://techpiezo.com/linux/install-gparted-in-ubuntu-20-04-lts/</loc>
 		<lastmod>2020-04-24T22:40:03+00:00</lastmod>
@@ -84,4 +84,4 @@
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: 8767c39b16ede917c0c4ee46b2747f4d; Queries for sitemap: 45; Total queries: 56; Seconds: 0.11; Memory for sitemap: 0MB; Total memory: 2MB -->
+</urlset><!-- Request ID: cdd4506bbaf67b8cd1fe721537a4c5d0; Queries for sitemap: 45; Total queries: 56; Seconds: 0.08; Memory for sitemap: 0MB; Total memory: 2MB -->
